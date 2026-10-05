@@ -4,6 +4,7 @@
 Usage: python3 archie_bot.py candidates  # ranked names + research status (research these first)
        python3 archie_bot.py run         # rebalance / protect / log; buys only research-approved names
        python3 archie_bot.py status      # dry run, no orders
+       python3 archie_bot.py log         # only log new fills to trade-log.csv
 Settings live in rules.json next to this file so Archie can tune them weekly.
 Paper only: the base URL is hard coded and the account number must start with PA.
 """
@@ -227,4 +228,11 @@ def run(dry=False):
 
 if __name__ == "__main__":
     cmd = (sys.argv[1:] or ["run"])[0]
-    candidates() if cmd == "candidates" else run(dry=cmd != "run")
+    if cmd == "candidates":
+        candidates()
+    elif cmd == "log":  # log fills only; the server bot does the trading
+        st = json.load(open(STATE)) if os.path.exists(STATE) else {}
+        print(f"new fills logged: {len(log_fills(st))}")
+        json.dump(st, open(STATE, "w"), indent=1)
+    else:
+        run(dry=cmd != "run")
