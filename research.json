@@ -1,0 +1,68 @@
+{
+ "AMD": {
+  "verdict": "buy",
+  "confidence": 7,
+  "date": "2026-10-05",
+  "notes": "Strong uptrend, AI data center GPU/CPU demand, chip rally at record highs. Next earnings likely early Nov (past: early May, early Aug), outside 5 trading days. Risk: semis sold off hard last quarter, crowded AI trade."
+ },
+ "MU": {
+  "verdict": "buy",
+  "confidence": 7,
+  "date": "2026-10-05",
+  "notes": "Reported Oct 1: record quarter, $150B contract book, possible buyback, analysts raised targets (Mizuho $1400, TD Cowen $1600). Earnings risk passed. Risk: stock dipped on margin guidance (bonuses); only 1 share fits a $2k slot."
+ },
+ "PLTR": {
+  "verdict": "buy",
+  "confidence": 7,
+  "date": "2026-10-05",
+  "notes": "Momentum intact, Armada sovereign AI deal Oct 1, IBD SwingTrader buying. Earnings likely early Nov. Risk: very high valuation, ARK trimming."
+ },
+ "TQQQ": {
+  "verdict": "buy",
+  "confidence": 7,
+  "date": "2026-10-05",
+  "notes": "Nasdaq 100 at record highs after weak jobs report lifted rate-cut hopes. 3x leverage: big swings, decays in choppy markets; 8% trailing stop limits damage. Big tech earnings start late Oct."
+ },
+ "SOXL": {
+  "verdict": "avoid",
+  "confidence": 6,
+  "date": "2026-10-05",
+  "notes": "Momentum is real but it's 3x semiconductors on top of AMD and MU, plus TQQQ already leans on chips. Too much of the account would ride one sector. Skipped for diversification."
+ },
+ "MSFT": {
+  "verdict": "buy",
+  "confidence": 7,
+  "date": "2026-10-05",
+  "notes": "Next in ranking after SOXL. Mega-cap AI/cloud leader, Mag 7 renewed demand ahead of earnings (likely late Oct, outside 5 days). Adds a less chip-heavy name."
+ },
+ "SPY": {
+  "verdict": "buy",
+  "confidence": 8,
+  "date": "2026-10-05",
+  "notes": "Fallback: S&P 500 near record highs, earnings season expected strong. Broad index, lowest single-name risk."
+ },
+ "CRM": {
+  "verdict": "buy",
+  "confidence": 7,
+  "date": "2026-10-05",
+  "notes": "Software rebound: led Q3 comeback, surged Sep 30, Listen Labs AI acquisition. Earnings usually early Dec. Adds non-chip exposure."
+ },
+ "META": {
+  "verdict": "buy",
+  "confidence": 7,
+  "date": "2026-10-05",
+  "notes": "Mag 7 renewed demand ahead of earnings (likely late Oct, outside 5 days); Muse AI agent monetization story. Risk: heavy AI capex, high bond yields."
+ },
+ "SHOP": {
+  "verdict": "avoid",
+  "confidence": 5,
+  "date": "2026-10-05",
+  "notes": "Little fresh company-specific news to justify a buy; momentum alone isn't enough. Revisit."
+ },
+ "SMH": {
+  "verdict": "avoid",
+  "confidence": 6,
+  "date": "2026-10-05",
+  "notes": "Semiconductor ETF overlaps AMD, MU and TQQQ; 30-yr yield at 2002 high is a headwind for richly valued chips. Too much one-sector exposure."
+ }
+}
