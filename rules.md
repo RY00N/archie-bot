@@ -32,6 +32,18 @@ Budget: $10,000 of the $100k paper account (budget = Alpaca equity minus $90k). 
 - The backtest of these rules shows +198% over 2 years vs SPY +37%, but that's flattering: the stock list was picked today, with winners like NVDA and PLTR already known. With ETFs only (no hindsight) it was +52% vs +37%, with a 17% worst drop. Expect real results closer to that, or worse.
 - Leveraged ETFs and a 5-stock portfolio can swing 30% from peak. That's the price of chasing max profit.
 
+## Day trading book (separate $10k practice budget)
+- Setup: 15-minute opening range breakout, buying only. From 9:45 to 10:30 ET, when a one-minute bar closes above the first 15 minutes' high, buy. The stop goes at the opening-range low and the target at 1.5x the risk. The order is a bracket, so both live on Alpaca.
+- Everything is closed by 3:55 ET. Nothing is held overnight.
+- Limits:
+  - 3 trades open at once, about $3,300 each.
+  - 4 trades a day.
+  - No new trades after -$200 on the day.
+  - Skip a setup whose risk is over 4% of price.
+- Research gate: only names approved in that morning's `dayplan.json`. Avoid any name with earnings that day or the next, and any name with a red-flag headline that morning. Never trade a name the swing book holds.
+- Backtest (Jul-Oct 2026, 16 liquid names, 1-minute IEX data): +$824 on $10k over 67 days (+8%). There were 203 trades and 48% of them won. The worst drop was $366 and 30 of 67 days were red. Both halves of the period were positive. Honest caveat: the market rose during the whole test, and breakout buying likes rising markets. Expect worse when it chops.
+
 ## Change log
 - v1 (2026-10-05): first version.
 - v2 (2026-10-05): research gate added at Ryan's request. First use: swapped SOXL (too much chip exposure on top of AMD and MU) for MSFT.
+- v3 (2026-10-06): day trading book added at Ryan's request, with its own $10k budget and P&L, kept separate from swing.
