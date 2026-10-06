@@ -8,6 +8,7 @@
   (downgrade, guidance cut, probe, lawsuit, plunge...) tightens that stock's trailing stop to 4%.
 - Every RELOAD_MINUTES: `git pull` so the newest rules.json / research.json from Archie's
   study sessions take effect without a restart.
+- Every PUBLISH_SECONDS (5 min when closed): publish the paper P&L snapshot for the Agent City (publish_pnl.py).
 Writes live-status.json as a heartbeat. Stop with Ctrl+C or `systemctl stop archie`.
 """
 import importlib, json, os, re, subprocess, sys, time, traceback
@@ -16,12 +17,14 @@ from datetime import datetime, timezone
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import archie_bot as bot
+import publish_pnl
 
 POLL_SECONDS = 3
 REBALANCE_MINUTES = 15
 RELOAD_MINUTES = 5
 NEWS_SECONDS = 60
 TIGHT_TRAIL_PCT = "4"
+PUBLISH_SECONDS = 60  # live P&L snapshot for the Agent City (every 5 min when closed)
 # Headlines that mean "protect this position now": tighten its trailing stop until research reviews it.
 RED_FLAGS = re.compile(r"downgrad|cuts? (guidance|outlook|forecast)|lowers? (guidance|outlook)|miss(es|ed)? (estimates|expectations)|"
                        r"investigation|probe|subpoena|lawsuit|fraud|recall|halt|bankrupt|delist|short seller|resign|ousted|"
@@ -76,7 +79,7 @@ def main():
     acct = bot.trade("GET", "/v2/account")
     assert acct["account_number"].startswith("PA"), "Not a paper account. Refusing to run."
     log("Archie live started (paper)")
-    last_rebalance = last_reload = last_news = 0
+    last_rebalance = last_reload = last_news = last_publish = 0
     held_before = None
     news_since = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     flagged = set()
@@ -95,6 +98,9 @@ def main():
                     except Exception:
                         log("news error:\n" + traceback.format_exc())
                     last_news = now
+                if now - last_publish > 300:
+                    publish_pnl.publish(bot, False, log)
+                    last_publish = now
                 json.dump({"time": datetime.now(timezone.utc).isoformat()[:19], "market_open": False,
                            "next_open": clock["next_open"]}, open(os.path.join(HERE, "live-status.json"), "w"))
                 time.sleep(60)
@@ -115,6 +121,9 @@ def main():
                 except Exception:
                     log("news error:\n" + traceback.format_exc())
                 last_news = now
+            if now - last_publish > PUBLISH_SECONDS:
+                publish_pnl.publish(bot, True, log)
+                last_publish = now
             prices = latest_prices(sorted(held))
             json.dump({"time": datetime.now(timezone.utc).isoformat()[:19], "market_open": True,
                        "prices": prices, "positions": {s: p["unrealized_plpc"] for s, p in positions.items()}},
