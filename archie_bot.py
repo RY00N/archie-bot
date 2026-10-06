@@ -10,6 +10,7 @@ Paper only: the base URL is hard coded and the account number must start with PA
 """
 import csv, json, os, sys, urllib.request, urllib.parse, urllib.error
 from datetime import datetime, timedelta, timezone
+import daytrader
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TRADE_API = "https://paper-api.alpaca.markets"
@@ -74,6 +75,12 @@ def rank(closes):
     return scored
 
 
+def swing_equity(acct, positions):
+    """Swing book value: the Alpaca account minus the unused cash and minus the day-trading sleeve."""
+    unused = RULES["alpaca_start_equity"] - RULES["budget_start"] - RULES["day"]["budget_start"]
+    return float(acct["equity"]) - unused - daytrader.equity(positions)
+
+
 def research():
     return json.load(open(RESEARCH)) if os.path.exists(RESEARCH) else {}
 
@@ -103,7 +110,13 @@ def log_fills(state):
     """Append every newly filled order to trade-log.csv (account=paper)."""
     seen = set(state.get("logged_orders", []))
     after = state.get("log_after", "2026-10-01T00:00:00Z")
-    orders = trade("GET", "/v2/orders", {"status": "closed", "after": after, "limit": 500, "direction": "asc"})
+    parents = trade("GET", "/v2/orders", {"status": "closed", "after": after, "limit": 500, "direction": "asc", "nested": "true"})
+    orders = []  # bracket legs (day-trade stop/target exits) carry their parent's tag
+    for o in parents:
+        orders.append(o)
+        for leg in o.get("legs") or []:
+            orders.append({**leg, "client_order_id": o.get("client_order_id")})
+    orders.sort(key=lambda o: o.get("filled_at") or "")
     cost = state.setdefault("cost_basis", {})
     rows = []
     for o in orders:
@@ -125,7 +138,10 @@ def log_fills(state):
                 cost[sym] = [left, avg]
         cid = o.get("client_order_id") or ""
         reason = cid.split("_")[1] if cid.startswith("archie_") else o["type"]
-        rows.append([o["filled_at"][:19].replace("T", " ") + " UTC", "paper", sym, o["side"], qty, px,
+        book = "paper-day" if reason.startswith("day") else "paper"
+        if book == "paper-day" and o["side"] == "sell" and o["type"] != "market":
+            reason = "day-target" if o["type"] == "limit" else "day-stop"
+        rows.append([o["filled_at"][:19].replace("T", " ") + " UTC", book, sym, o["side"], qty, px,
                      o["type"], reason, o.get("stop_price") or "", closed, pnl, "order " + o["id"]])
         seen.add(o["id"])
     if rows:
@@ -141,9 +157,11 @@ def run(dry=False):
     state = json.load(open(STATE)) if os.path.exists(STATE) else {}
     fills = log_fills(state)
     clock = trade("GET", "/v2/clock")
-    positions = {p["symbol"]: p for p in trade("GET", "/v2/positions")}
-    open_orders = trade("GET", "/v2/orders", {"status": "open", "limit": 500})
-    budget = float(acct["equity"]) - (RULES["alpaca_start_equity"] - RULES["budget_start"])
+    all_positions = trade("GET", "/v2/positions")
+    day_syms = daytrader.open_symbols()  # the day-trading sleeve owns these; the swing book leaves them alone
+    positions = {p["symbol"]: p for p in all_positions if p["symbol"] not in day_syms}
+    open_orders = [o for o in trade("GET", "/v2/orders", {"status": "open", "limit": 500}) if o["symbol"] not in day_syms]
+    budget = swing_equity(acct, all_positions)
     report = {"time": datetime.now(timezone.utc).isoformat()[:19], "market_open": clock["is_open"],
               "budget_equity": round(budget, 2), "new_fills": len(fills), "actions": []}
 
@@ -183,7 +201,7 @@ def run(dry=False):
     # 2. Fill empty slots with the best ranked names (always invested).
     slot = budget / RULES["max_positions"]
     # Only researched, approved names get bought: walk down the ranking past anything unapproved.
-    fill_list = [s for _, s, _ in ranked[:RULES["keep_rank"]] if s not in held and approved(s, notes)]
+    fill_list = [s for _, s, _ in ranked[:RULES["keep_rank"]] if s not in held and s not in day_syms and approved(s, notes)]
     skipped = [s for s in top if s not in held and not approved(s, notes)]
     if skipped:
         report["actions"].append(f"SKIP {', '.join(skipped)} (no fresh research approval)")
@@ -199,7 +217,9 @@ def run(dry=False):
     # Not enough qualifiers: park the rest in the fallback ETF so we stay in the market.
     empty = RULES["max_positions"] - len(held)
     fb = RULES["fallback"]
-    if empty > 0 and fb not in held and not approved(fb, notes):
+    if empty > 0 and fb in day_syms:
+        report["actions"].append(f"WAIT: fallback {fb} is in a day trade right now")
+    elif empty > 0 and fb not in held and not approved(fb, notes):
         report["actions"].append(f"HOLD CASH for {empty} slot(s): fallback {fb} not researched yet")
     elif empty > 0 and fb not in held:
         qty = int(slot * empty // price[fb])

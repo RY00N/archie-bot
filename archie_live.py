@@ -8,6 +8,7 @@
   (downgrade, guidance cut, probe, lawsuit, plunge...) tightens that stock's trailing stop to 4%.
 - Every RELOAD_MINUTES: `git pull` so the newest rules.json / research.json from Archie's
   study sessions take effect without a restart.
+- Every 15 seconds: the day-trading sleeve (daytrader.py): opening range breakouts, flat by 15:55 ET.
 - Every PUBLISH_SECONDS (5 min when closed): publish the paper P&L snapshot for the Agent City (publish_pnl.py).
 Writes live-status.json as a heartbeat. Stop with Ctrl+C or `systemctl stop archie`.
 """
@@ -18,6 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import archie_bot as bot
 import publish_pnl
+import daytrader
 
 POLL_SECONDS = 3
 REBALANCE_MINUTES = 15
@@ -72,7 +74,10 @@ def check_news(held, since, flagged):
 def reload_rules():
     if os.path.isdir(os.path.join(HERE, ".git")):
         subprocess.run(["git", "-C", HERE, "pull", "-q", "--ff-only"], timeout=60)
+    importlib.reload(daytrader)  # code and rule changes take effect without a restart
     importlib.reload(bot)
+    if not publish_pnl._busy.locked():
+        importlib.reload(publish_pnl)
 
 
 def main():
@@ -121,6 +126,10 @@ def main():
                 except Exception:
                     log("news error:\n" + traceback.format_exc())
                 last_news = now
+            try:
+                daytrader.tick(bot, log)
+            except Exception:
+                log("day trader error:\n" + traceback.format_exc())
             if now - last_publish > PUBLISH_SECONDS:
                 publish_pnl.publish(bot, True, log)
                 last_publish = now

@@ -4,3 +4,6 @@ trade-log.csv
 __pycache__/
 *.env
 news-log.jsonl
+daytrade-state.json
+daytrade-state.json.tmp
+day-log.jsonl
