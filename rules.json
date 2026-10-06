@@ -1,5 +1,5 @@
 {
- "version": 3,
+ "version": 4,
  "strategy": "momentum rotation, always invested",
  "budget_start": 10000,
  "alpaca_start_equity": 100000,
@@ -106,6 +106,18 @@
    "GOOGL",
    "COIN",
    "NFLX"
-  ]
+  ],
+  "lock_steps": [
+   [
+    1.5,
+    1.5
+   ],
+   [
+    2.0,
+    2.0
+   ]
+  ],
+  "take_profit_r": 2.5,
+  "fade_r": 0.25
  }
 }

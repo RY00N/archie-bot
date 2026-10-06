@@ -3,7 +3,9 @@
 Strategy: 15-minute opening range breakout, long only, flat every day.
 - 9:30-9:45 ET: record each approved symbol's opening range (high/low of the first 15 one-minute bars).
 - 9:45-10:30 ET: when a finished one-minute bar closes above the range high, buy with a bracket order:
-  stop at the range low, take profit at 1.5x that risk. Skip if the risk is over 4% of price.
+  stop at the range low. Skip if the risk is over 4% of price. Exit plan (Ryan, 2026-10-06): once up
+  1.5x the risk the stop locks at +1.5x, once up 2x it locks at +2x, take profit at 2.5x, and above 2x a
+  fade of 0.25x off the best cashes out (rules.json day: lock_steps, take_profit_r, fade_r).
 - Limits: 3 trades open at once (~$3,300 each), 4 trades a day, and no new trades after -$200 on the day.
 - 15:55 ET: close anything still open. Nothing is ever held overnight.
 Research gate: only symbols in today's dayplan.json with verdict "buy" (written by Archie's morning
@@ -102,6 +104,10 @@ def _settle(bot, st, sym, info, positions):
     if sym in positions:
         return
     exits = [l for l in (o.get("legs") or []) if l["status"] == "filled"]
+    if info.get("stop_leg") and info["stop_leg"] not in {l["id"] for l in exits}:
+        sl = bot.trade("GET", f"/v2/orders/{info['stop_leg']}")
+        if sl["status"] == "filled":
+            exits.append(sl)
     if info.get("flatten_id"):
         f = bot.trade("GET", f"/v2/orders/{info['flatten_id']}")
         if f["status"] == "filled":
@@ -111,15 +117,64 @@ def _settle(bot, st, sym, info, positions):
     out_qty = sum(float(l["filled_qty"]) for l in exits)
     out_px = sum(float(l["filled_qty"]) * float(l["filled_avg_price"]) for l in exits) / out_qty
     pnl = round((out_px - entry) * qty, 2)
-    how = "flatten" if info.get("flatten_id") and exits[-1]["id"] == info["flatten_id"] else \
-        ("target" if exits[0]["type"] == "limit" else "stop")
+    if info.get("flatten_id") and exits[-1]["id"] == info["flatten_id"]:
+        how = info.get("flatten_reason", "flatten")
+    elif exits[0]["type"] == "limit":
+        how = "target"
+    else:
+        how = "locked-profit stop" if out_px > entry else "stop"
     st["realized_today"] = round(st["realized_today"] + pnl, 2)
     st["realized_cum"] = round(st["realized_cum"] + pnl, 2)
     rec = {"date": st["date"], "symbol": sym, "qty": qty, "entry": round(entry, 2), "exit": round(out_px, 2),
-           "pnl": pnl, "exit_reason": how, "stop": info["stop"], "target": info["target"]}
+           "pnl": pnl, "exit_reason": how, "stop": info["stop"], "target": info["target"],
+           "best": info.get("best")}
     st["history"] = (st.get("history", []) + [rec])[-200:]
     _log(rec)
     st["open"].pop(sym)
+
+
+def _manage_runners(bot, log, st, c, pos, now):
+    """Ryan's exit plan: once a trade is up 1.5x its risk, lock the stop at +1.5x; once up 2x, lock +2x;
+    the take-profit sits at 2.5x. Above 2x, if it fades fade_r x risk off its best, the raised stop cashes out."""
+    live = {s: i for s, i in st["open"].items() if s in pos and i.get("entry") and not i.get("flatten_id")}
+    if not live:
+        return
+    px = {s: t["p"] for s, t in (bot.api("GET", bot.DATA_API, "/v2/stocks/trades/latest",
+                                         {"symbols": ",".join(live), "feed": "iex"}).get("trades") or {}).items()}
+    for sym, info in live.items():
+        if sym not in px:
+            continue
+        entry, r = info["entry"], info["entry"] - info["risk_stop"]
+        info["best"] = max(info.get("best", entry), px[sym])
+        want = info["risk_stop"]
+        for reach, stop_r in c["lock_steps"]:
+            if info["best"] >= entry + reach * r:
+                want = max(want, entry + stop_r * r)
+        if c.get("fade_r") and info["best"] >= entry + c["lock_steps"][-1][0] * r:
+            want = max(want, info["best"] - c["fade_r"] * r)
+        want = round(want, 2)
+        if want <= info["stop"] + 0.01:
+            continue
+        if px[sym] <= want + 0.01:  # at or under the lock level already: sell now to keep the profit
+            for o in bot.trade("GET", "/v2/orders", {"status": "open", "symbols": sym}):
+                try:
+                    bot.trade("DELETE", f"/v2/orders/{o['id']}")
+                except Exception:
+                    pass  # the other bracket leg cancels with it
+            f = bot.trade("POST", "/v2/orders", body={"symbol": sym, "qty": pos[sym]["qty"], "side": "sell", "type": "market",
+                          "time_in_force": "day", "client_order_id": f"archie_day-lock_{now.timestamp():.0f}_{sym}"})
+            info.update(flatten_id=f["id"], flatten_reason="locked profit")
+            log(f"DAY {sym} dropped to the lock level, selling at ~{px[sym]}")
+            continue
+        leg_id = info.get("stop_leg") or next(
+            (l["id"] for l in (bot.trade("GET", f"/v2/orders/{info['order_id']}", {"nested": "true"}).get("legs") or [])
+             if l["type"] == "stop" and l["status"] in ("new", "accepted", "held")), None)
+        if not leg_id:
+            continue
+        new = bot.trade("PATCH", f"/v2/orders/{leg_id}", body={"stop_price": str(want)})
+        info["stop_leg"] = new["id"]  # a replaced order gets a new id
+        log(f"DAY {sym} stop raised {info['stop']} -> {want} (best {info['best']})")
+        info["stop"] = want
 
 
 def tick(bot, log):
@@ -145,6 +200,12 @@ def tick(bot, log):
             _settle(bot, st, sym, info, pos)
         except Exception as e:
             log(f"DAY settle error {sym}: {e}")
+
+    if c.get("lock_steps") and m < c["flatten_min"]:
+        try:
+            _manage_runners(bot, log, st, c, pos, now)
+        except Exception as e:
+            log(f"DAY runner error: {e}")
 
     or_end, last_entry, flat = 570 + c["or_minutes"], c["last_entry_min"], c["flatten_min"]
     if m >= flat:  # close everything before the bell
@@ -188,13 +249,13 @@ def tick(bot, log):
                 if _red_flag_today(bot, sym, et.date()):
                     log(f"DAY skip {sym}: red-flag headline today")
                     continue
-                target = round(px + c["target_r"] * risk, 2)
-                o = bot.trade("POST", "/v2/orders", body={
-                    "symbol": sym, "qty": str(qty), "side": "buy", "type": "market", "time_in_force": "day",
-                    "order_class": "bracket", "take_profit": {"limit_price": str(target)},
-                    "stop_loss": {"stop_price": str(round(lo, 2))},
-                    "client_order_id": f"archie_day-entry_{now.timestamp():.0f}_{sym}"})
-                st["open"][sym] = {"order_id": o["id"], "qty": qty, "stop": round(lo, 2), "target": target,
+                target = round(px + c.get("take_profit_r", c["target_r"]) * risk, 2)
+                body = {"symbol": sym, "qty": str(qty), "side": "buy", "type": "market", "time_in_force": "day",
+                        "order_class": "bracket", "take_profit": {"limit_price": str(target)},
+                        "stop_loss": {"stop_price": str(round(lo, 2))},
+                        "client_order_id": f"archie_day-entry_{now.timestamp():.0f}_{sym}"}
+                o = bot.trade("POST", "/v2/orders", body=body)
+                st["open"][sym] = {"order_id": o["id"], "qty": qty, "stop": round(lo, 2), "risk_stop": round(lo, 2), "target": target,
                                    "t": now.timestamp()}
                 st["trades_today"] += 1
                 log(f"DAY BUY {qty} {sym} ~{px} (range {lo:.2f}-{hi:.2f}), stop {lo:.2f}, target {target}")

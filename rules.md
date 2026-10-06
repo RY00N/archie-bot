@@ -34,6 +34,11 @@ Budget: $10,000 of the $100k paper account (budget = Alpaca equity minus $90k). 
 
 ## Day trading book (separate $10k practice budget)
 - Setup: 15-minute opening range breakout, buying only. From 9:45 to 10:30 ET, when a one-minute bar closes above the first 15 minutes' high, buy. The stop goes at the opening-range low and the target at 1.5x the risk. The order is a bracket, so both live on Alpaca.
+- Exit plan (Ryan, 2026-10-06):
+  - Once the trade is up 1.5x its risk, the stop locks at +1.5x, so the first goal is banked.
+  - Once it's up 2x, the stop locks at +2x.
+  - The take profit is at 2.5x.
+  - Above 2x, a fade of 0.25x off the best price cashes out.
 - Everything is closed by 3:55 ET. Nothing is held overnight.
 - Limits:
   - 3 trades open at once, about $3,300 each.
@@ -47,3 +52,4 @@ Budget: $10,000 of the $100k paper account (budget = Alpaca equity minus $90k). 
 - v1 (2026-10-05): first version.
 - v2 (2026-10-05): research gate added at Ryan's request. First use: swapped SOXL (too much chip exposure on top of AMD and MU) for MSFT.
 - v3 (2026-10-06): day trading book added at Ryan's request, with its own $10k budget and P&L, kept separate from swing.
+- v4 (2026-10-06): day exits changed to Ryan's plan: lock +1.5x, then +2x, aim for 2.5x, cash out above 2x on a fade. Backtest $770 vs $818 for the old fixed 1.5x target, with the same worst drop. Basically even, so it was Ryan's call.
