@@ -64,5 +64,11 @@
   "confidence": 6,
   "date": "2026-10-06",
   "notes": "Semiconductor ETF overlaps AMD, MU and TQQQ; 30-yr yield at 2002 high is a headwind for richly valued chips. Too much one-sector exposure."
+ },
+ "XLK": {
+  "verdict": "avoid",
+  "confidence": 6,
+  "date": "2026-10-06",
+  "notes": "Tech sector ETF, no earnings risk, news positive (Nasdaq records, +0.7% today). Avoid only on overlap: swing book already holds AMD, MSFT, MU, PLTR, TQQQ, all tech; adding XLK would stack the same sector. Revisit if a non-tech slot opens."
  }
 }
