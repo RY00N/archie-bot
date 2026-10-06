@@ -33,7 +33,7 @@ Budget: $10,000 of the $100k paper account (budget = Alpaca equity minus $90k). 
 - Leveraged ETFs and a 5-stock portfolio can swing 30% from peak. That's the price of chasing max profit.
 
 ## Day trading book (separate $10k practice budget)
-- Setup: 15-minute opening range breakout, buying only. From 9:45 to 10:30 ET, when a one-minute bar closes above the first 15 minutes' high, buy. The stop goes at the opening-range low and the target at 1.5x the risk. The order is a bracket, so both live on Alpaca.
+- Setup: 15-minute opening range breakout, buying only. From 9:45 to 10:30 ET, when a one-minute bar closes above the first 15 minutes' high, buy. The stop goes at the opening-range low, in a bracket order, so both legs live on Alpaca.
 - Exit plan (Ryan, 2026-10-06):
   - Once the trade is up 1.5x its risk, the stop locks at +1.5x, so the first goal is banked.
   - Once it's up 2x, the stop locks at +2x.
