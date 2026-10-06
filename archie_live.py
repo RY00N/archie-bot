@@ -4,7 +4,7 @@
 - Every POLL_SECONDS during market hours: pull the latest trade price for every holding.
 - When a holding disappears (trailing stop hit) or every REBALANCE_MINUTES: run the same
   rotation as archie_bot.py, which only buys names Archie's research approved.
-- Every NEWS_SECONDS: read new headlines on every holding (news-log.jsonl); a red-flag headline
+- Every NEWS_SECONDS (every 5 min when the market is closed): read new headlines on every holding (news-log.jsonl); a red-flag headline
   (downgrade, guidance cut, probe, lawsuit, plunge...) tightens that stock's trailing stop to 4%.
 - Every RELOAD_MINUTES: `git pull` so the newest rules.json / research.json from Archie's
   study sessions take effect without a restart.
@@ -88,6 +88,13 @@ def main():
                 last_reload = now
             clock = bot.trade("GET", "/v2/clock")
             if not clock["is_open"]:
+                if now - last_news > 300:  # market closed: still read headlines every 5 minutes
+                    try:
+                        held_now = {p["symbol"] for p in bot.trade("GET", "/v2/positions")}
+                        news_since = check_news(held_now, news_since, flagged)
+                    except Exception:
+                        log("news error:\n" + traceback.format_exc())
+                    last_news = now
                 json.dump({"time": datetime.now(timezone.utc).isoformat()[:19], "market_open": False,
                            "next_open": clock["next_open"]}, open(os.path.join(HERE, "live-status.json"), "w"))
                 time.sleep(60)
