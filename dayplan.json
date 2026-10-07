@@ -3,15 +3,15 @@
  "symbols": {
   "SPY": {
    "verdict": "buy",
-   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Futures slightly lower on Iran/Hormuz headlines and higher yields (Reuters). Not an event day."
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Futures slightly lower on Iran/Hormuz headlines and higher yields (Reuters). Not an event day. 9:38: opened lower (SPY -0.4%) as the 30-year yield hit a 2002 high. Normal move, still allowed."
   },
   "QQQ": {
    "verdict": "buy",
-   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Futures slightly lower on Iran/Hormuz headlines and higher yields (Reuters). Not an event day."
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Futures slightly lower on Iran/Hormuz headlines and higher yields (Reuters). Not an event day. 9:38: opened lower (SPY -0.4%) as the 30-year yield hit a 2002 high. Normal move, still allowed."
   },
   "TQQQ": {
    "verdict": "buy",
-   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Futures slightly lower on Iran/Hormuz headlines and higher yields (Reuters). Not an event day. 3x leverage, so moves are bigger."
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Futures slightly lower on Iran/Hormuz headlines and higher yields (Reuters). Not an event day. 3x leverage, so moves are bigger. 9:38: opened lower (SPY -0.4%) as the 30-year yield hit a 2002 high. Normal move, still allowed."
   },
   "NVDA": {
    "verdict": "buy",
@@ -47,7 +47,7 @@
   },
   "MU": {
    "verdict": "avoid",
-   "notes": "Fresh bad news premarket: MU, SNDK, SK Hynix trading down on Toshiba storage fears (Benzinga). A gap-down open makes the breakout setup unreliable today."
+   "notes": "Fresh bad news premarket: MU, SNDK, SK Hynix trading down on Toshiba storage fears (Benzinga). A gap-down open makes the breakout setup unreliable today. 9:38 re-check: also a Taiwan union strike authorization (Reuters), down 3%."
   },
   "AVGO": {
    "verdict": "buy",
@@ -58,8 +58,8 @@
    "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window."
   },
   "COIN": {
-   "verdict": "buy",
-   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. BTIG reiterates Buy; crypto dipping before the Fed minutes."
+   "verdict": "avoid",
+   "notes": "9:38 re-check: gapped down 3% at the open on a crypto selloff with the 30-year Treasury yield at a 2002 high. A big gap on risk-off news makes the breakout unreliable."
   },
   "NFLX": {
    "verdict": "buy",
