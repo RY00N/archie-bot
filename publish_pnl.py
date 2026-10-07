@@ -10,7 +10,7 @@ Without it, publishing is skipped and trading is unaffected.
 """
 import csv, json, os, re, subprocess, threading, urllib.request
 import daytrader
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PUB_DIR = os.path.expanduser("~/pnl-pub")
@@ -86,6 +86,60 @@ def _swing_positions(bot, positions, skip):
             for p in positions if p["symbol"] not in skip]
 
 
+_chart_cache = {}
+
+
+def _bars(bot, sym, start, end):
+    """[[minute UTC, close], ...] from start-5m to end+5m (end None = now), at most ~120 points."""
+    t0 = datetime.fromisoformat(start.replace("Z", "+00:00")) - timedelta(minutes=5)
+    t1 = (datetime.fromisoformat(end.replace("Z", "+00:00")) + timedelta(minutes=6)) if end else datetime.now(timezone.utc)
+    d = bot.api("GET", bot.DATA_API, "/v2/stocks/bars", {"symbols": sym, "timeframe": "1Min", "feed": "iex", "limit": 10000,
+                "start": t0.strftime("%Y-%m-%dT%H:%M:%SZ"), "end": t1.strftime("%Y-%m-%dT%H:%M:%SZ")})
+    pts = [[b["t"][:16] + "Z", round(b["c"], 2)] for b in (d.get("bars") or {}).get(sym, [])]
+    step = max(1, -(-len(pts) // 120))
+    return pts[::step] + ([pts[-1]] if pts and (len(pts) - 1) % step else [])
+
+
+def _fill_times(bot, t):
+    """Older history records have no times: find the day's buy and sell fills for that symbol once."""
+    try:
+        os_ = [o for o in bot.trade("GET", "/v2/orders", {"status": "closed", "symbols": t["symbol"], "limit": 100,
+                                                            "after": t["date"] + "T00:00:00Z", "nested": "true"})]
+        fills = []
+        for o in os_:
+            fills += [o] + (o.get("legs") or [])
+        fills = [f for f in fills if f.get("filled_at") and f["filled_at"][:10] == t["date"]]
+        buys = sorted(f["filled_at"][:19] for f in fills if f["side"] == "buy")
+        sells = sorted(f["filled_at"][:19] for f in fills if f["side"] == "sell")
+        if buys and sells:
+            return buys[0] + "Z", sells[-1] + "Z"
+    except Exception:
+        pass
+    return None, None
+
+
+def _day_charts(bot, day):
+    """Price path for every day trade: open ones refresh each publish, closed ones are fetched once."""
+    for p in day["positions"]:
+        if p.get("entry_time"):
+            try:
+                p["chart"] = _bars(bot, p["symbol"], p["entry_time"], None)
+            except Exception:
+                pass
+    for t in day.get("trades", [])[-30:]:
+        k = f'{t["symbol"]}|{t["date"]}|{t["exit"]}'
+        if k not in _chart_cache:
+            if not t.get("entry_time"):
+                t["entry_time"], t["exit_time"] = _fill_times(bot, t)
+            try:
+                _chart_cache[k] = (t["entry_time"], t["exit_time"], _bars(bot, t["symbol"], t["entry_time"], t["exit_time"])) \
+                    if t.get("entry_time") and t.get("exit_time") else (None, None, [])
+            except Exception:
+                continue
+        t["entry_time"], t["exit_time"], t["chart"] = _chart_cache[k]
+    day["recent_trades"] = day.get("trades", [])[-10:]
+
+
 def _book(start, equity, day_pnl, positions):
     return {"budget_start": start, "equity": round(equity, 2), "day_pnl": round(day_pnl, 2),
             "day_pnl_pct": round(day_pnl / (equity - day_pnl) * 100, 2) if equity - day_pnl else 0.0,
@@ -98,6 +152,7 @@ def snapshot(bot, market_open):
     acct = bot.trade("GET", "/v2/account")
     positions = bot.trade("GET", "/v2/positions")
     day = daytrader.summary(positions)
+    _day_charts(bot, day)
     day_syms = {p["symbol"] for p in day["positions"]}
     swing_start, day_start = bot.RULES["budget_start"], bot.RULES["day"]["budget_start"]
     swing_eq = bot.swing_equity(acct, positions)

@@ -101,6 +101,7 @@ def _settle(bot, st, sym, info, positions):
         return
     entry, qty = float(o["filled_avg_price"]), float(o["filled_qty"])
     info["entry"] = entry
+    info.setdefault("entry_time", (o.get("filled_at") or "")[:19] + "Z")
     if sym in positions:
         return
     exits = [l for l in (o.get("legs") or []) if l["status"] == "filled"]
@@ -127,7 +128,8 @@ def _settle(bot, st, sym, info, positions):
     st["realized_cum"] = round(st["realized_cum"] + pnl, 2)
     rec = {"date": st["date"], "symbol": sym, "qty": qty, "entry": round(entry, 2), "exit": round(out_px, 2),
            "pnl": pnl, "exit_reason": how, "stop": info["stop"], "target": info["target"],
-           "best": info.get("best")}
+           "best": info.get("best"), "entry_time": info.get("entry_time"),
+           "exit_time": max((l.get("filled_at") or "")[:19] for l in exits) + "Z"}
     st["history"] = (st.get("history", []) + [rec])[-200:]
     _log(rec)
     st["open"].pop(sym)
@@ -282,6 +284,7 @@ def summary(positions):
             "positions": [{"symbol": p["symbol"], "qty": float(p["qty"]), "value": round(float(p["market_value"]), 2),
                            "entry": round(float(p["avg_entry_price"]), 2), "price": round(float(p["current_price"]), 2),
                            "stop": open_[p["symbol"]].get("stop"), "target": open_[p["symbol"]].get("target"),
+                           "entry_time": open_[p["symbol"]].get("entry_time"),
                            "pnl": round(float(p["unrealized_pl"]), 2), "pnl_pct": round(float(p["unrealized_plpc"]) * 100, 2),
                            "day_pnl": round(float(p["unrealized_intraday_pl"]), 2)} for p in positions if p["symbol"] in open_],
             "recent_trades": st.get("history", [])[-10:],
