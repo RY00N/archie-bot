@@ -163,6 +163,7 @@ def snapshot(bot, market_open):
                      [_pos(p) for p in positions])
     return {"book": "paper", "note": "Practice money. Never counts toward real totals.",
             "updated": datetime.now(timezone.utc).isoformat()[:19] + "Z", "market_open": market_open,
+            "swing_enabled": bot.RULES.get("swing_enabled", True),  # off = city hides the swing P&L
             **combined, "swing": swing, "day": day}
 
 
