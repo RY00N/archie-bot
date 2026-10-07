@@ -56,6 +56,9 @@ def _swing_log():
     return opened, trades[-200:]
 
 
+_opened_cache = {}
+
+
 def _swing_positions(bot, positions, skip):
     """Swing holdings with entry, current price, open date and the trailing stop protecting each."""
     stops = {}
@@ -67,6 +70,18 @@ def _swing_positions(bot, positions, skip):
     except Exception:
         pass
     opened, _ = _swing_log()
+    for p in positions:  # buys made before the server's log existed: ask Alpaca once, then cache
+        sym = p["symbol"]
+        if sym in skip or opened.get(sym):
+            continue
+        if sym not in _opened_cache:
+            try:
+                buys = [o for o in bot.trade("GET", "/v2/orders", {"status": "closed", "symbols": sym, "limit": 50, "direction": "desc"})
+                        if o["side"] == "buy" and o.get("filled_at")]
+                _opened_cache[sym] = buys[-1]["filled_at"][:16].replace("T", " ") if buys else ""
+            except Exception:
+                _opened_cache[sym] = ""
+        opened[sym] = _opened_cache[sym]
     return [{**_pos(p), "opened": opened.get(p["symbol"], ""), **stops.get(p["symbol"], {})}
             for p in positions if p["symbol"] not in skip]
 
