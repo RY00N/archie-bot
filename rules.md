@@ -53,3 +53,9 @@ Budget: $10,000 of the $100k paper account (budget = Alpaca equity minus $90k). 
 - v2 (2026-10-05): research gate added at Ryan's request. First use: swapped SOXL (too much chip exposure on top of AMD and MU) for MSFT.
 - v3 (2026-10-06): day trading book added at Ryan's request, with its own $10k budget and P&L, kept separate from swing.
 - v4 (2026-10-06): day exits changed to Ryan's plan: lock +1.5x, then +2x, aim for 2.5x, cash out above 2x on a fade. Backtest $770 vs $818 for the old fixed 1.5x target, with the same worst drop. Basically even, so it was Ryan's call.
+
+## 2026-10-07: day book risk x10 (Ryan's call)
+Ryan asked for 10x the day-trading risk. The first trade (AMZN, 12 shares, stop $2.31 below entry) risked about $28.
+Day trades now size by dollars at risk: $275 per trade (shares = 275 / (entry - range low)), capped at $25k per position
+(3 at once max = $75k, which the $100k paper account covers in cash, so no margin borrowing). Daily loss stop raised $200 -> $2,000.
+Exit plan, entries, research gate unchanged. Paper only.

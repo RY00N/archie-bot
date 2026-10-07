@@ -85,9 +85,9 @@
   "last_entry_min": 630,
   "flatten_min": 955,
   "max_concurrent": 3,
-  "notional": 3300,
+  "notional": 25000,
   "max_trades": 4,
-  "daily_loss": 200,
+  "daily_loss": 2000,
   "max_risk_pct": 4,
   "universe": [
    "SPY",
@@ -118,6 +118,7 @@
    ]
   ],
   "take_profit_r": 2.5,
-  "fade_r": 0.25
+  "fade_r": 0.25,
+  "risk_per_trade": 275
  }
 }

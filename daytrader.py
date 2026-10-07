@@ -244,7 +244,9 @@ def tick(bot, log):
                     continue
                 st["done"].append(sym)  # one shot per symbol per day
                 px, risk = b["c"], b["c"] - lo
-                qty = int(c["notional"] // px)
+                qty = int(c["notional"] // px)  # cap on position size
+                if c.get("risk_per_trade") and risk > 0:  # Ryan 2026-10-07: size by dollars at risk (10x the first trade)
+                    qty = min(qty, int(c["risk_per_trade"] // risk))
                 if risk <= 0 or risk / px * 100 > c["max_risk_pct"] or qty < 1:
                     log(f"DAY skip {sym}: range too wide or too pricey")
                     continue
