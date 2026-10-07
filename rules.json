@@ -87,7 +87,7 @@
   "max_concurrent": 3,
   "notional": 31000,
   "max_trades": 4,
-  "daily_loss": 2000,
+  "daily_loss": 600,
   "max_risk_pct": 4,
   "universe": [
    "SPY",
