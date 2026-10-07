@@ -56,6 +56,6 @@ Budget: $10,000 of the $100k paper account (budget = Alpaca equity minus $90k). 
 
 ## 2026-10-07: day book risk x10 (Ryan's call)
 Ryan asked for 10x the day-trading risk. The first trade (AMZN, 12 shares, stop $2.31 below entry) risked about $28.
-Day trades now size by dollars at risk: $275 per trade (shares = 275 / (entry - range low)), capped at $25k per position
-(3 at once max = $75k, which the $100k paper account covers in cash, so no margin borrowing). Daily loss stop raised $200 -> $2,000.
+Day trades now size by dollars at risk: $280 per trade (shares = 280 / (entry - range low)), capped at $31k per position and at the account's cash
+(no margin borrowing). Today's AMZN trade at this size = 119 shares = about +$410 instead of +$41. Daily loss stop raised $200 -> $2,000.
 Exit plan, entries, research gate unchanged. Paper only.

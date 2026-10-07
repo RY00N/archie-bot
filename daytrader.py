@@ -247,6 +247,8 @@ def tick(bot, log):
                 qty = int(c["notional"] // px)  # cap on position size
                 if c.get("risk_per_trade") and risk > 0:  # Ryan 2026-10-07: size by dollars at risk (10x the first trade)
                     qty = min(qty, int(c["risk_per_trade"] // risk))
+                    cash = float(bot.trade("GET", "/v2/account")["cash"])  # never borrow on margin
+                    qty = min(qty, int(max(cash, 0) // px))
                 if risk <= 0 or risk / px * 100 > c["max_risk_pct"] or qty < 1:
                     log(f"DAY skip {sym}: range too wide or too pricey")
                     continue
