@@ -1,0 +1,69 @@
+{
+ "date": "2026-10-07",
+ "symbols": {
+  "SPY": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Futures slightly lower on Iran/Hormuz headlines and higher yields (Reuters). Not an event day."
+  },
+  "QQQ": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Futures slightly lower on Iran/Hormuz headlines and higher yields (Reuters). Not an event day."
+  },
+  "TQQQ": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Futures slightly lower on Iran/Hormuz headlines and higher yields (Reuters). Not an event day. 3x leverage, so moves are bigger."
+  },
+  "NVDA": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. SpaceX seeking $40B to buy Nvidia chips (demand signal)."
+  },
+  "AMD": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Positive: Su says exploring memory and foundry work with Samsung; Citi target $800."
+  },
+  "TSLA": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. Germany pushing faster EU approval of FSD."
+  },
+  "AAPL": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window."
+  },
+  "META": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window."
+  },
+  "MSFT": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window."
+  },
+  "AMZN": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window."
+  },
+  "PLTR": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window."
+  },
+  "MU": {
+   "verdict": "avoid",
+   "notes": "Fresh bad news premarket: MU, SNDK, SK Hynix trading down on Toshiba storage fears (Benzinga). A gap-down open makes the breakout setup unreliable today."
+  },
+  "AVGO": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window."
+  },
+  "GOOGL": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window."
+  },
+  "COIN": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window. BTIG reiterates Buy; crypto dipping before the Fed minutes."
+  },
+  "NFLX": {
+   "verdict": "buy",
+   "notes": "Overnight check (Alpaca, Reuters, Finnhub, SEC): no earnings within 2 days, no new filings, no big pending event. FOMC minutes at 2pm ET come after the entry window."
+  }
+ }
+}
