@@ -59,3 +59,8 @@ Ryan asked for 10x the day-trading risk. The first trade (AMZN, 12 shares, stop 
 Day trades now size by dollars at risk: $280 per trade (shares = 280 / (entry - range low)), capped at $31k per position and at the account's cash
 (no margin borrowing). Today's AMZN trade at this size = 119 shares = about +$410 instead of +$41. Daily loss stop raised $200 -> $600 (Ryan's number).
 Exit plan, entries, research gate unchanged. Paper only.
+
+## 2026-10-07: day entries until 12:30 ET (Ryan: "at least 2 good entries a day, don't force it")
+Today only AMZN qualified by 10:30 (TQQQ was held by swing, NVDA had a red-flag headline); AVGO, NFLX, QQQ, SPY broke out later.
+Backtest at the new $280 risk sizing, 66 days: last entry 10:30 = +$2,579, max drawdown $1,943; 12:30 = +$3,132, drawdown $1,765,
+better in both halves. 2:00pm made a bit more but with a worse drawdown in the second half, so 12:30 it is. Setup, exits and research gate unchanged.
