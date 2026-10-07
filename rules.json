@@ -120,5 +120,6 @@
   "take_profit_r": 2.5,
   "fade_r": 0.25,
   "risk_per_trade": 280
- }
+ },
+ "swing_enabled": false
 }

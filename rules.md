@@ -64,3 +64,7 @@ Exit plan, entries, research gate unchanged. Paper only.
 Today only AMZN qualified by 10:30 (TQQQ was held by swing, NVDA had a red-flag headline); AVGO, NFLX, QQQ, SPY broke out later.
 Backtest at the new $280 risk sizing, 66 days: last entry 10:30 = +$2,579, max drawdown $1,943; 12:30 = +$3,132, drawdown $1,765,
 better in both halves. 2:00pm made a bit more but with a worse drawdown in the second half, so 12:30 it is. Setup, exits and research gate unchanged.
+
+## 2026-10-07: swing trading OFF (Ryan: "fade swing trading, focus on day trading only", "get rid of all positions")
+rules.json "swing_enabled": false. The server's next swing check cancels swing stops and market-sells every swing holding
+(AMD, MSFT, MU, PLTR, TQQQ), then does nothing more on swing. Day trading continues and can now trade any name.

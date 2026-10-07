@@ -8,7 +8,7 @@ Usage: python3 archie_bot.py candidates  # ranked names + research status (resea
 Settings live in rules.json next to this file so Archie can tune them weekly.
 Paper only: the base URL is hard coded and the account number must start with PA.
 """
-import csv, json, os, sys, urllib.request, urllib.parse, urllib.error
+import csv, json, os, sys, time, urllib.request, urllib.parse, urllib.error
 from datetime import datetime, timedelta, timezone
 import daytrader
 
@@ -164,6 +164,25 @@ def run(dry=False):
     budget = swing_equity(acct, all_positions)
     report = {"time": datetime.now(timezone.utc).isoformat()[:19], "market_open": clock["is_open"],
               "budget_equity": round(budget, 2), "new_fills": len(fills), "actions": []}
+
+    if not RULES.get("swing_enabled", True):  # Ryan 2026-10-07: swing stopped, day trading only. Close what's left.
+        for o in ([] if dry else open_orders):
+            trade("DELETE", f"/v2/orders/{o['id']}")
+            report["actions"].append(f"cancel {o['type']} {o['symbol']}")
+        if open_orders:
+            time.sleep(2)
+        if clock["is_open"]:
+            for sym, p in positions.items():
+                if dry:
+                    report["actions"].append(f"would sell {p['qty']} {sym} (swing off)")
+                    continue
+                trade("POST", "/v2/orders", body={"symbol": sym, "qty": p["qty"], "side": "sell", "type": "market",
+                                                  "time_in_force": "day", "client_order_id": f"archie_swing-off_{int(time.time())}_{sym}"})
+                report["actions"].append(f"sell {p['qty']} {sym} (swing off)")
+        state.setdefault("runs", []).append(report)
+        state["runs"] = state["runs"][-200:]
+        json.dump(state, open(STATE, "w"), indent=1)
+        return report
 
     closes = daily_closes(RULES["universe"])
     ranked = rank(closes)
