@@ -9,7 +9,7 @@
   "verdict": "buy",
   "confidence": 7,
   "date": "2026-10-06",
-  "notes": "Settled Netlist litigation (pays $30M/qtr through 2031, small vs MU size, removes legal overhang). Memory tightness narrative strong; reported 9/30 so no earnings risk. Slight pullback, trend intact."
+  "notes": "Settled Netlist litigation (pays $30M/qtr through 2031, small vs MU size, removes legal overhang). Memory tightness narrative strong; reported 9/30 so no earnings risk. Slight pullback, trend intact. | 2026-10-07: down ~3% on Toshiba storage fears and a Taiwan union strike authorization (Reuters). Analysts still 53 of 58 Buy; DA Davidson target $3000. Kept buy; the 8% trailing stop handles a deeper drop."
  },
  "PLTR": {
   "verdict": "buy",
@@ -70,5 +70,11 @@
   "confidence": 6,
   "date": "2026-10-06",
   "notes": "Tech sector ETF, no earnings risk, news positive (Nasdaq records, +0.7% today). Avoid only on overlap: swing book already holds AMD, MSFT, MU, PLTR, TQQQ, all tech; adding XLK would stack the same sector. Revisit if a non-tech slot opens."
+ },
+ "NVDA": {
+  "verdict": "avoid",
+  "confidence": 6,
+  "date": "2026-10-07",
+  "notes": "Fundamentals strong: 65 of 69 analysts Buy (Finnhub), SpaceX seeking $40B for Nvidia chips, no new SEC filings, earnings not until late Nov. Avoid only on overlap: the book already holds AMD, MU and TQQQ (heavy semis), so NVDA would stack the same chip bet. Same reasoning as XLK. Revisit if a chip name leaves."
  }
 }
