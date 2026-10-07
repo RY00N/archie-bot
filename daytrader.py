@@ -280,6 +280,9 @@ def summary(positions):
             "trades_today": st.get("trades_today", 0), "realized_today": st.get("realized_today", 0.0),
             "status": st.get("status", "waiting"),
             "positions": [{"symbol": p["symbol"], "qty": float(p["qty"]), "value": round(float(p["market_value"]), 2),
+                           "entry": round(float(p["avg_entry_price"]), 2), "price": round(float(p["current_price"]), 2),
+                           "stop": open_[p["symbol"]].get("stop"), "target": open_[p["symbol"]].get("target"),
                            "pnl": round(float(p["unrealized_pl"]), 2), "pnl_pct": round(float(p["unrealized_plpc"]) * 100, 2),
                            "day_pnl": round(float(p["unrealized_intraday_pl"]), 2)} for p in positions if p["symbol"] in open_],
-            "recent_trades": st.get("history", [])[-10:]}
+            "recent_trades": st.get("history", [])[-10:],
+            "trades": st.get("history", [])}
