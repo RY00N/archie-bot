@@ -74,7 +74,9 @@ def tick(log):
             b = bars(sym)
         except Exception as e:
             log(f"FUT {sym} data error: {e}")
+            st["last_error"] = f"{datetime.now(timezone.utc).isoformat()[:16]} {sym}: {e}"[:200]
             continue
+        st["last_data"] = datetime.now(timezone.utc).isoformat()[:16] + "Z"
         rth = [x for x in b if 570 <= x[1] < 960 and datetime.fromisoformat(x[0][:-1]).replace(tzinfo=timezone.utc).astimezone(ET).date().isoformat() == today]
         if not rth:
             continue
@@ -149,4 +151,5 @@ def summary():
                            "pnl": round(tr["side"] * (tr["price"] - tr["entry"]) * SPEC[s]["pt"] * tr["qty"], 2),
                            "chart": tr.get("chart", [])}
                           for s, tr in st.get("open", {}).items()],
-            "trades": st.get("history", []), "status": "trading" if st.get("open") else "watching"}
+            "trades": st.get("history", []), "status": "trading" if st.get("open") else "watching",
+            "last_data": st.get("last_data"), "last_error": st.get("last_error"), "opening_range": st.get("or", {})}
