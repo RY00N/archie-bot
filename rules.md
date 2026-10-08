@@ -72,3 +72,10 @@ rules.json "swing_enabled": false. The server's next swing check cancels swing s
 ## 2026-10-08: ALL Alpaca trading OFF (Ryan: "cancel archie's alpaca trading, we're moving to futures")
 rules.json day.enabled = false (swing was already off). The server stops opening day trades; code is kept. Archie now studies
 Micro Nasdaq (MNQ) and Micro S&P (MES) futures charts instead.
+
+## 2026-10-08: paper FUTURES book (Ryan: "paper trading for now")
+futures_sim.py on the server simulates Micro NQ (MNQ, $2/pt) and Micro ES (MES, $5/pt), 1 contract each, on real CME 1-minute
+prices (free Yahoo feed, ~10 min late). Setup v1: 15-min opening range breakout, long or short, stop at the other side,
+target 1.5R, entries 9:45-11:30 ET, flat 15:55, $1.50 fees per round trip. Unproven (49-day test: MNQ +$262, MES -$806);
+it's a paper baseline the nightly study will replace when something better passes. Settings: rules.json "futures".
+Moves to an Interactive Brokers paper account once Ryan opens one.

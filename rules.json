@@ -122,5 +122,15 @@
   "risk_per_trade": 280,
   "enabled": false
  },
- "swing_enabled": false
+ "swing_enabled": false,
+ "futures": {
+  "enabled": true,
+  "budget_start": 10000,
+  "contracts": 1,
+  "or_minutes": 15,
+  "target_r": 1.5,
+  "last_entry_min": 690,
+  "flatten_min": 955,
+  "fees": 1.5
+ }
 }

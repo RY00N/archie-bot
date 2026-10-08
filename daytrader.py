@@ -196,6 +196,11 @@ def tick(bot, log):
     if st["date"] != today:
         st.update({"date": today, "realized_today": 0.0, "trades_today": 0, "or": {}, "done": [],
                    "open": st.get("open", {}), "status": "waiting"})
+    try:  # paper futures book (MNQ/MES) rides on this loop; it throttles itself to once a minute
+        import importlib, futures_sim
+        importlib.reload(futures_sim).tick(log)
+    except Exception as e:
+        log(f"futures sim error: {e}")
     if not c.get("enabled", True) and not st["open"]:  # Ryan 2026-10-08: Alpaca trading off, moving to futures
         if st.get("status") != "off":
             st["status"] = "off"
