@@ -5,7 +5,7 @@ No broker yet (Ryan 2026-10-08: "paper trading for now"), so fills are simulated
 each new bar's high/low, $1.50 round-trip fees per contract. Runs on the server from daytrader.tick.
 
 Setup v2 (2026-10-08, Ryan: only trade when it's volatile enough to hit the target soon, never force it):
-5-min opening range (9:30-9:35) breakout on a 5-min close, long or short, fixed point stop (MES 12, MNQ 60),
+opening range breakout on a 5-min close (MES: 9:30-9:35 range; MNQ: 9:30-9:45, added 10/08 night), long or short, fixed point stop (MES 12, MNQ 60),
 target 2x risk, out after 90 min if neither is hit, entries to 11:30 ET, flat by 15:55 ET. Only on "active" days:
 yesterday's regular-session range must be at least MES 50 / MNQ 400 pts, otherwise skip the day.
 Settings live in rules.json "futures".
@@ -133,8 +133,9 @@ def tick(log):
             continue
         if not c["enabled"] or sym in st["done"]:
             continue
-        orb = [x for x in rth if x[1] < 570 + c["or_minutes"]]
-        if len(orb) < c["or_minutes"] * 0.6 or m < 570 + c["or_minutes"]:
+        orm = c["or_minutes"][sym] if isinstance(c["or_minutes"], dict) else c["or_minutes"]  # MNQ waits 15 min, MES 5
+        orb = [x for x in rth if x[1] < 570 + orm]
+        if len(orb) < orm * 0.6 or m < 570 + orm:
             continue
         hi, lo = max(x[3] for x in orb), min(x[4] for x in orb)
         st["or"][sym] = [hi, lo]
@@ -150,7 +151,7 @@ def tick(log):
                 st["done"].append(sym)
                 log(f"FUT {sym} skip today: quiet market (yesterday's range {st['prev_range'][sym]} < {need} pts)")
                 continue
-        for t, mm, o, h, l, cl in [x for x in rth if x[1] >= 570 + c["or_minutes"] and (x[1] + 1) % 5 == 0]:  # 5-min closes
+        for t, mm, o, h, l, cl in [x for x in rth if x[1] >= 570 + orm and (x[1] + 1) % 5 == 0]:  # 5-min closes
             if mm > c["last_entry_min"]:
                 st["done"].append(sym)
                 break

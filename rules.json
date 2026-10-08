@@ -127,7 +127,10 @@
     "enabled": true,
     "budget_start": 10000,
     "contracts": 1,
-    "or_minutes": 5,
+    "or_minutes": {
+      "MNQ": 15,
+      "MES": 5
+    },
     "target_r": 2.0,
     "last_entry_min": 690,
     "flatten_min": 955,
