@@ -79,3 +79,4 @@ prices (free Yahoo feed, ~10 min late). Setup v1: 15-min opening range breakout,
 target 1.5R, entries 9:45-11:30 ET, flat 15:55, $1.50 fees per round trip. Unproven (49-day test: MNQ +$262, MES -$806);
 it's a paper baseline the nightly study will replace when something better passes. Settings: rules.json "futures".
 Moves to an Interactive Brokers paper account once Ryan opens one.
+- 2026-10-08 (Ryan: only trade when it's volatile enough to hit the target soon, never force it): paper futures setup v2. 5-min opening range (9:30-9:35) break on a 5-min close, fixed stop MES 12 / MNQ 60 pts, 2R target, out after 90 min if neither hits, entries to 11:30. Trade only on active days: yesterday's regular-session range >= MES 50 / MNQ 400 pts, else skip. Backtest 48 days: MES 19 trades, 68% wins, +$838, both halves positive, drawdown $126 (v1 15-min ORB: -$898). MNQ unproven (only ~10 active days; +$582 but second half -$128).

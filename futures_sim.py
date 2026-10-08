@@ -4,8 +4,10 @@ No broker yet (Ryan 2026-10-08: "paper trading for now"), so fills are simulated
 (Yahoo, continuous front month): entry at the signal bar's close plus 1 tick, stop and target checked on
 each new bar's high/low, $1.50 round-trip fees per contract. Runs on the server from daytrader.tick.
 
-Setup v1 (the best of the first study, still unproven): 15-min opening range breakout, long or short,
-stop at the other side of the range, target 1.5x risk, entries 9:45-11:30 ET, flat by 15:55 ET.
+Setup v2 (2026-10-08, Ryan: only trade when it's volatile enough to hit the target soon, never force it):
+5-min opening range (9:30-9:35) breakout on a 5-min close, long or short, fixed point stop (MES 12, MNQ 60),
+target 2x risk, out after 90 min if neither is hit, entries to 11:30 ET, flat by 15:55 ET. Only on "active" days:
+yesterday's regular-session range must be at least MES 50 / MNQ 400 pts, otherwise skip the day.
 Settings live in rules.json "futures".
 """
 import json, os, time, urllib.request
@@ -17,7 +19,8 @@ STATE = os.path.join(HERE, "futures-state.json")
 LOG = os.path.join(HERE, "futures-log.jsonl")
 ET = ZoneInfo("America/New_York")
 SPEC = {"MNQ": {"y": "MNQ=F", "pt": 2.0, "tick": 0.25}, "MES": {"y": "MES=F", "pt": 5.0, "tick": 0.25}}
-DEFAULTS = {"enabled": True, "budget_start": 10000, "contracts": 1, "or_minutes": 15, "target_r": 1.5,
+DEFAULTS = {"enabled": True, "budget_start": 10000, "contracts": 1, "or_minutes": 5, "target_r": 2.0,
+            "stop_pts": {"MNQ": 60, "MES": 12}, "min_prev_range": {"MNQ": 400, "MES": 50}, "time_stop_min": 90,
             "last_entry_min": 690, "flatten_min": 955, "fees": 1.5}
 _last = 0
 
@@ -50,6 +53,20 @@ def bars(sym):
     return out
 
 
+def prev_range(sym, today):
+    """Yesterday's regular-session high minus low (points), from 5-min bars."""
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{SPEC[sym]['y']}?interval=5m&range=5d"
+    d = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read())
+    r = d["chart"]["result"][0]; q = r["indicators"]["quote"][0]; days = {}
+    for i, t in enumerate(r["timestamp"]):
+        e = datetime.fromtimestamp(t, ET)
+        if q["high"][i] is None or not 570 <= e.hour * 60 + e.minute < 960 or e.date().isoformat() >= today:
+            continue
+        days.setdefault(e.date().isoformat(), []).append((q["high"][i], q["low"][i]))
+    last = max(days)
+    return round(max(h for h, l in days[last]) - min(l for h, l in days[last]), 2)
+
+
 def _minus5(t):
     return (datetime.fromisoformat(t[:-1]) - timedelta(minutes=5)).isoformat()[:16] + "Z"
 
@@ -68,7 +85,8 @@ def tick(log):
     st = load_state()
     now = datetime.now(ET); today, m = now.date().isoformat(), now.hour * 60 + now.minute
     if st["date"] != today:
-        st.update({"date": today, "done": [], "realized_today": 0.0, "or": {}})
+        st.update({"date": today, "done": [], "realized_today": 0.0, "or": {}, "prev_range": {}})
+    st.setdefault("prev_range", {})
     for sym, sp in SPEC.items():
         try:
             b = bars(sym)
@@ -96,6 +114,8 @@ def tick(log):
                     out, how = tr["target"], "target"
                 elif mm >= c["flatten_min"]:
                     out, how = cl, "end of day"
+                elif c.get("time_stop_min") and mm - tr.get("entry_min", mm) >= c["time_stop_min"]:
+                    out, how = cl, "time stop"  # target not reached soon enough: not worth holding
                 if out is not None:
                     pnl = round(tr["side"] * (out - tr["entry"]) * sp["pt"] * tr["qty"] - c["fees"] * tr["qty"], 2)
                     rec = {"date": today, "symbol": sym, "side": "long" if tr["side"] == 1 else "short", "qty": tr["qty"],
@@ -118,7 +138,19 @@ def tick(log):
             continue
         hi, lo = max(x[3] for x in orb), min(x[4] for x in orb)
         st["or"][sym] = [hi, lo]
-        for t, mm, o, h, l, cl in [x for x in rth if x[1] >= 570 + c["or_minutes"]]:
+        need = c.get("min_prev_range", {}).get(sym)
+        if need:
+            if sym not in st["prev_range"]:
+                try:
+                    st["prev_range"][sym] = prev_range(sym, today)
+                except Exception as e:
+                    log(f"FUT {sym} prev range error: {e}")
+                    continue
+            if st["prev_range"][sym] < need:
+                st["done"].append(sym)
+                log(f"FUT {sym} skip today: quiet market (yesterday's range {st['prev_range'][sym]} < {need} pts)")
+                continue
+        for t, mm, o, h, l, cl in [x for x in rth if x[1] >= 570 + c["or_minutes"] and (x[1] + 1) % 5 == 0]:  # 5-min closes
             if mm > c["last_entry_min"]:
                 st["done"].append(sym)
                 break
@@ -128,9 +160,12 @@ def tick(log):
             st["done"].append(sym)
             if mm < m - 20:
                 break  # breakout happened long before the bot was watching (free data runs ~10 min late): no chase
-            e = cl + side * sp["tick"]; stop = lo if side == 1 else hi; r = abs(e - stop)
+            e = cl + side * sp["tick"]
+            pts = c.get("stop_pts", {}).get(sym)
+            stop = e - side * pts if pts else (lo if side == 1 else hi); r = abs(e - stop)
             st["open"][sym] = {"side": side, "qty": c["contracts"], "entry": round(e, 2), "stop": stop, "stop0": stop,
-                               "target": round(e + side * c["target_r"] * r, 2), "entry_time": t, "seen": t, "price": cl}
+                               "target": round(e + side * c["target_r"] * r, 2), "entry_time": t, "entry_min": mm,
+                               "seen": t, "price": cl}
             log(f"FUT ENTRY {'long' if side == 1 else 'short'} {c['contracts']} {sym} @ {e} stop {stop} target {st['open'][sym]['target']}")
             break
     json.dump(st, open(STATE, "w"), indent=1)
@@ -145,11 +180,12 @@ def summary():
     day = (st.get("realized_today", 0.0) if st.get("date") == today else 0.0) + unreal
     return {"budget_start": c["budget_start"], "equity": round(eq, 2), "day_pnl": round(day, 2),
             "total_pnl": round(eq - c["budget_start"], 2), "total_pnl_pct": round((eq / c["budget_start"] - 1) * 100, 2),
-            "note": "Simulated paper futures on real CME prices (no broker yet). 1 contract each of MNQ ($2/pt) and MES ($5/pt).",
+            "note": "Simulated paper futures on real CME prices (no broker yet). 1 contract each of MNQ ($2/pt) and MES ($5/pt). Setup v2: 5-min opening range break, active days only.",
             "positions": [{"symbol": s, "side": "long" if tr["side"] == 1 else "short", "qty": tr["qty"], "entry": tr["entry"],
                            "price": tr["price"], "stop": tr["stop"], "target": tr["target"], "entry_time": tr["entry_time"],
                            "pnl": round(tr["side"] * (tr["price"] - tr["entry"]) * SPEC[s]["pt"] * tr["qty"], 2),
                            "chart": tr.get("chart", [])}
                           for s, tr in st.get("open", {}).items()],
             "trades": st.get("history", []), "status": "trading" if st.get("open") else "watching",
-            "last_data": st.get("last_data"), "last_error": st.get("last_error"), "opening_range": st.get("or", {})}
+            "last_data": st.get("last_data"), "last_error": st.get("last_error"), "opening_range": st.get("or", {}),
+            "prev_range": st.get("prev_range", {}) if st.get("date") == today else {}}
