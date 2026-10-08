@@ -196,6 +196,11 @@ def tick(bot, log):
     if st["date"] != today:
         st.update({"date": today, "realized_today": 0.0, "trades_today": 0, "or": {}, "done": [],
                    "open": st.get("open", {}), "status": "waiting"})
+    if not c.get("enabled", True) and not st["open"]:  # Ryan 2026-10-08: Alpaca trading off, moving to futures
+        if st.get("status") != "off":
+            st["status"] = "off"
+            save_state(st)
+        return
     pos = {p["symbol"]: p for p in positions}
     for sym, info in list(st["open"].items()):
         try:

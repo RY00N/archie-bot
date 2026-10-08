@@ -68,3 +68,7 @@ better in both halves. 2:00pm made a bit more but with a worse drawdown in the s
 ## 2026-10-07: swing trading OFF (Ryan: "fade swing trading, focus on day trading only", "get rid of all positions")
 rules.json "swing_enabled": false. The server's next swing check cancels swing stops and market-sells every swing holding
 (AMD, MSFT, MU, PLTR, TQQQ), then does nothing more on swing. Day trading continues and can now trade any name.
+
+## 2026-10-08: ALL Alpaca trading OFF (Ryan: "cancel archie's alpaca trading, we're moving to futures")
+rules.json day.enabled = false (swing was already off). The server stops opening day trades; code is kept. Archie now studies
+Micro Nasdaq (MNQ) and Micro S&P (MES) futures charts instead.

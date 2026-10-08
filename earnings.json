@@ -1,8 +1,81 @@
 {
- "updated": "2026-10-07T13:40:10+00:00",
+ "updated": "2026-10-07T23:08:34+00:00",
  "window": [
   "2026-10-07",
-  "2026-10-10"
+  "2026-10-28"
  ],
- "symbols": {}
+ "symbols": {
+  "BA": {
+   "date": "2026-10-27",
+   "hour": "bmo",
+   "eps_est": -0.1625,
+   "trading_days": 14
+  },
+  "GE": {
+   "date": "2026-10-19",
+   "hour": "bmo",
+   "eps_est": 2.0444,
+   "trading_days": 8
+  },
+  "GOOGL": {
+   "date": "2026-10-27",
+   "hour": "amc",
+   "eps_est": 3.1255,
+   "trading_days": 14
+  },
+  "GS": {
+   "date": "2026-10-13",
+   "hour": "bmo",
+   "eps_est": 15.0539,
+   "trading_days": 4
+  },
+  "JPM": {
+   "date": "2026-10-13",
+   "hour": "bmo",
+   "eps_est": 5.9185,
+   "trading_days": 4
+  },
+  "MA": {
+   "date": "2026-10-22",
+   "hour": "bmo",
+   "eps_est": 5.3041,
+   "trading_days": 11
+  },
+  "META": {
+   "date": "2026-10-28",
+   "hour": "amc",
+   "eps_est": 6.6125,
+   "trading_days": 15
+  },
+  "MSFT": {
+   "date": "2026-10-27",
+   "hour": "",
+   "eps_est": 4.8231,
+   "trading_days": 14
+  },
+  "NFLX": {
+   "date": "2026-10-20",
+   "hour": "amc",
+   "eps_est": 0.8385,
+   "trading_days": 9
+  },
+  "TSLA": {
+   "date": "2026-10-20",
+   "hour": "amc",
+   "eps_est": 0.4343,
+   "trading_days": 9
+  },
+  "UNH": {
+   "date": "2026-10-13",
+   "hour": "bmo",
+   "eps_est": 4.1893,
+   "trading_days": 4
+  },
+  "XOM": {
+   "date": "2026-10-23",
+   "hour": "",
+   "eps_est": 3.707,
+   "trading_days": 12
+  }
+ }
 }
