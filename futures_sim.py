@@ -17,6 +17,7 @@ from zoneinfo import ZoneInfo
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "futures-state.json")
 LOG = os.path.join(HERE, "futures-log.jsonl")
+NEWS = os.path.join(HERE, "newsplan.json")  # written each morning by Archie: {"date", "skip": {SYM: why}, "blocks": [[from_min, to_min, why]]}
 ET = ZoneInfo("America/New_York")
 SPEC = {"MNQ": {"y": "MNQ=F", "pt": 2.0, "tick": 0.25}, "MES": {"y": "MES=F", "pt": 5.0, "tick": 0.25}}
 DEFAULTS = {"enabled": True, "budget_start": 10000, "contracts": 1, "or_minutes": 5, "target_r": 2.0,
@@ -87,6 +88,11 @@ def tick(log):
     if st["date"] != today:
         st.update({"date": today, "done": [], "realized_today": 0.0, "or": {}, "prev_range": {}})
     st.setdefault("prev_range", {})
+    try:
+        news = json.load(open(NEWS))
+        news = news if news.get("date") == today else {}
+    except Exception:
+        news = {}
     for sym, sp in SPEC.items():
         try:
             b = bars(sym)
@@ -133,6 +139,10 @@ def tick(log):
             continue
         if not c["enabled"] or sym in st["done"]:
             continue
+        if sym in news.get("skip", {}):  # news check: big unscheduled news / event risk, sit out
+            st["done"].append(sym)
+            log(f"FUT {sym} skip today: news ({news['skip'][sym]})")
+            continue
         orm = c["or_minutes"][sym] if isinstance(c["or_minutes"], dict) else c["or_minutes"]  # MNQ waits 15 min, MES 5
         orb = [x for x in rth if x[1] < 570 + orm]
         if len(orb) < orm * 0.6 or m < 570 + orm:
@@ -158,6 +168,10 @@ def tick(log):
             side = 1 if cl > hi else -1 if cl < lo else 0
             if not side:
                 continue
+            blk = [w for w in news.get("blocks", []) if w[0] <= mm <= w[1]]
+            if blk:  # scheduled release right now: no entry on this bar (next 5-min close can still qualify)
+                log(f"FUT {sym} break at {mm} skipped: news window ({blk[0][2] if len(blk[0]) > 2 else ''})")
+                continue
             st["done"].append(sym)
             if mm < m - 20:
                 break  # breakout happened long before the bot was watching (free data runs ~10 min late): no chase
@@ -181,7 +195,7 @@ def summary():
     day = (st.get("realized_today", 0.0) if st.get("date") == today else 0.0) + unreal
     return {"budget_start": c["budget_start"], "equity": round(eq, 2), "day_pnl": round(day, 2),
             "total_pnl": round(eq - c["budget_start"], 2), "total_pnl_pct": round((eq / c["budget_start"] - 1) * 100, 2),
-            "note": "Simulated paper futures on real CME prices (no broker yet). 1 contract each of MNQ ($2/pt) and MES ($5/pt). Setup v2: 5-min opening range break, active days only.",
+            "note": "Simulated paper futures on real CME prices (no broker yet). 1 contract each of MNQ ($2/pt) and MES ($5/pt). Setup v2.1: opening range break (MES 5 min, MNQ 15 min), active days only, news-checked.",
             "positions": [{"symbol": s, "side": "long" if tr["side"] == 1 else "short", "qty": tr["qty"], "entry": tr["entry"],
                            "price": tr["price"], "stop": tr["stop"], "target": tr["target"], "entry_time": tr["entry_time"],
                            "pnl": round(tr["side"] * (tr["price"] - tr["entry"]) * SPEC[s]["pt"] * tr["qty"], 2),
