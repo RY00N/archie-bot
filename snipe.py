@@ -20,7 +20,7 @@ R = {
     "cost_side": 0.04,              # 1% fee + 3% slippage/priority each way
     "max_subs": 120,
 }
-LOOP_NAME = "snipe-1"
+LOOP_NAME = "snipe-2"
 
 
 def _now():
@@ -268,6 +268,8 @@ def _run():
                 elif "message" in m and "only available" in m["message"]:
                     s.st["last_error"] = f"{_now()} {m['message'][:120]}"
                 if time.time() - last_save > 10:
+                    if api_key() != key:  # key added or changed: reconnect with it
+                        raise ConnectionError("API key changed, reconnecting")
                     s.timers(ws)
                     save(s.st)
                     last_save = time.time()
