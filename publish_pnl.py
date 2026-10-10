@@ -163,6 +163,13 @@ def _meme():
         return {"status": f"error: {e}"}
 
 
+def _coinlab():
+    try:
+        return json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "coinlab.json")))
+    except Exception as e:
+        return {"status": f"error: {e}"}
+
+
 def snapshot(bot, market_open):
     """Top level = swing + day combined; "swing" and "day" hold each book on its own."""
     acct = bot.trade("GET", "/v2/account")
@@ -180,7 +187,7 @@ def snapshot(bot, market_open):
     return {"book": "paper", "note": "Practice money. Never counts toward real totals.",
             "updated": datetime.now(timezone.utc).isoformat()[:19] + "Z", "market_open": market_open,
             "swing_enabled": bot.RULES.get("swing_enabled", True),  # off = city hides the swing P&L
-            **combined, "swing": swing, "day": day, "futures": _futures(), "meme": _meme()}
+            **combined, "swing": swing, "day": day, "futures": _futures(), "meme": _meme(), "coinlab": _coinlab()}
 
 
 def _git(*args):
