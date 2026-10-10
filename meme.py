@@ -55,7 +55,7 @@ def summary():
     top = rows[0] if rows else None
     say = f"Watching {len(rows)} memes. Biggest mover: {top['sym']} {top['chg24h']:+.1f}%" if top else "Warming up"
     return {"updated": datetime.now(timezone.utc).isoformat()[:19] + "Z", "mode": "WATCH",
-            "note": "Practice money only. Watch mode: no trades yet.", "start": st["start"], "equity": st["equity"], "total_pnl": round(st["equity"] - st["start"], 2),
+            "note": "Practice money only. Watch mode: no trades yet.", "start": st["start"], "budget_start": st["start"], "equity": st["equity"], "total_pnl": round(st["equity"] - st["start"], 2),
             "positions": st["positions"], "trades": st["trades"], "movers": rows, "say": say, "last_error": err}
 
 
