@@ -32,8 +32,9 @@ def api_key():
     if not k:  # the server loads its env at start; read the file so a key added later works without a restart
         try:
             for line in open("/etc/archie.env"):
-                if line.startswith("PUMPPORTAL_API_KEY="):
-                    k = line.split("=", 1)[1].strip().strip('"')
+                name, _, val = line.strip().removeprefix("export ").partition("=")
+                if name.strip().upper() == "PUMPPORTAL_API_KEY" and val.strip():
+                    k = val.strip().strip('"').strip("'")
         except Exception:
             pass
     return k
