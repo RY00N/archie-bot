@@ -1,6 +1,6 @@
 """Meme desk: memecoin trenching on PRACTICE money (Ryan 2026-10-10: "memecoin trading, like you're going to be
 trenching"). Finds fresh Solana launches on pump.fun, confirms buying pressure on DexScreener, and paper-buys small
-practice positions with a hard stop, a take-profit and a time stop. No wallet, no keys, no real orders: it only
+practice positions: losers cut fast, half sold at 2x, the rest rides as a moonbag (Ryan: find the next 50-100x). No wallet, no keys, no real orders: it only
 reads public price data and writes meme_state.json. A background thread scans every 30 seconds and re-prices open bags every 8 seconds, 24/7."""
 import json, os, sys, threading, time, urllib.request
 from datetime import datetime, timezone
@@ -15,7 +15,9 @@ R = {  # trench rules v0 (practice money, tune from results)
     "age_min": 3, "age_max": 60,            # minutes since launch
     "mc_min": 15000, "mc_max": 80000,       # USD market cap at entry
     "m5_vol_min": 3000, "buy_ratio": 1.3,   # last 5 min: volume and buys vs sells
-    "tp": 1.00, "sl": -0.30, "max_hold_min": 20,
+    "tp": 1.00, "sl": -0.30, "max_hold_min": 10, "stale_gain": 0.20,  # losers: -30% or 10 min without +20%
+    "trail": 0.40,                          # moonbag after half sold at 2x: sell if 40% below its peak
+    "watch_hours": 6, "watch_every_s": 120,  # runner study: how high did every coin we saw go?
     "cost_side": 0.04,                      # 1% fee + 3% slippage each way
     "every_s": 30, "exit_every_s": 8,
 }
@@ -73,23 +75,66 @@ def _close(st, pos, price, why):
     _log("sell", t)
 
 
+def _sell_half(st, pos, price):
+    half = pos["usd"] / 2
+    net = half * price / pos["entry"] * (1 - R["cost_side"])
+    st["cash"] += net
+    t = {**pos, "usd": half, "exit": price, "exit_at": _now(), "why": "half at 2x", "pnl": round(net - half, 2)}
+    st["trades"].append(t)
+    pos["usd"] -= half
+    pos["qty"] /= 2
+    pos["half_sold"] = True
+    _log("sell_half", t)
+
+
 def _exits(st, pairs, now_ms):
     for pos in list(st["positions"]):
         p = pairs.get(pos["mint"])
         price = float(p["priceUsd"]) if p and p.get("priceUsd") else None
         held_min = (now_ms - pos["at_ms"]) / 60000
         if price is None:
-            if held_min > R["max_hold_min"] + 10:
+            if not pos.get("half_sold") and held_min > R["max_hold_min"] + 20:
                 _close(st, pos, pos["last"] * 0.1, "no price (likely rug)")
             continue
         pos["last"] = price
+        pos["peak"] = max(pos.get("peak", price), price)
         ch = price / pos["entry"] - 1
-        if ch >= R["tp"]:
-            _close(st, pos, price, "take profit")
+        if pos.get("half_sold"):  # moonbag: ride it, trail 40% under the peak
+            if price <= pos["peak"] * (1 - R["trail"]):
+                _close(st, pos, price, f"moonbag trail (peak {pos['peak'] / pos['entry']:.1f}x)")
+        elif ch >= R["tp"]:
+            _sell_half(st, pos, price)
         elif ch <= R["sl"]:
             _close(st, pos, price, "stop")
-        elif held_min >= R["max_hold_min"]:
-            _close(st, pos, price, "time")
+        elif held_min >= R["max_hold_min"] and ch < R["stale_gain"]:
+            _close(st, pos, price, "no move")
+
+
+def _watch(st, coins, now_ms):
+    """Runner study: remember every fresh coin we saw and track its peak market cap for a few hours."""
+    w = st.setdefault("watch", {})
+    for c in coins:
+        if c["mint"] not in w:
+            mc = c.get("usd_market_cap") or 0
+            w[c["mint"]] = {"sym": c["symbol"][:12], "first_mc": mc, "peak_mc": mc, "first_ms": now_ms,
+                            "age_min": round((now_ms - c["created_timestamp"]) / 60000, 1),
+                            "socials": bool(c.get("twitter") or c.get("website") or c.get("telegram")),
+                            "replies": c.get("reply_count", 0)}
+    if now_ms - st.get("watch_ms", 0) < R["watch_every_s"] * 1000:
+        return
+    st["watch_ms"] = now_ms
+    live = [m for m, v in w.items() if now_ms - v["first_ms"] < R["watch_hours"] * 3600000]
+    live = sorted(live, key=lambda m: w[m].get("checked_ms", 0))[:90]  # oldest-checked first, 3 calls max
+    for m, p in _pairs(live).items():
+        mc = p.get("marketCap") or p.get("fdv") or 0
+        if mc > w[m]["peak_mc"]:
+            w[m]["peak_mc"] = mc
+            w[m]["peak_ms"] = now_ms
+    for m in live:
+        w[m]["checked_ms"] = now_ms
+    if len(w) > 3000:  # keep the newest 3000
+        for m in sorted(w, key=lambda m: w[m]["first_ms"])[:len(w) - 3000]:
+            del w[m]
 
 
 def fast_exits():
@@ -125,6 +170,11 @@ def step():
         held = [p["mint"] for p in st["positions"]]
         pairs = _pairs(list(dict.fromkeys(held + [c["mint"] for c in fresh])))
         _exits(st, pairs, now_ms)
+        try:
+            _watch(st, [c for c in coins if not c.get("is_banned") and (now_ms - c["created_timestamp"]) / 60000 <= R["age_max"]
+                        and (c.get("usd_market_cap") or 0) >= 8000], now_ms)
+        except Exception as e:
+            st["last_error"] = f"{_now()} watch: {e}"
         today = _now()[:10]
         n_today = sum(1 for t in st["trades"] + st["positions"] if t["at"][:10] == today)
         cands = []
@@ -175,7 +225,7 @@ def _loop():
         time.sleep(R.get("exit_every_s", 8))
 
 
-LOOP_NAME = "meme-trench-2"  # bump to retire an older running loop without restarting the server
+LOOP_NAME = "meme-trench-3"  # bump to retire an older running loop without restarting the server
 
 
 def start():
@@ -201,7 +251,13 @@ def summary():
     best = max(closed, key=lambda t: t["pnl"], default=None)
     say = (f"Trenching: {len(pos)} open, {len(closed)} closed ({wins} wins)" +
            (f", best {best['symbol']} {best['pnl']:+.0f}" if best else "")) if closed or pos else "Scanning the trenches"
-    return {"updated": _now(), "mode": "PAPER TRENCH", "note": "Practice money only. No wallet, no real orders.",
+    w = st.get("watch", {})
+    mult = [v["peak_mc"] / v["first_mc"] for v in w.values() if v.get("first_mc")]
+    runners = sorted(({"sym": v["sym"], "x": round(v["peak_mc"] / v["first_mc"], 1), "first_mc": round(v["first_mc"]),
+                       "peak_mc": round(v["peak_mc"])} for v in w.values() if v.get("first_mc")), key=lambda r: -r["x"])[:5]
+    study = {"coins_watched": len(mult), "hit_2x": sum(m >= 2 for m in mult), "hit_10x": sum(m >= 10 for m in mult),
+             "hit_50x": sum(m >= 50 for m in mult), "top": runners}
+    return {"updated": _now(), "mode": "PAPER TRENCH", "runner_study": study, "note": "Practice money only. No wallet, no real orders.",
             "start": st["start"], "budget_start": st["start"], "equity": round(equity, 2),
             "total_pnl": round(equity - st["start"], 2), "positions": pos,
             "trades": [{k: t[k] for k in ("symbol", "entry", "exit", "pnl", "why", "at", "exit_at")} for t in closed[-30:]],
