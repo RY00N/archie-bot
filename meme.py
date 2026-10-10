@@ -257,7 +257,12 @@ def summary():
                        "peak_mc": round(v["peak_mc"])} for v in w.values() if v.get("first_mc")), key=lambda r: -r["x"])[:5]
     study = {"coins_watched": len(mult), "hit_2x": sum(m >= 2 for m in mult), "hit_10x": sum(m >= 10 for m in mult),
              "hit_50x": sum(m >= 50 for m in mult), "top": runners}
-    return {"updated": _now(), "mode": "PAPER TRENCH", "runner_study": study, "note": "Practice money only. No wallet, no real orders.",
+    try:
+        import importlib, snipe
+        sniper = importlib.reload(snipe).summary()
+    except Exception as e:
+        sniper = {"status": f"error: {e}"}
+    return {"updated": _now(), "mode": "PAPER TRENCH", "runner_study": study, "sniper": sniper, "note": "Practice money only. No wallet, no real orders.",
             "start": st["start"], "budget_start": st["start"], "equity": round(equity, 2),
             "total_pnl": round(equity - st["start"], 2), "positions": pos,
             "trades": [{k: t[k] for k in ("symbol", "entry", "exit", "pnl", "why", "at", "exit_at")} for t in closed[-30:]],
