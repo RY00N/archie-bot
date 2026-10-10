@@ -77,7 +77,11 @@ def step():
     st = load()
     now_ms = time.time() * 1000
     try:
-        coins = _get(PUMP)
+        try:
+            coins = _get(PUMP)
+        except Exception as e:  # pump.fun throttles sometimes: still manage open positions
+            coins = []
+            st["last_error"] = f"{_now()} pump.fun: {e}"
         fresh = [c for c in coins if not c.get("is_banned")
                  and R["age_min"] <= (now_ms - c["created_timestamp"]) / 60000 <= R["age_max"]
                  and R["mc_min"] <= (c.get("usd_market_cap") or 0) <= R["mc_max"]
@@ -127,10 +131,11 @@ def step():
                 n_today += 1
                 _log("buy", pos)
         st["candidates"] = sorted(cands, key=lambda x: -x["m5_vol"])[:12]
-        st["last_scan"] = _now()
-        st["last_error"] = ""
+        if coins:
+            st["last_scan"] = _now()
+            st["last_error"] = ""
     except Exception as e:
-        st["last_error"] = f"{_now()} {e}"
+        st["last_error"] = f"{_now()} dexscreener: {e}"
     save(st)
     return st
 
