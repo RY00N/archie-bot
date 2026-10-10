@@ -1,7 +1,7 @@
 """Meme desk: memecoin trenching on PRACTICE money (Ryan 2026-10-10: "memecoin trading, like you're going to be
 trenching"). Finds fresh Solana launches on pump.fun, confirms buying pressure on DexScreener, and paper-buys small
 practice positions with a hard stop, a take-profit and a time stop. No wallet, no keys, no real orders: it only
-reads public price data and writes meme_state.json. A background thread runs step() every 30 seconds, 24/7."""
+reads public price data and writes meme_state.json. A background thread scans every 30 seconds and re-prices open bags every 8 seconds, 24/7."""
 import json, os, sys, threading, time, urllib.request
 from datetime import datetime, timezone
 
@@ -17,7 +17,7 @@ R = {  # trench rules v0 (practice money, tune from results)
     "m5_vol_min": 3000, "buy_ratio": 1.3,   # last 5 min: volume and buys vs sells
     "tp": 1.00, "sl": -0.30, "max_hold_min": 20,
     "cost_side": 0.04,                      # 1% fee + 3% slippage each way
-    "every_s": 30,
+    "every_s": 30, "exit_every_s": 8,
 }
 
 
@@ -73,7 +73,42 @@ def _close(st, pos, price, why):
     _log("sell", t)
 
 
+def _exits(st, pairs, now_ms):
+    for pos in list(st["positions"]):
+        p = pairs.get(pos["mint"])
+        price = float(p["priceUsd"]) if p and p.get("priceUsd") else None
+        held_min = (now_ms - pos["at_ms"]) / 60000
+        if price is None:
+            if held_min > R["max_hold_min"] + 10:
+                _close(st, pos, pos["last"] * 0.1, "no price (likely rug)")
+            continue
+        pos["last"] = price
+        ch = price / pos["entry"] - 1
+        if ch >= R["tp"]:
+            _close(st, pos, price, "take profit")
+        elif ch <= R["sl"]:
+            _close(st, pos, price, "stop")
+        elif held_min >= R["max_hold_min"]:
+            _close(st, pos, price, "time")
+
+
+def fast_exits():
+    """Re-price only the open bags (DexScreener) so stops fire within seconds, not at the next full scan."""
+    if not _mine():
+        return
+    st = load()
+    if not st["positions"]:
+        return
+    try:
+        _exits(st, _pairs([p["mint"] for p in st["positions"]]), time.time() * 1000)
+    except Exception:
+        return
+    save(st)
+
+
 def step():
+    if not _mine():  # an older loop still running from before an update: let the new one do the work
+        return load()
     st = load()
     now_ms = time.time() * 1000
     try:
@@ -89,22 +124,7 @@ def step():
                  and c["mint"] not in st["seen"]]
         held = [p["mint"] for p in st["positions"]]
         pairs = _pairs(list(dict.fromkeys(held + [c["mint"] for c in fresh])))
-        for pos in list(st["positions"]):  # exits first
-            p = pairs.get(pos["mint"])
-            price = float(p["priceUsd"]) if p and p.get("priceUsd") else None
-            held_min = (now_ms - pos["at_ms"]) / 60000
-            if price is None:
-                if held_min > R["max_hold_min"] + 10:
-                    _close(st, pos, pos["last"] * 0.1, "no price (likely rug)")
-                continue
-            pos["last"] = price
-            ch = price / pos["entry"] - 1
-            if ch >= R["tp"]:
-                _close(st, pos, price, "take profit")
-            elif ch <= R["sl"]:
-                _close(st, pos, price, "stop")
-            elif held_min >= R["max_hold_min"]:
-                _close(st, pos, price, "time")
+        _exits(st, pairs, now_ms)
         today = _now()[:10]
         n_today = sum(1 for t in st["trades"] + st["positions"] if t["at"][:10] == today)
         cands = []
@@ -141,19 +161,32 @@ def step():
 
 
 def _loop():
+    last_scan = 0
     while True:
         try:
-            mod = sys.modules.get("meme")
-            (mod.step if mod and hasattr(mod, "step") else step)()  # newest code after a reload
+            mod = sys.modules.get("meme") or sys.modules[__name__]  # newest code after a reload
+            if time.time() - last_scan >= R["every_s"]:
+                last_scan = time.time()
+                mod.step()
+            else:
+                mod.fast_exits()
         except Exception:
             pass
-        time.sleep(R["every_s"])
+        time.sleep(R.get("exit_every_s", 8))
+
+
+LOOP_NAME = "meme-trench-2"  # bump to retire an older running loop without restarting the server
 
 
 def start():
-    if not getattr(sys, "_meme_thread", None):
-        sys._meme_thread = threading.Thread(target=_loop, daemon=True, name="meme-trench")
-        sys._meme_thread.start()
+    if getattr(sys, "_meme_loop", None) != LOOP_NAME:
+        sys._meme_loop = LOOP_NAME
+        threading.Thread(target=_loop, daemon=True, name=LOOP_NAME).start()
+
+
+def _mine():
+    name = threading.current_thread().name
+    return not name.startswith("meme-trench") or name == LOOP_NAME
 
 
 def summary():
