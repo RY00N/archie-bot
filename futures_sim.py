@@ -203,4 +203,97 @@ def summary():
                           for s, tr in st.get("open", {}).items()],
             "trades": st.get("history", []), "status": "trading" if st.get("open") else "watching",
             "last_data": st.get("last_data"), "last_error": st.get("last_error"), "opening_range": st.get("or", {}),
-            "prev_range": st.get("prev_range", {}) if st.get("date") == today else {}}
+            "prev_range": st.get("prev_range", {}) if st.get("date") == today else {}, "desk": _desk_safe(c, st)}
+
+
+SENT = os.path.join(HERE, "sentiment.json")  # written hourly by Archie from Liquid (read-only): {"at", "status", "say"}
+
+
+def _desk_safe(c, st):
+    try:
+        return desk(c, st)
+    except Exception as e:
+        return {"error": str(e)[:120]}
+
+
+def desk(c, st):
+    """Ryan's six trading-floor bots (2026-10-10), each a live status for the city: {status, say, at}.
+    Read-only view of the book's state: it never changes what the book does."""
+    now = datetime.now(ET); at = datetime.now(timezone.utc).isoformat()[:19] + "Z"
+    today, m = now.date().isoformat(), now.hour * 60 + now.minute
+    live = st.get("date") == today
+    trading_day = now.weekday() < 5
+    session = trading_day and 570 <= m < 960
+    hhmm = lambda x: f"{x // 60 % 12 or 12}:{x % 60:02d}"
+    syms = list(SPEC)
+    need = c.get("min_prev_range", {})
+    pr = st.get("prev_range", {}) if live else {}
+    orng = st.get("or", {}) if live else {}
+    opn = st.get("open", {})
+    done = st.get("done", []) if live else []
+    hist = [t for t in st.get("history", []) if t.get("date") == today]
+    try:
+        news = json.load(open(NEWS)); news = news if news.get("date") == today else {}
+    except Exception:
+        news = {}
+    d = {}
+    # Scout: which contracts are in play (yesterday busy enough?)
+    if not trading_day:
+        d["scout"] = ("OFF", "Weekend. Next session Monday 9:30 ET.")
+    elif not pr:
+        d["scout"] = ("SCANNING", "Checking if yesterday was busy enough to trade today.")
+    else:
+        act = [s for s in syms if s in pr and pr[s] >= need.get(s, 0)]
+        quiet = [f"{s} {pr[s]:.0f}/{need.get(s, 0)}" for s in syms if s in pr and pr[s] < need.get(s, 0)]
+        d["scout"] = ("ACTIVE", f"In play: {', '.join(act)}." + (f" Quiet: {', '.join(quiet)}." if quiet else "")) if act \
+            else ("QUIET", f"Yesterday too quiet ({', '.join(quiet)} pts), sitting out today.")
+    # News: today's plan from the morning check (+ hourly scan)
+    blocks = news.get("blocks", []); skip = news.get("skip", {})
+    cur = [b for b in blocks if b[0] <= m <= b[1]]; nxt = [b for b in blocks if b[0] > m]
+    if skip:
+        d["news"] = ("SKIP", "; ".join(f"{s}: {w}" for s, w in skip.items())[:140])
+    elif cur:
+        d["news"] = ("BLOCKED", f"{cur[0][2] if len(cur[0]) > 2 else 'Release'}: no entries until {hhmm(cur[0][1])}.")
+    elif news:
+        d["news"] = ("CLEAR", (f"Next release window {hhmm(nxt[0][0])} ({nxt[0][2] if len(nxt[0]) > 2 else ''})." if nxt else news.get("notes", "No big release in the trade window."))[:140])
+    else:
+        d["news"] = ("CLEAR" if not trading_day else "PENDING", "Watching headlines hourly." if not trading_day else "Morning news check not in yet.")
+    # Sentiment: Liquid weekend/overnight mood (info only, not a trade gate)
+    try:
+        se = json.load(open(SENT)); d["sentiment"] = (se.get("status", "MIXED"), se.get("say", "")[:140])
+    except Exception:
+        d["sentiment"] = ("MIXED", "No mood read yet.")
+    # Charts: opening range and the breakout
+    orm = c["or_minutes"] if not isinstance(c["or_minutes"], dict) else min(c["or_minutes"].values())
+    if opn:
+        d["charts"] = ("BREAKOUT", "; ".join(f"{s} broke {'up' if t['side'] == 1 else 'down'} at {t['entry']}" for s, t in opn.items()))
+    elif not session:
+        d["charts"] = ("WAITING", "Opening range starts at 9:30 ET.")
+    elif m < 570 + orm and not orng:
+        d["charts"] = ("BUILDING", "Marking the opening range.")
+    elif orng:
+        d["charts"] = ("WATCHING", "; ".join(f"{s} {v[1]}-{v[0]}" for s, v in orng.items() if s not in done or s in opn) or "No live range.")
+    else:
+        d["charts"] = ("WAITING", "Range not set yet.")
+    # Risk: bracket on every trade, time stop, flat by 3:55
+    if opn:
+        d["risk"] = ("IN TRADE", "; ".join(f"{s} stop {t['stop']} / target {t['target']}" for s, t in opn.items()))
+    elif hist and all(s in done for s in syms):
+        d["risk"] = ("DONE", f"Done for today: {sum(t['pnl'] for t in hist):+.2f}.")
+    else:
+        d["risk"] = ("OK", f"{c['contracts']} contract, bracket stop + {c['target_r']:g}R target, {c.get('time_stop_min', 90)}-min limit, flat by 3:55.")
+    # Decision: BUY / SELL / WAIT / SKIP
+    if opn:
+        s, t = next(iter(opn.items()))
+        d["decision"] = ("BUY" if t["side"] == 1 else "SELL", f"{'Long' if t['side'] == 1 else 'Short'} {s} @ {t['entry']}.")
+    elif not trading_day or not session and m < 570:
+        d["decision"] = ("WAIT", "Market closed. Waiting for the next open.")
+    elif d["scout"][0] == "QUIET" or skip and all(s in skip or s in done for s in syms):
+        d["decision"] = ("SKIP", d["scout"][1] if d["scout"][0] == "QUIET" else "News risk today, sitting out.")
+    elif all(s in done for s in syms) or m > c["last_entry_min"]:
+        d["decision"] = ("SKIP", "No more entries today." if not hist else f"Finished: {len(hist)} trade(s), {sum(t['pnl'] for t in hist):+.2f}.")
+    elif cur:
+        d["decision"] = ("WAIT", d["news"][1])
+    else:
+        d["decision"] = ("WAIT", "Waiting for a 5-min close outside the opening range.")
+    return {k: {"status": v[0], "say": v[1], "at": at} for k, v in d.items()}
