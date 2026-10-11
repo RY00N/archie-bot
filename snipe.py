@@ -33,7 +33,7 @@ def api_key():
         try:
             for line in open("/etc/archie.env"):
                 name, _, val = line.strip().removeprefix("export ").partition("=")
-                if name.strip().upper() == "PUMPPORTAL_API_KEY" and val.strip():
+                if name.strip().upper() == "PUMPPORTAL_API_KEY" and val.strip() and "your_key" not in val.lower():
                     k = val.strip().strip('"').strip("'")
         except Exception:
             pass
