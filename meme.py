@@ -19,7 +19,7 @@ R = {  # trench rules v0 (practice money, tune from results)
     "trail": 0.40,                          # moonbag after half sold at 2x: sell if 40% below its peak
     "watch_hours": 6, "watch_every_s": 120,  # runner study: how high did every coin we saw go?
     "cost_side": 0.04,                      # 1% fee + 3% slippage each way
-    "every_s": 30, "exit_every_s": 8,
+    "every_s": 30, "exit_every_s": 2,
 }
 
 
@@ -222,7 +222,7 @@ def _loop():
                 mod.fast_exits()
         except Exception:
             pass
-        time.sleep(R.get("exit_every_s", 8))
+        time.sleep(R.get("exit_every_s", 2))
 
 
 LOOP_NAME = "meme-trench-3"  # bump to retire an older running loop without restarting the server
@@ -259,7 +259,9 @@ def summary():
              "hit_50x": sum(m >= 50 for m in mult), "top": runners}
     try:
         import importlib, snipe
-        sniper = importlib.reload(snipe).summary()
+        if time.time() - getattr(sys, "_snipe_reloaded", 0) > 60:  # the 1-second live feed calls this too: reload code at most once a minute
+            snipe = importlib.reload(snipe); sys._snipe_reloaded = time.time()
+        sniper = snipe.summary()
     except Exception as e:
         sniper = {"status": f"error: {e}"}
     return {"updated": _now(), "mode": "PAPER TRENCH", "runner_study": study, "sniper": sniper, "note": "Practice money only. No wallet, no real orders.",
