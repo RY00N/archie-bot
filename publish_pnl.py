@@ -197,7 +197,7 @@ def snapshot(bot, market_open):
     return {"book": "paper", "note": "Practice money. Never counts toward real totals.",
             "updated": datetime.now(timezone.utc).isoformat()[:19] + "Z", "market_open": market_open,
             "swing_enabled": bot.RULES.get("swing_enabled", True),  # off = city hides the swing P&L
-            **combined, "swing": swing, "day": day, "futures": _futures(), "meme": _meme(), "coinlab": _coinlab(), **_live()}
+            **combined, "swing": swing, "day": day, "futures": _futures(), "meme": _meme(), **_live()}
 
 
 def _git(*args):
