@@ -170,6 +170,16 @@ def _coinlab():
         return {"status": f"error: {e}"}
 
 
+def _live():
+    try:
+        import livefeed
+        livefeed.start()  # fast feed: tick.json on branch `tick` every 5 s (see livefeed.py)
+        u, err = livefeed.url()
+        return {"live_tick": u, "live_every_s": livefeed.EVERY_S, "live_error": err}
+    except Exception as e:
+        return {"live_tick": "", "live_error": f"{e}"[:200]}
+
+
 def snapshot(bot, market_open):
     """Top level = swing + day combined; "swing" and "day" hold each book on its own."""
     acct = bot.trade("GET", "/v2/account")
@@ -187,7 +197,7 @@ def snapshot(bot, market_open):
     return {"book": "paper", "note": "Practice money. Never counts toward real totals.",
             "updated": datetime.now(timezone.utc).isoformat()[:19] + "Z", "market_open": market_open,
             "swing_enabled": bot.RULES.get("swing_enabled", True),  # off = city hides the swing P&L
-            **combined, "swing": swing, "day": day, "futures": _futures(), "meme": _meme(), "coinlab": _coinlab()}
+            **combined, "swing": swing, "day": day, "futures": _futures(), "meme": _meme(), "coinlab": _coinlab(), **_live()}
 
 
 def _git(*args):
