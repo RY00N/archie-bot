@@ -75,18 +75,16 @@ def embed_parlay(e):
         name = f"{l['player']} {l['side']} {l['line']} {l['stat'].replace('_', ' ')}"
         val = f"{l['game']}{price}, our fair {l['p']:.0%}" + (f"\n[Open on Kalshi]({url})" if url else "")
         fields.append({"name": name[:256], "value": val[:1024]})
-    return {"title": f"BetterPicks: {e['app']} {e['type']}"[:256],
+    first = next((kalshi_url(l.get("ticker")) for l in e["legs"] if l.get("ticker")), None)
+    return {"title": f"BetterPicks: {e['app']} {e['type']}"[:256], **({"url": first} if first else {}),
             "description": f"PRACTICE PICK, NOT A REAL BET. ${e['stake']:.0f} practice, {pay}, {e['win_p']:.0%} win chance."
-                           " Tap a leg to open its market, then pick that player and line.",
+                           " Tap each leg's link to open it on Kalshi and add it to your slip.",
             "color": 0x00B37E, "fields": fields[:25], "footer": {"text": "BetterPicks practice bankroll. 21+ only for real wagers."}}
 
 
 def kalshi_post(e):
-    """Message text with each leg's real Kalshi link on its own line, so Discord unfurls Kalshi's own preview."""
-    links = [kalshi_url(l.get("ticker")) for l in e["legs"]]
-    lines = [f"**{'LOCK, ' if e.get('lock') else ''}BetterPicks {e['app']} {e['type']}** (practice pick, not a real bet)"]
-    lines += [f"{l['player']} {l['side']} {l['line']} {l['stat'].replace('_', ' ')}: {u}" for l, u in zip(e["legs"], links) if u]
-    return "\n".join(lines)
+    """Short header line; the legs and their Kalshi links live inside the one parlay embed (Ryan 2026-10-12)."""
+    return f"**{'LOCK, ' if e.get('lock') else ''}BetterPicks {e['app']} {e['type']}** (practice pick, not a real bet)"
 
 
 def send(text, embeds=None):
