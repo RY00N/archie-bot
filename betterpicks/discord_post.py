@@ -120,6 +120,12 @@ def today(dry=False):
     items += [(key_parlay(e), e) for e in book.get("parlays", [])
               if e["date"] == day and e["app"] in apps and (e.get("lock") or in_window) and not e.get("test")]
     new = [(k, t) for k, t in items if k not in sent]
+    # Ryan 2026-10-12: if nothing went out by noon PT, say so once
+    quiet_key = f"quiet:{day}"
+    if not new and now.hour >= hi and quiet_key not in sent and not any(k.startswith(f"parlay:{day}:") for k in sent):
+        msg = "Bad day, no picks from me today. Nothing on Kalshi was worth it. (BetterPicks, practice)"
+        print(msg) if dry else (send(msg), json.dump(sorted(sent | {quiet_key}), open(SENT, "w"), indent=1))
+        return
     if not new:
         print("nothing new to post"); return
     head = [] if all(isinstance(t, dict) and t.get("lock") for _, t in new) else [f"**BetterPicks {day}** (practice picks, not real bets)"]
