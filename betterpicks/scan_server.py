@@ -109,7 +109,10 @@ if __name__ == "__main__":
         t0 = time.time()
         try:
             if t0 - last_code > 3600:
-                refresh_code(); last_code = t0
+                refresh_code()
+                if not last_code:
+                    publish()   # first push right away so the project can see the server is connected
+                last_code = t0
             scan()
         except Exception as e:
             log("scan failed:", e)
