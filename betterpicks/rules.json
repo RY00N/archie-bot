@@ -6,7 +6,7 @@
   "mlb"
  ],
  "bankroll": 1000,
- "unit": 10,
+ "unit": 5,
  "min_edge": 0.05,
  "big_edge": 0.1,
  "max_picks_per_day": 2,
@@ -39,5 +39,8 @@
  "lock_single_edge": 0.1,
  "lock_single_min_p": 0.6,
  "max_locks_per_day": 3,
- "kalshi_only_note": "Ryan 2026-10-12 06:25Z: stick to Kalshi for now (no PrizePicks or sportsbook singles); parlays max 3 legs (1-2 ok); max 3 parlays per day posted 6am-noon PT, then build the next day's; a can't-pass-up single leg (edge >= lock_single_edge, fair >= lock_single_min_p) goes out any time as a 1-leg lock and doesn't count toward the 3 (max_locks_per_day)."
+ "kalshi_only_note": "Ryan 2026-10-12 06:25Z: stick to Kalshi for now (no PrizePicks or sportsbook singles); parlays max 3 legs (1-2 ok); max 3 parlays per day posted 6am-noon PT, then build the next day's; a can't-pass-up single leg (edge >= lock_single_edge, fair >= lock_single_min_p) goes out any time as a 1-leg lock and doesn't count toward the 3 (max_locks_per_day).",
+ "parlay_stake": 5.0,
+ "same_day_parlays": true,
+ "stake_note": "Ryan 2026-10-12 06:49Z: 1 unit = $5, every parlay/lock is exactly $5 (min and max). Every game in a parlay must be played the same day (PT). Parlays must be good: winning % first. Practice only; Claude does not place real bets."
 }

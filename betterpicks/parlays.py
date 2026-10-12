@@ -21,7 +21,7 @@ SHARP_BOOKS = {"Pinnacle": 2.0}
 SKIP_BOOKS = {"AN Consensus", "AN Open", "PrizePicks", "Underdog", "Sleeper", "Kalshi", "Polymarket"}
 PP_PAYOUT = {int(k): v for k, v in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "rules.json")))
              .get("prizepicks_power_payouts", {"2": 3.0, "3": 6.0, "4": 10.0}).items()}   # set from Ryan's real app
-STAKE = 10.0
+STAKE = float(json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "rules.json"))).get("parlay_stake", 10.0))   # Ryan 2026-10-12: 1 unit = $5
 MIN_LEG_P = 0.57                                 # 2-pick power breaks even at 57.7%
 MIN_KALSHI_EDGE = 0.03
 
@@ -208,7 +208,7 @@ def build():
                        [l], round(1 / l["price"], 2), None)
         e["lock"] = True; e["ev_pct"] = round(100 * (l["p"] / l["price"] - 1), 1)
         entries.append(e); used.add((l["prop"]["player"], l["prop"]["stat"])); n_locks += 1
-    # 2) up to max_par parlays for the slate day, 2..max_legs legs, one leg per game, no reused players
+    # 2) up to max_par parlays for the slate day (Ryan: every game in a parlay is played that same day), 2..max_legs legs, one leg per game, no reused players
     day_legs = [l for l in legs if l["app"] == "Kalshi" and datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == slate]
     have = [e for e in book["parlays"] if e["date"] == slate and not e.get("lock")]
     pool = sorted([l for l in day_legs if (l["prop"]["player"], l["prop"]["stat"]) not in used], key=lambda l: -l["p"])
