@@ -125,6 +125,14 @@ def today(dry=False):
         msg = "Bad day, no picks from me today. Nothing on Kalshi was worth it. (BetterPicks, practice)"
         print(msg) if dry else (send(msg), json.dump(sorted(sent | {quiet_key}), open(SENT, "w"), indent=1))
         return
+    # Ryan 2026-10-12 17:46Z: between 6am and noon PT, if nothing has gone out yet, say so every 2 hours (8am, 10am)
+    slot = now.hour - (now.hour - lo) % 2
+    upd_key = f"update:{day}:{slot}"
+    if (not new and lo < slot < hi and upd_key not in sent
+            and not any(k.startswith(f"parlay:{day}:") for k in sent)):
+        msg = "Couldn't find anything yet, market looks bad. Still scanning Kalshi. (BetterPicks, practice)"
+        print(msg) if dry else (send(msg), json.dump(sorted(sent | {upd_key}), open(SENT, "w"), indent=1))
+        return
     if not new:
         print("nothing new to post"); return
     head = [] if all(isinstance(t, dict) and t.get("lock") for _, t in new) else [f"**BetterPicks {day}** (practice picks, not real bets)"]
