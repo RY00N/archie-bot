@@ -5,8 +5,8 @@ No broker yet (Ryan 2026-10-08: "paper trading for now"), so fills are simulated
 each new bar's high/low, $1.50 round-trip fees per contract. Runs on the server from daytrader.tick.
 
 Setup v2 (2026-10-08, Ryan: only trade when it's volatile enough to hit the target soon, never force it):
-opening range breakout on a 5-min close (MES: 9:30-9:35 range; MNQ: 9:30-9:45, added 10/08 night), long or short, fixed point stop (MES 12, MNQ 60),
-target 2x risk, out after 90 min if neither is hit, entries to 11:30 ET, flat by 15:55 ET. Only on "active" days:
+opening range breakout on a 5-min close (MES: 9:30-9:35 range; MNQ: 9:30-9:45, added 10/08 night), long or short, fixed point stop (MES 12, MNQ 80 since v2.2 10/12),
+target 2x risk (MNQ 3x since v2.2), out after 90 min if neither is hit, entries to 11:30 ET, flat by 15:55 ET. Only on "active" days:
 yesterday's regular-session range must be at least MES 50 / MNQ 400 pts, otherwise skip the day.
 Settings live in rules.json "futures".
 """
@@ -24,6 +24,12 @@ DEFAULTS = {"enabled": True, "budget_start": 10000, "contracts": 1, "or_minutes"
             "stop_pts": {"MNQ": 60, "MES": 12}, "min_prev_range": {"MNQ": 400, "MES": 50}, "time_stop_min": 90,
             "last_entry_min": 690, "flatten_min": 955, "fees": 1.5}
 _last = 0
+
+
+def tr_r(c, sym):
+    """target_r is one number for both contracts or a per-symbol dict (v2.2: MNQ 3R, MES 2R)."""
+    t = c["target_r"]
+    return float(t.get(sym, 2.0)) if isinstance(t, dict) else float(t)
 
 
 def cfg():
@@ -179,7 +185,7 @@ def tick(log):
             pts = c.get("stop_pts", {}).get(sym)
             stop = e - side * pts if pts else (lo if side == 1 else hi); r = abs(e - stop)
             st["open"][sym] = {"side": side, "qty": c["contracts"], "entry": round(e, 2), "stop": stop, "stop0": stop,
-                               "target": round(e + side * c["target_r"] * r, 2), "entry_time": t, "entry_min": mm,
+                               "target": round(e + side * tr_r(c, sym) * r, 2), "entry_time": t, "entry_min": mm,
                                "seen": t, "price": cl}
             log(f"FUT ENTRY {'long' if side == 1 else 'short'} {c['contracts']} {sym} @ {e} stop {stop} target {st['open'][sym]['target']}")
             break
@@ -281,7 +287,8 @@ def desk(c, st):
     elif hist and all(s in done for s in syms):
         d["risk"] = ("DONE", f"Done for today: {sum(t['pnl'] for t in hist):+.2f}.")
     else:
-        d["risk"] = ("OK", f"{c['contracts']} contract, bracket stop + {c['target_r']:g}R target, {c.get('time_stop_min', 90)}-min limit, flat by 3:55.")
+        tgt = " / ".join("%s %gR" % (x, tr_r(c, x)) for x in SPEC)
+        d["risk"] = ("OK", f"{c['contracts']} contract, bracket stop + target ({tgt}), {c.get('time_stop_min', 90)}-min limit, flat by 3:55.")
     # Decision: BUY / SELL / WAIT / SKIP
     if opn:
         s, t = next(iter(opn.items()))
