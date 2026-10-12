@@ -208,23 +208,30 @@ def build():
                        [l], round(1 / l["price"], 2), None)
         e["lock"] = True; e["ev_pct"] = round(100 * (l["p"] / l["price"] - 1), 1)
         entries.append(e); used.add((l["prop"]["player"], l["prop"]["stat"])); n_locks += 1
-    # 2) up to max_par parlays for the slate day (Ryan: every game in a parlay is played that same day), 2..max_legs legs, one leg per game, no reused players
-    day_legs = [l for l in legs if l["app"] == "Kalshi" and datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == slate]
-    have = [e for e in book["parlays"] if e["date"] == slate and not e.get("lock")]
-    pool = sorted([l for l in day_legs if (l["prop"]["player"], l["prop"]["stat"]) not in used], key=lambda l: -l["p"])
-    while len(have) + sum(1 for e in entries if not e.get("lock")) < max_par:
-        pick, games = [], set()
-        for l in pool:
-            if l["prop"]["game"] not in games and ok(pick + [l]):
-                pick.append(l); games.add(l["prop"]["game"])
-            if len(pick) == max_legs:
+    # 2) up to max_par parlays per slate day (Ryan: every game in a parlay is played that same day), 2..max_legs legs, one leg per game, no reused players.
+    # Ryan 2026-10-12 17:41Z: if noon passes with no parlay for today, keep hunting today's remaining games and post any that qualify.
+    slates = [slate]
+    if slate != today and not any(e["date"] == today and not e.get("lock") for e in book["parlays"]):
+        slates.insert(0, today)
+    for sd in slates:
+        day_legs = [l for l in legs if l["app"] == "Kalshi" and datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == sd]
+        have = [e for e in book["parlays"] if e["date"] == sd and not e.get("lock")]
+        made = lambda: sum(1 for e in entries if e["date"] == sd and not e.get("lock"))
+        pool = sorted([l for l in day_legs if (l["prop"]["player"], l["prop"]["stat"]) not in used], key=lambda l: -l["p"])
+        while len(have) + made() < max_par:
+            pick, games = [], set()
+            for l in pool:
+                if l["prop"]["game"] not in games and ok(pick + [l]):
+                    pick.append(l); games.add(l["prop"]["game"])
+                if len(pick) == max_legs:
+                    break
+            if len(pick) < 2 or math.prod(l["p"] for l in pick) * kalshi_combo_mult([l["price"] for l in pick]) <= 1:
                 break
-        if len(pick) < 2 or math.prod(l["p"] for l in pick) * kalshi_combo_mult([l["price"] for l in pick]) <= 1:
-            break
-        n = len(have) + sum(1 for e in entries if not e.get("lock")) + 1
-        entries.append(make_entry(slate, "Kalshi", f"{len(pick)}-leg combo #{n}", pick, None, None))
-        ids = {id(l) for l in pick}
-        pool = [l for l in pool if id(l) not in ids and l["prop"]["player"] not in {p["prop"]["player"] for p in pick}]
+            n = len(have) + made() + 1
+            entries.append(make_entry(sd, "Kalshi", f"{len(pick)}-leg combo #{n}", pick, None, None))
+            ids = {id(l) for l in pick}
+            pool = [l for l in pool if id(l) not in ids and l["prop"]["player"] not in {p["prop"]["player"] for p in pick}]
+            used.update((l["prop"]["player"], l["prop"]["stat"]) for l in pick)
     if "PrizePicks" in apps and not any(e["date"] == slate and e["app"] == "PrizePicks" for e in book["parlays"]):
         pp_legs = sorted([l for l in legs if l["app"] == "PrizePicks"], key=lambda l: -l["p"])[:12]
         for size in range(2, max_legs + 1):
