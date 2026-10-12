@@ -22,6 +22,10 @@ if [ ! -f /etc/betterbot.env ]; then
   { printf 'DISCORD_BOT_TOKEN=%s\nDISCORD_CHANNEL_ID=%s\n' "$T" "$C"; if [ -n "$G" ]; then printf 'GITHUB_TOKEN=%s\n' "$G"; fi; } > /etc/betterbot.env
   chmod 600 /etc/betterbot.env
 fi
+if ! grep -q '^DISCORD_CHANNEL_ID=' /etc/betterbot.env; then   # set up before the scanner existed
+  read -rp "DISCORD_CHANNEL_ID: " C
+  printf 'DISCORD_CHANNEL_ID=%s\n' "$C" >> /etc/betterbot.env
+fi
 unit() {  # name, description, command
 cat > "/etc/systemd/system/$1.service" <<UNIT
 [Unit]
