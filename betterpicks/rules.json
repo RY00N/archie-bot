@@ -1,0 +1,30 @@
+{
+ "leagues": [
+  "nfl",
+  "ncaaf",
+  "nba",
+  "mlb"
+ ],
+ "bankroll": 1000,
+ "unit": 10,
+ "min_edge": 0.05,
+ "big_edge": 0.1,
+ "max_picks_per_day": 2,
+ "max_dog_odds": 250,
+ "max_fav_odds": -300,
+ "hours_ahead": 36,
+ "skip_preseason": true,
+ "parlay_min_win_p": 0.55,
+ "parlay_mode": "whole",
+ "parlay_rule_note": "Ryan 2026-10-12: parlays may go down to a 55% whole-parlay win chance, only when +EV vs the app's payout (PrizePicks and Kalshi). Was 65% (2026-10-07). mode 'whole' = whole parlay >= min; 'leg' = every leg >= min.",
+ "kalshi_combo_markup": 1.079,
+ "prizepicks_power_payouts": {
+  "2": 3.0,
+  "3": 6.0,
+  "4": 10.0
+ },
+ "payout_note": "Kalshi markup calibrated from Ryan's real slip 2026-10-07 (46/49/58% -> 7.09x). PrizePicks payouts unconfirmed until Ryan sends an in-app screenshot.",
+ "singles_note": "Ryan 2026-10-12: fewer singles (max 2/day), and only when a sportsbook moneyline beats the de-vigged Pinnacle line by >= sharp_min_ev (3%); 2u at sharp_big_ev (6%). ESPN win model no longer used to pick.",
+ "sharp_min_ev": 0.03,
+ "sharp_big_ev": 0.06
+}

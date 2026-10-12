@@ -1,0 +1,734 @@
+{
+ "note": "PRACTICE bankroll only. No real money is ever wagered.",
+ "start_bankroll": 1000,
+ "bankroll": 1036.3,
+ "unit": 10,
+ "picks": [
+  {
+   "date": "2026-10-07",
+   "game_id": "401908016",
+   "league": "mlb",
+   "start": "2026-10-07T22:00Z",
+   "game": "Los Angeles Dodgers at Atlanta Braves",
+   "bet": "ATL ML",
+   "market": "ml",
+   "side": "home",
+   "team": "ATL",
+   "odds": 129.0,
+   "units": 1,
+   "stake": 10,
+   "model_pct": 0.496,
+   "edge": 0.079,
+   "why": "ESPN model gives ATL 50% vs 44% implied by +129; 7.9% edge. Line LAD -156, open ML +112. NLDS Game 4 at home in Atlanta; plus-money on a 94-win team at home is where the model sees value.",
+   "status": "lost",
+   "pnl": -10,
+   "final": "Los Angeles Dodgers at Atlanta Braves: 4-1"
+  },
+  {
+   "date": "2026-10-07",
+   "game_id": "401908005",
+   "league": "mlb",
+   "start": "2026-10-08T02:00Z",
+   "game": "Milwaukee Brewers at San Diego Padres",
+   "bet": "MIL ML",
+   "market": "ml",
+   "side": "away",
+   "team": "MIL",
+   "odds": -107.0,
+   "units": 1,
+   "stake": 10,
+   "model_pct": 0.56,
+   "edge": 0.065,
+   "why": "ESPN model gives MIL 56% vs 52% implied by -107; 6.5% edge. Line SD -112, open ML -103. NLDS Game 4: 103-win Brewers near a coin flip price; Robert Gasser starts vs Walker Buehler.",
+   "status": "won",
+   "pnl": 9.35,
+   "final": "Milwaukee Brewers at San Diego Padres: 3-1"
+  },
+  {
+   "date": "2026-10-10",
+   "game_id": "401872992",
+   "league": "nfl",
+   "start": "2026-10-11T20:25Z",
+   "game": "San Francisco 49ers at Seattle Seahawks",
+   "bet": "SF ML",
+   "market": "ml",
+   "side": "away",
+   "team": "SF",
+   "odds": 136.0,
+   "units": 2,
+   "stake": 20,
+   "model_pct": 0.562,
+   "edge": 0.155,
+   "why": "ESPN model gives SF 56% vs 42% implied by +136; 15.5% edge. Line SEA -3, open ML +164. News check Oct 10: SF is without Nick Bosa and Mykel Williams on the edge, the main risk; SEA is missing RB Zach Charbonnet.",
+   "status": "won",
+   "pnl": 27.2,
+   "final": "San Francisco 49ers at Seattle Seahawks: 32-29"
+  },
+  {
+   "date": "2026-10-10",
+   "game_id": "401872989",
+   "league": "nfl",
+   "start": "2026-10-11T20:05Z",
+   "game": "Denver Broncos at Los Angeles Chargers",
+   "bet": "LAC ML",
+   "market": "ml",
+   "side": "home",
+   "team": "LAC",
+   "odds": 160.0,
+   "units": 2,
+   "stake": 20,
+   "model_pct": 0.494,
+   "edge": 0.125,
+   "why": "ESPN model gives LAC 49% vs 38% implied by +160; 12.5% edge. Line DEN -3.5, open ML -142. News check Oct 10: LAC is missing both starting tackles (Joe Alt out, Rashawn Slater on IR) plus G Trevor Penning, which is the main risk; DEN is without CB Pat Surtain II.",
+   "status": "lost",
+   "pnl": -20,
+   "final": "Denver Broncos at Los Angeles Chargers: 23-17"
+  },
+  {
+   "date": "2026-10-10",
+   "game_id": "401858256",
+   "league": "ncaaf",
+   "start": "2026-10-10T16:00Z",
+   "game": "North Carolina Tar Heels at Pittsburgh Panthers",
+   "bet": "PITT ML",
+   "market": "ml",
+   "side": "home",
+   "team": "PITT",
+   "odds": -185.0,
+   "units": 2,
+   "stake": 20,
+   "model_pct": 0.746,
+   "edge": 0.124,
+   "why": "ESPN model gives PITT 75% vs 65% implied by -185; 12.4% edge. Line PITT -3.5, open ML -162.",
+   "status": "lost",
+   "pnl": -20,
+   "final": "North Carolina Tar Heels at Pittsburgh Panthers: 21-17"
+  },
+  {
+   "date": "2026-10-10",
+   "game_id": "401872988",
+   "league": "nfl",
+   "start": "2026-10-11T17:00Z",
+   "game": "New York Giants at Washington Commanders",
+   "bet": "WSH ML",
+   "market": "ml",
+   "side": "home",
+   "team": "WSH",
+   "odds": -170.0,
+   "units": 2,
+   "stake": 20,
+   "model_pct": 0.707,
+   "edge": 0.103,
+   "why": "ESPN model gives WSH 71% vs 63% implied by -170; 10.3% edge. Line WSH -3.5, open ML -135. News check Oct 10: Giants QB Jaxson Dart is on IR, which helps; WSH is thin at safety (Butler, Cross, Owens out).",
+   "status": "push",
+   "pnl": 0,
+   "final": "New York Giants at Washington Commanders: 27-27"
+  },
+  {
+   "date": "2026-10-10",
+   "game_id": "401858485",
+   "league": "ncaaf",
+   "start": "2026-10-10T23:30Z",
+   "game": "USC Trojans at Penn State Nittany Lions",
+   "bet": "PSU ML",
+   "market": "ml",
+   "side": "home",
+   "team": "PSU",
+   "odds": -122.0,
+   "units": 1,
+   "stake": 10,
+   "model_pct": 0.62,
+   "edge": 0.094,
+   "why": "ESPN model gives PSU 62% vs 55% implied by -122; 9.4% edge. Line PSU -1.5, open ML -112.",
+   "status": "lost",
+   "pnl": -10,
+   "final": "USC Trojans at Penn State Nittany Lions: 31-23"
+  },
+  {
+   "date": "2026-10-11",
+   "game_id": "401872985",
+   "league": "nfl",
+   "start": "2026-10-11T17:00Z",
+   "game": "Indianapolis Colts at Pittsburgh Steelers",
+   "bet": "IND ML",
+   "market": "ml",
+   "side": "away",
+   "team": "IND",
+   "odds": 136.0,
+   "units": 2,
+   "stake": 20,
+   "model_pct": 0.511,
+   "edge": 0.104,
+   "why": "ESPN model gives IND 51% vs 42% implied by +136; 10.4% edge. Line PIT -3, open ML +114. News check Oct 11: PIT is without RB Rico Dowdle and backup QBs Allar and Howard; IND missing G Dalton Tucker and DE Arden Key (IR). Nothing that kills the edge.",
+   "status": "lost",
+   "pnl": -20,
+   "final": "Indianapolis Colts at Pittsburgh Steelers: 22-34"
+  },
+  {
+   "date": "2026-10-11",
+   "game_id": "401908030",
+   "league": "mlb",
+   "start": "2026-10-12T00:00Z",
+   "game": "Los Angeles Dodgers at Milwaukee Brewers",
+   "bet": "MIL ML",
+   "market": "ml",
+   "side": "home",
+   "team": "MIL",
+   "odds": -113.0,
+   "units": 1,
+   "stake": 10,
+   "model_pct": 0.582,
+   "edge": 0.076,
+   "why": "ESPN model gives MIL 58% vs 53% implied by -113; 7.6% edge. Line MIL -113, open ML -118. News check Oct 11: Misiorowski starts for MIL vs Tarik Skubal for LAD, a tough matchup and the main risk; no key injuries listed.",
+   "status": "won",
+   "pnl": 8.85,
+   "final": "Los Angeles Dodgers at Milwaukee Brewers: 1-2"
+  },
+  {
+   "date": "2026-10-11",
+   "game_id": "401872984",
+   "league": "nfl",
+   "start": "2026-10-11T17:00Z",
+   "game": "Houston Texans at Tennessee Titans",
+   "bet": "TEN ML",
+   "market": "ml",
+   "side": "home",
+   "team": "TEN",
+   "odds": 250.0,
+   "units": 1,
+   "stake": 10,
+   "model_pct": 0.332,
+   "edge": 0.058,
+   "why": "ESPN model gives TEN 33% vs 29% implied by +250; 5.8% edge. Line HOU -6.5, open ML +160. News check Oct 11: TEN is without RB Nicholas Singleton and CB Jaylon Jones; HOU missing OT Nate Thomas and LB Aiden Fisher. Long-shot value only.",
+   "status": "lost",
+   "pnl": -10,
+   "final": "Houston Texans at Tennessee Titans: 26-3"
+  }
+ ],
+ "summary": {
+  "bankroll": 1036.3,
+  "start": 1000,
+  "record": "3-6-1",
+  "pnl": -44.6,
+  "roi_pct": -29.7,
+  "open": 0,
+  "parlay_record": "2-0",
+  "parlay_pnl": 80.9,
+  "parlays_open": 0,
+  "total_pnl": 36.3,
+  "as_of": "2026-10-12T03:25:00+00:00",
+  "apps": {
+   "PrizePicks": {
+    "pnl": 20.0,
+    "won": 1,
+    "lost": 0,
+    "open": 0,
+    "staked": 20.0,
+    "parlays": [
+     {
+      "date": "2026-10-07",
+      "type": "2-pick power play (3x)",
+      "stake": 10.0,
+      "multiplier": 3.0,
+      "to_win": 30.0,
+      "status": "void",
+      "pnl": 0,
+      "hit_chance": 0.335,
+      "breakdown": "Two unders on players in quiet roles, in different games, so one result doesn't drag the other. Both have to hit for 3x.",
+      "legs": [
+       {
+        "pick": "Tyler Goodson under 16.5 rush yds",
+        "game": "TB @ DAL",
+        "league": "NFL",
+        "price": null,
+        "actual": null,
+        "result": "void",
+        "why": "He's Dallas' backup back behind the starter, so his carries are limited. Dallas is an 8.5-point favorite, but late-game work usually goes to the lead back. He went under 16.5 yards in 6 of his last 8 games (12, 22, 3, 9, 0, 0, 0, 4), and the sportsbooks price the under right at a coin flip, so PrizePicks' line is a touch high.",
+        "chance": 0.583
+       },
+       {
+        "pick": "Mike Yastrzemski under 0.5 hits",
+        "game": "LAD @ ATL",
+        "league": "MLB",
+        "price": null,
+        "actual": 0,
+        "result": "won",
+        "why": "He's ice cold: 1 hit in his last 8 games, including 0 for both NLDS games against the Dodgers. He's facing a Dodgers staff that has shut him down all series, and the books lean toward no hit too (53%).",
+        "chance": 0.574
+       }
+      ]
+     },
+     {
+      "date": "2026-10-07",
+      "type": "3-pick power play (6x)",
+      "stake": 10.0,
+      "multiplier": 6.0,
+      "to_win": 60.0,
+      "status": "won",
+      "pnl": 20.0,
+      "hit_chance": 0.192,
+      "breakdown": "The same two unders plus Volpe getting one base hit. All three are in different games, so they don't depend on each other. All three have to hit for 6x.",
+      "legs": [
+       {
+        "pick": "Tyler Goodson under 16.5 rush yds",
+        "game": "TB @ DAL",
+        "league": "NFL",
+        "price": null,
+        "actual": null,
+        "result": "void",
+        "why": "He's Dallas' backup back behind the starter, so his carries are limited. Dallas is an 8.5-point favorite, but late-game work usually goes to the lead back. He went under 16.5 yards in 6 of his last 8 games (12, 22, 3, 9, 0, 0, 0, 4), and the sportsbooks price the under right at a coin flip, so PrizePicks' line is a touch high.",
+        "chance": 0.583
+       },
+       {
+        "pick": "Mike Yastrzemski under 0.5 hits",
+        "game": "LAD @ ATL",
+        "league": "MLB",
+        "price": null,
+        "actual": 0,
+        "result": "won",
+        "why": "He's ice cold: 1 hit in his last 8 games, including 0 for both NLDS games against the Dodgers. He's facing a Dodgers staff that has shut him down all series, and the books lean toward no hit too (53%).",
+        "chance": 0.574
+       },
+       {
+        "pick": "Anthony Volpe over 0.5 total bases",
+        "game": "TB @ NYY",
+        "league": "MLB",
+        "price": null,
+        "actual": 3,
+        "result": "won",
+        "why": "One single clears this. He's hit safely in 5 of his last 8, and the books make an over on 0.5 total bases a 57% favorite. Against Tampa he's 24 of 41 career games with a hit, so the matchup isn't a problem.",
+        "chance": 0.574
+       }
+      ]
+     }
+    ]
+   },
+   "Kalshi": {
+    "pnl": 60.9,
+    "won": 1,
+    "lost": 0,
+    "open": 0,
+    "staked": 10.0,
+    "parlays": [
+     {
+      "date": "2026-10-07",
+      "type": "3-leg combo",
+      "stake": 10.0,
+      "multiplier": 7.09,
+      "to_win": 70.9,
+      "status": "won",
+      "pnl": 60.9,
+      "hit_chance": 0.2,
+      "breakdown": "Same three legs as your real Kalshi slip (Irving 14+ carries, Gasser 3+ Ks, Martinez 3+ Ks) at Kalshi's real 7.09x payout. It's a long shot, and the edge comes from each leg being priced a bit cheap.",
+      "legs": [
+       {
+        "pick": "Bucky Irving over 13.5 rush att",
+        "game": "TB @ DAL",
+        "league": "NFL",
+        "price": 0.46,
+        "actual": 21,
+        "result": "won",
+        "why": "Tampa's lead back gets fed: 16, 15 and 17 carries in three of his last four games. Even trailing by a lot, Tampa has leaned on him, and 14 carries is under his usual workload (16.5 average over his last 12).",
+        "chance": 0.554
+       },
+       {
+        "pick": "Nick Martinez over 2.5 pitcher ks",
+        "game": "TB @ NYY",
+        "league": "MLB",
+        "price": 0.58,
+        "actual": 3,
+        "result": "won",
+        "why": "Matches your real Kalshi slip: 3+ strikeouts. He's had 3 or more in 7 of his last 8 starts (1, 7, 3, 3, 4, 4, 4, 5) and struck out 7 Yankees two weeks ago. Seven sportsbooks put it near 60%.",
+        "chance": 0.644
+       },
+       {
+        "pick": "Robert Gasser over 2.5 pitcher ks",
+        "game": "MIL @ SD",
+        "league": "MLB",
+        "price": 0.49,
+        "actual": 3,
+        "result": "won",
+        "why": "Milwaukee's starter averages 5 strikeouts a start, with 3 or more in 7 of his last 8. The only risk is a short playoff leash, which is why it's priced near a coin flip. At 49 cents on Kalshi that's a good price for a pitcher who usually clears 3 easily.",
+        "chance": 0.56
+       }
+      ]
+     }
+    ]
+   },
+   "Sportsbook singles": {
+    "pnl": -44.6,
+    "won": 3,
+    "lost": 6,
+    "open": 0,
+    "staked": 150,
+    "parlays": [
+     {
+      "date": "2026-10-11",
+      "type": "single",
+      "stake": 20,
+      "multiplier": 2.36,
+      "to_win": 47.2,
+      "status": "lost",
+      "pnl": -20,
+      "legs": [
+       {
+        "pick": "IND ML +136",
+        "game": "Indianapolis Colts at Pittsburgh Steelers",
+        "league": "NFL",
+        "result": "lost",
+        "final": "Indianapolis Colts at Pittsburgh Steelers: 22-34"
+       }
+      ]
+     },
+     {
+      "date": "2026-10-11",
+      "type": "single",
+      "stake": 10,
+      "multiplier": 1.88,
+      "to_win": 18.85,
+      "status": "won",
+      "pnl": 8.85,
+      "legs": [
+       {
+        "pick": "MIL ML -113",
+        "game": "Los Angeles Dodgers at Milwaukee Brewers",
+        "league": "MLB",
+        "result": "won",
+        "final": "Los Angeles Dodgers at Milwaukee Brewers: 1-2"
+       }
+      ]
+     },
+     {
+      "date": "2026-10-11",
+      "type": "single",
+      "stake": 10,
+      "multiplier": 3.5,
+      "to_win": 35.0,
+      "status": "lost",
+      "pnl": -10,
+      "legs": [
+       {
+        "pick": "TEN ML +250",
+        "game": "Houston Texans at Tennessee Titans",
+        "league": "NFL",
+        "result": "lost",
+        "final": "Houston Texans at Tennessee Titans: 26-3"
+       }
+      ]
+     },
+     {
+      "date": "2026-10-10",
+      "type": "single",
+      "stake": 20,
+      "multiplier": 2.36,
+      "to_win": 47.2,
+      "status": "won",
+      "pnl": 27.2,
+      "legs": [
+       {
+        "pick": "SF ML +136",
+        "game": "San Francisco 49ers at Seattle Seahawks",
+        "league": "NFL",
+        "result": "won",
+        "final": "San Francisco 49ers at Seattle Seahawks: 32-29"
+       }
+      ]
+     },
+     {
+      "date": "2026-10-10",
+      "type": "single",
+      "stake": 20,
+      "multiplier": 2.6,
+      "to_win": 52.0,
+      "status": "lost",
+      "pnl": -20,
+      "legs": [
+       {
+        "pick": "LAC ML +160",
+        "game": "Denver Broncos at Los Angeles Chargers",
+        "league": "NFL",
+        "result": "lost",
+        "final": "Denver Broncos at Los Angeles Chargers: 23-17"
+       }
+      ]
+     },
+     {
+      "date": "2026-10-10",
+      "type": "single",
+      "stake": 20,
+      "multiplier": 1.54,
+      "to_win": 30.81,
+      "status": "lost",
+      "pnl": -20,
+      "legs": [
+       {
+        "pick": "PITT ML -185",
+        "game": "North Carolina Tar Heels at Pittsburgh Panthers",
+        "league": "NCAAF",
+        "result": "lost",
+        "final": "North Carolina Tar Heels at Pittsburgh Panthers: 21-17"
+       }
+      ]
+     },
+     {
+      "date": "2026-10-10",
+      "type": "single",
+      "stake": 20,
+      "multiplier": 1.59,
+      "to_win": 31.76,
+      "status": "push",
+      "pnl": 0,
+      "legs": [
+       {
+        "pick": "WSH ML -170",
+        "game": "New York Giants at Washington Commanders",
+        "league": "NFL",
+        "result": "push",
+        "final": "New York Giants at Washington Commanders: 27-27"
+       }
+      ]
+     },
+     {
+      "date": "2026-10-10",
+      "type": "single",
+      "stake": 10,
+      "multiplier": 1.82,
+      "to_win": 18.2,
+      "status": "lost",
+      "pnl": -10,
+      "legs": [
+       {
+        "pick": "PSU ML -122",
+        "game": "USC Trojans at Penn State Nittany Lions",
+        "league": "NCAAF",
+        "result": "lost",
+        "final": "USC Trojans at Penn State Nittany Lions: 31-23"
+       }
+      ]
+     },
+     {
+      "date": "2026-10-07",
+      "type": "single",
+      "stake": 10,
+      "multiplier": 2.29,
+      "to_win": 22.9,
+      "status": "lost",
+      "pnl": -10,
+      "legs": [
+       {
+        "pick": "ATL ML +129",
+        "game": "Los Angeles Dodgers at Atlanta Braves",
+        "league": "MLB",
+        "result": "lost",
+        "final": "Los Angeles Dodgers at Atlanta Braves: 4-1"
+       }
+      ]
+     },
+     {
+      "date": "2026-10-07",
+      "type": "single",
+      "stake": 10,
+      "multiplier": 1.93,
+      "to_win": 19.35,
+      "status": "won",
+      "pnl": 9.35,
+      "legs": [
+       {
+        "pick": "MIL ML -107",
+        "game": "Milwaukee Brewers at San Diego Padres",
+        "league": "MLB",
+        "result": "won",
+        "final": "Milwaukee Brewers at San Diego Padres: 3-1"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "parlays": [
+  {
+   "date": "2026-10-07",
+   "app": "PrizePicks",
+   "type": "2-pick power play (3x)",
+   "stake": 10.0,
+   "payout_x": 3.0,
+   "win_p": 0.335,
+   "ev_pct": 0.4,
+   "status": "void",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Tyler Goodson",
+     "team": "DAL",
+     "stat": "rush_yds",
+     "side": "under",
+     "line": 16.5,
+     "price": null,
+     "ticker": null,
+     "game": "TB @ DAL",
+     "start": "2026-10-09T00:15:00Z",
+     "p": 0.583,
+     "why": "Tyler Goodson under 16.5 rush yds: 5 books price it 50%; hit 8% of last 12 (avg 4.8). Fair 58%.",
+     "result": "void",
+     "case": "He's Dallas' backup back behind the starter, so his carries are limited. Dallas is an 8.5-point favorite, but late-game work usually goes to the lead back. He went under 16.5 yards in 6 of his last 8 games (12, 22, 3, 9, 0, 0, 0, 4), and the sportsbooks price the under right at a coin flip, so PrizePicks' line is a touch high.",
+     "actual": null,
+     "note": "Did not play (not in the TB @ DAL box score), so PrizePicks drops the leg"
+    },
+    {
+     "league": "mlb",
+     "player": "Mike Yastrzemski",
+     "team": "ATL",
+     "stat": "hits",
+     "side": "under",
+     "line": 0.5,
+     "price": null,
+     "ticker": null,
+     "game": "LAD @ ATL",
+     "start": "2026-10-07T22:00:00Z",
+     "p": 0.574,
+     "why": "Mike Yastrzemski under 0.5 hits: 3 books price it 53%; hit 25% of last 12 (avg 0.3); 33/84 over vs LAD, avg 0.5. Fair 57%.",
+     "result": "won",
+     "case": "He's ice cold: 1 hit in his last 8 games, including 0 for both NLDS games against the Dodgers. He's facing a Dodgers staff that has shut him down all series, and the books lean toward no hit too (53%).",
+     "actual": 0
+    }
+   ],
+   "breakdown": "Two unders on players in quiet roles, in different games, so one result doesn't drag the other. Both have to hit for 3x.",
+   "note": "Made before the 65% rule; kept so results stay honest."
+  },
+  {
+   "date": "2026-10-07",
+   "app": "PrizePicks",
+   "type": "3-pick power play (6x)",
+   "stake": 10.0,
+   "payout_x": 6.0,
+   "win_p": 0.192,
+   "ev_pct": 15.3,
+   "status": "won",
+   "pnl": 20.0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Tyler Goodson",
+     "team": "DAL",
+     "stat": "rush_yds",
+     "side": "under",
+     "line": 16.5,
+     "price": null,
+     "ticker": null,
+     "game": "TB @ DAL",
+     "start": "2026-10-09T00:15:00Z",
+     "p": 0.583,
+     "why": "Tyler Goodson under 16.5 rush yds: 5 books price it 50%; hit 8% of last 12 (avg 4.8). Fair 58%.",
+     "result": "void",
+     "case": "He's Dallas' backup back behind the starter, so his carries are limited. Dallas is an 8.5-point favorite, but late-game work usually goes to the lead back. He went under 16.5 yards in 6 of his last 8 games (12, 22, 3, 9, 0, 0, 0, 4), and the sportsbooks price the under right at a coin flip, so PrizePicks' line is a touch high.",
+     "actual": null,
+     "note": "Did not play (not in the TB @ DAL box score), so PrizePicks drops the leg"
+    },
+    {
+     "league": "mlb",
+     "player": "Mike Yastrzemski",
+     "team": "ATL",
+     "stat": "hits",
+     "side": "under",
+     "line": 0.5,
+     "price": null,
+     "ticker": null,
+     "game": "LAD @ ATL",
+     "start": "2026-10-07T22:00:00Z",
+     "p": 0.574,
+     "why": "Mike Yastrzemski under 0.5 hits: 3 books price it 53%; hit 25% of last 12 (avg 0.3); 33/84 over vs LAD, avg 0.5. Fair 57%.",
+     "result": "won",
+     "case": "He's ice cold: 1 hit in his last 8 games, including 0 for both NLDS games against the Dodgers. He's facing a Dodgers staff that has shut him down all series, and the books lean toward no hit too (53%).",
+     "actual": 0
+    },
+    {
+     "league": "mlb",
+     "player": "Anthony Volpe",
+     "team": "NYY",
+     "stat": "total_bases",
+     "side": "over",
+     "line": 0.5,
+     "price": null,
+     "ticker": null,
+     "game": "TB @ NYY",
+     "start": "2026-10-08T00:00:00Z",
+     "p": 0.574,
+     "why": "Anthony Volpe over 0.5 total bases: 3 books price it 57%; hit 58% of last 12 (avg 1.1); 24/41 over vs TB, avg 1.5. Fair 57%.",
+     "result": "won",
+     "case": "One single clears this. He's hit safely in 5 of his last 8, and the books make an over on 0.5 total bases a 57% favorite. Against Tampa he's 24 of 41 career games with a hit, so the matchup isn't a problem.",
+     "actual": 3
+    }
+   ],
+   "breakdown": "The same two unders plus Volpe getting one base hit. All three are in different games, so they don't depend on each other. All three have to hit for 6x.",
+   "note": "Made before the 65% rule; kept so results stay honest."
+  },
+  {
+   "date": "2026-10-07",
+   "app": "Kalshi",
+   "type": "3-leg combo",
+   "stake": 10.0,
+   "payout_x": 7.09,
+   "win_p": 0.2,
+   "ev_pct": 41.8,
+   "status": "won",
+   "pnl": 60.9,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Bucky Irving",
+     "team": "TB",
+     "stat": "rush_att",
+     "side": "over",
+     "line": 13.5,
+     "price": 0.46,
+     "ticker": "KXNFLRSHATT-26OCT08TBDAL-TBBIRVING7-14",
+     "game": "TB @ DAL",
+     "start": "2026-10-09T00:15:00Z",
+     "p": 0.554,
+     "why": "Bucky Irving over 13.5 rush att: 8 books price it 48%; hit 83% of last 12 (avg 16.5); 1/1 over vs DAL, avg 16.0. Fair 55%.",
+     "result": "won",
+     "case": "Tampa's lead back gets fed: 16, 15 and 17 carries in three of his last four games. Even trailing by a lot, Tampa has leaned on him, and 14 carries is under his usual workload (16.5 average over his last 12).",
+     "actual": 21
+    },
+    {
+     "league": "mlb",
+     "player": "Nick Martinez",
+     "team": "TB",
+     "stat": "pitcher_ks",
+     "side": "over",
+     "line": 2.5,
+     "price": 0.58,
+     "ticker": "KXMLBKS-26OCT072000TBNYY-TBNMARTINEZ28-4",
+     "game": "TB @ NYY",
+     "start": "2026-10-08T00:00:00.000Z",
+     "p": 0.644,
+     "why": "Nick Martinez over 2.5 pitcher ks (3+): 7 books price it 60%; hit 7 of his last 8. Fair 64%.",
+     "result": "won",
+     "case": "Matches your real Kalshi slip: 3+ strikeouts. He's had 3 or more in 7 of his last 8 starts (1, 7, 3, 3, 4, 4, 4, 5) and struck out 7 Yankees two weeks ago. Seven sportsbooks put it near 60%.",
+     "actual": 3
+    },
+    {
+     "league": "mlb",
+     "player": "Robert Gasser",
+     "team": "MIL",
+     "stat": "pitcher_ks",
+     "side": "over",
+     "line": 2.5,
+     "price": 0.49,
+     "ticker": "KXMLBKS-26OCT072200MILSD-MILRGASSER54-3",
+     "game": "MIL @ SD",
+     "start": "2026-10-08T02:00:00.000Z",
+     "p": 0.56,
+     "why": "Robert Gasser over 2.5 pitcher ks: 4 books price it 47%; hit 92% of last 12 (avg 5.0). Fair 56%.",
+     "result": "won",
+     "case": "Milwaukee's starter averages 5 strikeouts a start, with 3 or more in 7 of his last 8. The only risk is a short playoff leash, which is why it's priced near a coin flip. At 49 cents on Kalshi that's a good price for a pitcher who usually clears 3 easily.",
+     "actual": 3
+    }
+   ],
+   "breakdown": "Same three legs as your real Kalshi slip (Irving 14+ carries, Gasser 3+ Ks, Martinez 3+ Ks) at Kalshi's real 7.09x payout. It's a long shot, and the edge comes from each leg being priced a bit cheap.",
+   "note": "Made before the 65% rule. Matched to Ryan's real Kalshi slip (7.09x) on 2026-10-08."
+  }
+ ]
+}
