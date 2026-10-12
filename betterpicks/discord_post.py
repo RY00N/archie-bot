@@ -84,7 +84,7 @@ def embed_parlay(e):
 def kalshi_post(e):
     """Message text with each leg's real Kalshi link on its own line, so Discord unfurls Kalshi's own preview."""
     links = [kalshi_url(l.get("ticker")) for l in e["legs"]]
-    lines = [f"**BetterPicks {e['app']} {e['type']}** (practice pick, not a real bet)"]
+    lines = [f"**{'LOCK, ' if e.get('lock') else ''}BetterPicks {e['app']} {e['type']}** (practice pick, not a real bet)"]
     lines += [f"{l['player']} {l['side']} {l['line']} {l['stat'].replace('_', ' ')}: {u}" for l, u in zip(e["legs"], links) if u]
     return "\n".join(lines)
 
@@ -108,15 +108,22 @@ def send(text, embeds=None):
 
 
 def today(dry=False):
+    # Ryan 2026-10-12: Kalshi only for now; parlays go out 6am-noon PT, 1-leg locks any time.
     book = load(BOOK, {})
     sent = set(load(SENT, []))
-    day = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=-7))).date().isoformat()
-    items = [(key_pick(p), fmt_pick(p)) for p in book.get("picks", []) if p["date"] == day]
-    items += [(key_parlay(e), e) for e in book.get("parlays", []) if e["date"] == day]
+    rules = load(os.path.join(HERE, "rules.json"), {})
+    apps = set(rules.get("apps", ["PrizePicks", "Kalshi", "sportsbook"]))
+    lo, hi = rules.get("post_window_pt", [0, 24])
+    now = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=-7)))
+    day, in_window = now.date().isoformat(), lo <= now.hour < hi
+    items = [(key_pick(p), fmt_pick(p)) for p in book.get("picks", []) if p["date"] == day and "sportsbook" in apps]
+    items += [(key_parlay(e), e) for e in book.get("parlays", [])
+              if e["date"] == day and e["app"] in apps and (e.get("lock") or in_window) and not e.get("test")]
     new = [(k, t) for k, t in items if k not in sent]
     if not new:
         print("nothing new to post"); return
-    msgs = [f"**BetterPicks {day}** (practice picks, not real bets)"] + [t for _, t in new]
+    head = [] if all(isinstance(t, dict) and t.get("lock") for _, t in new) else [f"**BetterPicks {day}** (practice picks, not real bets)"]
+    msgs = head + [t for _, t in new]
     for m in msgs:
         if isinstance(m, dict):   # a parlay: Kalshi ones get the link embed, others plain text
             if m["app"] == "Kalshi":

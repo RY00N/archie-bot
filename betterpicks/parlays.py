@@ -149,14 +149,7 @@ def describe(prop, side, line, f):
     return s + f". Fair {f['p']:.0%}."
 
 
-def build():
-    book = load(BOOK, None)
-    props = load(PROPS, {}).get("props", [])
-    now = datetime.now(timezone.utc)
-    today = now.astimezone(PT).date().isoformat()
-    book.setdefault("parlays", [])
-    if any(e["date"] == today for e in book["parlays"]):
-        print("already built today"); return
+def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi")):
     legs = []
     for pr in props:
         if (pr["league"], pr["stat"]) not in STATS:
@@ -164,15 +157,15 @@ def build():
         if not pr.get("start"):
             continue
         start = datetime.fromisoformat(pr["start"].replace("Z", "+00:00"))
-        if not (now < start < now + timedelta(hours=40)):
+        if not (now < start < now + timedelta(hours=horizon_h)):
             continue
         pp = pr["sources"].get("PrizePicks")
-        if pp and pp.get("line") is not None:
+        if "PrizePicks" in apps and pp and pp.get("line") is not None:
             for side in ("over", "under"):
                 f = fair(pr, pp["line"], side)
                 if f and f["p"] >= MIN_LEG_P:
                     legs.append({"app": "PrizePicks", "prop": pr, "side": side, "line": pp["line"], **f})
-        for rung in (pr["sources"].get("Kalshi") or {}).get("ladder", []):
+        for rung in ((pr["sources"].get("Kalshi") or {}).get("ladder", []) if "Kalshi" in apps else []):
             for side, ask in (("over", rung.get("yes_ask")), ("under", rung.get("no_ask"))):
                 if not ask or ask <= 0.02 or ask >= 0.95:
                     continue
@@ -181,44 +174,78 @@ def build():
                 if f and f["p"] - ask - fee >= MIN_KALSHI_EDGE:
                     legs.append({"app": "Kalshi", "prop": pr, "side": side, "line": rung["line"], "price": ask,
                                  "ticker": rung.get("ticker"), "edge": round(f["p"] - ask - fee, 3), **f})
-    # Ryan's rule: no parlay under the win chance in rules.json (55% since 2026-10-12, was 65%) (rules.json parlay_min_win_p / parlay_mode)
+    return legs
+
+
+def build():
+    # Ryan 2026-10-12 06:25Z rules (rules.json): Kalshi only for now; parlays of at most 3 legs (1-2 fine);
+    # at most 3 parlays per slate day, posted 6am-noon PT; after noon PT build for the next day's games.
+    # A can't-pass-up leg (lock_single_edge) goes out any time as a 1-leg pick and doesn't count toward the 3.
+    book = load(BOOK, None)
+    props = load(PROPS, {}).get("props", [])
     r = load(os.path.join(HERE, "rules.json"), {})
+    now = datetime.now(timezone.utc)
+    now_pt = now.astimezone(PT)
+    apps = tuple(r.get("apps", ["PrizePicks", "Kalshi"]))
+    max_legs, max_par = r.get("max_legs", 3), r.get("max_parlays_per_day", 3)
+    slate = (now_pt.date() if now_pt.hour < r.get("post_window_pt", [6, 12])[1] else now_pt.date() + timedelta(days=1)).isoformat()
+    book.setdefault("parlays", [])
+    legs = collect_legs(props, now, apps=apps)
     min_win, mode = r.get("parlay_min_win_p", 0.65), r.get("parlay_mode", "whole")
     ok = (lambda c: math.prod(l["p"] for l in c) >= min_win) if mode == "whole" else (lambda c: min(l["p"] for l in c) >= min_win)
+    used = {(l["player"], l["stat"]) for e in book["parlays"] if e["date"] >= now_pt.date().isoformat() for l in e["legs"]}
     entries = []
-    pp_legs = sorted([l for l in legs if l["app"] == "PrizePicks"], key=lambda l: -l["p"])[:12]
-    for size in (2, 3):
-        best = None
-        for combo in combinations(pp_legs, size):
-            if len({l["prop"]["game"] for l in combo}) < size or not ok(combo):   # one leg per game; min win-chance rule
-                continue
-            ev = math.prod(l["p"] for l in combo) * PP_PAYOUT[size] - 1
-            if best is None or ev > best[0]:
-                best = (ev, combo)
-        if best and best[0] > 0:
-            entries.append(make_entry(today, "PrizePicks", f"{size}-pick power play ({PP_PAYOUT[size]:g}x)",
-                                      best[1], PP_PAYOUT[size], best[0]))
-    k_legs = sorted([l for l in legs if l["app"] == "Kalshi"], key=lambda l: -l["p"])
-    seen, k_pick = set(), []
-    for l in k_legs:
-        if l["prop"]["game"] not in seen and ok(k_pick + [l]):
-            k_pick.append(l); seen.add(l["prop"]["game"])
-        if len(k_pick) == 3:
+    # 1) locks: any time, single leg, big Kalshi edge
+    today = now_pt.date().isoformat()
+    lock_edge, lock_p = r.get("lock_single_edge", 0.10), r.get("lock_single_min_p", 0.60)
+    n_locks = sum(1 for e in book["parlays"] if e["date"] == today and e.get("lock"))
+    for l in sorted([l for l in legs if l["app"] == "Kalshi" and l["edge"] >= lock_edge and l["p"] >= lock_p], key=lambda l: -l["edge"]):
+        if n_locks >= r.get("max_locks_per_day", 3):
             break
-    if len(k_pick) >= 2:
-        # Ryan 2026-10-08: don't list a Kalshi multiplier we don't know; he sends the real one later
-        # (python3 parlays.py payout <date> <mult>). The estimate is used only to check the combo is worth it.
-        est = kalshi_combo_mult([l["price"] for l in k_pick])
-        if math.prod(l["p"] for l in k_pick) * est > 1:
-            entries.append(make_entry(today, "Kalshi", f"{len(k_pick)}-leg combo", k_pick, None, None))
+        if (l["prop"]["player"], l["prop"]["stat"]) in used:
+            continue
+        e = make_entry(today, "Kalshi", f"1-leg lock: {l['prop']['player']} {l['side']} {l['line']} {l['prop']['stat'].replace('_', ' ')}",
+                       [l], round(1 / l["price"], 2), None)
+        e["lock"] = True; e["ev_pct"] = round(100 * (l["p"] / l["price"] - 1), 1)
+        entries.append(e); used.add((l["prop"]["player"], l["prop"]["stat"])); n_locks += 1
+    # 2) up to max_par parlays for the slate day, 2..max_legs legs, one leg per game, no reused players
+    day_legs = [l for l in legs if l["app"] == "Kalshi" and datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == slate]
+    have = [e for e in book["parlays"] if e["date"] == slate and not e.get("lock")]
+    pool = sorted([l for l in day_legs if (l["prop"]["player"], l["prop"]["stat"]) not in used], key=lambda l: -l["p"])
+    while len(have) + sum(1 for e in entries if not e.get("lock")) < max_par:
+        pick, games = [], set()
+        for l in pool:
+            if l["prop"]["game"] not in games and ok(pick + [l]):
+                pick.append(l); games.add(l["prop"]["game"])
+            if len(pick) == max_legs:
+                break
+        if len(pick) < 2 or math.prod(l["p"] for l in pick) * kalshi_combo_mult([l["price"] for l in pick]) <= 1:
+            break
+        n = len(have) + sum(1 for e in entries if not e.get("lock")) + 1
+        entries.append(make_entry(slate, "Kalshi", f"{len(pick)}-leg combo #{n}", pick, None, None))
+        ids = {id(l) for l in pick}
+        pool = [l for l in pool if id(l) not in ids and l["prop"]["player"] not in {p["prop"]["player"] for p in pick}]
+    if "PrizePicks" in apps and not any(e["date"] == slate and e["app"] == "PrizePicks" for e in book["parlays"]):
+        pp_legs = sorted([l for l in legs if l["app"] == "PrizePicks"], key=lambda l: -l["p"])[:12]
+        for size in range(2, max_legs + 1):
+            best = None
+            for combo in combinations(pp_legs, size):
+                if len({l["prop"]["game"] for l in combo}) < size or not ok(combo):
+                    continue
+                ev = math.prod(l["p"] for l in combo) * PP_PAYOUT[size] - 1
+                if best is None or ev > best[0]:
+                    best = (ev, combo)
+            if best and best[0] > 0:
+                entries.append(make_entry(slate, "PrizePicks", f"{size}-pick power play ({PP_PAYOUT[size]:g}x)",
+                                          best[1], PP_PAYOUT[size], best[0]))
     book["parlays"] += entries
     save(BOOK, book)
     for e in entries:
-        print(e["app"], e["type"], f"pays {e['payout_x']}x, EV {e['ev_pct']}%" if e["payout_x"] else "payout: waiting on Ryan")
+        print(e["app"], e["type"], f"pays {e['payout_x']}x" if e["payout_x"] else "payout: check Kalshi")
         for l in e["legs"]:
             print("   ", l["why"])
     if not entries:
-        print("no +EV practice entries today")
+        print("no new practice entries")
 
 
 def recent_case(league, stat, player, side, line, n=5):
@@ -279,8 +306,10 @@ def grade():
         live = [l for l in e["legs"] if l["result"] not in ("void", "push")]
         if any(l["result"] == "lost" for l in live):
             e["status"], e["pnl"] = "lost", -e["stake"]
-        elif len(live) < 2:
+        elif len(live) < (1 if e.get("lock") else 2):
             e["status"], e["pnl"] = "void", 0
+        elif e.get("lock"):
+            e["status"], e["pnl"] = "won", round(e["stake"] * (e["payout_x"] - 1), 2)
         else:
             mult = (PP_PAYOUT.get(len(live), e["payout_x"]) if e["app"] == "PrizePicks"
                     else (e["payout_x"] if len(live) == len(e["legs"]) else kalshi_combo_mult([l["price"] for l in live])))

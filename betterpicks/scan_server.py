@@ -11,7 +11,7 @@ never overwritten. When GITHUB_TOKEN is set, book.json + discord_posted.json are
 betterpicks-live branch after each change so the project can merge the picks and grade them.
 Needs DISCORD_BOT_TOKEN + DISCORD_CHANNEL_ID (or DISCORD_WEBHOOK_URL). Standard library only.
 """
-import gzip, hashlib, os, re, shutil, subprocess, sys, time
+import gzip, hashlib, json, os, re, shutil, subprocess, sys, time
 
 REPO = os.environ.get("BP_REPO", "/home/archie/bp-repo")
 WORK = os.environ.get("BP_WORK", "/home/archie/bp")
@@ -93,9 +93,15 @@ def publish():
 def scan():
     w = lambda f: os.path.join(WORK, f)
     before = digest("book.json", "discord_posted.json")
-    step(w("books.py"), "lines")
+    try:
+        apps = json.load(open(w("rules.json"))).get("apps", ["sportsbook"])
+    except Exception:
+        apps = ["sportsbook"]
+    sportsbook = "sportsbook" in apps   # Ryan 2026-10-12: Kalshi only for now, so no sportsbook singles
+    if sportsbook:
+        step(w("books.py"), "lines")
     step(w("books.py"), "props")
-    out = step(w("betterpicks.py"), "pick") + step(w("parlays.py"), "build")
+    out = (step(w("betterpicks.py"), "pick") if sportsbook else "") + step(w("parlays.py"), "build")
     posted = step(w("discord_post.py"), "today")
     if "posted" in posted:
         log(out.strip()[:500]); log(posted.strip())

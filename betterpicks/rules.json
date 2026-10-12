@@ -26,5 +26,18 @@
  "payout_note": "Kalshi markup calibrated from Ryan's real slip 2026-10-07 (46/49/58% -> 7.09x). PrizePicks payouts unconfirmed until Ryan sends an in-app screenshot.",
  "singles_note": "Ryan 2026-10-12: fewer singles (max 2/day), and only when a sportsbook moneyline beats the de-vigged Pinnacle line by >= sharp_min_ev (3%); 2u at sharp_big_ev (6%). ESPN win model no longer used to pick.",
  "sharp_min_ev": 0.03,
- "sharp_big_ev": 0.06
+ "sharp_big_ev": 0.06,
+ "apps": [
+  "Kalshi"
+ ],
+ "max_legs": 3,
+ "max_parlays_per_day": 3,
+ "post_window_pt": [
+  6,
+  12
+ ],
+ "lock_single_edge": 0.1,
+ "lock_single_min_p": 0.6,
+ "max_locks_per_day": 3,
+ "kalshi_only_note": "Ryan 2026-10-12 06:25Z: stick to Kalshi for now (no PrizePicks or sportsbook singles); parlays max 3 legs (1-2 ok); max 3 parlays per day posted 6am-noon PT, then build the next day's; a can't-pass-up single leg (edge >= lock_single_edge, fair >= lock_single_min_p) goes out any time as a 1-leg lock and doesn't count toward the 3 (max_locks_per_day)."
 }
