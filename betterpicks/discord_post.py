@@ -69,7 +69,7 @@ STAT_WORDS = {"pitcher_ks": "strikeouts", "pitcher_outs": "outs recorded", "earn
               "hits_allowed": "hits allowed", "hits": "hits", "total_bases": "total bases", "hrr": "hits + runs + RBIs",
               "singles": "singles", "hr": "home runs", "rbi": "RBIs", "runs": "runs", "batter_ks": "strikeouts",
               "pass_yds": "passing yards", "rush_yds": "rushing yards", "rec_yds": "receiving yards", "pra": "points + rebounds + assists",
-              "threes": "3-pointers", "shots_on_target": "shots on target"}
+              "threes": "3-pointers", "rush_att": "rushing attempts", "receptions": "receptions", "points": "points", "rebounds": "rebounds", "assists": "assists", "shots_on_target": "shots on target"}
 _titles = {}
 
 

@@ -219,6 +219,18 @@ def grade():
     print("graded", changed, "bankroll", book["bankroll"])
 
 
+def kalshi_words(l):
+    """Ryan 2026-10-13: say it the way Kalshi does ('YES on Parker Messick: 5+ strikeouts'), never '4.5 pitcher ks'."""
+    import math
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from discord_post import STAT_WORDS
+    except Exception:
+        STAT_WORDS = {}
+    return (f"{'YES' if l['side'] == 'over' else 'NO'} on {l['player']}: {math.ceil(l['line'])}+ "
+            f"{STAT_WORDS.get(l['stat'], l['stat'].replace('_', ' '))}")
+
+
 def apps_view(book):
     """Per-app drill-down for the city P&L: app -> totals + every parlay with legs, stake, multiplier, result."""
     apps = {}
@@ -229,7 +241,8 @@ def apps_view(book):
         a["parlays"].append({"date": e["date"], "type": e["type"], "stake": e["stake"], "multiplier": e["payout_x"],
                              "to_win": round(e["stake"] * e["payout_x"], 2) if e["payout_x"] else None, "status": e["status"], "pnl": e["pnl"],
                              "hit_chance": e["win_p"], "breakdown": e.get("breakdown"),
-                             "legs": [{"pick": f"{l['player']} {l['side']} {l['line']} {l['stat'].replace('_', ' ')}",
+                             "legs": [{"pick": kalshi_words(l) if e["app"] == "Kalshi" else f"{l['player']} {l['side']} {l['line']} {l['stat'].replace('_', ' ')}",
+                                       "edge": l.get("edge"), "news": l.get("news"),
                                        "game": l["game"], "league": l["league"].upper(), "price": l.get("price"),
                                        "actual": l.get("actual"), "result": l.get("result") or "open",
                                        "why": l.get("case") or l.get("why"), "chance": l.get("p")}
