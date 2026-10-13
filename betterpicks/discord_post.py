@@ -40,6 +40,7 @@ def fmt_pick(p):
 def fmt_parlay(e):
     pay = f"{e['payout_x']}x" if e.get("payout_x") else "multiplier: check the app"
     legs = "\n".join(f"- {l['player']} {l['side']} {l['line']} {l['stat'].replace('_', ' ')} ({l['game']})"
+                     + (f" edge {l['edge'] * 100:+.1f}%" if l.get("edge") is not None else "")
                      for l in e["legs"])
     return f"**{e['app']} {e['type']}**, ${e['stake']:.0f} practice, {pay}, {e['win_p']:.0%} win chance\n{legs}"
 
@@ -73,6 +74,10 @@ def embed_parlay(e):
         url = kalshi_url(l.get("ticker"))
         price = f", {round(l['price'] * 100)}c" if l.get("price") else ""
         name = f"{l['player']} {l['side']} {l['line']} {l['stat'].replace('_', ' ')}"
+        edge = l.get("edge")
+        if edge is None and l.get("price"):
+            edge = l["p"] - l["price"] - 0.07 * l["price"] * (1 - l["price"])
+        name += f" (edge {edge * 100:+.1f}%)" if edge is not None else ""
         val = f"{l['game']}{price}, our fair {l['p']:.0%}" + (f"\n[Open on Kalshi]({url})" if url else "")
         fields.append({"name": name[:256], "value": val[:1024]})
     first = next((kalshi_url(l.get("ticker")) for l in e["legs"] if l.get("ticker")), None)
@@ -122,7 +127,7 @@ def today(dry=False):
     # Ryan 2026-10-12: if nothing went out by noon PT, say so once
     quiet_key = f"quiet:{day}"
     if not new and now.hour >= hi and quiet_key not in sent and not any(k.startswith(f"parlay:{day}:") for k in sent):
-        msg = "Bad day, no picks from me today. Nothing on Kalshi was worth it. (BetterPicks, practice)"
+        msg = "Bad day, no picks from me today. No Kalshi games left to play. (BetterPicks, practice)"
         print(msg) if dry else (send(msg), json.dump(sorted(sent | {quiet_key}), open(SENT, "w"), indent=1))
         return
     # Ryan 2026-10-12 17:46Z: between 6am and noon PT, if nothing has gone out yet, say so every 2 hours (8am, 10am)

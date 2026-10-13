@@ -149,7 +149,7 @@ def describe(prop, side, line, f):
     return s + f". Fair {f['p']:.0%}."
 
 
-def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi")):
+def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi"), min_edge=MIN_KALSHI_EDGE):
     legs = []
     for pr in props:
         if (pr["league"], pr["stat"]) not in STATS:
@@ -171,7 +171,7 @@ def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi")):
                     continue
                 f = fair(pr, rung["line"], side)
                 fee = 0.07 * ask * (1 - ask)
-                if f and f["p"] - ask - fee >= MIN_KALSHI_EDGE:
+                if f and f["p"] - ask - fee >= min_edge:
                     legs.append({"app": "Kalshi", "prop": pr, "side": side, "line": rung["line"], "price": ask,
                                  "ticker": rung.get("ticker"), "edge": round(f["p"] - ask - fee, 3), **f})
     return legs
@@ -232,6 +232,27 @@ def build():
             ids = {id(l) for l in pick}
             pool = [l for l in pool if id(l) not in ids and l["prop"]["player"] not in {p["prop"]["player"] for p in pick}]
             used.update((l["prop"]["player"], l["prop"]["stat"]) for l in pick)
+    # 3) Ryan 2026-10-13 18:04Z: at least one 1-3 leg pick every day. If noon PT passes with nothing for today,
+    # post the best Kalshi combo left in today's games (best expected return, at least a 40% win chance if possible),
+    # even under the usual 55% bar. Anything beyond that one still has to clear the normal rules.
+    if now_pt.hour >= r.get("post_window_pt", [6, 12])[1] and not any(e["date"] == today for e in book["parlays"] + entries):
+        pool = sorted([l for l in collect_legs(props, now, apps=("Kalshi",), min_edge=0.0)
+                       if datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == today
+                       and (l["prop"]["player"], l["prop"]["stat"]) not in used], key=lambda l: -l["p"])[:15]
+        cands = []
+        for size in range(1, max_legs + 1):
+            for c in combinations(pool, size):
+                if len({l["prop"]["game"] for l in c}) < size or len({l["prop"]["player"] for l in c}) < size:
+                    continue
+                wp = math.prod(l["p"] for l in c)
+                mult = 1 / c[0]["price"] if size == 1 else kalshi_combo_mult([l["price"] for l in c])
+                cands.append((wp >= r.get("daily_pick_min_p", 0.40), wp * mult, wp, c, mult))
+        if cands:
+            _, ev, wp, c, mult = max(cands, key=lambda t: (t[0], t[1] if t[0] else t[2]))
+            e = make_entry(today, "Kalshi", f"pick of the day ({len(c)}-leg)", list(c), mult if len(c) == 1 else None, ev - 1)
+            e["daily"] = True
+            entries.append(e)
+            used.update((l["prop"]["player"], l["prop"]["stat"]) for l in c)
     if "PrizePicks" in apps and not any(e["date"] == slate and e["app"] == "PrizePicks" for e in book["parlays"]):
         pp_legs = sorted([l for l in legs if l["app"] == "PrizePicks"], key=lambda l: -l["p"])[:12]
         for size in range(2, max_legs + 1):
@@ -279,7 +300,7 @@ def make_entry(today, app, kind, combo, mult, ev):
             "legs": [{"league": l["prop"]["league"], "player": l["prop"]["player"], "team": l["prop"].get("team"),
                       "stat": l["prop"]["stat"], "side": l["side"], "line": l["line"], "price": l.get("price"),
                       "ticker": l.get("ticker"), "game": l["prop"]["game"], "start": l["prop"]["start"],
-                      "p": l["p"], "why": describe(l["prop"], l["side"], l["line"], l),
+                      "p": l["p"], "edge": l.get("edge"), "why": describe(l["prop"], l["side"], l["line"], l),
                       "case": recent_case(l["prop"]["league"], l["prop"]["stat"], l["prop"]["player"], l["side"], l["line"]),
                       "result": None} for l in combo]}
 
