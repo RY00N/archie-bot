@@ -44,5 +44,7 @@
  "same_day_parlays": true,
  "stake_note": "Ryan 2026-10-12 06:49Z: 1 unit = $5, every parlay/lock is exactly $5 (min and max). Every game in a parlay must be played the same day (PT). Parlays must be good: winning % first. Practice only; Claude does not place real bets.",
  "daily_pick_min_p": 0.4,
- "daily_pick_note": "Ryan 2026-10-13 18:04Z: at least one 1-3 leg Kalshi pick every day. If noon PT passes with nothing for today, post the best combo left in today's games (best expected return with >= daily_pick_min_p win chance), even under parlay_min_win_p. Extras still need the normal bar. Every leg shows our edge % in Discord."
+ "daily_pick_note": "Ryan 2026-10-13 18:04Z: at least one 1-3 leg Kalshi pick every day. If noon PT passes with nothing for today, post the best combo left in today's games (best expected return with >= daily_pick_min_p win chance), even under parlay_min_win_p. Extras still need the normal bar. Every leg shows our edge % in Discord.",
+ "sports_note": "Ryan 2026-10-13 20:00Z: only baseball, basketball, football, soccer. UFC only when the pick is a near-certainty by the stats AND what people are saying online (no UFC props are scanned today). NHL never.",
+ "news_note": "Ryan 2026-10-13 20:00Z: every leg is checked against ESPN injury reports and the last 3 days of news (news.py): Out/IL/suspended = dropped; questionable or bad news (illness, personal/family matter, divorce, slump) = overs lose 5-8 win-chance points. Note shows in Discord."
 }

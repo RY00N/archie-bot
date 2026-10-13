@@ -78,7 +78,8 @@ def embed_parlay(e):
         if edge is None and l.get("price"):
             edge = l["p"] - l["price"] - 0.07 * l["price"] * (1 - l["price"])
         name += f" (edge {edge * 100:+.1f}%)" if edge is not None else ""
-        val = f"{l['game']}{price}, our fair {l['p']:.0%}" + (f"\n[Open on Kalshi]({url})" if url else "")
+        val = (f"{l['game']}{price}, our fair {l['p']:.0%}" + (f"\n{l['news']}" if l.get("news") else "")
+               + (f"\n[Open on Kalshi]({url})" if url else ""))
         fields.append({"name": name[:256], "value": val[:1024]})
     first = next((kalshi_url(l.get("ticker")) for l in e["legs"] if l.get("ticker")), None)
     return {"title": f"BetterPicks: {e['app']} {e['type']}"[:256], **({"url": first} if first else {}),

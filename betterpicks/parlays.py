@@ -174,6 +174,12 @@ def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi"), min_ed
                 if f and f["p"] - ask - fee >= min_edge:
                     legs.append({"app": "Kalshi", "prop": pr, "side": side, "line": rung["line"], "price": ask,
                                  "ticker": rung.get("ticker"), "edge": round(f["p"] - ask - fee, 3), **f})
+    # Ryan 2026-10-13 20:00Z: real-life context (injuries, illness, personal news) before a leg is used
+    try:
+        import news
+        legs = [l for l in news.adjust(legs) if l["app"] != "Kalshi" or l["edge"] >= min_edge]
+    except Exception as ex:
+        print("news check skipped:", ex)
     return legs
 
 
@@ -300,7 +306,7 @@ def make_entry(today, app, kind, combo, mult, ev):
             "legs": [{"league": l["prop"]["league"], "player": l["prop"]["player"], "team": l["prop"].get("team"),
                       "stat": l["prop"]["stat"], "side": l["side"], "line": l["line"], "price": l.get("price"),
                       "ticker": l.get("ticker"), "game": l["prop"]["game"], "start": l["prop"]["start"],
-                      "p": l["p"], "edge": l.get("edge"), "why": describe(l["prop"], l["side"], l["line"], l),
+                      "p": l["p"], "edge": l.get("edge"), "news": l.get("news"), "why": describe(l["prop"], l["side"], l["line"], l),
                       "case": recent_case(l["prop"]["league"], l["prop"]["stat"], l["prop"]["player"], l["side"], l["line"]),
                       "result": None} for l in combo]}
 
