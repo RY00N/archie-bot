@@ -14,9 +14,9 @@
  "max_fav_odds": -300,
  "hours_ahead": 36,
  "skip_preseason": true,
- "parlay_min_win_p": 0.55,
- "parlay_mode": "whole",
- "parlay_rule_note": "Ryan 2026-10-12: parlays may go down to a 55% whole-parlay win chance, only when +EV vs the app's payout (PrizePicks and Kalshi). Was 65% (2026-10-07). mode 'whole' = whole parlay >= min; 'leg' = every leg >= min.",
+ "parlay_min_win_p": 0.6,
+ "parlay_mode": "leg",
+ "parlay_rule_note": "Ryan 2026-10-13 20:09Z: every leg (player prop) must be 60%+ on its own (mode 'leg'), each leg still +EV vs Kalshi's price. Was whole-parlay >= 55% (2026-10-12).",
  "kalshi_combo_markup": 1.079,
  "prizepicks_power_payouts": {
   "2": 3.0,
