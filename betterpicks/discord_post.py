@@ -9,7 +9,7 @@ Needs ONE of these in the environment (never paste them in chat):
   python3 discord_post.py file <path>     # post a prepared message
 Already-posted items are remembered in discord_posted.json so nothing is posted twice.
 """
-import json, os, re, sys, urllib.request
+import json, math, os, re, sys, urllib.request
 from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -39,7 +39,7 @@ def fmt_pick(p):
 
 def fmt_parlay(e):
     pay = f"{e['payout_x']}x" if e.get("payout_x") else "multiplier: check the app"
-    legs = "\n".join(f"- {l['player']} {l['side']} {l['line']} {l['stat'].replace('_', ' ')} ({l['game']})"
+    legs = "\n".join(f"- {leg_label(l)} ({l['game']})"
                      + (f" edge {l['edge'] * 100:+.1f}%" if l.get("edge") is not None else "")
                      for l in e["legs"])
     return f"**{e['app']} {e['type']}**, ${e['stake']:.0f} practice, {pay}, {e['win_p']:.0%} win chance\n{legs}"
@@ -65,6 +65,27 @@ def kalshi_url(ticker):
     slug = _series_slug[series]
     return f"https://kalshi.com/markets/{series.lower()}/{slug}/{event.lower()}" if slug else f"https://kalshi.com/markets/{series.lower()}"
 
+STAT_WORDS = {"pitcher_ks": "strikeouts", "pitcher_outs": "outs recorded", "earned_runs": "earned runs allowed",
+              "hits_allowed": "hits allowed", "hits": "hits", "total_bases": "total bases", "hrr": "hits + runs + RBIs",
+              "singles": "singles", "hr": "home runs", "rbi": "RBIs", "runs": "runs", "batter_ks": "strikeouts",
+              "pass_yds": "passing yards", "rush_yds": "rushing yards", "rec_yds": "receiving yards", "pra": "points + rebounds + assists",
+              "threes": "3-pointers", "shots_on_target": "shots on target"}
+_titles = {}
+
+
+def leg_label(l):
+    """How Kalshi itself words the leg (Ryan 2026-10-13: no '4.5', no 'ks'): 'YES on Parker Messick: 5+ strikeouts'."""
+    t = l.get("ticker")
+    if t and t not in _titles:
+        try:
+            req = urllib.request.Request(f"{KALSHI_API}/markets/{t}", headers={"User-Agent": "BetterPicks (1.0)"})
+            _titles[t] = json.load(urllib.request.urlopen(req, timeout=10))["market"]["title"].rstrip("?")
+        except Exception:
+            _titles[t] = None
+    title = _titles.get(t) or (f"{l['player']}: {math.ceil(l['line'])}+ "
+                               f"{STAT_WORDS.get(l['stat'], l['stat'].replace('_', ' '))}")
+    return f"{'YES' if l['side'] == 'over' else 'NO'} on {title}"
+
 
 def embed_parlay(e):
     """BetterPicks-branded embed with a tap-to-open Kalshi market link per leg (practice only)."""
@@ -73,7 +94,7 @@ def embed_parlay(e):
     for l in e["legs"]:
         url = kalshi_url(l.get("ticker"))
         price = f", {round(l['price'] * 100)}c" if l.get("price") else ""
-        name = f"{l['player']} {l['side']} {l['line']} {l['stat'].replace('_', ' ')}"
+        name = leg_label(l)
         edge = l.get("edge")
         if edge is None and l.get("price"):
             edge = l["p"] - l["price"] - 0.07 * l["price"] * (1 - l["price"])
@@ -90,7 +111,8 @@ def embed_parlay(e):
 
 def kalshi_post(e):
     """Short header line; the legs and their Kalshi links live inside the one parlay embed (Ryan 2026-10-12)."""
-    return f"**{'LOCK, ' if e.get('lock') else ''}BetterPicks {e['app']} {e['type']}** (practice pick, not a real bet)"
+    kind = f"1-leg lock: {leg_label(e['legs'][0])}" if e.get("lock") else e["type"]
+    return f"**{'LOCK, ' if e.get('lock') else ''}BetterPicks {e['app']} {kind}** (practice pick, not a real bet)"
 
 
 def send(text, embeds=None):
