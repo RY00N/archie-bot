@@ -176,6 +176,10 @@ def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi"), min_ed
                                  "ticker": rung.get("ticker"), "edge": round(f["p"] - ask - fee, 3), **f})
     # Ryan 2026-10-13 20:00Z: real-life context (injuries, illness, personal news) before a leg is used
     try:
+        if not os.path.exists(os.path.join(HERE, "news.py")):   # older droplet scanner doesn't copy news.py yet
+            src = os.path.join(os.environ.get("BP_REPO", "/home/archie/bp-repo"), "betterpicks", "news.py")
+            if os.path.exists(src):
+                open(os.path.join(HERE, "news.py"), "w").write(open(src).read())
         import news
         legs = [l for l in news.adjust(legs) if l["app"] != "Kalshi" or l["edge"] >= min_edge]
     except Exception as ex:
