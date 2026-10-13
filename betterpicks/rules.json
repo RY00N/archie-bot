@@ -14,9 +14,9 @@
  "max_fav_odds": -300,
  "hours_ahead": 36,
  "skip_preseason": true,
- "parlay_min_win_p": 0.6,
+ "parlay_min_win_p": 0.55,
  "parlay_mode": "leg",
- "parlay_rule_note": "Ryan 2026-10-13 20:09Z: every leg (player prop) must be 60%+ on its own (mode 'leg'), each leg still +EV vs Kalshi's price. Was whole-parlay >= 55% (2026-10-12).",
+ "parlay_rule_note": "Ryan 2026-10-13 20:10Z: every leg (player prop) must be 55%+ on its own (mode 'leg'), each leg still +EV vs Kalshi's price. Was whole-parlay >= 55% (2026-10-12).",
  "kalshi_combo_markup": 1.079,
  "prizepicks_power_payouts": {
   "2": 3.0,
