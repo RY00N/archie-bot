@@ -249,7 +249,13 @@ def build():
         props_fresh = (now - props_at).total_seconds() < 900
     except ValueError:
         props_at, props_fresh = None, False
+    is_today = lambda pr: bool(pr.get("start")) and datetime.fromisoformat(pr["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == today
+    k_today = [pr for pr in props if is_today(pr) and (pr["sources"].get("Kalshi") or {}).get("ladder")]
     book["diag"] = {"props_at": props_at.astimezone(PT).strftime("%Y-%m-%d %H:00 PT") if props_at else None,
+                    "props_today": sum(1 for pr in props if is_today(pr)), "kalshi_props_today": len(k_today),
+                    "kalshi_priced_today": sum(1 for pr in k_today if (pr["league"], pr["stat"]) in STATS
+                                               and fair(pr, pr["sources"]["Kalshi"]["ladder"][0]["line"], "over")),
+                    "data_files": sorted(f for f in os.listdir(DATA) if f.endswith(".sqlite")) if os.path.isdir(DATA) else [],
                     "kalshi_legs_today": sum(1 for l in legs if l["app"] == "Kalshi" and
                         datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == today)}
     # 3) Ryan 2026-10-13 18:04Z: at least one 1-3 leg pick every day. If noon PT passes with nothing for today,
