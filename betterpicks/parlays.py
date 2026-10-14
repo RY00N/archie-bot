@@ -255,6 +255,8 @@ def build():
                     "props_today": sum(1 for pr in props if is_today(pr)), "kalshi_props_today": len(k_today),
                     "kalshi_priced_today": sum(1 for pr in k_today if (pr["league"], pr["stat"]) in STATS
                                                and fair(pr, pr["sources"]["Kalshi"]["ladder"][0]["line"], "over")),
+                    "books_on_kalshi_props": dict(sorted(__import__("collections").Counter(
+                        n for pr in k_today for n, s in pr["sources"].items() if s.get("over") is not None).items())),
                     "data_files": sorted(f for f in os.listdir(DATA) if f.endswith(".sqlite")) if os.path.isdir(DATA) else [],
                     "kalshi_legs_today": sum(1 for l in legs if l["app"] == "Kalshi" and
                         datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == today)}
