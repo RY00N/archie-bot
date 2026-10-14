@@ -35,6 +35,7 @@ OUT_PROPS = os.path.join(HERE, "props.json")
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 LEAGUES = ["nfl", "nba", "mlb", "ncaaf", "nhl", "epl", "ufc"]
+DEFAULT_LEAGUES = ["nfl", "nba", "mlb", "epl", "ufc"]   # Ryan 2026-10-13: never NHL, no college; fewer leagues keeps the droplet scan short
 WINDOW_DAYS = 7
 
 try:
@@ -1328,7 +1329,7 @@ def main():
     bad = [x for x in leagues if x not in LEAGUES]
     if bad:
         ap.error("unknown league(s): %s" % bad)
-    leagues = leagues or LEAGUES
+    leagues = leagues or DEFAULT_LEAGUES
     if a.cmd == "status":
         cmd_status()
     elif a.cmd == "lines":

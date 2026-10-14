@@ -193,7 +193,8 @@ def build():
     # at most 3 parlays per slate day. Ryan 2026-10-14 01:08Z: no posting window, keep checking Kalshi and post whenever.
     # A can't-pass-up leg (lock_single_edge) goes out any time as a 1-leg pick and doesn't count toward the 3.
     book = load(BOOK, None)
-    props = load(PROPS, {}).get("props", [])
+    pdoc = load(PROPS, {})
+    props = pdoc.get("props", [])
     r = load(os.path.join(HERE, "rules.json"), {})
     now = datetime.now(timezone.utc)
     now_pt = now.astimezone(PT)
@@ -241,6 +242,16 @@ def build():
             ids = {id(l) for l in pick}
             pool = [l for l in pool if id(l) not in ids and l["prop"]["player"] not in {p["prop"]["player"] for p in pick}]
             used.update((l["prop"]["player"], l["prop"]["stat"]) for l in pick)
+    # 2026-10-14: the noon "no Kalshi games left" note went out while MIL@LAD props were open, so only trust an
+    # empty pool when props.json was written in the last 15 min, and leave a small hourly trace for the project side.
+    try:
+        props_at = datetime.fromisoformat(pdoc.get("generated_at", "").replace("Z", "+00:00"))
+        props_fresh = (now - props_at).total_seconds() < 900
+    except ValueError:
+        props_at, props_fresh = None, False
+    book["diag"] = {"props_at": props_at.astimezone(PT).strftime("%Y-%m-%d %H:00 PT") if props_at else None,
+                    "kalshi_legs_today": sum(1 for l in legs if l["app"] == "Kalshi" and
+                        datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == today)}
     # 3) Ryan 2026-10-13 18:04Z: at least one 1-3 leg pick every day. If noon PT passes with nothing for today,
     # post the best Kalshi combo left in today's games (best expected return, at least a 40% win chance if possible),
     # even under the usual 55% bar. Anything beyond that one still has to clear the normal rules.
@@ -262,7 +273,7 @@ def build():
             e["daily"] = True
             entries.append(e)
             used.update((l["prop"]["player"], l["prop"]["stat"]) for l in c)
-        elif not pool:
+        elif not pool and props_fresh:
             book["no_games_left"] = today   # discord_post.py only sends the bad-day note when this is set
     if "PrizePicks" in apps and not any(e["date"] == slate and e["app"] == "PrizePicks" for e in book["parlays"]):
         pp_legs = sorted([l for l in legs if l["app"] == "PrizePicks"], key=lambda l: -l["p"])[:12]
