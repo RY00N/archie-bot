@@ -134,8 +134,7 @@ def send(text, embeds=None):
 
 
 def today(dry=False):
-    # Ryan 2026-10-12: Kalshi only for now; parlays go out from 6am PT, 1-leg locks any time.
-    # Parlays are built for today only until noon, unless none qualified by then (then any later find for today posts too).
+    # Ryan 2026-10-12: Kalshi only for now. Ryan 2026-10-14 01:08Z: anything dated today posts whenever it's found, any hour.
     book = load(BOOK, {})
     sent = set(load(SENT, []))
     rules = load(os.path.join(HERE, "rules.json"), {})
@@ -145,11 +144,12 @@ def today(dry=False):
     day, in_window = now.date().isoformat(), lo <= now.hour < hi
     items = [(key_pick(p), fmt_pick(p)) for p in book.get("picks", []) if p["date"] == day and "sportsbook" in apps]
     items += [(key_parlay(e), e) for e in book.get("parlays", [])
-              if e["date"] == day and e["app"] in apps and (e.get("lock") or lo <= now.hour) and not e.get("test")]
+              if e["date"] == day and e["app"] in apps and not e.get("test")]   # Ryan 2026-10-14: post whenever, no window
     new = [(k, t) for k, t in items if k not in sent]
-    # Ryan 2026-10-12: if nothing went out by noon PT, say so once
+    # Ryan 2026-10-12: if nothing goes out today, say so once (only after noon and once parlays.py finds no Kalshi games left today)
     quiet_key = f"quiet:{day}"
-    if not new and now.hour >= hi and quiet_key not in sent and not any(k.startswith(f"parlay:{day}:") for k in sent):
+    if (not new and now.hour >= hi and quiet_key not in sent and book.get("no_games_left") == day
+            and not any(k.startswith(f"parlay:{day}:") for k in sent)):
         msg = "Bad day, no picks from me today. No Kalshi games left to play. (BetterPicks, practice)"
         print(msg) if dry else (send(msg), json.dump(sorted(sent | {quiet_key}), open(SENT, "w"), indent=1))
         return

@@ -180,6 +180,7 @@ def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi"), min_ed
             src = os.path.join(os.environ.get("BP_REPO", "/home/archie/bp-repo"), "betterpicks", "news.py")
             if os.path.exists(src):
                 open(os.path.join(HERE, "news.py"), "w").write(open(src).read())
+        sys.path.insert(0, HERE)   # python3 -I leaves the script's folder off sys.path
         import news
         legs = [l for l in news.adjust(legs) if l["app"] != "Kalshi" or l["edge"] >= min_edge]
     except Exception as ex:
@@ -189,7 +190,7 @@ def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi"), min_ed
 
 def build():
     # Ryan 2026-10-12 06:25Z rules (rules.json): Kalshi only for now; parlays of at most 3 legs (1-2 fine);
-    # at most 3 parlays per slate day, posted 6am-noon PT; after noon PT build for the next day's games.
+    # at most 3 parlays per slate day. Ryan 2026-10-14 01:08Z: no posting window, keep checking Kalshi and post whenever.
     # A can't-pass-up leg (lock_single_edge) goes out any time as a 1-leg pick and doesn't count toward the 3.
     book = load(BOOK, None)
     props = load(PROPS, {}).get("props", [])
@@ -198,7 +199,7 @@ def build():
     now_pt = now.astimezone(PT)
     apps = tuple(r.get("apps", ["PrizePicks", "Kalshi"]))
     max_legs, max_par = r.get("max_legs", 3), r.get("max_parlays_per_day", 3)
-    slate = (now_pt.date() if now_pt.hour < r.get("post_window_pt", [6, 12])[1] else now_pt.date() + timedelta(days=1)).isoformat()
+    slate = now_pt.date().isoformat()
     book.setdefault("parlays", [])
     legs = collect_legs(props, now, apps=apps)
     min_win, mode = r.get("parlay_min_win_p", 0.65), r.get("parlay_mode", "whole")
@@ -219,10 +220,8 @@ def build():
         e["lock"] = True; e["ev_pct"] = round(100 * (l["p"] / l["price"] - 1), 1)
         entries.append(e); used.add((l["prop"]["player"], l["prop"]["stat"])); n_locks += 1
     # 2) up to max_par parlays per slate day (Ryan: every game in a parlay is played that same day), 2..max_legs legs, one leg per game, no reused players.
-    # Ryan 2026-10-12 17:41Z: if noon passes with no parlay for today, keep hunting today's remaining games and post any that qualify.
-    slates = [slate]
-    if slate != today and not any(e["date"] == today and not e.get("lock") for e in book["parlays"]):
-        slates.insert(0, today)
+    # Ryan 2026-10-14 01:08Z: no cutoff. Always hunt today's remaining games and tomorrow's (tomorrow's post once its day starts).
+    slates = [today, (now_pt.date() + timedelta(days=1)).isoformat()]
     for sd in slates:
         day_legs = [l for l in legs if l["app"] == "Kalshi" and datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == sd]
         have = [e for e in book["parlays"] if e["date"] == sd and not e.get("lock")]
@@ -245,7 +244,7 @@ def build():
     # 3) Ryan 2026-10-13 18:04Z: at least one 1-3 leg pick every day. If noon PT passes with nothing for today,
     # post the best Kalshi combo left in today's games (best expected return, at least a 40% win chance if possible),
     # even under the usual 55% bar. Anything beyond that one still has to clear the normal rules.
-    if now_pt.hour >= r.get("post_window_pt", [6, 12])[1] and not any(e["date"] == today for e in book["parlays"] + entries):
+    if now_pt.hour >= r.get("daily_pick_after_pt", 12) and not any(e["date"] == today for e in book["parlays"] + entries):
         pool = sorted([l for l in collect_legs(props, now, apps=("Kalshi",), min_edge=0.0)
                        if datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == today
                        and (l["prop"]["player"], l["prop"]["stat"]) not in used], key=lambda l: -l["p"])[:15]
@@ -263,6 +262,8 @@ def build():
             e["daily"] = True
             entries.append(e)
             used.update((l["prop"]["player"], l["prop"]["stat"]) for l in c)
+        elif not pool:
+            book["no_games_left"] = today   # discord_post.py only sends the bad-day note when this is set
     if "PrizePicks" in apps and not any(e["date"] == slate and e["app"] == "PrizePicks" for e in book["parlays"]):
         pp_legs = sorted([l for l in legs if l["app"] == "PrizePicks"], key=lambda l: -l["p"])[:12]
         for size in range(2, max_legs + 1):
