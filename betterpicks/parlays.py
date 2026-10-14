@@ -188,6 +188,37 @@ def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi"), min_ed
     return legs
 
 
+FEED_URL = "https://raw.githubusercontent.com/RY00N/archie-bot/claude/project-thread-8sdhk6/betterpicks/books_feed.json"
+
+
+def merge_feed(props):
+    """2026-10-14: the droplet gets no Action Network/Pinnacle rows, so add the project's hourly sportsbook prices
+    (books_feed.json, made by feed.py) to any prop that lacks them. Ignored if missing or over 3h old."""
+    doc = None
+    try:
+        import urllib.request
+        with urllib.request.urlopen(FEED_URL, timeout=15) as resp:
+            doc = json.loads(resp.read())
+    except Exception:
+        for p in (os.path.join(HERE, "books_feed.json"),
+                  os.path.join(os.environ.get("BP_REPO", "/home/archie/bp-repo"), "betterpicks", "books_feed.json")):
+            if os.path.exists(p):
+                doc = load(p, None); break
+    try:
+        age = datetime.now(timezone.utc) - datetime.fromisoformat(doc["generated_at"].replace("Z", "+00:00"))
+    except Exception:
+        return 0
+    if age > timedelta(hours=3):
+        return 0
+    feed, n = doc.get("props", {}), 0
+    for pr in props:
+        books = feed.get("|".join((pr["league"], pr["player"].lower(), pr["stat"], (pr.get("start") or "")[:10])))
+        for name, s in (books or {}).items():
+            if name not in pr["sources"]:
+                pr["sources"][name] = s; n += 1
+    return n
+
+
 def build():
     # Ryan 2026-10-12 06:25Z rules (rules.json): Kalshi only for now; parlays of at most 3 legs (1-2 fine);
     # at most 3 parlays per slate day. Ryan 2026-10-14 01:08Z: no posting window, keep checking Kalshi and post whenever.
@@ -195,6 +226,7 @@ def build():
     book = load(BOOK, None)
     pdoc = load(PROPS, {})
     props = pdoc.get("props", [])
+    merge_feed(props)
     r = load(os.path.join(HERE, "rules.json"), {})
     now = datetime.now(timezone.utc)
     now_pt = now.astimezone(PT)
