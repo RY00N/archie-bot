@@ -1,17 +1,19 @@
 """Archie's PAPER prop-firm practice (Ryan 2026-10-14: "Paper prop first"): two simulated $50k Topstep-style accounts.
 
-No money, no broker: fills simulated on free CME prices like futures_sim.py. Both accounts take the same trade.
-Strategy = MES news rules (newscombo.py backtest, 10/14): opening-range break of the 9:30-9:35 range on a 5-min close,
-stop 12 pts, target 2R, 90-min time stop, entries to 11:30, flat 15:55, 15 MES per account; only when
-  - there is same-day news (CPI/jobs day, or enough pre-open headlines on mega-cap earnings, tariffs, war/geo, data, Fed),
-  - it is not an FOMC day, yesterday's range is 20-150 pts, and the pre-open was quiet (8:00 -> 9:25 move < 0.3%),
-  - the 5-min RSI(14) is on the trade's side of 50 and the bar's volume beats its 20-bar average.
+No money, no broker: fills simulated on free CME prices like futures_sim.py. Since 2026-10-15 (Ryan picked "one each")
+each account runs its own strategy from the all-markets study (futures/allmkts/REPORT.md), both only on same-day news days
+(news tags as in newscombo.py: a non-FOMC news day) with a quiet pre-open (|8:00->9:25 move| < 0.25 x 14-day avg range):
+  Prop 1, 6 MES, "orb30": 9:30-10:00 range; first 5-min close outside it, needs that bar's volume above the day's running
+          average and yesterday's range >= its 20-day median; stop 0.2 x avg range from entry, target 1R.
+  Prop 2, 6 MYM, "sweep": 9:30-10:30, price trades through yesterday's high (low) and a 5-min bar closes back inside ->
+          fade it; stop just past the sweep extreme (+0.05 x avg range), skip if that is > 0.3 x avg range; target 1R.
+Both: 4-hour time stop, flat 15:55, one trade a day. Sizes picked so no backtested eval start was blown (2 yrs, 97 starts).
 Prop rules (third-party summaries of Topstep, not verified on Topstep's site): eval passes at +$3,000 with best day
 <= 50% of profit; fails when balance hits the trailing max loss (end-of-day peak - $2,000, stops at $50k);
 funded account: same trailing loss, locks at $0 profit, payout after 5 days of >= $150 (50% of profit, first <= $2,000,
 later <= $5,000, Ryan keeps 90%). Fees tracked as if real: $109 per 4 weeks of eval, $149 to activate.
 Settings live in rules.json "prop". Runs on the server from daytrader.tick, next to futures_sim."""
-import json, os, re, time, urllib.parse, urllib.request
+import json, os, re, statistics, time, urllib.parse, urllib.request
 from datetime import datetime, timedelta, timezone, date
 from zoneinfo import ZoneInfo
 
@@ -19,11 +21,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "prop-state.json")
 LOG = os.path.join(HERE, "prop-log.jsonl")
 ET = ZoneInfo("America/New_York")
-PT, TICK = 5.0, 0.25
-DEFAULTS = {"enabled": True, "accounts": 2, "contracts": 15, "size": 50000, "target": 3000, "max_loss": 2000,
+SPEC = {"MES": {"y": "MES=F", "pt": 5.0, "tick": 0.25}, "MYM": {"y": "MYM=F", "pt": 0.5, "tick": 1.0}}
+DEFAULTS = {"enabled": True, "accounts": 2, "size": 50000, "target": 3000, "max_loss": 2000,
             "consistency": 0.5, "win_day": 150, "payout_days": 5, "payout_frac": 0.5, "first_cap": 2000, "cap": 5000,
-            "split": 0.9, "eval_fee": 109, "activation": 149, "or_end": 575, "stop": 12, "tr": 2.0, "minp": 20,
-            "maxp": 150, "pm_max": 0.3, "time_stop": 90, "last_entry": 690, "flatten": 955, "fees": 1.5,
+            "split": 0.9, "eval_fee": 109, "activation": 149, "quiet": 0.25, "flatten": 955, "fees": 1.5,
+            "plans": [{"sym": "MES", "strat": "orb30", "contracts": 6, "or_min": 30, "stop_adr": 0.2, "tr": 1.0, "active": 1.0,
+                       "last_entry": 690, "time_stop": 240},
+                      {"sym": "MYM", "strat": "sweep", "contracts": 6, "last_entry": 630, "maxrisk": 0.3, "buf": 0.05, "tr": 1.0,
+                       "time_stop": 240}],
             "cpi": [], "jobs": [], "fomc": []}
 MEGA = {"NVDA", "AAPL", "MSFT", "AMZN", "GOOGL", "GOOG", "META", "TSLA", "AVGO"}
 RX = dict(  # same patterns and counts as the backtest (newscombo.py)
@@ -32,6 +37,7 @@ RX = dict(  # same patterns and counts as the backtest (newscombo.py)
     geo=(re.compile(r"\b(iran|israel|missile|airstrike|invasion|war\b|ukraine|russia|middle east|strike on|ceasefire|shutdown)"), 3),
     data=(re.compile(r"\b(ppi|producer price|retail sales|gdp|pce|jobless claims|ism |pmi|consumer sentiment|housing starts)"), 2),
     fed=(re.compile(r"\b(powell|fed chair|fed's|fed governor|fomc|rate cut|rate hike|waller|williams|goolsbee|bowman|jefferson)"), 3))
+ORDER = ["cpi", "jobs", "fomc", "mega_earn", "trade", "geo", "data", "fed"]  # newscombo.primary(): first tag decides the day
 _last = 0
 
 
@@ -55,11 +61,16 @@ def load_state(c, today):
     while len(st["accounts"]) < c["accounts"]:
         a = new_account(c, len(st["accounts"]) + 1, today); a["fee_due"] = (date.fromisoformat(today) + timedelta(days=28)).isoformat()
         st["accounts"].append(a)
+    st.setdefault("slots", {})
     return st
 
 
-def yahoo(interval, rng):
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/MES=F?interval={interval}&range={rng}"
+def plan_of(c, i):
+    return c["plans"][i % len(c["plans"])]
+
+
+def yahoo(sym, interval, rng):
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{SPEC[sym]['y']}?interval={interval}&range={rng}"
     d = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read())
     r = d["chart"]["result"][0]; q = r["indicators"]["quote"][0]; out = []
     for i, t in enumerate(r["timestamp"]):
@@ -95,15 +106,68 @@ def news_tags(c, today):
     return sorted(t), len(rows)
 
 
-def indicators(b5):
-    """RSI(14) of closes and 20-bar average volume (before the bar), over all 5-min bars incl. overnight, like the backtest."""
-    out = {}; ch = []; vols = []
-    for i, x in enumerate(b5):
-        if i: ch.append(x["c"] - b5[i - 1]["c"])
-        g = sum(y for y in ch[-14:] if y > 0); lo = -sum(y for y in ch[-14:] if y < 0)
-        out[x["t"]] = (50 if g + lo == 0 else 100 * g / (g + lo), sum(vols[-20:]) / len(vols[-20:]) if len(vols) >= 5 else None)
-        vols.append(x["v"])
-    return out
+def day_stats(b5, today):
+    """Like allmkts/engine.build(): yesterday's high/low, 14-day avg range % (adr), yesterday's range vs its 20-day median,
+    and the 8:00 -> 9:25 pre-open move %."""
+    days = {}
+    for x in b5:
+        if date.fromisoformat(x["d"]).weekday() < 5:
+            days.setdefault(x["d"], []).append(x)
+    rngs, prev = [], None
+    for d in sorted(days):
+        if d >= today:
+            break
+        rth = [x for x in days[d] if 570 <= x["m"] < 960]
+        if len(rth) < 60:
+            continue
+        hi, lo = max(x["h"] for x in rth), min(x["l"] for x in rth)
+        rngs.append((hi - lo) / rth[-1]["c"] * 100); prev = (hi, lo, rth[-1]["c"])
+    if not prev or len(rngs) < 10:
+        return None
+    pre = [x for x in days.get(today, []) if 480 <= x["m"] < 570]
+    return dict(pH=prev[0], pL=prev[1], pC=prev[2], adr=statistics.mean(rngs[-14:]), prng_rel=rngs[-1] / statistics.median(rngs[-20:]),
+                pm=(pre[-1]["c"] / pre[0]["o"] - 1) * 100 if len(pre) >= 6 else None)
+
+
+def signal(p, X, rth, now_m):
+    """First signal on closed 5-min bars today -> (side, bar, stop_dist) / "none" (no trade today) / None (keep waiting)."""
+    if p["strat"] == "orb30":
+        n = p["or_min"] // 5
+        if len(rth) <= n:
+            return None
+        H, L, ref = max(x["h"] for x in rth[:n]), min(x["l"] for x in rth[:n]), rth[0]["o"]
+        for i in range(n, len(rth)):
+            x = rth[i]
+            if x["m"] + 5 > now_m:
+                return None  # bar not closed yet
+            if x["m"] > p["last_entry"]:
+                return "none"
+            side = 1 if x["c"] > H else -1 if x["c"] < L else 0
+            if not side:
+                continue
+            avgv = statistics.mean(max(y["v"], 1) for y in rth[:i])
+            if max(x["v"], 1) <= avgv:
+                return "none"  # breakout without volume: done for the day (as in the backtest)
+            return side, x, X["adr"] / 100 * ref * p["stop_adr"]
+        return None
+    ext, side = None, 0  # sweep
+    for x in rth:
+        if x["m"] + 5 > now_m:
+            return None
+        if x["m"] > p["last_entry"]:
+            return "none"
+        if x["h"] > X["pH"]:
+            ext = max(ext or x["h"], x["h"])
+            if x["c"] < X["pH"]: side = -1
+        elif x["l"] < X["pL"]:
+            ext = min(ext or x["l"], x["l"])
+            if x["c"] > X["pL"]: side = 1
+        if side:
+            buf = X["adr"] / 100 * x["c"] * p["buf"]; stop = ext + buf if side < 0 else ext - buf; dist = abs(x["c"] - stop)
+            if dist <= 0 or dist > X["adr"] / 100 * x["c"] * p["maxrisk"]:
+                return "none"
+            return side, x, dist
+    return None
 
 
 def close_day(c, st, day):
@@ -136,6 +200,54 @@ def floor(c, a):
     return min(a["peak"] - c["max_loss"], 0.0)
 
 
+def news_plan(c, st, today):
+    """Once a day: is this a non-FOMC news day? (shared by both accounts)"""
+    N = st.setdefault("news", {})
+    if N.get("date") != today:
+        try:
+            tags, n = news_tags(c, today); N.update(date=today, tags=tags, headlines=n, error=None)
+        except Exception as e:
+            N.update(date=today, tags=[], headlines=0, error=str(e)[:120])
+        prim = next((k for k in ORDER if k in N["tags"]), "none")
+        N["ok"] = prim not in ("none", "fomc")
+    return N
+
+
+def manage(c, a, s, sp, b1, today, log):
+    """Walk 1-minute bars for this account's open trade. Returns the closed trade record or None."""
+    tr = s["open"]; side = tr["side"]
+    for x in [x for x in b1 if x["d"] == today and 570 <= x["m"] < 960 and x["t"] > tr["seen"]]:
+        tr["seen"], tr["price"] = x["t"], x["c"]
+        worst = x["l"] if side == 1 else x["h"]
+        room = a["bal"] - floor(c, a); bp = tr["entry"] - side * room / (sp["pt"] * tr["qty"])
+        out = how = None
+        if (side == 1 and worst <= bp) or (side == -1 and worst >= bp):
+            if (side == 1 and bp >= tr["stop"]) or (side == -1 and bp <= tr["stop"]):
+                out, how = bp, "max loss hit"  # firm liquidates at the trailing max loss before our stop
+        if out is None:
+            if (side == 1 and x["l"] <= tr["stop"]) or (side == -1 and x["h"] >= tr["stop"]):
+                out, how = tr["stop"] - side * sp["tick"], "stop"
+            elif (side == 1 and x["h"] >= tr["target"]) or (side == -1 and x["l"] <= tr["target"]):
+                out, how = tr["target"], "target"
+            elif x["m"] >= c["flatten"]:
+                out, how = x["c"], "end of day"
+            elif x["m"] - tr["entry_min"] >= tr["time_stop"]:
+                out, how = x["c"], "time stop"
+        if out is None:
+            continue
+        pnl = round(side * (out - tr["entry"]) * sp["pt"] * tr["qty"] - c["fees"] * tr["qty"], 2)
+        a["bal"] = round(a["bal"] + pnl, 2); a["day"] = round(a["day"] + pnl, 2)
+        if how == "max loss hit" or a["bal"] <= floor(c, a):
+            a["history"].append(f"{today}: {a['phase']} account blown ({pnl:+,.0f}), new eval tomorrow"); a["phase"] = "failed"
+        s["open"] = None
+        rec = {"date": today, "account": a["name"], "symbol": tr["sym"], "strategy": tr["strat"], "side": "long" if side == 1 else "short",
+               "qty": tr["qty"], "entry": tr["entry"], "exit": round(out, 2), "stop": tr["stop"], "target": tr["target"],
+               "exit_reason": how, "pnl": pnl, "pnl_per_account": pnl, "entry_time": tr["entry_time"], "exit_time": x["t"]}
+        log(f"PROP {a['name']} EXIT {rec['side']} {tr['qty']} {tr['sym']} @ {rec['exit']} ({how}) {pnl:+.2f}")
+        return rec
+    return None
+
+
 def tick(log):
     global _last
     if time.time() - _last < 60:
@@ -149,130 +261,94 @@ def tick(log):
     if st["date"] != today:
         if st["date"] and st.get("day_closed") != st["date"]:
             close_day(c, st, st["date"])
-        st.update({"date": today, "done": False, "plan": {}, "day_closed": ""})
+        st.update({"date": today, "day_closed": "", "slots": {}})
         for a in st["accounts"]:
             if a["phase"] == "eval" and today >= a["fee_due"]:
                 a["fees"] += c["eval_fee"]; a["fee_due"] = (now.date() + timedelta(days=28)).isoformat()
-    if m >= 960 and not st.get("open") and st.get("day_closed") != today and now.weekday() < 5:
+    for k in ("open", "done", "plan"):
+        st.pop(k, None)  # v1 single-trade keys
+    slots = st["slots"]
+    busy = any((slots.get(a["name"]) or {}).get("open") for a in st["accounts"])
+    if m >= 960 and not busy and st.get("day_closed") != today and now.weekday() < 5:
         close_day(c, st, today); st["day_closed"] = today
-    if now.weekday() >= 5 or m < 565 or (m >= 960 and not st.get("open")):
+    if now.weekday() >= 5 or m < 565 or (m >= 960 and not busy):
         json.dump(st, open(STATE, "w"), indent=1); return
-    try:
-        b5 = yahoo("5m", "5d"); b1 = yahoo("1m", "1d")
-    except Exception as e:
-        st["last_error"] = f"{datetime.now(timezone.utc).isoformat()[:16]} {e}"[:200]; json.dump(st, open(STATE, "w"), indent=1); return
-    st["last_data"] = datetime.now(timezone.utc).isoformat()[:16] + "Z"
-    tr = st.get("open")
-    if tr:  # manage the open trade (1-minute bars after the last one seen)
-        for x in [x for x in b1 if x["d"] == today and 570 <= x["m"] < 960 and x["t"] > tr["seen"]]:
-            tr["seen"], tr["price"] = x["t"], x["c"]
-            s = tr["side"]; out = how = None
-            worst = x["l"] if s == 1 else x["h"]
-            for a in st["accounts"]:  # firm liquidates the moment the balance touches the trailing max loss
-                if a["phase"] in ("eval", "funded"):
-                    room = a["bal"] - floor(c, a)
-                    bp = tr["entry"] - s * room / (PT * tr["qty"])
-                    if (s == 1 and worst <= bp) or (s == -1 and worst >= bp):
-                        a.setdefault("breach", round(bp, 2))
-            if (s == 1 and x["l"] <= tr["stop"]) or (s == -1 and x["h"] >= tr["stop"]):
-                out, how = tr["stop"] - s * TICK, "stop"
-            elif (s == 1 and x["h"] >= tr["target"]) or (s == -1 and x["l"] <= tr["target"]):
-                out, how = tr["target"], "target"
-            elif x["m"] >= c["flatten"]:
-                out, how = x["c"], "end of day"
-            elif x["m"] - tr["entry_min"] >= c["time_stop"]:
-                out, how = x["c"], "time stop"
-            if out is None and not any("breach" in a for a in st["accounts"]):
-                continue
-            last_px = out
-            for a in st["accounts"]:
-                if a["phase"] not in ("eval", "funded"):
-                    continue
-                px, why = (a.pop("breach"), "max loss hit") if "breach" in a and (out is None or s * (a["breach"] - out) > 0) else (out, how)
-                a.pop("breach", None)
-                if px is None:
-                    continue
-                last_px = px if out is None else last_px
-                pnl = round(s * (px - tr["entry"]) * PT * tr["qty"] - c["fees"] * tr["qty"], 2)
-                a["bal"] = round(a["bal"] + pnl, 2); a["day"] = round(a["day"] + pnl, 2)
-                if why == "max loss hit" or a["bal"] <= floor(c, a):
-                    a["history"].append(f"{today}: {a['phase']} account blown ({pnl:+,.0f}), new eval tomorrow"); a["phase"] = "failed"
-                a.setdefault("closed", {})[tr["entry_time"]] = (px, why, pnl)
-            if out is not None or all(tr["entry_time"] in a.get("closed", {}) or a["phase"] == "failed" for a in st["accounts"]):
-                rec = {"date": today, "symbol": "MES", "side": "long" if s == 1 else "short", "qty": tr["qty"], "entry": tr["entry"],
-                       "exit": round(last_px, 2), "exit_reason": how or "max loss hit",
-                       "pnl_per_account": round(s * (last_px - tr["entry"]) * PT * tr["qty"] - c["fees"] * tr["qty"], 2),
-                       "entry_time": tr["entry_time"], "exit_time": x["t"], "news": st["plan"].get("news", [])}
+    data = {}
+    for i, a in enumerate(st["accounts"]):
+        p = plan_of(c, i); sym = p["sym"]; sp = SPEC[sym]
+        s = slots.setdefault(a["name"], {"sym": sym, "strat": p["strat"], "open": None, "done": False, "why": ""})
+        if a["phase"] == "failed":
+            s.update(done=True, why="account blown today, new eval tomorrow")
+            continue
+        if not s["open"] and (s["done"] or m < 575):
+            continue
+        try:
+            if sym not in data:
+                data[sym] = (yahoo(sym, "5m", "1mo"), yahoo(sym, "1m", "1d"))
+        except Exception as e:
+            st["last_error"] = f"{datetime.now(timezone.utc).isoformat()[:16]} {sym}: {e}"[:200]; continue
+        st["last_data"] = datetime.now(timezone.utc).isoformat()[:16] + "Z"
+        b5, b1 = data[sym]
+        if s["open"]:
+            rec = manage(c, a, s, sp, b1, today, log)
+            if rec:
                 st["trades"] = (st["trades"] + [rec])[-200:]
                 open(LOG, "a").write(json.dumps(rec) + "\n")
-                log(f"PROP EXIT {rec['side']} {tr['qty']} MES @ {rec['exit']} ({rec['exit_reason']}) {rec['pnl_per_account']:+.2f}/account")
-                for a in st["accounts"]: a.pop("closed", None)
-                st["open"] = None
-                break
-    elif not st["done"] and m >= c["or_end"]:
-        P = st["plan"]
-        if "ok" not in P:  # decide once per day whether this is a tradable news day
-            day5 = [x for x in b5 if x["d"] == today]; prev = sorted({x["d"] for x in b5 if x["d"] < today})
-            rthp = [x for x in b5 if prev and x["d"] == prev[-1] and 570 <= x["m"] < 960]
-            o8 = next((x["o"] for x in day5 if x["m"] == 480), None); c925 = next((x["c"] for x in day5 if x["m"] == 565), None)
-            P["prev_range"] = round(max(x["h"] for x in rthp) - min(x["l"] for x in rthp), 2) if rthp else None
-            P["pre_open_move"] = round((c925 / o8 - 1) * 100, 3) if o8 and c925 else None
-            try:
-                P["news"], P["headlines"] = news_tags(c, today)
-            except Exception as e:
-                P["news"], P["news_error"] = [], str(e)[:120]
-            why = ("no same-day news" if not P["news"] else "FOMC day" if "fomc" in P["news"] else
-                   "pre-open data missing" if P["pre_open_move"] is None or P["prev_range"] is None else
-                   f"pre-open moved {P['pre_open_move']:+.2f}% (needs < {c['pm_max']}%)" if abs(P["pre_open_move"]) >= c["pm_max"] else
-                   f"yesterday's range {P['prev_range']} outside {c['minp']}-{c['maxp']}" if not c["minp"] <= P["prev_range"] <= c["maxp"] else "")
-            P["ok"], P["why"] = not why, why or f"news day ({', '.join(P['news'])}), quiet pre-open"
-            log(f"PROP plan: {'TRADE' if P['ok'] else 'SKIP'} - {P['why']}")
-        if not P["ok"]:
-            st["done"] = True
-        else:
-            day5 = [x for x in b5 if x["d"] == today and 570 <= x["m"] < 960]
-            orb = [x for x in day5 if x["m"] < c["or_end"]]
-            if orb:
-                hi, lo = max(x["h"] for x in orb), min(x["l"] for x in orb); P["range"] = [lo, hi]
-                ind = indicators(b5)
-                for x in [x for x in day5 if x["m"] >= c["or_end"] and x["m"] + 5 <= m]:
-                    if x["m"] > c["last_entry"]:
-                        st["done"] = True; break
-                    if x["t"] <= P.get("checked", ""):
-                        continue
-                    P["checked"] = x["t"]
-                    s = 1 if x["c"] > hi else -1 if x["c"] < lo else 0
-                    if not s:
-                        continue
-                    rsi, vavg = ind[x["t"]]
-                    if (rsi <= 50 if s == 1 else rsi >= 50) or (vavg and x["v"] <= vavg):
-                        log(f"PROP break at {x['m']} passed on: RSI {rsi:.0f}, volume {x['v']} vs avg {vavg or 0:.0f}")
-                        continue
-                    if x["m"] + 5 < m - 20:
-                        st["done"] = True; break  # signal is stale (free data lags): don't chase
-                    e = x["c"] + s * TICK; stop = e - s * c["stop"]
-                    st["open"] = {"side": s, "qty": c["contracts"], "entry": round(e, 2), "stop": stop, "target": round(e + s * c["tr"] * c["stop"], 2),
-                                  "entry_time": x["t"], "entry_min": x["m"] + 5, "seen": x["t"], "price": x["c"]}
-                    st["done"] = True
-                    log(f"PROP ENTRY {'long' if s == 1 else 'short'} {c['contracts']} MES @ {e} stop {stop} target {st['open']['target']} ({P['why']})")
-                    break
-    if m >= 960 and not st.get("open") and st.get("day_closed") != today:
+            continue
+        if "ok" not in s:  # decide once a day whether this account trades today
+            N = news_plan(c, st, today); X = day_stats(b5, today)
+            why = ("no same-day news" if not N["tags"] else "FOMC day" if not N["ok"] else "not enough history" if not X else
+                   "pre-open data missing" if X["pm"] is None else
+                   f"pre-open moved {X['pm']:+.2f}% (needs under {c['quiet'] * X['adr']:.2f}%)" if abs(X["pm"]) >= c["quiet"] * X["adr"] else
+                   f"yesterday's range only {X['prng_rel']:.2f}x its median" if p.get("active") and X["prng_rel"] < p["active"] else "")
+            s["ok"] = not why; s["X"] = X
+            s["why"] = why or f"news day ({', '.join(N['tags'])}), quiet pre-open"
+            log(f"PROP {a['name']} {sym} {p['strat']} plan: {'TRADE' if s['ok'] else 'SKIP'} - {s['why']}")
+        if not s["ok"]:
+            s["done"] = True; continue
+        rth = [x for x in b5 if x["d"] == today and 570 <= x["m"] < 960]
+        if p["strat"] == "orb30" and len(rth) >= p["or_min"] // 5:
+            n = p["or_min"] // 5; s["range"] = [min(x["l"] for x in rth[:n]), max(x["h"] for x in rth[:n])]
+        sig = signal(p, s["X"], rth, m)
+        if sig is None:
+            continue
+        s["done"] = True
+        if sig == "none":
+            s["why"] = "no valid setup today"; continue
+        side, x, dist = sig
+        if x["m"] + 5 < m - 20:
+            s["why"] = "signal came too late to chase (free data lags)"; continue
+        e = round(x["c"] + side * sp["tick"], 2); stop = round(e - side * dist, 2)
+        s["open"] = {"sym": sym, "strat": p["strat"], "side": side, "qty": p["contracts"], "entry": e, "stop": stop,
+                     "target": round(e + side * p["tr"] * dist, 2), "entry_time": x["t"], "entry_min": x["m"],
+                     "time_stop": p["time_stop"], "seen": x["t"], "price": x["c"]}
+        log(f"PROP {a['name']} ENTRY {'long' if side == 1 else 'short'} {p['contracts']} {sym} @ {e} stop {stop} target {s['open']['target']}")
+    busy = any((slots.get(a["name"]) or {}).get("open") for a in st["accounts"])
+    if m >= 960 and not busy and st.get("day_closed") != today:
         close_day(c, st, today); st["day_closed"] = today
     json.dump(st, open(STATE, "w"), indent=1)
 
 
 def summary():
-    c = cfg(); st = load_state(c, datetime.now(ET).date().isoformat()); tr = st.get("open")
-    unreal = round(tr["side"] * (tr["price"] - tr["entry"]) * PT * tr["qty"], 2) if tr else 0.0
-    accts = []
-    for a in st["accounts"]:
-        paid = sum(p["to_ryan"] for p in a["payouts"])
-        accts.append({"name": a["name"], "phase": a["phase"], "attempt": a["attempt"], "balance": round(c["size"] + a["bal"] + (unreal if a["phase"] != "failed" else 0), 2),
+    c = cfg(); today = datetime.now(ET).date().isoformat(); st = load_state(c, today)
+    slots = st["slots"] if st.get("date") == today else {}
+    accts, poss = [], []
+    for i, a in enumerate(st["accounts"]):
+        p = plan_of(c, i); s = slots.get(a["name"]) or {}; tr = s.get("open")
+        unreal = round(tr["side"] * (tr["price"] - tr["entry"]) * SPEC[tr["sym"]]["pt"] * tr["qty"], 2) if tr else 0.0
+        if tr:
+            poss.append({"account": a["name"], "symbol": tr["sym"], "side": "long" if tr["side"] == 1 else "short", "qty": tr["qty"],
+                         "entry": tr["entry"], "price": tr["price"], "stop": tr["stop"], "target": tr["target"], "pnl_per_account": unreal})
+        paid = sum(x["to_ryan"] for x in a["payouts"])
+        accts.append({"name": a["name"], "strategy": f"{p['contracts']} {p['sym']} {'30-min range breakout' if p['strat'] == 'orb30' else 'prior-day sweep reversal'}",
+                      "phase": a["phase"], "attempt": a["attempt"], "balance": round(c["size"] + a["bal"] + (unreal if a["phase"] != "failed" else 0), 2),
                       "profit": round(a["bal"] + unreal, 2), "target": c["target"] if a["phase"] == "eval" else None,
                       "max_loss_level": round(c["size"] + floor(c, a), 2), "winning_days": a["win_days"], "payouts": a["payouts"],
-                      "paid_to_ryan": round(paid, 2), "fees": a["fees"], "net_cash": round(paid - a["fees"], 2), "history": a["history"][-10:]})
-    return {"note": "PAPER prop-firm practice: 2 simulated $50k accounts (Topstep-style rules), 15 MES each on the news rules. No money involved.",
+                      "paid_to_ryan": round(paid, 2), "fees": a["fees"], "net_cash": round(paid - a["fees"], 2), "history": a["history"][-10:],
+                      "today": {k: s.get(k) for k in ("ok", "why", "range", "done")}})
+    return {"note": "PAPER prop-firm practice: 2 simulated $50k accounts (Topstep-style rules). Prop 1: 6 MES 30-min range breakout; Prop 2: 6 MYM prior-day sweep reversal; news days only. No money involved.",
             "accounts": accts, "net_cash_total": round(sum(x["net_cash"] for x in accts), 2),
-            "position": ({"symbol": "MES", "side": "long" if tr["side"] == 1 else "short", "qty": tr["qty"], "entry": tr["entry"], "price": tr["price"],
-                          "stop": tr["stop"], "target": tr["target"], "pnl_per_account": unreal} if tr else None),
-            "today": st.get("plan", {}), "trades": st["trades"][-50:], "last_data": st.get("last_data"), "last_error": st.get("last_error")}
+            "position": poss[0] if poss else None, "positions": poss,
+            "today": {"news": (st.get("news") or {}).get("tags", []) if (st.get("news") or {}).get("date") == today else [],
+                      **{a["name"]: (slots.get(a["name"]) or {}).get("why", "") for a in st["accounts"]}},
+            "trades": st["trades"][-50:], "last_data": st.get("last_data"), "last_error": st.get("last_error")}

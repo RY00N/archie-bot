@@ -74,6 +74,22 @@ def prev_range(sym, today):
     return round(max(h for h, l in days[last]) - min(l for h, l in days[last]), 2)
 
 
+def drop_check(sym, today):
+    """(gap %, prior day %): today's first RTH open vs the last RTH close, and that close vs the one before."""
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{SPEC[sym]['y']}?interval=5m&range=5d"
+    d = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read())
+    r = d["chart"]["result"][0]; q = r["indicators"]["quote"][0]; days = {}
+    for i, t in enumerate(r["timestamp"]):
+        e = datetime.fromtimestamp(t, ET)
+        if q["close"][i] is None or not 570 <= e.hour * 60 + e.minute < 960:
+            continue
+        days.setdefault(e.date().isoformat(), []).append((q["open"][i], q["close"][i]))
+    past = sorted(k for k in days if k < today)
+    c1, c2 = days[past[-1]][-1][1], days[past[-2]][-1][1]
+    o = days[today][0][0]
+    return round((o / c1 - 1) * 100, 2), round((c1 / c2 - 1) * 100, 2)
+
+
 def _minus5(t):
     return (datetime.fromisoformat(t[:-1]) - timedelta(minutes=5)).isoformat()[:16] + "Z"
 
@@ -149,6 +165,17 @@ def tick(log):
             st["done"].append(sym)
             log(f"FUT {sym} skip today: news ({news['skip'][sym]})")
             continue
+        sad = c.get("skip_after_drop", {}).get(sym)
+        if sad and rth:  # MNQ: sit out a gap-down open or the day after a big drop (approved 10/15)
+            try:
+                gap, prev = drop_check(sym, today)
+            except Exception as e:
+                gap = prev = None
+                log(f"FUT {sym} drop check error: {e}")
+            if gap is not None and (gap <= sad["gap"] or prev <= sad["prev"]):
+                st["done"].append(sym)
+                log(f"FUT {sym} skip today: after a drop (gap {gap:+.2f}%, prior day {prev:+.2f}%)")
+                continue
         orm = c["or_minutes"][sym] if isinstance(c["or_minutes"], dict) else c["or_minutes"]  # MNQ waits 15 min, MES 5
         orb = [x for x in rth if x[1] < 570 + orm]
         if len(orb) < orm * 0.6 or m < 570 + orm:
