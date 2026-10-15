@@ -827,6 +827,55 @@
      "result": null
     }
    ]
+  },
+  {
+   "date": "2026-10-15",
+   "app": "Kalshi",
+   "type": "2-leg combo #3",
+   "stake": 5.0,
+   "payout_x": null,
+   "win_p": 0.361,
+   "ev_pct": null,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "mlb",
+     "player": "William Contreras",
+     "team": "MIL",
+     "stat": "hits",
+     "side": "over",
+     "line": 0.5,
+     "price": 0.59,
+     "ticker": "KXMLBHIT-26OCT152000MILLAD-MILWCONTRERAS24-1",
+     "game": "MIL @ LAD",
+     "start": "2026-10-16T00:00:00Z",
+     "p": 0.637,
+     "edge": 0.03,
+     "news": "No injury or off-field red flags in the last 3 days.",
+     "why": "William Contreras over 0.5 hits: 5 books price it 61%; hit 75% of last 12 (avg 1.0); 16/32 over vs LAD, avg 0.8. Fair 64%.",
+     "case": "Last 5 games: 0, 2, 3, 0, 1 (3 of 5 over 0.5).",
+     "result": null
+    },
+    {
+     "league": "nfl",
+     "player": "RJ Harvey",
+     "team": "DEN",
+     "stat": "rush_yds",
+     "side": "over",
+     "line": 14.5,
+     "price": 0.51,
+     "ticker": "KXNFLRSHYDS-26OCT15SEADEN-DENRHARVEY12-15",
+     "game": "SEA @ DEN",
+     "start": "2026-10-16T00:15:00Z",
+     "p": 0.567,
+     "edge": 0.04,
+     "news": "No injury or off-field red flags in the last 3 days.",
+     "why": "RJ Harvey over 14.5 rush yds: 5 books price it 50%; hit 83% of last 12 (avg 34.1). Fair 57%.",
+     "case": "Last 5 games: 7, 25, 6, 18, 37 (3 of 5 over 14.5).",
+     "result": null
+    }
+   ]
   }
  ],
  "no_games_left": "2026-10-14",
@@ -858,6 +907,6 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 7
  }
 }
