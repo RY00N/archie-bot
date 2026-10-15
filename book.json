@@ -899,7 +899,7 @@
    "Sleeper": 75,
    "Underdog": 90,
    "Unibet": 17,
-   "bet365": 88
+   "bet365": 90
   },
   "data_files": [
    "mlb.sqlite",
@@ -907,6 +907,6 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 4
  }
 }
