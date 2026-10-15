@@ -729,6 +729,55 @@
    ],
    "breakdown": "Same three legs as your real Kalshi slip (Irving 14+ carries, Gasser 3+ Ks, Martinez 3+ Ks) at Kalshi's real 7.09x payout. It's a long shot, and the edge comes from each leg being priced a bit cheap.",
    "note": "Made before the 65% rule. Matched to Ryan's real Kalshi slip (7.09x) on 2026-10-08."
+  },
+  {
+   "date": "2026-10-15",
+   "app": "Kalshi",
+   "type": "2-leg combo #1",
+   "stake": 5.0,
+   "payout_x": null,
+   "win_p": 0.334,
+   "ev_pct": null,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "mlb",
+     "player": "Shohei Ohtani",
+     "team": "LAD",
+     "stat": "hrr",
+     "side": "under",
+     "line": 1.5,
+     "price": 0.54,
+     "ticker": "KXMLBHRR-26OCT152000MILLAD-LADSOHTANI17-2",
+     "game": "MIL @ LAD",
+     "start": "2026-10-16T00:00:00Z",
+     "p": 0.589,
+     "edge": 0.032,
+     "news": "News: Shohei Ohtani\u2019s Dodgers teammates see him struggling to meet expectations - Orange County Register",
+     "why": "Shohei Ohtani under 1.5 hrr: 5 books price it 53%; hit 17% of last 12 (avg 1.0); 16/28 over vs MIL, avg 2.3. Fair 59%.",
+     "case": "Last 5 games: 2, 1, 0, 1, 1 (4 of 5 under 1.5).",
+     "result": null
+    },
+    {
+     "league": "nfl",
+     "player": "RJ Harvey",
+     "team": "DEN",
+     "stat": "rush_rec_yds",
+     "side": "over",
+     "line": 39.5,
+     "price": 0.5,
+     "ticker": "KXNFLRRYDS-26OCT15SEADEN-DENRHARVEY12-40",
+     "game": "SEA @ DEN",
+     "start": "2026-10-16T00:15:00Z",
+     "p": 0.567,
+     "edge": 0.049,
+     "news": "No injury or off-field red flags in the last 3 days.",
+     "why": "RJ Harvey over 39.5 rush rec yds: 5 books price it 50%; hit 83% of last 12 (avg 64.2). Fair 57%.",
+     "case": "Last 5 games: 7, 93, 47, 41, 59 (4 of 5 over 39.5).",
+     "result": null
+    }
+   ]
   }
  ],
  "no_games_left": "2026-10-14",
@@ -736,16 +785,16 @@
   "props_at": "2026-10-15 03:00 PT",
   "props_today": 675,
   "kalshi_props_today": 135,
-  "kalshi_priced_today": 28,
+  "kalshi_priced_today": 30,
   "books_on_kalshi_props": {
    "AN Consensus": 123,
    "AN Open": 124,
-   "BetMGM": 79,
+   "BetMGM": 102,
    "BetRivers": 29,
-   "Caesars": 94,
-   "DraftKings": 89,
+   "Caesars": 95,
+   "DraftKings": 91,
    "FanDuel": 77,
-   "Fanatics": 91,
+   "Fanatics": 90,
    "Hard Rock Bet": 34,
    "Parx": 70,
    "Pinnacle": 61,
@@ -760,6 +809,6 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 7
  }
 }
