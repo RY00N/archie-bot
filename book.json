@@ -787,21 +787,21 @@
   "kalshi_props_today": 135,
   "kalshi_priced_today": 30,
   "books_on_kalshi_props": {
-   "AN Consensus": 123,
+   "AN Consensus": 124,
    "AN Open": 124,
-   "BetMGM": 102,
+   "BetMGM": 101,
    "BetRivers": 29,
-   "Caesars": 100,
+   "Caesars": 98,
    "DraftKings": 91,
    "FanDuel": 77,
-   "Fanatics": 91,
+   "Fanatics": 90,
    "Hard Rock Bet": 34,
    "Parx": 70,
    "Pinnacle": 61,
    "Sleeper": 113,
    "Underdog": 135,
    "Unibet": 23,
-   "bet365": 124
+   "bet365": 119
   },
   "data_files": [
    "mlb.sqlite",
@@ -809,6 +809,6 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 6
  }
 }
