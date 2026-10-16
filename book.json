@@ -876,13 +876,45 @@
      "result": null
     }
    ]
+  },
+  {
+   "date": "2026-10-16",
+   "app": "Kalshi",
+   "type": "pick of the day (1-leg)",
+   "stake": 5.0,
+   "payout_x": 2.22,
+   "win_p": 0.535,
+   "ev_pct": 18.9,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "mlb",
+     "player": "Nick Martinez",
+     "team": "TB",
+     "stat": "pitcher_ks",
+     "side": "over",
+     "line": 2.5,
+     "price": 0.45,
+     "ticker": "KXMLBKS-26OCT161800TBCLE-TBNMARTINEZ28-3",
+     "game": "TB @ CLE",
+     "start": "2026-10-17T00:00:00Z",
+     "p": 0.535,
+     "edge": 0.068,
+     "news": "No injury or off-field red flags in the last 3 days.",
+     "why": "Nick Martinez over 2.5 pitcher ks: 10 books price it 46%; hit 83% of last 12 (avg 3.8); 2/5 over vs CLE, avg 2.6. Fair 54%.",
+     "case": "Last 5 games: 3, 1, 7, 3, 3 (4 of 5 over 2.5).",
+     "result": null
+    }
+   ],
+   "daily": true
   }
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-16 11:00 PT",
+  "props_at": "2026-10-16 12:00 PT",
   "props_today": 457,
-  "kalshi_props_today": 32,
+  "kalshi_props_today": 33,
   "kalshi_priced_today": 5,
   "books_on_kalshi_props": {
    "AN Consensus": 22,
@@ -895,8 +927,8 @@
    "Fanatics": 13,
    "Parx": 9,
    "Pinnacle": 8,
-   "Sleeper": 23,
-   "Underdog": 32,
+   "Sleeper": 24,
+   "Underdog": 33,
    "Unibet": 2,
    "bet365": 17
   },
