@@ -189,6 +189,22 @@
    "fees": 1.5,
    "backtest_dd": 1463,
    "started": "2026-10-19"
+  },
+  "droplong": {
+   "enabled": true,
+   "symbol": "MNQ",
+   "budget_start": 10000,
+   "contracts": 1,
+   "or_end_min": 585,
+   "stop_pts": 80,
+   "target_r": 3.0,
+   "time_stop_min": 80,
+   "last_entry_min": 690,
+   "fees": 1.5,
+   "gap": -1.0,
+   "prev": -2.0,
+   "backtest_dd": 1027,
+   "started": "2026-10-19"
   }
  }
 }

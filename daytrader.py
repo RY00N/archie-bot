@@ -211,6 +211,11 @@ def tick(bot, log):
         importlib.reload(gapfill_sim).tick(log)
     except Exception as e:
         log(f"gapfill sim error: {e}")
+    try:  # MNQ drop-day long practice lab book (auto-added 10/16 by the lab rule), own state + P&L
+        import importlib, droplong_sim
+        importlib.reload(droplong_sim).tick(log)
+    except Exception as e:
+        log(f"droplong sim error: {e}")
     if not c.get("enabled", True) and not st["open"]:  # Ryan 2026-10-08: Alpaca trading off, moving to futures
         if st.get("status") != "off":
             st["status"] = "off"
