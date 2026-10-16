@@ -926,11 +926,11 @@
    "FanDuel": 10,
    "Fanatics": 17,
    "Parx": 9,
-   "Pinnacle": 19,
-   "Sleeper": 40,
+   "Pinnacle": 13,
+   "Sleeper": 41,
    "Underdog": 59,
    "Unibet": 5,
-   "bet365": 24
+   "bet365": 25
   },
   "data_files": [
    "mlb.sqlite",
@@ -938,6 +938,6 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 1
+  "kalshi_legs_today": 2
  }
 }
