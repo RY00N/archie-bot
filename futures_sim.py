@@ -110,6 +110,11 @@ def tick(log):
     if time.time() - _last < 60:
         return
     _last = time.time()
+    try:  # News watcher (Ryan 10/16): headlines every minute, alert only
+        import importlib, newswatch
+        importlib.reload(newswatch).check(log)
+    except Exception as e:
+        log(f"NEWS watch error: {e}")
     c = cfg()
     st = load_state()
     now = datetime.now(ET); today, m = now.date().isoformat(), now.hour * 60 + now.minute
@@ -129,6 +134,7 @@ def tick(log):
             st["last_error"] = f"{datetime.now(timezone.utc).isoformat()[:16]} {sym}: {e}"[:200]
             continue
         st["last_data"] = datetime.now(timezone.utc).isoformat()[:16] + "Z"
+        st.setdefault("last_px", {})[sym] = round(b[-1][5], 2)
         rth = [x for x in b if 570 <= x[1] < 960 and datetime.fromisoformat(x[0][:-1]).replace(tzinfo=timezone.utc).astimezone(ET).date().isoformat() == today]
         if not rth:
             continue
@@ -297,6 +303,37 @@ def desk(c, st):
         d["news"] = ("CLEAR", (f"Next release window {hhmm(nxt[0][0])} ({nxt[0][2] if len(nxt[0]) > 2 else ''})." if nxt else news.get("notes", "No big release in the trade window."))[:140])
     else:
         d["news"] = ("CLEAR" if not trading_day else "PENDING", "Watching headlines hourly." if not trading_day else "Morning news check not in yet.")
+    try:  # live headline watcher overrides with an alert, else says when it last looked
+        import newswatch
+        alert, checked = newswatch.active_alert()
+    except Exception:
+        alert, checked = None, None
+    if alert:
+        d["news"] = ("ALERT", f"{alert['why']}: {alert['headline']}"[:140])
+    elif checked and d["news"][0] == "CLEAR" and trading_day:
+        d["news"] = ("CLEAR", f"Headlines checked {checked[11:16]}Z, nothing big. " + d["news"][1])[:140]
+    # Spotter (Ryan 10/16): calls out a setup as price nears or pokes through the opening range
+    near = {"MES": 3, "MNQ": 25}; px = st.get("last_px", {}) if live else {}; calls = []
+    for s in syms:
+        if s in opn or s in done or s not in orng or s not in px or not session or m > c["last_entry_min"]:
+            continue
+        hi, lo, p = orng[s][0], orng[s][1], px[s]
+        if p > hi:
+            calls.append(f"{s} {p} is above the range high {hi}: LONG if the 5-min bar closes above it")
+        elif p < lo:
+            calls.append(f"{s} {p} is below the range low {lo}: SHORT if the 5-min bar closes below it")
+        elif hi - p <= near.get(s, 0):
+            calls.append(f"{s} {hi - p:.2f} pts under the range high {hi}: long setup forming")
+        elif p - lo <= near.get(s, 0):
+            calls.append(f"{s} {p - lo:.2f} pts over the range low {lo}: short setup forming")
+    if calls:
+        d["spotter"] = ("CALLING", "; ".join(calls)[:140])
+    elif opn:
+        d["spotter"] = ("IN TRADE", "Setup taken, watching the trade.")
+    elif session and orng and m <= c["last_entry_min"] and any(s not in done for s in syms):
+        d["spotter"] = ("WATCHING", "; ".join(f"{s} {px[s]} in range {orng[s][1]}-{orng[s][0]}" for s in syms if s in px and s in orng and s not in done)[:140] or "Watching the range.")
+    else:
+        d["spotter"] = ("OFF", "No setups to watch right now.")
     # Sentiment: Liquid weekend/overnight mood (info only, not a trade gate)
     try:
         se = json.load(open(SENT)); d["sentiment"] = (se.get("status", "MIXED"), se.get("say", "")[:140])
