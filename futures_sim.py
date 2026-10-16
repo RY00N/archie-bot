@@ -206,7 +206,8 @@ def tick(log):
                 st["done"].append(sym)
                 log(f"FUT {sym} skip today: quiet market (yesterday's range {st['prev_range'][sym]} < {need} pts)")
                 continue
-        for t, mm, o, h, l, cl in [x for x in rth if x[1] >= 570 + orm and (x[1] + 1) % 5 == 0]:  # 5-min closes
+        eb = c.get("entry_bar_min", 5)  # 1 = enter on any 1-minute close (Ryan 10/16: "Start using 1m charts"), 5 = 5-min closes
+        for t, mm, o, h, l, cl in [x for x in rth if x[1] >= 570 + orm and (x[1] + 1) % eb == 0]:
             if mm > c["last_entry_min"]:
                 st["done"].append(sym)
                 break
@@ -313,15 +314,15 @@ def desk(c, st):
     elif checked and d["news"][0] == "CLEAR" and trading_day:
         d["news"] = ("CLEAR", f"Headlines checked {checked[11:16]}Z, nothing big. " + d["news"][1])[:140]
     # Spotter (Ryan 10/16): calls out a setup as price nears or pokes through the opening range
-    near = {"MES": 3, "MNQ": 25}; px = st.get("last_px", {}) if live else {}; calls = []
+    eb = c.get("entry_bar_min", 5); near = {"MES": 3, "MNQ": 25}; px = st.get("last_px", {}) if live else {}; calls = []
     for s in syms:
         if s in opn or s in done or s not in orng or s not in px or not session or m > c["last_entry_min"]:
             continue
         hi, lo, p = orng[s][0], orng[s][1], px[s]
         if p > hi:
-            calls.append(f"{s} {p} is above the range high {hi}: LONG if the 5-min bar closes above it")
+            calls.append(f"{s} {p} is above the range high {hi}: LONG if a {eb}-min bar closes above it")
         elif p < lo:
-            calls.append(f"{s} {p} is below the range low {lo}: SHORT if the 5-min bar closes below it")
+            calls.append(f"{s} {p} is below the range low {lo}: SHORT if a {eb}-min bar closes below it")
         elif hi - p <= near.get(s, 0):
             calls.append(f"{s} {hi - p:.2f} pts under the range high {hi}: long setup forming")
         elif p - lo <= near.get(s, 0):
@@ -372,5 +373,5 @@ def desk(c, st):
     elif cur:
         d["decision"] = ("WAIT", d["news"][1])
     else:
-        d["decision"] = ("WAIT", "Waiting for a 5-min close outside the opening range.")
+        d["decision"] = ("WAIT", f"Waiting for a {c.get('entry_bar_min', 5)}-min close outside the opening range.")
     return {k: {"status": v[0], "say": v[1], "at": at} for k, v in d.items()}
