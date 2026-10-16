@@ -32,6 +32,12 @@ def tr_r(c, sym):
     return float(t.get(sym, 2.0)) if isinstance(t, dict) else float(t)
 
 
+def ts_min(c, sym):
+    """time_stop_min is one number or a per-symbol dict (10/16: MNQ 80, MES 90)."""
+    t = c.get("time_stop_min")
+    return t.get(sym, 90) if isinstance(t, dict) else t
+
+
 def cfg():
     try:
         return {**DEFAULTS, **json.load(open(os.path.join(HERE, "rules.json"))).get("futures", {})}
@@ -142,7 +148,7 @@ def tick(log):
                     out, how = tr["target"], "target"
                 elif mm >= c["flatten_min"]:
                     out, how = cl, "end of day"
-                elif c.get("time_stop_min") and mm - tr.get("entry_min", mm) >= c["time_stop_min"]:
+                elif ts_min(c, sym) and mm - tr.get("entry_min", mm) >= ts_min(c, sym):
                     out, how = cl, "time stop"  # target not reached soon enough: not worth holding
                 if out is not None:
                     pnl = round(tr["side"] * (out - tr["entry"]) * sp["pt"] * tr["qty"] - c["fees"] * tr["qty"], 2)
@@ -315,7 +321,7 @@ def desk(c, st):
         d["risk"] = ("DONE", f"Done for today: {sum(t['pnl'] for t in hist):+.2f}.")
     else:
         tgt = " / ".join("%s %gR" % (x, tr_r(c, x)) for x in SPEC)
-        d["risk"] = ("OK", f"{c['contracts']} contract, bracket stop + target ({tgt}), {c.get('time_stop_min', 90)}-min limit, flat by 3:55.")
+        d["risk"] = ("OK", f"{c['contracts']} contract, bracket stop + target ({tgt}), {'/'.join(f'{k} {v}' for k, v in c['time_stop_min'].items()) if isinstance(c.get('time_stop_min'), dict) else c.get('time_stop_min', 90)}-min limit, flat by 3:55.")
     # Decision: BUY / SELL / WAIT / SKIP
     if opn:
         s, t = next(iter(opn.items()))
