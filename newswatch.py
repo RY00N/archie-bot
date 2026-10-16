@@ -18,8 +18,8 @@ SHOCK = [
     ("Fed", r"\b(fed|fomc|powell|waller|jefferson|williams)\b.*\b(emergency|surprise|unexpected|cut|hike|hawkish|dovish)\b"),
     ("Tariffs/trade", r"\btariff|trade war|export (ban|curb|control)|sanction"),
     ("War/geo", r"\b(war|invasion|invade|missile|airstrike|attack(s|ed)?|troops|nuclear|ceasefire)\b"),
-    ("Market drop", r"\b(crash|plunge|plummet|tumble|sell-?off|rout|circuit breaker|trading halt)"),
-    ("Company warning", r"\b(cuts? (guidance|outlook|forecast)|warns|profit warning|downgrade|recall|probe|antitrust|sec charges|bankrupt)"),
+    ("Market drop", r"\b(crash(es|ed)?|plunges?|plunged|plummet(s|ed)?|tumbles?|tumbled|sell-?off|rout|circuit breaker|trading halt)\b"),
+    ("Company warning", r"\b(cuts? (guidance|outlook|forecast)|warns|profit warning|downgraded?|recalls?|probe|antitrust|sec charges|bankrupt(cy)?)\b"),
     ("Data shock", r"\b(cpi|inflation|jobs report|payrolls|gdp|unemployment)\b.*\b(hotter|cooler|surge|jump|unexpected|beats|misses)\b"),
 ]
 SHOCK = [(k, re.compile(p, re.I)) for k, p in SHOCK]
