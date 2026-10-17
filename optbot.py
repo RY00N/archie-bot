@@ -3,9 +3,11 @@ Copies nickafischer's "Scalp City" bots as described in his reels: 1-min chart, 
 VWAP, across the 50 EMA, or out of the first 15-min range; above = buy a call, below = buy a put), next-day (1DTE)
 ATM options, a 5% profit lock that then trails, a stop loss, and a daily profit goal / loss brake that switch it off.
 Only trades the first 30 minutes (his reels: "I only trade the first 30 minutes"). Backtest: options/scalp_bt.py.
-Settings: rules.json "options". Runs from daytrader.tick on every live-loop pass (about every 3 s). PAPER ONLY:
+Settings: rules.json "options". daytrader.tick calls ensure_thread(), which starts one background thread that runs
+step() EVERY SECOND (Ryan 10/17: "these trades are quick"): open trades are checked each second, and the chart is read
+right after each 1-min candle closes. The thread always runs the newest loaded code. PAPER ONLY:
 refuses to run unless the account number starts with PA."""
-import json, math, os
+import json, math, os, sys, threading, time, traceback
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -14,7 +16,7 @@ STATE = os.path.join(HERE, "optbot-state.json")
 DEFAULTS = {"enabled": True, "symbol": "QQQ", "budget_start": 100000, "size": 12000, "stop_pct": 12, "lock_pct": 5,
             "keep_pct": 2, "trail_pct": 10, "max_hold_min": 30, "daily_goal": 1500, "daily_brake": 2500,
             "first_min": 571, "last_min": 600, "max_trades": 6, "triggers": "veo"}
-_last = {"bars": 0}
+_last = globals().get("_last") or {"min": None, "paper": None}  # survives importlib.reload
 
 
 def cfg():
@@ -63,6 +65,8 @@ def signal(bot, c, today, now_m):
     prev = [b for b in B if b[0] < today]; day = [b for b in B if b[0] == today and b[1] < now_m]  # closed bars only
     if len(day) < 2:
         return None
+    if day[-1][1] < now_m - 1 and now_m - 1 >= 570:
+        return "wait"
     k = 2 / 51; e = None
     for b in prev[-120:]:
         e = b[5] if e is None else e + k * (b[5] - e)
@@ -105,7 +109,7 @@ def _quote(bot, osym):
     return float(q["bp"]), float(q["ap"])
 
 
-def tick(bot, log):
+def step(bot, log):
     c = cfg()
     now = datetime.now(timezone.utc).astimezone(ET)
     today, m = now.date().isoformat(), now.hour * 60 + now.minute
@@ -113,8 +117,10 @@ def tick(bot, log):
     if st.get("date") != today:
         st.update({"date": today, "day_pnl": 0.0, "trades": 0, "done": False, "last_sig_min": None, "why_done": ""})
         save(st)
-    if not bot.trade("GET", "/v2/account")["account_number"].startswith("PA"):
-        return  # paper only
+    if _last["paper"] != today:  # paper only: check the account once a day
+        if not bot.trade("GET", "/v2/account")["account_number"].startswith("PA"):
+            return
+        _last["paper"] = today
     o = st.get("open")
     if o:  # manage the open option: stop, profit lock + trail, time stop
         if o.get("state") == "pending":
@@ -168,10 +174,14 @@ def tick(bot, log):
         return
     if not c["enabled"] or st["done"] or now.weekday() >= 5 or not c["first_min"] <= m <= c["last_min"] + 1:
         return
-    if _last["bars"] and (datetime.now().timestamp() - _last["bars"]) < 5:
+    if _last["min"] == m:  # this minute's closed candle already read
         return
-    _last["bars"] = datetime.now().timestamp()
     sig = signal(bot, c, today, m)
+    if sig == "wait":
+        if now.second < 10:
+            return  # the candle that just closed isn't in the data yet; retry next second
+        sig = None  # no print on IEX that minute: nothing to read
+    _last["min"] = m
     if not sig or sig[3] == st.get("last_sig_min"):
         return
     side, why, px, sm = sig; st["last_sig_min"] = sm
@@ -198,3 +208,23 @@ def summary():
             "equity": round(eq, 2), "day_pnl": st.get("day_pnl", 0), "realized": st.get("realized", 0),
             "positions": [o] if o else [], "trades": st.get("history", [])[-50:],
             "status": ("off" if not c["enabled"] else st.get("why_done") or ("in a trade" if o else "watching")), "date": st.get("date")}
+
+
+def _loop(bot, log):
+    while True:
+        try:
+            now = datetime.now(timezone.utc).astimezone(ET)
+            if now.weekday() < 5 and 570 <= now.hour * 60 + now.minute < 960:
+                sys.modules["optbot"].step(bot, log)  # newest code after each git pull + reload
+                time.sleep(1)
+            else:
+                time.sleep(20)
+        except Exception:
+            log("optbot error:\n" + traceback.format_exc()[-600:])
+            time.sleep(5)
+
+
+def ensure_thread(bot, log):
+    if not any(t.name == "optbot" for t in threading.enumerate()):
+        threading.Thread(target=_loop, args=(bot, log), name="optbot", daemon=True).start()
+        log("optbot 1-second loop started")
