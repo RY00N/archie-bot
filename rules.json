@@ -124,7 +124,7 @@
   },
   "swing_enabled": false,
   "futures": {
-    "enabled": true,
+    "enabled": false,
     "budget_start": 10000,
     "contracts": 1,
     "or_minutes": {
@@ -166,7 +166,7 @@
     }
   },
   "prop": {
-    "enabled": true,
+    "enabled": false,
     "accounts": 2,
     "cpi": [
       "2026-10-14",
@@ -185,7 +185,7 @@
   },
   "lab_books": {
     "gapfill": {
-      "enabled": true,
+      "enabled": false,
       "symbol": "MNQ",
       "budget_start": 10000,
       "contracts": 1,
@@ -198,7 +198,7 @@
       "started": "2026-10-19"
     },
     "droplong": {
-      "enabled": true,
+      "enabled": false,
       "symbol": "MNQ",
       "budget_start": 10000,
       "contracts": 1,
