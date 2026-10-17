@@ -229,6 +229,8 @@
   "first_min": 574,
   "last_min": 574,
   "max_trades": 1,
-  "triggers": "f"
+  "triggers": "f",
+  "max_prev_range_pct": 1.82,
+  "max_opt_pct": 0.72
  }
 }

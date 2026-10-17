@@ -82,6 +82,9 @@ def signal(bot, c, today, now_m):
         return None
     t = c["triggers"]
     if "f" in t and m1 == 574 and day[0][1] == 570:  # first 5 minutes' direction (10/17 tick backtest winner)
+        pd = [b for b in prev if b[0] == prev[-1][0]] if prev else []
+        if pd and (max(b[4] for b in pd) - min(b[5] for b in pd)) / pd[-1][5] * 100 > c.get("max_prev_range_pct", 99):
+            return "skip", "yesterday's range too wide", c1, m1  # 10/17: wild prior days lost in 2024-25 and 2026
         return (1 if c1 > day[0][2] else -1), "first-5-min direction 9:35", c1, m1
     if "v" in t and (c0 - w0) * (c1 - w1) < 0:
         return (1 if c1 > w1 else -1), f"VWAP cross {m1 // 60}:{m1 % 60:02d}", c1, m1
@@ -189,11 +192,16 @@ def step(bot, log):
     _last["min"] = m
     if not sig or sig[3] == st.get("last_sig_min"):
         return
+    if sig[0] == "skip":
+        st["done"], st["why_done"] = True, f"skipped: {sig[1]}"; log(f"OPT {st['why_done']}"); save(st); return
     side, why, px, sm = sig; st["last_sig_min"] = sm
     osym = _contract(bot, c["symbol"], side, px, today)
     if not osym:
         log(f"OPT {why}: no contract found"); save(st); return
     bid, ask = _quote(bot, osym)
+    if ask > 0 and (bid + ask) / 2 / px * 100 > c.get("max_opt_pct", 99):  # option too expensive = market too jumpy
+        st["done"], st["why_done"] = True, f"skipped: option too expensive ({(bid + ask) / 2:.2f})"
+        log(f"OPT {st['why_done']}"); save(st); return
     qty = int(c["size"] // (ask * 100)) if ask > 0 else 0
     if qty < 1:
         save(st); return
