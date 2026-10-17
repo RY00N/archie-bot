@@ -912,13 +912,11 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-16 17:00 PT",
-  "props_today": 357,
-  "kalshi_props_today": 36,
+  "props_at": "2026-10-16 18:00 PT",
+  "props_today": 195,
+  "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {
-   "Underdog": 36
-  },
+  "books_on_kalshi_props": {},
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
