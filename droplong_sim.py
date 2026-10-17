@@ -4,7 +4,7 @@
 Trades only on the days the main ORB book SKIPS MNQ for a drop (gap <= -1% or prior day <= -2%), and only long:
 15-min opening range (9:30-9:45); long on a 5-min close above the range high, stop 100 pts (rules.json), target 2R,
 out 80 min after entry if neither is hit, entries to 11:30. 1 MNQ, $1.50 fees, 1 tick slip each way.
-Backtest (futures/lab/lab_droplong.py): 10wk 4 trades +$438; 2yr 53 trades +$958 dd $1,027, both halves up.
+Backtest (futures/lab/lab_droplong.py, 100/2R): 10wk 4 trades +$524; 2yr 53 trades, 58% wins, +$2,878, dd $551.
 Own state (droplong-state.json), own $10k, own pnl.json key "droplong". PAPER ONLY, never sends orders.
 Settings in rules.json "lab_books" -> "droplong". The daily lab turns it off if it fails live.
 """
@@ -15,9 +15,9 @@ import futures_sim as fs
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "droplong-state.json")
 LOG = os.path.join(HERE, "droplong-log.jsonl")
-DEFAULTS = {"enabled": True, "symbol": "MNQ", "budget_start": 10000, "contracts": 1, "or_end_min": 585, "stop_pts": 80,
-            "target_r": 3.0, "time_stop_min": 80, "last_entry_min": 690, "fees": 1.5, "gap": -1.0, "prev": -2.0,
-            "backtest_dd": 1027}
+DEFAULTS = {"enabled": True, "symbol": "MNQ", "budget_start": 10000, "contracts": 1, "or_end_min": 585, "stop_pts": 100,
+            "target_r": 2.0, "time_stop_min": 80, "last_entry_min": 690, "fees": 1.5, "gap": -1.0, "prev": -2.0,
+            "backtest_dd": 551}
 _last = 0
 
 
