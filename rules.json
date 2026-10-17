@@ -156,7 +156,8 @@
     "prev": -2.0
    }
   },
-  "entry_bar_min": 5
+  "entry_bar_min": 5,
+  "skip_after_nr7": true
  },
  "prop": {
   "enabled": true,

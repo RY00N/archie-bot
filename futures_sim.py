@@ -96,6 +96,20 @@ def drop_check(sym, today):
     return round((o / c1 - 1) * 100, 2), round((c1 / c2 - 1) * 100, 2)
 
 
+def nr7_check(sym, today):
+    """True when yesterday's regular-session range (as % of its open) was the narrowest of the last 7 sessions."""
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{SPEC[sym]['y']}?interval=5m&range=1mo"
+    d = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read())
+    r = d["chart"]["result"][0]; q = r["indicators"]["quote"][0]; days = {}
+    for i, t in enumerate(r["timestamp"]):
+        e = datetime.fromtimestamp(t, ET)
+        if q["high"][i] is None or not 570 <= e.hour * 60 + e.minute < 960 or e.date().isoformat() >= today:
+            continue
+        days.setdefault(e.date().isoformat(), []).append((q["open"][i], q["high"][i], q["low"][i]))
+    rng = [(max(h for o, h, l in b) - min(l for o, h, l in b)) / b[0][0] for k, b in sorted(days.items()) if len(b) > 60][-7:]
+    return len(rng) == 7 and rng[-1] <= min(rng[:-1])
+
+
 def _minus5(t):
     return (datetime.fromisoformat(t[:-1]) - timedelta(minutes=5)).isoformat()[:16] + "Z"
 
@@ -119,7 +133,7 @@ def tick(log):
     st = load_state()
     now = datetime.now(ET); today, m = now.date().isoformat(), now.hour * 60 + now.minute
     if st["date"] != today:
-        st.update({"date": today, "done": [], "realized_today": 0.0, "or": {}, "prev_range": {}})
+        st.update({"date": today, "done": [], "realized_today": 0.0, "or": {}, "prev_range": {}, "nr7": {}})
     st.setdefault("prev_range", {})
     try:
         news = json.load(open(NEWS))
@@ -187,6 +201,17 @@ def tick(log):
             if gap is not None and (gap <= sad["gap"] or prev <= sad["prev"]):
                 st["done"].append(sym)
                 log(f"FUT {sym} skip today: after a drop (gap {gap:+.2f}%, prior day {prev:+.2f}%)")
+                continue
+        if c.get("skip_after_nr7") and rth:  # 10/17 (Ryan: "add and remove everything until you're profitable"): sit out after an NR7 day
+            if sym not in st.setdefault("nr7", {}):
+                try:
+                    st["nr7"][sym] = nr7_check(sym, today)
+                except Exception as e:
+                    st["nr7"][sym] = False
+                    log(f"FUT {sym} NR7 check error: {e}")
+            if st["nr7"][sym]:
+                st["done"].append(sym)
+                log(f"FUT {sym} skip today: yesterday was the quietest of the last 7 days (NR7)")
                 continue
         orm = c["or_minutes"][sym] if isinstance(c["or_minutes"], dict) else c["or_minutes"]  # MNQ waits 15 min, MES 5
         orb = [x for x in rth if x[1] < 570 + orm]
