@@ -157,7 +157,13 @@
       }
     },
     "entry_bar_min": 5,
-    "skip_after_nr7": true
+    "skip_after_nr7": true,
+    "tema_filter": {
+      "MNQ": {
+        "n": 20,
+        "lag": 2
+      }
+    }
   },
   "prop": {
     "enabled": true,

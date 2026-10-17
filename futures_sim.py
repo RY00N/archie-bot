@@ -239,6 +239,19 @@ def tick(log):
             side = 1 if cl > hi else -1 if cl < lo else 0
             if not side:
                 continue
+            tf = c.get("tema_filter", {}).get(sym)
+            if tf:  # 10/17 (auto, no-asking rule): TEMA slope over the 2 bars before the break must point the break's way
+                k = 2 / (tf["n"] + 1); e1 = e2 = e3 = None; TT = []
+                for x in rth:
+                    if (x[1] + 1) % 5 or x[1] > mm:
+                        continue
+                    if e1 is None:
+                        e1 = e2 = e3 = x[5]
+                    e1 += k * (x[5] - e1); e2 += k * (e1 - e2); e3 += k * (e2 - e3); TT.append(3 * e1 - 3 * e2 + e3)
+                q = len(TT) - 2
+                if q - tf["lag"] < 0 or (TT[q] - TT[q - tf["lag"]]) * side <= 0:
+                    log(f"FUT {sym} break at {mm} skipped: TEMA{tf['n']} slope against it")
+                    continue
             blk = [w for w in news.get("blocks", []) if w[0] <= mm <= w[1]]
             if blk:  # scheduled release right now: no entry on this bar (next 5-min close can still qualify)
                 log(f"FUT {sym} break at {mm} skipped: news window ({blk[0][2] if len(blk[0]) > 2 else ''})")
