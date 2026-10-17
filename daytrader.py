@@ -182,6 +182,11 @@ def _manage_runners(bot, log, st, c, pos, now):
 def tick(bot, log):
     """Called from the live loop while the market is open. Self-throttles to every 15 seconds."""
     global _last_tick
+    try:  # QQQ options scalper on Alpaca paper (Ryan 2026-10-17), runs every pass (~3 s) for quick exits
+        import importlib, optbot
+        importlib.reload(optbot).tick(bot, log)
+    except Exception as e:
+        log(f"optbot error: {e}")
     now = datetime.now(timezone.utc)
     if now.timestamp() - _last_tick < 15:
         return

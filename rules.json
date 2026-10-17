@@ -213,5 +213,22 @@
       "backtest_dd": 551,
       "started": "2026-10-19"
     }
+  },
+  "options": {
+    "enabled": true,
+    "symbol": "QQQ",
+    "budget_start": 100000,
+    "size": 12000,
+    "stop_pct": 12,
+    "lock_pct": 5,
+    "keep_pct": 2,
+    "trail_pct": 10,
+    "max_hold_min": 30,
+    "daily_goal": 1500,
+    "daily_brake": 2500,
+    "first_min": 571,
+    "last_min": 600,
+    "max_trades": 6,
+    "triggers": "veo"
   }
 }
