@@ -14,7 +14,7 @@ and sums it up as a lean (BULLISH / BEARISH / MIXED) plus caution flags.
 INFO ONLY. The lean is not backtested and is not a trade signal; it never places or blocks a trade. Every run is also
 appended to feeds/history/YYYY-MM-DD.jsonl so Archie can later test whether any of it predicts the 9:30-9:34 direction.
 
-Usage: python3 intel.py            (one run now, prints the summary)
+Usage: python3 intel.py            (one run now, prints the summary); python3 intel.py catalysts (catalyst scan only)
 Bot hook: intel.maybe_run(log) from daytrader.tick; runs at the RUN_AT times below on weekdays, once each.
 Needs only the stdlib. Keys from env: APCA_API_KEY_ID / APCA_API_SECRET_KEY, FINNHUB_API_KEY (each part is skipped
 if its key or source is missing)."""
@@ -213,6 +213,11 @@ def summarize(r):
     fg = r["sentiment"].get("fear_greed", {})
     if fg.get("score") is not None and (fg["score"] <= 20 or fg["score"] >= 80):
         caution.append(f"Fear & Greed at {fg['score']} ({fg['rating']}): crowded mood, reversals more likely")
+    try:
+        for c_ in json.load(open(CAT_OUT))[:3]:
+            caution.append(f"verified {c_['catalyst_type']} ({c_['bias_score']}, {c_['execution_action']}): {c_['hard_data_metric'][:90]}")
+    except Exception:
+        pass
     lean = "BULLISH" if pts >= 2 else "BEARISH" if pts <= -2 else "MIXED"
     return {"lean": lean, "score": pts, "why": why, "caution": caution,
             "say": f"{lean} ({pts:+d})" + (": " + "; ".join(why) if why else "") +
@@ -238,12 +243,207 @@ def run(log=print):
     return r
 
 
+# ---------------------------------------------------------------------------------------------------------------------
+# Verified catalyst filter (Ryan 2026-10-17 spec "QQQ/MNQ real-time news verification & bias filter").
+# Reads Yahoo Finance, CNBC, Nasdaq.com, Seeking Alpha and Reuters (via Google News; reuters.com blocks bots), keeps only
+# MACRO (FOMC, CPI, PPI, NFP), EARNINGS (NVDA, AAPL, MSFT, AMZN, GOOGL results/guidance/filings) and STRUCTURAL
+# (Nasdaq-100 rebalance/adds/deletes, big block trades or QQQ outflows) headlines, drops hype words, analyst opinion and
+# forum chatter, and only reports an event once at least two different sites carry it. Writes feeds/qqq-catalysts.json
+# as a JSON array in Ryan's format. Info only like the rest of this file: Archie decides whether any action is obeyed.
+CAT_OUT = os.path.join(FEEDS, "qqq-catalysts.json")
+CAT_STATE = os.path.join(FEEDS, "catalyst-state.json")
+TOP5 = {"NVDA": r"nvidia|nvda", "AAPL": r"apple|aapl", "MSFT": r"microsoft|msft", "AMZN": r"amazon|amzn",
+        "GOOGL": r"alphabet|google|googl"}
+GN = "https://news.google.com/rss/search?hl=en-US&gl=US&ceid=US:en&q="
+CAT_FEEDS = [  # (site, url)
+    ("yahoo.com", "https://feeds.finance.yahoo.com/rss/2.0/headline?s=QQQ,%5EIXIC,NVDA,AAPL,MSFT,AMZN,GOOGL&region=US&lang=en-US"),
+    ("cnbc.com", "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114"),
+    ("cnbc.com", "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258"),
+    ("cnbc.com", "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=15839135"),
+    ("nasdaq.com", "https://www.nasdaq.com/feed/rssoutbound?category=Markets"),
+    ("nasdaq.com", "https://www.nasdaq.com/feed/rssoutbound?category=Earnings"),
+    ("nasdaq.com", "https://www.nasdaq.com/feed/rssoutbound?category=Stocks"),
+    ("seekingalpha.com", "https://seekingalpha.com/market_currents.xml"),
+] + [("reuters.com", GN + urllib.parse.quote(f"{q} site:reuters.com when:2d")) for q in (
+    "Fed interest rates", "US consumer prices CPI", "US producer prices", "US payrolls jobs report",
+    "Nvidia results", "Apple results", "Microsoft results", "Amazon results", "Alphabet results", "Nasdaq-100 index")]
+MACRO_KEYS = [("FOMC", r"\b(fomc|rate decision|fed (holds|cuts|raises|hikes|keeps|leaves|lowers)( interest)? rates?|"
+                      r"fed (cuts|raises|hikes|lowers) .*basis points?)\b"),
+              ("CPI", r"\b(cpi|consumer prices?|consumer price index)\b"),
+              ("PPI", r"\b(ppi|producer prices?|producer price index|wholesale (prices|inflation))\b"),
+              ("NFP", r"\b(nonfarm|non-farm|payrolls?|jobs report|unemployment rate)\b")]
+EARN_WORDS = re.compile(r"\b(results?|earnings|quarter(ly)?|q[1-4]|revenue|sales|eps|profit|guidance|outlook|forecast|"
+                        r"10-[qk]|8-k|sec filing|files?)\b", re.I)
+STRUCT = re.compile(r"(nasdaq-?100|ndx).*(rebalanc|add(s|ed)?|delet|remov|join|replace|reconstitut)|"
+                    r"(rebalanc|reconstitut).*(nasdaq|ndx)|block trades?|\bqqq\b.*outflows?|outflows?.*\bqqq\b", re.I)
+HYPE = re.compile(r"\b(skyrocket\w*|crash\w*|doomed|soar\w*|plung\w*|plummet\w*|explod\w*|meltdown|collaps\w*|"
+                  r"moonshot|to the moon|must-?buy|millionaire|bubble)\b", re.I)
+OPINION = re.compile(r"\?|\b(analysts?|upgrades?d?|downgrades?d?|price target|should you|here'?s (why|what|how)|"
+                     r"opinion|commentary|column|buy (now|before)|reddit|wallstreetbets|stocktwits|my take|i think|"
+                     r"could|might|may)\b", re.I)
+
+
+def _feed_items(site, url):
+    root = XET.fromstring(get(url, timeout=12))
+    for it in root.iter("item"):
+        title = (it.findtext("title") or "").strip()
+        if site == "reuters.com":
+            if not title.endswith("- Reuters"):
+                continue
+            title = title.rsplit(" - Reuters", 1)[0]
+        try:
+            t = parsedate_to_datetime(it.findtext("pubDate")).astimezone(timezone.utc)
+        except Exception:
+            continue
+        yield {"site": site, "t": t, "title": title, "link": (it.findtext("link") or "").strip()}
+
+
+def _classify(title):
+    """(catalyst_type, event key) or None. Hype/opinion headlines are dropped before this is called."""
+    for key, rx in MACRO_KEYS:
+        if re.search(rx, title, re.I):
+            return "MACRO", key
+    for sym, rx in TOP5.items():
+        if re.search(rf"\b({rx})\b", title, re.I) and EARN_WORDS.search(title):
+            return "EARNINGS", sym
+    if STRUCT.search(title):
+        return "STRUCTURAL", "NDX-STRUCTURE"
+    return None
+
+
+def _metric(titles):
+    """The most number-heavy headline, trimmed: e.g. 'CPI rises 0.4% in September vs 0.3% expected'."""
+    best = max(titles, key=lambda h: (len(re.findall(r"\d[\d.,]*\s?(%|bp|basis points?|billion|million|cents?)|\$\d", h, re.I)),
+                                       bool(re.search(r"expect|estimate|forecast|consensus", h, re.I))))
+    return best[:180]
+
+
+def _bias(ctype, key, titles):
+    text = " ".join(titles).lower()
+    up = down = 0
+    if ctype == "MACRO" and key in ("CPI", "PPI"):
+        down += len(re.findall(r"hotter|higher than expected|accelerat|jumps|rises more|above (expectations|estimates)|heats up", text))
+        up += len(re.findall(r"cooler|softer|lower than expected|slows|eases|below (expectations|estimates)|cools", text))
+    elif ctype == "MACRO" and key == "FOMC":
+        up += len(re.findall(r"\bcuts?\b|dovish|lower rates", text))
+        down += len(re.findall(r"\bhikes?\b|raises rates|hawkish", text))
+    elif ctype == "MACRO" and key == "NFP":
+        up += len(re.findall(r"cooler|slows|below expectations|moderat", text))  # soft but not collapsing = rate-cut hopes
+        down += len(re.findall(r"hotter|surges|blowout|above expectations|unemployment (jumps|rises to)", text))
+    else:
+        up += len(re.findall(r"\bbeats?\b|tops|above estimates|raises (guidance|outlook|forecast)|record (revenue|profit)", text))
+        down += len(re.findall(r"\bmiss(es)?\b|below estimates|cuts? (guidance|outlook|forecast)|weak (guidance|outlook)|warns", text))
+    return "BULLISH" if up > down else "BEARISH" if down > up else "NEUTRAL"
+
+
+def scan_catalysts(log=print, hours=36):
+    now = datetime.now(timezone.utc)
+    reuters_due = time.time() - _cat_last.get("reuters", 0) >= 600  # Google News rate-limits; Reuters every 10 min
+    if reuters_due:
+        _cat_last["reuters"] = time.time()
+    try:
+        st = json.load(open(CAT_STATE))
+    except Exception:
+        st = {"seen": []}
+    seen = {(r["site"], r["title"]): r for r in st["seen"] if now - datetime.fromisoformat(r["t"]) < timedelta(hours=hours)}
+    errors = []
+    for site, url in CAT_FEEDS:
+        if site == "reuters.com":
+            if not reuters_due:
+                continue
+            time.sleep(2)
+        try:
+            for it in _feed_items(site, url):
+                if now - it["t"] > timedelta(hours=hours) or HYPE.search(it["title"]) or OPINION.search(it["title"]):
+                    continue
+                c = _classify(it["title"])
+                if c:
+                    seen[(site, it["title"])] = {"site": site, "t": it["t"].isoformat(), "title": it["title"],
+                                                 "link": it["link"], "type": c[0], "key": c[1]}
+        except Exception as e:
+            errors.append(f"{site}: {str(e)[:60]}")
+    rows = list(seen.values())
+    # Group by event; an event counts once two or more different sites carry it.
+    events = {}
+    for r in rows:
+        events.setdefault((r["type"], r["key"]), []).append(r)
+    cal = []
+    try:
+        cal = [e for e in getj("https://nfs.faireconomy.media/ff_calendar_thisweek.json") if e.get("country") == "USD"]
+    except Exception as e:
+        errors.append(f"calendar: {str(e)[:60]}")
+    out = []
+    for (ctype, key), rs in events.items():
+        sites = sorted({r["site"] for r in rs})
+        if len(sites) < 2:
+            continue
+        rs.sort(key=lambda r: r["t"])
+        first = datetime.fromisoformat(rs[0]["t"])
+        urls = []
+        for s_ in sites:
+            urls.append(next(r["link"] for r in rs if r["site"] == s_))
+        titles = [r["title"] for r in rs]
+        metric = _metric(titles)
+        if ctype == "MACRO":
+            m = next((e for e in cal if re.search(dict(MACRO_KEYS)[key], e["title"], re.I) and
+                      abs(datetime.fromisoformat(e["date"]).astimezone(timezone.utc) - first) < timedelta(hours=18)), None)
+            if m and (m.get("forecast") or m.get("previous")):
+                metric += f" | {m['title']}: forecast {m.get('forecast') or 'n/a'}, previous {m.get('previous') or 'n/a'}"
+        age = now - first
+        if ctype == "MACRO" and age < timedelta(minutes=30):
+            action = "HALT_TRADING"
+        elif ctype in ("MACRO", "EARNINGS") and age < timedelta(hours=18):
+            action = "VOLATILITY_SCALING"
+        else:
+            action = "NORMAL"
+        out.append({"timestamp": first.strftime("%Y-%m-%d %H:%M:%S UTC"), "catalyst_type": ctype,
+                    "primary_source_urls": urls[:4], "asset_affected": "QQQ / MNQ", "hard_data_metric": metric,
+                    "bias_score": _bias(ctype, key, titles), "execution_action": action})
+    # Scheduled high-impact US release within 15 minutes either side: halt even before headlines confirm it.
+    for e in cal:
+        if e.get("impact") != "High" or not any(re.search(rx, e["title"], re.I) for _, rx in MACRO_KEYS):
+            continue
+        t = datetime.fromisoformat(e["date"]).astimezone(timezone.utc)
+        if abs(now - t) <= timedelta(minutes=15):
+            out.append({"timestamp": t.strftime("%Y-%m-%d %H:%M:%S UTC"), "catalyst_type": "MACRO",
+                        "primary_source_urls": ["https://www.forexfactory.com/calendar"], "asset_affected": "QQQ / MNQ",
+                        "hard_data_metric": f"Scheduled: {e['title']} (forecast {e.get('forecast') or 'n/a'}, "
+                                            f"previous {e.get('previous') or 'n/a'})",
+                        "bias_score": "NEUTRAL", "execution_action": "HALT_TRADING"})
+    out.sort(key=lambda r: r["timestamp"], reverse=True)
+    os.makedirs(FEEDS, exist_ok=True)
+    tmp = CAT_OUT + ".tmp"; json.dump(out, open(tmp, "w"), indent=1); os.replace(tmp, CAT_OUT)
+    st = {"checked": now.isoformat()[:16] + "Z", "errors": errors, "seen": list(seen.values())}
+    json.dump(st, open(CAT_STATE, "w"), indent=1)
+    new = [r for r in out if r["timestamp"] not in set(_cat_logged)]
+    for r in new:
+        _cat_logged.add(r["timestamp"])
+        log(f"CATALYST {r['catalyst_type']} {r['bias_score']} {r['execution_action']}: {r['hard_data_metric'][:140]}")
+    return out
+
+
+_cat_logged = globals().get("_cat_logged") or set()
+_cat_last = globals().get("_cat_last") or {"t": 0}
+
+
 _done = globals().get("_done") or set()  # survives importlib.reload
 
 
 def maybe_run(log):
-    """Call from the bot loop; runs once at each RUN_AT time on weekdays (late start runs the latest missed slot)."""
+    """Call from the bot loop: the catalyst scan on its own timer, and the full intel run once at each RUN_AT time on
+    weekdays (late start runs the latest missed slot)."""
     now = datetime.now(ET)
+    # Catalyst filter: every 2 minutes on weekdays 6:00-16:00 ET, every 15 minutes otherwise.
+    every = 120 if now.weekday() < 5 and 6 <= now.hour < 16 else 900
+    if time.time() - _cat_last["t"] >= every:
+        _cat_last["t"] = time.time()
+
+        def cjob():
+            try:
+                scan_catalysts(log)
+            except Exception as e:
+                log(f"CATALYST scan failed: {e}")
+        threading.Thread(target=cjob, daemon=True, name="catalysts").start()
     if now.weekday() >= 5:
         return
     hm = now.strftime("%H:%M")
@@ -260,4 +460,8 @@ def maybe_run(log):
 
 
 if __name__ == "__main__":
-    print(json.dumps(run()["summary"], indent=1))
+    import sys
+    if "catalysts" in sys.argv:
+        print(json.dumps(scan_catalysts(), indent=1))
+    else:
+        print(json.dumps(run()["summary"], indent=1))
