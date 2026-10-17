@@ -3,6 +3,9 @@ Copies nickafischer's "Scalp City" bots as described in his reels: 1-min chart, 
 VWAP, across the 50 EMA, or out of the first 15-min range; above = buy a call, below = buy a put), next-day (1DTE)
 ATM options, a 5% profit lock that then trails, a stop loss, and a daily profit goal / loss brake that switch it off.
 Only trades the first 30 minutes (his reels: "I only trade the first 30 minutes"). Backtest: options/scalp_bt.py.
+10/17 second-by-second backtest (options/scalp_tick.py) showed his three triggers lose even at zero cost, so the live
+setting is trigger "f": the first 5 minutes' direction (9:34 close vs 9:30 open) buys one next-day ATM call/put at
+9:35, 50% stop, no profit lock, sold at 10:35 (options/first5.py, f5sim.py).
 Settings: rules.json "options". daytrader.tick calls ensure_thread(), which starts one background thread that runs
 step() EVERY SECOND (Ryan 10/17: "these trades are quick"): open trades are checked each second, and the chart is read
 right after each 1-min candle closes. The thread always runs the newest loaded code. PAPER ONLY:
@@ -78,6 +81,8 @@ def signal(bot, c, today, now_m):
     if m1 < c["first_min"] or m1 > c["last_min"]:
         return None
     t = c["triggers"]
+    if "f" in t and m1 == 574 and day[0][1] == 570:  # first 5 minutes' direction (10/17 tick backtest winner)
+        return (1 if c1 > day[0][2] else -1), "first-5-min direction 9:35", c1, m1
     if "v" in t and (c0 - w0) * (c1 - w1) < 0:
         return (1 if c1 > w1 else -1), f"VWAP cross {m1 // 60}:{m1 % 60:02d}", c1, m1
     if "e" in t and (c0 - e0) * (c1 - e1) < 0:
