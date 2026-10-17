@@ -2,7 +2,7 @@
 "If something fails automatically replace it with another until it succeeds").
 
 Trades only on the days the main ORB book SKIPS MNQ for a drop (gap <= -1% or prior day <= -2%), and only long:
-15-min opening range (9:30-9:45); long on a 5-min close above the range high, stop 80 pts, target 3R (240),
+15-min opening range (9:30-9:45); long on a 5-min close above the range high, stop 100 pts (rules.json), target 2R,
 out 80 min after entry if neither is hit, entries to 11:30. 1 MNQ, $1.50 fees, 1 tick slip each way.
 Backtest (futures/lab/lab_droplong.py): 10wk 4 trades +$438; 2yr 53 trades +$958 dd $1,027, both halves up.
 Own state (droplong-state.json), own $10k, own pnl.json key "droplong". PAPER ONLY, never sends orders.
