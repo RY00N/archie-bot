@@ -2,7 +2,7 @@
 
 Separate from the main ORB book: own state (gapfill-state.json), own $10k paper budget, own pnl.json key "gapfill".
 Rules (from futures/lab/lab_gapfill.py, "full+conf"):
-  gap = 9:30 open vs prior regular-session close (close of the 15:55 5-min bar); trade only if 0.3% <= |gap| <= 1.0%.
+  gap = 9:30 open vs prior regular-session close (close of the 15:55 5-min bar); trade only if min_gap_pct <= |gap| <= 1.0% (0.2% since 10/17; was 0.3%).
   The 9:30-9:35 bar must already move toward the fill. Enter at the 9:35 close (+/- 1 tick), fading the gap.
   Target = prior close. Stop = 1x gap beyond the 9:30 open. Out at 11:30 if neither is hit. 1 MNQ, $1.50 fees.
 Simulated fills on free Yahoo 1-min bars, same as futures_sim. PAPER ONLY, never sends orders.
@@ -16,8 +16,8 @@ import futures_sim as fs
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "gapfill-state.json")
 LOG = os.path.join(HERE, "gapfill-log.jsonl")
-DEFAULTS = {"enabled": True, "symbol": "MNQ", "budget_start": 10000, "contracts": 1, "min_gap_pct": 0.3,
-            "max_gap_pct": 1.0, "entry_min": 575, "exit_min": 690, "fees": 1.5, "backtest_dd": 1463}
+DEFAULTS = {"enabled": True, "symbol": "MNQ", "budget_start": 10000, "contracts": 1, "min_gap_pct": 0.2,
+            "max_gap_pct": 1.0, "entry_min": 575, "exit_min": 690, "fees": 1.5, "backtest_dd": 1221}
 _last = 0
 
 
@@ -143,7 +143,7 @@ def summary():
     return {"name": "MNQ gap fill", "enabled": c["enabled"], "budget_start": c["budget_start"], "equity": round(eq, 2),
             "day_pnl": round(day, 2), "total_pnl": round(eq - c["budget_start"], 2),
             "total_pnl_pct": round((eq / c["budget_start"] - 1) * 100, 2), "max_dd": round(dd, 2),
-            "note": "Practice lab book: fades MNQ opening gaps of 0.3-1% back to yesterday's close. Enters 9:35, out by 11:30.",
+            "note": "Practice lab book: fades MNQ opening gaps of 0.2-1% back to yesterday's close. Enters 9:35, out by 11:30.",
             "positions": [{"symbol": tr["symbol"], "side": "long" if tr["side"] == 1 else "short", "qty": tr["qty"],
                            "entry": tr["entry"], "price": tr["price"], "stop": tr["stop"], "target": tr["target"],
                            "entry_time": tr["entry_time"], "pnl": round(unreal, 2)}] if tr else [],
