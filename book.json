@@ -1091,11 +1091,43 @@
      "result": null
     }
    ]
+  },
+  {
+   "date": "2026-10-17",
+   "app": "Kalshi",
+   "type": "pick of the day (1-leg)",
+   "stake": 5.0,
+   "payout_x": 2.44,
+   "win_p": 0.497,
+   "ev_pct": 21.2,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "mlb",
+     "player": "Nick Martinez",
+     "team": "TB",
+     "stat": "pitcher_ks",
+     "side": "over",
+     "line": 2.5,
+     "price": 0.41,
+     "ticker": "KXMLBKS-26OCT161800TBCLE-TBNMARTINEZ28-3",
+     "game": "TB @ CLE",
+     "start": "2026-10-18T00:08:00Z",
+     "p": 0.497,
+     "edge": 0.07,
+     "news": "No injury or off-field red flags in the last 3 days.",
+     "why": "Nick Martinez over 2.5 pitcher ks: 8 books price it 41%; hit 83% of last 12 (avg 3.8); 2/5 over vs CLE, avg 2.6. Fair 50%.",
+     "case": "Last 5 games: 3, 1, 7, 3, 3 (4 of 5 over 2.5).",
+     "result": null
+    }
+   ],
+   "daily": true
   }
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-17 11:00 PT",
+  "props_at": "2026-10-17 12:00 PT",
   "props_today": 1600,
   "kalshi_props_today": 36,
   "kalshi_priced_today": 6,
