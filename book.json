@@ -1130,7 +1130,7 @@
   "props_at": "2026-10-17 14:00 PT",
   "props_today": 1600,
   "kalshi_props_today": 36,
-  "kalshi_priced_today": 6,
+  "kalshi_priced_today": 7,
   "books_on_kalshi_props": {
    "AN Consensus": 25,
    "AN Open": 25,
@@ -1152,6 +1152,6 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 3
  }
 }
