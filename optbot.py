@@ -226,6 +226,13 @@ def summary():
 def _loop(bot, log):
     while True:
         try:
+            try:  # helper's pre-market intel (Ryan OK'd 10/17; info only, never gates a trade); this thread runs all day, ticks don't
+                import importlib, intel
+                if time.time() - _last.get("intel_reload", 0) > 300:
+                    importlib.reload(intel); _last["intel_reload"] = time.time()
+                intel.maybe_run(log)
+            except Exception as e:
+                log(f"intel hook error: {e}")
             now = datetime.now(timezone.utc).astimezone(ET)
             if now.weekday() < 5 and 570 <= now.hour * 60 + now.minute < 960:
                 sys.modules["optbot"].step(bot, log)  # newest code after each git pull + reload
