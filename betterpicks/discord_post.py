@@ -7,6 +7,7 @@ Needs ONE of these in the environment (never paste them in chat):
 
   python3 discord_post.py today [--dry]   # post picks/parlays dated today (PT); --dry prints instead
   python3 discord_post.py file <path>     # post a prepared message
+  python3 discord_post.py verdicts [--dry] # HIT/LOST posts for graded parlays (also runs after 'today')
 Already-posted items are remembered in discord_posted.json so nothing is posted twice.
 """
 import json, math, os, re, sys, urllib.request
@@ -179,9 +180,54 @@ def today(dry=False):
         print("posted", len(new))
 
 
+FEED_URL = "https://raw.githubusercontent.com/RY00N/archie-bot/claude/project-thread-8sdhk6/betterpicks/books_feed.json"
+MARK = {"won": "\u2705", "lost": "\u274c", "void": "\u2796", "push": "\u2796"}
+
+
+def verdict_post(v, rec):
+    """'HIT' or 'LOST' once the parlay's last game is graded, one embed per parlay (practice only)."""
+    day = datetime.fromisoformat(v["date"]).strftime("%b %-d")
+    word = {"won": "HIT", "lost": "LOST", "void": "VOID"}[v["status"]]
+    money = {"won": f"+${v['pnl']:.2f} practice", "lost": f"-${v['stake']:.2f} practice",
+             "void": "no action, stake back"}[v["status"]]
+    name = f"1-leg lock" if v.get("lock") else v["type"]
+    head = f"{MARK[v['status']]} **{word}: BetterPicks {v['app']} {name} ({day})**, {money}"
+    fields = []
+    for l in v["legs"]:
+        got = f"finished with {l['actual']:g}" if isinstance(l.get("actual"), (int, float)) else (
+            "no result (voided)" if l.get("result") == "void" else "")
+        fields.append({"name": f"{MARK.get(l.get('result'), '')} {leg_label(l)}"[:256], "value": f"{l['game']}" + (f", {got}" if got else "")})
+    foot = (f"55% rule record: {rec['won']}-{rec['lost']}, ${rec['pnl']:+.2f} practice. " if rec else "") + "Practice picks, not real bets."
+    color = {"won": 0x00B37E, "lost": 0xE5484D, "void": 0x8B8D98}[v["status"]]
+    return head, {"title": f"Verdict: {word}", "color": color, "fields": fields[:25], "footer": {"text": foot}}
+
+
+def verdicts(dry=False):
+    """Ryan 2026-10-18: when a posted parlay's last game is graded, say whether it hit or lost (past ones too)."""
+    try:
+        req = urllib.request.Request(FEED_URL, headers={"User-Agent": "BetterPicks (1.0)", "Cache-Control": "no-cache"})
+        doc = json.load(urllib.request.urlopen(req, timeout=15)).get("verdicts") or {}
+    except Exception:
+        return
+    sent = set(load(SENT, []))
+    todo = [v for v in sorted(doc.get("parlays", []), key=lambda v: v["date"])
+            if v["key"] in sent and f"verdict:{v['key']}" not in sent]
+    for v in todo:
+        head, emb = verdict_post(v, doc.get("record"))
+        if dry:
+            print(head, json.dumps(emb, indent=1), "\n"); continue
+        send(head, [emb])
+        sent.add(f"verdict:{v['key']}")
+        json.dump(sorted(sent), open(SENT, "w"), indent=1)
+        print("posted verdict", v["key"])
+
+
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "today":
         today("--dry" in sys.argv)
+        verdicts("--dry" in sys.argv)
+    elif len(sys.argv) > 1 and sys.argv[1] == "verdicts":
+        verdicts("--dry" in sys.argv)
     elif len(sys.argv) > 2 and sys.argv[1] == "file":   # post a prepared message, e.g. discord_test.txt
         if sys.argv[2].endswith(".json"):   # a parlay entry -> embed
             e = json.load(open(sys.argv[2])); send(kalshi_post(e), [embed_parlay(e)])

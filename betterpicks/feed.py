@@ -12,6 +12,28 @@ from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 KEEP_OUT = {"PrizePicks", "Underdog", "Sleeper", "Kalshi", "Polymarket"}   # the droplet fetches these itself
+GRADED = os.environ.get("BP_GRADED_BOOK", "/mnt/project-files/betterpicks/book.json")   # the project grades parlays
+LEG_KEEP = ("player", "stat", "side", "line", "ticker", "game", "result", "actual")
+
+
+def verdicts():
+    """Ryan 2026-10-18: once a parlay's last game is graded, the droplet posts HIT or LOST in Discord.
+    Only the project grades, so the settled parlays ride along in the feed (Discord era, Oct 12 on)."""
+    try:
+        book = json.load(open(GRADED))
+    except Exception:
+        return None
+    out = []
+    for e in book.get("parlays", []):
+        if e["status"] in ("won", "lost", "void") and e["date"] >= "2026-10-12" and not e.get("test"):
+            out.append({"key": f"parlay:{e['date']}:{e['app']}:{e['type']}", "date": e["date"], "app": e["app"],
+                        "type": e["type"], "lock": e.get("lock"), "status": e["status"], "pnl": e["pnl"],
+                        "stake": e["stake"], "payout_x": e.get("payout_x"),
+                        "legs": [{k: l.get(k) for k in LEG_KEEP} for l in e["legs"]]})
+    rule = [e for e in book.get("parlays", []) if e["app"] == "Kalshi" and e["date"] >= "2026-10-13" and e["status"] in ("won", "lost")]
+    rec = {"won": sum(e["status"] == "won" for e in rule), "lost": sum(e["status"] == "lost" for e in rule),
+           "pnl": round(sum(e["pnl"] for e in rule), 2)}
+    return {"parlays": out, "record": rec}
 
 
 def key(pr):
@@ -33,8 +55,10 @@ def main():
         books = {n: s for n, s in pr["sources"].items() if n not in KEEP_OUT and s.get("over") is not None}
         if books:
             feed[key(pr)] = books
-    json.dump({"generated_at": doc.get("generated_at"), "props": feed}, open(out, "w"), separators=(",", ":"))
-    print(f"feed: {len(feed)} props -> {out}")
+    v = verdicts()
+    json.dump({"generated_at": doc.get("generated_at"), "props": feed, **({"verdicts": v} if v else {})},
+              open(out, "w"), separators=(",", ":"))
+    print(f"feed: {len(feed)} props, {len(v['parlays']) if v else 0} graded parlays -> {out}")
 
 
 if __name__ == "__main__":
