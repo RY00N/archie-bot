@@ -444,9 +444,9 @@ def grade():
         live = [l for l in e["legs"] if l["result"] not in ("void", "push")]
         if any(l["result"] == "lost" for l in live):
             e["status"], e["pnl"] = "lost", -e["stake"]
-        elif len(live) < (1 if e.get("lock") else 2):
+        elif len(live) < (1 if e.get("lock") or len(e["legs"]) == 1 else 2):   # 1-leg picks of the day count like locks
             e["status"], e["pnl"] = "void", 0
-        elif e.get("lock"):
+        elif e.get("lock") or len(e["legs"]) == 1:
             e["status"], e["pnl"] = "won", round(e["stake"] * (e["payout_x"] - 1), 2)
         else:
             mult = (PP_PAYOUT.get(len(live), e["payout_x"]) if e["app"] == "PrizePicks"
