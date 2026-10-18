@@ -3,13 +3,55 @@
 
 Discord only shows a bot online while it holds a gateway connection, so this runs
 forever on the server. Standard library only (no pip). Needs DISCORD_BOT_TOKEN.
-It never reads or sends messages; posting is done by discord_post.py.
+It never reads chat messages; picks are posted by discord_post.py. It also answers the /pnl slash
+command (Ryan 2026-10-18): wins vs losses by player prop, from the project's graded feed.
 """
-import base64, json, os, random, socket, ssl, struct, sys, threading, time, urllib.request
+import base64, hashlib, json, os, random, socket, ssl, struct, sys, threading, time, urllib.request
 
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN") or sys.exit("DISCORD_BOT_TOKEN not set")
 STATUS = os.environ.get("BETTERBOT_STATUS", "for locks")
 UA = "BetterPicks (1.0)"
+API = "https://discord.com/api/v10"
+FEED_URL = "https://raw.githubusercontent.com/RY00N/archie-bot/claude/project-thread-8sdhk6/betterpicks/books_feed.json"
+VERSION = os.path.join(os.environ.get("BP_WORK", "/home/archie/bp"), "presence.version")
+
+
+def http(method, url, body=None, auth=True):
+    data = json.dumps(body).encode() if body is not None else None
+    req = urllib.request.Request(url, data=data, method=method, headers={
+        "User-Agent": UA, **({"Content-Type": "application/json"} if data else {}),
+        **({"Authorization": f"Bot {TOKEN}"} if auth else {})})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        raw = r.read()
+    return json.loads(raw) if raw else None
+
+
+STAT_WORDS = {"pitcher_ks": "strikeouts", "hrr": "hits + runs + RBIs", "rush_rec_yds": "rushing + receiving yards",
+              "rush_yds": "rushing yards", "rec_yds": "receiving yards", "pass_yds": "passing yards", "pitcher_outs": "outs",
+              "total_bases": "total bases", "hr": "home runs", "rbi": "RBIs", "pra": "points + rebounds + assists",
+              "threes": "3-pointers", "rush_att": "rushing attempts", "batter_ks": "strikeouts", "earned_runs": "earned runs"}
+
+
+def pnl_text():
+    """Practice record by player prop (each leg), graded from Kalshi's own settlement."""
+    req = urllib.request.Request(FEED_URL, headers={"User-Agent": UA, "Cache-Control": "no-cache"})
+    pr = (json.load(urllib.request.urlopen(req, timeout=15)).get("verdicts") or {}).get("props")
+    if not pr:
+        return "No graded props yet. (BetterPicks practice record)"
+    w, l = pr["won"], pr["lost"]
+    lines = [f"**BetterPicks prop record: {w}-{l}**" + (f" ({w / (w + l):.0%} hit rate)" if w + l else "")]
+    lines += [f"{lg}: {a}-{b}" for lg, (a, b) in sorted(pr.get("by_league", {}).items())]
+    lines.append(f"Parlay P&L: ${pr.get('parlay_pnl', 0):+.2f} practice")
+    rec = pr.get("recent") or []
+    if rec:
+        lines.append("Last props:")
+        for x in reversed(rec):
+            mark = "\u2705" if x["result"] == "won" else "\u274c"
+            side = "YES" if x["side"] == "over" else "NO"
+            got = f", finished {x['actual']:g}" if isinstance(x.get("actual"), (int, float)) else ""
+            lines.append(f"{mark} {side} {x['player']} {int(x['line'] + 0.5)}+ {STAT_WORDS.get(x['stat'], x['stat'].replace('_', ' '))} ({x['date'][5:]}){got}")
+    lines.append("Practice picks, not real bets.")
+    return "\n".join(lines)[:1990]
 
 
 def gateway_host():
@@ -115,6 +157,22 @@ def run_once():
                 seq[0] = m["s"]
             if m.get("t") == "READY":
                 print("online as", m["d"]["user"]["username"], flush=True)
+                try:   # register (or refresh) the /pnl slash command
+                    http("POST", f"{API}/applications/{m['d']['application']['id']}/commands",
+                         {"name": "pnl", "description": "BetterPicks wins vs losses by player prop (practice)", "type": 1})
+                except Exception as e:
+                    print("could not register /pnl:", e, flush=True)
+            if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "pnl":
+                d = m["d"]
+                try:
+                    text = pnl_text()
+                except Exception as e:
+                    text = "Couldn't load the record right now, try again in a minute."; print("/pnl failed:", e, flush=True)
+                try:
+                    http("POST", f"{API}/interactions/{d['id']}/{d['token']}/callback",
+                         {"type": 4, "data": {"content": text, "allowed_mentions": {"parse": []}}}, auth=False)
+                except Exception as e:
+                    print("/pnl reply failed:", e, flush=True)
             if m.get("op") in (7, 9):   # reconnect / invalid session
                 raise ConnectionError(f"gateway op {m['op']}")
             if m.get("op") == 1:
@@ -128,6 +186,11 @@ def run_once():
 
 
 if __name__ == "__main__":
+    try:   # lets discord_post.py notice when the repo has newer code and restart this service
+        os.makedirs(os.path.dirname(VERSION), exist_ok=True)
+        open(VERSION, "w").write(hashlib.sha1(open(os.path.abspath(__file__), "rb").read()).hexdigest())
+    except Exception as e:
+        print("could not write version:", e, flush=True)
     wait = 5
     while True:
         try:

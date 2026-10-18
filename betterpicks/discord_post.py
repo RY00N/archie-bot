@@ -212,6 +212,19 @@ def verdicts(dry=False):
     sent = set(load(SENT, []))
     todo = [v for v in sorted(doc.get("parlays", []), key=lambda v: v["date"])
             if v["key"] in sent and f"verdict:{v['key']}" not in sent]
+    for dl in doc.get("delays", []):   # Ryan 2026-10-18: say when a posted pick's game is delayed; the pick carries over
+        k = f"delay:{dl['key']}:{dl['game']}"
+        if dl["key"] not in sent or k in sent:
+            continue
+        picks = ", ".join(leg_label(l) for l in dl["legs"])
+        msg = (f"\u23f8\ufe0f **Game delayed: {dl['game']} ({dl['status']}).** The BetterPicks {dl['type']} ({picks}) still stands "
+               "for the makeup game, so keep it on your slip. Kalshi keeps the market open. (practice pick, not a real bet)")
+        if dry:
+            print(msg); continue
+        send(msg)
+        sent.add(k)
+        json.dump(sorted(sent), open(SENT, "w"), indent=1)
+        print("posted delay", k)
     for v in todo:
         head, emb = verdict_post(v, doc.get("record"))
         if dry:
@@ -222,10 +235,29 @@ def verdicts(dry=False):
         print("posted verdict", v["key"])
 
 
+def reload_presence():
+    """BetterBot's presence (and /pnl) runs straight from the repo checkout, which the scanner pulls hourly.
+    When the checkout holds newer code than the running copy, stop it; systemd starts it again on the new code."""
+    import hashlib, subprocess
+    src = os.path.join(os.environ.get("BP_REPO", "/home/archie/bp-repo"), "betterbot_presence.py")
+    ver = os.path.join(HERE, "presence.version")
+    if not os.path.exists(src):
+        return
+    want = hashlib.sha1(open(src, "rb").read()).hexdigest()
+    have = open(ver).read().strip() if os.path.exists(ver) else None
+    if want != have:
+        subprocess.run(["pkill", "-f", "betterbot_presence.py"], capture_output=True)
+        print("restarting BetterBot presence on new code")
+
+
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "today":
         today("--dry" in sys.argv)
         verdicts("--dry" in sys.argv)
+        try:
+            reload_presence()
+        except Exception as e:
+            print("presence reload failed:", e)
     elif len(sys.argv) > 1 and sys.argv[1] == "verdicts":
         verdicts("--dry" in sys.argv)
     elif len(sys.argv) > 2 and sys.argv[1] == "file":   # post a prepared message, e.g. discord_test.txt

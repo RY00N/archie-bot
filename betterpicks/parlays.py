@@ -378,12 +378,60 @@ def actual(leg):
     return "void" if datetime.now(PT).date() - d > timedelta(days=3) else None
 
 
+_kalshi_cache = {}
+
+
+def kalshi_market(ticker):
+    if ticker not in _kalshi_cache:
+        import urllib.request
+        req = urllib.request.Request(f"https://api.elections.kalshi.com/trade-api/v2/markets/{ticker}",
+                                     headers={"User-Agent": "BetterPicks (1.0)"})
+        _kalshi_cache[ticker] = json.load(urllib.request.urlopen(req, timeout=15))["market"]
+    return _kalshi_cache[ticker]
+
+
+def kalshi_value(leg):
+    """The final number Kalshi settled on ('Shohei Ohtani: 5 hits + runs + rbis' -> 5), if it gives one."""
+    import re
+    try:
+        m = re.search(r":\s*(\d+(?:\.\d+)?)", kalshi_market(leg["ticker"]).get("expiration_value") or "")
+    except Exception:
+        return None
+    return float(m.group(1)) if m else None
+
+
+def kalshi_result(leg):
+    """Kalshi's own settlement decides Kalshi legs: 'won'/'lost'/'void', 'wait' while the market is still open
+    (postponed games carry over), or None if Kalshi can't be reached (then the stats decide)."""
+    try:
+        m = kalshi_market(leg["ticker"])
+    except Exception:
+        return None
+    res = (m.get("result") or "").lower()
+    if res in ("yes", "no"):
+        return "won" if (res == "yes") == (leg["side"] == "over") else "lost"
+    if m.get("status") in ("finalized", "settled") and res in ("void", "all_no", "all_yes", ""):
+        return "void"
+    return "wait"
+
+
 def grade():
     book = load(BOOK, None)
     for e in book.get("parlays", []):
         if e["status"] != "open":
             continue
         for l in e["legs"]:
+            if l["result"] is None and l.get("ticker"):
+                k = kalshi_result(l)
+                if k == "wait":   # Ryan 2026-10-18: a delayed game isn't void; Kalshi keeps the market open for the makeup game
+                    continue
+                if k:
+                    v = kalshi_value(l)
+                    if v is None:
+                        v = actual(l)
+                    l["actual"] = v if isinstance(v, (int, float)) else None
+                    l["result"], l["graded_by"] = k, "kalshi"
+                    continue
             if l["result"] is None:
                 v = actual(l)
                 if v is not None:
