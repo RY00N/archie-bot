@@ -1159,7 +1159,7 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-18 02:00 PT",
+  "props_at": "2026-10-18 03:00 PT",
   "props_today": 2876,
   "kalshi_props_today": 560,
   "kalshi_priced_today": 105,
@@ -1175,7 +1175,7 @@
    "Hard Rock Bet": 334,
    "Parx": 430,
    "Pinnacle": 455,
-   "Sleeper": 517,
+   "Sleeper": 432,
    "Underdog": 560,
    "Unibet": 135,
    "bet365": 539
@@ -1186,6 +1186,6 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 28
+  "kalshi_legs_today": 27
  }
 }
