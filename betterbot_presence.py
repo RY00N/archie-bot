@@ -5,15 +5,25 @@ Discord only shows a bot online while it holds a gateway connection, so this run
 forever on the server. Standard library only (no pip). Needs DISCORD_BOT_TOKEN.
 It never reads chat messages; picks are posted by discord_post.py. It also answers the /pnl slash
 command (Ryan 2026-10-18): wins vs losses by player prop, from the project's graded feed.
+/bp <question> (Ryan 2026-10-18, picks channel only): files the question on the repo's betterpicks-ask
+branch for the project's BetterPicks thread and posts the thread's answers (betterpicks/bp_answers.json)
+back as replies.
 """
-import base64, hashlib, json, os, random, socket, ssl, struct, sys, threading, time, urllib.request
+import base64, hashlib, json, os, random, socket, ssl, struct, sys, threading, time, urllib.error, urllib.request
 
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN") or sys.exit("DISCORD_BOT_TOKEN not set")
 STATUS = os.environ.get("BETTERBOT_STATUS", "for locks")
 UA = "BetterPicks (1.0)"
 API = "https://discord.com/api/v10"
 FEED_URL = "https://raw.githubusercontent.com/RY00N/archie-bot/claude/project-thread-8sdhk6/betterpicks/books_feed.json"
-VERSION = os.path.join(os.environ.get("BP_WORK", "/home/archie/bp"), "presence.version")
+WORK = os.environ.get("BP_WORK", "/home/archie/bp")
+VERSION = os.path.join(WORK, "presence.version")
+CHANNEL = os.environ.get("DISCORD_CHANNEL_ID")
+GH_TOKEN = os.environ.get("GITHUB_TOKEN")
+GH = "https://api.github.com/repos/RY00N/archie-bot"
+ASK_BRANCH, CODE_BRANCH = "betterpicks-ask", "claude/project-thread-8sdhk6"
+ASKED, ANSWERED = os.path.join(WORK, "bp_asked.json"), os.path.join(WORK, "bp_answered.json")
+state_lock = threading.Lock()
 
 
 def http(method, url, body=None, auth=True):
@@ -30,6 +40,103 @@ STAT_WORDS = {"pitcher_ks": "strikeouts", "hrr": "hits + runs + RBIs", "rush_rec
               "rush_yds": "rushing yards", "rec_yds": "receiving yards", "pass_yds": "passing yards", "pitcher_outs": "outs",
               "total_bases": "total bases", "hr": "home runs", "rbi": "RBIs", "pra": "points + rebounds + assists",
               "threes": "3-pointers", "rush_att": "rushing attempts", "batter_ks": "strikeouts", "earned_runs": "earned runs"}
+
+
+def load(path, default):
+    try:
+        return json.load(open(path))
+    except Exception:
+        return default
+
+
+def save(path, data):
+    json.dump(data, open(path + ".tmp", "w"), indent=1)
+    os.replace(path + ".tmp", path)
+
+
+def gh(method, path, body=None):
+    data = json.dumps(body).encode() if body is not None else None
+    req = urllib.request.Request(GH + path, data=data, method=method, headers={
+        "User-Agent": UA, "Accept": "application/vnd.github+json", "Authorization": f"Bearer {GH_TOKEN}",
+        **({"Content-Type": "application/json"} if data else {})})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return json.loads(r.read() or b"null")
+
+
+def file_question(q):
+    """Append a /bp question to questions.json on the betterpicks-ask branch (the project thread reads it)."""
+    for _ in range(3):
+        try:
+            try:
+                gh("GET", f"/git/ref/heads/{ASK_BRANCH}")
+            except urllib.error.HTTPError:
+                sha = gh("GET", "/git/ref/heads/main")["object"]["sha"]
+                gh("POST", "/git/refs", {"ref": f"refs/heads/{ASK_BRANCH}", "sha": sha})
+            try:
+                cur = gh("GET", f"/contents/questions.json?ref={ASK_BRANCH}")
+                items, sha = json.loads(base64.b64decode(cur["content"])), cur["sha"]
+            except urllib.error.HTTPError as e:
+                if e.code != 404:
+                    raise
+                items, sha = [], None
+            items = (items + [{k: q[k] for k in ("id", "user", "text", "at")}])[-50:]
+            gh("PUT", "/contents/questions.json", {"message": "BetterPicks: /bp question", "branch": ASK_BRANCH,
+               "content": base64.b64encode(json.dumps(items, indent=1).encode()).decode(), **({"sha": sha} if sha else {})})
+            print("filed /bp question", q["id"], flush=True); return
+        except Exception as e:
+            print("file question failed:", e, flush=True); time.sleep(5)
+
+
+def on_bp(d):
+    cb = f"{API}/interactions/{d['id']}/{d['token']}/callback"
+    if d.get("channel_id") != CHANNEL:
+        http("POST", cb, {"type": 4, "data": {"content": "Use /bp in the picks channel.", "flags": 64}}, auth=False); return
+    text = str({o["name"]: o.get("value") for o in d["data"].get("options", [])}.get("question") or "").strip()[:1500]
+    who = d.get("member", {}).get("user") or d.get("user") or {}
+    q = {"id": d["id"], "user": who.get("global_name") or who.get("username") or "someone", "text": text,
+         "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+    http("POST", cb, {"type": 4, "data": {"content": f"**{q['user']} asked BetterPicks:** {text}\n"
+         "Got it, the answer will post here as a reply. (practice picks, not real bets)", "allowed_mentions": {"parse": []}}}, auth=False)
+    try:
+        q["message_id"] = http("GET", f"{API}/webhooks/{d['application_id']}/{d['token']}/messages/@original", auth=False)["id"]
+    except Exception:
+        pass
+    with state_lock:
+        save(ASKED, (load(ASKED, []) + [q])[-200:])
+    if GH_TOKEN:
+        threading.Thread(target=file_question, args=(q,), daemon=True).start()
+
+
+def answers_loop():
+    """Every minute, post new answers from the project thread as replies in the picks channel."""
+    while True:
+        try:
+            req = urllib.request.Request(f"{GH}/contents/betterpicks/bp_answers.json?ref={CODE_BRANCH}", headers={
+                "User-Agent": UA, "Accept": "application/vnd.github.raw+json",
+                **({"Authorization": f"Bearer {GH_TOKEN}"} if GH_TOKEN else {})})
+            items = json.load(urllib.request.urlopen(req, timeout=20))
+            with state_lock:
+                done, asked = set(load(ANSWERED, [])), {q["id"]: q for q in load(ASKED, [])}
+            for a in items:
+                if a["id"] in done or not CHANNEL:
+                    continue
+                q, text, first = asked.get(a["id"], {}), a["answer"].strip(), True
+                while text:
+                    part, text = text[:1900], text[1900:]
+                    body = {"content": part, "allowed_mentions": {"parse": []}}
+                    if first and q.get("message_id"):
+                        body["message_reference"] = {"message_id": q["message_id"], "fail_if_not_exists": False}
+                    http("POST", f"{API}/channels/{CHANNEL}/messages", body)
+                    first = False
+                with state_lock:
+                    save(ANSWERED, sorted(set(load(ANSWERED, [])) | {a["id"]}))
+                print("answered /bp", a["id"], flush=True)
+        except urllib.error.HTTPError as e:
+            if e.code != 404:
+                print("answers check failed:", e, flush=True)
+        except Exception as e:
+            print("answers check failed:", e, flush=True)
+        time.sleep(60)
 
 
 def pnl_text():
@@ -157,11 +264,18 @@ def run_once():
                 seq[0] = m["s"]
             if m.get("t") == "READY":
                 print("online as", m["d"]["user"]["username"], flush=True)
-                try:   # register (or refresh) the /pnl slash command
-                    http("POST", f"{API}/applications/{m['d']['application']['id']}/commands",
-                         {"name": "pnl", "description": "BetterPicks wins vs losses by player prop (practice)", "type": 1})
+                for cmd in ({"name": "pnl", "description": "BetterPicks wins vs losses by player prop (practice)", "type": 1},
+                            {"name": "bp", "description": "Ask BetterPicks a question", "type": 1, "options": [
+                                {"type": 3, "name": "question", "description": "What do you want to ask?", "required": True}]}):
+                    try:   # register (or refresh) the slash commands
+                        http("POST", f"{API}/applications/{m['d']['application']['id']}/commands", cmd)
+                    except Exception as e:
+                        print("could not register /" + cmd["name"], e, flush=True)
+            if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "bp":
+                try:
+                    on_bp(m["d"])
                 except Exception as e:
-                    print("could not register /pnl:", e, flush=True)
+                    print("/bp failed:", e, flush=True)
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "pnl":
                 d = m["d"]
                 try:
@@ -191,6 +305,7 @@ if __name__ == "__main__":
         open(VERSION, "w").write(hashlib.sha1(open(os.path.abspath(__file__), "rb").read()).hexdigest())
     except Exception as e:
         print("could not write version:", e, flush=True)
+    threading.Thread(target=answers_loop, daemon=True).start()
     wait = 5
     while True:
         try:
