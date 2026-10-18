@@ -1160,7 +1160,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-18 06:00 PT",
-  "props_today": 2612,
+  "props_today": 2613,
   "kalshi_props_today": 563,
   "kalshi_priced_today": 105,
   "books_on_kalshi_props": {
@@ -1186,6 +1186,6 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 34
+  "kalshi_legs_today": 33
  }
 }
