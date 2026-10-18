@@ -1161,24 +1161,24 @@
  "diag": {
   "props_at": "2026-10-18 02:00 PT",
   "props_today": 2779,
-  "kalshi_props_today": 559,
+  "kalshi_props_today": 560,
   "kalshi_priced_today": 105,
   "books_on_kalshi_props": {
-   "AN Consensus": 546,
-   "AN Open": 552,
-   "BetMGM": 420,
+   "AN Consensus": 547,
+   "AN Open": 553,
+   "BetMGM": 421,
    "BetRivers": 265,
    "Caesars": 491,
-   "DraftKings": 532,
-   "FanDuel": 505,
+   "DraftKings": 533,
+   "FanDuel": 506,
    "Fanatics": 399,
-   "Hard Rock Bet": 333,
+   "Hard Rock Bet": 334,
    "Parx": 430,
    "Pinnacle": 455,
-   "Sleeper": 516,
-   "Underdog": 559,
+   "Sleeper": 517,
+   "Underdog": 560,
    "Unibet": 135,
-   "bet365": 538
+   "bet365": 539
   },
   "data_files": [
    "mlb.sqlite",
@@ -1186,6 +1186,6 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 29
+  "kalshi_legs_today": 28
  }
 }
