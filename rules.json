@@ -231,6 +231,7 @@
   "max_trades": 1,
   "triggers": "f",
   "max_prev_range_pct": 1.82,
-  "max_opt_pct": 0.72
+  "max_opt_pct": 0.72,
+  "min_close_pos": 0.3
  }
 }

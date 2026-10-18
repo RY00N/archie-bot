@@ -83,8 +83,12 @@ def signal(bot, c, today, now_m):
     t = c["triggers"]
     if "f" in t and m1 == 574 and day[0][1] == 570:  # first 5 minutes' direction (10/17 tick backtest winner)
         pd = [b for b in prev if b[0] == prev[-1][0]] if prev else []
-        if pd and (max(b[4] for b in pd) - min(b[5] for b in pd)) / pd[-1][5] * 100 > c.get("max_prev_range_pct", 99):
+        if pd and (max(b[3] for b in pd) - min(b[4] for b in pd)) / pd[-1][5] * 100 > c.get("max_prev_range_pct", 99):  # high - low (10/18 fix: was low - close)
             return "skip", "yesterday's range too wide", c1, m1  # 10/17: wild prior days lost in 2024-25 and 2026
+        f5 = [b for b in day if b[1] < 575]; hi, lo = max(b[3] for b in f5), min(b[4] for b in f5)
+        pos = ((c1 - lo) if c1 > day[0][2] else (hi - c1)) / (hi - lo + 1e-9)
+        if pos < c.get("min_close_pos", 0):  # 10/18: a 9:34 close far from the move's extreme often reverses
+            return "skip", f"first 5 min closed weak ({pos:.2f})", c1, m1
         return (1 if c1 > day[0][2] else -1), "first-5-min direction 9:35", c1, m1
     if "v" in t and (c0 - w0) * (c1 - w1) < 0:
         return (1 if c1 > w1 else -1), f"VWAP cross {m1 // 60}:{m1 % 60:02d}", c1, m1
