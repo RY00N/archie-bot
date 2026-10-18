@@ -23,9 +23,14 @@ def verdicts():
         book = json.load(open(GRADED))
     except Exception:
         return None
+    try:   # verdicts the project already posted by hand (Ryan 2026-10-18 catch-up) are skipped on the droplet
+        done = set(json.load(open(os.path.join(os.path.dirname(GRADED), "discord_posted.json"))))
+    except Exception:
+        done = set()
     out = []
     for e in book.get("parlays", []):
-        if e["status"] in ("won", "lost", "void") and e["date"] >= "2026-10-12" and not e.get("test"):
+        if (e["status"] in ("won", "lost", "void") and e["date"] >= "2026-10-12" and not e.get("test")
+                and f"verdict:parlay:{e['date']}:{e['app']}:{e['type']}" not in done):
             out.append({"key": f"parlay:{e['date']}:{e['app']}:{e['type']}", "date": e["date"], "app": e["app"],
                         "type": e["type"], "lock": e.get("lock"), "status": e["status"], "pnl": e["pnl"],
                         "stake": e["stake"], "payout_x": e.get("payout_x"),
