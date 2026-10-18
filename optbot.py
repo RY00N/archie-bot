@@ -78,18 +78,21 @@ def signal(bot, c, today, now_m):
         pv += (h + l + cl) / 3 * v; vv += v; e = cl if e is None else e + k * (cl - e)
         I.append((m, cl, pv / vv if vv else cl, e, h, l))
     (m0, c0, w0, e0, _, _), (m1, c1, w1, e1, _, _) = I[-2], I[-1]
-    if m1 < c["first_min"] or m1 > c["last_min"]:
-        return None
     t = c["triggers"]
-    if "f" in t and m1 == 574 and day[0][1] == 570:  # first 5 minutes' direction (10/17 tick backtest winner)
+    f5 = [b for b in day if b[1] < 575]
+    if "f" in t and now_m in (575, 576) and f5 and day[0][1] == 570:  # first 5 minutes' direction (10/17 tick backtest winner)
+        # 10/18: read the 9:30-9:34 bars directly so a late 9:34 bar on IEX retries at 9:36 instead of missing the day
+        c5 = f5[-1][5]
         pd = [b for b in prev if b[0] == prev[-1][0]] if prev else []
         if pd and (max(b[3] for b in pd) - min(b[4] for b in pd)) / pd[-1][5] * 100 > c.get("max_prev_range_pct", 99):  # high - low (10/18 fix: was low - close)
-            return "skip", "yesterday's range too wide", c1, m1  # 10/17: wild prior days lost in 2024-25 and 2026
-        f5 = [b for b in day if b[1] < 575]; hi, lo = max(b[3] for b in f5), min(b[4] for b in f5)
-        pos = ((c1 - lo) if c1 > day[0][2] else (hi - c1)) / (hi - lo + 1e-9)
+            return "skip", "yesterday's range too wide", c5, 574  # 10/17: wild prior days lost in 2024-25 and 2026
+        hi, lo = max(b[3] for b in f5), min(b[4] for b in f5)
+        pos = ((c5 - lo) if c5 > day[0][2] else (hi - c5)) / (hi - lo + 1e-9)
         if pos < c.get("min_close_pos", 0):  # 10/18: a 9:34 close far from the move's extreme often reverses
-            return "skip", f"first 5 min closed weak ({pos:.2f})", c1, m1
-        return (1 if c1 > day[0][2] else -1), "first-5-min direction 9:35", c1, m1
+            return "skip", f"first 5 min closed weak ({pos:.2f})", c5, 574
+        return (1 if c5 > day[0][2] else -1), "first-5-min direction 9:35", c5, 574
+    if m1 < c["first_min"] or m1 > c["last_min"]:
+        return None
     if "v" in t and (c0 - w0) * (c1 - w1) < 0:
         return (1 if c1 > w1 else -1), f"VWAP cross {m1 // 60}:{m1 % 60:02d}", c1, m1
     if "e" in t and (c0 - e0) * (c1 - e1) < 0:

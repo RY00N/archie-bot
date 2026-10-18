@@ -107,3 +107,4 @@ Moves to an Interactive Brokers paper account once Ryan opens one.
 - 2026-10-17 (Ryan OK via card): optbot's always-on thread also runs intel.py (from the "Archie's Slave" helper thread) at 6:00/8:00/8:35/9:05/9:20/9:33 ET: futures, mega-cap pre-market, calendar, earnings, headlines -> feeds/qqq-intel.json. Info only; not a trade filter until history shows it predicts the 9:30-9:34 direction or the f-trade P&L.
 - 2026-10-18: skip the day if 9:34 closes in the weak 30% of the first-5 range (min_close_pos 0.3); fixed prior-day range to use high-low like the backtest.
 - 2026-10-18: retuned skips with the weak-close skip in place: prior-day range >1.65% (was 1.82), option >0.65% of QQQ (was 0.72). Whole 1.6-1.65 x 0.62-0.68 area beats old settings in 2024-25, 2026 and last 10 weeks.
+- 2026-10-18: optbot reads the 9:30-9:34 bars directly and may retry at 9:36 (last_min 575) if the 9:34 IEX bar arrives late; before, a late bar meant the day was silently missed.
