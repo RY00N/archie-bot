@@ -1162,11 +1162,11 @@
   "props_at": "2026-10-18 16:00 PT",
   "props_today": 223,
   "kalshi_props_today": 47,
-  "kalshi_priced_today": 10,
+  "kalshi_priced_today": 11,
   "books_on_kalshi_props": {
-   "AN Consensus": 46,
+   "AN Consensus": 47,
    "AN Open": 47,
-   "BetMGM": 34,
+   "BetMGM": 35,
    "BetRivers": 21,
    "Caesars": 43,
    "DraftKings": 47,
@@ -1186,6 +1186,6 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 1
  }
 }
