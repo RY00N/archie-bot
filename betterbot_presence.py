@@ -108,7 +108,7 @@ def on_bp(d):
 
 
 def answers_loop():
-    """Every minute, post new answers from the project thread as replies in the picks channel."""
+    """Every 15 seconds, post new answers from the project thread as replies in the picks channel."""
     while True:
         try:
             req = urllib.request.Request(f"{GH}/contents/betterpicks/bp_answers.json?ref={CODE_BRANCH}", headers={
@@ -136,7 +136,7 @@ def answers_loop():
                 print("answers check failed:", e, flush=True)
         except Exception as e:
             print("answers check failed:", e, flush=True)
-        time.sleep(60)
+        time.sleep(15)
 
 
 def pnl_text():
