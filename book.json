@@ -1123,6 +1123,38 @@
     }
    ],
    "daily": true
+  },
+  {
+   "date": "2026-10-17",
+   "app": "Kalshi",
+   "type": "1-leg lock: Tyler Allgeier under 2.5 receptions",
+   "stake": 5.0,
+   "payout_x": 1.96,
+   "win_p": 0.627,
+   "ev_pct": 22.9,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Tyler Allgeier",
+     "team": "ARI",
+     "stat": "receptions",
+     "side": "under",
+     "line": 2.5,
+     "price": 0.51,
+     "ticker": "KXNFLREC-26OCT18ARILAR-ARITALLGEIER22-3",
+     "game": "ARI @ LAR",
+     "start": "2026-10-18T20:05:00Z",
+     "p": 0.627,
+     "edge": 0.1,
+     "news": "News: Jeremiyah Love\u2019s injury proves how underrated Cardinals' Tyler Allgeier signing was - Raising Zona",
+     "why": "Tyler Allgeier under 2.5 receptions: 5 books price it 56%; hit 8% of last 12 (avg 1.6). Fair 63%.",
+     "case": "Last 5 games: 2, 2, 4, 2, 2 (4 of 5 under 2.5).",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
