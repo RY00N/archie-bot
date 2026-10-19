@@ -1160,11 +1160,11 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-19 00:00 PT",
-  "props_today": 351,
+  "props_today": 373,
   "kalshi_props_today": 67,
   "kalshi_priced_today": 8,
   "books_on_kalshi_props": {
-   "AN Consensus": 57,
+   "AN Consensus": 56,
    "AN Open": 57,
    "BetMGM": 27,
    "BetRivers": 20,
@@ -1198,9 +1198,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.488,
+   "p": 0.49,
    "price": 0.4,
-   "edge": 0.071,
+   "edge": 0.073,
    "news": "SF's S Marques Sigle is out, an easier matchup.",
    "result": null
   },
@@ -1213,9 +1213,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.579,
+   "p": 0.578,
    "price": 0.48,
-   "edge": 0.082,
+   "edge": 0.081,
    "news": "WSH's DE Charles Omenihu is out, an easier matchup.",
    "result": null
   },
