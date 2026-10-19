@@ -239,6 +239,7 @@ def build():
     min_win, mode = r.get("parlay_min_win_p", 0.65), r.get("parlay_mode", "whole")
     ok = (lambda c: math.prod(l["p"] for l in c) >= min_win) if mode == "whole" else (lambda c: min(l["p"] for l in c) >= min_win)
     # still-open picks from earlier days count too: a postponed game's pick carries over, never re-posted (Ryan 2026-10-19)
+    shadow(book, legs, now_pt)
     used = {(l["player"], l["stat"]) for e in book["parlays"]
             if e["date"] >= now_pt.date().isoformat() or e.get("status") == "open" for l in e["legs"]}
     entries = []
@@ -356,6 +357,24 @@ def kalshi_combo_mult(prices):
     combo price = product of leg prices x markup (rules.json kalshi_combo_markup, ~1.079)."""
     markup = load(os.path.join(HERE, "rules.json"), {}).get("kalshi_combo_markup", 1.079)
     return round(1 / (math.prod(prices) * markup), 2)
+
+
+def shadow(book, legs, now_pt, keep_days=14):
+    """Log every Kalshi leg that cleared pricing + the injury/matchup check, posted or not, so review.py can grade
+    the leg bar on far more legs than we post (idea borrowed from the open-source trader Ryan OK'd 2026-10-19).
+    Latest pre-game snapshot per ticker/side wins. Paper only."""
+    sh = {(x["ticker"], x["side"]): x for x in book.get("shadow", [])}
+    for l in legs:
+        if l["app"] != "Kalshi" or not l.get("ticker"):
+            continue
+        old = sh.get((l["ticker"], l["side"]), {})
+        sh[(l["ticker"], l["side"])] = {
+            "date": datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat(),
+            "ticker": l["ticker"], "league": l["prop"]["league"], "player": l["prop"]["player"], "stat": l["prop"]["stat"],
+            "side": l["side"], "line": l["line"], "start": l["prop"]["start"], "p": round(l["p"], 3), "price": l["price"],
+            "edge": l.get("edge"), "news": l.get("news"), "result": old.get("result")}
+    cut = (now_pt.date() - timedelta(days=keep_days)).isoformat()
+    book["shadow"] = sorted((x for x in sh.values() if x["date"] >= cut), key=lambda x: (x["date"], x["ticker"]))
 
 
 def make_entry(today, app, kind, combo, mult, ev):
