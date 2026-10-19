@@ -1191,7 +1191,7 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-19 14:00 PT",
+  "props_at": "2026-10-19 15:00 PT",
   "props_today": 360,
   "kalshi_props_today": 138,
   "kalshi_priced_today": 29,
@@ -1207,7 +1207,7 @@
    "Hard Rock Bet": 26,
    "Parx": 67,
    "Pinnacle": 68,
-   "Sleeper": 109,
+   "Sleeper": 4,
    "Underdog": 138,
    "Unibet": 28,
    "bet365": 124
@@ -1380,9 +1380,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.589,
+   "p": 0.59,
    "price": 0.53,
-   "edge": 0.042,
+   "edge": 0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
