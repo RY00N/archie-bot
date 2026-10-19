@@ -1265,6 +1265,21 @@
   },
   {
    "date": "2026-10-20",
+   "ticker": "KXNBAPTS-26OCT20BOSDET-DETATHOMPSON9-10",
+   "league": "nba",
+   "player": "Ausar Thompson",
+   "stat": "points",
+   "side": "under",
+   "line": 9.5,
+   "start": "2026-10-20T19:00:00Z",
+   "p": 0.502,
+   "price": 0.45,
+   "edge": 0.035,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-20",
    "ticker": "KXNBAREB-26OCT20BOSDET-DETJDUREN0-10",
    "league": "nba",
    "player": "Jalen Duren",
