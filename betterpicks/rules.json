@@ -14,7 +14,7 @@
  "max_fav_odds": -300,
  "hours_ahead": 36,
  "skip_preseason": true,
- "parlay_min_win_p": 0.6,
+ "parlay_min_win_p": 0.57,
  "parlay_mode": "leg",
  "parlay_rule_note": "Ryan 2026-10-13 20:10Z: every leg (player prop) must be 55%+ on its own (mode 'leg'), each leg still +EV vs Kalshi's price. Was whole-parlay >= 55% (2026-10-12).",
  "kalshi_combo_markup": 1.079,
@@ -49,5 +49,5 @@
  "news_note": "Ryan 2026-10-13 20:00Z: every leg is checked against ESPN injury reports and the last 3 days of news (news.py): Out/IL/suspended = dropped; questionable or bad news (illness, personal/family matter, divorce, slump) = overs lose 5-8 win-chance points. Note shows in Discord.",
  "post_window_note": "Ryan 2026-10-14 01:08Z: no posting cutoff, picks post whenever found (any hour). post_window_pt now only sets the 8am/10am 'nothing yet' notes and when the bad-day note may go (after noon, only if no Kalshi games left today).",
  "daily_pick_after_pt": 12,
- "parlay_min_win_p_note": "Ryan 2026-10-19 01:30Z (decision card): raised each-leg bar from 55% to 60% after the record dipped to 4-6, -$1.50."
+ "parlay_min_win_p_note": "Ryan 2026-10-19 02:46Z: each leg 57%+ (after injury/matchup check). Was 55% (Oct 13), 60% (Oct 19 01:30Z)."
 }
