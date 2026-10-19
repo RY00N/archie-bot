@@ -1185,7 +1185,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 1
+  "kalshi_legs_today": 2
  },
  "shadow": [
   {
@@ -1212,9 +1212,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.578,
+   "p": 0.577,
    "price": 0.48,
-   "edge": 0.081,
+   "edge": 0.08,
    "news": "WSH's DE Charles Omenihu is out, an easier matchup.",
    "result": null
   },
@@ -1257,9 +1257,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.514,
-   "price": 0.45,
-   "edge": 0.047,
+   "p": 0.51,
+   "price": 0.46,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
