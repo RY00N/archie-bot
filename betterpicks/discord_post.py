@@ -197,7 +197,7 @@ def verdict_post(v, rec):
         got = f"finished with {l['actual']:g}" if isinstance(l.get("actual"), (int, float)) else (
             "no result (voided)" if l.get("result") == "void" else "")
         fields.append({"name": f"{MARK.get(l.get('result'), '')} {leg_label(l)}"[:256], "value": f"{l['game']}" + (f", {got}" if got else "")})
-    foot = (f"55% rule record: {rec['won']}-{rec['lost']}, ${rec['pnl']:+.2f} practice. " if rec else "") + "Practice picks, not real bets."
+    foot = (f"Leg rule record: {rec['won']}-{rec['lost']}, ${rec['pnl']:+.2f} practice. " if rec else "") + "Practice picks, not real bets."
     color = {"won": 0x00B37E, "lost": 0xE5484D, "void": 0x8B8D98}[v["status"]]
     return head, {"title": f"Verdict: {word}", "color": color, "fields": fields[:25], "footer": {"text": foot}}
 
