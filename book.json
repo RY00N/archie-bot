@@ -1196,7 +1196,7 @@
   "kalshi_props_today": 138,
   "kalshi_priced_today": 29,
   "books_on_kalshi_props": {
-   "AN Consensus": 127,
+   "AN Consensus": 126,
    "AN Open": 127,
    "BetMGM": 105,
    "BetRivers": 24,
@@ -1380,9 +1380,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.59,
+   "p": 0.589,
    "price": 0.53,
-   "edge": 0.043,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
