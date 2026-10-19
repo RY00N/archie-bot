@@ -1186,7 +1186,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -1274,8 +1274,8 @@
    "line": 49.5,
    "start": "2026-10-20T00:15:00Z",
    "p": 0.547,
-   "price": 0.49,
-   "edge": 0.04,
+   "price": 0.5,
+   "edge": 0.03,
    "news": "News: Terry McLaurin (hamstring/rest) takes day off - NBC Sports SF's S Marques Sigle is out, an easier matchup.",
    "result": null
   },
