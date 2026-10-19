@@ -1210,7 +1210,7 @@
    "Sleeper": 109,
    "Underdog": 138,
    "Unibet": 28,
-   "bet365": 124
+   "bet365": 127
   },
   "data_files": [
    "mlb.sqlite",
@@ -1305,9 +1305,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.582,
+   "p": 0.58,
    "price": 0.42,
-   "edge": 0.145,
+   "edge": 0.143,
    "news": "Jacory Croskey-Merritt (RB) is out, so Austin Ekeler's role likely grows; SF's LB Dre Greenlaw is out, an easier matchup; SF's LB Garret Wallow is out, an easier matchup.",
    "result": null
   },
@@ -1335,9 +1335,9 @@
    "side": "over",
    "line": 49.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.599,
+   "p": 0.6,
    "price": 0.51,
-   "edge": 0.072,
+   "edge": 0.073,
    "news": "SF's S Marques Sigle is out, an easier matchup.",
    "result": null
   },
