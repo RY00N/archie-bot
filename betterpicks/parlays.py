@@ -238,7 +238,9 @@ def build():
     legs = collect_legs(props, now, apps=apps)
     min_win, mode = r.get("parlay_min_win_p", 0.65), r.get("parlay_mode", "whole")
     ok = (lambda c: math.prod(l["p"] for l in c) >= min_win) if mode == "whole" else (lambda c: min(l["p"] for l in c) >= min_win)
-    used = {(l["player"], l["stat"]) for e in book["parlays"] if e["date"] >= now_pt.date().isoformat() for l in e["legs"]}
+    # still-open picks from earlier days count too: a postponed game's pick carries over, never re-posted (Ryan 2026-10-19)
+    used = {(l["player"], l["stat"]) for e in book["parlays"]
+            if e["date"] >= now_pt.date().isoformat() or e.get("status") == "open" for l in e["legs"]}
     entries = []
     # 1) locks: any time, single leg, big Kalshi edge
     today = now_pt.date().isoformat()
