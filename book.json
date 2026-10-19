@@ -1200,10 +1200,10 @@
    "AN Open": 127,
    "BetMGM": 105,
    "BetRivers": 24,
-   "Caesars": 94,
+   "Caesars": 93,
    "DraftKings": 75,
    "FanDuel": 67,
-   "Fanatics": 85,
+   "Fanatics": 84,
    "Hard Rock Bet": 26,
    "Parx": 67,
    "Pinnacle": 68,
@@ -1218,7 +1218,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -1335,10 +1335,10 @@
    "side": "over",
    "line": 49.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.547,
-   "price": 0.5,
-   "edge": 0.03,
-   "news": "News: Terry McLaurin (hamstring/rest) takes day off - NBC Sports SF's S Marques Sigle is out, an easier matchup.",
+   "p": 0.599,
+   "price": 0.51,
+   "edge": 0.072,
+   "news": "SF's S Marques Sigle is out, an easier matchup.",
    "result": null
   },
   {
@@ -1395,9 +1395,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.587,
+   "p": 0.586,
    "price": 0.53,
-   "edge": 0.04,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
