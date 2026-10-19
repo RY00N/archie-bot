@@ -1194,15 +1194,15 @@
   "props_at": "2026-10-19 14:00 PT",
   "props_today": 360,
   "kalshi_props_today": 138,
-  "kalshi_priced_today": 30,
+  "kalshi_priced_today": 29,
   "books_on_kalshi_props": {
    "AN Consensus": 127,
    "AN Open": 127,
-   "BetMGM": 102,
+   "BetMGM": 105,
    "BetRivers": 24,
    "Caesars": 92,
    "DraftKings": 75,
-   "FanDuel": 67,
+   "FanDuel": 66,
    "Fanatics": 85,
    "Hard Rock Bet": 26,
    "Parx": 67,
@@ -1218,7 +1218,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 2
  },
  "shadow": [
   {
@@ -1245,9 +1245,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-20T00:08:00Z",
-   "p": 0.508,
+   "p": 0.506,
    "price": 0.45,
-   "edge": 0.041,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1290,9 +1290,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.531,
+   "p": 0.532,
    "price": 0.42,
-   "edge": 0.094,
+   "edge": 0.095,
    "news": "News: Austin Ekeler Remains limited Friday - Fantasy Footballers Podcast Jacory Croskey-Merritt (RB) is out, so Austin Ekeler's role likely grows; SF's LB Dre Greenlaw is out, an easier matchup; SF's LB Garret Wallow is out, an easier matchup.",
    "result": null
   },
