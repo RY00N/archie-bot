@@ -5,8 +5,8 @@ No broker yet (Ryan 2026-10-08: "paper trading for now"), so fills are simulated
 each new bar's high/low, $1.50 round-trip fees per contract. Runs on the server from daytrader.tick.
 
 Setup v2 (2026-10-08, Ryan: only trade when it's volatile enough to hit the target soon, never force it):
-opening range breakout on a 5-min close (MES: 9:30-9:35 range; MNQ: 9:30-9:45, added 10/08 night), long or short, fixed point stop (MES 12, MNQ 80 since v2.2 10/12),
-target 2x risk (MNQ 3x since v2.2), out after 90 min if neither is hit, entries to 11:30 ET, flat by 15:55 ET. Only on "active" days:
+opening range breakout on a 5-min close (MES: 9:30-9:35 range; MNQ: 9:30-9:45, added 10/08 night), long or short, fixed point stop (MES 12, MNQ 60),
+target 2x risk, out after 90 min if neither is hit, entries to 11:30 ET, flat by 15:55 ET. Only on "active" days:
 yesterday's regular-session range must be at least MES 50 / MNQ 400 pts, otherwise skip the day.
 Settings live in rules.json "futures".
 """
@@ -24,18 +24,6 @@ DEFAULTS = {"enabled": True, "budget_start": 10000, "contracts": 1, "or_minutes"
             "stop_pts": {"MNQ": 60, "MES": 12}, "min_prev_range": {"MNQ": 400, "MES": 50}, "time_stop_min": 90,
             "last_entry_min": 690, "flatten_min": 955, "fees": 1.5}
 _last = 0
-
-
-def tr_r(c, sym):
-    """target_r is one number for both contracts or a per-symbol dict (v2.2: MNQ 3R, MES 2R)."""
-    t = c["target_r"]
-    return float(t.get(sym, 2.0)) if isinstance(t, dict) else float(t)
-
-
-def ts_min(c, sym):
-    """time_stop_min is one number or a per-symbol dict (10/16: MNQ 80, MES 90)."""
-    t = c.get("time_stop_min")
-    return t.get(sym, 90) if isinstance(t, dict) else t
 
 
 def cfg():
@@ -80,36 +68,6 @@ def prev_range(sym, today):
     return round(max(h for h, l in days[last]) - min(l for h, l in days[last]), 2)
 
 
-def drop_check(sym, today):
-    """(gap %, prior day %): today's first RTH open vs the last RTH close, and that close vs the one before."""
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{SPEC[sym]['y']}?interval=5m&range=5d"
-    d = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read())
-    r = d["chart"]["result"][0]; q = r["indicators"]["quote"][0]; days = {}
-    for i, t in enumerate(r["timestamp"]):
-        e = datetime.fromtimestamp(t, ET)
-        if q["close"][i] is None or not 570 <= e.hour * 60 + e.minute < 960:
-            continue
-        days.setdefault(e.date().isoformat(), []).append((q["open"][i], q["close"][i]))
-    past = sorted(k for k in days if k < today)
-    c1, c2 = days[past[-1]][-1][1], days[past[-2]][-1][1]
-    o = days[today][0][0]
-    return round((o / c1 - 1) * 100, 2), round((c1 / c2 - 1) * 100, 2)
-
-
-def nr7_check(sym, today):
-    """True when yesterday's regular-session range (as % of its open) was the narrowest of the last 7 sessions."""
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{SPEC[sym]['y']}?interval=5m&range=1mo"
-    d = json.loads(urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read())
-    r = d["chart"]["result"][0]; q = r["indicators"]["quote"][0]; days = {}
-    for i, t in enumerate(r["timestamp"]):
-        e = datetime.fromtimestamp(t, ET)
-        if q["high"][i] is None or not 570 <= e.hour * 60 + e.minute < 960 or e.date().isoformat() >= today:
-            continue
-        days.setdefault(e.date().isoformat(), []).append((q["open"][i], q["high"][i], q["low"][i]))
-    rng = [(max(h for o, h, l in b) - min(l for o, h, l in b)) / b[0][0] for k, b in sorted(days.items()) if len(b) > 60][-7:]
-    return len(rng) == 7 and rng[-1] <= min(rng[:-1])
-
-
 def _minus5(t):
     return (datetime.fromisoformat(t[:-1]) - timedelta(minutes=5)).isoformat()[:16] + "Z"
 
@@ -124,16 +82,11 @@ def tick(log):
     if time.time() - _last < 60:
         return
     _last = time.time()
-    try:  # News watcher (Ryan 10/16): headlines every minute, alert only
-        import importlib, newswatch
-        importlib.reload(newswatch).check(log)
-    except Exception as e:
-        log(f"NEWS watch error: {e}")
     c = cfg()
     st = load_state()
     now = datetime.now(ET); today, m = now.date().isoformat(), now.hour * 60 + now.minute
     if st["date"] != today:
-        st.update({"date": today, "done": [], "realized_today": 0.0, "or": {}, "prev_range": {}, "nr7": {}})
+        st.update({"date": today, "done": [], "realized_today": 0.0, "or": {}, "prev_range": {}})
     st.setdefault("prev_range", {})
     try:
         news = json.load(open(NEWS))
@@ -148,7 +101,6 @@ def tick(log):
             st["last_error"] = f"{datetime.now(timezone.utc).isoformat()[:16]} {sym}: {e}"[:200]
             continue
         st["last_data"] = datetime.now(timezone.utc).isoformat()[:16] + "Z"
-        st.setdefault("last_px", {})[sym] = round(b[-1][5], 2)
         rth = [x for x in b if 570 <= x[1] < 960 and datetime.fromisoformat(x[0][:-1]).replace(tzinfo=timezone.utc).astimezone(ET).date().isoformat() == today]
         if not rth:
             continue
@@ -168,7 +120,7 @@ def tick(log):
                     out, how = tr["target"], "target"
                 elif mm >= c["flatten_min"]:
                     out, how = cl, "end of day"
-                elif ts_min(c, sym) and mm - tr.get("entry_min", mm) >= ts_min(c, sym):
+                elif c.get("time_stop_min") and mm - tr.get("entry_min", mm) >= c["time_stop_min"]:
                     out, how = cl, "time stop"  # target not reached soon enough: not worth holding
                 if out is not None:
                     pnl = round(tr["side"] * (out - tr["entry"]) * sp["pt"] * tr["qty"] - c["fees"] * tr["qty"], 2)
@@ -191,28 +143,6 @@ def tick(log):
             st["done"].append(sym)
             log(f"FUT {sym} skip today: news ({news['skip'][sym]})")
             continue
-        sad = c.get("skip_after_drop", {}).get(sym)
-        if sad and rth:  # MNQ: sit out a gap-down open or the day after a big drop (approved 10/15)
-            try:
-                gap, prev = drop_check(sym, today)
-            except Exception as e:
-                gap = prev = None
-                log(f"FUT {sym} drop check error: {e}")
-            if gap is not None and (gap <= sad["gap"] or prev <= sad["prev"]):
-                st["done"].append(sym)
-                log(f"FUT {sym} skip today: after a drop (gap {gap:+.2f}%, prior day {prev:+.2f}%)")
-                continue
-        if c.get("skip_after_nr7") and rth:  # 10/17 (Ryan: "add and remove everything until you're profitable"): sit out after an NR7 day
-            if sym not in st.setdefault("nr7", {}):
-                try:
-                    st["nr7"][sym] = nr7_check(sym, today)
-                except Exception as e:
-                    st["nr7"][sym] = False
-                    log(f"FUT {sym} NR7 check error: {e}")
-            if st["nr7"][sym]:
-                st["done"].append(sym)
-                log(f"FUT {sym} skip today: yesterday was the quietest of the last 7 days (NR7)")
-                continue
         orm = c["or_minutes"][sym] if isinstance(c["or_minutes"], dict) else c["or_minutes"]  # MNQ waits 15 min, MES 5
         orb = [x for x in rth if x[1] < 570 + orm]
         if len(orb) < orm * 0.6 or m < 570 + orm:
@@ -231,27 +161,13 @@ def tick(log):
                 st["done"].append(sym)
                 log(f"FUT {sym} skip today: quiet market (yesterday's range {st['prev_range'][sym]} < {need} pts)")
                 continue
-        eb = c.get("entry_bar_min", 5)  # 1 = enter on any 1-minute close (Ryan 10/16: "Start using 1m charts"), 5 = 5-min closes
-        for t, mm, o, h, l, cl in [x for x in rth if x[1] >= 570 + orm and (x[1] + 1) % eb == 0]:
+        for t, mm, o, h, l, cl in [x for x in rth if x[1] >= 570 + orm and (x[1] + 1) % 5 == 0]:  # 5-min closes
             if mm > c["last_entry_min"]:
                 st["done"].append(sym)
                 break
             side = 1 if cl > hi else -1 if cl < lo else 0
             if not side:
                 continue
-            tf = c.get("tema_filter", {}).get(sym)
-            if tf:  # 10/17 (auto, no-asking rule): TEMA slope over the 2 bars before the break must point the break's way
-                k = 2 / (tf["n"] + 1); e1 = e2 = e3 = None; TT = []
-                for x in rth:
-                    if (x[1] + 1) % 5 or x[1] > mm:
-                        continue
-                    if e1 is None:
-                        e1 = e2 = e3 = x[5]
-                    e1 += k * (x[5] - e1); e2 += k * (e1 - e2); e3 += k * (e2 - e3); TT.append(3 * e1 - 3 * e2 + e3)
-                q = len(TT) - 2
-                if q - tf["lag"] < 0 or (TT[q] - TT[q - tf["lag"]]) * side <= 0:
-                    log(f"FUT {sym} break at {mm} skipped: TEMA{tf['n']} slope against it")
-                    continue
             blk = [w for w in news.get("blocks", []) if w[0] <= mm <= w[1]]
             if blk:  # scheduled release right now: no entry on this bar (next 5-min close can still qualify)
                 log(f"FUT {sym} break at {mm} skipped: news window ({blk[0][2] if len(blk[0]) > 2 else ''})")
@@ -263,7 +179,7 @@ def tick(log):
             pts = c.get("stop_pts", {}).get(sym)
             stop = e - side * pts if pts else (lo if side == 1 else hi); r = abs(e - stop)
             st["open"][sym] = {"side": side, "qty": c["contracts"], "entry": round(e, 2), "stop": stop, "stop0": stop,
-                               "target": round(e + side * tr_r(c, sym) * r, 2), "entry_time": t, "entry_min": mm,
+                               "target": round(e + side * c["target_r"] * r, 2), "entry_time": t, "entry_min": mm,
                                "seen": t, "price": cl}
             log(f"FUT ENTRY {'long' if side == 1 else 'short'} {c['contracts']} {sym} @ {e} stop {stop} target {st['open'][sym]['target']}")
             break
@@ -342,37 +258,6 @@ def desk(c, st):
         d["news"] = ("CLEAR", (f"Next release window {hhmm(nxt[0][0])} ({nxt[0][2] if len(nxt[0]) > 2 else ''})." if nxt else news.get("notes", "No big release in the trade window."))[:140])
     else:
         d["news"] = ("CLEAR" if not trading_day else "PENDING", "Watching headlines hourly." if not trading_day else "Morning news check not in yet.")
-    try:  # live headline watcher overrides with an alert, else says when it last looked
-        import newswatch
-        alert, checked = newswatch.active_alert()
-    except Exception:
-        alert, checked = None, None
-    if alert:
-        d["news"] = ("ALERT", f"{alert['why']}: {alert['headline']}"[:140])
-    elif checked and d["news"][0] == "CLEAR" and trading_day:
-        d["news"] = ("CLEAR", f"Headlines checked {checked[11:16]}Z, nothing big. " + d["news"][1])[:140]
-    # Spotter (Ryan 10/16): calls out a setup as price nears or pokes through the opening range
-    eb = c.get("entry_bar_min", 5); near = {"MES": 3, "MNQ": 25}; px = st.get("last_px", {}) if live else {}; calls = []
-    for s in syms:
-        if s in opn or s in done or s not in orng or s not in px or not session or m > c["last_entry_min"]:
-            continue
-        hi, lo, p = orng[s][0], orng[s][1], px[s]
-        if p > hi:
-            calls.append(f"{s} {p} is above the range high {hi}: LONG if a {eb}-min bar closes above it")
-        elif p < lo:
-            calls.append(f"{s} {p} is below the range low {lo}: SHORT if a {eb}-min bar closes below it")
-        elif hi - p <= near.get(s, 0):
-            calls.append(f"{s} {hi - p:.2f} pts under the range high {hi}: long setup forming")
-        elif p - lo <= near.get(s, 0):
-            calls.append(f"{s} {p - lo:.2f} pts over the range low {lo}: short setup forming")
-    if calls:
-        d["spotter"] = ("CALLING", "; ".join(calls)[:140])
-    elif opn:
-        d["spotter"] = ("IN TRADE", "Setup taken, watching the trade.")
-    elif session and orng and m <= c["last_entry_min"] and any(s not in done for s in syms):
-        d["spotter"] = ("WATCHING", "; ".join(f"{s} {px[s]} in range {orng[s][1]}-{orng[s][0]}" for s in syms if s in px and s in orng and s not in done)[:140] or "Watching the range.")
-    else:
-        d["spotter"] = ("OFF", "No setups to watch right now.")
     # Sentiment: Liquid weekend/overnight mood (info only, not a trade gate)
     try:
         se = json.load(open(SENT)); d["sentiment"] = (se.get("status", "MIXED"), se.get("say", "")[:140])
@@ -396,8 +281,7 @@ def desk(c, st):
     elif hist and all(s in done for s in syms):
         d["risk"] = ("DONE", f"Done for today: {sum(t['pnl'] for t in hist):+.2f}.")
     else:
-        tgt = " / ".join("%s %gR" % (x, tr_r(c, x)) for x in SPEC)
-        d["risk"] = ("OK", f"{c['contracts']} contract, bracket stop + target ({tgt}), {'/'.join(f'{k} {v}' for k, v in c['time_stop_min'].items()) if isinstance(c.get('time_stop_min'), dict) else c.get('time_stop_min', 90)}-min limit, flat by 3:55.")
+        d["risk"] = ("OK", f"{c['contracts']} contract, bracket stop + {c['target_r']:g}R target, {c.get('time_stop_min', 90)}-min limit, flat by 3:55.")
     # Decision: BUY / SELL / WAIT / SKIP
     if opn:
         s, t = next(iter(opn.items()))
@@ -411,5 +295,5 @@ def desk(c, st):
     elif cur:
         d["decision"] = ("WAIT", d["news"][1])
     else:
-        d["decision"] = ("WAIT", f"Waiting for a {c.get('entry_bar_min', 5)}-min close outside the opening range.")
+        d["decision"] = ("WAIT", "Waiting for a 5-min close outside the opening range.")
     return {k: {"status": v[0], "say": v[1], "at": at} for k, v in d.items()}

@@ -182,11 +182,6 @@ def _manage_runners(bot, log, st, c, pos, now):
 def tick(bot, log):
     """Called from the live loop while the market is open. Self-throttles to every 15 seconds."""
     global _last_tick
-    try:  # QQQ options scalper on Alpaca paper (Ryan 2026-10-17): its own 1-second thread, started once
-        import importlib, optbot
-        importlib.reload(optbot).ensure_thread(bot, log)
-    except Exception as e:
-        log(f"optbot error: {e}")
     now = datetime.now(timezone.utc)
     if now.timestamp() - _last_tick < 15:
         return
@@ -206,21 +201,6 @@ def tick(bot, log):
         importlib.reload(futures_sim).tick(log)
     except Exception as e:
         log(f"futures sim error: {e}")
-    try:  # paper prop-firm practice (2 x $50k, Ryan 2026-10-14), same once-a-minute throttle
-        import importlib, prop_sim
-        importlib.reload(prop_sim).tick(log)
-    except Exception as e:
-        log(f"prop sim error: {e}")
-    try:  # MNQ gap-fill practice lab book (Ryan 2026-10-16), own state + P&L, once a minute
-        import importlib, gapfill_sim
-        importlib.reload(gapfill_sim).tick(log)
-    except Exception as e:
-        log(f"gapfill sim error: {e}")
-    try:  # MNQ drop-day long practice lab book (auto-added 10/16 by the lab rule), own state + P&L
-        import importlib, droplong_sim
-        importlib.reload(droplong_sim).tick(log)
-    except Exception as e:
-        log(f"droplong sim error: {e}")
     if not c.get("enabled", True) and not st["open"]:  # Ryan 2026-10-08: Alpaca trading off, moving to futures
         if st.get("status") != "off":
             st["status"] = "off"
