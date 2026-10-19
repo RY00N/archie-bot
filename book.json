@@ -1160,9 +1160,9 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-19 10:00 PT",
-  "props_today": 431,
+  "props_today": 428,
   "kalshi_props_today": 72,
-  "kalshi_priced_today": 10,
+  "kalshi_priced_today": 11,
   "books_on_kalshi_props": {
    "AN Consensus": 61,
    "AN Open": 61,
@@ -1171,7 +1171,7 @@
    "Caesars": 50,
    "DraftKings": 50,
    "FanDuel": 45,
-   "Fanatics": 48,
+   "Fanatics": 49,
    "Hard Rock Bet": 26,
    "Parx": 42,
    "Pinnacle": 45,
@@ -1186,7 +1186,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -1243,9 +1243,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.524,
-   "price": 0.43,
-   "edge": 0.077,
+   "p": 0.525,
+   "price": 0.42,
+   "edge": 0.088,
    "news": "News: Austin Ekeler Remains limited Friday - Fantasy Footballers Podcast Jacory Croskey-Merritt (RB) is out, so Austin Ekeler's role likely grows; SF's LB Dre Greenlaw is out, an easier matchup; SF's LB Garret Wallow is out, an easier matchup.",
    "result": null
   },
@@ -1288,9 +1288,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.579,
+   "p": 0.578,
    "price": 0.49,
-   "edge": 0.072,
+   "edge": 0.071,
    "news": "WSH's DE Charles Omenihu is out, an easier matchup.",
    "result": null
   },
