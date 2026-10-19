@@ -1160,7 +1160,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-19 08:00 PT",
-  "props_today": 427,
+  "props_today": 428,
   "kalshi_props_today": 72,
   "kalshi_priced_today": 10,
   "books_on_kalshi_props": {
@@ -1186,7 +1186,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -1243,9 +1243,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.526,
+   "p": 0.523,
    "price": 0.42,
-   "edge": 0.089,
+   "edge": 0.086,
    "news": "News: Austin Ekeler Remains limited Friday - Fantasy Footballers Podcast Jacory Croskey-Merritt (RB) is out, so Austin Ekeler's role likely grows; SF's LB Dre Greenlaw is out, an easier matchup; SF's LB Garret Wallow is out, an easier matchup.",
    "result": null
   },
