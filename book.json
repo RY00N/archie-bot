@@ -1171,5 +1171,37 @@
    "soccer.sqlite"
   ],
   "kalshi_legs_today": 0
- }
+ },
+ "shadow": [
+  {
+   "date": "2026-10-19",
+   "ticker": "KXNFLREC-26OCT19WASSF-WASAWILLIAMS14-3",
+   "league": "nfl",
+   "player": "Antonio Williams",
+   "stat": "receptions",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-20T00:15:00Z",
+   "p": 0.488,
+   "price": 0.4,
+   "edge": 0.071,
+   "news": "SF's S Marques Sigle is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-19",
+   "ticker": "KXNFLRSHYDS-26OCT19WASSF-SFBPURDY13-20",
+   "league": "nfl",
+   "player": "Brock Purdy",
+   "stat": "rush_yds",
+   "side": "over",
+   "line": 19.5,
+   "start": "2026-10-20T00:15:00Z",
+   "p": 0.578,
+   "price": 0.48,
+   "edge": 0.081,
+   "news": "WSH's DE Charles Omenihu is out, an easier matchup.",
+   "result": null
+  }
+ ]
 }
