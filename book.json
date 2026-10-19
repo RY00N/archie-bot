@@ -1160,9 +1160,9 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-19 11:00 PT",
-  "props_today": 430,
-  "kalshi_props_today": 91,
-  "kalshi_priced_today": 11,
+  "props_today": 431,
+  "kalshi_props_today": 90,
+  "kalshi_priced_today": 12,
   "books_on_kalshi_props": {
    "AN Consensus": 61,
    "AN Open": 61,
@@ -1176,7 +1176,7 @@
    "Parx": 41,
    "Pinnacle": 45,
    "Sleeper": 63,
-   "Underdog": 91,
+   "Underdog": 90,
    "Unibet": 16,
    "bet365": 61
   },
@@ -1288,9 +1288,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.578,
+   "p": 0.579,
    "price": 0.5,
-   "edge": 0.06,
+   "edge": 0.061,
    "news": "WSH's DE Charles Omenihu is out, an easier matchup.",
    "result": null
   },
