@@ -1174,7 +1174,7 @@
    "Fanatics": 48,
    "Hard Rock Bet": 25,
    "Parx": 36,
-   "Pinnacle": 41,
+   "Pinnacle": 45,
    "Sleeper": 62,
    "Underdog": 71,
    "Unibet": 15,
@@ -1186,7 +1186,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -1206,6 +1206,21 @@
   },
   {
    "date": "2026-10-19",
+   "ticker": "KXNFLPASSINT-26OCT19WASSF-SFBPURDY13-1",
+   "league": "nfl",
+   "player": "Brock Purdy",
+   "stat": "pass_ints",
+   "side": "over",
+   "line": 0.5,
+   "start": "2026-10-20T00:15:00Z",
+   "p": 0.508,
+   "price": 0.43,
+   "edge": 0.061,
+   "news": "WSH's DE Charles Omenihu is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-19",
    "ticker": "KXNFLREC-26OCT19WASSF-WASAEKELER30-2",
    "league": "nfl",
    "player": "Austin Ekeler",
@@ -1213,9 +1228,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.533,
-   "price": 0.45,
-   "edge": 0.066,
+   "p": 0.531,
+   "price": 0.43,
+   "edge": 0.084,
    "news": "News: Austin Ekeler Remains limited Friday - Fantasy Footballers Podcast Jacory Croskey-Merritt (RB) is out, so Austin Ekeler's role likely grows; SF's LB Dre Greenlaw is out, an easier matchup; SF's LB Garret Wallow is out, an easier matchup.",
    "result": null
   },
@@ -1303,9 +1318,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.513,
+   "p": 0.516,
    "price": 0.46,
-   "edge": 0.036,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
