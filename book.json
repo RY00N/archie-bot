@@ -1192,7 +1192,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-19 15:00 PT",
-  "props_today": 362,
+  "props_today": 368,
   "kalshi_props_today": 138,
   "kalshi_priced_today": 29,
   "books_on_kalshi_props": {
@@ -1336,8 +1336,8 @@
    "line": 49.5,
    "start": "2026-10-20T00:15:00Z",
    "p": 0.6,
-   "price": 0.51,
-   "edge": 0.073,
+   "price": 0.5,
+   "edge": 0.082,
    "news": "SF's S Marques Sigle is out, an easier matchup.",
    "result": null
   },
