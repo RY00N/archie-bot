@@ -182,6 +182,7 @@ def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi"), min_ed
                 open(os.path.join(HERE, "news.py"), "w").write(open(src).read())
         sys.path.insert(0, HERE)   # python3 -I leaves the script's folder off sys.path
         import news
+        news.ROWS = rows_for   # with/without-teammate splits from the stats DBs
         legs = [l for l in news.adjust(legs) if l["app"] != "Kalshi" or l["edge"] >= min_edge]
     except Exception as ex:
         print("news check skipped:", ex)
