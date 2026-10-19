@@ -1192,15 +1192,15 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-19 16:00 PT",
-  "props_today": 367,
+  "props_today": 368,
   "kalshi_props_today": 138,
   "kalshi_priced_today": 29,
   "books_on_kalshi_props": {
    "AN Consensus": 127,
    "AN Open": 127,
-   "BetMGM": 105,
+   "BetMGM": 106,
    "BetRivers": 24,
-   "Caesars": 94,
+   "Caesars": 93,
    "DraftKings": 75,
    "FanDuel": 67,
    "Fanatics": 85,
@@ -1210,7 +1210,7 @@
    "Sleeper": 109,
    "Underdog": 138,
    "Unibet": 28,
-   "bet365": 127
+   "bet365": 122
   },
   "data_files": [
    "mlb.sqlite",
@@ -1320,9 +1320,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.495,
+   "p": 0.491,
    "price": 0.41,
-   "edge": 0.068,
+   "edge": 0.064,
    "news": "SF's S Marques Sigle is out, an easier matchup.",
    "result": null
   },
