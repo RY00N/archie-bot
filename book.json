@@ -1166,7 +1166,7 @@
   "books_on_kalshi_props": {
    "AN Consensus": 58,
    "AN Open": 58,
-   "BetMGM": 27,
+   "BetMGM": 29,
    "BetRivers": 20,
    "Caesars": 45,
    "DraftKings": 46,
@@ -1197,9 +1197,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.496,
+   "p": 0.494,
    "price": 0.39,
-   "edge": 0.089,
+   "edge": 0.087,
    "news": "SF's S Marques Sigle is out, an easier matchup.",
    "result": null
   },
