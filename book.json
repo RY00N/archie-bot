@@ -1160,7 +1160,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-19 08:00 PT",
-  "props_today": 429,
+  "props_today": 430,
   "kalshi_props_today": 72,
   "kalshi_priced_today": 10,
   "books_on_kalshi_props": {
@@ -1168,8 +1168,8 @@
    "AN Open": 61,
    "BetMGM": 46,
    "BetRivers": 24,
-   "Caesars": 50,
-   "DraftKings": 49,
+   "Caesars": 51,
+   "DraftKings": 50,
    "FanDuel": 44,
    "Fanatics": 49,
    "Hard Rock Bet": 26,
@@ -1243,9 +1243,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.496,
+   "p": 0.493,
    "price": 0.41,
-   "edge": 0.069,
+   "edge": 0.066,
    "news": "SF's S Marques Sigle is out, an easier matchup.",
    "result": null
   },
