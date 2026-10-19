@@ -1160,7 +1160,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-19 04:00 PT",
-  "props_today": 428,
+  "props_today": 427,
   "kalshi_props_today": 69,
   "kalshi_priced_today": 8,
   "books_on_kalshi_props": {
@@ -1174,7 +1174,7 @@
    "Fanatics": 45,
    "Hard Rock Bet": 24,
    "Parx": 37,
-   "Pinnacle": 38,
+   "Pinnacle": 7,
    "Sleeper": 60,
    "Underdog": 69,
    "Unibet": 14,
@@ -1186,7 +1186,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 1
  },
  "shadow": [
   {
@@ -1198,9 +1198,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-20T00:15:00Z",
-   "p": 0.49,
+   "p": 0.499,
    "price": 0.39,
-   "edge": 0.083,
+   "edge": 0.092,
    "news": "SF's S Marques Sigle is out, an easier matchup.",
    "result": null
   },
