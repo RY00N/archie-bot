@@ -1160,7 +1160,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-19 08:00 PT",
-  "props_today": 432,
+  "props_today": 423,
   "kalshi_props_today": 72,
   "kalshi_priced_today": 10,
   "books_on_kalshi_props": {
@@ -1170,7 +1170,7 @@
    "BetRivers": 24,
    "Caesars": 51,
    "DraftKings": 50,
-   "FanDuel": 44,
+   "FanDuel": 45,
    "Fanatics": 49,
    "Hard Rock Bet": 26,
    "Parx": 42,
@@ -1186,9 +1186,24 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 5
  },
  "shadow": [
+  {
+   "date": "2026-10-19",
+   "ticker": "KXMLBHRR-26OCT192008CLETB-CLEJADELL7-2",
+   "league": "mlb",
+   "player": "Jo Adell",
+   "stat": "hrr",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-20T00:08:00Z",
+   "p": 0.45,
+   "price": 0.4,
+   "edge": 0.033,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
   {
    "date": "2026-10-19",
    "ticker": "KXMLBTB-26OCT192008CLETB-TBJARANDA8-2",
