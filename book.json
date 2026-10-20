@@ -1306,23 +1306,23 @@
  "diag": {
   "props_at": "2026-10-20 09:00 PT",
   "props_today": 224,
-  "kalshi_props_today": 84,
-  "kalshi_priced_today": 2,
+  "kalshi_props_today": 87,
+  "kalshi_priced_today": 3,
   "books_on_kalshi_props": {
-   "AN Consensus": 84,
-   "AN Open": 84,
-   "BetMGM": 62,
-   "BetRivers": 81,
-   "Caesars": 80,
-   "DraftKings": 84,
-   "FanDuel": 83,
-   "Fanatics": 78,
-   "Parx": 81,
-   "Pinnacle": 80,
-   "Sleeper": 84,
-   "Underdog": 84,
-   "Unibet": 17,
-   "bet365": 84
+   "AN Consensus": 87,
+   "AN Open": 87,
+   "BetMGM": 65,
+   "BetRivers": 84,
+   "Caesars": 83,
+   "DraftKings": 87,
+   "FanDuel": 86,
+   "Fanatics": 79,
+   "Parx": 84,
+   "Pinnacle": 83,
+   "Sleeper": 87,
+   "Underdog": 87,
+   "Unibet": 18,
+   "bet365": 87
   },
   "data_files": [
    "mlb.sqlite",
@@ -1330,7 +1330,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -1492,9 +1492,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.427,
+   "p": 0.431,
    "price": 0.38,
-   "edge": 0.031,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1582,9 +1582,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-10-20T23:00:00Z",
-   "p": 0.598,
+   "p": 0.596,
    "price": 0.52,
-   "edge": 0.061,
+   "edge": 0.059,
    "news": "Dominick Barlow (F) is out, so LeBron James's role likely grows.",
    "result": null
   },
