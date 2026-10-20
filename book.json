@@ -1907,6 +1907,21 @@
   },
   {
    "date": "2026-10-21",
+   "ticker": "KXNBAAST-26OCT21MILWAS-WASTYOUNG3-10",
+   "league": "nba",
+   "player": "Trae Young",
+   "stat": "assists",
+   "side": "under",
+   "line": 9.5,
+   "start": "2026-10-21T23:00:00Z",
+   "p": 0.503,
+   "price": 0.45,
+   "edge": 0.036,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
    "ticker": "KXNBAAST-26OCT21MINMIA-MINAEDWARDS5-4",
    "league": "nba",
    "player": "Anthony Edwards",
