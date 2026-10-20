@@ -1372,6 +1372,21 @@
   },
   {
    "date": "2026-10-20",
+   "ticker": "KXNBAAST-26OCT20BOSDET-BOSJTATUM0-6",
+   "league": "nba",
+   "player": "Jayson Tatum",
+   "stat": "assists",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-20T19:00:00Z",
+   "p": 0.578,
+   "price": 0.53,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-20",
    "ticker": "KXNBAPRA-26OCT20BOSDET-DETJDUREN0-30",
    "league": "nba",
    "player": "Jalen Duren",
