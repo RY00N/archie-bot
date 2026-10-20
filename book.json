@@ -1337,8 +1337,8 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-20 12:00 PT",
-  "props_today": 232,
-  "kalshi_props_today": 133,
+  "props_today": 145,
+  "kalshi_props_today": 86,
   "kalshi_priced_today": 4,
   "books_on_kalshi_props": {
    "AN Consensus": 84,
@@ -1351,8 +1351,8 @@
    "Fanatics": 67,
    "Parx": 81,
    "Pinnacle": 77,
-   "Sleeper": 15,
-   "Underdog": 133,
+   "Sleeper": 86,
+   "Underdog": 86,
    "Unibet": 5,
    "bet365": 86
   },
@@ -1660,8 +1660,8 @@
    "line": 29.5,
    "start": "2026-10-20T23:00:00Z",
    "p": 0.599,
-   "price": 0.53,
-   "edge": 0.052,
+   "price": 0.52,
+   "edge": 0.062,
    "news": "Dominick Barlow (F) is out, so LeBron James's role likely grows.",
    "result": null
   },
