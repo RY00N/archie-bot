@@ -1952,6 +1952,21 @@
   },
   {
    "date": "2026-10-21",
+   "ticker": "KXNBAPTS-26OCT21DALHOU-HOURSHEPPARD15-10",
+   "league": "nba",
+   "player": "Reed Sheppard",
+   "stat": "points",
+   "side": "over",
+   "line": 9.5,
+   "start": "2026-10-22T00:30:00Z",
+   "p": 0.551,
+   "price": 0.5,
+   "edge": 0.034,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
    "ticker": "KXNBAPTS-26OCT21INDNOP-INDIZUBAC40-15",
    "league": "nba",
    "player": "Ivica Zubac",
