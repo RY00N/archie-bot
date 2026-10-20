@@ -1207,6 +1207,7 @@
    "Pinnacle": 80,
    "Sleeper": 91,
    "Underdog": 91,
+   "Unibet": 13,
    "bet365": 91
   },
   "data_files": [
@@ -1215,7 +1216,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -1392,9 +1393,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.578,
+   "p": 0.582,
    "price": 0.53,
-   "edge": 0.031,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1452,9 +1453,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.502,
-   "price": 0.45,
-   "edge": 0.035,
+   "p": 0.5,
+   "price": 0.44,
+   "edge": 0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
