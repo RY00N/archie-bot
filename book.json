@@ -1198,7 +1198,7 @@
   "books_on_kalshi_props": {
    "AN Consensus": 91,
    "AN Open": 91,
-   "BetRivers": 77,
+   "BetRivers": 78,
    "Caesars": 74,
    "DraftKings": 91,
    "FanDuel": 89,
@@ -1207,7 +1207,7 @@
    "Pinnacle": 80,
    "Sleeper": 91,
    "Underdog": 91,
-   "bet365": 91
+   "bet365": 90
   },
   "data_files": [
    "mlb.sqlite",
@@ -1422,9 +1422,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.582,
+   "p": 0.583,
    "price": 0.53,
-   "edge": 0.035,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
