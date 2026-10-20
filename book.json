@@ -1198,14 +1198,14 @@
   "books_on_kalshi_props": {
    "AN Consensus": 91,
    "AN Open": 91,
-   "Caesars": 75,
+   "Caesars": 73,
    "DraftKings": 91,
-   "FanDuel": 89,
+   "FanDuel": 90,
    "Fanatics": 63,
    "Pinnacle": 80,
    "Sleeper": 91,
    "Underdog": 91,
-   "bet365": 91
+   "bet365": 90
   },
   "data_files": [
    "mlb.sqlite",
@@ -1213,7 +1213,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 1
+  "kalshi_legs_today": 2
  },
  "shadow": [
   {
@@ -1420,9 +1420,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.583,
+   "p": 0.581,
    "price": 0.53,
-   "edge": 0.036,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1454,6 +1454,21 @@
    "price": 0.45,
    "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "KXNBASTL-26OCT20PHINYK-PHILJAMES23-2",
+   "league": "nba",
+   "player": "LeBron James",
+   "stat": "steals",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-20T23:00:00Z",
+   "p": 0.41,
+   "price": 0.33,
+   "edge": 0.065,
+   "news": "Dominick Barlow (F) is out, so LeBron James's role likely grows.",
    "result": null
   }
  ]
