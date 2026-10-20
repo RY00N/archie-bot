@@ -1199,10 +1199,10 @@
    "AN Consensus": 91,
    "AN Open": 91,
    "BetRivers": 79,
-   "Caesars": 74,
+   "Caesars": 76,
    "DraftKings": 91,
    "FanDuel": 89,
-   "Fanatics": 70,
+   "Fanatics": 72,
    "Parx": 78,
    "Pinnacle": 80,
    "Sleeper": 91,
@@ -1216,7 +1216,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -1453,9 +1453,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.5,
+   "p": 0.498,
    "price": 0.44,
-   "edge": 0.043,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
