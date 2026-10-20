@@ -1191,25 +1191,25 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-20 06:00 PT",
-  "props_today": 358,
-  "kalshi_props_today": 92,
+  "props_at": "2026-10-20 07:00 PT",
+  "props_today": 335,
+  "kalshi_props_today": 83,
   "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
-   "AN Consensus": 92,
-   "AN Open": 92,
+   "AN Consensus": 83,
+   "AN Open": 83,
    "BetMGM": 21,
    "BetRivers": 80,
    "Caesars": 78,
-   "DraftKings": 92,
-   "FanDuel": 90,
+   "DraftKings": 83,
+   "FanDuel": 81,
    "Fanatics": 72,
    "Parx": 77,
    "Pinnacle": 79,
-   "Sleeper": 92,
-   "Underdog": 92,
+   "Sleeper": 83,
+   "Underdog": 83,
    "Unibet": 16,
-   "bet365": 90
+   "bet365": 82
   },
   "data_files": [
    "mlb.sqlite",
@@ -1443,6 +1443,21 @@
    "price": 0.47,
    "edge": 0.07,
    "news": "Tacko Fall (C) is out, so Joel Embiid's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "KXNBAPRA-26OCT20PHINYK-PHILJAMES23-30",
+   "league": "nba",
+   "player": "LeBron James",
+   "stat": "pra",
+   "side": "over",
+   "line": 29.5,
+   "start": "2026-10-20T23:00:00Z",
+   "p": 0.599,
+   "price": 0.53,
+   "edge": 0.052,
+   "news": "Dominick Barlow (F) is out, so LeBron James's role likely grows.",
    "result": null
   },
   {
