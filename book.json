@@ -1337,7 +1337,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-20 11:00 PT",
-  "props_today": 225,
+  "props_today": 224,
   "kalshi_props_today": 128,
   "kalshi_priced_today": 8,
   "books_on_kalshi_props": {
@@ -1351,7 +1351,7 @@
    "Fanatics": 96,
    "Parx": 118,
    "Pinnacle": 111,
-   "Sleeper": 128,
+   "Sleeper": 124,
    "Underdog": 128,
    "Unibet": 24,
    "bet365": 127
@@ -1690,8 +1690,8 @@
    "line": 7.5,
    "start": "2026-10-20T19:00:00Z",
    "p": 0.548,
-   "price": 0.48,
-   "edge": 0.051,
+   "price": 0.5,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1780,8 +1780,8 @@
    "line": 5.5,
    "start": "2026-10-21T23:00:00Z",
    "p": 0.5,
-   "price": 0.44,
-   "edge": 0.043,
+   "price": 0.45,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1795,8 +1795,8 @@
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.52,
-   "price": 0.46,
-   "edge": 0.043,
+   "price": 0.47,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1810,8 +1810,8 @@
    "line": 9.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.577,
-   "price": 0.44,
-   "edge": 0.12,
+   "price": 0.47,
+   "edge": 0.09,
    "news": "Jordan Hawkins (G) is out, so Josh Giddey's role likely grows; Dailyn Swain (G) is out, so Josh Giddey's role likely grows.",
    "result": null
   },
