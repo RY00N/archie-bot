@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T11:10:16+00:00",
+ "updated": "2026-10-20T02:08:16+00:00",
  "window": [
   "2026-10-19",
   "2026-11-09"
@@ -14,67 +14,67 @@
   "AMD": {
    "date": "2026-11-03",
    "hour": "amc",
-   "eps_est": 1.9652,
+   "eps_est": 1.9664,
    "trading_days": 11
   },
   "AMZN": {
    "date": "2026-10-29",
    "hour": "amc",
-   "eps_est": 1.9998,
+   "eps_est": 1.9986,
    "trading_days": 8
   },
   "BA": {
    "date": "2026-10-27",
    "hour": "bmo",
-   "eps_est": -0.1981,
+   "eps_est": -0.2063,
    "trading_days": 6
   },
   "CAT": {
    "date": "2026-10-29",
    "hour": "bmo",
-   "eps_est": 7.1459,
+   "eps_est": 7.1552,
    "trading_days": 8
   },
   "COIN": {
    "date": "2026-10-29",
    "hour": "amc",
-   "eps_est": -0.0938,
+   "eps_est": -0.1158,
    "trading_days": 8
   },
   "CVX": {
    "date": "2026-10-30",
    "hour": "bmo",
-   "eps_est": 4.8752,
+   "eps_est": 4.9252,
    "trading_days": 9
   },
   "GE": {
    "date": "2026-10-19",
    "hour": "bmo",
-   "eps_est": 2.0576,
+   "eps_est": 2.0657,
    "trading_days": 0
   },
   "GOOGL": {
    "date": "2026-10-28",
    "hour": "amc",
-   "eps_est": 3.0983,
+   "eps_est": 3.1053,
    "trading_days": 7
   },
   "LLY": {
    "date": "2026-10-29",
    "hour": "",
-   "eps_est": 7.4912,
+   "eps_est": 7.4328,
    "trading_days": 8
   },
   "MA": {
    "date": "2026-10-29",
    "hour": "bmo",
-   "eps_est": 5.3058,
+   "eps_est": 5.3086,
    "trading_days": 8
   },
   "META": {
    "date": "2026-10-21",
    "hour": "amc",
-   "eps_est": 6.3122,
+   "eps_est": 6.0031,
    "trading_days": 2
   },
   "MSFT": {
@@ -86,7 +86,7 @@
   "NFLX": {
    "date": "2026-10-20",
    "hour": "amc",
-   "eps_est": 0.8391,
+   "eps_est": 0.8388,
    "trading_days": 1
   },
   "PLTR": {
@@ -104,25 +104,25 @@
   "TSLA": {
    "date": "2026-10-21",
    "hour": "amc",
-   "eps_est": 0.4459,
+   "eps_est": 0.4358,
    "trading_days": 2
   },
   "UBER": {
    "date": "2026-11-04",
    "hour": "bmo",
-   "eps_est": 0.9862,
+   "eps_est": 0.9838,
    "trading_days": 12
   },
   "V": {
    "date": "2026-10-27",
    "hour": "amc",
-   "eps_est": 3.5033,
+   "eps_est": 3.6979,
    "trading_days": 6
   },
   "XOM": {
    "date": "2026-10-23",
    "hour": "",
-   "eps_est": 3.8736,
+   "eps_est": 4.1139,
    "trading_days": 4
   }
  }
