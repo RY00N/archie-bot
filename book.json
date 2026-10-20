@@ -1349,7 +1349,7 @@
    "DraftKings": 87,
    "FanDuel": 84,
    "Fanatics": 66,
-   "Parx": 81,
+   "Parx": 80,
    "Pinnacle": 77,
    "Sleeper": 87,
    "Underdog": 87,
@@ -1362,7 +1362,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -1584,9 +1584,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-21T01:30:00Z",
-   "p": 0.475,
+   "p": 0.476,
    "price": 0.42,
-   "edge": 0.038,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1735,8 +1735,8 @@
    "line": 9.5,
    "start": "2026-10-21T01:30:00Z",
    "p": 0.534,
-   "price": 0.46,
-   "edge": 0.057,
+   "price": 0.45,
+   "edge": 0.067,
    "news": "Otega Oweh (G) is out, so Cason Wallace's role likely grows.",
    "result": null
   },
@@ -1772,6 +1772,21 @@
   },
   {
    "date": "2026-10-20",
+   "ticker": "KXNBAREB-26OCT20OKCSAS-OKCCWALLACE22-4",
+   "league": "nba",
+   "player": "Cason Wallace",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-21T01:30:00Z",
+   "p": 0.507,
+   "price": 0.46,
+   "edge": 0.03,
+   "news": "Nikola Topic is out: Cason Wallace hit the over in 11/23 games without him vs 10/17 with him; Otega Oweh (G) is out, so Cason Wallace's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-20",
    "ticker": "KXNBAREB-26OCT20OKCSAS-SASDVASSELL24-4",
    "league": "nba",
    "player": "Devin Vassell",
@@ -1779,9 +1794,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-21T01:30:00Z",
-   "p": 0.623,
+   "p": 0.622,
    "price": 0.56,
-   "edge": 0.046,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1974,9 +1989,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.565,
-   "price": 0.51,
-   "edge": 0.038,
+   "p": 0.572,
+   "price": 0.52,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1989,9 +2004,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.622,
+   "p": 0.623,
    "price": 0.45,
-   "edge": 0.155,
+   "edge": 0.156,
    "news": "Injury report: Day-To-Day: Nesmith (hamstring) will not play in Friday's preseason finale against Milwaukee, Tony East of Forbes.com reports. Johnny Furphy is out: Aaron Nesmith hit the under in 13/18 games without him vs 7/22 with him.",
    "result": null
   },
@@ -2049,9 +2064,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.498,
+   "p": 0.497,
    "price": 0.44,
-   "edge": 0.041,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
