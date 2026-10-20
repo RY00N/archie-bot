@@ -90,7 +90,17 @@ def signal(bot, c, today, now_m):
         pos = ((c5 - lo) if c5 > day[0][2] else (hi - c5)) / (hi - lo + 1e-9)
         if pos < c.get("min_close_pos", 0):  # 10/18: a 9:34 close far from the move's extreme often reverses
             return "skip", f"first 5 min closed weak ({pos:.2f})", c5, 574
-        return (1 if c5 > day[0][2] else -1), "first-5-min direction 9:35", c5, 574
+        side = 1 if c5 > day[0][2] else -1
+        _last["spy_agree"] = None  # 10/20: size up when SPY's first 5 min point the same way, down when not
+        if "spy_agree_mult" in c:
+            try:
+                s5 = [b for b in (( *_et(b["t"]), b["o"], b["c"]) for b in _bars(bot, "SPY", f"{today}T13:00:00Z"))
+                      if b[0] == today and 570 <= b[1] < 575]
+                if s5 and s5[0][1] == 570:
+                    _last["spy_agree"] = (s5[-1][3] > s5[0][2]) == (side > 0)
+            except Exception:
+                pass
+        return side, "first-5-min direction 9:35", c5, 574
     if m1 < c["first_min"] or m1 > c["last_min"]:
         return None
     if "v" in t and (c0 - w0) * (c1 - w1) < 0:
@@ -209,7 +219,11 @@ def step(bot, log):
     if ask > 0 and (bid + ask) / 2 / px * 100 > c.get("max_opt_pct", 99):  # option too expensive = market too jumpy
         st["done"], st["why_done"] = True, f"skipped: option too expensive ({(bid + ask) / 2:.2f})"
         log(f"OPT {st['why_done']}"); save(st); return
-    qty = int(c["size"] // (ask * 100)) if ask > 0 else 0
+    agree = _last.get("spy_agree")
+    mult = 1.0 if agree is None else c.get("spy_agree_mult", 1.0) if agree else c.get("spy_disagree_mult", 1.0)
+    if agree is not None:
+        why += f" (SPY {'agrees' if agree else 'disagrees'}, size x{mult})"
+    qty = int(c["size"] * mult // (ask * 100)) if ask > 0 else 0
     if qty < 1:
         save(st); return
     od = bot.trade("POST", "/v2/orders", body={"symbol": osym, "qty": str(qty), "side": "buy", "type": "limit",
