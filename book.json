@@ -1354,7 +1354,7 @@
    "Sleeper": 87,
    "Underdog": 87,
    "Unibet": 18,
-   "bet365": 87
+   "bet365": 86
   },
   "data_files": [
    "mlb.sqlite",
@@ -1779,9 +1779,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-20T23:00:00Z",
-   "p": 0.481,
+   "p": 0.48,
    "price": 0.42,
-   "edge": 0.044,
+   "edge": 0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1899,9 +1899,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.565,
+   "p": 0.566,
    "price": 0.5,
-   "edge": 0.047,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2004,9 +2004,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.588,
+   "p": 0.589,
    "price": 0.54,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
