@@ -1192,14 +1192,14 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-20 06:00 PT",
-  "props_today": 363,
+  "props_today": 365,
   "kalshi_props_today": 95,
   "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
    "AN Consensus": 95,
    "AN Open": 95,
    "BetRivers": 80,
-   "Caesars": 77,
+   "Caesars": 78,
    "DraftKings": 95,
    "FanDuel": 92,
    "Fanatics": 72,
@@ -1438,9 +1438,9 @@
    "side": "over",
    "line": 34.5,
    "start": "2026-10-20T23:00:00Z",
-   "p": 0.554,
+   "p": 0.557,
    "price": 0.48,
-   "edge": 0.057,
+   "edge": 0.06,
    "news": "Tacko Fall (C) is out, so Joel Embiid's role likely grows.",
    "result": null
   },
