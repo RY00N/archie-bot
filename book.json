@@ -1337,24 +1337,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-20 15:00 PT",
-  "props_today": 162,
-  "kalshi_props_today": 87,
+  "props_today": 163,
+  "kalshi_props_today": 88,
   "kalshi_priced_today": 3,
   "books_on_kalshi_props": {
-   "AN Consensus": 86,
-   "AN Open": 86,
-   "BetMGM": 67,
-   "BetRivers": 81,
-   "Caesars": 79,
-   "DraftKings": 87,
-   "FanDuel": 83,
-   "Fanatics": 67,
-   "Parx": 81,
-   "Pinnacle": 77,
-   "Sleeper": 87,
-   "Underdog": 87,
+   "AN Consensus": 87,
+   "AN Open": 87,
+   "BetMGM": 68,
+   "BetRivers": 82,
+   "Caesars": 80,
+   "DraftKings": 88,
+   "FanDuel": 84,
+   "Fanatics": 68,
+   "Parx": 82,
+   "Pinnacle": 78,
+   "Sleeper": 88,
+   "Underdog": 88,
    "Unibet": 18,
-   "bet365": 87
+   "bet365": 88
   },
   "data_files": [
    "mlb.sqlite",
@@ -1362,7 +1362,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -1794,9 +1794,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-21T01:30:00Z",
-   "p": 0.618,
+   "p": 0.616,
    "price": 0.54,
-   "edge": 0.061,
+   "edge": 0.059,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1843,6 +1843,21 @@
    "price": 0.39,
    "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBA3PT-26OCT21MINMIA-MINAEDWARDS5-4",
+   "league": "nba",
+   "player": "Anthony Edwards",
+   "stat": "threes",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-10-21T23:30:00Z",
+   "p": 0.75,
+   "price": 0.6,
+   "edge": 0.133,
+   "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/6 games without him vs 20/34 with him.",
    "result": null
   },
   {
@@ -2094,9 +2109,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-22T02:30:00Z",
-   "p": 0.587,
+   "p": 0.586,
    "price": 0.53,
-   "edge": 0.04,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
