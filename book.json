@@ -1198,9 +1198,9 @@
   "books_on_kalshi_props": {
    "AN Consensus": 91,
    "AN Open": 91,
-   "Caesars": 76,
+   "Caesars": 70,
    "DraftKings": 91,
-   "FanDuel": 89,
+   "FanDuel": 36,
    "Fanatics": 61,
    "Pinnacle": 80,
    "Sleeper": 91,
@@ -1390,9 +1390,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.578,
+   "p": 0.579,
    "price": 0.53,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1436,8 +1436,8 @@
    "line": 9.5,
    "start": "2026-10-20T19:00:00Z",
    "p": 0.5,
-   "price": 0.44,
-   "edge": 0.043,
+   "price": 0.45,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
