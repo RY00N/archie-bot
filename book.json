@@ -1345,9 +1345,9 @@
    "AN Open": 87,
    "BetMGM": 68,
    "BetRivers": 82,
-   "Caesars": 80,
+   "Caesars": 81,
    "DraftKings": 88,
-   "FanDuel": 84,
+   "FanDuel": 85,
    "Fanatics": 68,
    "Parx": 82,
    "Pinnacle": 78,
@@ -1362,7 +1362,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -1584,9 +1584,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-21T01:30:00Z",
-   "p": 0.473,
+   "p": 0.476,
    "price": 0.42,
-   "edge": 0.036,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1632,6 +1632,21 @@
    "p": 0.489,
    "price": 0.43,
    "edge": 0.042,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "KXNBAPRA-26OCT20PHINYK-NYKKTOWNS32-35",
+   "league": "nba",
+   "player": "Karl-Anthony Towns",
+   "stat": "pra",
+   "side": "under",
+   "line": 34.5,
+   "start": "2026-10-20T23:00:00Z",
+   "p": 0.546,
+   "price": 0.48,
+   "edge": 0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1795,8 +1810,8 @@
    "line": 3.5,
    "start": "2026-10-21T01:30:00Z",
    "p": 0.616,
-   "price": 0.53,
-   "edge": 0.069,
+   "price": 0.54,
+   "edge": 0.059,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1809,9 +1824,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-20T23:00:00Z",
-   "p": 0.477,
+   "p": 0.481,
    "price": 0.4,
-   "edge": 0.06,
+   "edge": 0.064,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1854,9 +1869,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.75,
+   "p": 0.755,
    "price": 0.6,
-   "edge": 0.133,
+   "edge": 0.138,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/6 games without him vs 20/34 with him.",
    "result": null
   },
@@ -2094,9 +2109,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.588,
+   "p": 0.589,
    "price": 0.54,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
