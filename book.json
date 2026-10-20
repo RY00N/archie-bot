@@ -1207,7 +1207,7 @@
    "Pinnacle": 80,
    "Sleeper": 91,
    "Underdog": 91,
-   "Unibet": 14,
+   "Unibet": 16,
    "bet365": 91
   },
   "data_files": [
@@ -1468,9 +1468,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.498,
+   "p": 0.497,
    "price": 0.43,
-   "edge": 0.051,
+   "edge": 0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1483,9 +1483,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-20T23:00:00Z",
-   "p": 0.411,
+   "p": 0.413,
    "price": 0.34,
-   "edge": 0.055,
+   "edge": 0.057,
    "news": "Dominick Barlow (F) is out, so LeBron James's role likely grows.",
    "result": null
   }
