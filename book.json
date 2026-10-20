@@ -1348,7 +1348,7 @@
    "Caesars": 46,
    "DraftKings": 49,
    "FanDuel": 47,
-   "Fanatics": 45,
+   "Fanatics": 44,
    "Parx": 45,
    "Pinnacle": 43,
    "Sleeper": 49,
@@ -1361,7 +1361,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -1557,6 +1557,21 @@
    "price": 0.45,
    "edge": 0.074,
    "news": "Taurean Prince (F) is out, so Duncan Robinson's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-20",
+   "ticker": "KXNBA3PT-26OCT20OKCSAS-SASJCHAMPAGNIE30-3",
+   "league": "nba",
+   "player": "Julian Champagnie",
+   "stat": "threes",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-21T01:30:00Z",
+   "p": 0.428,
+   "price": 0.36,
+   "edge": 0.052,
+   "news": "Tobias Harris (F) is out, so Julian Champagnie's role likely grows.",
    "result": null
   },
   {
@@ -1808,9 +1823,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-21T01:30:00Z",
-   "p": 0.619,
-   "price": 0.53,
-   "edge": 0.072,
+   "p": 0.618,
+   "price": 0.54,
+   "edge": 0.061,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1973,9 +1988,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.666,
+   "p": 0.667,
    "price": 0.54,
-   "edge": 0.109,
+   "edge": 0.11,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 5/6 games without him vs 20/34 with him.",
    "result": null
   },
@@ -2063,9 +2078,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.555,
+   "p": 0.554,
    "price": 0.5,
-   "edge": 0.038,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2153,9 +2168,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.497,
-   "price": 0.44,
-   "edge": 0.04,
+   "p": 0.499,
+   "price": 0.45,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
