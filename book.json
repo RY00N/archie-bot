@@ -1306,23 +1306,23 @@
  "diag": {
   "props_at": "2026-10-20 09:00 PT",
   "props_today": 224,
-  "kalshi_props_today": 92,
+  "kalshi_props_today": 93,
   "kalshi_priced_today": 3,
   "books_on_kalshi_props": {
-   "AN Consensus": 92,
-   "AN Open": 92,
-   "BetMGM": 70,
-   "BetRivers": 89,
-   "Caesars": 88,
-   "DraftKings": 92,
-   "FanDuel": 90,
-   "Fanatics": 83,
-   "Parx": 89,
-   "Pinnacle": 88,
-   "Sleeper": 92,
-   "Underdog": 92,
+   "AN Consensus": 93,
+   "AN Open": 93,
+   "BetMGM": 71,
+   "BetRivers": 90,
+   "Caesars": 89,
+   "DraftKings": 93,
+   "FanDuel": 91,
+   "Fanatics": 84,
+   "Parx": 90,
+   "Pinnacle": 89,
+   "Sleeper": 93,
+   "Underdog": 93,
    "Unibet": 18,
-   "bet365": 92
+   "bet365": 93
   },
   "data_files": [
    "mlb.sqlite",
@@ -1330,7 +1330,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -1605,6 +1605,21 @@
   },
   {
    "date": "2026-10-20",
+   "ticker": "KXNBAREB-26OCT20BOSDET-BOSMROBINSON4-8",
+   "league": "nba",
+   "player": "Mitchell Robinson",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 7.5,
+   "start": "2026-10-20T19:00:00Z",
+   "p": 0.558,
+   "price": 0.49,
+   "edge": 0.051,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-20",
    "ticker": "KXNBAREB-26OCT20BOSDET-DETJDUREN0-10",
    "league": "nba",
    "player": "Jalen Duren",
@@ -1765,6 +1780,21 @@
    "p": 0.572,
    "price": 0.52,
    "edge": 0.035,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBAREB-26OCT21INDNOP-INDIZUBAC40-12",
+   "league": "nba",
+   "player": "Ivica Zubac",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 11.5,
+   "start": "2026-10-22T00:00:00Z",
+   "p": 0.594,
+   "price": 0.54,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
