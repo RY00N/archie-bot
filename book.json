@@ -1200,7 +1200,7 @@
    "AN Open": 91,
    "Caesars": 75,
    "DraftKings": 91,
-   "FanDuel": 2,
+   "FanDuel": 89,
    "Fanatics": 66,
    "Pinnacle": 80,
    "Sleeper": 91,
@@ -1213,7 +1213,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -1390,9 +1390,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.578,
+   "p": 0.579,
    "price": 0.53,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1405,9 +1405,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.585,
+   "p": 0.583,
    "price": 0.53,
-   "edge": 0.038,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
