@@ -1251,16 +1251,65 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-20",
+   "app": "Kalshi",
+   "type": "2-leg combo #1",
+   "stake": 5.0,
+   "payout_x": null,
+   "win_p": 0.371,
+   "ev_pct": null,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Jalen Duren",
+     "team": "DET",
+     "stat": "pra",
+     "side": "under",
+     "line": 29.5,
+     "price": 0.56,
+     "ticker": "KXNBAPRA-26OCT20BOSDET-DETJDUREN0-30",
+     "game": "BOS @ DET",
+     "start": "2026-10-20T19:00:00Z",
+     "p": 0.619,
+     "edge": 0.042,
+     "news": "No injury or off-field red flags in the last 3 days.",
+     "why": "Jalen Duren under 29.5 pra: 3 books price it 54%; hit 8% of last 12 (avg 21.0); 2/13 over vs BOS, avg 22.3. Fair 62%.",
+     "case": "Last 5 games: 19, 26, 18, 12, 16 (5 of 5 under 29.5).",
+     "result": null
+    },
+    {
+     "league": "nba",
+     "player": "LeBron James",
+     "team": "PHI",
+     "stat": "pra",
+     "side": "over",
+     "line": 29.5,
+     "price": 0.52,
+     "ticker": "KXNBAPRA-26OCT20PHINYK-PHILJAMES23-30",
+     "game": "PHI @ NYK",
+     "start": "2026-10-20T23:00:00Z",
+     "p": 0.6,
+     "edge": 0.063,
+     "news": "Dominick Barlow (F) is out, so LeBron James's role likely grows.",
+     "why": "LeBron James over 29.5 pra: 4 books price it 52%; hit 83% of last 12 (avg 37.2). Fair 60%.",
+     "case": "Last 5 games: 39, 33, 31, 37, 43 (5 of 5 over 29.5).",
+     "result": null
+    }
+   ]
   }
  ],
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-20 08:00 PT",
-  "props_today": 225,
+  "props_today": 224,
   "kalshi_props_today": 83,
   "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
-   "AN Consensus": 83,
+   "AN Consensus": 82,
    "AN Open": 83,
    "BetMGM": 61,
    "BetRivers": 80,
@@ -1281,7 +1330,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -1533,9 +1582,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-10-20T23:00:00Z",
-   "p": 0.599,
+   "p": 0.6,
    "price": 0.52,
-   "edge": 0.062,
+   "edge": 0.063,
    "news": "Dominick Barlow (F) is out, so LeBron James's role likely grows.",
    "result": null
   },
@@ -1548,9 +1597,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.502,
-   "price": 0.44,
-   "edge": 0.045,
+   "p": 0.515,
+   "price": 0.46,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
