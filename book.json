@@ -1337,7 +1337,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-20 11:00 PT",
-  "props_today": 231,
+  "props_today": 232,
   "kalshi_props_today": 133,
   "kalshi_priced_today": 8,
   "books_on_kalshi_props": {
@@ -1354,7 +1354,7 @@
    "Sleeper": 133,
    "Underdog": 133,
    "Unibet": 24,
-   "bet365": 127
+   "bet365": 130
   },
   "data_files": [
    "mlb.sqlite",
@@ -1554,9 +1554,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.547,
+   "p": 0.545,
    "price": 0.47,
-   "edge": 0.06,
+   "edge": 0.058,
    "news": "Taurean Prince (F) is out, so Duncan Robinson's role likely grows.",
    "result": null
   },
@@ -1674,9 +1674,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.511,
+   "p": 0.51,
    "price": 0.46,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1689,9 +1689,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.546,
+   "p": 0.542,
    "price": 0.49,
-   "edge": 0.039,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1719,9 +1719,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-21T01:30:00Z",
-   "p": 0.632,
+   "p": 0.631,
    "price": 0.56,
-   "edge": 0.055,
+   "edge": 0.054,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1794,9 +1794,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.52,
+   "p": 0.519,
    "price": 0.47,
-   "edge": 0.033,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1809,9 +1809,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.574,
+   "p": 0.576,
    "price": 0.45,
-   "edge": 0.107,
+   "edge": 0.109,
    "news": "Jordan Hawkins (G) is out, so Josh Giddey's role likely grows; Dailyn Swain (G) is out, so Josh Giddey's role likely grows.",
    "result": null
   },
@@ -1854,9 +1854,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.563,
+   "p": 0.561,
    "price": 0.5,
-   "edge": 0.045,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
