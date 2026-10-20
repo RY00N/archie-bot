@@ -263,7 +263,8 @@ def build():
         day_legs = [l for l in legs if l["app"] == "Kalshi" and datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == sd]
         have = [e for e in book["parlays"] if e["date"] == sd and not e.get("lock")]
         made = lambda: sum(1 for e in entries if e["date"] == sd and not e.get("lock"))
-        pool = sorted([l for l in day_legs if (l["prop"]["player"], l["prop"]["stat"]) not in used], key=lambda l: -l["p"])
+        pool = sorted([l for l in day_legs if (l["prop"]["player"], l["prop"]["stat"]) not in used and combo_ok(l)],
+                      key=lambda l: -l["p"])
         while len(have) + made() < max_par:
             pick, games = [], set()
             for l in pool:
@@ -307,6 +308,8 @@ def build():
         for size in range(1, max_legs + 1):
             for c in combinations(pool, size):
                 if len({l["prop"]["game"] for l in c}) < size or len({l["prop"]["player"] for l in c}) < size:
+                    continue
+                if size > 1 and not all(combo_ok(l) for l in c):
                     continue
                 wp = math.prod(l["p"] for l in c)
                 mult = 1 / c[0]["price"] if size == 1 else kalshi_combo_mult([l["price"] for l in c])
@@ -410,6 +413,30 @@ def kalshi_market(ticker):
                                      headers={"User-Agent": "BetterPicks (1.0)"})
         _kalshi_cache[ticker] = json.load(urllib.request.urlopen(req, timeout=15))["market"]
     return _kalshi_cache[ticker]
+
+
+_combo_rules = None
+
+
+def combo_ok(l):
+    """Can this leg go in a Kalshi combo? Ryan 2026-10-20: Kalshi wouldn't combo LeBron PRA YES with Duren PRA NO.
+    Kalshi's combo collection marks player-prop events yes-only, so a NO (under) prop can only be a single.
+    Unknown or unreachable rules: allow only YES legs."""
+    global _combo_rules
+    if _combo_rules is None:
+        try:
+            import urllib.request
+            req = urllib.request.Request("https://api.elections.kalshi.com/trade-api/v2/multivariate_event_collections/"
+                                         "KXMVESPORTSMULTIGAMEEXTENDED-R", headers={"User-Agent": "BetterPicks (1.0)"})
+            evs = json.load(urllib.request.urlopen(req, timeout=15))["multivariate_contract"]["associated_events"]
+            _combo_rules = {e["ticker"]: e.get("is_yes_only", True) for e in evs}
+        except Exception:
+            _combo_rules = {}
+    parts = (l.get("ticker") or "").split("-")
+    event = next(("-".join(parts[:i]) for i in range(len(parts) - 1, 1, -1) if "-".join(parts[:i]) in _combo_rules), None)
+    if _combo_rules and event is None:
+        return False
+    return l["side"] == "over" or _combo_rules.get(event) is False
 
 
 def kalshi_value(leg):
