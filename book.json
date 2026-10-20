@@ -1198,10 +1198,10 @@
   "books_on_kalshi_props": {
    "AN Consensus": 91,
    "AN Open": 91,
-   "BetRivers": 79,
+   "BetRivers": 80,
    "Caesars": 75,
    "DraftKings": 91,
-   "FanDuel": 88,
+   "FanDuel": 89,
    "Fanatics": 72,
    "Parx": 78,
    "Pinnacle": 80,
@@ -1216,7 +1216,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
