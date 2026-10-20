@@ -1260,11 +1260,11 @@
   "kalshi_props_today": 84,
   "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
-   "AN Consensus": 83,
+   "AN Consensus": 84,
    "AN Open": 84,
    "BetMGM": 61,
    "BetRivers": 80,
-   "Caesars": 77,
+   "Caesars": 78,
    "DraftKings": 84,
    "FanDuel": 82,
    "Fanatics": 79,
@@ -1273,7 +1273,7 @@
    "Sleeper": 84,
    "Underdog": 84,
    "Unibet": 16,
-   "bet365": 83
+   "bet365": 81
   },
   "data_files": [
    "mlb.sqlite",
@@ -1281,7 +1281,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -1488,9 +1488,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.584,
-   "price": 0.51,
-   "edge": 0.057,
+   "p": 0.609,
+   "price": 0.56,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1563,9 +1563,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.501,
+   "p": 0.504,
    "price": 0.45,
-   "edge": 0.034,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1596,6 +1596,21 @@
    "p": 0.487,
    "price": 0.43,
    "edge": 0.04,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBAAST-26OCT21CHABKN-CHABMILLER24-4",
+   "league": "nba",
+   "player": "Brandon Miller",
+   "stat": "assists",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-10-21T23:30:00Z",
+   "p": 0.514,
+   "price": 0.46,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -1684,8 +1699,8 @@
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.558,
-   "price": 0.5,
-   "edge": 0.041,
+   "price": 0.51,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
