@@ -1198,9 +1198,9 @@
   "books_on_kalshi_props": {
    "AN Consensus": 91,
    "AN Open": 91,
-   "Caesars": 70,
+   "Caesars": 71,
    "DraftKings": 91,
-   "Fanatics": 61,
+   "Fanatics": 66,
    "Pinnacle": 80,
    "Sleeper": 91,
    "Underdog": 91,
@@ -1212,7 +1212,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -1404,9 +1404,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-20T19:00:00Z",
-   "p": 0.582,
+   "p": 0.585,
    "price": 0.53,
-   "edge": 0.035,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
