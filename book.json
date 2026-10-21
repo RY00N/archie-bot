@@ -1496,7 +1496,7 @@
    "Fanatics": 443,
    "Parx": 457,
    "Pinnacle": 371,
-   "Sleeper": 540,
+   "Sleeper": 538,
    "Underdog": 546,
    "Unibet": 104,
    "bet365": 542
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 29
+  "kalshi_legs_today": 33
  },
  "shadow": [
   {
@@ -2376,6 +2376,21 @@
    "start": "2026-10-22T00:00:00Z",
    "p": 0.613,
    "price": 0.56,
+   "edge": 0.036,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBA3PT-26OCT21UTAMEM-UTALMARKKANEN23-3",
+   "league": "nba",
+   "player": "Lauri Markkanen",
+   "stat": "threes",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-22T00:00:00Z",
+   "p": 0.513,
+   "price": 0.46,
    "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
@@ -3353,6 +3368,21 @@
    "price": 0.41,
    "edge": 0.169,
    "news": "Caleb Martin is out: Cooper Flagg hit the over in 11/21 games without him vs 6/19 with him; Tarik Biberovic (F) is out, so Cooper Flagg's role likely grows; Santi Aldama (F) is out, so Cooper Flagg's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBASTL-26OCT21DALHOU-DALKIRVING11-2",
+   "league": "nba",
+   "player": "Kyrie Irving",
+   "stat": "steals",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-22T00:30:00Z",
+   "p": 0.404,
+   "price": 0.35,
+   "edge": 0.038,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
