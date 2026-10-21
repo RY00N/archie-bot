@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -2022,6 +2022,21 @@
   },
   {
    "date": "2026-10-21",
+   "ticker": "KXNBA3PT-26OCT21DALHOU-HOURSHEPPARD15-2",
+   "league": "nba",
+   "player": "Reed Sheppard",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-22T00:30:00Z",
+   "p": 0.657,
+   "price": 0.61,
+   "edge": 0.03,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
    "ticker": "KXNBA3PT-26OCT21DALHOU-HOUTEASON17-2",
    "league": "nba",
    "player": "Tari Eason",
@@ -2224,9 +2239,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.512,
+   "p": 0.508,
    "price": 0.46,
-   "edge": 0.035,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2390,8 +2405,8 @@
    "line": 19.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.646,
-   "price": 0.43,
-   "edge": 0.199,
+   "price": 0.42,
+   "edge": 0.209,
    "news": "Brandon Ingram is out: RJ Barrett hit the over in 8/9 games without him vs 18/31 with him.",
    "result": null
   },
@@ -2573,6 +2588,21 @@
    "price": 0.41,
    "edge": 0.092,
    "news": "Anthony Black is out: Jalen Suggs hit the over in 11/18 games without him vs 11/22 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBAREB-26OCT21CHITOR-CHIJSMITH25-8",
+   "league": "nba",
+   "player": "Jalen Smith",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 7.5,
+   "start": "2026-10-21T23:30:00Z",
+   "p": 0.629,
+   "price": 0.58,
+   "edge": 0.032,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
