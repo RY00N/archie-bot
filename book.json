@@ -1496,7 +1496,7 @@
    "Fanatics": 437,
    "Parx": 453,
    "Pinnacle": 371,
-   "Sleeper": 526,
+   "Sleeper": 527,
    "Underdog": 542,
    "Unibet": 95,
    "bet365": 538
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 21
  },
  "shadow": [
   {
@@ -2060,8 +2060,8 @@
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
    "p": 0.607,
-   "price": 0.54,
-   "edge": 0.05,
+   "price": 0.52,
+   "edge": 0.07,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
