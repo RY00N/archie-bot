@@ -189,7 +189,7 @@ def step(bot, log):
         how = None
         if bid <= o["stop"]:
             how = "stopped out" if o["stop"] < o["entry"] else "profit locked"
-        elif m - o["entry_min"] >= c["max_hold_min"] or m >= 955:
+        elif m - o["entry_min"] >= o.get("hold", c["max_hold_min"]) or m >= 955:
             how = "time"
         if how:
             od = bot.trade("POST", "/v2/orders", body={"symbol": o["symbol"], "qty": str(o["qty"]), "side": "sell",
@@ -229,7 +229,8 @@ def step(bot, log):
     od = bot.trade("POST", "/v2/orders", body={"symbol": osym, "qty": str(qty), "side": "buy", "type": "limit",
                                                 "limit_price": f"{ask:.2f}", "time_in_force": "day"})
     st["open"] = {"state": "pending", "order_id": od["id"], "symbol": osym, "side": "call" if side > 0 else "put",
-                  "why": why, "qty": qty, "sent_min": m, "entry_min": m, "entry_time": now.isoformat()[:16]}
+                  "why": why, "qty": qty, "sent_min": m, "entry_min": m, "entry_time": now.isoformat()[:16],
+                  "hold": c.get("disagree_hold_min", c["max_hold_min"]) if agree is False else c["max_hold_min"]}
     st["trades"] += 1
     log(f"OPT {why}: buy {qty} {osym} limit {ask:.2f} (QQQ {px})")
     save(st)

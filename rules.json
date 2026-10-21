@@ -234,6 +234,7 @@
   "max_opt_pct": 0.65,
   "min_close_pos": 0.35,
   "spy_agree_mult": 1.18,
-  "spy_disagree_mult": 0.25
+  "spy_disagree_mult": 0.25,
+  "disagree_hold_min": 90
  }
 }
