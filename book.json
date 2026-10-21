@@ -1461,12 +1461,12 @@
    "Caesars": 352,
    "DraftKings": 400,
    "FanDuel": 379,
-   "Fanatics": 311,
+   "Fanatics": 310,
    "Parx": 331,
    "Pinnacle": 245,
    "Sleeper": 406,
    "Underdog": 418,
-   "Unibet": 40,
+   "Unibet": 41,
    "bet365": 418
   },
   "data_files": [
@@ -2627,9 +2627,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.563,
+   "p": 0.564,
    "price": 0.5,
-   "edge": 0.045,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
