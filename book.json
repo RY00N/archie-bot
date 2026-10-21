@@ -1488,12 +1488,12 @@
   "books_on_kalshi_props": {
    "AN Consensus": 416,
    "AN Open": 408,
-   "BetMGM": 202,
+   "BetMGM": 203,
    "BetRivers": 332,
    "Caesars": 351,
    "DraftKings": 401,
    "FanDuel": 377,
-   "Fanatics": 304,
+   "Fanatics": 305,
    "Parx": 332,
    "Pinnacle": 245,
    "Sleeper": 406,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -2382,6 +2382,21 @@
   },
   {
    "date": "2026-10-21",
+   "ticker": "KXNBAPRA-26OCT21CHITOR-TORKLEONARD2-35",
+   "league": "nba",
+   "player": "Kawhi Leonard",
+   "stat": "pra",
+   "side": "over",
+   "line": 34.5,
+   "start": "2026-10-21T23:30:00Z",
+   "p": 0.51,
+   "price": 0.46,
+   "edge": 0.033,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
    "ticker": "KXNBAPTS-26OCT21CHABKN-CHABMILLER24-25",
    "league": "nba",
    "player": "Brandon Miller",
@@ -2479,9 +2494,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.537,
+   "p": 0.539,
    "price": 0.48,
-   "edge": 0.04,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2569,9 +2584,9 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.552,
+   "p": 0.556,
    "price": 0.48,
-   "edge": 0.055,
+   "edge": 0.059,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2794,9 +2809,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.534,
-   "price": 0.45,
-   "edge": 0.067,
+   "p": 0.533,
+   "price": 0.43,
+   "edge": 0.086,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
