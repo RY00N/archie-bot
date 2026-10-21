@@ -1488,9 +1488,9 @@
   "books_on_kalshi_props": {
    "AN Consensus": 416,
    "AN Open": 408,
-   "BetMGM": 199,
+   "BetMGM": 202,
    "BetRivers": 332,
-   "Caesars": 354,
+   "Caesars": 351,
    "DraftKings": 401,
    "FanDuel": 377,
    "Fanatics": 304,
@@ -2795,8 +2795,8 @@
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
    "p": 0.534,
-   "price": 0.44,
-   "edge": 0.077,
+   "price": 0.45,
+   "edge": 0.067,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
