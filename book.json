@@ -1482,7 +1482,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 16:00 PT",
-  "props_today": 998,
+  "props_today": 1005,
   "kalshi_props_today": 564,
   "kalshi_priced_today": 24,
   "books_on_kalshi_props": {
@@ -2765,8 +2765,8 @@
    "line": 14.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.548,
-   "price": 0.43,
-   "edge": 0.101,
+   "price": 0.42,
+   "edge": 0.111,
    "news": "Kylan Boswell (G) is out, so Grayson Allen's role likely grows; Kon Knueppel (G) is out, so Grayson Allen's role likely grows; Coby White (G) is out, so Grayson Allen's role likely grows.",
    "result": null
   },
