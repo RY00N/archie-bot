@@ -1482,19 +1482,19 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 08:00 PT",
-  "props_today": 917,
+  "props_today": 918,
   "kalshi_props_today": 419,
-  "kalshi_priced_today": 26,
+  "kalshi_priced_today": 25,
   "books_on_kalshi_props": {
    "AN Consensus": 418,
    "AN Open": 409,
    "BetMGM": 273,
-   "BetRivers": 349,
-   "Caesars": 352,
+   "BetRivers": 351,
+   "Caesars": 350,
    "DraftKings": 400,
    "FanDuel": 367,
    "Fanatics": 336,
-   "Parx": 349,
+   "Parx": 351,
    "Pinnacle": 244,
    "Sleeper": 408,
    "Underdog": 419,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 16
+  "kalshi_legs_today": 18
  },
  "shadow": [
   {
@@ -2089,9 +2089,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.407,
-   "price": 0.36,
-   "edge": 0.031,
+   "p": 0.403,
+   "price": 0.35,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2397,6 +2397,21 @@
   },
   {
    "date": "2026-10-21",
+   "ticker": "KXNBAAST-26OCT21MINMIA-MINJKUMINGA0-2",
+   "league": "nba",
+   "player": "Jonathan Kuminga",
+   "stat": "assists",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-10-21T23:30:00Z",
+   "p": 0.478,
+   "price": 0.43,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
    "ticker": "KXNBAAST-26OCT21PHXPOR-PORJMORANT1-6",
    "league": "nba",
    "player": "Ja Morant",
@@ -2690,8 +2705,8 @@
    "line": 19.5,
    "start": "2026-10-22T00:00:00Z",
    "p": 0.539,
-   "price": 0.47,
-   "edge": 0.052,
+   "price": 0.48,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2779,9 +2794,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.599,
+   "p": 0.598,
    "price": 0.52,
-   "edge": 0.062,
+   "edge": 0.061,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2869,9 +2884,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.473,
+   "p": 0.474,
    "price": 0.41,
-   "edge": 0.046,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
