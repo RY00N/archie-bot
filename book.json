@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 33
+  "kalshi_legs_today": 34
  },
  "shadow": [
   {
@@ -2202,6 +2202,21 @@
   },
   {
    "date": "2026-10-21",
+   "ticker": "KXNBA3PT-26OCT21MILWAS-MILRROLLINS13-3",
+   "league": "nba",
+   "player": "Ryan Rollins",
+   "stat": "threes",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-21T23:00:00Z",
+   "p": 0.474,
+   "price": 0.42,
+   "edge": 0.037,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
    "ticker": "KXNBA3PT-26OCT21MINMIA-MIAAWIGGINS22-2",
    "league": "nba",
    "player": "Andrew Wiggins",
@@ -2405,8 +2420,8 @@
    "line": 9.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.53,
-   "price": 0.41,
-   "edge": 0.103,
+   "price": 0.4,
+   "edge": 0.113,
    "news": "Dailyn Swain (G) is out, so Josh Giddey's role likely grows; Jordan Hawkins (G) is out, so Josh Giddey's role likely grows.",
    "result": null
   },
@@ -2615,8 +2630,8 @@
    "line": 34.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.666,
-   "price": 0.53,
-   "edge": 0.119,
+   "price": 0.54,
+   "edge": 0.109,
    "news": "Grant Williams is out: Brandon Miller hit the under in 11/13 games without him vs 19/27 with him.",
    "result": null
   },
@@ -3050,8 +3065,8 @@
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
    "p": 0.491,
-   "price": 0.43,
-   "edge": 0.044,
+   "price": 0.42,
+   "edge": 0.054,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
