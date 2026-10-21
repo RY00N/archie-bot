@@ -1484,15 +1484,15 @@
   "props_at": "2026-10-21 10:00 PT",
   "props_today": 981,
   "kalshi_props_today": 466,
-  "kalshi_priced_today": 29,
+  "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
-   "AN Consensus": 461,
+   "AN Consensus": 460,
    "AN Open": 456,
    "BetMGM": 320,
    "BetRivers": 392,
-   "Caesars": 403,
+   "Caesars": 406,
    "DraftKings": 439,
-   "FanDuel": 411,
+   "FanDuel": 409,
    "Fanatics": 380,
    "Parx": 392,
    "Pinnacle": 325,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 17
+  "kalshi_legs_today": 18
  },
  "shadow": [
   {
@@ -2059,9 +2059,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.649,
+   "p": 0.633,
    "price": 0.54,
-   "edge": 0.092,
+   "edge": 0.076,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2525,8 +2525,8 @@
    "line": 34.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.663,
-   "price": 0.54,
-   "edge": 0.106,
+   "price": 0.53,
+   "edge": 0.116,
    "news": "Grant Williams is out: Brandon Miller hit the under in 11/13 games without him vs 19/27 with him.",
    "result": null
   },
@@ -2569,9 +2569,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.666,
+   "p": 0.67,
    "price": 0.52,
-   "edge": 0.129,
+   "edge": 0.133,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/13 games without him vs 19/27 with him.",
    "result": null
   },
@@ -2599,9 +2599,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.581,
+   "p": 0.582,
    "price": 0.5,
-   "edge": 0.063,
+   "edge": 0.064,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2659,9 +2659,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.536,
+   "p": 0.537,
    "price": 0.48,
-   "edge": 0.039,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2869,9 +2869,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.598,
+   "p": 0.599,
    "price": 0.52,
-   "edge": 0.061,
+   "edge": 0.062,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2884,9 +2884,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.491,
+   "p": 0.492,
    "price": 0.44,
-   "edge": 0.034,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3019,9 +3019,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.55,
+   "p": 0.552,
    "price": 0.5,
-   "edge": 0.033,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
