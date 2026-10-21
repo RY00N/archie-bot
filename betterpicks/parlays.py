@@ -184,20 +184,62 @@ def situations(prop, line):
         out.append(("debut", debuts))
     if last and last[-1][1][:4] >= str(int(day[:4]) - (0 if day[5:7] >= "10" else 1)) and backs:
         gap = (datetime.fromisoformat(day) - datetime.fromisoformat(last[-1][1][:10])).days
-        if gap >= 7 and not (day[5:7] == "10" and last[-1][4] != "regular"):
+        if 7 <= gap <= 60:   # longer = offseason, not missed games
             out.append(("back", backs))
     opp = opp_of(prop)
+    res = [(n, len(rs), round(sum(r[0] for r in rs) / len(rs), 1), sum(r[0] > line for r in rs) / len(rs), None)
+           for n, rs in out]
     vs = [r for r in g if opp and code(r[2]) == opp]
     if len(vs) >= 3:
-        out.append(("vs " + opp, vs))
-    return [(n, len(rs), round(sum(r[0] for r in rs) / len(rs), 1), sum(r[0] > line for r in rs)) for n, rs in out]
+        # Ryan 2026-10-21: the opponent's lineup changes, so each past game counts by how much of that night's
+        # rotation is still in tonight's rotation (a fully new lineup counts for nothing)
+        now = rotation(vs[-1][2], day, current=True)
+        ws = [len(now & rotation(r[2], r[1][:10])) / 8 if now else 1.0 for r in vs]
+        if sum(ws) >= 1.5:
+            rate = sum(w * (r[0] > line) for w, r in zip(ws, vs)) / sum(ws)
+            res.append(("vs " + opp, len(vs), round(sum(r[0] for r in vs) / len(vs), 1), rate,
+                        round(sum(ws) / len(ws), 2) if now else None))
+    return res
+
+
+_ROT = {}
+
+
+def rotation(team, day, current=False):
+    """A team's top 8 by PRA: in its game on `day`, or (current) across its last 3 games before `day`."""
+    key = (team, day, current)
+    if key not in _ROT:
+        con = _CONN.get(stat_query("nba", "pra")[0])
+        _ROT[key] = set()
+        if con is not None:
+            try:
+                if current:
+                    days = [r[0] for r in con.execute("select distinct date from player_games where team=? and date<? "
+                                                      "order by date desc limit 3", (team, day))]
+                else:
+                    days = [day]
+                rows = con.execute(f"select player, avg(pra) from player_games where team=? and date in "
+                                   f"({','.join('?' * len(days))}) group by player order by 2 desc limit 8",
+                                   (team, *days)).fetchall() if days else []
+                _ROT[key] = {r[0] for r in rows}
+            except sqlite3.OperationalError:
+                pass
+    return _ROT[key]
 
 
 SIT_WORDS = {"debut": "first games with a new team", "back": "first games back after a week or more out"}
 
 
 def situation_text(sits, line):
-    return " ".join(f"In {SIT_WORDS.get(n, 'games ' + n)}: {avg:g} avg, {o} of {k} over {line}." for n, k, avg, o in sits)
+    out = []
+    for n, k, avg, rate, same in sits:
+        t = f"In {SIT_WORDS.get(n, 'games ' + n)}: {avg:g} avg over {k} games"
+        if same is not None:
+            t += f", {same:.0%} of that rotation is still there, so the matchup counts as {rate:.0%} over {line}"
+        else:
+            t += f", {round(rate * k)} of {k} over {line}"
+        out.append(t + ".")
+    return " ".join(out)
 
 
 def opp_of(prop):
@@ -211,11 +253,14 @@ def fair(prop, line, side):
         return None
     h = history(prop["league"], prop["stat"], prop["player"], line, opp_of(prop), team=prop.get("team"))
     sits = [x for x in situations(prop, line) if x[1] >= 3]
-    sit = sum(o / k for _, k, _, o in sits) / len(sits) if sits else None
-    if sit is None:
-        p_over = 0.8 * mp + 0.2 * h["hit_rate"] if h else mp
-    else:   # tonight's spot (debut, back from time off, this opponent) gets a 10% say
-        p_over = 0.75 * mp + 0.15 * h["hit_rate"] + 0.1 * sit if h else 0.9 * mp + 0.1 * sit
+    base = 0.8 * mp + 0.2 * h["hit_rate"] if h else mp
+    if sits:   # tonight's spot gets up to a 10% say; a matchup vs a mostly new lineup gets less
+        conf = [1.0 if x[4] is None else x[4] for x in sits]
+        sit_w = 0.1 * sum(conf) / len(conf)
+        sit = sum(c * x[3] for c, x in zip(conf, sits)) / sum(conf) if sum(conf) else base
+        p_over = (1 - sit_w) * base + sit_w * sit
+    else:
+        p_over = base
     p = p_over if side == "over" else 1 - p_over
     return {"p": round(p, 3), "market_p": round(mp if side == "over" else 1 - mp, 3), "books": nb, "hist": h,
             "spots": situation_text(sits, line)}
