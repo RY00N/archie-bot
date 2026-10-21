@@ -1482,7 +1482,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 09:00 PT",
-  "props_today": 961,
+  "props_today": 964,
   "kalshi_props_today": 427,
   "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 17
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -2075,8 +2075,8 @@
    "line": 2.5,
    "start": "2026-10-22T00:30:00Z",
    "p": 0.434,
-   "price": 0.37,
-   "edge": 0.048,
+   "price": 0.36,
+   "edge": 0.058,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3068,6 +3068,21 @@
    "price": 0.5,
    "edge": 0.031,
    "news": "News: D'Andre Swift missing from Bears injury report doesn't tell the whole story - Bear Goggles On",
+   "result": null
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "KXNFLREC-26OCT22NECHI-NEECHISM86-3",
+   "league": "nfl",
+   "player": "Efton Chism",
+   "stat": "receptions",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-23T00:15:00Z",
+   "p": 0.388,
+   "price": 0.34,
+   "edge": 0.032,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
