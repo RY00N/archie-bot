@@ -183,22 +183,86 @@ def part_sentiment():
     return out
 
 
-def part_x():
-    """Latest QQQ-relevant X posts: feeds/qqq-x-live.json (xfeed.maybe_run on the droplet, every 3 s in market hours)
-    or feeds/qqq-x.json (hourly cloud copy pushed to the repo), whichever is newer."""
+def _x_load():
+    """Newest X feed: feeds/qqq-x-live.json (xfeed on the droplet, every 3 s in market hours) or feeds/qqq-x.json
+    (hourly cloud copy pushed to the repo), whichever is newer. None if neither exists."""
     xs = []
     for f in ("qqq-x-live.json", "qqq-x.json"):
         try:
             xs.append(json.load(open(os.path.join(FEEDS, f))))
         except Exception:
             pass
-    x = max(xs, key=lambda d: d["updated"])
-    age = (datetime.now(timezone.utc) - datetime.strptime(x["updated"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc))
-    rel = [p for p in x["posts"] if p["qqq"]]
-    pick = lambda tg, n: [{"t": p["at"][:16] + "Z", "who": p["handle"], "text": p["text"][:240]}
-                          for p in rel if p["tag"] == tg][:n]
-    return {"updated": x["updated"], "age_min": int(age.total_seconds() // 60),
-            "headline": pick("headline", 8), "flow": pick("flow", 5), "analysis": pick("analysis", 5)}
+    return max(xs, key=lambda d: d["updated"]) if xs else None
+
+
+XNUM = re.compile(r"\d[\d.,]*\s?(%|bps?|basis points?|billion|bn|million|mln|k\b)|\$\d|\b\d{3,5}(\.\d+)?\b")
+XUS = re.compile(r"\b(qqq|nasdaq|ndx|nq|s&p|spx|spy|es|dow|us (stocks|futures|yields|treasur\w+|10-?y\w*)|treasur\w+|"
+                 r"10-?year|vix|gamma|0dte|call wall|put wall|dark pool|block)\b", re.I)
+XOLD = re.compile(r"\b(prior to|since (19|20)\d\d|in (19|20)[0-2]\d\b|years? ago|history|historically|back in)\b", re.I)  # backward-looking
+XJUNK = re.compile(r"price target|subscribe|newsletter|read more|see more|polymarket|h/t|giveaway|link in bio|"
+                   r"enjoyed this", re.I)
+
+
+def x_useful(hours=6):
+    """Ryan 2026-10-21: "archie's slave filters only useful info then tells archie". From the X feed keep only posts
+    that are (1) squawks the squawk filter would act on (Fed lines, US data prints, top-5 shocks, block trades),
+    (2) catalysts the catalyst filter knows (FOMC/CPI/PPI/NFP, top-5 earnings, Nasdaq-100 changes) or (3) hard,
+    US-index-level market or options-flow numbers. Drops retweets, analyst price targets, promos and foreign noise.
+    Same story from 2+ accounts is merged and marked confirmed. Returns (raw count, kept list newest first)."""
+    x = _x_load()
+    if not x:
+        return 0, []
+    now = datetime.now(timezone.utc)
+    kept, groups = [], {}
+    for p in x["posts"]:
+        t = datetime.strptime(p["at"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+        text = re.sub(r"[^\x00-\x7F\u2018-\u201d]+", " ", p["text"]).replace("BREAKING", "").strip(" :\n")
+        first = re.split(r"\n|(?<=[.!?])\s", text)[0].strip()
+        if now - t > timedelta(hours=hours) or p.get("retweet") or len(first) < 12 or XJUNK.search(text) or XOLD.search(first):
+            continue
+        sq, cat = _sq_classify(first), _classify(first)
+        if sq:
+            kind, bias, pre = "SQUAWK", sq[1], sq[2]
+        elif cat:
+            kind, bias, pre = "CATALYST:" + cat[0], _bias(cat[0], cat[1], [first]).replace("BULLISH", "SHARP_BULLISH").replace("BEARISH", "SHARP_BEARISH").replace("NEUTRAL", "NO_BIAS"), "INFO"
+        elif p.get("qqq") and XUS.search(first) and XNUM.search(first) and not OPINION.search(first):
+            kind, bias, pre = ("FLOW" if p.get("tag") == "flow" else "MARKET"), "NO_BIAS", "INFO"
+        else:
+            continue
+        key = " ".join(re.findall(r"[a-z0-9.%]+", first.lower())[:7])
+        if key in groups:
+            groups[key]["confirmed_by"] = sorted(set(groups[key]["confirmed_by"] + [p["handle"]]))
+            continue
+        row = {"t": p["at"][:16] + "Z", "who": p["handle"], "kind": kind, "text": first[:200], "bias": bias,
+               "precaution": pre, "confirmed_by": [p["handle"]], "url": p.get("url")}
+        groups[key] = row; kept.append(row)
+    return len(x["posts"]), kept
+
+
+def part_x():
+    """Only the useful X posts (see x_useful), for qqq-intel.json."""
+    x = _x_load()
+    if not x:
+        return {"error": "no X feed yet"}
+    age = datetime.now(timezone.utc) - datetime.strptime(x["updated"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    raw, kept = x_useful(hours=16)
+    return {"updated": x["updated"], "age_min": int(age.total_seconds() // 60), "raw_posts": raw, "kept": len(kept),
+            "useful": kept[:15]}
+
+
+def part_research():
+    """New notes from the Social research bot (archie/research/*.md, last 3 days): title + path, newest first."""
+    d = os.path.join(HERE, "research")
+    out = []
+    try:
+        for f in sorted(os.listdir(d), key=lambda f: -os.path.getmtime(os.path.join(d, f))):
+            p = os.path.join(d, f)
+            if f.endswith(".md") and time.time() - os.path.getmtime(p) < 3 * 86400:
+                title = next((l.strip("# \n") for l in open(p) if l.startswith("#")), f)
+                out.append({"file": "research/" + f, "title": title[:150]})
+    except Exception:
+        pass
+    return out[:8]
 
 
 def summarize(r):
@@ -236,6 +300,11 @@ def summarize(r):
         r["darkpool_yesterday"] = json.load(open(os.path.join(DP_DIR, last_dp)))["say"]
     except Exception:
         pass
+    for u in (r.get("x") or {}).get("useful", [])[:12]:
+        if u["kind"] == "SQUAWK" and u["precaution"] != "CLEAR_MOMENTUM" or len(u["confirmed_by"]) > 1:
+            caution.append(f"X {u['kind'].lower()} ({'/'.join(u['confirmed_by'][:3])}): {u['text'][:90]}")
+            if len(caution) > 12:
+                break
     pre, row = squawk_status()
     if row:
         caution.append(f"squawk says {pre}: {row['catalyst']} ({row['directional_bias']})")
@@ -256,7 +325,7 @@ def run(log=print):
          "note": "Info only, not backtested. Never places or blocks a trade."}
     for name, fn in (("futures", part_futures), ("megacaps", part_megacaps), ("calendar", lambda: part_calendar(now)),
                      ("earnings", lambda: part_earnings(now)), ("news", lambda: part_news(now)), ("sentiment", part_sentiment),
-                     ("x", part_x)):
+                     ("x", part_x), ("research", part_research)):
         try:
             r[name] = fn()
         except Exception as e:
@@ -298,7 +367,7 @@ MACRO_KEYS = [("FOMC", r"\b(fomc|rate decision|fed (holds|cuts|raises|hikes|keep
                       r"fed (cuts|raises|hikes|lowers) .*basis points?)\b"),
               ("CPI", r"\b(cpi|consumer prices?|consumer price index)\b"),
               ("PPI", r"\b(ppi|producer prices?|producer price index|wholesale (prices|inflation))\b"),
-              ("NFP", r"\b(nonfarm|non-farm|payrolls?|jobs report|unemployment rate)\b")]
+              ("NFP", r"\b(nonfarm|non-farm|payrolls|jobs report|unemployment rate)\b")]
 EARN_WORDS = re.compile(r"\b(results?|earnings|quarter(ly)?|q[1-4]|revenue|sales|eps|profit|guidance|outlook|forecast|"
                         r"10-[qk]|8-k|sec filing|files?)\b", re.I)
 STRUCT = re.compile(r"(nasdaq-?100|ndx).*(rebalanc|add(s|ed)?|delet|remov|join|replace|reconstitut)|"
@@ -389,6 +458,15 @@ def scan_catalysts(log=print, hours=36):
                                                  "link": it["link"], "type": c[0], "key": c[1]}
         except Exception as e:
             errors.append(f"{site}: {str(e)[:60]}")
+    try:  # X posts count as one more site ("x.com"), so X + one news site can confirm an event
+        _, xu = x_useful(hours=hours)
+        for u in xu:
+            c = _classify(u["text"])
+            if c and not HYPE.search(u["text"]):
+                seen[("x.com", u["text"])] = {"site": "x.com", "t": u["t"][:16] + ":00+00:00", "title": u["text"],
+                                             "link": u.get("url") or "", "type": c[0], "key": c[1]}
+    except Exception as e:
+        errors.append(f"x.com: {str(e)[:60]}")
     rows = list(seen.values())
     # Group by event; an event counts once two or more different sites carry it.
     events = {}
@@ -484,6 +562,9 @@ def _sq_classify(h):
     """(kind, bias, precaution) or None."""
     if SQ_DATA.search(h):
         m = re.search(r"actual\s*(-?[\d.]+).*?(forecast|expected|est\.?)\s*(-?[\d.]+)", h, re.I)
+        m2 = re.search(r"(-?[\d.]+)%?\s*vs\.?\s*(-?[\d.]+)%?\s*(forecast|expected|est|consensus)", h, re.I)
+        if m2 and not m:
+            m = type("M", (), {"group": lambda self, i, g=(None, m2.group(1), None, m2.group(2)): g[i]})()
         bias = "NO_BIAS"
         if m and not re.search(r"payrolls|non-?farm|unemployment", h, re.I):
             a, f = float(m.group(1)), float(m.group(3))
@@ -526,6 +607,14 @@ def scan_squawk(log=print):
                 heads.append(("RAW_TERMINAL", datetime.fromisoformat(n["created_at"].replace("Z", "+00:00")), n["headline"]))
         except Exception as e:
             log(f"SQUAWK alpaca failed: {str(e)[:80]}")
+    try:  # X squawk accounts (Ryan 2026-10-21: X, the research bot and Archie's Slave work together)
+        _, xu = x_useful(hours=2)
+        for u in xu:
+            if u["kind"] == "SQUAWK":
+                heads.append(("SQUAWK", datetime.strptime(u["t"], "%Y-%m-%dT%H:%MZ").replace(tzinfo=timezone.utc),
+                              u["text"]))
+    except Exception as e:
+        log(f"SQUAWK x feed failed: {str(e)[:80]}")
     new = []
     for ch, t, h in heads:
         if now - t > timedelta(hours=2) or OPINION.search(_sq_short(h, 40)) and ch == "RAW_TERMINAL":
