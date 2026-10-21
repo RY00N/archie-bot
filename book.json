@@ -1484,18 +1484,18 @@
   "props_at": "2026-10-21 08:00 PT",
   "props_today": 918,
   "kalshi_props_today": 419,
-  "kalshi_priced_today": 25,
+  "kalshi_priced_today": 26,
   "books_on_kalshi_props": {
-   "AN Consensus": 417,
+   "AN Consensus": 418,
    "AN Open": 409,
    "BetMGM": 273,
    "BetRivers": 350,
-   "Caesars": 350,
+   "Caesars": 351,
    "DraftKings": 400,
    "FanDuel": 367,
-   "Fanatics": 335,
+   "Fanatics": 336,
    "Parx": 351,
-   "Pinnacle": 244,
+   "Pinnacle": 286,
    "Sleeper": 408,
    "Underdog": 419,
    "Unibet": 61,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 16
+  "kalshi_legs_today": 17
  },
  "shadow": [
   {
@@ -2344,9 +2344,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T02:00:00Z",
-   "p": 0.709,
+   "p": 0.71,
    "price": 0.56,
-   "edge": 0.132,
+   "edge": 0.133,
    "news": "Jimmy Butler III is out: Draymond Green hit the over in 24/37 games without him vs 0/3 with him.",
    "result": null
   },
@@ -2539,9 +2539,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.667,
+   "p": 0.666,
    "price": 0.52,
-   "edge": 0.13,
+   "edge": 0.129,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/13 games without him vs 19/27 with him.",
    "result": null
   },
@@ -2824,9 +2824,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.49,
+   "p": 0.491,
    "price": 0.44,
-   "edge": 0.033,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2900,8 +2900,8 @@
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.475,
-   "price": 0.41,
-   "edge": 0.048,
+   "price": 0.42,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2932,6 +2932,21 @@
    "p": 0.583,
    "price": 0.52,
    "edge": 0.046,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBAREB-26OCT21SACLAC-SACKMURRAY13-6",
+   "league": "nba",
+   "player": "Keegan Murray",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-22T02:30:00Z",
+   "p": 0.459,
+   "price": 0.41,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
