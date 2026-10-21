@@ -1482,24 +1482,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 03:00 PT",
-  "props_today": 913,
-  "kalshi_props_today": 418,
+  "props_today": 914,
+  "kalshi_props_today": 419,
   "kalshi_priced_today": 29,
   "books_on_kalshi_props": {
-   "AN Consensus": 417,
+   "AN Consensus": 419,
    "AN Open": 409,
-   "BetMGM": 203,
+   "BetMGM": 204,
    "BetRivers": 332,
-   "Caesars": 351,
+   "Caesars": 352,
    "DraftKings": 401,
    "FanDuel": 377,
-   "Fanatics": 305,
-   "Parx": 330,
+   "Fanatics": 307,
+   "Parx": 332,
    "Pinnacle": 245,
-   "Sleeper": 362,
-   "Underdog": 418,
+   "Sleeper": 407,
+   "Underdog": 419,
    "Unibet": 46,
-   "bet365": 418
+   "bet365": 419
   },
   "data_files": [
    "mlb.sqlite",
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -2239,9 +2239,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.512,
+   "p": 0.514,
    "price": 0.45,
-   "edge": 0.045,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2404,9 +2404,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.671,
+   "p": 0.669,
    "price": 0.53,
-   "edge": 0.124,
+   "edge": 0.122,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/13 games without him vs 19/27 with him.",
    "result": null
   },
@@ -2584,9 +2584,9 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.553,
+   "p": 0.556,
    "price": 0.49,
-   "edge": 0.046,
+   "edge": 0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2660,8 +2660,8 @@
    "line": 7.5,
    "start": "2026-10-22T00:30:00Z",
    "p": 0.528,
-   "price": 0.39,
-   "edge": 0.121,
+   "price": 0.4,
+   "edge": 0.111,
    "news": "Caleb Martin is out: Daniel Gafford hit the over in 8/17 games without him vs 9/23 with him; Tarik Biberovic (F) is out, so Daniel Gafford's role likely grows; Santi Aldama (F) is out, so Daniel Gafford's role likely grows.",
    "result": null
   },
@@ -2809,9 +2809,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.535,
+   "p": 0.533,
    "price": 0.43,
-   "edge": 0.088,
+   "edge": 0.086,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
