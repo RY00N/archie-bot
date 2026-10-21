@@ -1496,7 +1496,7 @@
    "Fanatics": 382,
    "Parx": 375,
    "Pinnacle": 305,
-   "Sleeper": 441,
+   "Sleeper": 440,
    "Underdog": 452,
    "Unibet": 86,
    "bet365": 452
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 27
+  "kalshi_legs_today": 26
  },
  "shadow": [
   {
@@ -2705,8 +2705,8 @@
    "line": 34.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.668,
-   "price": 0.54,
-   "edge": 0.111,
+   "price": 0.53,
+   "edge": 0.121,
    "news": "Grant Williams is out: Brandon Miller hit the under in 11/13 games without him vs 19/27 with him.",
    "result": null
   },
@@ -3140,8 +3140,8 @@
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.521,
-   "price": 0.46,
-   "edge": 0.044,
+   "price": 0.47,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
