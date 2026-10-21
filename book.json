@@ -1482,12 +1482,12 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 03:00 PT",
-  "props_today": 912,
-  "kalshi_props_today": 417,
+  "props_today": 913,
+  "kalshi_props_today": 418,
   "kalshi_priced_today": 29,
   "books_on_kalshi_props": {
-   "AN Consensus": 416,
-   "AN Open": 408,
+   "AN Consensus": 417,
+   "AN Open": 409,
    "BetMGM": 203,
    "BetRivers": 332,
    "Caesars": 351,
@@ -1497,9 +1497,9 @@
    "Parx": 332,
    "Pinnacle": 245,
    "Sleeper": 406,
-   "Underdog": 417,
+   "Underdog": 418,
    "Unibet": 46,
-   "bet365": 417
+   "bet365": 418
   },
   "data_files": [
    "mlb.sqlite",
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -2435,8 +2435,8 @@
    "line": 19.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.648,
-   "price": 0.41,
-   "edge": 0.221,
+   "price": 0.43,
+   "edge": 0.201,
    "news": "Brandon Ingram is out: RJ Barrett hit the over in 8/9 games without him vs 18/31 with him.",
    "result": null
   },
