@@ -1481,16 +1481,16 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-21 09:00 PT",
-  "props_today": 971,
+  "props_at": "2026-10-21 10:00 PT",
+  "props_today": 978,
   "kalshi_props_today": 429,
-  "kalshi_priced_today": 27,
+  "kalshi_priced_today": 29,
   "books_on_kalshi_props": {
    "AN Consensus": 426,
    "AN Open": 419,
    "BetMGM": 281,
    "BetRivers": 358,
-   "Caesars": 358,
+   "Caesars": 362,
    "DraftKings": 407,
    "FanDuel": 375,
    "Fanatics": 344,
@@ -1498,8 +1498,8 @@
    "Pinnacle": 296,
    "Sleeper": 419,
    "Underdog": 429,
-   "Unibet": 67,
-   "bet365": 428
+   "Unibet": 69,
+   "bet365": 429
   },
   "data_files": [
    "mlb.sqlite",
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 18
+  "kalshi_legs_today": 21
  },
  "shadow": [
   {
@@ -2059,9 +2059,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.657,
+   "p": 0.656,
    "price": 0.6,
-   "edge": 0.04,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2239,8 +2239,8 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.647,
-   "price": 0.6,
+   "p": 0.637,
+   "price": 0.59,
    "edge": 0.03,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
@@ -2345,8 +2345,8 @@
    "line": 9.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.5,
-   "price": 0.42,
-   "edge": 0.063,
+   "price": 0.41,
+   "edge": 0.073,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2614,9 +2614,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.555,
+   "p": 0.554,
    "price": 0.48,
-   "edge": 0.058,
+   "edge": 0.057,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2629,9 +2629,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.544,
+   "p": 0.543,
    "price": 0.48,
-   "edge": 0.047,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2824,9 +2824,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.6,
+   "p": 0.598,
    "price": 0.53,
-   "edge": 0.053,
+   "edge": 0.051,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2839,9 +2839,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.493,
+   "p": 0.492,
    "price": 0.44,
-   "edge": 0.036,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2884,9 +2884,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.602,
-   "price": 0.55,
-   "edge": 0.035,
+   "p": 0.61,
+   "price": 0.56,
+   "edge": 0.033,
    "news": "News: Jarace Walker no longer on Indiana Pacers injury report - Total Apex Sports",
    "result": null
   },
@@ -2915,8 +2915,8 @@
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.472,
-   "price": 0.41,
-   "edge": 0.045,
+   "price": 0.42,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
