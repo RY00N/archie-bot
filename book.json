@@ -1489,12 +1489,12 @@
    "AN Consensus": 416,
    "AN Open": 409,
    "BetMGM": 273,
-   "BetRivers": 350,
-   "Caesars": 353,
+   "BetRivers": 352,
+   "Caesars": 355,
    "DraftKings": 400,
    "FanDuel": 367,
    "Fanatics": 343,
-   "Parx": 352,
+   "Parx": 353,
    "Pinnacle": 286,
    "Sleeper": 408,
    "Underdog": 419,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 16
  },
  "shadow": [
   {
@@ -2344,9 +2344,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T02:00:00Z",
-   "p": 0.71,
+   "p": 0.711,
    "price": 0.56,
-   "edge": 0.133,
+   "edge": 0.134,
    "news": "Jimmy Butler III is out: Draymond Green hit the over in 24/37 games without him vs 0/3 with him.",
    "result": null
   },
@@ -2989,9 +2989,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.533,
+   "p": 0.534,
    "price": 0.46,
-   "edge": 0.056,
+   "edge": 0.057,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
