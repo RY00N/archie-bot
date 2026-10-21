@@ -1484,21 +1484,21 @@
   "props_at": "2026-10-21 07:00 PT",
   "props_today": 918,
   "kalshi_props_today": 419,
-  "kalshi_priced_today": 30,
+  "kalshi_priced_today": 29,
   "books_on_kalshi_props": {
-   "AN Consensus": 417,
+   "AN Consensus": 416,
    "AN Open": 409,
    "BetMGM": 269,
    "BetRivers": 345,
    "Caesars": 354,
    "DraftKings": 400,
    "FanDuel": 372,
-   "Fanatics": 333,
+   "Fanatics": 334,
    "Parx": 345,
    "Pinnacle": 244,
    "Sleeper": 408,
    "Underdog": 419,
-   "Unibet": 60,
+   "Unibet": 61,
    "bet365": 419
   },
   "data_files": [
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 16
  },
  "shadow": [
   {
@@ -2314,9 +2314,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.504,
+   "p": 0.508,
    "price": 0.44,
-   "edge": 0.047,
+   "edge": 0.051,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2509,9 +2509,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.668,
+   "p": 0.667,
    "price": 0.52,
-   "edge": 0.131,
+   "edge": 0.13,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/13 games without him vs 19/27 with him.",
    "result": null
   },
@@ -2779,9 +2779,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.599,
+   "p": 0.598,
    "price": 0.52,
-   "edge": 0.062,
+   "edge": 0.061,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2914,9 +2914,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.548,
+   "p": 0.551,
    "price": 0.5,
-   "edge": 0.031,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
