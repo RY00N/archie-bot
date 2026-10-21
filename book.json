@@ -1496,7 +1496,7 @@
    "Fanatics": 440,
    "Parx": 454,
    "Pinnacle": 371,
-   "Sleeper": 537,
+   "Sleeper": 538,
    "Underdog": 545,
    "Unibet": 98,
    "bet365": 541
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 27
+  "kalshi_legs_today": 28
  },
  "shadow": [
   {
@@ -2663,6 +2663,21 @@
    "price": 0.48,
    "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBAPTS-26OCT21CHITOR-CHIJGIDDEY3-15",
+   "league": "nba",
+   "player": "Josh Giddey",
+   "stat": "points",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-10-21T23:30:00Z",
+   "p": 0.531,
+   "price": 0.44,
+   "edge": 0.074,
+   "news": "Dailyn Swain (G) is out, so Josh Giddey's role likely grows; Jordan Hawkins (G) is out, so Josh Giddey's role likely grows.",
    "result": null
   },
   {
