@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -2742,6 +2742,21 @@
   },
   {
    "date": "2026-10-21",
+   "ticker": "KXNBAREB-26OCT21MINMIA-MINJMCDANIELS3-6",
+   "league": "nba",
+   "player": "Jaden McDaniels",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-21T23:30:00Z",
+   "p": 0.472,
+   "price": 0.39,
+   "edge": 0.065,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
    "ticker": "KXNBAREB-26OCT21PHXPOR-PORDCLINGAN23-12",
    "league": "nba",
    "player": "Donovan Clingan",
@@ -2809,9 +2824,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.533,
+   "p": 0.532,
    "price": 0.43,
-   "edge": 0.086,
+   "edge": 0.085,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
