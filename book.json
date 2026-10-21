@@ -1337,12 +1337,12 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-20 18:00 PT",
-  "props_today": 95,
-  "kalshi_props_today": 49,
+  "props_today": 94,
+  "kalshi_props_today": 48,
   "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
-   "Sleeper": 49,
-   "Underdog": 49
+   "Sleeper": 48,
+   "Underdog": 48
   },
   "data_files": [
    "mlb.sqlite",
@@ -2157,9 +2157,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.554,
+   "p": 0.553,
    "price": 0.5,
-   "edge": 0.037,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
