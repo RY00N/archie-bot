@@ -143,6 +143,63 @@ def history(league, stat, player, line, opp=None, n=12, team=None):
     return out
 
 
+_GAMES = {}
+
+
+def nba_games(stat, player):
+    """Every NBA game for this stat, oldest first, with team and season type (career, all teams)."""
+    key = (stat, player)
+    if key not in _GAMES:
+        q = stat_query("nba", stat)
+        _GAMES[key] = []
+        if q and rows_for("nba", stat, player) is not None:
+            try:
+                rows = _CONN[q[0]].execute(q[1].replace(", opp from", ", opp, team, season_type from"),
+                                           (player, player)).fetchall()
+                _GAMES[key] = [r for r in reversed(rows) if r[0] is not None and r[4] != "preseason"]
+            except sqlite3.OperationalError:   # older slim DB without team/season_type
+                pass
+    return _GAMES[key]
+
+
+def situations(prop, line):
+    """Ryan 2026-10-21: how a player does in the spot he's in tonight. NBA only for now.
+    debut = first real game for a new team; back = first game after 7+ days off mid-season (injury, illness, rest);
+    vs = every career game against tonight's opponent. Returns [(name, n, avg, overs)] for the spots that apply."""
+    if prop.get("league") != "nba" or not prop.get("start"):
+        return []
+    day = prop["start"][:10]
+    g = [r for r in nba_games(prop["stat"], prop["player"]) if r[1][:10] < day]   # only games before tonight
+    if len(g) < 10:
+        return []
+    team = prop.get("team")
+    code = lambda t: NBA_CODE.get(t, t)
+    debuts = [g[i] for i in range(1, len(g)) if g[i][3] != g[i - 1][3]]
+    backs = [g[i] for i in range(1, len(g)) if g[i][4] == g[i - 1][4] == "regular"
+             and (datetime.fromisoformat(g[i][1][:10]) - datetime.fromisoformat(g[i - 1][1][:10])).days >= 7
+             and not (g[i][1][5:7] == "02" and 10 <= int(g[i][1][8:10]) <= 28)]   # skip the All-Star break
+    last = g
+    out = []
+    if team and last and code(last[-1][3]) != team and debuts:
+        out.append(("debut", debuts))
+    if last and last[-1][1][:4] >= str(int(day[:4]) - (0 if day[5:7] >= "10" else 1)) and backs:
+        gap = (datetime.fromisoformat(day) - datetime.fromisoformat(last[-1][1][:10])).days
+        if gap >= 7 and not (day[5:7] == "10" and last[-1][4] != "regular"):
+            out.append(("back", backs))
+    opp = opp_of(prop)
+    vs = [r for r in g if opp and code(r[2]) == opp]
+    if len(vs) >= 3:
+        out.append(("vs " + opp, vs))
+    return [(n, len(rs), round(sum(r[0] for r in rs) / len(rs), 1), sum(r[0] > line for r in rs)) for n, rs in out]
+
+
+SIT_WORDS = {"debut": "first games with a new team", "back": "first games back after a week or more out"}
+
+
+def situation_text(sits, line):
+    return " ".join(f"In {SIT_WORDS.get(n, 'games ' + n)}: {avg:g} avg, {o} of {k} over {line}." for n, k, avg, o in sits)
+
+
 def opp_of(prop):
     g = prop.get("game", "").replace(" vs ", " @ ").split(" @ ")
     return next((t for t in g if t != prop.get("team")), None) if len(g) == 2 else None
@@ -153,9 +210,15 @@ def fair(prop, line, side):
     if mp is None:
         return None
     h = history(prop["league"], prop["stat"], prop["player"], line, opp_of(prop), team=prop.get("team"))
-    p_over = 0.8 * mp + 0.2 * h["hit_rate"] if h else mp
+    sits = [x for x in situations(prop, line) if x[1] >= 3]
+    sit = sum(o / k for _, k, _, o in sits) / len(sits) if sits else None
+    if sit is None:
+        p_over = 0.8 * mp + 0.2 * h["hit_rate"] if h else mp
+    else:   # tonight's spot (debut, back from time off, this opponent) gets a 10% say
+        p_over = 0.75 * mp + 0.15 * h["hit_rate"] + 0.1 * sit if h else 0.9 * mp + 0.1 * sit
     p = p_over if side == "over" else 1 - p_over
-    return {"p": round(p, 3), "market_p": round(mp if side == "over" else 1 - mp, 3), "books": nb, "hist": h}
+    return {"p": round(p, 3), "market_p": round(mp if side == "over" else 1 - mp, 3), "books": nb, "hist": h,
+            "spots": situation_text(sits, line)}
 
 
 def describe(prop, side, line, f):
@@ -165,6 +228,8 @@ def describe(prop, side, line, f):
         s += f"; hit {h['hit_rate']:.0%} of last {h['games']} (avg {h['avg']})"
         if h.get("vs_opp"):
             s += f"; {h['vs_opp']}"
+    if f.get("spots"):
+        s += ". " + f["spots"].rstrip(".")
     return s + f". Fair {f['p']:.0%}."
 
 
@@ -407,7 +472,8 @@ def make_entry(today, app, kind, combo, mult, ev):
                       "stat": l["prop"]["stat"], "side": l["side"], "line": l["line"], "price": l.get("price"),
                       "ticker": l.get("ticker"), "game": l["prop"]["game"], "start": l["prop"]["start"],
                       "p": l["p"], "edge": l.get("edge"), "news": l.get("news"), "why": describe(l["prop"], l["side"], l["line"], l),
-                      "case": recent_case(l["prop"]["league"], l["prop"]["stat"], l["prop"]["player"], l["side"], l["line"]),
+                      "case": " ".join(x for x in (recent_case(l["prop"]["league"], l["prop"]["stat"], l["prop"]["player"], l["side"], l["line"]),
+                                                   l.get("spots")) if x),
                       "result": None} for l in combo]}
 
 
