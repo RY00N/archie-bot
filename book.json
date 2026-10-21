@@ -1482,7 +1482,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 13:00 PT",
-  "props_today": 987,
+  "props_today": 988,
   "kalshi_props_today": 545,
   "kalshi_priced_today": 30,
   "books_on_kalshi_props": {
@@ -1490,15 +1490,15 @@
    "AN Open": 534,
    "BetMGM": 377,
    "BetRivers": 453,
-   "Caesars": 469,
+   "Caesars": 472,
    "DraftKings": 509,
-   "FanDuel": 479,
+   "FanDuel": 480,
    "Fanatics": 440,
    "Parx": 454,
    "Pinnacle": 371,
    "Sleeper": 537,
    "Underdog": 545,
-   "Unibet": 97,
+   "Unibet": 98,
    "bet365": 541
   },
   "data_files": [
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 25
+  "kalshi_legs_today": 27
  },
  "shadow": [
   {
@@ -2044,9 +2044,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.64,
+   "p": 0.643,
    "price": 0.59,
-   "edge": 0.033,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2524,10 +2524,10 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-22T02:30:00Z",
-   "p": 0.571,
-   "price": 0.47,
-   "edge": 0.084,
-   "news": "Bradley Beal (G) is out, so Darius Garland's role likely grows; Jordan Miller is out: Darius Garland hit the under in 4/4 games without him vs 14/19 with him.",
+   "p": 0.503,
+   "price": 0.45,
+   "edge": 0.036,
+   "news": "Bradley Beal (G) is out, so Darius Garland's role likely grows; Jordan Miller is out: Darius Garland hit the under in 4/5 games without him vs 11/15 with him.",
    "result": null
   },
   {
@@ -2750,8 +2750,8 @@
    "line": 14.5,
    "start": "2026-10-22T00:00:00Z",
    "p": 0.534,
-   "price": 0.46,
-   "edge": 0.057,
+   "price": 0.45,
+   "edge": 0.067,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2764,9 +2764,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.544,
+   "p": 0.538,
    "price": 0.46,
-   "edge": 0.067,
+   "edge": 0.061,
    "news": "News: Jarace Walker no longer on Indiana Pacers injury report - Total Apex Sports",
    "result": null
   },
