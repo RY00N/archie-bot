@@ -79,7 +79,7 @@ def file_question(q):
                 if e.code != 404:
                     raise
                 items, sha = [], None
-            items = (items + [{k: q[k] for k in ("id", "user", "text", "at")}])[-50:]
+            items = (items + [{k: q[k] for k in ("id", "user", "text", "at", "auto") if k in q}])[-50:]
             gh("PUT", "/contents/questions.json", {"message": "BetterPicks: /bp question", "branch": ASK_BRANCH,
                "content": base64.b64encode(json.dumps(items, indent=1).encode()).decode(), **({"sha": sha} if sha else {})})
             print("filed /bp question", q["id"], flush=True); return
@@ -95,20 +95,38 @@ def on_bp(d):
     who = d.get("member", {}).get("user") or d.get("user") or {}
     q = {"id": d["id"], "user": who.get("global_name") or who.get("username") or "someone", "text": text,
          "at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
-    http("POST", cb, {"type": 4, "data": {"content": f"**{q['user']} asked BetterPicks:** {text}\n"
-         "Got it, the answer will post here as a reply. (practice picks, not real bets)", "allowed_mentions": {"parse": []}}}, auth=False)
+    http("POST", cb, {"type": 5}, auth=False)   # "BetterBot is thinking..." right away; Discord needs an ack in 3s
     try:
-        q["message_id"] = http("GET", f"{API}/webhooks/{d['application_id']}/{d['token']}/messages/@original", auth=False)["id"]
-    except Exception:
-        pass
+        quick = quick_answer(text)
+    except Exception as e:
+        print("quick answer failed:", e, flush=True); quick = None
+    if quick:   # answered on the spot; still filed (auto) so the project thread sees what was asked
+        q["auto"] = True
+        reply = f"**{q['user']} asked BetterPicks:** {text}\n{quick}"
+    else:
+        reply = (f"**{q['user']} asked BetterPicks:** {text}\n"
+                 "Got it, BetterPicks is on it. The answer will post here as a reply. (practice picks, not real bets)")
+    try:
+        q["message_id"] = http("PATCH", f"{API}/webhooks/{d['application_id']}/{d['token']}/messages/@original",
+                               {"content": reply[:1990], "allowed_mentions": {"parse": []}}, auth=False)["id"]
+    except Exception as e:
+        print("bp reply failed:", e, flush=True)
     with state_lock:
         save(ASKED, (load(ASKED, []) + [q])[-200:])
     if GH_TOKEN:
         threading.Thread(target=file_question, args=(q,), daemon=True).start()
 
 
+def bp_safe(d):
+    try:
+        on_bp(d)
+    except Exception as e:
+        print("/bp failed:", e, flush=True)
+
+
 def answers_loop():
-    """Every 15 seconds, post new answers from the project thread as replies in the picks channel."""
+    """Every 4 seconds (Ryan 2026-10-21: /bp should take seconds), post new answers from the project thread
+    as replies in the picks channel. Authenticated contents API, so no raw-CDN cache delay."""
     while True:
         try:
             req = urllib.request.Request(f"{GH}/contents/betterpicks/bp_answers.json?ref={CODE_BRANCH}", headers={
@@ -136,13 +154,72 @@ def answers_loop():
                 print("answers check failed:", e, flush=True)
         except Exception as e:
             print("answers check failed:", e, flush=True)
-        time.sleep(15)
+        time.sleep(4 if GH_TOKEN else 30)
+
+
+def feed():
+    """The project's graded feed. With GH_TOKEN it reads the contents API (fresh); raw GitHub is cached for minutes."""
+    if GH_TOKEN:
+        req = urllib.request.Request(f"{GH}/contents/betterpicks/books_feed.json?ref={CODE_BRANCH}", headers={
+            "User-Agent": UA, "Accept": "application/vnd.github.raw+json", "Authorization": f"Bearer {GH_TOKEN}"})
+    else:
+        req = urllib.request.Request(FEED_URL, headers={"User-Agent": UA, "Cache-Control": "no-cache"})
+    return json.load(urllib.request.urlopen(req, timeout=10))
+
+
+def leg_text(x):
+    side = "YES" if x["side"] == "over" else "NO"
+    mark = {"won": "\u2705 ", "lost": "\u274c "}.get(x.get("result"), "")
+    got = f", finished {x['actual']:g}" if isinstance(x.get("actual"), (int, float)) else ""
+    return f"{mark}{side} {x['player']} {int(x['line'] + 0.5)}+ {STAT_WORDS.get(x['stat'], x['stat'].replace('_', ' '))}{got}"
+
+
+RESULT_WORDS = ("hit", "won", "win", "lost", "lose", "loss", "result", "cash", "how did", "how'd", "today", "tonight",
+                "yesterday", "open", "pending", "picks", "locks", "parlay", "playing", "what do we have", "board")
+RECORD_WORDS = ("record", "pnl", "p&l", "profit", "bankroll", "up or down", "how much")
+
+
+def quick_answer(text):
+    """Common /bp questions answered by the droplet itself in seconds: results, open picks, record.
+    Anything else returns None and goes to the project's BetterPicks thread."""
+    t = text.lower()
+    if not t or any(w in t for w in ("why", "should", "explain", "think", "add ", "change", "next", "tomorrow")):
+        return None
+    if any(w in t for w in RECORD_WORDS):
+        return pnl_text()
+    if not any(w in t for w in RESULT_WORDS):
+        return None
+    b = ((feed().get("verdicts") or {}).get("board"))
+    if b is None:
+        return None
+    pt = time.gmtime(time.time() - 7 * 3600)
+    day = time.strftime("%Y-%m-%d", pt)
+    yday = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 31 * 3600))
+    settled = [e for e in b if e["status"] in ("won", "lost", "void")
+               and max((l.get("start") or e["date"]) for l in e["legs"])[:10] >= yday]
+    live = [e for e in b if e["status"] == "open"]
+    lines = []
+    if settled:
+        lines.append("**Latest results (practice):**")
+        for e in settled:
+            word = {"won": "HIT", "lost": "LOST", "void": "VOID"}[e["status"]]
+            money = f" ({e['pnl']:+.2f})" if isinstance(e.get("pnl"), (int, float)) else ""
+            lines.append(f"{e['type'].split(':')[0]} ({e['date'][5:]}): **{word}**{money}")
+            lines += [f"  {leg_text(l)}" for l in e["legs"]]
+    if live:
+        lines.append("**Still open:**")
+        for e in live:
+            lines.append(f"{e['type'].split(':')[0]} ({e['date'][5:]})")
+            lines += [f"  {leg_text(l)}" for l in e["legs"]]
+    if not lines:
+        lines.append(f"Nothing settled since {yday[5:]} and no open picks right now.")
+    lines.append("Practice picks, not real bets.")
+    return "\n".join(lines)
 
 
 def pnl_text():
     """Practice record by player prop (each leg), graded from Kalshi's own settlement."""
-    req = urllib.request.Request(FEED_URL, headers={"User-Agent": UA, "Cache-Control": "no-cache"})
-    pr = (json.load(urllib.request.urlopen(req, timeout=15)).get("verdicts") or {}).get("props")
+    pr = (feed().get("verdicts") or {}).get("props")
     if not pr:
         return "No graded props yet. (BetterPicks practice record)"
     w, l = pr["won"], pr["lost"]
@@ -272,10 +349,7 @@ def run_once():
                     except Exception as e:
                         print("could not register /" + cmd["name"], e, flush=True)
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "bp":
-                try:
-                    on_bp(m["d"])
-                except Exception as e:
-                    print("/bp failed:", e, flush=True)
+                threading.Thread(target=bp_safe, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "pnl":
                 d = m["d"]
                 try:

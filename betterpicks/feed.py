@@ -14,6 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 KEEP_OUT = {"PrizePicks", "Underdog", "Sleeper", "Kalshi", "Polymarket"}   # the droplet fetches these itself
 GRADED = os.environ.get("BP_GRADED_BOOK", "/mnt/project-files/betterpicks/book.json")   # the project grades parlays
 LEG_KEEP = ("player", "stat", "side", "line", "ticker", "game", "result", "actual")
+BOARD_KEEP = ("player", "stat", "side", "line", "game", "result", "actual", "start", "league")
 
 
 def verdicts():
@@ -40,7 +41,16 @@ def verdicts():
            "pnl": round(sum(e["pnl"] for e in rule), 2)}
     posted = [e for e in book.get("parlays", []) if e["date"] >= "2026-10-12" and not e.get("test")
               and f"parlay:{e['date']}:{e['app']}:{e['type']}" in done]
-    return {"parlays": out, "record": rec, "props": prop_record(posted), "delays": delays(posted)}
+    return {"parlays": out, "record": rec, "props": prop_record(posted), "delays": delays(posted), "board": board(posted)}
+
+
+def board(parlays):
+    """Ryan 2026-10-21: /bp should answer in seconds. The droplet answers "what hit / what's open" itself
+    from this board: every posted pick that is still open or settled in the last 3 days."""
+    since = (datetime.now(timezone.utc) - timedelta(days=3, hours=7)).strftime("%Y-%m-%d")
+    return [{"date": e["date"], "type": e["type"], "status": e["status"], "pnl": e.get("pnl"), "stake": e.get("stake"),
+             "legs": [{k: l.get(k) for k in BOARD_KEEP} for l in e["legs"]]}
+            for e in parlays if e["status"] == "open" or e["date"] >= since]
 
 
 def prop_record(parlays):
