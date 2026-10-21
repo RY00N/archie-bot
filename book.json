@@ -1482,24 +1482,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 06:00 PT",
-  "props_today": 910,
+  "props_today": 911,
   "kalshi_props_today": 420,
   "kalshi_priced_today": 31,
   "books_on_kalshi_props": {
-   "AN Consensus": 419,
-   "AN Open": 410,
+   "AN Consensus": 418,
+   "AN Open": 409,
    "BetMGM": 269,
    "BetRivers": 337,
-   "Caesars": 354,
+   "Caesars": 355,
    "DraftKings": 400,
    "FanDuel": 375,
-   "Fanatics": 344,
-   "Parx": 337,
+   "Fanatics": 342,
+   "Parx": 333,
    "Pinnacle": 244,
    "Sleeper": 409,
-   "Underdog": 420,
+   "Underdog": 419,
    "Unibet": 56,
-   "bet365": 420
+   "bet365": 415
   },
   "data_files": [
    "mlb.sqlite",
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -2044,9 +2044,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.639,
+   "p": 0.64,
    "price": 0.59,
-   "edge": 0.032,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2359,9 +2359,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.465,
+   "p": 0.463,
    "price": 0.41,
-   "edge": 0.038,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2494,9 +2494,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.668,
+   "p": 0.667,
    "price": 0.52,
-   "edge": 0.131,
+   "edge": 0.13,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/13 games without him vs 19/27 with him.",
    "result": null
   },
@@ -2554,9 +2554,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.557,
+   "p": 0.558,
    "price": 0.48,
-   "edge": 0.06,
+   "edge": 0.061,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2839,9 +2839,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.474,
+   "p": 0.473,
    "price": 0.39,
-   "edge": 0.067,
+   "edge": 0.066,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2944,10 +2944,25 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.419,
+   "p": 0.417,
    "price": 0.35,
-   "edge": 0.053,
+   "edge": 0.051,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "KXNFLREC-26OCT22NECHI-CHIDSWIFT4-3",
+   "league": "nfl",
+   "player": "D'Andre Swift",
+   "stat": "receptions",
+   "side": "under",
+   "line": 2.5,
+   "start": "2026-10-23T00:15:00Z",
+   "p": 0.549,
+   "price": 0.5,
+   "edge": 0.032,
+   "news": "News: D'Andre Swift missing from Bears injury report doesn't tell the whole story - Bear Goggles On",
    "result": null
   },
   {
@@ -2959,9 +2974,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.608,
+   "p": 0.609,
    "price": 0.5,
-   "edge": 0.09,
+   "edge": 0.091,
    "news": "CHI's DE Dayo Odeyingbo is out, an easier matchup; CHI's DE Montez Sweat is out, an easier matchup.",
    "result": null
   }
