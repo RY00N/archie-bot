@@ -1483,23 +1483,23 @@
  "diag": {
   "props_at": "2026-10-21 15:00 PT",
   "props_today": 996,
-  "kalshi_props_today": 559,
-  "kalshi_priced_today": 34,
+  "kalshi_props_today": 561,
+  "kalshi_priced_today": 35,
   "books_on_kalshi_props": {
-   "AN Consensus": 556,
-   "AN Open": 547,
+   "AN Consensus": 558,
+   "AN Open": 549,
    "BetMGM": 418,
    "BetRivers": 463,
-   "Caesars": 474,
-   "DraftKings": 528,
+   "Caesars": 475,
+   "DraftKings": 530,
    "FanDuel": 489,
-   "Fanatics": 447,
+   "Fanatics": 457,
    "Parx": 463,
    "Pinnacle": 377,
-   "Sleeper": 549,
-   "Underdog": 559,
+   "Sleeper": 551,
+   "Underdog": 561,
    "Unibet": 109,
-   "bet365": 559
+   "bet365": 552
   },
   "data_files": [
    "mlb.sqlite",
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 28
+  "kalshi_legs_today": 29
  },
  "shadow": [
   {
@@ -2134,9 +2134,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.557,
+   "p": 0.558,
    "price": 0.48,
-   "edge": 0.06,
+   "edge": 0.061,
    "news": "T.J. McConnell is out: Andrew Nembhard hit the over in 2/3 games without him vs 22/37 with him; Aaron Nesmith is out: Andrew Nembhard hit the over in 8/14 games without him vs 16/26 with him; Johnny Furphy is out: Andrew Nembhard hit the over in 10/16 games without him vs 14/24 with him.",
    "result": null
   },
@@ -2164,9 +2164,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.453,
+   "p": 0.452,
    "price": 0.37,
-   "edge": 0.067,
+   "edge": 0.066,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2284,9 +2284,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.751,
+   "p": 0.75,
    "price": 0.6,
-   "edge": 0.134,
+   "edge": 0.133,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/6 games without him vs 17/34 with him.",
    "result": null
   },
@@ -2464,9 +2464,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.639,
+   "p": 0.64,
    "price": 0.55,
-   "edge": 0.072,
+   "edge": 0.073,
    "news": "Dailyn Swain (G) is out, so Tre Jones's role likely grows; Jordan Hawkins (G) is out, so Tre Jones's role likely grows.",
    "result": null
   },
@@ -2629,9 +2629,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-21T23:00:00Z",
-   "p": 0.489,
-   "price": 0.41,
-   "edge": 0.062,
+   "p": 0.481,
+   "price": 0.4,
+   "edge": 0.064,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2783,6 +2783,21 @@
    "price": 0.43,
    "edge": 0.152,
    "news": "Dailyn Swain (G) is out, so Tre Jones's role likely grows; Jordan Hawkins (G) is out, so Tre Jones's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBAPTS-26OCT21CHITOR-TORKLEONARD2-25",
+   "league": "nba",
+   "player": "Kawhi Leonard",
+   "stat": "points",
+   "side": "over",
+   "line": 24.5,
+   "start": "2026-10-21T23:30:00Z",
+   "p": 0.502,
+   "price": 0.45,
+   "edge": 0.035,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -2989,9 +3004,9 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.526,
+   "p": 0.528,
    "price": 0.47,
-   "edge": 0.039,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3034,9 +3049,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.555,
+   "p": 0.552,
    "price": 0.49,
-   "edge": 0.048,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3079,9 +3094,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.524,
+   "p": 0.526,
    "price": 0.47,
-   "edge": 0.037,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
