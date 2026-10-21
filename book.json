@@ -1475,7 +1475,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 9
+  "kalshi_legs_today": 10
  },
  "shadow": [
   {
@@ -2076,6 +2076,21 @@
    "price": 0.61,
    "edge": 0.132,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/6 games without him vs 20/34 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBA3PT-26OCT21MINMIA-MINJMCDANIELS3-2",
+   "league": "nba",
+   "player": "Jaden McDaniels",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-10-21T23:30:00Z",
+   "p": 0.657,
+   "price": 0.61,
+   "edge": 0.03,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
