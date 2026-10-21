@@ -9,7 +9,7 @@ command (Ryan 2026-10-18): wins vs losses by player prop, from the project's gra
 branch for the project's BetterPicks thread and posts the thread's answers (betterpicks/bp_answers.json)
 back as replies.
 """
-import base64, hashlib, json, os, random, socket, ssl, struct, sys, threading, time, urllib.error, urllib.request
+import base64, hashlib, json, os, random, re, socket, ssl, struct, sys, threading, time, urllib.error, urllib.request
 
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN") or sys.exit("DISCORD_BOT_TOKEN not set")
 STATUS = os.environ.get("BETTERBOT_STATUS", "for locks")
@@ -149,6 +149,7 @@ def answers_loop():
                 with state_lock:
                     save(ANSWERED, sorted(set(load(ANSWERED, [])) | {a["id"]}))
                 print("answered /bp", a["id"], flush=True)
+            late_notes()
         except urllib.error.HTTPError as e:
             if e.code != 404:
                 print("answers check failed:", e, flush=True)
@@ -179,18 +180,47 @@ RESULT_WORDS = ("hit", "won", "win", "lost", "lose", "loss", "result", "cash", "
 RECORD_WORDS = ("record", "pnl", "p&l", "profit", "bankroll", "up or down", "how much")
 
 
+WHY_WORDS = ("why", "explain", "explanation", "reason", "how come", "break down", "breakdown")
+PICK_WORDS = ("picks", "pick ", "tonight", "today", "what are", "what do we have", "board", "open", "pending", "locks")
+
+
+def why_text(e):
+    """One pick's reasoning from the project's own notes (feed board), worded for Discord."""
+    out = [f"**{e['type'].split(':')[0]} ({e['date'][5:]})**"]
+    for l in e["legs"]:
+        out.append(f"{leg_text(l)}" + (f" ({l['game']})" if l.get("game") else ""))
+        if isinstance(l.get("p"), (int, float)):
+            price = f", Kalshi price {round(l['price'] * 100)}c" if isinstance(l.get("price"), (int, float)) else ""
+            edge = f", edge {l['edge']:+.0%}" if isinstance(l.get("edge"), (int, float)) else ""
+            out.append(f"  Our win chance {l['p']:.0%}{price}{edge}.")
+        for k in ("case", "news"):
+            if l.get(k):
+                out.append(f"  {l[k]}")
+    return "\n".join(out)
+
+
 def quick_answer(text):
-    """Common /bp questions answered by the droplet itself in seconds: results, open picks, record.
-    Anything else returns None and goes to the project's BetterPicks thread."""
+    """/bp answered by the droplet itself in seconds (Ryan 2026-10-21: /bp must not depend on the project
+    session): results, record, tonight's picks, and why we made a pick. Anything else returns None and
+    goes to the project's BetterPicks thread."""
     t = text.lower()
-    if not t or any(w in t for w in ("why", "should", "explain", "think", "add ", "change", "next", "tomorrow")):
+    b = ((feed().get("verdicts") or {}).get("board"))
+    if not t or b is None:
+        return None
+    if any(w in t for w in WHY_WORDS):
+        named = [e for e in b if any(w in t for l in e["legs"] for w in
+                 {l["player"].lower(), l["player"].lower().split()[-1]})]
+        if not named and any(w in t for w in ("last", "latest", "recent", "those", "these", "picks", "tonight")):
+            n = next((int(x) for x in re.findall(r"\b([1-5])\b", t)), 3)
+            named = [e for e in b if e["status"] == "open"][-n:]
+        if named:
+            return "\n".join(why_text(e) for e in named) + "\nPractice picks, not real bets."
+        return None
+    if any(w in t for w in ("should", "think", "add ", "change", "tomorrow", "make ", "build")):
         return None
     if any(w in t for w in RECORD_WORDS):
         return pnl_text()
-    if not any(w in t for w in RESULT_WORDS):
-        return None
-    b = ((feed().get("verdicts") or {}).get("board"))
-    if b is None:
+    if not any(w in t for w in RESULT_WORDS + PICK_WORDS):
         return None
     pt = time.gmtime(time.time() - 7 * 3600)
     day = time.strftime("%Y-%m-%d", pt)
@@ -215,6 +245,29 @@ def quick_answer(text):
         lines.append(f"Nothing settled since {yday[5:]} and no open picks right now.")
     lines.append("Practice picks, not real bets.")
     return "\n".join(lines)
+
+
+def late_notes():
+    """If the project thread hasn't answered a /bp question in 10 minutes, say so once from the droplet."""
+    if not CHANNEL:
+        return
+    cut = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(time.time() - 600))
+    with state_lock:
+        done, asked = set(load(ANSWERED, [])), load(ASKED, [])
+    for q in asked:
+        if q.get("auto") or q["id"] in done or f"late:{q['id']}" in done or q["at"] > cut or q["at"] < "2026-10-21T22:00":
+            continue
+        body = {"content": "Still working on this one. For instant answers, ask /bp about results, tonight's picks, "
+                "our record, or why we made a pick (name the player). (practice picks, not real bets)",
+                "allowed_mentions": {"parse": []}}
+        if q.get("message_id"):
+            body["message_reference"] = {"message_id": q["message_id"], "fail_if_not_exists": False}
+        try:
+            http("POST", f"{API}/channels/{CHANNEL}/messages", body)
+        except Exception as e:
+            print("late note failed:", e, flush=True); continue
+        with state_lock:
+            save(ANSWERED, sorted(set(load(ANSWERED, [])) | {f"late:{q['id']}"}))
 
 
 def pnl_text():
