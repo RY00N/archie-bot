@@ -1488,9 +1488,9 @@
   "books_on_kalshi_props": {
    "AN Consensus": 305,
    "AN Open": 294,
-   "BetMGM": 230,
+   "BetMGM": 232,
    "BetRivers": 247,
-   "Caesars": 266,
+   "Caesars": 267,
    "DraftKings": 287,
    "FanDuel": 273,
    "Fanatics": 256,
@@ -1499,7 +1499,7 @@
    "Sleeper": 297,
    "Underdog": 306,
    "Unibet": 59,
-   "bet365": 301
+   "bet365": 306
   },
   "data_files": [
    "mlb.sqlite",
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 17
  },
  "shadow": [
   {
@@ -2149,9 +2149,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.402,
-   "price": 0.35,
-   "edge": 0.036,
+   "p": 0.42,
+   "price": 0.37,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2164,9 +2164,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.453,
-   "price": 0.39,
-   "edge": 0.046,
+   "p": 0.456,
+   "price": 0.38,
+   "edge": 0.06,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2498,6 +2498,21 @@
    "price": 0.56,
    "edge": 0.137,
    "news": "Jimmy Butler III is out: Draymond Green hit the over in 24/37 games without him vs 0/3 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBAAST-26OCT21INDNOP-NOPJFEARS0-4",
+   "league": "nba",
+   "player": "Jeremiah Fears",
+   "stat": "assists",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-22T00:00:00Z",
+   "p": 0.5,
+   "price": 0.44,
+   "edge": 0.043,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -2944,9 +2959,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.514,
+   "p": 0.512,
    "price": 0.45,
-   "edge": 0.047,
+   "edge": 0.045,
    "news": "News: Jarace Walker no longer on Indiana Pacers injury report - Total Apex Sports",
    "result": null
   },
@@ -3169,9 +3184,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.563,
+   "p": 0.565,
    "price": 0.47,
-   "edge": 0.076,
+   "edge": 0.078,
    "news": "Jett Howard (G) is out, so Kyrie Irving's role likely grows.",
    "result": null
   },
@@ -3199,9 +3214,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.609,
+   "p": 0.608,
    "price": 0.52,
-   "edge": 0.072,
+   "edge": 0.071,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
