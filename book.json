@@ -1482,8 +1482,8 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 16:00 PT",
-  "props_today": 817,
-  "kalshi_props_today": 453,
+  "props_today": 638,
+  "kalshi_props_today": 367,
   "kalshi_priced_today": 15,
   "books_on_kalshi_props": {
    "AN Consensus": 305,
@@ -1496,8 +1496,8 @@
    "Fanatics": 256,
    "Parx": 247,
    "Pinnacle": 207,
-   "Sleeper": 442,
-   "Underdog": 453,
+   "Sleeper": 357,
+   "Underdog": 367,
    "Unibet": 59,
    "bet365": 306
   },
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 16
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
