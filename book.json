@@ -1445,6 +1445,38 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-21",
+   "app": "Kalshi",
+   "type": "1-leg lock: Rhamondre Stevenson over 2.5 receptions",
+   "stake": 5.0,
+   "payout_x": 2.0,
+   "win_p": 0.609,
+   "ev_pct": 21.8,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Rhamondre Stevenson",
+     "team": "NE",
+     "stat": "receptions",
+     "side": "over",
+     "line": 2.5,
+     "price": 0.5,
+     "ticker": "KXNFLREC-26OCT22NECHI-NERSTEVENSON38-3",
+     "game": "NE @ CHI",
+     "start": "2026-10-23T00:15:00Z",
+     "p": 0.609,
+     "edge": 0.091,
+     "news": "CHI's DE Dayo Odeyingbo is out, an easier matchup; CHI's DE Montez Sweat is out, an easier matchup.",
+     "why": "Rhamondre Stevenson over 2.5 receptions: 8 books price it 52%; hit 67% of last 12 (avg 2.8); 1/2 over vs CHI, avg 4.5. Fair 61%.",
+     "case": "Last 5 games: 0, 3, 3, 3, 1 (3 of 5 over 2.5).",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
@@ -1456,12 +1488,12 @@
   "books_on_kalshi_props": {
    "AN Consensus": 418,
    "AN Open": 409,
-   "BetMGM": 137,
+   "BetMGM": 141,
    "BetRivers": 331,
-   "Caesars": 355,
+   "Caesars": 354,
    "DraftKings": 401,
    "FanDuel": 379,
-   "Fanatics": 310,
+   "Fanatics": 311,
    "Parx": 331,
    "Pinnacle": 245,
    "Sleeper": 407,
@@ -2691,6 +2723,36 @@
    "price": 0.41,
    "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "KXNFLREC-26OCT22NECHI-CHICKMET85-2",
+   "league": "nfl",
+   "player": "Cole Kmet",
+   "stat": "receptions",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-23T00:15:00Z",
+   "p": 0.415,
+   "price": 0.35,
+   "edge": 0.049,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "KXNFLREC-26OCT22NECHI-NERSTEVENSON38-3",
+   "league": "nfl",
+   "player": "Rhamondre Stevenson",
+   "stat": "receptions",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-23T00:15:00Z",
+   "p": 0.609,
+   "price": 0.5,
+   "edge": 0.091,
+   "news": "CHI's DE Dayo Odeyingbo is out, an easier matchup; CHI's DE Montez Sweat is out, an easier matchup.",
    "result": null
   }
  ]
