@@ -1489,15 +1489,15 @@
    "AN Consensus": 418,
    "AN Open": 409,
    "BetMGM": 269,
-   "BetRivers": 341,
+   "BetRivers": 342,
    "Caesars": 355,
    "DraftKings": 400,
-   "FanDuel": 373,
+   "FanDuel": 372,
    "Fanatics": 340,
-   "Parx": 340,
+   "Parx": 341,
    "Pinnacle": 244,
    "Sleeper": 408,
-   "Underdog": 418,
+   "Underdog": 419,
    "Unibet": 59,
    "bet365": 419
   },
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -2044,9 +2044,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.641,
+   "p": 0.64,
    "price": 0.59,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2449,9 +2449,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-21T23:00:00Z",
-   "p": 0.478,
+   "p": 0.48,
    "price": 0.43,
-   "edge": 0.031,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2599,9 +2599,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.536,
+   "p": 0.537,
    "price": 0.48,
-   "edge": 0.039,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2779,9 +2779,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.591,
+   "p": 0.593,
    "price": 0.52,
-   "edge": 0.054,
+   "edge": 0.056,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2974,9 +2974,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.551,
+   "p": 0.55,
    "price": 0.5,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "News: D'Andre Swift missing from Bears injury report doesn't tell the whole story - Bear Goggles On",
    "result": null
   },
