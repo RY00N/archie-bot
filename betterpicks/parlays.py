@@ -111,12 +111,21 @@ def rows_for(league, stat, player):
         rows = None
         if league == "nba":
             try:
-                rows = _CONN[q[0]].execute(q[1].replace(", opp from", ", opp, team from"), (player, player)).fetchall()
-            except sqlite3.OperationalError:   # older slim DB without the team column
-                rows = None
+                rows = _CONN[q[0]].execute(q[1].replace(", opp from", ", opp, team, minutes from"), (player, player)).fetchall()
+            except sqlite3.OperationalError:   # older slim DB without team/minutes
+                try:
+                    rows = [r + (None,) for r in _CONN[q[0]].execute(q[1].replace(", opp from", ", opp, team from"),
+                                                                    (player, player)).fetchall()]
+                except sqlite3.OperationalError:
+                    rows = None
             if rows:
                 _TEAM[(league, player)] = NBA_CODE.get(rows[0][3], rows[0][3])
-                rows = [r[:3] for r in rows if r[3] == rows[0][3]]
+                # Ryan 2026-10-21 (Trae Young): skip limited-minutes games (preseason cameos, injury ramp-ups);
+                # "normal" = his median minutes over his last 60 games on any team
+                mins = sorted(r[4] for r in rows[:60] if r[4])
+                norm = mins[len(mins) // 2] if mins else 0
+                rows = [r for r in rows if r[3] == rows[0][3]]
+                rows = [r[:3] for r in rows if not norm or r[4] is None or r[4] >= 0.7 * norm]
         _ROWS[key] = rows if rows is not None else _CONN[q[0]].execute(q[1], (player, player)).fetchall()
     return _ROWS[key]
 
