@@ -1482,19 +1482,19 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 07:00 PT",
-  "props_today": 918,
+  "props_today": 919,
   "kalshi_props_today": 419,
-  "kalshi_priced_today": 30,
+  "kalshi_priced_today": 31,
   "books_on_kalshi_props": {
    "AN Consensus": 416,
    "AN Open": 409,
    "BetMGM": 269,
-   "BetRivers": 341,
-   "Caesars": 357,
+   "BetRivers": 345,
+   "Caesars": 354,
    "DraftKings": 400,
-   "FanDuel": 372,
-   "Fanatics": 333,
-   "Parx": 342,
+   "FanDuel": 373,
+   "Fanatics": 331,
+   "Parx": 345,
    "Pinnacle": 244,
    "Sleeper": 408,
    "Underdog": 419,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -2074,9 +2074,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.432,
+   "p": 0.434,
    "price": 0.36,
-   "edge": 0.056,
+   "edge": 0.058,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2569,9 +2569,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.557,
+   "p": 0.558,
    "price": 0.48,
-   "edge": 0.06,
+   "edge": 0.061,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2599,9 +2599,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.536,
+   "p": 0.537,
    "price": 0.48,
-   "edge": 0.039,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2839,9 +2839,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.6,
+   "p": 0.602,
    "price": 0.55,
-   "edge": 0.033,
+   "edge": 0.035,
    "news": "News: Jarace Walker no longer on Indiana Pacers injury report - Total Apex Sports",
    "result": null
   },
