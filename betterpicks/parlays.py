@@ -143,91 +143,128 @@ def history(league, stat, player, line, opp=None, n=12, team=None):
     return out
 
 
-_GAMES = {}
+_GAMES, _TDATES, _ROT = {}, {}, {}
+DB_CODE = {"nba": {v: k for k, v in NBA_CODE.items()}, "nfl": {"LAR": "LA", "JAC": "JAX", "WSH": "WAS"}}
+# per league: date column, regular/playoff types, missed team games that make a "back" spot, rotation size + stat
+SIT = {"nba": {"date": "date", "real": ("regular", "playoffs", "play-in"), "missed": 3, "size": 8, "rot": "pra"},
+       "nfl": {"date": "gameday", "real": ("REG", "POST"), "missed": 1, "size": 11,
+               "rot": "coalesce(def_tackles_solo,0) + coalesce(def_tackle_assists,0) + 2 * coalesce(def_pass_defended,0)"}}
 
 
-def nba_games(stat, player):
-    """Every NBA game for this stat, oldest first, with team and season type (career, all teams)."""
-    key = (stat, player)
+def career_games(league, stat, player):
+    """Every real game (no preseason) for this stat, oldest first: (value, date, opp, team, season_type)."""
+    key = (league, stat, player)
     if key not in _GAMES:
-        q = stat_query("nba", stat)
+        q = stat_query(league, stat)
         _GAMES[key] = []
-        if q and rows_for("nba", stat, player) is not None:
+        if q and rows_for(league, stat, player) is not None:
+            col = "opponent_team from" if league == "nfl" else "opp from"
             try:
-                rows = _CONN[q[0]].execute(q[1].replace(", opp from", ", opp, team, season_type from"),
+                rows = _CONN[q[0]].execute(q[1].replace(", " + col, f", {col[:-5]}, team, season_type from"),
                                            (player, player)).fetchall()
-                _GAMES[key] = [r for r in reversed(rows) if r[0] is not None and r[4] != "preseason"]
+                _GAMES[key] = [r for r in reversed(rows) if r[0] is not None and r[4] in SIT[league]["real"]]
             except sqlite3.OperationalError:   # older slim DB without team/season_type
                 pass
     return _GAMES[key]
 
 
+def team_dates(league, team):
+    """Dates the team played a real game, oldest first."""
+    if (league, team) not in _TDATES:
+        c, d = _CONN.get(f"{league}.sqlite"), SIT[league]["date"]
+        try:
+            ph = ",".join("?" * len(SIT[league]["real"]))
+            _TDATES[(league, team)] = [r[0][:10] for r in c.execute(
+                f"select distinct {d} from player_games where team=? and season_type in ({ph}) order by 1",
+                (team, *SIT[league]["real"]))] if c else []
+        except sqlite3.OperationalError:
+            _TDATES[(league, team)] = []
+    return _TDATES[(league, team)]
+
+
+def missed(league, team, after, before):
+    """How many real games the team played strictly between two dates (games the player sat out)."""
+    return sum(after < d < before for d in team_dates(league, team))
+
+
 def situations(prop, line):
-    """Ryan 2026-10-21: how a player does in the spot he's in tonight. NBA only for now.
-    debut = first real game for a new team; back = first game after 7+ days off mid-season (injury, illness, rest);
-    vs = every career game against tonight's opponent. Returns [(name, n, avg, overs)] for the spots that apply."""
-    if prop.get("league") != "nba" or not prop.get("start"):
+    """Ryan 2026-10-21: how a player does in the spot he's in tonight (NBA, NFL).
+    debut = first real game for a new team; back = first game after missing team games (injury, illness, rest:
+    3+ NBA games, 1+ NFL game); vs = career games against tonight's opponent, each weighted by how much of that
+    night's opposing rotation is still in its current one. Returns [(name, n, avg, over_rate, lineup_share)]."""
+    lg = prop.get("league")
+    if lg not in SIT or not prop.get("start"):
         return []
-    day = prop["start"][:10]
-    g = [r for r in nba_games(prop["stat"], prop["player"]) if r[1][:10] < day]   # only games before tonight
-    if len(g) < 10:
-        return []
-    team = prop.get("team")
-    code = lambda t: NBA_CODE.get(t, t)
-    debuts = [g[i] for i in range(1, len(g)) if g[i][3] != g[i - 1][3]]
-    backs = [g[i] for i in range(1, len(g)) if g[i][4] == g[i - 1][4] == "regular"
-             and (datetime.fromisoformat(g[i][1][:10]) - datetime.fromisoformat(g[i - 1][1][:10])).days >= 7
-             and not (g[i][1][5:7] == "02" and 10 <= int(g[i][1][8:10]) <= 28)]   # skip the All-Star break
-    last = g
-    out = []
-    if team and last and code(last[-1][3]) != team and debuts:
-        out.append(("debut", debuts))
-    if last and last[-1][1][:4] >= str(int(day[:4]) - (0 if day[5:7] >= "10" else 1)) and backs:
-        gap = (datetime.fromisoformat(day) - datetime.fromisoformat(last[-1][1][:10])).days
-        if 7 <= gap <= 60:   # longer = offseason, not missed games
-            out.append(("back", backs))
-    opp = opp_of(prop)
-    res = [(n, len(rs), round(sum(r[0] for r in rs) / len(rs), 1), sum(r[0] > line for r in rs) / len(rs), None)
-           for n, rs in out]
-    vs = [r for r in g if opp and code(r[2]) == opp]
-    if len(vs) >= 3:
-        # Ryan 2026-10-21: the opponent's lineup changes, so each past game counts by how much of that night's
-        # rotation is still in tonight's rotation (a fully new lineup counts for nothing)
-        now = rotation(vs[-1][2], day, current=True)
-        ws = [len(now & rotation(r[2], r[1][:10])) / 8 if now else 1.0 for r in vs]
-        if sum(ws) >= 1.5:
-            rate = sum(w * (r[0] > line) for w, r in zip(ws, vs)) / sum(ws)
-            res.append(("vs " + opp, len(vs), round(sum(r[0] for r in vs) / len(vs), 1), rate,
-                        round(sum(ws) / len(ws), 2) if now else None))
+    spots = _spots(lg, prop["stat"], prop["player"], prop["start"][:10], prop.get("team"), prop.get("game", ""))
+    res = []
+    for n, rs, ws, share in spots:
+        rate = sum(w * (r[0] > line) for w, r in zip(ws, rs)) / sum(ws)
+        res.append((n, len(rs), round(sum(r[0] for r in rs) / len(rs), 1), rate, share))
     return res
 
 
-_ROT = {}
+_SPOTS = {}
 
 
-def rotation(team, day, current=False):
-    """A team's top 8 by PRA: in its game on `day`, or (current) across its last 3 games before `day`."""
-    key = (team, day, current)
+def _spots(lg, stat, player, day, prop_team, game):
+    """The line-independent part of situations(), cached: [(name, games, weights, lineup_share)]."""
+    key = (lg, stat, player, day, prop_team, game)
+    if key not in _SPOTS:
+        _SPOTS[key] = _find_spots(lg, stat, player, day, prop_team, game)
+    return _SPOTS[key]
+
+
+def _find_spots(lg, stat, player, day, prop_team, game):
+    g = [r for r in career_games(lg, stat, player) if r[1][:10] < day]   # only games before tonight
+    if len(g) < 6:
+        return []
+    db = lambda t: DB_CODE[lg].get(t, t)
+    team = db(prop_team) if prop_team else g[-1][3]
+    sides = [db(t) for t in game.replace(" vs ", " @ ").split(" @ ")]
+    opp = next((t for t in sides if t != team), None) if len(sides) == 2 and team in sides else None
+    debuts = [g[i] for i in range(1, len(g)) if g[i][3] != g[i - 1][3]]
+    need = SIT[lg]["missed"]
+    backs = [g[i] for i in range(1, len(g)) if g[i][3] == g[i - 1][3]
+             and missed(lg, g[i][3], g[i - 1][1][:10], g[i][1][:10]) >= need]
+    out = []
+    if prop_team and g[-1][3] != team and debuts:
+        out.append(("debut", debuts))
+    if g[-1][3] == team and backs and missed(lg, team, g[-1][1][:10], day) >= need:
+        out.append(("back", backs))
+    res = [(n, rs, [1.0] * len(rs), None) for n, rs in out]
+    vs = [r for r in g if opp and r[2] == opp]
+    if len(vs) >= 3:
+        # Ryan 2026-10-21: the opponent's lineup changes, so each past game counts by how much of that night's
+        # rotation is still in tonight's rotation (a fully new lineup counts for nothing)
+        now = rotation(lg, opp, day, current=True)
+        ws = [len(now & rotation(lg, opp, r[1][:10])) / SIT[lg]["size"] if now else 1.0 for r in vs]
+        if sum(ws) >= 1.5:
+            res.append(("vs " + opp, vs, ws, round(sum(ws) / len(ws), 2) if now else None))
+    return res
+
+
+def rotation(league, team, day, current=False):
+    """A team's core: NBA top 8 by PRA, NFL top 11 defenders (tackles + passes defended), in its game on `day`,
+    or (current) across its last 3 games before `day`."""
+    key = (league, team, day, current)
     if key not in _ROT:
-        con = _CONN.get(stat_query("nba", "pra")[0])
+        con, d, cfg = _CONN.get(f"{league}.sqlite"), SIT[league]["date"], SIT[league]
+        name = "player_display_name" if league == "nfl" else "player"
         _ROT[key] = set()
         if con is not None:
             try:
-                if current:
-                    days = [r[0] for r in con.execute("select distinct date from player_games where team=? and date<? "
-                                                      "order by date desc limit 3", (team, day))]
-                else:
-                    days = [day]
-                rows = con.execute(f"select player, avg(pra) from player_games where team=? and date in "
-                                   f"({','.join('?' * len(days))}) group by player order by 2 desc limit 8",
-                                   (team, *days)).fetchall() if days else []
-                _ROT[key] = {r[0] for r in rows}
+                days = ([x for x in team_dates(league, team) if x < day][-3:] if current else [day])
+                if days:
+                    rows = con.execute(f"select {name}, avg({cfg['rot']}) from player_games where team=? and "
+                                       f"substr({d},1,10) in ({','.join('?' * len(days))}) group by 1 order by 2 desc "
+                                       f"limit {cfg['size']}", (team, *days)).fetchall()
+                    _ROT[key] = {r[0] for r in rows}
             except sqlite3.OperationalError:
                 pass
     return _ROT[key]
 
 
-SIT_WORDS = {"debut": "first games with a new team", "back": "first games back after a week or more out"}
+SIT_WORDS = {"debut": "first games with a new team", "back": "first games back after missing games"}
 
 
 def situation_text(sits, line):

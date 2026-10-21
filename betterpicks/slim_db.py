@@ -12,7 +12,8 @@ KEEP = {
                              "pa", "ra", "stl", "blk", "tov", "stocks"]},   # team + season_type: Ryan 2026-10-21 (moved players)
     "mlb": {"pitcher_games": ["date", "player", "opp", "so", "outs", "er", "h"],
             "batter_games": ["date", "player", "opp", "h", "1b", "r", "rbi", "hr", "so", "total_bases", "hits_runs_rbis"]},
-    "nfl": {"player_games": ["gameday", "player_name", "player_display_name", "opponent_team", "passing_yards",
+    "nfl": {"player_games": ["gameday", "season_type", "team", "player_name", "player_display_name", "opponent_team",
+                             "def_tackles_solo", "def_tackle_assists", "def_pass_defended", "passing_yards",
                              "passing_tds", "passing_interceptions", "completions", "attempts", "carries", "rushing_yards",
                              "receptions", "receiving_yards"]},
     "soccer": {"player_matches": ["date", "player", "opp", "goals", "assists", "shots", "shots_on_target", "saves"]},
