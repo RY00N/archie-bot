@@ -1482,7 +1482,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 10:00 PT",
-  "props_today": 979,
+  "props_today": 980,
   "kalshi_props_today": 429,
   "kalshi_priced_today": 27,
   "books_on_kalshi_props": {
@@ -1496,7 +1496,7 @@
    "Fanatics": 344,
    "Parx": 358,
    "Pinnacle": 296,
-   "Sleeper": 419,
+   "Sleeper": 418,
    "Underdog": 429,
    "Unibet": 70,
    "bet365": 429
@@ -3034,9 +3034,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.426,
-   "price": 0.37,
-   "edge": 0.04,
+   "p": 0.427,
+   "price": 0.38,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3050,8 +3050,8 @@
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
    "p": 0.593,
-   "price": 0.42,
-   "edge": 0.156,
+   "price": 0.41,
+   "edge": 0.166,
    "news": "Caleb Martin is out: Cooper Flagg hit the over in 11/21 games without him vs 6/19 with him; Tarik Biberovic (F) is out, so Cooper Flagg's role likely grows; Santi Aldama (F) is out, so Cooper Flagg's role likely grows.",
    "result": null
   },
