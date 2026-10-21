@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 14
  },
  "shadow": [
   {
@@ -2060,8 +2060,8 @@
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
    "p": 0.659,
-   "price": 0.6,
-   "edge": 0.042,
+   "price": 0.61,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2315,8 +2315,8 @@
    "line": 9.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.502,
-   "price": 0.42,
-   "edge": 0.065,
+   "price": 0.41,
+   "edge": 0.075,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2495,8 +2495,8 @@
    "line": 24.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.668,
-   "price": 0.53,
-   "edge": 0.121,
+   "price": 0.52,
+   "edge": 0.131,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/13 games without him vs 19/27 with him.",
    "result": null
   },
