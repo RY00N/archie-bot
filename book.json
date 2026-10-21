@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 28
+  "kalshi_legs_today": 29
  },
  "shadow": [
   {
@@ -2135,8 +2135,8 @@
    "line": 1.5,
    "start": "2026-10-22T00:00:00Z",
    "p": 0.405,
-   "price": 0.34,
-   "edge": 0.049,
+   "price": 0.33,
+   "edge": 0.06,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2858,6 +2858,21 @@
    "price": 0.42,
    "edge": 0.06,
    "news": "Chris Youngblood (G) is out, so Ja Morant's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBAPTS-26OCT21SACLAC-LACBLOPEZ11-10",
+   "league": "nba",
+   "player": "Brook Lopez",
+   "stat": "points",
+   "side": "over",
+   "line": 9.5,
+   "start": "2026-10-22T02:30:00Z",
+   "p": 0.55,
+   "price": 0.46,
+   "edge": 0.073,
+   "news": "Yanic Konan Niederhauser is out: Brook Lopez hit the over in 15/27 games without him vs 6/13 with him.",
    "result": null
   },
   {
