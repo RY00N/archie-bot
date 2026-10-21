@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 18
+  "kalshi_legs_today": 16
  },
  "shadow": [
   {
@@ -2315,8 +2315,8 @@
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.505,
-   "price": 0.44,
-   "edge": 0.048,
+   "price": 0.45,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
