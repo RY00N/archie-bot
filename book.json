@@ -1490,7 +1490,7 @@
    "AN Open": 410,
    "BetMGM": 270,
    "BetRivers": 337,
-   "Caesars": 356,
+   "Caesars": 353,
    "DraftKings": 400,
    "FanDuel": 376,
    "Fanatics": 334,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -2045,8 +2045,8 @@
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
    "p": 0.659,
-   "price": 0.61,
-   "edge": 0.032,
+   "price": 0.6,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
