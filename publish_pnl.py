@@ -229,7 +229,15 @@ def snapshot(bot, market_open):
     return {"book": "paper", "note": "Practice money. Never counts toward real totals.",
             "updated": datetime.now(timezone.utc).isoformat()[:19] + "Z", "market_open": market_open,
             "swing_enabled": bot.RULES.get("swing_enabled", True),  # off = city hides the swing P&L
-            **combined, "swing": swing, "day": day, "futures": _futures(), "prop": _prop(), "gapfill": _gapfill(), "droplong": _droplong(), "options": _options(), "meme": _meme(), **_live()}
+            **combined, "swing": swing, "day": day, "futures": _futures(), "prop": _prop(), "gapfill": _gapfill(), "droplong": _droplong(), "options": _options(), "meme": _meme(), "xfeed": _xfeed(), **_live()}
+
+
+def _xfeed():
+    try:
+        import xfeed
+        return xfeed.status()
+    except Exception as e:
+        return {"error": str(e)[:80]}
 
 
 def _git(*args):

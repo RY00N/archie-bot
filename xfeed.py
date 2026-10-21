@@ -277,11 +277,24 @@ def maybe_run(log=print):
         except Exception as e:
             _live["err"] = min(_live["err"] + 1, 7)
             _live["x"] = None
+            _live["last_error"] = str(e)[:120]
             log(f"XFEED failed: {str(e)[:120]}")
         finally:
             _live["busy"] = False
     import threading
     threading.Thread(target=job, daemon=True, name="xfeed").start()
+
+
+def status():
+    """Small health line for the published P&L snapshot (no secrets): is the live feed running on this machine?"""
+    out = {"cookies": bool(os.environ.get("auth_token") or os.environ.get("X_AUTH_TOKEN")), "errors": _live["err"],
+           "last_error": _live.get("last_error")}
+    try:
+        d = json.load(open(LIVE_OUT))
+        out.update(updated=d["updated"], posts=len(d["posts"]), mode=d.get("mode"))
+    except Exception:
+        pass
+    return out
 
 
 def follow_extras():
