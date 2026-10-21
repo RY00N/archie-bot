@@ -1482,12 +1482,12 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 04:00 PT",
-  "props_today": 915,
-  "kalshi_props_today": 420,
+  "props_today": 916,
+  "kalshi_props_today": 421,
   "kalshi_priced_today": 27,
   "books_on_kalshi_props": {
-   "AN Consensus": 418,
-   "AN Open": 410,
+   "AN Consensus": 419,
+   "AN Open": 411,
    "BetMGM": 222,
    "BetRivers": 329,
    "Caesars": 351,
@@ -1496,10 +1496,10 @@
    "Fanatics": 311,
    "Parx": 331,
    "Pinnacle": 245,
-   "Sleeper": 408,
-   "Underdog": 420,
+   "Sleeper": 409,
+   "Underdog": 421,
    "Unibet": 47,
-   "bet365": 420
+   "bet365": 421
   },
   "data_files": [
    "mlb.sqlite",
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -2392,6 +2392,21 @@
    "p": 0.51,
    "price": 0.46,
    "edge": 0.033,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
+   "ticker": "KXNBAPRA-26OCT21UTAMEM-MEMTJEROME2-30",
+   "league": "nba",
+   "player": "Ty Jerome",
+   "stat": "pra",
+   "side": "under",
+   "line": 29.5,
+   "start": "2026-10-22T00:00:00Z",
+   "p": 0.578,
+   "price": 0.53,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
