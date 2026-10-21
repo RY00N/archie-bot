@@ -1482,7 +1482,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 14:00 PT",
-  "props_today": 991,
+  "props_today": 990,
   "kalshi_props_today": 547,
   "kalshi_priced_today": 30,
   "books_on_kalshi_props": {
@@ -2045,8 +2045,8 @@
    "line": 0.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.492,
-   "price": 0.39,
-   "edge": 0.085,
+   "price": 0.4,
+   "edge": 0.075,
    "news": "Dailyn Swain (G) is out, so Tre Jones's role likely grows; Jordan Hawkins (G) is out, so Tre Jones's role likely grows.",
    "result": null
   },
