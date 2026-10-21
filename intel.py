@@ -183,6 +183,24 @@ def part_sentiment():
     return out
 
 
+def part_x():
+    """Latest QQQ-relevant X posts: feeds/qqq-x-live.json (xfeed.maybe_run on the droplet, every 3 s in market hours)
+    or feeds/qqq-x.json (hourly cloud copy pushed to the repo), whichever is newer."""
+    xs = []
+    for f in ("qqq-x-live.json", "qqq-x.json"):
+        try:
+            xs.append(json.load(open(os.path.join(FEEDS, f))))
+        except Exception:
+            pass
+    x = max(xs, key=lambda d: d["updated"])
+    age = (datetime.now(timezone.utc) - datetime.strptime(x["updated"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc))
+    rel = [p for p in x["posts"] if p["qqq"]]
+    pick = lambda tg, n: [{"t": p["at"][:16] + "Z", "who": p["handle"], "text": p["text"][:240]}
+                          for p in rel if p["tag"] == tg][:n]
+    return {"updated": x["updated"], "age_min": int(age.total_seconds() // 60),
+            "headline": pick("headline", 8), "flow": pick("flow", 5), "analysis": pick("analysis", 5)}
+
+
 def summarize(r):
     """Plain lean + caution flags. Not backtested: context for Archie, never a trade gate."""
     pts, why, caution = 0, [], []
@@ -237,7 +255,8 @@ def run(log=print):
     r = {"at_et": now.strftime("%Y-%m-%d %H:%M"), "for_session": now.date().isoformat(),
          "note": "Info only, not backtested. Never places or blocks a trade."}
     for name, fn in (("futures", part_futures), ("megacaps", part_megacaps), ("calendar", lambda: part_calendar(now)),
-                     ("earnings", lambda: part_earnings(now)), ("news", lambda: part_news(now)), ("sentiment", part_sentiment)):
+                     ("earnings", lambda: part_earnings(now)), ("news", lambda: part_news(now)), ("sentiment", part_sentiment),
+                     ("x", part_x)):
         try:
             r[name] = fn()
         except Exception as e:
@@ -687,6 +706,11 @@ def maybe_run(log):
     """Call from the bot loop: the catalyst scan on its own timer, and the full intel run once at each RUN_AT time on
     weekdays (late start runs the latest missed slot)."""
     now = datetime.now(ET)
+    try:  # X feed (Ryan 2026-10-21): every 3 s in market hours, hourly otherwise; idle until the X cookies are in env
+        import xfeed
+        xfeed.maybe_run(log)
+    except Exception as e:
+        log(f"XFEED hook failed: {str(e)[:80]}")
     # Squawk filter: every minute on weekdays 6:00-16:00 ET, every 10 minutes otherwise.
     sq_every = 60 if now.weekday() < 5 and 6 <= now.hour < 16 else 600
     if time.time() - _cat_last.get("squawk", 0) >= sq_every:
