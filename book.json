@@ -1493,13 +1493,13 @@
    "Caesars": 473,
    "DraftKings": 532,
    "FanDuel": 490,
-   "Fanatics": 473,
-   "Parx": 467,
+   "Fanatics": 470,
+   "Parx": 462,
    "Pinnacle": 378,
    "Sleeper": 553,
    "Underdog": 563,
    "Unibet": 110,
-   "bet365": 562
+   "bet365": 557
   },
   "data_files": [
    "mlb.sqlite",
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 28
+  "kalshi_legs_today": 25
  },
  "shadow": [
   {
@@ -2629,9 +2629,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-21T23:00:00Z",
-   "p": 0.479,
+   "p": 0.48,
    "price": 0.4,
-   "edge": 0.062,
+   "edge": 0.063,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2884,9 +2884,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.538,
+   "p": 0.537,
    "price": 0.47,
-   "edge": 0.051,
+   "edge": 0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3439,9 +3439,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.593,
+   "p": 0.592,
    "price": 0.4,
-   "edge": 0.176,
+   "edge": 0.175,
    "news": "Caleb Martin is out: Cooper Flagg hit the over in 11/21 games without him vs 6/19 with him; Tarik Biberovic (F) is out, so Cooper Flagg's role likely grows; Santi Aldama (F) is out, so Cooper Flagg's role likely grows.",
    "result": null
   },
@@ -3457,6 +3457,21 @@
    "p": 0.381,
    "price": 0.33,
    "edge": 0.036,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "KXNBA3PT-26OCT22CLEPHI-CLEDMITCHELL45-3",
+   "league": "nba",
+   "player": "Donovan Mitchell",
+   "stat": "threes",
+   "side": "under",
+   "line": 2.5,
+   "start": "2026-10-22T23:00:00Z",
+   "p": 0.479,
+   "price": 0.43,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
