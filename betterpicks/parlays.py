@@ -88,11 +88,15 @@ def stat_query(league, stat):
     return ("soccer.sqlite" if league == "epl" else f"{league}.sqlite"), f"select {expr}, date, opp from {table} where player=? or player=? order by date desc"
 
 
-_CONN, _ROWS = {}, {}
+_CONN, _ROWS, _TEAM = {}, {}, {}
+# ESPN codes in the stats DB vs the codes on Kalshi/sportsbook props
+NBA_CODE = {"GS": "GSW", "NY": "NYK", "NO": "NOP", "SA": "SAS", "UTAH": "UTA", "WSH": "WAS"}
 
 
 def rows_for(league, stat, player):
-    """All of a player's games for this stat, newest first (cached; DBs copied locally once for speed)."""
+    """All of a player's games for this stat, newest first (cached; DBs copied locally once for speed).
+    NBA (Ryan 2026-10-21, lots of players changed teams): only games for his current team count, and
+    preseason games are in the DB, so a moved player's history starts with his new team."""
     q = stat_query(league, stat)
     if not q or not os.path.exists(os.path.join(DATA, q[0])):
         return None
@@ -104,13 +108,28 @@ def rows_for(league, stat, player):
             if not os.path.exists(local) or os.path.getmtime(local) < os.path.getmtime(src):
                 import shutil; shutil.copyfile(src, local)
             _CONN[q[0]] = sqlite3.connect(local)
-        _ROWS[key] = _CONN[q[0]].execute(q[1], (player, player)).fetchall()
+        rows = None
+        if league == "nba":
+            try:
+                rows = _CONN[q[0]].execute(q[1].replace(", opp from", ", opp, team from"), (player, player)).fetchall()
+            except sqlite3.OperationalError:   # older slim DB without the team column
+                rows = None
+            if rows:
+                _TEAM[(league, player)] = NBA_CODE.get(rows[0][3], rows[0][3])
+                rows = [r[:3] for r in rows if r[3] == rows[0][3]]
+        _ROWS[key] = rows if rows is not None else _CONN[q[0]].execute(q[1], (player, player)).fetchall()
     return _ROWS[key]
 
 
-def history(league, stat, player, line, opp=None, n=12):
+def moved(league, player, team):
+    """True when the prop has the player on a team he has no games for yet (just traded or signed)."""
+    t = _TEAM.get((league, player))
+    return bool(team and t and t != team)
+
+
+def history(league, stat, player, line, opp=None, n=12, team=None):
     rows = rows_for(league, stat, player)
-    if rows is None:
+    if rows is None or moved(league, player, team):
         return None
     vals = [r[0] for r in rows if r[0] is not None][:n]
     if len(vals) < 6:
@@ -133,7 +152,7 @@ def fair(prop, line, side):
     mp, nb = market_p_over(prop, line)
     if mp is None:
         return None
-    h = history(prop["league"], prop["stat"], prop["player"], line, opp_of(prop))
+    h = history(prop["league"], prop["stat"], prop["player"], line, opp_of(prop), team=prop.get("team"))
     p_over = 0.8 * mp + 0.2 * h["hit_rate"] if h else mp
     p = p_over if side == "over" else 1 - p_over
     return {"p": round(p, 3), "market_p": round(mp if side == "over" else 1 - mp, 3), "books": nb, "hist": h}
