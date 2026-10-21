@@ -1482,17 +1482,17 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 10:00 PT",
-  "props_today": 977,
+  "props_today": 979,
   "kalshi_props_today": 429,
-  "kalshi_priced_today": 29,
+  "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
    "AN Consensus": 426,
    "AN Open": 419,
    "BetMGM": 281,
    "BetRivers": 358,
-   "Caesars": 362,
+   "Caesars": 359,
    "DraftKings": 407,
-   "FanDuel": 375,
+   "FanDuel": 374,
    "Fanatics": 344,
    "Parx": 358,
    "Pinnacle": 296,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 21
+  "kalshi_legs_today": 20
  },
  "shadow": [
   {
@@ -2345,8 +2345,8 @@
    "line": 9.5,
    "start": "2026-10-21T23:30:00Z",
    "p": 0.5,
-   "price": 0.41,
-   "edge": 0.073,
+   "price": 0.4,
+   "edge": 0.083,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2487,6 +2487,21 @@
   },
   {
    "date": "2026-10-21",
+   "ticker": "KXNBABLK-26OCT21MILWAS-WASASARR20-2",
+   "league": "nba",
+   "player": "Alex Sarr",
+   "stat": "blocks",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-10-21T23:00:00Z",
+   "p": 0.638,
+   "price": 0.58,
+   "edge": 0.041,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-21",
    "ticker": "KXNBABLK-26OCT21UTAMEM-UTAJJACKSON20-2",
    "league": "nba",
    "player": "Jaren Jackson Jr.",
@@ -2554,9 +2569,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.668,
+   "p": 0.667,
    "price": 0.52,
-   "edge": 0.131,
+   "edge": 0.13,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/13 games without him vs 19/27 with him.",
    "result": null
   },
@@ -2614,9 +2629,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.554,
+   "p": 0.556,
    "price": 0.48,
-   "edge": 0.057,
+   "edge": 0.059,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2914,9 +2929,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.472,
+   "p": 0.476,
    "price": 0.42,
-   "edge": 0.035,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3034,9 +3049,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.592,
+   "p": 0.593,
    "price": 0.42,
-   "edge": 0.155,
+   "edge": 0.156,
    "news": "Caleb Martin is out: Cooper Flagg hit the over in 11/21 games without him vs 6/19 with him; Tarik Biberovic (F) is out, so Cooper Flagg's role likely grows; Santi Aldama (F) is out, so Cooper Flagg's role likely grows.",
    "result": null
   },
