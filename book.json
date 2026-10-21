@@ -1482,18 +1482,18 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 08:00 PT",
-  "props_today": 913,
+  "props_today": 917,
   "kalshi_props_today": 419,
   "kalshi_priced_today": 29,
   "books_on_kalshi_props": {
-   "AN Consensus": 416,
+   "AN Consensus": 418,
    "AN Open": 409,
    "BetMGM": 269,
    "BetRivers": 345,
-   "Caesars": 354,
+   "Caesars": 353,
    "DraftKings": 400,
-   "FanDuel": 372,
-   "Fanatics": 334,
+   "FanDuel": 371,
+   "Fanatics": 336,
    "Parx": 345,
    "Pinnacle": 244,
    "Sleeper": 408,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 17
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -2074,9 +2074,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.434,
+   "p": 0.436,
    "price": 0.36,
-   "edge": 0.058,
+   "edge": 0.06,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2314,9 +2314,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.508,
+   "p": 0.509,
    "price": 0.44,
-   "edge": 0.051,
+   "edge": 0.052,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2599,9 +2599,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.537,
+   "p": 0.538,
    "price": 0.48,
-   "edge": 0.04,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2944,9 +2944,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.536,
+   "p": 0.537,
    "price": 0.46,
-   "edge": 0.059,
+   "edge": 0.06,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2974,9 +2974,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.417,
+   "p": 0.416,
    "price": 0.35,
-   "edge": 0.051,
+   "edge": 0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2989,9 +2989,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.55,
+   "p": 0.549,
    "price": 0.5,
-   "edge": 0.033,
+   "edge": 0.032,
    "news": "News: D'Andre Swift missing from Bears injury report doesn't tell the whole story - Bear Goggles On",
    "result": null
   },
