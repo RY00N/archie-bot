@@ -1484,22 +1484,22 @@
   "props_at": "2026-10-21 14:00 PT",
   "props_today": 989,
   "kalshi_props_today": 547,
-  "kalshi_priced_today": 31,
+  "kalshi_priced_today": 30,
   "books_on_kalshi_props": {
-   "AN Consensus": 543,
+   "AN Consensus": 545,
    "AN Open": 535,
-   "BetMGM": 409,
+   "BetMGM": 412,
    "BetRivers": 457,
-   "Caesars": 456,
+   "Caesars": 477,
    "DraftKings": 518,
-   "FanDuel": 480,
-   "Fanatics": 445,
+   "FanDuel": 479,
+   "Fanatics": 446,
    "Parx": 457,
    "Pinnacle": 371,
    "Sleeper": 539,
    "Underdog": 547,
    "Unibet": 107,
-   "bet365": 541
+   "bet365": 542
   },
   "data_files": [
    "mlb.sqlite",
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 31
+  "kalshi_legs_today": 28
  },
  "shadow": [
   {
@@ -2074,9 +2074,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.596,
+   "p": 0.597,
    "price": 0.51,
-   "edge": 0.069,
+   "edge": 0.07,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2134,9 +2134,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.558,
-   "price": 0.47,
-   "edge": 0.071,
+   "p": 0.557,
+   "price": 0.48,
+   "edge": 0.06,
    "news": "T.J. McConnell is out: Andrew Nembhard hit the over in 2/3 games without him vs 22/37 with him; Aaron Nesmith is out: Andrew Nembhard hit the over in 8/14 games without him vs 16/26 with him; Johnny Furphy is out: Andrew Nembhard hit the over in 10/16 games without him vs 14/24 with him.",
    "result": null
   },
@@ -2854,9 +2854,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.531,
+   "p": 0.534,
    "price": 0.44,
-   "edge": 0.074,
+   "edge": 0.077,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3019,9 +3019,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.55,
+   "p": 0.552,
    "price": 0.49,
-   "edge": 0.043,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3094,9 +3094,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.543,
+   "p": 0.544,
    "price": 0.47,
-   "edge": 0.056,
+   "edge": 0.057,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3109,9 +3109,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.608,
+   "p": 0.607,
    "price": 0.52,
-   "edge": 0.071,
+   "edge": 0.07,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3124,9 +3124,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.493,
+   "p": 0.492,
    "price": 0.43,
-   "edge": 0.046,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3244,9 +3244,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-22T02:00:00Z",
-   "p": 0.551,
+   "p": 0.534,
    "price": 0.48,
-   "edge": 0.054,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3275,8 +3275,8 @@
    "line": 3.5,
    "start": "2026-10-22T02:00:00Z",
    "p": 0.566,
-   "price": 0.47,
-   "edge": 0.079,
+   "price": 0.48,
+   "edge": 0.069,
    "news": "Chris Youngblood (G) is out, so Damian Lillard's role likely grows.",
    "result": null
   },
@@ -3379,9 +3379,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.594,
+   "p": 0.592,
    "price": 0.41,
-   "edge": 0.167,
+   "edge": 0.165,
    "news": "Caleb Martin is out: Cooper Flagg hit the over in 11/21 games without him vs 6/19 with him; Tarik Biberovic (F) is out, so Cooper Flagg's role likely grows; Santi Aldama (F) is out, so Cooper Flagg's role likely grows.",
    "result": null
   },
