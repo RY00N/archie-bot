@@ -1484,7 +1484,7 @@
   "props_at": "2026-10-21 16:00 PT",
   "props_today": 817,
   "kalshi_props_today": 453,
-  "kalshi_priced_today": 14,
+  "kalshi_priced_today": 15,
   "books_on_kalshi_props": {
    "AN Consensus": 305,
    "AN Open": 294,
@@ -1493,7 +1493,7 @@
    "Caesars": 266,
    "DraftKings": 287,
    "FanDuel": 275,
-   "Fanatics": 258,
+   "Fanatics": 256,
    "Parx": 247,
    "Pinnacle": 207,
    "Sleeper": 442,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 16
  },
  "shadow": [
   {
@@ -2149,9 +2149,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.4,
+   "p": 0.402,
    "price": 0.35,
-   "edge": 0.034,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2164,9 +2164,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.451,
+   "p": 0.453,
    "price": 0.38,
-   "edge": 0.055,
+   "edge": 0.057,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2944,9 +2944,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.509,
+   "p": 0.512,
    "price": 0.45,
-   "edge": 0.042,
+   "edge": 0.045,
    "news": "News: Jarace Walker no longer on Indiana Pacers injury report - Total Apex Sports",
    "result": null
   },
@@ -3049,9 +3049,9 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.532,
+   "p": 0.531,
    "price": 0.47,
-   "edge": 0.045,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3169,10 +3169,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.543,
+   "p": 0.563,
    "price": 0.47,
-   "edge": 0.056,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": 0.076,
+   "news": "Jett Howard (G) is out, so Kyrie Irving's role likely grows.",
    "result": null
   },
   {
@@ -3439,9 +3439,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.556,
+   "p": 0.559,
    "price": 0.49,
-   "edge": 0.049,
+   "edge": 0.052,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
