@@ -1490,10 +1490,10 @@
    "AN Open": 532,
    "BetMGM": 376,
    "BetRivers": 452,
-   "Caesars": 465,
+   "Caesars": 464,
    "DraftKings": 505,
    "FanDuel": 480,
-   "Fanatics": 436,
+   "Fanatics": 437,
    "Parx": 453,
    "Pinnacle": 371,
    "Sleeper": 528,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 23
+  "kalshi_legs_today": 24
  },
  "shadow": [
   {
@@ -2285,8 +2285,8 @@
    "line": 1.5,
    "start": "2026-10-22T00:00:00Z",
    "p": 0.459,
-   "price": 0.41,
-   "edge": 0.032,
+   "price": 0.4,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2644,9 +2644,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.622,
+   "p": 0.617,
    "price": 0.47,
-   "edge": 0.135,
+   "edge": 0.13,
    "news": "Dailyn Swain (G) is out, so Tre Jones's role likely grows; Jordan Hawkins (G) is out, so Tre Jones's role likely grows.",
    "result": null
   },
@@ -3094,9 +3094,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-22T00:00:00Z",
-   "p": 0.552,
+   "p": 0.551,
    "price": 0.5,
-   "edge": 0.035,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
