@@ -30,13 +30,13 @@
  "apps": [
   "Kalshi"
  ],
- "max_legs": 3,
+ "max_legs": 2,
  "max_parlays_per_day": 3,
  "post_window_pt": [
   6,
   12
  ],
- "lock_single_edge": 0.1,
+ "lock_single_edge": 0.05,
  "lock_single_min_p": 0.6,
  "max_locks_per_day": 3,
  "kalshi_only_note": "Ryan 2026-10-12 06:25Z: stick to Kalshi for now (no PrizePicks or sportsbook singles); parlays max 3 legs (1-2 ok); max 3 parlays per day posted whenever found (no time window since 2026-10-14); a can't-pass-up single leg (edge >= lock_single_edge, fair >= lock_single_min_p) goes out any time as a 1-leg lock and doesn't count toward the 3 (max_locks_per_day).",
@@ -49,5 +49,8 @@
  "news_note": "Ryan 2026-10-13 20:00Z: every leg is checked against ESPN injury reports and the last 3 days of news (news.py): Out/IL/suspended = dropped; questionable or bad news (illness, personal/family matter, divorce, slump) = overs lose 5-8 win-chance points. Note shows in Discord.",
  "post_window_note": "Ryan 2026-10-14 01:08Z: no posting cutoff, picks post whenever found (any hour). post_window_pt now only sets the 8am/10am 'nothing yet' notes and when the bad-day note may go (after noon, only if no Kalshi games left today).",
  "daily_pick_after_pt": 12,
- "parlay_min_win_p_note": "Ryan 2026-10-19 02:47Z: each leg 60%+ after the injury/matchup check (final call; 57% was live for a minute)."
+ "parlay_min_win_p_note": "Ryan 2026-10-19 02:47Z: each leg 60%+ after the injury/matchup check (final call; 57% was live for a minute).",
+ "combo_min_leg_p": 0.65,
+ "under_min_p": 0.65,
+ "loss_min_note": "Ryan 2026-10-21 05:52Z ('whatever minimizes losses'): singles first (1-leg locks at 60%+ with 5%+ edge after Kalshi's fee, max_locks_per_day), combos max 2 legs with every leg 65%+ (combo_min_leg_p), every under needs 65%+ (under_min_p). Since Oct 13 singles were 3-0 +$17.80, combos 1-7 -$24.60. Daily pick of the day unchanged. Judge rule changes on 30+ graded shadow legs."
 }

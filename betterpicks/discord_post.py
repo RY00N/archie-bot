@@ -146,7 +146,8 @@ def today(dry=False):
     items = [(key_pick(p), fmt_pick(p)) for p in book.get("picks", []) if p["date"] == day and "sportsbook" in apps]
     items += [(key_parlay(e), e) for e in book.get("parlays", [])
               if e["date"] == day and e["app"] in apps and not e.get("test")]   # Ryan 2026-10-14: post whenever, no window
-    new = [(k, t) for k, t in items if k not in sent]
+    gone = {r["key"] for r in feed_doc().get("retract", [])}   # Ryan 2026-10-21: taken-back picks never post
+    new = [(k, t) for k, t in items if k not in sent and k not in gone]
     # Ryan 2026-10-12: if nothing goes out today, say so once (only after noon and once parlays.py finds no Kalshi games left today)
     quiet_key = f"quiet:{day}"
     if (not new and now.hour >= hi and quiet_key not in sent and book.get("no_games_left") == day
@@ -202,16 +203,66 @@ def verdict_post(v, rec):
     return head, {"title": f"Verdict: {word}", "color": color, "fields": fields[:25], "footer": {"text": foot}}
 
 
+_feed = None
+
+
+def feed_doc():
+    """The project's graded feed (verdicts, delays, retractions), fetched once per run."""
+    global _feed
+    if _feed is None:
+        try:
+            req = urllib.request.Request(FEED_URL, headers={"User-Agent": "BetterPicks (1.0)", "Cache-Control": "no-cache"})
+            _feed = json.load(urllib.request.urlopen(req, timeout=15)).get("verdicts") or {}
+        except Exception:
+            _feed = {}
+    return _feed
+
+
+def discord(method, path):
+    tok = os.environ.get("DISCORD_BOT_TOKEN")
+    req = urllib.request.Request(f"https://discord.com/api/v10{path}", method=method,
+                                 headers={"Authorization": f"Bot {tok}", "User-Agent": "BetterPicks (1.0)"})
+    raw = urllib.request.urlopen(req, timeout=20).read()
+    return json.loads(raw) if raw else None
+
+
+def retractions(dry=False):
+    """Ryan 2026-10-21: when the project takes a pick back, delete its Discord post and tell people to fade it.
+    A pick that never went out is just marked so it never posts."""
+    sent = set(load(SENT, []))
+    chan = os.environ.get("DISCORD_CHANNEL_ID")
+    for r in feed_doc().get("retract", []):
+        k = r["key"]
+        if f"retract:{k}" in sent:
+            continue
+        if k in sent:
+            head = kalshi_post(r)
+            if dry:
+                print("would delete + fade:", head); continue
+            try:   # find our post by its header line among the channel's recent messages
+                for m in discord("GET", f"/channels/{chan}/messages?limit=100") or []:
+                    if m.get("content", "").startswith(head):
+                        discord("DELETE", f"/channels/{chan}/messages/{m['id']}")
+                        break
+            except Exception as ex:
+                print("delete failed:", ex)
+            picks = ", ".join(leg_label(l) for l in r["legs"])
+            send(f"\u21a9\ufe0f **Taking back a pick: {picks}.** It doesn't pass our updated rules, so fade it "
+                 f"(skip it, or take the other side if you're on it). {r.get('why', '')} (practice pick, not a real bet)".replace("  ", " "))
+        sent.add(f"retract:{k}"); sent.add(k)
+        if not dry:
+            json.dump(sorted(sent), open(SENT, "w"), indent=1)
+            print("retracted", k)
+
+
 def verdicts(dry=False):
     """Ryan 2026-10-18: when a posted parlay's last game is graded, say whether it hit or lost (past ones too)."""
-    try:
-        req = urllib.request.Request(FEED_URL, headers={"User-Agent": "BetterPicks (1.0)", "Cache-Control": "no-cache"})
-        doc = json.load(urllib.request.urlopen(req, timeout=15)).get("verdicts") or {}
-    except Exception:
+    doc = feed_doc()
+    if not doc:
         return
     sent = set(load(SENT, []))
     todo = [v for v in sorted(doc.get("parlays", []), key=lambda v: v["date"])
-            if v["key"] in sent and f"verdict:{v['key']}" not in sent]
+            if v["key"] in sent and f"verdict:{v['key']}" not in sent and f"retract:{v['key']}" not in sent]
     for dl in doc.get("delays", []):   # Ryan 2026-10-18: say when a posted pick's game is delayed; the pick carries over
         k = f"delay:{dl['key']}:{dl['game']}"
         if dl["key"] not in sent or k in sent:
@@ -252,6 +303,7 @@ def reload_presence():
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "today":
+        retractions("--dry" in sys.argv)
         today("--dry" in sys.argv)
         verdicts("--dry" in sys.argv)
         try:

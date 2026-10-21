@@ -30,7 +30,7 @@ def verdicts():
         done = set()
     out = []
     for e in book.get("parlays", []):
-        if (e["status"] in ("won", "lost", "void") and e["date"] >= "2026-10-12" and not e.get("test")
+        if (e["status"] in ("won", "lost", "void") and e["date"] >= "2026-10-12" and not e.get("test") and not e.get("retracted")
                 and f"verdict:parlay:{e['date']}:{e['app']}:{e['type']}" not in done):
             out.append({"key": f"parlay:{e['date']}:{e['app']}:{e['type']}", "date": e["date"], "app": e["app"],
                         "type": e["type"], "lock": e.get("lock"), "status": e["status"], "pnl": e["pnl"],
@@ -41,7 +41,13 @@ def verdicts():
            "pnl": round(sum(e["pnl"] for e in rule), 2)}
     posted = [e for e in book.get("parlays", []) if e["date"] >= "2026-10-12" and not e.get("test")
               and f"parlay:{e['date']}:{e['app']}:{e['type']}" in done]
-    return {"parlays": out, "record": rec, "props": prop_record(posted), "delays": delays(posted), "board": board(posted)}
+    # Ryan 2026-10-21: picks the project takes back; the droplet deletes the post (if it went out) and says fade it
+    retract = [{"key": f"parlay:{e['date']}:{e['app']}:{e['type']}", "app": e["app"], "type": e["type"],
+                "lock": e.get("lock"), "why": e.get("retract_why", ""), "legs": [{k: l.get(k) for k in LEG_KEEP} for l in e["legs"]]}
+               for e in book.get("parlays", []) if e.get("retracted")]
+    live = [e for e in posted if not e.get("retracted")]
+    return {"parlays": out, "record": rec, "props": prop_record(live), "delays": delays(live), "board": board(live),
+            "retract": retract}
 
 
 def board(parlays):

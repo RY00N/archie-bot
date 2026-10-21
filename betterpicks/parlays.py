@@ -403,7 +403,10 @@ def build():
     book.setdefault("parlays", [])
     legs = collect_legs(props, now, apps=apps)
     min_win, mode = r.get("parlay_min_win_p", 0.65), r.get("parlay_mode", "whole")
-    ok = (lambda c: math.prod(l["p"] for l in c) >= min_win) if mode == "whole" else (lambda c: min(l["p"] for l in c) >= min_win)
+    under_p = r.get("under_min_p", 0.0)   # Ryan 2026-10-21: unders need more margin
+    leg_ok = lambda l, bar: l["p"] >= (max(bar, under_p) if l["side"] == "under" else bar)
+    combo_bar = r.get("combo_min_leg_p", min_win)
+    ok = (lambda c: math.prod(l["p"] for l in c) >= min_win) if mode == "whole" else (lambda c: all(leg_ok(l, combo_bar) for l in c))
     # still-open picks from earlier days count too: a postponed game's pick carries over, never re-posted (Ryan 2026-10-19)
     shadow(book, legs, now_pt)
     used = {(l["player"], l["stat"]) for e in book["parlays"]
@@ -413,11 +416,11 @@ def build():
     today = now_pt.date().isoformat()
     lock_edge, lock_p = r.get("lock_single_edge", 0.10), r.get("lock_single_min_p", 0.60)
     n_locks = sum(1 for e in book["parlays"] if e["date"] == today and e.get("lock"))
-    for l in sorted([l for l in legs if l["app"] == "Kalshi" and l["edge"] >= lock_edge and l["p"] >= lock_p], key=lambda l: -l["edge"]):
+    for l in sorted([l for l in legs if l["app"] == "Kalshi" and l["edge"] >= lock_edge and leg_ok(l, lock_p)], key=lambda l: -l["edge"]):
         if n_locks >= r.get("max_locks_per_day", 3):
             break
-        if (l["prop"]["player"], l["prop"]["stat"]) in used:
-            continue
+        if (l["prop"]["player"], l["prop"]["stat"]) in used or l["prop"]["player"] in {u[0] for u in used}:
+            continue   # one pick per player (Ryan 2026-10-21 rules: no stacking the same player)
         e = make_entry(today, "Kalshi", f"1-leg lock: {l['prop']['player']} {l['side']} {l['line']} {l['prop']['stat'].replace('_', ' ')}",
                        [l], round(1 / l["price"], 2), None)
         e["lock"] = True; e["ev_pct"] = round(100 * (l["p"] / l["price"] - 1), 1)
