@@ -1496,7 +1496,7 @@
    "Fanatics": 435,
    "Parx": 454,
    "Pinnacle": 371,
-   "Sleeper": 529,
+   "Sleeper": 535,
    "Underdog": 545,
    "Unibet": 96,
    "bet365": 541
@@ -2060,8 +2060,8 @@
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
    "p": 0.602,
-   "price": 0.51,
-   "edge": 0.075,
+   "price": 0.5,
+   "edge": 0.084,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
