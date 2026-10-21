@@ -47,6 +47,11 @@ def main():
         avg_p = sum(x["p"] for x in g) / len(g)
         stats[b] = (len(g), roi)
         print(f"  {b:.0%}+ bar: {w}-{len(g) - w} ({w / len(g):.0%} hit, we said {avg_p:.0%}), ROI at the ask {roi:+.1%}")
+    for side in ("over", "under"):   # Ryan 2026-10-21: posted unders went 4-6, overs 7-3; watch it on the full log
+        g = [x for x in done if x["p"] >= bar and x["side"] == side]
+        if g:
+            w = sum(x["result"] == "won" for x in g)
+            print(f"  {side}s at {bar:.0%}+: {w}-{len(g) - w}, ROI at the ask {sum(leg_roi(x) for x in g) / len(g):+.1%}")
     n, roi = stats.get(bar, (0, 0.0))
     higher = [(b, s) for b, s in stats.items() if b > bar and s[0] >= MIN_N]
     lower = [(b, s) for b, s in stats.items() if b < bar and s[0] >= MIN_N]
