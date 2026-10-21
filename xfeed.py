@@ -260,6 +260,7 @@ def poll_live(log=print):
 
 def maybe_run(log=print):
     """Call from the bot loop (intel.maybe_run). Does nothing until the droplet has the X cookies in its env."""
+    _live["calls"] = _live.get("calls", 0) + 1
     if _live["busy"] or not (os.environ.get("auth_token") or os.environ.get("X_AUTH_TOKEN")):
         return
     every = LIVE_EVERY if market_hours() else IDLE_EVERY
@@ -288,7 +289,8 @@ def maybe_run(log=print):
 def status():
     """Small health line for the published P&L snapshot (no secrets): is the live feed running on this machine?"""
     out = {"cookies": bool(os.environ.get("auth_token") or os.environ.get("X_AUTH_TOKEN")), "errors": _live["err"],
-           "last_error": _live.get("last_error")}
+           "last_error": _live.get("last_error"), "calls": _live.get("calls", 0), "busy": _live["busy"],
+           "last_try": datetime.fromtimestamp(_live["t"], timezone.utc).strftime("%H:%M:%SZ") if _live["t"] else None}
     try:
         d = json.load(open(LIVE_OUT))
         out.update(updated=d["updated"], posts=len(d["posts"]), mode=d.get("mode"))

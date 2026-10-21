@@ -96,6 +96,10 @@ def main():
                 last_reload = now
             clock = bot.trade("GET", "/v2/clock")
             if not clock["is_open"]:
+                try:  # keep the always-on helper thread (intel, X feed) running while the market is closed
+                    importlib.import_module("optbot").ensure_thread(bot, log)
+                except Exception:
+                    log("optbot thread error:\n" + traceback.format_exc()[-300:])
                 if now - last_news > 300:  # market closed: still read headlines every 5 minutes
                     try:
                         held_now = {p["symbol"] for p in bot.trade("GET", "/v2/positions")}

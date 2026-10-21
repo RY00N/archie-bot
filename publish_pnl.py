@@ -269,6 +269,11 @@ def _push(snap, token, slug):
 def publish(bot, market_open, log):
     """Build and push a snapshot in the background so trading never waits on GitHub."""
     global _warned
+    try:  # the always-on optbot thread (intel + X feed) normally starts on the first market tick; after a night-time
+        import optbot  # restart nothing ticks until 9:30 ET, so start it here too (archie_live calls this when closed)
+        optbot.ensure_thread(bot, log)
+    except Exception as e:
+        log(f"optbot thread start failed: {e}")
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
         if not _warned:
