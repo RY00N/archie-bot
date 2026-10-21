@@ -1482,21 +1482,21 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 11:00 PT",
-  "props_today": 982,
+  "props_today": 983,
   "kalshi_props_today": 542,
-  "kalshi_priced_today": 30,
+  "kalshi_priced_today": 31,
   "books_on_kalshi_props": {
    "AN Consensus": 539,
-   "AN Open": 531,
+   "AN Open": 530,
    "BetMGM": 376,
    "BetRivers": 452,
-   "Caesars": 468,
+   "Caesars": 463,
    "DraftKings": 505,
    "FanDuel": 478,
-   "Fanatics": 434,
+   "Fanatics": 437,
    "Parx": 453,
    "Pinnacle": 371,
-   "Sleeper": 527,
+   "Sleeper": 526,
    "Underdog": 542,
    "Unibet": 95,
    "bet365": 538
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 24
+  "kalshi_legs_today": 22
  },
  "shadow": [
   {
@@ -2359,9 +2359,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.535,
+   "p": 0.533,
    "price": 0.42,
-   "edge": 0.098,
+   "edge": 0.096,
    "news": "Dailyn Swain (G) is out, so Josh Giddey's role likely grows; Jordan Hawkins (G) is out, so Josh Giddey's role likely grows.",
    "result": null
   },
@@ -2629,9 +2629,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-21T23:30:00Z",
-   "p": 0.621,
+   "p": 0.623,
    "price": 0.48,
-   "edge": 0.124,
+   "edge": 0.126,
    "news": "Dailyn Swain (G) is out, so Tre Jones's role likely grows; Jordan Hawkins (G) is out, so Tre Jones's role likely grows.",
    "result": null
   },
@@ -2899,9 +2899,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.544,
+   "p": 0.543,
    "price": 0.48,
-   "edge": 0.047,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3139,9 +3139,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.594,
+   "p": 0.593,
    "price": 0.41,
-   "edge": 0.167,
+   "edge": 0.166,
    "news": "Caleb Martin is out: Cooper Flagg hit the over in 11/21 games without him vs 6/19 with him; Tarik Biberovic (F) is out, so Cooper Flagg's role likely grows; Santi Aldama (F) is out, so Cooper Flagg's role likely grows.",
    "result": null
   },
