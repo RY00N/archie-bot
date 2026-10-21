@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T21:20:43Z",
+ "updated": "2026-10-21T22:20:05Z",
  "lookback_hours": 12,
  "note": "Info only, never a trade signal. Posts from accounts the spare X account follows.",
  "accounts": [
@@ -30,11 +30,707 @@
   "Walter_Bloomberg: lookup failed ('user')"
  ],
  "counts": {
-  "headline": 108,
-  "flow": 42,
-  "analysis": 121
+  "headline": 105,
+  "flow": 44,
+  "analysis": 128
  },
  "posts": [
+  {
+   "at": "2026-10-21T22:17:25Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "SAUDI CIVIL AVIATION SAYS ONE PERSON WAS KILLED AND EIGHT INJURED IN AN ATTACK ON KING FAHD AIRPORT IN DAMMAM ON WEDNESDAY, WHILE THE SAUDI-LED COALITION SAYS FOUR DRONES WERE INTERCEPTED AND DESTROYED IN THE EASTERN PROVINCE",
+   "likes": 5,
+   "reposts": 2,
+   "url": "https://x.com/FirstSquawk/status/2113031930409369619"
+  },
+  {
+   "at": "2026-10-21T22:17:02Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "WHITE HOUSE HAS DEMANDED POLITICO RETRACT OR CORRECT STORIES, WITH A LETTER SENT TO POLITICO ON MONDAY AND THE RETRACTION DEMAND COMING FROM WHITE HOUSE COUNSEL - AXIOS",
+   "likes": 6,
+   "reposts": 1,
+   "url": "https://x.com/FirstSquawk/status/2113031833726443758"
+  },
+  {
+   "at": "2026-10-21T22:15:44Z",
+   "handle": "MikeZaccardi",
+   "name": "Mike Zaccardi, CFA, CMT 🍖",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "$TSLA $IBM turn red... $META clings to a 2% gain\n\n$QQQ -0.4% @finviz_com",
+   "likes": 1,
+   "reposts": 0,
+   "url": "https://x.com/MikeZaccardi/status/2113031507971354794"
+  },
+  {
+   "at": "2026-10-21T22:14:43Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "Saudi civil aviation: one killed, eight injured in attack on King Fahd airport in Dammam on Wednesday",
+   "likes": 6,
+   "reposts": 2,
+   "url": "https://x.com/financialjuice/status/2113031252244901984"
+  },
+  {
+   "at": "2026-10-21T22:11:00Z",
+   "handle": "charliebilello",
+   "name": "Charlie Bilello",
+   "tag": "flow",
+   "qqq": true,
+   "retweet": false,
+   "text": "Tesla's total Q3 revenues of $28 billion were flat year over year (Automotive -3% YoY). Net Income of $787 million was down 43% from a year ago. Operating margins fell to 2.6% from 5.8% a year ago. Free cash flow of $1.5 billion was down 62% YoY due to a spike in capital expenditures (up 110% YoY to $4.7 billion). $TSLA",
+   "likes": 24,
+   "reposts": 6,
+   "url": "https://x.com/charliebilello/status/2113030318525419923"
+  },
+  {
+   "at": "2026-10-21T22:08:17Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "Saudi-led coalition: four drones intercepted and destroyed in eastern province",
+   "likes": 7,
+   "reposts": 2,
+   "url": "https://x.com/financialjuice/status/2113029633272639549"
+  },
+  {
+   "at": "2026-10-21T22:02:24Z",
+   "handle": "Mr_Derivatives",
+   "name": "Heisenberg",
+   "tag": "flow",
+   "qqq": false,
+   "retweet": false,
+   "text": "Futures:",
+   "likes": 87,
+   "reposts": 6,
+   "url": "https://x.com/Mr_Derivatives/status/2113028154289963276"
+  },
+  {
+   "at": "2026-10-21T22:01:04Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": true,
+   "retweet": false,
+   "text": "TESLA EXEC SAYS THE COMPANY IS LAUNCHING CYBERCABS IN DALLAS NEXT MONTH AND IS TRYING TO GET CYBERCABS TO CUSTOMERS BY THE END OF THIS YEAR, ADDING IT EXPECTS AROUND Q2 NEXT YEAR TO TURN ON SOME CUSTOMER CARS TO BE PART OF THE ROBOTAXI FLEET",
+   "likes": 9,
+   "reposts": 2,
+   "url": "https://x.com/FirstSquawk/status/2113027819303510233"
+  },
+  {
+   "at": "2026-10-21T22:00:47Z",
+   "handle": "zerohedge",
+   "name": "zerohedge",
+   "tag": "analysis",
+   "qqq": false,
+   "retweet": true,
+   "text": "Serbia 🇷🇸: the students have reached Belgrade. Thousands are now marching from several directions to a single point in the city",
+   "likes": 0,
+   "reposts": 436,
+   "url": "https://x.com/zerohedge/status/2113027746792120375"
+  },
+  {
+   "at": "2026-10-21T22:00:43Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": true,
+   "retweet": false,
+   "text": "TESLA CFO SAYS ENERGY GROSS MARGINS IMPROVED FROM 20.4% TO 33.1%, PRIMARILY ATTRIBUTED TO TARIFF REFUNDS AND WARRANTY TRUE-DOWNS",
+   "likes": 4,
+   "reposts": 2,
+   "url": "https://x.com/FirstSquawk/status/2113027727301464285"
+  },
+  {
+   "at": "2026-10-21T22:00:37Z",
+   "handle": "zerohedge",
+   "name": "zerohedge",
+   "tag": "analysis",
+   "qqq": false,
+   "retweet": true,
+   "text": "ILHAN OMAR: HOW PASSPORT FRAUD MAY BE ANOTHER AVENUE FOR PROSECUTION\n\nSeasoned federal investigators know passport fraud may be another path to criminal charges.\n\n18 U.S.C. § 1542 (False Statement in Application)  \n\n- Prohibits making any false statement in a passport application, using a passport obtained via false statements, or using a passport with an assumed/false name to hide criminal behavior\n\nThe 10-year statute of limitations on passport fraud is reset every time the individual renews their passport if the underlying application records, such as a Social Security Number, were obtained through fraud.\n\nFor example, the suspect lied about the true date and place of their birth to obtain a social security number.  \n\nHERE'S HOW IT WORKS: AMERICAN TERRORIST\n\nThis legal strategy was used to obtain a holding charge for the American terrorist Anwar al-Awlaki after 9/11.\n\nAnwar al-Awlaki was a dual U.S.-Yemeni citizen. \n\nThe radical cleric, who became a top al Qaeda leader, was born in ",
+   "likes": 0,
+   "reposts": 1285,
+   "url": "https://x.com/zerohedge/status/2113027705214296481"
+  },
+  {
+   "at": "2026-10-21T22:00:06Z",
+   "handle": "zerohedge",
+   "name": "zerohedge",
+   "tag": "analysis",
+   "qqq": false,
+   "retweet": false,
+   "text": "US Has Revoked More Than 300,000 Visas In Trump's Second Term",
+   "likes": 71,
+   "reposts": 8,
+   "url": "https://x.com/zerohedge/status/2113027575157027066"
+  },
+  {
+   "at": "2026-10-21T21:58:00Z",
+   "handle": "unusual_whales",
+   "name": "unusual_whales",
+   "tag": "flow",
+   "qqq": false,
+   "retweet": false,
+   "text": "Canada's immigration minister says immigration levels will be going up, per CTV News, signalling an end to the two-year slowdown in population growth that followed the Trudeau-era intake surge.\n\nRead more:",
+   "likes": 6,
+   "reposts": 2,
+   "url": "https://x.com/unusual_whales/status/2113027044342714589"
+  },
+  {
+   "at": "2026-10-21T21:57:52Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "LSEG IS NEARING A $3.5 BLN DEAL TO BUY CREDIT DATA SPECIALIST OCTUS, WITH THE TWO SIDES POSSIBLY ANNOUNCING A DEAL AS SOON AS THURSDAY - FT",
+   "likes": 1,
+   "reposts": 1,
+   "url": "https://x.com/FirstSquawk/status/2113027013963612486"
+  },
+  {
+   "at": "2026-10-21T21:56:43Z",
+   "handle": "zerohedge",
+   "name": "zerohedge",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "TSLA CFO; REVISING CAPEX GUIDANCE LOWER TO $20BN THIS YEAR, FROM $25BN",
+   "likes": 73,
+   "reposts": 14,
+   "url": "https://x.com/zerohedge/status/2113026723977555997"
+  },
+  {
+   "at": "2026-10-21T21:54:39Z",
+   "handle": "q_liketheletter",
+   "name": "Q",
+   "tag": "analysis",
+   "qqq": false,
+   "retweet": false,
+   "text": "Need an NFL GM (or two) to do their job and help fix my fantasy team",
+   "likes": 5,
+   "reposts": 3,
+   "url": "https://x.com/q_liketheletter/status/2113026202038669402"
+  },
+  {
+   "at": "2026-10-21T21:53:35Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "JPMORGAN’S TURKISH SECURITIES SUBSIDIARY PLANS TO SURRENDER ITS INTERMEDIARY LICENSE, SUBJECT TO REGULATORY APPROVAL, CITING INACTIVITY SINCE JULY 2015; THE MOVE IS UNRELATED TO MARKET TURMOIL, AND ISTANBUL BANKING OPERATIONS WILL CONTINUE.",
+   "likes": 4,
+   "reposts": 2,
+   "url": "https://x.com/FirstSquawk/status/2113025934207176809"
+  },
+  {
+   "at": "2026-10-21T21:53:35Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "TURKEY’S BORSA ISTANBUL 100 INDEX HAS FALLEN MORE THAN 15% SINCE MID-SEPTEMBER AMID A FUND SCANDAL AFFECTING AROUND 500,000 PEOPLE AND AN ESTIMATED $100 BILLION LOSS IN MARKET VALUE.",
+   "likes": 3,
+   "reposts": 2,
+   "url": "https://x.com/FirstSquawk/status/2113025936157458621"
+  },
+  {
+   "at": "2026-10-21T21:51:08Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "OpenAI: updated usage policies require model routers and AI gateways to get OpenAI review and approval before offering access - website",
+   "likes": 4,
+   "reposts": 1,
+   "url": "https://x.com/financialjuice/status/2113025319510626811"
+  },
+  {
+   "at": "2026-10-21T21:50:16Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "OPENAI SAYS IT IS UPDATING ITS USAGE POLICIES, EFFECTIVE NOVEMBER 20, 2026, TO CLARIFY THE RULES FOR SAFE MODEL DEVELOPMENT AND SENSITIVE USES OF AI, AND THAT IT IS WORKING TO INTRODUCE SAFETYIDS, WHICH CUSTOMERS CAN PROVIDE TO HELP DISTINGUISH BETWEEN INDIVIDUAL END USERS IN INVESTIGATIONS - WEBSITE",
+   "likes": 4,
+   "reposts": 1,
+   "url": "https://x.com/FirstSquawk/status/2113025099179905450"
+  },
+  {
+   "at": "2026-10-21T21:49:59Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "OpenAI: working to introduce safety IDs, which users can provide to help distinguish between end users in investigations - website",
+   "likes": 1,
+   "reposts": 1,
+   "url": "https://x.com/financialjuice/status/2113025027167682561"
+  },
+  {
+   "at": "2026-10-21T21:49:14Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "OpenAI: updating usage policies effective November 20, 2026, to clarify rules for safe model development and sensitive AI applications",
+   "likes": 3,
+   "reposts": 1,
+   "url": "https://x.com/financialjuice/status/2113024841527820551"
+  },
+  {
+   "at": "2026-10-21T21:49:08Z",
+   "handle": "zerohedge",
+   "name": "zerohedge",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "META is way behind actual spending: $34.9BN in Q3 capex means it has to spend up to $59.2BN in Q4 to hit the upper end of its capex guidance",
+   "likes": 84,
+   "reposts": 12,
+   "url": "https://x.com/zerohedge/status/2113024815963533572"
+  },
+  {
+   "at": "2026-10-21T21:46:55Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": true,
+   "retweet": false,
+   "text": "NEW ZEALAND Q3 NON-TRADABLES CPI ROSE 3.3% YOY AND 1.0% QOQ",
+   "likes": 2,
+   "reposts": 0,
+   "url": "https://x.com/FirstSquawk/status/2113024257110540596"
+  },
+  {
+   "at": "2026-10-21T21:46:53Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": true,
+   "retweet": false,
+   "text": "NEW ZEALAND Q3 CPI ROSE 0.7% QOQ, BELOW THE POLL FORECAST OF 0.8% AND DOWN FROM 1.5% IN THE PRIOR QUARTER, AND ROSE 3.7% YOY, BELOW THE POLL FORECAST OF 3.8% AND DOWN FROM 4.1%",
+   "likes": 1,
+   "reposts": 0,
+   "url": "https://x.com/FirstSquawk/status/2113024246297612427"
+  },
+  {
+   "at": "2026-10-21T21:46:43Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": true,
+   "retweet": false,
+   "text": "New Zealand dollar falls to $0.5692 after CPI data misses forecast",
+   "likes": 5,
+   "reposts": 2,
+   "url": "https://x.com/financialjuice/status/2113024206623440983"
+  },
+  {
+   "at": "2026-10-21T21:46:14Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "EUROPEAN COUNCIL: FRAMEWORK ON SECURITISATION TO LOWER CAPITAL REQUIREMENTS FOR MOST SAFE AND WELL-STRUCTURED DEALS",
+   "likes": 1,
+   "reposts": 0,
+   "url": "https://x.com/FirstSquawk/status/2113024086502941005"
+  },
+  {
+   "at": "2026-10-21T21:46:12Z",
+   "handle": "FirstSquawk",
+   "name": "First Squawk",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "EUROPEAN COUNCIL: COUNCIL, EUROPEAN PARLIAMENT REACH PROVISIONAL POLITICAL DEAL ON MEASURES TO REVIVE AND SIMPLIFY EU SECURITISATION MARKET",
+   "likes": 2,
+   "reposts": 0,
+   "url": "https://x.com/FirstSquawk/status/2113024077262921741"
+  },
+  {
+   "at": "2026-10-21T21:46:04Z",
+   "handle": "LiveSquawk",
+   "name": "LiveSquawk",
+   "tag": "headline",
+   "qqq": true,
+   "retweet": false,
+   "text": "New Zealand CPI (Q/Q) Q3: 0.7% (est 0.8%; prev 1.5%) \n\n- CPI (Y/Y): 3.7% (est 3.8%; prev 4.1%) \n- Tradeable CPI (Q/Q): 0.2% (est 0.2%; prev 2.7%) \n- Non-Tradeable CPI (Q/Q): 1.0% (est 1.2%; prev 0.6%)",
+   "likes": 2,
+   "reposts": 1,
+   "url": "https://x.com/LiveSquawk/status/2113024043133849627"
+  },
+  {
+   "at": "2026-10-21T21:46:00Z",
+   "handle": "MikeZaccardi",
+   "name": "Mike Zaccardi, CFA, CMT 🍖",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "Series I savings bonds are a raw deal these days... (giving up a point in yield).. but better come Nov 1 @TipsWatch",
+   "likes": 4,
+   "reposts": 2,
+   "url": "https://x.com/MikeZaccardi/status/2113024026280923585"
+  },
+  {
+   "at": "2026-10-21T21:45:44Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "NZ Q3 consumer price index non-tradables climbs 1.0% quarter on quarter",
+   "likes": 3,
+   "reposts": 1,
+   "url": "https://x.com/financialjuice/status/2113023958362767697"
+  },
+  {
+   "at": "2026-10-21T21:45:41Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "NZ Q3 consumer price index non-tradables rises 3.3% year on year",
+   "likes": 2,
+   "reposts": 0,
+   "url": "https://x.com/financialjuice/status/2113023945184297273"
+  },
+  {
+   "at": "2026-10-21T21:45:37Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "New Zealand Q3 consumer price index rises 0.7% vs previous quarter (poll 0.8%)",
+   "likes": 2,
+   "reposts": 0,
+   "url": "https://x.com/financialjuice/status/2113023931338698965"
+  },
+  {
+   "at": "2026-10-21T21:45:34Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "NZ Q3 consumer price index rises 3.7% vs year ago, poll forecast 3.8%",
+   "likes": 3,
+   "reposts": 1,
+   "url": "https://x.com/financialjuice/status/2113023918722433197"
+  },
+  {
+   "at": "2026-10-21T21:45:31Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": true,
+   "retweet": false,
+   "text": "🔴 ⚠️ BREAKING: NEW ZEALAND CPI QOQ ACTUAL 0.7% (FORECAST 0.8%, PREVIOUS 1.5%) $MACRO",
+   "likes": 5,
+   "reposts": 0,
+   "url": "https://x.com/financialjuice/status/2113023905061601417"
+  },
+  {
+   "at": "2026-10-21T21:45:28Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": true,
+   "retweet": false,
+   "text": "NEW ZEALAND CPI YOY ACTUAL 3.7% (FORECAST 3.8%, PREVIOUS 4.1%) $MACRO",
+   "likes": 3,
+   "reposts": 1,
+   "url": "https://x.com/financialjuice/status/2113023889676582929"
+  },
+  {
+   "at": "2026-10-21T21:43:23Z",
+   "handle": "WOLF_Financial",
+   "name": "WOLF",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "ELON MUSK JUST LAID OUT TESLA'S $TSLA ENTIRE ROADMAP ON THE Q3 EARNINGS CALL\n\nHere's everything he said\n\n• Demand for Tesla vehicles is exceeding production by a significant margin, and Full Self-Driving is the biggest driver\n• \"There is really no competitor for FSD in any car that you can buy\"\n• FSD is already approved in many countries in Europe, and he'd be surprised if EU-wide approval takes longer than Q1\n• Tesla is aiming for 5 million vehicles a year by around 2030\n• Semi production began in Q3, and he called the new Roadster demo \"arguably the coolest demo of any product ever\"\n• Megapacks are almost sold out for all of 2027, and he expects energy margins to increase meaningfully\n• The Cybercab fleet in Austin has grown 10x since launching about a month ago\n• Autonomous miles are growing so fast he says the chart \"looks like a rocket going to orbit\"\n• Optimus is now in early production in Fremont, with most of a million-unit-per-year line already in place\n• Tesla expects to star",
+   "likes": 25,
+   "reposts": 7,
+   "url": "https://x.com/WOLF_Financial/status/2113023368563962293"
+  },
+  {
+   "at": "2026-10-21T21:42:41Z",
+   "handle": "Mr_Derivatives",
+   "name": "Heisenberg",
+   "tag": "flow",
+   "qqq": false,
+   "retweet": false,
+   "text": "Only $IWM lagging…",
+   "likes": 9,
+   "reposts": 1,
+   "url": "https://x.com/Mr_Derivatives/status/2113023190075326787"
+  },
+  {
+   "at": "2026-10-21T21:42:27Z",
+   "handle": "zerohedge",
+   "name": "zerohedge",
+   "tag": "analysis",
+   "qqq": false,
+   "retweet": true,
+   "text": "The shorts are piling in. The biggest buyer is coming back.",
+   "likes": 0,
+   "reposts": 2,
+   "url": "https://x.com/zerohedge/status/2113023130876727625"
+  },
+  {
+   "at": "2026-10-21T21:40:06Z",
+   "handle": "zerohedge",
+   "name": "zerohedge",
+   "tag": "analysis",
+   "qqq": false,
+   "retweet": false,
+   "text": "Bloomberg Drops $80 Million On Democrats' Midterm Push: $24 Million To Everytown, $16 Million To House Majority PAC",
+   "likes": 55,
+   "reposts": 15,
+   "url": "https://x.com/zerohedge/status/2113022541748916413"
+  },
+  {
+   "at": "2026-10-21T21:38:59Z",
+   "handle": "zerohedge",
+   "name": "zerohedge",
+   "tag": "flow",
+   "qqq": true,
+   "retweet": false,
+   "text": "META joins AMZN in the negative Free Cash Flow club",
+   "likes": 125,
+   "reposts": 23,
+   "url": "https://x.com/zerohedge/status/2113022261292666943"
+  },
+  {
+   "at": "2026-10-21T21:38:29Z",
+   "handle": "TheTranscript_",
+   "name": "The Transcript",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "$META CEO on Muse use cases: \"The most common use case for Muse is shopping. With more than a quarter of people who are using Muse engaging in this with an average purchase size of over $200, Plaid told us that they hadn't seen activity like they're seeing with their connector on any other service before. And in the first week, we had to work with Stripe to raise credit limits since the volumes were above what any of us expected. Beyond shopping, the most common connectors are for personal productivity and connecting Muse to your other services like email and calendar.\"",
+   "likes": 12,
+   "reposts": 1,
+   "url": "https://x.com/TheTranscript_/status/2113022133156942080"
+  },
+  {
+   "at": "2026-10-21T21:37:55Z",
+   "handle": "Mr_Derivatives",
+   "name": "Heisenberg",
+   "tag": "flow",
+   "qqq": true,
+   "retweet": false,
+   "text": "$META still decently green. $TSLA hovering between green and flat currently.\n\nThe polls I run sometimes are pretty damn accurate by you voters. gj.",
+   "likes": 15,
+   "reposts": 0,
+   "url": "https://x.com/Mr_Derivatives/status/2113021993545265663"
+  },
+  {
+   "at": "2026-10-21T21:37:35Z",
+   "handle": "TheTranscript_",
+   "name": "The Transcript",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "$META CEO on Muse: \"Engagement and retention are also off to a strong start. About 25% of people who have set up Muse use it on any given day. For our earliest adopters, the longer that they use Muse, the better that retention seems to get. So to put this in perspective, this is more than twice the level that Threads started at, or where we believe that other AI apps started at as well. \"",
+   "likes": 4,
+   "reposts": 0,
+   "url": "https://x.com/TheTranscript_/status/2113021908782305352"
+  },
+  {
+   "at": "2026-10-21T21:36:40Z",
+   "handle": "zerohedge",
+   "name": "zerohedge",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "As META transitions to MUSE, one side effect is fewer \"agentic\" ads, and one can already see that as global ad impression growth slides (good luck keeping those elevated ad prices)",
+   "likes": 51,
+   "reposts": 2,
+   "url": "https://x.com/zerohedge/status/2113021676598501437"
+  },
+  {
+   "at": "2026-10-21T21:35:30Z",
+   "handle": "bespokeinvest",
+   "name": "Bespoke",
+   "tag": "analysis",
+   "qqq": false,
+   "retweet": false,
+   "text": "Natural Gas Inventories are scheduled for tomorrow at 10:30 AM ET.",
+   "likes": 5,
+   "reposts": 2,
+   "url": "https://x.com/bespokeinvest/status/2113021382464344305"
+  },
+  {
+   "at": "2026-10-21T21:35:02Z",
+   "handle": "TheTranscript_",
+   "name": "The Transcript",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "$META CEO: \"Threads has now overtaken X in monthly actives and continues to grow quickly. \"\n\nWho is using Threads?",
+   "likes": 5,
+   "reposts": 0,
+   "url": "https://x.com/TheTranscript_/status/2113021264784675028"
+  },
+  {
+   "at": "2026-10-21T21:34:06Z",
+   "handle": "zerohedge",
+   "name": "zerohedge",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "META Erases Most Afterhours Gains After CFO Warns \"Significant Investment\" Will Raise Serving Costs",
+   "likes": 65,
+   "reposts": 9,
+   "url": "https://x.com/zerohedge/status/2113021033099805091"
+  },
+  {
+   "at": "2026-10-21T21:32:39Z",
+   "handle": "TheTranscript_",
+   "name": "The Transcript",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "$META CEO: \"From a business perspective, the average revenue per American user for our existing....Family of Apps users—is several hundreds of dollars annually, and we expect that Muse will reach an even higher level over time due to the amount of commerce that we already see taking place.\n\nThis will take some time, but we're starting to work on this now.\"",
+   "likes": 3,
+   "reposts": 0,
+   "url": "https://x.com/TheTranscript_/status/2113020668174610937"
+  },
+  {
+   "at": "2026-10-21T21:31:03Z",
+   "handle": "TheTranscript_",
+   "name": "The Transcript",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "$META CFO on Muse: \"We don't have sort of specific numbers to share around the cost structure of Muse today, but of course it is, as Mark said, pretty compute expensive. And making sure that we are focused on compute efficiency is going to be one of the key vectors towards being able to both scale Muse and grow it into the business that we want\"",
+   "likes": 4,
+   "reposts": 0,
+   "url": "https://x.com/TheTranscript_/status/2113020263004528806"
+  },
+  {
+   "at": "2026-10-21T21:30:30Z",
+   "handle": "bespokeinvest",
+   "name": "Bespoke",
+   "tag": "analysis",
+   "qqq": false,
+   "retweet": false,
+   "text": "Tomorrow’s earnings are busiest before the open, with Blackstone $BX, Honeywell $HON, Lockheed Martin $LMT, Procter &amp; Gamble $PG, and Spotify $SPOT among the reports. \n\nComfort Systems $FIX, Newmont $NEM, and Western Digital $WDC report after the close.",
+   "likes": 7,
+   "reposts": 4,
+   "url": "https://x.com/bespokeinvest/status/2113020123975987405"
+  },
+  {
+   "at": "2026-10-21T21:27:36Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "European Council: Framework on securitisation to lower capital requirements for most safe and well-structured deals",
+   "likes": 9,
+   "reposts": 1,
+   "url": "https://x.com/financialjuice/status/2113019395467604192"
+  },
+  {
+   "at": "2026-10-21T21:27:31Z",
+   "handle": "Mr_Derivatives",
+   "name": "Heisenberg",
+   "tag": "flow",
+   "qqq": true,
+   "retweet": false,
+   "text": "$META is really the last of the large megacaps  (>$500B mc) to not have a stock split until their announcement today. Ex BRK/A of course.\n\nJust a fun fact. Nothing more.\n\nStock splits gives the illusion of “better value” or whatever, but we all know it can’t magically make the stock go up alone.\n\n$CMG and $NFLX case in point.",
+   "likes": 88,
+   "reposts": 4,
+   "url": "https://x.com/Mr_Derivatives/status/2113019374454063421"
+  },
+  {
+   "at": "2026-10-21T21:27:15Z",
+   "handle": "KobeissiLetter",
+   "name": "The Kobeissi Letter",
+   "tag": "analysis",
+   "qqq": false,
+   "retweet": false,
+   "text": "US private equity firms are struggling to attract new capital:\n\nPrivate equity funds raised just $222 billion from investors in the first 9 months of 2026, on track for the weakest year since 2020. \n\nThis would also mark the 3rd consecutive annual decline.\n\nBy comparison, the industry attracted $406 billion in full year 2023 and $330 billion last year.\n\nHigher rates have made it harder for private equity firms to sell businesses at attractive prices, weakening investment returns and prompting investors to become more reluctant to commit capital to new funds.\n\nSmaller firms managing less than $15 billion are facing the most pressure.\n\nPrivate equity has lost its shine in the rapidly evolving macroeconomic backdrop.",
+   "likes": 235,
+   "reposts": 23,
+   "url": "https://x.com/KobeissiLetter/status/2113019306455990764"
+  },
+  {
+   "at": "2026-10-21T21:25:51Z",
+   "handle": "financialjuice",
+   "name": "FinancialJuice",
+   "tag": "headline",
+   "qqq": false,
+   "retweet": false,
+   "text": "European Council: Council, European Parliament Reach Provisional Political Deal on Measures to Revive and Simplify EU Securitisation Market",
+   "likes": 4,
+   "reposts": 3,
+   "url": "https://x.com/financialjuice/status/2113018955648655755"
+  },
+  {
+   "at": "2026-10-21T21:24:09Z",
+   "handle": "TheTranscript_",
+   "name": "The Transcript",
+   "tag": "analysis",
+   "qqq": true,
+   "retweet": false,
+   "text": "$META CFO: \"We're also building several new AI businesses, and we expect that those can begin contributing incremental revenue in 2027. But more importantly, they can scale meaningfully over time.\n\nAnd those will include monetizing our AI products through subscriptions, transactions, advertising, developing, enterprise offerings, as we talked about in one of the earlier questions\"",
+   "likes": 7,
+   "reposts": 0,
+   "url": "https://x.com/TheTranscript_/status/2113018525640192446"
+  },
+  {
+   "at": "2026-10-21T21:22:40Z",
+   "handle": "unusual_whales",
+   "name": "unusual_whales",
+   "tag": "headline",
+   "qqq": true,
+   "retweet": false,
+   "text": "BREAKING: Mark Zuckerberg of $META has said he is considering leaving California if it passes a measure that would impose a one-time 5% tax on billionaires, per Bloomberg",
+   "likes": 1432,
+   "reposts": 95,
+   "url": "https://x.com/unusual_whales/status/2113018152921821293"
+  },
+  {
+   "at": "2026-10-21T21:22:40Z",
+   "handle": "BeuvingJordy",
+   "name": "Jordy Beuving",
+   "tag": "analysis",
+   "qqq": false,
+   "retweet": false,
+   "text": "WFE guide $LRCX",
+   "likes": 2,
+   "reposts": 0,
+   "url": "https://x.com/BeuvingJordy/status/2113018153152512282"
+  },
   {
    "at": "2026-10-21T21:20:06Z",
    "handle": "zerohedge",
@@ -43,8 +739,8 @@
    "qqq": false,
    "retweet": false,
    "text": "Supreme Court Rejects Trump Bid To End Hormone Treatments For Transgender Federal Inmates",
-   "likes": 0,
-   "reposts": 0,
+   "likes": 44,
+   "reposts": 8,
    "url": "https://x.com/zerohedge/status/2113017508017926514"
   },
   {
@@ -55,8 +751,8 @@
    "qqq": false,
    "retweet": false,
    "text": "AAA gas price adjusted for wages remains below the 20-year median @augurinfinity",
-   "likes": 2,
-   "reposts": 1,
+   "likes": 9,
+   "reposts": 4,
    "url": "https://x.com/MikeZaccardi/status/2113016479159308468"
   },
   {
@@ -67,8 +763,8 @@
    "qqq": true,
    "retweet": false,
    "text": "Here’s the one thing, so far, that is still a bit concerning for me regarding $SOXX $SMH: \n\nIn several of the past mini and large selloffs, they violently V shape bounced in rapid fashion.\n\nSo far, we’ve kinda just been stabilizing here last few days, have yet to see the start of the V bounce..\n\nA little change in character?\n\nObviously we won’t know until hindsight. \n\nBut just something to ponder…",
-   "likes": 38,
-   "reposts": 1,
+   "likes": 112,
+   "reposts": 6,
    "url": "https://x.com/Mr_Derivatives/status/2113016223151902849"
   },
   {
@@ -79,8 +775,8 @@
    "qqq": false,
    "retweet": false,
    "text": "You can’t control the market.\n\nYou can control your reaction to the market.",
-   "likes": 9,
-   "reposts": 1,
+   "likes": 24,
+   "reposts": 3,
    "url": "https://x.com/BrianFeroldi/status/2113015545943478778"
   },
   {
@@ -91,8 +787,8 @@
    "qqq": false,
    "retweet": false,
    "text": "NORTH KOREA’S KIM YO JONG SAYS SOUTH KOREA WILL ENCOUNTER THE “MOST HORRIBLE AND DISTRESSING SITUATION” IF IT PERSISTS IN INTERFERENCE, ANNOUNCING NEW COUNTERMEASURES TO RAISE THE ALERT STATUS ALONG THE ENTIRE SOUTHERN BORDER LINE AND SAYING ANTI-SOUTH KOREA SPEAKERS WILL BE READY ALONG THE ENTIRE BORDER WITHIN DAYS - KCNA",
-   "likes": 5,
-   "reposts": 2,
+   "likes": 29,
+   "reposts": 9,
    "url": "https://x.com/FirstSquawk/status/2113015443460112780"
   },
   {
@@ -103,7 +799,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META CEO on Muse:\n\n\"....we have more than 10 million people in the US and Canada who have set it up. But I think one of the biggest constraints so far is that, because this is a compute-intensive service to run, we have not launched it globally yet\"",
-   "likes": 3,
+   "likes": 12,
    "reposts": 0,
    "url": "https://x.com/TheTranscript_/status/2113014976785060271"
   },
@@ -115,8 +811,8 @@
    "qqq": false,
    "retweet": false,
    "text": "North Korea's Kim Yo Jong: South Korea will encounter 'most horrible and distressing situation' if it persists interference - KCNA",
-   "likes": 5,
-   "reposts": 1,
+   "likes": 10,
+   "reposts": 2,
    "url": "https://x.com/financialjuice/status/2113014843045228999"
   },
   {
@@ -127,7 +823,7 @@
    "qqq": false,
    "retweet": false,
    "text": "North Korea's Kim Yo Jong: new countermeasures to raise alert status along entire southern border line - KCNA",
-   "likes": 2,
+   "likes": 6,
    "reposts": 0,
    "url": "https://x.com/financialjuice/status/2113014765106704503"
   },
@@ -151,8 +847,8 @@
    "qqq": true,
    "retweet": false,
    "text": "If $TSLA closes red tomorrow, it will match $NFLX in having 6 straight negative earnings reactions now….",
-   "likes": 74,
-   "reposts": 2,
+   "likes": 160,
+   "reposts": 6,
    "url": "https://x.com/Mr_Derivatives/status/2113014394791838055"
   },
   {
@@ -163,8 +859,8 @@
    "qqq": false,
    "retweet": false,
    "text": "Unusual Whales made waves tracking what most retail traders never see.\n\nCEO Matt Saincome joins The Trade Show tomorrow at 12pm ET.\n\nURL:",
-   "likes": 18,
-   "reposts": 2,
+   "likes": 22,
+   "reposts": 3,
    "url": "https://x.com/unusual_whales/status/2113012863753507034"
   },
   {
@@ -175,8 +871,8 @@
    "qqq": false,
    "retweet": false,
    "text": "U.S. TROOPS AND DIPLOMATS ARE EVACUATING MIDDLE EAST POSTS, WITH SOME U.S. TROOPS IN QATAR AND KUWAIT HAVING BEEN MOVED AND U.S. TROOPS IN JORDAN AMONG THOSE MOVED - NBC NEWS CITES TWO U.S. OFFICIALS",
-   "likes": 26,
-   "reposts": 14,
+   "likes": 143,
+   "reposts": 33,
    "url": "https://x.com/FirstSquawk/status/2113012826772303905"
   },
   {
@@ -187,8 +883,8 @@
    "qqq": false,
    "retweet": false,
    "text": "\"F**k You And Your Sh**ty Values\": Adam Corolla Unloads On SF Mayor",
-   "likes": 80,
-   "reposts": 9,
+   "likes": 177,
+   "reposts": 22,
    "url": "https://x.com/zerohedge/status/2113012476979646570"
   },
   {
@@ -199,8 +895,8 @@
    "qqq": false,
    "retweet": false,
    "text": "US Troops And Diplomats Evacuating Middle East Posts, Sources Say – NBC",
-   "likes": 6,
-   "reposts": 4,
+   "likes": 8,
+   "reposts": 5,
    "url": "https://x.com/LiveSquawk/status/2113012476770206125"
   },
   {
@@ -211,7 +907,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META Meta CFO: Q3 CapEx reached $34.9B, contributing to negative $2.1B FCF\n\n\"Capital expenditures, including principal payments on financed leases, were $34.9 billion, driven by investments in servers, data centers, and network infrastructure. Free cash flow was negative $2.1 billion. We ended the quarter with $82.4 billion in cash and marketable securities and $83.7 billion in debt.\"",
-   "likes": 2,
+   "likes": 3,
    "reposts": 0,
    "url": "https://x.com/TheTranscript_/status/2113012386177396977"
   },
@@ -223,8 +919,8 @@
    "qqq": false,
    "retweet": false,
    "text": "THE OFFICIAL WARNS THAT ANY RENEWED LARGE-SCALE CONFLICT INVOLVING ASSASSINATIONS OF IRANIAN OFFICIALS OR CIVILIAN KILLINGS WOULD LEAD IRAN TO CONSIDER U.S. POLITICAL TARGETS AND THE INFRASTRUCTURE OF COUNTRIES INVOLVED IN THE WAR LEGITIMATE TARGETS - FARS NEWS",
-   "likes": 9,
-   "reposts": 6,
+   "likes": 35,
+   "reposts": 9,
    "url": "https://x.com/FirstSquawk/status/2113012356158718271"
   },
   {
@@ -235,8 +931,8 @@
    "qqq": false,
    "retweet": false,
    "text": "A SENIOR IRANIAN SECURITY OFFICIAL TELLS FARS NEWS THAT TEHRAN EXPECTS ANOTHER U.S.-ISRAELI ATTACK AND CONSIDERS WASHINGTON’S DIPLOMATIC EFFORTS INSINCERE - FARS NEWS",
-   "likes": 31,
-   "reposts": 6,
+   "likes": 68,
+   "reposts": 10,
    "url": "https://x.com/FirstSquawk/status/2113012306884096322"
   },
   {
@@ -247,8 +943,8 @@
    "qqq": false,
    "retweet": false,
    "text": "Some US troops in Qatar and Kuwait have been moved - NBC News",
-   "likes": 12,
-   "reposts": 7,
+   "likes": 20,
+   "reposts": 10,
    "url": "https://x.com/financialjuice/status/2113012104332489110"
   },
   {
@@ -271,8 +967,8 @@
    "qqq": true,
    "retweet": false,
    "text": "META $META SAYS THE AVERAGE INSTAGRAM USER IS NOW SPENDING MORE TIME ON THE APP THAN EVER\n\nIts CFO shared the numbers on Meta's Q3 earnings call today\n\nGlobal time spent per user on Instagram hit an all-time high in Q3 and grew double digits from a year ago.\n\nOn Facebook, time spent on Reels also hit all-time highs, both globally and in the US.\n\nAdvertisers are using its AI tools more too. Nearly 10 million advertisers used at least one of Meta's generative AI ad creative tools in Q3, and adoption of its video-generation features grew 25% from last quarter.\n\nBut scaling Muse won't be cheap. The CFO said Muse's compute intensity means expanding its user base will require significant investment, and Meta expects total serving costs to rise.",
-   "likes": 11,
-   "reposts": 2,
+   "likes": 23,
+   "reposts": 3,
    "url": "https://x.com/WOLF_Financial/status/2113012028206109083"
   },
   {
@@ -283,8 +979,8 @@
    "qqq": false,
    "retweet": false,
    "text": "US troops in Jordan among those moved - NBC News.",
-   "likes": 13,
-   "reposts": 3,
+   "likes": 20,
+   "reposts": 5,
    "url": "https://x.com/financialjuice/status/2113011967954763802"
   },
   {
@@ -295,7 +991,7 @@
    "qqq": true,
    "retweet": false,
    "text": "‘No Question Tesla’s Going to Merge With SpaceX’ $SPCX — Kevin O’Leary Says If You Own $TSLA, You’ll Own the New Company After Flying Roadster Demo",
-   "likes": 30,
+   "likes": 51,
    "reposts": 7,
    "url": "https://x.com/Barchart/status/2113011113441067324"
   },
@@ -307,21 +1003,9 @@
    "qqq": false,
    "retweet": false,
    "text": "NBC cites 2 US Officials",
-   "likes": 22,
+   "likes": 24,
    "reposts": 7,
    "url": "https://x.com/financialjuice/status/2113011006003654932"
-  },
-  {
-   "at": "2026-10-21T20:53:34Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "US troops and diplomats evacuating Middle East posts - NBC",
-   "likes": 14,
-   "reposts": 2,
-   "url": "https://x.com/financialjuice/status/2113010830971412623"
   },
   {
    "at": "2026-10-21T20:53:24Z",
@@ -332,32 +1016,8 @@
    "retweet": true,
    "text": "BREAKING: In a blow for DOJ, the federal judge overseeing the case involving the alleged 20,000 non-citizen voters in California has been switched from Judge John W. Holcomb (Trump appointee) to Judge David Carter (Clinton appointee). This switch will be seen as a win for LA County/California. Judge Carter previously dismissed a DOJ lawsuit against CA last year that accused the state of not following federal laws on proper maintenance of voter rolls.\n\nHere's what Judge Carter wrote when dismissing the case to give a flavor of his thinking on the topic:\n\n“State run elections mean that voters recognize their neighbors who staff polling stations, trust their Secretaries of State—whom they voted for—to keep their personally identifying information safe, and believe that they will not be targeted because of what they look like or who they vote for. The DOJ’s request for the sensitive information of Californians stands to have a chilling effect on American citizens like political minority gr",
    "likes": 0,
-   "reposts": 317,
+   "reposts": 396,
    "url": "https://x.com/zerohedge/status/2113010788625711177"
-  },
-  {
-   "at": "2026-10-21T20:53:05Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "US troops and diplomats evacuating Middle East posts - NBC",
-   "likes": 30,
-   "reposts": 15,
-   "url": "https://x.com/financialjuice/status/2113010707562418382"
-  },
-  {
-   "at": "2026-10-21T20:51:35Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": true,
-   "retweet": false,
-   "text": "Google stops using nondisclosure agreements for data centers - The Information. $GOOGL",
-   "likes": 6,
-   "reposts": 1,
-   "url": "https://x.com/financialjuice/status/2113010329806606830"
   },
   {
    "at": "2026-10-21T20:51:02Z",
@@ -367,7 +1027,7 @@
    "qqq": false,
    "retweet": false,
    "text": "$IBM \nI Gave long term swing at 200 area on July 23 on X (see below tweet) . And we held last piece through earnings\nOur position at tenet research hit 271 after hours\nCant get better than this!",
-   "likes": 13,
+   "likes": 16,
    "reposts": 5,
    "url": "https://x.com/ripster47/status/2113010193260785984"
   },
@@ -379,7 +1039,7 @@
    "qqq": true,
    "retweet": false,
    "text": "META CFO SAYS GLOBAL TIME SPENT PER USER ON INSTAGRAM REACHED AN ALL-TIME HIGH AND GREW DOUBLE DIGITS YOY IN Q3, AND THAT ON FACEBOOK, REELS TIME SPENT REACHED ALL-TIME HIGHS BOTH GLOBALLY AND IN THE U.S. - CONF CALL",
-   "likes": 11,
+   "likes": 17,
    "reposts": 3,
    "url": "https://x.com/FirstSquawk/status/2113009636337205707"
   },
@@ -403,7 +1063,7 @@
    "qqq": false,
    "retweet": false,
    "text": "Lam Research: \"...record revenue, profit, and earnings per share in the September quarter..\"\n\n$LRCX: -5% AH",
-   "likes": 6,
+   "likes": 7,
    "reposts": 0,
    "url": "https://x.com/TheTranscript_/status/2113009498722025577"
   },
@@ -427,8 +1087,8 @@
    "qqq": true,
    "retweet": false,
    "text": "SPACEX EARNINGS SPARK A TECH RALLY AS AI CONCERNS EASE, WITH SPACEX SHARES SURGING 7.8% AFTER A BLOCKBUSTER EARNINGS REPORT LIFTED TECHNOLOGY STOCKS AND EASED CONCERNS OVER THE SUSTAINABILITY OF THE GLOBAL AI INVESTMENT BOOM, WHILE ELON MUSK’S SUPPORT FOR A POTENTIAL MERGER WITH TESLA ALSO BOOSTED SENTIMENT",
-   "likes": 10,
-   "reposts": 2,
+   "likes": 11,
+   "reposts": 3,
    "url": "https://x.com/FirstSquawk/status/2113009130193797242"
   },
   {
@@ -440,7 +1100,7 @@
    "retweet": false,
    "text": "SAP $SAP JUST REPORTED Q3 EARNINGS\n\n- Revenue: €10,270M, beating est. of €10.13B 🟢\n- Adj EPS: €1.89, beating est. of €1.87 🟢\n- Current Cloud Backlog: €24.1B (+28%, +26% cc)\n- Cloud ERP Suite: €5,924M (+29% YoY)\n- Cloud & Software: €9,249M (+15% YoY)\n- Software Support: €2,434M (-5% YoY)\n- Services: €1,021M (-4% YoY)\n- Non-IFRS Oper Margin: 29.5% (+1.2pp YoY)\n\nFY26 Guidance:\n- Cloud Revenue (cc): €25.8B-€26.2B (upper end)\n- Cloud & Software Rev (cc): €36.3B-€36.8B (upper end)\n- Non-IFRS Oper Profit (cc): €11.8B-€12.2B\n- Free Cash Flow: ~€10B\n- Non-IFRS Tax Rate: ~29%\n\nKey Updates:\n- Share Repurchases: ~€4.2B under the program\n- Outlook: Cloud revenue and cloud & software revenue are expected toward the upper end of their ranges\n- Acquisition: SAP entered into an agreement to acquire TechWolf",
    "likes": 7,
-   "reposts": 1,
+   "reposts": 2,
    "url": "https://x.com/WOLF_Financial/status/2113009012161560682"
   },
   {
@@ -451,8 +1111,8 @@
    "qqq": true,
    "retweet": false,
    "text": "BREAKING: $META has posted its first negative Free Cash Flow in more than a decade",
-   "likes": 327,
-   "reposts": 29,
+   "likes": 1169,
+   "reposts": 96,
    "url": "https://x.com/unusual_whales/status/2113008989126697382"
   },
   {
@@ -463,8 +1123,8 @@
    "qqq": true,
    "retweet": false,
    "text": "$META And there it is…",
-   "likes": 189,
-   "reposts": 8,
+   "likes": 354,
+   "reposts": 17,
    "url": "https://x.com/Mr_Derivatives/status/2113008960806797397"
   },
   {
@@ -487,7 +1147,7 @@
    "qqq": false,
    "retweet": false,
    "text": "Chicken breast is really affordable @AldiUSA",
-   "likes": 2,
+   "likes": 4,
    "reposts": 0,
    "url": "https://x.com/MikeZaccardi/status/2113008927235293687"
   },
@@ -499,7 +1159,7 @@
    "qqq": true,
    "retweet": false,
    "text": "MARK ZUCKERBERG EXPECTS META'S NEW MUSE AI TO EVENTUALLY MAKE MORE MONEY PER USER THAN FACEBOOK AND INSTAGRAM\n\nHe laid out the plan on Meta's $META Q3 earnings call today\n\nZuckerberg said users of Meta's existing apps already generate several hundred dollars a year in revenue each, and he expects Muse to reach an even higher level over time.\n\nMore than 10 million people in the US and Canada have set up Muse personal agents in just a month and a half, and Meta expects to grow Muse to serve billions of people.\n\nMuse is coming to Meta glasses starting next month. Zuckerberg said glasses sales keep growing rapidly, and with Muse he expects paid subscriptions to increase.\n\nMeta is also working on smaller models, coming out soon, that will deliver Muse Wonder level intelligence more efficiently.\n\nAnd he said Meta is about to ship Muse Charm.",
-   "likes": 13,
+   "likes": 26,
    "reposts": 2,
    "url": "https://x.com/WOLF_Financial/status/2113008925394288845"
   },
@@ -524,7 +1184,7 @@
    "retweet": true,
    "text": "BREAKING: FDA inspectors discovered black mold, bugs, and “gross contamination” at a Chinese plant making ingredients for compounded GLP-1 drugs.",
    "likes": 0,
-   "reposts": 351,
+   "reposts": 379,
    "url": "https://x.com/zerohedge/status/2113008690231939518"
   },
   {
@@ -535,7 +1195,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META Meta Announces New Class C Common Stock\n— Introduces publicly listed, non-voting Class C shares effective January 19, 2027.\n— Shareholders to receive one Class C share per Class A or B share, effectively a 2-for-1 stock split.\n— New shares intended to fund AI investments, acquisitions & employee compensation.\n— Structure preserves Zuckerberg's control and existing shareholder voting rights.\n— Class C shares expected to list on Nasdaq.",
-   "likes": 10,
+   "likes": 11,
    "reposts": 2,
    "url": "https://x.com/TheTranscript_/status/2113008677989044502"
   },
@@ -547,21 +1207,9 @@
    "qqq": true,
    "retweet": false,
    "text": "TESLA $TSLA HAS NOW TOPPED $100 BILLION IN TRAILING 12-MONTH REVENUE FOR THE SECOND STRAIGHT QUARTER\n\nAnd its margins are moving higher too\n\nGross margin climbed to 19.6% in Q3, up from 16.8% last quarter and 18.0% a year ago.\n\nIts services and other business also posted a record $734 million in gross profit, with revenue up 33% from a year ago thanks to charging, insurance and parts sales.",
-   "likes": 20,
-   "reposts": 3,
+   "likes": 33,
+   "reposts": 4,
    "url": "https://x.com/WOLF_Financial/status/2113008537865781518"
-  },
-  {
-   "at": "2026-10-21T20:43:58Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": true,
-   "retweet": false,
-   "text": "META CEO SAYS THE COMPANY IS ABOUT TO SHIP MUSE CHARM, ADDING THAT GLASSES SALES CONTINUE TO GROW RAPIDLY AND THAT, NOW WITH MUSE, IT EXPECTS PAID SUBSCRIPTIONS TO INCREASE",
-   "likes": 10,
-   "reposts": 0,
-   "url": "https://x.com/FirstSquawk/status/2113008416033837213"
   },
   {
    "at": "2026-10-21T20:43:49Z",
@@ -571,7 +1219,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META 🚨\nLike i said, Zucky has to just pump Muse like Elon did for Grok yesterday!\nAnd There we go\n\nLive Trading in Community and Lunch is Paid\nWe do not gamble lotto's we Play after the earnings",
-   "likes": 17,
+   "likes": 22,
    "reposts": 6,
    "url": "https://x.com/ripster47/status/2113008376494129161"
   },
@@ -584,20 +1232,8 @@
    "retweet": true,
    "text": "amazing how they don’t even pretend elon committed a crime, because they know it doesn’t matter if he did. they’ll find something. the point is just they really hate him, and when democrats really hate someone he belongs in prison.",
    "likes": 0,
-   "reposts": 423,
+   "reposts": 441,
    "url": "https://x.com/zerohedge/status/2113008119957643544"
-  },
-  {
-   "at": "2026-10-21T20:42:21Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": true,
-   "retweet": false,
-   "text": "Meta CEO: We are also working on new smaller models that are coming out soon and will deliver much more wonder-level intelligence more efficiently $META",
-   "likes": 18,
-   "reposts": 5,
-   "url": "https://x.com/financialjuice/status/2113008009362251929"
   },
   {
    "at": "2026-10-21T20:41:57Z",
@@ -607,21 +1243,9 @@
    "qqq": true,
    "retweet": false,
    "text": "$TSLA key metrics:",
-   "likes": 5,
+   "likes": 6,
    "reposts": 0,
    "url": "https://x.com/TheTranscript_/status/2113007907016962118"
-  },
-  {
-   "at": "2026-10-21T20:41:54Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": true,
-   "retweet": false,
-   "text": "META CEO SAYS HE SEES MUSE AI POTENTIALLY GENERATING HIGHER REVENUE PER USER THAN THE FAMILY OF APPS, NOTING EXISTING FAMILY OF APPS USERS GENERATE SEVERAL HUNDRED DOLLARS ANNUALLY IN REVENUE PER USER AND THAT HE EXPECTS MUSE TO REACH AN EVEN HIGHER LEVEL OVER TIME",
-   "likes": 14,
-   "reposts": 3,
-   "url": "https://x.com/FirstSquawk/status/2113007894522372136"
   },
   {
    "at": "2026-10-21T20:40:51Z",
@@ -631,21 +1255,9 @@
    "qqq": true,
    "retweet": false,
    "text": "Tesla CEO: \"In Q3, we maintained strong momentum on many projects spanning Super Intelligence (SI), robotics and renewable energy ...Strength in our core business also continued, and we achieved our second consecutive quarter of TTM revenue in excess of $100B\"\n\n$TSLA: +1.4%AH",
-   "likes": 5,
+   "likes": 6,
    "reposts": 0,
    "url": "https://x.com/TheTranscript_/status/2113007630121910700"
-  },
-  {
-   "at": "2026-10-21T20:40:28Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "IRAN THREATENS US POLITICAL TARGETS IF STRIKES RESUME - FARS NEWS",
-   "likes": 43,
-   "reposts": 8,
-   "url": "https://x.com/FirstSquawk/status/2113007535552897512"
   },
   {
    "at": "2026-10-21T20:40:14Z",
@@ -655,7 +1267,7 @@
    "qqq": false,
    "retweet": false,
    "text": "My god…",
-   "likes": 6,
+   "likes": 7,
    "reposts": 0,
    "url": "https://x.com/Mr_Derivatives/status/2113007474878148732"
   },
@@ -667,7 +1279,7 @@
    "qqq": true,
    "retweet": false,
    "text": "TESLA $TSLA ADDED OVER 2,100 SUPERCHARGING STALLS LAST QUARTER\n\nThe network now has 8,904 stations and 84,465 connectors, up 14% from a year ago.\n\nIts Supercharger for Business program, where companies own the chargers and Tesla runs them to the same standard, has grown to over 600 stalls.\n\nTesla also deployed its first Accordion Supercharger, which comes pre-assembled from the factory and costs less to install.",
-   "likes": 19,
+   "likes": 22,
    "reposts": 2,
    "url": "https://x.com/WOLF_Financial/status/2113007464606228704"
   },
@@ -679,21 +1291,9 @@
    "qqq": false,
    "retweet": false,
    "text": "45% Of College Students Justify Violence To Stop 'Hate Speech': Survey",
-   "likes": 50,
-   "reposts": 8,
+   "likes": 82,
+   "reposts": 14,
    "url": "https://x.com/zerohedge/status/2113007442334240786"
-  },
-  {
-   "at": "2026-10-21T20:39:20Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "Iran threatens US political targets if strikes resume - Fars News",
-   "likes": 33,
-   "reposts": 3,
-   "url": "https://x.com/financialjuice/status/2113007249505607820"
   },
   {
    "at": "2026-10-21T20:39:00Z",
@@ -703,7 +1303,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META Almost $745’s.\n\nCongrats bulls!!",
-   "likes": 180,
+   "likes": 242,
    "reposts": 3,
    "url": "https://x.com/Mr_Derivatives/status/2113007165174902789"
   },
@@ -720,54 +1320,6 @@
    "url": "https://x.com/TheTranscript_/status/2113007127438704762"
   },
   {
-   "at": "2026-10-21T20:38:37Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": true,
-   "retweet": false,
-   "text": "META CEO SAYS THE COMPANY EXPECTS TO GROW MUSE TO SERVE BILLIONS OF PEOPLE, ADDING THAT MORE THAN 10 MLN PEOPLE IN THE U.S. AND CANADA HAVE SET UP MUSE PERSONAL AGENTS IN JUST A MONTH AND A HALF - CONF CALL",
-   "likes": 17,
-   "reposts": 1,
-   "url": "https://x.com/FirstSquawk/status/2113007068877898171"
-  },
-  {
-   "at": "2026-10-21T20:38:34Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "TEXAS INSTRUMENTS CEO SAYS Q3 DATA CENTER REVENUE WAS UP ABOUT 95% YOY AND GREW ABOUT 20% SEQUENTIALLY, WITH THE CFO SAYING Q3 EPS INCLUDED A 1-CENT REDUCTION NOT IN ORIGINAL GUIDANCE DUE TO DISCRETE TAX ITEMS AND THAT END-OF-Q3 INVENTORY WAS $4.7 BLN, UP $67 MLN FROM THE PRIOR QUARTER - CONF CALL",
-   "likes": 3,
-   "reposts": 1,
-   "url": "https://x.com/FirstSquawk/status/2113007055175049379"
-  },
-  {
-   "at": "2026-10-21T20:38:26Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": true,
-   "retweet": false,
-   "text": "Zuckerburg sees Muse AI potentially generating higher revenue per user than family of apps. $META",
-   "likes": 11,
-   "reposts": 2,
-   "url": "https://x.com/financialjuice/status/2113007021230608719"
-  },
-  {
-   "at": "2026-10-21T20:38:18Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "TEXAS INSTRUMENTS CEO SAYS Q3 DATA CENTER REVENUE WAS UP ABOUT 95% YOY AND GREW ABOUT 20% SEQUENTIALLY, WITH THE CFO SAYING Q3 EPS INCLUDED A 1-CENT REDUCTION NOT IN ORIGINAL GUIDANCE DUE TO DISCRETE TAX ITEMS AND THAT END-OF-Q3 INVENTORY WAS $4.7 BLN, UP $67 MLN FROM THE PRIOR QUARTER - CONF CALL",
-   "likes": 1,
-   "reposts": 1,
-   "url": "https://x.com/FirstSquawk/status/2113006989014159853"
-  },
-  {
    "at": "2026-10-21T20:36:38Z",
    "handle": "WOLF_Financial",
    "name": "WOLF",
@@ -775,21 +1327,9 @@
    "qqq": true,
    "retweet": false,
    "text": "MARK ZUCKERBERG SAYS MORE THAN 10 MILLION PEOPLE HAVE SET UP MUSE AGENTS IN JUST A MONTH AND A HALF\n\nAnd he expects it to serve billions\n\nOn Meta's $META Q3 earnings call, Zuckerberg said more than 10 million people in the US and Canada have already set up Muse personal agents, and that Meta expects to grow Muse to serve billions of people.\n\nMuse and Muse Wonder launched last quarter. In the earnings release, Zuckerberg called it \"our first frontier model.\"\n\n\"Our investments are paying off, the core business is strong, and we're seeing velocity across the board.\"\n\nMeta says it's moving money out of Reality Labs and into AI, and plans to keep \"investing aggressively\" in 2027.",
-   "likes": 21,
+   "likes": 26,
    "reposts": 4,
    "url": "https://x.com/WOLF_Financial/status/2113006570384867781"
-  },
-  {
-   "at": "2026-10-21T20:36:25Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "Texas Instruments: Data center revenue up 95% YoY. $TXN",
-   "likes": 19,
-   "reposts": 4,
-   "url": "https://x.com/financialjuice/status/2113006514831077843"
   },
   {
    "at": "2026-10-21T20:36:05Z",
@@ -799,7 +1339,7 @@
    "qqq": false,
    "retweet": false,
    "text": "Omg it’s working lol",
-   "likes": 14,
+   "likes": 15,
    "reposts": 0,
    "url": "https://x.com/Mr_Derivatives/status/2113006431721115679"
   },
@@ -811,7 +1351,7 @@
    "qqq": false,
    "retweet": false,
    "text": "$MRNA\n\nPharmabro Martin Shkreli said Moderna is a great short within next 5-6 months.\n\nTogi said he had a dream Moderna is going to the moon and he will make $3M+ off his positions. Which likely will need to see name around $400 more or less to achieve that.\n\nI would pay good money to watch them debate on live stream. \n\n@MartinShkreli @ShaneStoffer",
-   "likes": 72,
+   "likes": 123,
    "reposts": 3,
    "url": "https://x.com/Mr_Derivatives/status/2113006336980164925"
   },
@@ -823,8 +1363,8 @@
    "qqq": true,
    "retweet": false,
    "text": "$TSLA - TESLA BEATS EARNINGS AS CASH FLOW SMASHES EXPECTATIONS\n\nTesla delivered a mixed Q3, but profitability and cash flow surprised sharply to the upside.\n\nAdjusted EPS: $0.48 vs. $0.44 expected\nRevenue: $28.05B vs. $28.13B expected\nGross margin: 19.6% vs. 17.8% expected\nFree cash flow: +$1.53B vs. -$4.99B expected\n\nFSD subscriptions surged to 1.74 million, while Optimus production began in Fremont.\n\nThe key takeaway: Strong margins, positive cash flow and accelerating FSD adoption offset a 56% decline in operating income.\n\nSource: Tesla Q3 2026 Earnings",
-   "likes": 348,
-   "reposts": 43,
+   "likes": 462,
+   "reposts": 55,
    "url": "https://x.com/DeItaone/status/2113005575910940765"
   },
   {
@@ -835,8 +1375,8 @@
    "qqq": true,
    "retweet": false,
    "text": "HERE'S WHAT THE 🇺🇸 STOCK MARKET LOOKED LIKE TODAY\n\nUp 8:\nDatadog $DDOG +6.6%\nCiena $CIEN +5.7%\nDell $DELL +5.3%\nCrowdStrike $CRWD +5.3%\nPalantir $PLTR +4.7%\nDanaher $DHR +4.3%\nGE Vernova $GEV +4.0%\nIBM $IBM +3.9%\n\nDown 8:\nAT&T $T -6.5%\nNetflix $NFLX -5.3%\nBooking Holdings $BKNG -3.4%\nAmerican Tower $AMT -3.2%\nT-Mobile $TMUS -2.5%\nBoston Scientific $BSX -2.3%\nIntuitive Surgical $ISRG -2.3%\nStryker $SYK -2.2%\n\nTech led the market, with 42 of 48 names in the sector finishing higher. Chips bounced back, with AMD $AMD +3.4%, Nvidia $NVDA +2.5% and Micron $MU +2.0%, and Tesla $TSLA rose +3.4% ahead of its earnings report after the close.\n\nTelecom went the other way. AT&T fell after its earnings report and pulled Verizon $VZ -2.2% and T-Mobile down with it. \n\nNetflix slid after last night's results, and medical device makers like Boston Scientific, Intuitive Surgical and Stryker also had a rough day.",
-   "likes": 12,
-   "reposts": 4,
+   "likes": 14,
+   "reposts": 5,
    "url": "https://x.com/WOLF_Financial/status/2113005487553905106"
   },
   {
@@ -847,45 +1387,9 @@
    "qqq": false,
    "retweet": false,
    "text": "Kinder Morgan CEO: \"This quarter we increased our expansion project backlog to $14.4B, including the largest natural gas project backlog in company history at $13.2B\"\n\n$KMI: +3% AH",
-   "likes": 4,
+   "likes": 5,
    "reposts": 1,
    "url": "https://x.com/TheTranscript_/status/2113004842767753342"
-  },
-  {
-   "at": "2026-10-21T20:29:04Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "GM’S NEW LITHIUM MANGANESE-RICH BATTERIES AIM TO IMPROVE ENERGY DENSITY AND RANGE WHILE CUTTING COSTS, WITH AI-ACCELERATED DEVELOPMENT AND HANDS-FREE, EYES-OFF HIGHWAY DRIVING TECHNOLOGY PLANNED FOR THE CADILLAC ESCALADE IQ IN 2028.",
-   "likes": 1,
-   "reposts": 0,
-   "url": "https://x.com/FirstSquawk/status/2113004663360684188"
-  },
-  {
-   "at": "2026-10-21T20:29:03Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "GENERAL MOTORS IS ADVANCING PLANS FOR A MORE AFFORDABLE ELECTRIC SUV WITHIN THREE YEARS, DESPITE EV SALES FALLING 43% TO 82,000 THROUGH Q3 AND MORE THAN $11 BILLION IN EV WRITE-DOWNS.",
-   "likes": 4,
-   "reposts": 0,
-   "url": "https://x.com/FirstSquawk/status/2113004661645136253"
-  },
-  {
-   "at": "2026-10-21T20:28:43Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "Senior Iranian Security Official: Iran assumes an attack by the US and Israel and considers US diplomatic gestures invalid - Fars News",
-   "likes": 82,
-   "reposts": 18,
-   "url": "https://x.com/financialjuice/status/2113004578060800414"
   },
   {
    "at": "2026-10-21T20:27:57Z",
@@ -895,7 +1399,7 @@
    "qqq": false,
    "retweet": false,
    "text": "IBM CEO: \"Demand across our portfolio combined with strong operational execution led to accelerated growth and solid operating pre-tax margin expansion in the quarter\"\n\n$IBM: +6% AH",
-   "likes": 4,
+   "likes": 6,
    "reposts": 1,
    "url": "https://x.com/TheTranscript_/status/2113004384993136767"
   },
@@ -907,33 +1411,9 @@
    "qqq": true,
    "retweet": false,
    "text": "TSLA Jumps To 3-Month Highs After Big Margin, Free-Cash-Flow Beat",
-   "likes": 203,
-   "reposts": 17,
+   "likes": 273,
+   "reposts": 28,
    "url": "https://x.com/zerohedge/status/2113004168411594843"
-  },
-  {
-   "at": "2026-10-21T20:26:52Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "MOSCOW SIGNALLED READINESS TO RESUME US-RUSSIA-UKRAINE PEACE TALKS IN EARLY NOVEMBER, BUT THE PROSPECT OF NEGOTIATIONS RENEWED DEBATE OVER WHETHER US ENGAGEMENT OR STRONGER ECONOMIC PRESSURE ON RUSSIA WOULD BETTER ADVANCE A SETTLEMENT.",
-   "likes": 5,
-   "reposts": 1,
-   "url": "https://x.com/FirstSquawk/status/2113004113139228868"
-  },
-  {
-   "at": "2026-10-21T20:26:52Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "RUSSIA RELEASED 74-YEAR-OLD US CITIZEN STEPHEN HUBBARD, PROMPTING TRUMP ADMINISTRATION ENVOY STEVE WITKOFF TO PRAISE PUTIN AS “HUMANITARIAN,” DRAWING CRITICISM FROM REPUBLICAN SENATORS.",
-   "likes": 13,
-   "reposts": 2,
-   "url": "https://x.com/FirstSquawk/status/2113004111230853373"
   },
   {
    "at": "2026-10-21T20:26:04Z",
@@ -955,33 +1435,9 @@
    "qqq": true,
    "retweet": false,
    "text": "META $META SPENT $34.9 BILLION ON CAPEX IN ONE QUARTER\n\nThat's for data centers, servers and other infrastructure, and it pushed free cash flow negative to -$2.12 billion, even with $32.79 billion in operating cash flow.\n\nMeta now expects $135 billion to $145 billion in capex for the year, raising the low end of its range by $5 billion, and says it will keep \"investing aggressively\" in 2027.",
-   "likes": 18,
-   "reposts": 6,
+   "likes": 24,
+   "reposts": 8,
    "url": "https://x.com/WOLF_Financial/status/2113003892086620325"
-  },
-  {
-   "at": "2026-10-21T20:25:17Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "KINDER MORGAN STILL SEES FY ADJUSTED EBITDA $8.6 BLN, BELOW ESTIMATE OF $9.11 BLN, FY ADJUSTED EPS $1.36, BELOW ESTIMATE OF $1.54, AND FY DIVIDEND $1.19/SHARE",
-   "likes": 2,
-   "reposts": 0,
-   "url": "https://x.com/FirstSquawk/status/2113003712092471523"
-  },
-  {
-   "at": "2026-10-21T20:24:59Z",
-   "handle": "FirstSquawk",
-   "name": "First Squawk",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "KINDER MORGAN Q3 2026 REVENUE $4.53 BLN, ABOVE ESTIMATE OF $4.39 BLN, WITH ADJUSTED EBITDA $2.18 BLN, ABOVE ESTIMATE OF $2.11 BLN, AND ADJUSTED EPS 35 CENTS, ABOVE ESTIMATE OF 33 CENTS",
-   "likes": 3,
-   "reposts": 0,
-   "url": "https://x.com/FirstSquawk/status/2113003638792835549"
   },
   {
    "at": "2026-10-21T20:24:26Z",
@@ -991,7 +1447,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META CFO: \"We anticipate 2026 capital expenditures, including principal payments on finance leases, to be in the range of $135-145 billion, narrowed from our prior outlook of $130-145 billion.\"",
-   "likes": 14,
+   "likes": 16,
    "reposts": 4,
    "url": "https://x.com/TheTranscript_/status/2113003499269324946"
   },
@@ -1003,8 +1459,8 @@
    "qqq": true,
    "retweet": false,
    "text": "THE TESLA $TSLA SEMI IS NOW IN VOLUME PRODUCTION\n\nThe top version can go 500 miles fully loaded at 82,000 lbs, at an efficiency of 1.7 kWh per mile.\n\nThat means it uses about a third of the energy of a comparable diesel truck to haul the same load. In trucking, energy is one of the biggest costs per mile, so Tesla says that gives Semi operators a real advantage.\n\nThe Nevada factory is built for 25,000 Semis a year, and Tesla deployed its first pre-assembled Megacharger to support the ramp.",
-   "likes": 42,
-   "reposts": 6,
+   "likes": 59,
+   "reposts": 8,
    "url": "https://x.com/WOLF_Financial/status/2113003388745212019"
   },
   {
@@ -1015,7 +1471,7 @@
    "qqq": true,
    "retweet": false,
    "text": "... and, not surprisingly, the stock trades higher... always read the corporate body language... $META",
-   "likes": 5,
+   "likes": 7,
    "reposts": 2,
    "url": "https://x.com/MikeZaccardi/status/2113003224588267591"
   },
@@ -1027,7 +1483,7 @@
    "qqq": true,
    "retweet": false,
    "text": "The day $TSLA closes right at $420.69 is the day the Internet freezes.\n\nWe came close a few times in the past. \n\nWould just add to the stock market shenanigans/simulation/silliness.\n\nWhy not.\n\nHave a feeling we might get close to it again next month.",
-   "likes": 113,
+   "likes": 128,
    "reposts": 5,
    "url": "https://x.com/Mr_Derivatives/status/2113003124059410794"
   },
@@ -1051,8 +1507,8 @@
    "qqq": true,
    "retweet": false,
    "text": "META Jumps After Q3 Earnings Beat, Boosts Guidance",
-   "likes": 61,
-   "reposts": 11,
+   "likes": 73,
+   "reposts": 13,
    "url": "https://x.com/zerohedge/status/2113002910065865096"
   },
   {
@@ -1063,8 +1519,8 @@
    "qqq": true,
    "retweet": false,
    "text": "BREAKING: Meta, $META, plans to create a new class of non-voting shares, allowing it to sell stock to fund its AI spending without diluting Mark Zuckerberg’s control of the company, per FT",
-   "likes": 333,
-   "reposts": 30,
+   "likes": 553,
+   "reposts": 44,
    "url": "https://x.com/unusual_whales/status/2113002869666492730"
   },
   {
@@ -1075,8 +1531,8 @@
    "qqq": true,
    "retweet": false,
    "text": "*META NOT PROVIDING FY YEAR 2027 REVENUE OUTLOOK",
-   "likes": 354,
-   "reposts": 30,
+   "likes": 544,
+   "reposts": 47,
    "url": "https://x.com/zerohedge/status/2113002773977477526"
   },
   {
@@ -1087,7 +1543,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META CFO: \"..the benefits our AI investments are delivering to the core business, combined with emerging opportunities from model advances and product launches, position us to sustain strong overall revenue growth throughout 2027.\"",
-   "likes": 16,
+   "likes": 18,
    "reposts": 1,
    "url": "https://x.com/TheTranscript_/status/2113002762699145595"
   },
@@ -1099,8 +1555,8 @@
    "qqq": true,
    "retweet": false,
    "text": "TESLA $TSLA CALLS THE NEW ROADSTER \"THE BEST OF THE LAST HUMAN-DRIVEN CARS\"\n\nTesla unveiled it last week at SpaceX's test site in Texas. It has rocket thrusters that run on compressed air, and it went 0 to 60 in under a second on the launch pad.\n\nTesla even put a photo of it in the earnings deck, flying upside down over the rest of the lineup.\n\nProduction is set for 2028.",
-   "likes": 21,
-   "reposts": 6,
+   "likes": 24,
+   "reposts": 7,
    "url": "https://x.com/WOLF_Financial/status/2113002486609150007"
   },
   {
@@ -1111,8 +1567,8 @@
    "qqq": true,
    "retweet": false,
    "text": "*META: ZUCKERBERG MAY RELOCATE FROM CALIFORNIA IF PROP 40 PASSES",
-   "likes": 887,
-   "reposts": 58,
+   "likes": 1826,
+   "reposts": 95,
    "url": "https://x.com/zerohedge/status/2113002445718593755"
   },
   {
@@ -1123,8 +1579,8 @@
    "qqq": true,
    "retweet": false,
    "text": "Meta CEO: \"Our investments are paying off, the core business is strong, and we're seeing velocity across the board.\"\n\n$META: +3.4% AH",
-   "likes": 11,
-   "reposts": 1,
+   "likes": 14,
+   "reposts": 3,
    "url": "https://x.com/TheTranscript_/status/2113002368237535692"
   },
   {
@@ -1135,8 +1591,8 @@
    "qqq": true,
    "retweet": false,
    "text": "ABOUT 44% OF EVERYONE ON EARTH USES A META $META APP EVERY DAY\n\n3.64 billion people used Facebook, Instagram, WhatsApp or Messenger on an average day in September, up 3% from a year ago.\n\nWith roughly 8.3 billion people in the world, that's more than 4 out of every 10 humans.",
-   "likes": 42,
-   "reposts": 7,
+   "likes": 49,
+   "reposts": 8,
    "url": "https://x.com/WOLF_Financial/status/2113001933388857658"
   },
   {
@@ -1147,21 +1603,9 @@
    "qqq": false,
    "retweet": false,
    "text": "SOUTHWEST AIRLINES $LUV JUST REPORTED Q3 EARNINGS\n\n- Adj Revenue: $8.42B, beating est. of $8.25B 🟢\n- Adj EPS: $0.66, beating est. of $0.57 🟢\n- Adj Oper Income: $452M\n- Adj Net Income: $328M\n- GAAP EPS: $0.55\n- Adj Operating Margin: 5.4% (+4.8 pts YoY)\n- RASM: 18.55¢ (+21.6% YoY)\n- CASM-X: +3.8% YoY\n\nQ4 Guidance:\n- Adj EPS: $0.55-$0.80, below est. of $0.85 🔴\n- ASMs: +3%-+4% YoY\n- RASM: +19%-+21% YoY\n- CASM-X: +4.0%-+4.5% YoY\n\nFY26 Guidance:\n- Adj EPS: $2.60-$2.85, below est. of $2.87 🔴\n- Capacity: ~+1.2% YoY (from ~+1.5%)",
-   "likes": 6,
+   "likes": 8,
    "reposts": 2,
    "url": "https://x.com/WOLF_Financial/status/2113001885212827867"
-  },
-  {
-   "at": "2026-10-21T20:17:59Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "Trump ends remarks to reporters",
-   "likes": 12,
-   "reposts": 1,
-   "url": "https://x.com/financialjuice/status/2113001874764726704"
   },
   {
    "at": "2026-10-21T20:17:55Z",
@@ -1171,7 +1615,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META may depart California... $TSLA now with better FCF than MZ's company",
-   "likes": 9,
+   "likes": 10,
    "reposts": 1,
    "url": "https://x.com/MikeZaccardi/status/2113001860894192065"
   },
@@ -1186,30 +1630,6 @@
    "likes": 10,
    "reposts": 0,
    "url": "https://x.com/LiveSquawk/status/2113001846172209585"
-  },
-  {
-   "at": "2026-10-21T20:17:15Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "Trump: Can't say denuclearization meeting will happen.",
-   "likes": 20,
-   "reposts": 1,
-   "url": "https://x.com/financialjuice/status/2113001690156921204"
-  },
-  {
-   "at": "2026-10-21T20:16:56Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "Representative of the Supreme Leader in Khuzestan: Reopening of the Strait of Hormuz should be done within the framework of Iran's arrangements and conditions - IRNA",
-   "likes": 18,
-   "reposts": 1,
-   "url": "https://x.com/financialjuice/status/2113001611362480353"
   },
   {
    "at": "2026-10-21T20:16:27Z",
@@ -1231,8 +1651,8 @@
    "qqq": false,
    "retweet": false,
    "text": "$IBM kaboom 📈 📈",
-   "likes": 154,
-   "reposts": 15,
+   "likes": 208,
+   "reposts": 17,
    "url": "https://x.com/Barchart/status/2113001423310934415"
   },
   {
@@ -1243,8 +1663,8 @@
    "qqq": true,
    "retweet": false,
    "text": "TESLA $TSLA HAS STARTED PRODUCING OPTIMUS ROBOTS ON HIGH-VOLUME LINES\n\nProduction began in Fremont, and Tesla says these are the first production-quality bots it has ever made.\n\nIt says it has now proven that the current manufacturing process for Optimus is suitable for a commercial product, and it will keep improving both the hardware and the process from here.\n\nA second Optimus factory is already under construction in Texas.",
-   "likes": 58,
-   "reposts": 14,
+   "likes": 71,
+   "reposts": 16,
    "url": "https://x.com/WOLF_Financial/status/2113001399445512653"
   },
   {
@@ -1255,7 +1675,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META\n\nGuys, if we all collectively blow at the META chart on our phone/screen right now, like RIGHT NOW, it will make the candlestick go up.\n\nBlow. Now.\n\n💨💨\n\n#wedhumor",
-   "likes": 128,
+   "likes": 137,
    "reposts": 7,
    "url": "https://x.com/Mr_Derivatives/status/2113001252342923716"
   },
@@ -1267,33 +1687,9 @@
    "qqq": true,
    "retweet": false,
    "text": "TESLA $TSLA ROBOTAXI MILES GREW 8X IN ONE QUARTER\n\nTesla started giving Robotaxi rides in Cybercabs in Austin on September 3, and the service is now running from 6am to midnight.\n\nIt reached nearly 2 million cumulative unsupervised miles by the end of the quarter. Riders can even use Grok inside the Cybercab to manage their inbox, calendar and tasks by voice.",
-   "likes": 34,
-   "reposts": 8,
-   "url": "https://x.com/WOLF_Financial/status/2113001123783078105"
-  },
-  {
-   "at": "2026-10-21T20:14:35Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "Trump: I have right to do sanctions any day.",
    "likes": 39,
-   "reposts": 1,
-   "url": "https://x.com/financialjuice/status/2113001021563904326"
-  },
-  {
-   "at": "2026-10-21T20:14:22Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": true,
-   "retweet": false,
-   "text": "Meta: Zuckerberg not on verge of losing voting control. $META",
-   "likes": 12,
-   "reposts": 1,
-   "url": "https://x.com/financialjuice/status/2113000964483334338"
+   "reposts": 9,
+   "url": "https://x.com/WOLF_Financial/status/2113001123783078105"
   },
   {
    "at": "2026-10-21T20:12:58Z",
@@ -1304,20 +1700,8 @@
    "retweet": false,
    "text": "$IBM  | IBM Q3 26 Earnings:\n\n• Rev: $17.10B (est $16.83B)\n• Oper EPS: $2.95 (est $2.86)\n• Software Revenue: $7.80B (est $7.64B)\n• Consulting Revenue: $5.34B (est $5.39B)\n• Still Sees FY Rev Growth At Constant Currency: +4% To +5% (est +4.12%)",
    "likes": 7,
-   "reposts": 2,
+   "reposts": 3,
    "url": "https://x.com/LiveSquawk/status/2113000615098167693"
-  },
-  {
-   "at": "2026-10-21T20:12:57Z",
-   "handle": "financialjuice",
-   "name": "FinancialJuice",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "Trump on embassy staff told to depart: I don't know that they are.",
-   "likes": 23,
-   "reposts": 2,
-   "url": "https://x.com/financialjuice/status/2113000608508616779"
   },
   {
    "at": "2026-10-21T20:12:28Z",
@@ -1327,8 +1711,8 @@
    "qqq": false,
    "retweet": false,
    "text": "BREAKING: IBM stock, $IBM, surges over +6% after reporting stronger than expected earnings due to AI.",
-   "likes": 752,
-   "reposts": 74,
+   "likes": 1009,
+   "reposts": 94,
    "url": "https://x.com/KobeissiLetter/status/2113000485464793205"
   },
   {
@@ -1339,8 +1723,8 @@
    "qqq": false,
    "retweet": false,
    "text": "BREAKING: \"US embassy staff and families ordered to leave Saudi Arabia, with families of embassy staff in the United Arab Emirates, Jordan, Qatar and Bahrain also ordered to leave,\" per AFP",
-   "likes": 1518,
-   "reposts": 238,
+   "likes": 2643,
+   "reposts": 389,
    "url": "https://x.com/unusual_whales/status/2113000368666030230"
   },
   {
@@ -1375,8 +1759,8 @@
    "qqq": true,
    "retweet": false,
    "text": "OVER 75% OF NEW TESLA $TSLA BUYERS IN NORTH AMERICA ARE NOW TAKING FSD (SUPERVISED)\n\nThat's up nearly 20 percentage points from last quarter.\n\nActive FSD subscriptions hit 1.74 million, up 67% from a year ago. FSD is now approved in 9 EU countries, where more than 100,000 customers have already driven over 160 million kilometers with it.",
-   "likes": 31,
-   "reposts": 5,
+   "likes": 38,
+   "reposts": 7,
    "url": "https://x.com/WOLF_Financial/status/2113000212507906499"
   },
   {
@@ -1399,7 +1783,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META EPS excluding the $9.89B attorneys general settlement charge was $7.40, above the $5.89 estimate.\n\nReported GAAP EPS of $3.83 includes the one-time charge. Excluding it, operating income would have been $22.88B vs. $18.66B expected.",
-   "likes": 16,
+   "likes": 18,
    "reposts": 3,
    "url": "https://x.com/WOLF_Financial/status/2112999956273320039"
   },
@@ -1411,7 +1795,7 @@
    "qqq": false,
    "retweet": false,
    "text": "$IBM Holy shit, $270!!",
-   "likes": 67,
+   "likes": 81,
    "reposts": 3,
    "url": "https://x.com/Mr_Derivatives/status/2112999911746834862"
   },
@@ -1423,8 +1807,8 @@
    "qqq": false,
    "retweet": false,
    "text": "LAS VEGAS SANDS $LVS JUST REPORTED Q3 EARNINGS\n\n- Revenue: $3.22B, missing est. of $3.37B 🔴\n- Adj EPS: $0.54, missing est. of $0.71 🔴\n- Adj Property EBITDA: $1.12B (-16% YoY)\n- Adj Net Income: $343M\n- GAAP EPS: $0.48\n- Net Income: $352M (-28% YoY)\n- Operating Income: $618M (-14% YoY)\n- Capital Expenditures: $281M\n\nSegment Net Revenue:\n- Macao Operations: $1.94B\n- Marina Bay Sands: $1.29B\n\nSegment Adj. Property EBITDA:\n- Macao Operations: $529M\n- Marina Bay Sands: $590M\n\nKey Updates:\n- Macao Operations: lower by $11M (high hold)\n- Share repurchases: $950M of common stock during the quarter\n- Recurring dividend: raised to $1.44 per share annually ($0.36 per quarter) for 2027\n- SCL common stock purchased: $101M, raising ownership to 75.56%",
-   "likes": 8,
-   "reposts": 1,
+   "likes": 9,
+   "reposts": 2,
    "url": "https://x.com/WOLF_Financial/status/2112999866485924326"
   },
   {
@@ -1435,8 +1819,8 @@
    "qqq": true,
    "retweet": false,
    "text": "TESLA $TSLA JUST REPORTED Q3 EARNINGS\n\n- Revenue: $28.05B, beating est. of $27.88B 🟢\n- Adj EPS: $0.48, beating est. of $0.43 🟢\n- Adj EBITDA: $3.90B (-8% YoY)\n- GAAP Gross Margin: 19.6% (+160 bps YoY)\n- Operating Income: $718M (-56% YoY)\n- Free Cash Flow: $1.53B (-62% YoY)\n- Deliveries: 486,532 (-2% YoY)\n- Storage Deployed: 13.7 GWh (+10% YoY)",
-   "likes": 73,
-   "reposts": 14,
+   "likes": 89,
+   "reposts": 16,
    "url": "https://x.com/WOLF_Financial/status/2112999788174016577"
   },
   {
@@ -1447,7 +1831,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META FCF falls deeper into the red",
-   "likes": 13,
+   "likes": 14,
    "reposts": 1,
    "url": "https://x.com/MikeZaccardi/status/2112999729676034102"
   },
@@ -1459,7 +1843,7 @@
    "qqq": false,
    "retweet": false,
    "text": "$TXN | Texas Instruments Q3 26 Earnings:\n\n• Rev: $6.06B (est $5.93B)\n• EPS: $2.62 (est $2.42)\n• CapEx: $463M (est $650.6M)\n• Sees Q4 Revenue: $5.80B To $6.30B (est $5.73B)\n• Sees Q4 EPS: $2.45 To $2.79",
-   "likes": 8,
+   "likes": 9,
    "reposts": 1,
    "url": "https://x.com/LiveSquawk/status/2112999670759014752"
   },
@@ -1471,21 +1855,9 @@
    "qqq": false,
    "retweet": false,
    "text": "IBM $IBM JUST REPORTED Q3 EARNINGS\n\n- Revenue: $17.1B, beating est. of $16.82B 🟢\n- Adj EPS: $2.95, beating est. of $2.86 🟢\n- Free Cash Flow: $3.0B\n- Constant Currency Revenue Growth: 6%\n- Hybrid Cloud (Red Hat): +11% YoY\n- IBM Z: -20% YoY, -19% cc\n- Distributed Infrastructure: +31% YoY, +32% cc\n- Adj Gross Margin: 58.5% (-0.2 pts YoY)\n\nSegment Revenue:\n- Software: $7.8B (+8% YoY, +9% cc)\n- Consulting: $5.3B (flat, +2% cc)\n- Infrastructure: $3.7B (+4% YoY, +5% cc)\n\nFY26 Guidance:\n- Constant Currency Revenue Growth: 4%-5%\n- Free Cash Flow: ~$1B increase YoY",
-   "likes": 17,
-   "reposts": 4,
+   "likes": 19,
+   "reposts": 5,
    "url": "https://x.com/WOLF_Financial/status/2112999644997271802"
-  },
-  {
-   "at": "2026-10-21T20:09:02Z",
-   "handle": "WOLF_Financial",
-   "name": "WOLF",
-   "tag": "analysis",
-   "qqq": true,
-   "retweet": false,
-   "text": "TESLA $TSLA JUST PRODUCED AND DELIVERED ITS 10 MILLIONTH VEHICLE\n\nCumulative deliveries reached 10.2 million at the end of Q3, up from 8.5 million a year ago. That's 1.7 million cars in 12 months.\n\nTesla produced 464,391 vehicles in the quarter, up 4% from a year ago, and it says it's focused on running its factories at maximum capacity.",
-   "likes": 9,
-   "reposts": 3,
-   "url": "https://x.com/WOLF_Financial/status/2112999621354250649"
   },
   {
    "at": "2026-10-21T20:08:59Z",
@@ -1495,8 +1867,8 @@
    "qqq": true,
    "retweet": false,
    "text": "BREAKING: $META earnings:\n\n- EPS: $3.83, est: $6.8 \n- Revenue: $64.6 billion, est: $63.4 billion",
-   "likes": 312,
-   "reposts": 16,
+   "likes": 453,
+   "reposts": 19,
    "url": "https://x.com/unusual_whales/status/2112999612504223941"
   },
   {
@@ -1507,8 +1879,8 @@
    "qqq": true,
    "retweet": false,
    "text": "BREAKING: Tesla, $TSLA, earnings:\n\n- EPS: $0.48, est: $0.45\n- Revenue: $28.04 billion, est: $28.25 billion",
-   "likes": 353,
-   "reposts": 17,
+   "likes": 447,
+   "reposts": 18,
    "url": "https://x.com/unusual_whales/status/2112999452017643841"
   },
   {
@@ -1519,7 +1891,7 @@
    "qqq": false,
    "retweet": false,
    "text": "TRUMP OPEN TO IDEA OF JOINT MEETING WITH XI, PUTIN NEXT MONTH\n\nUS President Donald Trump said on Monday he is open to three-way arms-control talks with the leaders of China and Russia as soon as next month, raising the prospect of an unprecedented meeting and a major diplomatic gambit for the US president.\n\n\"We would have it to talk about nuclear weapons and denuclearization,\" Trump told reporters outside the White House. \"If President Xi wants to have it, I'd have it. I'm sure we'd talk about other things like trade too.\"\n\nTrump has tried to thaw frosty relations with Beijing and Moscow as those non-Western powers grow closer. A three-way meeting would also raise alarm from Europe to Asia over private deals that weaken Washington's transatlantic and Indo-Pacific alliances.\n\nFull article:",
-   "likes": 10,
+   "likes": 13,
    "reposts": 1,
    "url": "https://x.com/Fxhedgers/status/2112999388482097222"
   },
@@ -1531,7 +1903,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$TSLA $394’s so far in after hrs… ok not bad.",
-   "likes": 189,
+   "likes": 210,
    "reposts": 3,
    "url": "https://x.com/Mr_Derivatives/status/2112999340612759883"
   },
@@ -1543,7 +1915,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$TSLA  | Tesla Q3 26 Earnings:\n\n• Rev: $28.05B (est $28.13B)\n• Adj EPS: 48c (est 44c)\n• Operating Income: $718M (est $599.3M)\n• Automotive Revenue: $20.56B (est $19.83B)\n• Services &amp; Other Revenue: $4.61B (est $4.30B)",
-   "likes": 15,
+   "likes": 17,
    "reposts": 4,
    "url": "https://x.com/LiveSquawk/status/2112999339568111869"
   },
@@ -1567,7 +1939,7 @@
    "qqq": true,
    "retweet": false,
    "text": "🌐 📈 ✅ 👇 $META earnings out just now, shares up 4% after hours\n\nLink press release: https://t.co/68Ks7Kj0XZ",
-   "likes": 11,
+   "likes": 13,
    "reposts": 0,
    "url": "https://x.com/BeuvingJordy/status/2112999118444605836"
   },
@@ -1579,7 +1951,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META effectively splitting 2:1 ... in January\n\n+4.44%",
-   "likes": 22,
+   "likes": 24,
    "reposts": 4,
    "url": "https://x.com/MikeZaccardi/status/2112999101960745426"
   },
@@ -1591,7 +1963,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META pricing 7% ER move",
-   "likes": 13,
+   "likes": 15,
    "reposts": 1,
    "url": "https://x.com/spotgamma/status/2112998997677994480"
   },
@@ -1603,21 +1975,9 @@
    "qqq": true,
    "retweet": false,
    "text": "$META $733.29 highs in after hrs.\n\nIf you bottom fished the $681 lows yesterday, looking solid so far.\n\nNo jinx!",
-   "likes": 107,
+   "likes": 116,
    "reposts": 4,
    "url": "https://x.com/Mr_Derivatives/status/2112998810356220141"
-  },
-  {
-   "at": "2026-10-21T20:05:45Z",
-   "handle": "zerohedge",
-   "name": "zerohedge",
-   "tag": "headline",
-   "qqq": true,
-   "retweet": false,
-   "text": "*TESLA 3Q FREE CASH FLOW $1.53B, EST. NEGATIVE $4.99B",
-   "likes": 870,
-   "reposts": 41,
-   "url": "https://x.com/zerohedge/status/2112998798662537231"
   },
   {
    "at": "2026-10-21T20:04:55Z",
@@ -1627,8 +1987,8 @@
    "qqq": true,
    "retweet": false,
    "text": "BREAKING: Meta stock, $META, surges +5% after reporting stronger than expected Q3 2026 earnings.",
-   "likes": 1398,
-   "reposts": 90,
+   "likes": 1764,
+   "reposts": 115,
    "url": "https://x.com/KobeissiLetter/status/2112998585847681378"
   },
   {
@@ -1639,8 +1999,8 @@
    "qqq": true,
    "retweet": false,
    "text": "$META getting sent on earnings 📈 📈",
-   "likes": 167,
-   "reposts": 24,
+   "likes": 213,
+   "reposts": 29,
    "url": "https://x.com/Barchart/status/2112998582257115612"
   },
   {
@@ -1651,21 +2011,9 @@
    "qqq": true,
    "retweet": false,
    "text": "$META $728’s….. stick please!",
-   "likes": 206,
+   "likes": 227,
    "reposts": 6,
    "url": "https://x.com/Mr_Derivatives/status/2112998381232808057"
-  },
-  {
-   "at": "2026-10-21T20:03:33Z",
-   "handle": "zerohedge",
-   "name": "zerohedge",
-   "tag": "analysis",
-   "qqq": true,
-   "retweet": false,
-   "text": "Anther capex raise \n\n*META SEES FY CAPEX $135B TO $145B, SAW $130B TO $145B",
-   "likes": 227,
-   "reposts": 24,
-   "url": "https://x.com/zerohedge/status/2112998241742508443"
   },
   {
    "at": "2026-10-21T20:03:00Z",
@@ -1687,21 +2035,9 @@
    "qqq": false,
    "retweet": false,
    "text": "Just want to give out a Partner shoutout to my bois (and gals) over at @hebbia. \n\nJob well done.\n \nWen you guys IPO, don’t forget about the small guys (me) ok?!",
-   "likes": 22,
+   "likes": 26,
    "reposts": 0,
    "url": "https://x.com/Mr_Derivatives/status/2112997926482153683"
-  },
-  {
-   "at": "2026-10-21T20:02:06Z",
-   "handle": "zerohedge",
-   "name": "zerohedge",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "Diplomat Departures Damage Green Day; Kremlin Drives Crude, Credit, &amp; Crypto Crazy",
-   "likes": 29,
-   "reposts": 4,
-   "url": "https://x.com/zerohedge/status/2112997877727338811"
   },
   {
    "at": "2026-10-21T20:02:05Z",
@@ -1716,18 +2052,6 @@
    "url": "https://x.com/BrianFeroldi/status/2112997874988445808"
   },
   {
-   "at": "2026-10-21T20:01:50Z",
-   "handle": "zerohedge",
-   "name": "zerohedge",
-   "tag": "headline",
-   "qqq": true,
-   "retweet": false,
-   "text": "*META SEES 4Q REV. $73B TO $76B, EST. $73.57B\n*META SEES 2026 CAPEX $135-145 BILLION        \n*META ESTABLISHES NEW  NON-VOTING CLASS C COMMON STOCK",
-   "likes": 188,
-   "reposts": 26,
-   "url": "https://x.com/zerohedge/status/2112997812749447190"
-  },
-  {
    "at": "2026-10-21T20:01:44Z",
    "handle": "MikeZaccardi",
    "name": "Mike Zaccardi, CFA, CMT 🍖",
@@ -1740,18 +2064,6 @@
    "url": "https://x.com/MikeZaccardi/status/2112997786874421311"
   },
   {
-   "at": "2026-10-21T20:00:08Z",
-   "handle": "zerohedge",
-   "name": "zerohedge",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "*US WAIVES RED DIESEL TAX RECORD REQUIREMENTS TO ENTICE BUYERS",
-   "likes": 105,
-   "reposts": 13,
-   "url": "https://x.com/zerohedge/status/2112997382098915485"
-  },
-  {
    "at": "2026-10-21T19:59:00Z",
    "handle": "unusual_whales",
    "name": "unusual_whales",
@@ -1759,8 +2071,8 @@
    "qqq": false,
    "retweet": false,
    "text": "BREAKING: US preparing to issue ordered departure of some personnel from Gulf embassies, per Reuters",
-   "likes": 269,
-   "reposts": 30,
+   "likes": 325,
+   "reposts": 34,
    "url": "https://x.com/unusual_whales/status/2112997097142100311"
   },
   {
@@ -1772,7 +2084,7 @@
    "retweet": true,
    "text": "Washington doesn't have a revenue problem. It has a spending problem.\nOver the last decade:\nTax revenue: +65%\nGovernment spending: +92%\nThe two parties fight over where the money should go, but they agree on one thing: spending beyond their means.",
    "likes": 0,
-   "reposts": 36,
+   "reposts": 44,
    "url": "https://x.com/charliebilello/status/2112996879520677921"
   },
   {
@@ -1788,18 +2100,6 @@
    "url": "https://x.com/MikeZaccardi/status/2112996819189821843"
   },
   {
-   "at": "2026-10-21T19:55:23Z",
-   "handle": "zerohedge",
-   "name": "zerohedge",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": true,
-   "text": "We’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\n\nIt comes to you with what needs your attention, completes tasks you ask of it, keeps working when you step away, and checks with you before it acts on your behalf.",
-   "likes": 0,
-   "reposts": 1516,
-   "url": "https://x.com/zerohedge/status/2112996189801230671"
-  },
-  {
    "at": "2026-10-21T19:52:33Z",
    "handle": "MikeZaccardi",
    "name": "Mike Zaccardi, CFA, CMT 🍖",
@@ -1807,7 +2107,7 @@
    "qqq": true,
    "retweet": false,
    "text": "Long $TSLA, short $420 calls would make the most sense @elonmusk $SPCX",
-   "likes": 8,
+   "likes": 9,
    "reposts": 1,
    "url": "https://x.com/MikeZaccardi/status/2112995473493536861"
   },
@@ -1819,8 +2119,8 @@
    "qqq": false,
    "retweet": false,
    "text": "Since SpaceX's IPO in June, retail investors have been a net buyer every single week except one 🚨",
-   "likes": 42,
-   "reposts": 7,
+   "likes": 48,
+   "reposts": 8,
    "url": "https://x.com/Barchart/status/2112995192387068150"
   },
   {
@@ -1843,7 +2143,7 @@
    "qqq": false,
    "retweet": false,
    "text": "$XLE ~record high.. +55.4% YTD\n$XLY $XLC red on the year\n\nMedian sector $XLI +9.3% @koyfincharts",
-   "likes": 4,
+   "likes": 5,
    "reposts": 3,
    "url": "https://x.com/MikeZaccardi/status/2112994647333064724"
   },
@@ -1855,21 +2155,9 @@
    "qqq": true,
    "retweet": false,
    "text": "$GOOGL is the only Maggy 7 trading below the 200dma.\n\n$TSLA is close. See how it does in 20 min.",
-   "likes": 193,
+   "likes": 221,
    "reposts": 8,
    "url": "https://x.com/Mr_Derivatives/status/2112993633041588690"
-  },
-  {
-   "at": "2026-10-21T19:45:06Z",
-   "handle": "zerohedge",
-   "name": "zerohedge",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "\"Pure Evil\": Musk Goes Nuclear On Talarico As George W.'s Brother Does 180",
-   "likes": 337,
-   "reposts": 26,
-   "url": "https://x.com/zerohedge/status/2112993600992575841"
   },
   {
    "at": "2026-10-21T19:44:57Z",
@@ -1879,21 +2167,9 @@
    "qqq": false,
    "retweet": false,
    "text": "$CBRS \nOriginal IPO pricing was 115 area, hence its been bouncing around that, if that breaks 100 will be ideal risk for investors. So 115 area is your level of risk if you been buying it, still lot of sellers \n\nWe took loss earlier but have Dead Cat Trade  there",
-   "likes": 14,
+   "likes": 17,
    "reposts": 1,
    "url": "https://x.com/ripster47/status/2112993561742364815"
-  },
-  {
-   "at": "2026-10-21T19:43:06Z",
-   "handle": "zerohedge",
-   "name": "zerohedge",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "Houthi Attack On Aramco Facility Kills Two; US Prepares More Diplomatic Evacuations In Riyadh",
-   "likes": 58,
-   "reposts": 11,
-   "url": "https://x.com/zerohedge/status/2112993095440552278"
   },
   {
    "at": "2026-10-21T19:43:05Z",
@@ -1908,18 +2184,6 @@
    "url": "https://x.com/BeuvingJordy/status/2112993093653815398"
   },
   {
-   "at": "2026-10-21T19:37:07Z",
-   "handle": "zerohedge",
-   "name": "zerohedge",
-   "tag": "analysis",
-   "qqq": true,
-   "retweet": false,
-   "text": "Meta has moved at least 8% the day after each of its last five reports, in both directions. Notably, the last two went the wrong way, and so did the last two Q3 prints",
-   "likes": 108,
-   "reposts": 11,
-   "url": "https://x.com/zerohedge/status/2112991589752537554"
-  },
-  {
    "at": "2026-10-21T19:36:00Z",
    "handle": "unusual_whales",
    "name": "unusual_whales",
@@ -1927,21 +2191,9 @@
    "qqq": false,
    "retweet": false,
    "text": "Someone just bought $13.6 million of Nebius, $NBIS, calls.\n\nContract: $260 calls expiring April 16, 2027\nSize: 7,500 contracts at about $18.13 each\nAll bought at the ask, a sign of urgency\nVolume far above open interest, suggesting a fresh position\nBreakeven: about $278 by expiration\n\nNebius, an AI cloud company, competes with CoreWeave, which drew more than $30 million in bullish call trades over the past two days.",
-   "likes": 261,
-   "reposts": 28,
+   "likes": 356,
+   "reposts": 32,
    "url": "https://x.com/unusual_whales/status/2112991309103542514"
-  },
-  {
-   "at": "2026-10-21T19:33:25Z",
-   "handle": "zerohedge",
-   "name": "zerohedge",
-   "tag": "headline",
-   "qqq": false,
-   "retweet": false,
-   "text": "*US: ORDERED DEPARTURE FOR SOME STAFF IN SAUDI ARABIA, NOT GULF",
-   "likes": 301,
-   "reposts": 40,
-   "url": "https://x.com/zerohedge/status/2112990661049716791"
   },
   {
    "at": "2026-10-21T19:28:21Z",
@@ -1951,7 +2203,7 @@
    "qqq": false,
    "retweet": false,
    "text": "US State Dept: Issued Ordered Departure For Non-Emergency US Govt Employees And Their Family Members In Saudi Arabia Only",
-   "likes": 14,
+   "likes": 15,
    "reposts": 8,
    "url": "https://x.com/LiveSquawk/status/2112989387109827066"
   },
@@ -1963,7 +2215,7 @@
    "qqq": false,
    "retweet": false,
    "text": "💡US department of state issued an ordered departure for non-emergency US government employees and their family members in Saudi Arabia only\nMarket pop",
-   "likes": 12,
+   "likes": 13,
    "reposts": 1,
    "url": "https://x.com/ripster47/status/2112989238362882417"
   },
@@ -1987,21 +2239,9 @@
    "qqq": true,
    "retweet": false,
    "text": "BREAKING 🚨: France\n\nFrance's 10-Year Bond Yield jumps to highest level in more than 22 years 👀",
-   "likes": 464,
-   "reposts": 86,
+   "likes": 567,
+   "reposts": 94,
    "url": "https://x.com/Barchart/status/2112988439394058505"
-  },
-  {
-   "at": "2026-10-21T19:24:14Z",
-   "handle": "Mr_Derivatives",
-   "name": "Heisenberg",
-   "tag": "flow",
-   "qqq": true,
-   "retweet": false,
-   "text": "A few implies for today:\n\n$TSLA +/- 5.6%, reacted negatively 5 of the last 5 er's!\n\n$META +/- 6.6%, reacted negatively 3 of the last 4 er's.\n\n$IBM +/- 7.1%, reacted negatively 5 of the last 7 er's.\n\nGood luck degens!",
-   "likes": 180,
-   "reposts": 13,
-   "url": "https://x.com/Mr_Derivatives/status/2112988350202446296"
   },
   {
    "at": "2026-10-21T19:24:10Z",
@@ -2011,7 +2251,7 @@
    "qqq": false,
    "retweet": false,
    "text": "$V $MA Berkshire among today's all-time highs",
-   "likes": 11,
+   "likes": 12,
    "reposts": 5,
    "url": "https://x.com/MikeZaccardi/status/2112988330593800383"
   },
@@ -2035,21 +2275,9 @@
    "qqq": true,
    "retweet": false,
    "text": "$META plans to introduce new non-voting stock",
-   "likes": 26,
+   "likes": 28,
    "reposts": 5,
    "url": "https://x.com/MikeZaccardi/status/2112987588139073605"
-  },
-  {
-   "at": "2026-10-21T19:19:35Z",
-   "handle": "Mr_Derivatives",
-   "name": "Heisenberg",
-   "tag": "flow",
-   "qqq": false,
-   "retweet": false,
-   "text": "$V another ATH today. Up 14 of last 15 days.\n\n$MA another ATH today. Up 12 of last 14 days.\n\n$AXP even the laggard is 10% last couple weeks off the recent lows.",
-   "likes": 71,
-   "reposts": 4,
-   "url": "https://x.com/Mr_Derivatives/status/2112987179907694669"
   },
   {
    "at": "2026-10-21T19:17:29Z",
@@ -2059,8 +2287,8 @@
    "qqq": true,
    "retweet": false,
    "text": "Tesla, $TSLA, reports earnings after the bell today.\n\nOptions traders are pricing in a move of about 4.8%, or roughly $18 a share, either way. That’s a swing of about $67 billion in market value.\n\nWall Street expects earnings of $0.45 a share.\n\nTesla has missed earnings estimates six quarters in a row:\n\nQ2 2026: $0.04 vs. $0.51 expected\nQ1 2026: $0.18 vs. $0.36\nQ4 2025: $0.31 vs. $0.45\nQ3 2025: $0.37 vs. $0.53\nQ2 2025: $0.27 vs. $0.39\nQ1 2025: $0.15 vs. $0.44",
-   "likes": 174,
-   "reposts": 23,
+   "likes": 178,
+   "reposts": 24,
    "url": "https://x.com/unusual_whales/status/2112986649995206736"
   },
   {
@@ -2074,18 +2302,6 @@
    "likes": 28,
    "reposts": 10,
    "url": "https://x.com/LiveSquawk/status/2112985993007464805"
-  },
-  {
-   "at": "2026-10-21T19:14:40Z",
-   "handle": "Mr_Derivatives",
-   "name": "Heisenberg",
-   "tag": "flow",
-   "qqq": false,
-   "retweet": true,
-   "text": "WE JUST RAISED MONEY\n\nAnnouncing our $7m Seed Round led by Thomas Peterffy with participation from @kleinerperkins, @collision, John Paulson, 638 of our users, and a few amazing others.\n\nAries is building the stock trading platform of the future \n\nWe just launched Aries Infinite your own infinite trading canvas, built widget by widget or by asking AI\n\nOpen an account today at https://t.co/fD6BMlCIQr to experience premium market access and get one free share of stock worth up to $500!",
-   "likes": 0,
-   "reposts": 75,
-   "url": "https://x.com/Mr_Derivatives/status/2112985940633502067"
   },
   {
    "at": "2026-10-21T19:13:20Z",
@@ -2119,21 +2335,9 @@
    "qqq": false,
    "retweet": false,
    "text": "Warren Buffett’s Income Statement Rules of Thumb:",
-   "likes": 53,
-   "reposts": 9,
+   "likes": 64,
+   "reposts": 12,
    "url": "https://x.com/BrianFeroldi/status/2112985110752428340"
-  },
-  {
-   "at": "2026-10-21T19:09:50Z",
-   "handle": "MikeZaccardi",
-   "name": "Mike Zaccardi, CFA, CMT 🍖",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "0.3%-0.4% shaved off stocks in the last 30min",
-   "likes": 10,
-   "reposts": 2,
-   "url": "https://x.com/MikeZaccardi/status/2112984726931705935"
   },
   {
    "at": "2026-10-21T19:04:05Z",
@@ -2143,8 +2347,8 @@
    "qqq": true,
    "retweet": false,
    "text": "BREAKING 🚨: Netflix\n\n$NFLX now underperforming the Nasdaq 100 $QQQ by the largest margin in 4 years 📉 📉",
-   "likes": 190,
-   "reposts": 19,
+   "likes": 237,
+   "reposts": 21,
    "url": "https://x.com/Barchart/status/2112983278869160048"
   },
   {
@@ -2160,18 +2364,6 @@
    "url": "https://x.com/ripster47/status/2112982996345409608"
   },
   {
-   "at": "2026-10-21T19:01:00Z",
-   "handle": "MikeZaccardi",
-   "name": "Mike Zaccardi, CFA, CMT 🍖",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "The best single-page S&amp;P 500 sector ETF view is the @stockcharts CandleGlance... CMTs know this without question:\n\nMore on that and the current happenings from me: https://t.co/x2UhjjKFOA @CMT_Association",
-   "likes": 16,
-   "reposts": 3,
-   "url": "https://x.com/MikeZaccardi/status/2112982504298647724"
-  },
-  {
    "at": "2026-10-21T18:59:54Z",
    "handle": "unusual_whales",
    "name": "unusual_whales",
@@ -2179,8 +2371,8 @@
    "qqq": false,
    "retweet": false,
    "text": "Someone just bought $17.05 million of CoreWeave, $CRWV, calls.\n\nContract: $85 calls expiring March 19, 2027\nSize: 25,000 contracts at about $6.82 each\nSwept across exchanges and bought mostly at the ask, a sign of urgency\nVolume about 15 times open interest, meaning this is likely a fresh position\nBreakeven: about $91.82 by expiration\n\nA separate $10.5 million sweep on the same contract was also followed by a floor trade, adding to the conviction.\n\nIt’s the second massive CoreWeave call trade in two days, after a $14.9 million trade in $80 calls yesterday, and comes after JPMorgan said fears about the company’s debt are likely overdone.",
-   "likes": 281,
-   "reposts": 20,
+   "likes": 345,
+   "reposts": 29,
    "url": "https://x.com/unusual_whales/status/2112982226283712925"
   },
   {
@@ -2191,7 +2383,7 @@
    "qqq": false,
    "retweet": false,
    "text": "💡 US State Dept is preparing to issue an ordered departure of some personnel and family members at US embassies across the Gulf - US Officials.",
-   "likes": 26,
+   "likes": 27,
    "reposts": 8,
    "url": "https://x.com/ripster47/status/2112981587252097348"
   },
@@ -2203,7 +2395,7 @@
    "qqq": false,
    "retweet": false,
    "text": "US STATE DEPT IS PREPARING TO ISSUE AN ORDERED DEPARTURE OF SOME PERSONNEL AND FAMILY MEMBERS AT US EMBASSIES ACROSS THE GULF -US OFFICIALS",
-   "likes": 926,
+   "likes": 955,
    "reposts": 116,
    "url": "https://x.com/DeItaone/status/2112980363609887067"
   },
@@ -2215,7 +2407,7 @@
    "qqq": false,
    "retweet": false,
    "text": "💡From 15% Drawdown , Long portfolios back towards highs up 14% across all portfolios \nShared The Down Days, We share the Green Days\n\nIgnore Noise, Focus on conviction https://t.co/mPeuDE5GsD \nLive/transparent Trades\n$DELL $NBIS $MU Leading the charge \nAdded 1 more today",
-   "likes": 17,
+   "likes": 18,
    "reposts": 1,
    "url": "https://x.com/ripster47/status/2112980145153749321"
   },
@@ -2227,21 +2419,9 @@
    "qqq": false,
    "retweet": false,
    "text": "US Officials: State Dept Preparing To Issue Ordered Departure Of Some Personnel And Family Members At US Embassies Across The Gulf",
-   "likes": 42,
+   "likes": 43,
    "reposts": 8,
    "url": "https://x.com/LiveSquawk/status/2112979391600849170"
-  },
-  {
-   "at": "2026-10-21T18:41:24Z",
-   "handle": "Mr_Derivatives",
-   "name": "Heisenberg",
-   "tag": "flow",
-   "qqq": false,
-   "retweet": false,
-   "text": "$SPY What if....\n\nBollinger Bands signaling an imminent move soon and November is a hot month. Looks like an opposite mirror image of the prior time.",
-   "likes": 282,
-   "reposts": 20,
-   "url": "https://x.com/Mr_Derivatives/status/2112977569335406811"
   },
   {
    "at": "2026-10-21T18:36:31Z",
@@ -2251,8 +2431,8 @@
    "qqq": true,
    "retweet": false,
    "text": "BREAKING: Foreign holdings of US Treasuries jumped +$83 billion in August, to $9.33 trillion, their 6th-highest total on record.\n\nThe surge was driven by Canada, which raised its holdings by +$38 billion, to $465 billion, its 4th-highest on record.\n\nThis was followed by Belgium, which increased its holdings by +$20 billion, to a record $491 billion.\n\nThe UK, the 2nd-largest holder, raised its holdings by +$11 billion, to a record $1.01 trillion.\n\nMeanwhile, Japan, the largest foreign holder, cut its holdings by -$36 billion, to $1.07 trillion, its lowest since November 2024.\n\nChina, the 3rd-largest holder, reduced its holdings by -$27 billion, to $591 billion, its lowest level since August 2008.\n\nForeign holdings of US Treasuries are rising despite continued selling in Japan and China.",
-   "likes": 849,
-   "reposts": 113,
+   "likes": 935,
+   "reposts": 120,
    "url": "https://x.com/KobeissiLetter/status/2112976341712687228"
   },
   {
@@ -2263,8 +2443,8 @@
    "qqq": false,
    "retweet": false,
    "text": "President Trump is calling for companies that build large data centers in the US to generate their own electricity.\n\nIt comes as communities push back on new data centers over rising power bills, and BlackRock’s Larry Fink warns that a moratorium could trigger a recession.",
-   "likes": 727,
-   "reposts": 47,
+   "likes": 821,
+   "reposts": 50,
    "url": "https://x.com/unusual_whales/status/2112976209545937132"
   },
   {
@@ -2311,8 +2491,8 @@
    "qqq": false,
    "retweet": false,
    "text": "ZELENSKIY: UKRAINE HOPES FOR MEETING NOT LATER THAN EARLY NOVEMBER",
-   "likes": 270,
-   "reposts": 21,
+   "likes": 294,
+   "reposts": 23,
    "url": "https://x.com/DeItaone/status/2112973089818456478"
   },
   {
@@ -2323,8 +2503,8 @@
    "qqq": false,
    "retweet": false,
    "text": "UKRAINE'S ZELENSKIY SAYS SUPPORTS US PROPOSAL FOR TRILATERAL TALKS AT LEVEL OF NEGOTIATORS AS SOON AS POSSIBLE",
-   "likes": 323,
-   "reposts": 36,
+   "likes": 343,
+   "reposts": 37,
    "url": "https://x.com/DeItaone/status/2112972874982256722"
   },
   {
@@ -2347,8 +2527,8 @@
    "qqq": false,
    "retweet": false,
    "text": "BREAKING: Anthropic could publicly file its S-1 IPO prospectus as early as this Friday.  \n\nAnthropic's pre-IPO perpetual on Liquid is pushing back toward a $2 trillion implied valuation as the company moves closer to its anticipated IPO.",
-   "likes": 153,
-   "reposts": 15,
+   "likes": 159,
+   "reposts": 17,
    "url": "https://x.com/unusual_whales/status/2112970719609180165"
   },
   {
@@ -2359,21 +2539,9 @@
    "qqq": false,
    "retweet": false,
    "text": "BREAKING: BioWare, makers of Knights of the Old Republic, Baldur's Gate and Mass Effect, is closing.",
-   "likes": 2294,
-   "reposts": 117,
+   "likes": 2552,
+   "reposts": 125,
    "url": "https://x.com/unusual_whales/status/2112968068439957912"
-  },
-  {
-   "at": "2026-10-21T18:00:02Z",
-   "handle": "TheTranscript_",
-   "name": "The Transcript",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "$AMAT Applied Materials CEO: \"Agentic AI consumes about 2x to 4x more wafers than a generative AI pod.”",
-   "likes": 22,
-   "reposts": 3,
-   "url": "https://x.com/TheTranscript_/status/2112967157730697563"
   },
   {
    "at": "2026-10-21T17:56:00Z",
@@ -2383,8 +2551,8 @@
    "qqq": false,
    "retweet": false,
    "text": "JD Vance: There is no person who hates the idea of people enriching themselves fraudulently over access to the government than Donald J. Trump",
-   "likes": 933,
-   "reposts": 75,
+   "likes": 1003,
+   "reposts": 78,
    "url": "https://x.com/unusual_whales/status/2112966143165997112"
   },
   {
@@ -2408,7 +2576,7 @@
    "retweet": true,
    "text": "Crypto names beauty Day2 long setup - $CRCL & $MSTR! 📈\n\nMorning game plan shared early with members. At Tenet we track $BTC to trade crypto-related names - and today’s $BTC breakout gave us beautiful long trades in $MSTR & $CRCL! \n\nBoth highlighted in the Day2 sheet - top plays from @TenetCharts  Day2/Day3 sheet! 🎯",
    "likes": 0,
-   "reposts": 6,
+   "reposts": 7,
    "url": "https://x.com/ripster47/status/2112964730134376546"
   },
   {
@@ -2419,8 +2587,8 @@
    "qqq": false,
    "retweet": false,
    "text": "If you can't invest $1,000 well, you won't be able to invest $100,000 well. \n\nMore capital won't make you a better investor. \n\nIt will just make your mistakes more expensive.",
-   "likes": 90,
-   "reposts": 8,
+   "likes": 97,
+   "reposts": 9,
    "url": "https://x.com/BrianFeroldi/status/2112962019435380787"
   },
   {
@@ -2431,8 +2599,8 @@
    "qqq": false,
    "retweet": false,
    "text": "The UN now says the existing 1.5C warming limit for the world is no longer achievable due to climate change, per CNN",
-   "likes": 409,
-   "reposts": 46,
+   "likes": 454,
+   "reposts": 48,
    "url": "https://x.com/unusual_whales/status/2112961361584206284"
   },
   {
@@ -2455,8 +2623,8 @@
    "qqq": true,
    "retweet": false,
    "text": "BREAKING: Meta, $META, has been ordered to pay $25 billion in penalties by a New Mexico court as part of a data privacy case stemming from the company’s Cambridge Analytica scandal. \n\nThe penalty comes after a jury found Meta liable for misleading people about how it safeguards and collects user data.",
-   "likes": 1338,
-   "reposts": 119,
+   "likes": 1395,
+   "reposts": 121,
    "url": "https://x.com/KobeissiLetter/status/2112959986653598115"
   },
   {
@@ -2479,7 +2647,7 @@
    "qqq": true,
    "retweet": false,
    "text": "NVIDIA MAY ALSO BE A BIDDER FOR AMBARELLA ( $AMBA ) - BETAVILLE",
-   "likes": 157,
+   "likes": 161,
    "reposts": 19,
    "url": "https://x.com/DeItaone/status/2112958470475370889"
   },
@@ -2503,7 +2671,7 @@
    "qqq": false,
    "retweet": false,
    "text": "IRAN'S ARAQCHIL: IRAN IS PREPARED TO GIVE DIPLOMACY ANOTHER CHANCE IF WE SEE STRONG EVIDENCE OF A SINCERE DESIRE BY THE US TO BUILD TRUST &amp; REACH A JUST SOLUTION\n\nIRAN'S ARAQCHI: BUT IF US CHOOSES WAR OVER DIPLOMACY, IT'LL CERTAINLY RESULT IN AN EVEN GREATER STRATEGIC FAILURE",
-   "likes": 531,
+   "likes": 548,
    "reposts": 54,
    "url": "https://x.com/DeItaone/status/2112958114672849249"
   },
@@ -2515,8 +2683,8 @@
    "qqq": true,
    "retweet": false,
    "text": "BREAKING: Meta, $META, ordered to pay $25 billion in penalties related to the Cambridge Analytica scandal in New Mexico.",
-   "likes": 3553,
-   "reposts": 361,
+   "likes": 3877,
+   "reposts": 391,
    "url": "https://x.com/unusual_whales/status/2112957895499526429"
   },
   {
@@ -2528,7 +2696,7 @@
    "retweet": true,
    "text": "Iran is prepared to give diplomacy another chance if we see strong evidence of a sincere desire by US to build trust &amp; reach a just solution. \n\nBut if US chooses war over diplomacy, it'll certainly result in an even greater strategic failure.\n\nMy FT op-ed:",
    "likes": 0,
-   "reposts": 913,
+   "reposts": 1014,
    "url": "https://x.com/LiveSquawk/status/2112957817950961716"
   },
   {
@@ -2539,7 +2707,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$META  - META MUST PAY $25 BILLION IN PENALTIES, NEW MEXICO JUDGE RULES AFTER JURY FOUND COMPANY MISLED CONSUMERS ABOUT PRIVACY",
-   "likes": 437,
+   "likes": 451,
    "reposts": 48,
    "url": "https://x.com/DeItaone/status/2112957117657452760"
   },
@@ -2551,8 +2719,8 @@
    "qqq": false,
    "retweet": false,
    "text": "\"The artificial intelligence boom may be entering a more unforgiving phase, as investors increasingly question whether the billions poured into data centers will translate into sustainable profits,\" per CNBC",
-   "likes": 267,
-   "reposts": 30,
+   "likes": 297,
+   "reposts": 31,
    "url": "https://x.com/unusual_whales/status/2112956580136456582"
   },
   {
@@ -2575,33 +2743,9 @@
    "qqq": true,
    "retweet": false,
    "text": "YIELD ON 20-YR U.S. TREASURY BOND PARES DECLINE AFTER $13 BLN AUCTION, LAST DOWN 1.25 BASIS POINTS AT 5.467%",
-   "likes": 175,
+   "likes": 179,
    "reposts": 16,
    "url": "https://x.com/DeItaone/status/2112952761788809504"
-  },
-  {
-   "at": "2026-10-21T17:02:33Z",
-   "handle": "LiveSquawk",
-   "name": "LiveSquawk",
-   "tag": "headline",
-   "qqq": true,
-   "retweet": false,
-   "text": "US 20-Year Bond Sale:\n- High Yield Rate: 5.469% (prev 5.420%)\n- Bid-Cover Ratio: 2.73 (prev 2.57)\n- Direct Accepted: 31.6% (prev 30.7%)\n- Indirect Accepted: 58.2% (prev 52.5%)\n- WI: 5.460%",
-   "likes": 17,
-   "reposts": 9,
-   "url": "https://x.com/LiveSquawk/status/2112952693992116485"
-  },
-  {
-   "at": "2026-10-21T17:00:06Z",
-   "handle": "TheTranscript_",
-   "name": "The Transcript",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "$AMAT Applied Materials CEO: “The fastest-growing wafer fab equipment segments in the industry, driven by AI, are leading-edge foundry logic, DRAM and advanced packaging. And in all of those areas, Applied is #1 and positioned to outperform.”",
-   "likes": 22,
-   "reposts": 0,
-   "url": "https://x.com/TheTranscript_/status/2112952076422771085"
   },
   {
    "at": "2026-10-21T16:57:02Z",
@@ -2616,18 +2760,6 @@
    "url": "https://x.com/bespokeinvest/status/2112951303387435351"
   },
   {
-   "at": "2026-10-21T16:57:00Z",
-   "handle": "unusual_whales",
-   "name": "unusual_whales",
-   "tag": "flow",
-   "qqq": false,
-   "retweet": false,
-   "text": "US Supreme Court Justice Elena Kagan said the court's conservative majority has undermined democracy and ‘created a race to the bottom’ in how congressional districts are drawn, per Reuters",
-   "likes": 1414,
-   "reposts": 138,
-   "url": "https://x.com/unusual_whales/status/2112951296374247787"
-  },
-  {
    "at": "2026-10-21T16:49:14Z",
    "handle": "Fxhedgers",
    "name": "FXHedge",
@@ -2636,20 +2768,8 @@
    "retweet": true,
    "text": "Camp Lejeune veterans were poisoned on American soil and the US government covered it up. @ASGWoodward Associate Attorney General Stanley Woodward, a Democrat embedded at the DOJ, is sending these veterans insulting “settlement offers” days before a court deadline. \n\nWith @POTUS in North Carolina today and only two hours from Camp Lejeune, this is setting up to be a gift-wrapped attack ad for Democrats. Someone please alert @AGToddBlanche to this ASAP!",
    "likes": 0,
-   "reposts": 25,
+   "reposts": 26,
    "url": "https://x.com/Fxhedgers/status/2112949342218658046"
-  },
-  {
-   "at": "2026-10-21T16:37:00Z",
-   "handle": "unusual_whales",
-   "name": "unusual_whales",
-   "tag": "flow",
-   "qqq": false,
-   "retweet": false,
-   "text": "The US housing market is in a deep freeze, per CNBC.\n\nExisting home sales ran at an annual pace of just 3.99 million in September, per the National Association of Realtors. August and September were the two slowest months of the year.\n\nYet prices still aren’t falling: the median home sold for $417,500, up 1.3% from a year ago and the 39th straight month of annual gains.\n\nMeanwhile, homes are sitting longer, a median of 33 days, as higher mortgage rates shut more buyers out.",
-   "likes": 871,
-   "reposts": 88,
-   "url": "https://x.com/unusual_whales/status/2112946262324461581"
   },
   {
    "at": "2026-10-21T16:19:19Z",
@@ -2659,8 +2779,8 @@
    "qqq": false,
    "retweet": false,
    "text": "BREAKING: US housing starts fell -5.2% MoM in September, to an annualized rate of 1.22 million, the 2nd-lowest reading since May 2020.\n\nThis follows MoM declines of -4.9% and -5.9% in July and August.\n\nSingle-family housing starts dropped -4.6% MoM last month, to 859,000, the 2nd-lowest since April 2023.\n\nAt the same time, multifamily housing starts fell -7.2%, to 349,000, the 2nd-lowest since May 2025.\n\nHigher mortgage rates and worsening affordability are heavily weighing on housing demand.\n\nFurthermore, elevated housing inventories and falling homebuilder confidence are discouraging new construction.\n\nThe US housing market is frozen.",
-   "likes": 700,
-   "reposts": 77,
+   "likes": 713,
+   "reposts": 78,
    "url": "https://x.com/KobeissiLetter/status/2112941812188872996"
   },
   {
@@ -2695,7 +2815,7 @@
    "qqq": false,
    "retweet": false,
    "text": "The e.l.f. Beauty cheat sheet\n\nPhase 3 of 5 · Business 3/5 · Valuation 2/5",
-   "likes": 14,
+   "likes": 15,
    "reposts": 1,
    "url": "https://x.com/BrianFeroldi/status/2112936956179181668"
   },
@@ -2719,7 +2839,7 @@
    "qqq": false,
    "retweet": false,
    "text": "CHINESE PREMIER SAYS CHINA, RUSSIA SERVE AS \"VALUABLE FORCE FOR STABILITY IN TURBULENT WORLD\" -XINHUA",
-   "likes": 218,
+   "likes": 222,
    "reposts": 26,
    "url": "https://x.com/DeItaone/status/2112929862814150812"
   },
@@ -2743,7 +2863,7 @@
    "qqq": false,
    "retweet": false,
    "text": "U.S. GAS AND DIESEL PRICES COULD CLIMB UNDER NEW PIPELINE RULES\n\nU.S. fuel sellers warn that a proposed FERC policy change could push gasoline and diesel prices higher.\n\nThe plan would allow pipeline operators to negotiate transportation fees directly with customers, replacing existing rate restrictions in more cases.\n\nIndustry groups warn the shift could raise costs for consumers just as Washington moves to contain soaring fuel prices.",
-   "likes": 199,
+   "likes": 202,
    "reposts": 25,
    "url": "https://x.com/DeItaone/status/2112928803345342735"
   },
@@ -2755,7 +2875,7 @@
    "qqq": true,
    "retweet": false,
    "text": "Tesla $TSLA and SpaceX $SPCX have been increasingly trading in the same direction.  This is the market expecting two to become one eventually.",
-   "likes": 26,
+   "likes": 27,
    "reposts": 4,
    "url": "https://x.com/bespokeinvest/status/2112928396724617512"
   },
@@ -2767,8 +2887,8 @@
    "qqq": false,
    "retweet": false,
    "text": "US OFFICIAL: RUSSIANS ACCEPTED US PROPOSAL FOR A TRILATERAL MEETING WITH UKRAINE",
-   "likes": 1532,
-   "reposts": 139,
+   "likes": 1554,
+   "reposts": 140,
    "url": "https://x.com/DeItaone/status/2112928378445582810"
   },
   {
@@ -2779,7 +2899,7 @@
    "qqq": false,
    "retweet": false,
    "text": "🚨Netanyahu instructed the IDF, Mossad and security services to eliminate the Iranian regime. - Circulations \n\nSmall Tick down on this",
-   "likes": 46,
+   "likes": 47,
    "reposts": 4,
    "url": "https://x.com/ripster47/status/2112927196151193711"
   },
@@ -2803,8 +2923,8 @@
    "qqq": true,
    "retweet": false,
    "text": "AI-related borrowing is skyrocketing.\n\nUS Dollar-denominated AI-related corporate bond issuance is up to $419 billion so far in 2026, the highest annual figure on record.\n\nThis represents a +90% YoY increase from full-year 2025 and a +437% increase from full-year 2024.\n\nYear-to-date, Alphabet, $GOOGL, Amazon, $AMZN, Meta, $META, Microsoft, $MSFT, and Oracle, $ORCL, have issued a combined $157 billion in corporate bonds, accounting for 37% of the total.\n\nThis is followed by investment-grade and high-yield data center and computing companies, which have raised $66 billion and $37 billion, respectively, and together account for ~25% of AI-related issuance.\n\nOther AI-linked corporate bonds have represented $159 billion, or 38%.\n\nThe AI revolution is driving an unprecedented wave of corporate borrowing.",
-   "likes": 570,
-   "reposts": 115,
+   "likes": 595,
+   "reposts": 120,
    "url": "https://x.com/KobeissiLetter/status/2112924402111205704"
   },
   {
@@ -2815,21 +2935,9 @@
    "qqq": false,
    "retweet": false,
    "text": "8 Types of Investors",
-   "likes": 77,
-   "reposts": 14,
+   "likes": 86,
+   "reposts": 15,
    "url": "https://x.com/BrianFeroldi/status/2112924192454692872"
-  },
-  {
-   "at": "2026-10-21T14:57:00Z",
-   "handle": "q_liketheletter",
-   "name": "Q",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "Watching foreigners migrate into a country and destroy the existing structures is a terrible thing.\n\nIt is terrible when the foreigners are brown like in France.\nIt is terrible when the foreigners are white like in Palestine.",
-   "likes": 1,
-   "reposts": 0,
-   "url": "https://x.com/q_liketheletter/status/2112921096961860028"
   },
   {
    "at": "2026-10-21T14:55:46Z",
@@ -2851,7 +2959,7 @@
    "qqq": false,
    "retweet": false,
    "text": "UKRAINE DISCUSSED SITUATION IN RUSSIAN-OCCUPIED OLESHKY WITH US SIDE, KYIV'S NEGOTIATOR QUOTED BY RBC-UKRAINE",
-   "likes": 162,
+   "likes": 164,
    "reposts": 13,
    "url": "https://x.com/DeItaone/status/2112918290796552363"
   },
@@ -2863,8 +2971,8 @@
    "qqq": false,
    "retweet": false,
    "text": "U.S. CRUDE INVENTORIES PLUNGE, FAR EXCEEDING EXPECTATIONS\n\nU.S. crude oil inventories fell 3.06 million barrels last week, versus expectations for a decline of just 324,000 barrels.\n\n🔸 Crude stocks: 412.5M barrels, 3% below normal\n🔸 Gasoline inventories: -3.0M barrels\n🔸 Distillate inventories: +1.7M barrels\n🔸 Total petroleum inventories: -8.5M barrels\n\nThe key takeaway: A much larger-than-expected inventory draw signals tighter U.S. oil supplies, adding potential upward pressure on crude prices.",
-   "likes": 603,
-   "reposts": 121,
+   "likes": 625,
+   "reposts": 127,
    "url": "https://x.com/DeItaone/status/2112915057931632996"
   },
   {
@@ -2875,7 +2983,7 @@
    "qqq": false,
    "retweet": false,
    "text": "OPENAI: DUE TO SEVERITY OF THESE FLAWS &amp; PHP’S WIDESPREAD USE, WE CONSIDER THIS BUG TO BE ONE OF THE MOST IMPACTFUL VULNERABILITIES IN RECENT MEMORY",
-   "likes": 960,
+   "likes": 977,
    "reposts": 103,
    "url": "https://x.com/DeItaone/status/2112914578548122036"
   },
@@ -2887,8 +2995,8 @@
    "qqq": false,
    "retweet": false,
    "text": "*PUTIN'S AIDE SAYS WAR IN UKRAINE MOVING TOWARD AN END: VESTI",
-   "likes": 1101,
-   "reposts": 120,
+   "likes": 1126,
+   "reposts": 121,
    "url": "https://x.com/DeItaone/status/2112914092063088771"
   },
   {
@@ -2911,7 +3019,7 @@
    "qqq": false,
    "retweet": false,
    "text": "KREMLIN SAYS NEW ROUND OF TRILATERAL TALKS BETWEEN RUSSIA, UNITED STATES, AND UKRAINE MAY TAKE PLACE IN ABU DHABI - VESTI",
-   "likes": 455,
+   "likes": 462,
    "reposts": 55,
    "url": "https://x.com/DeItaone/status/2112912691429769375"
   },
@@ -2935,8 +3043,8 @@
    "qqq": false,
    "retweet": false,
    "text": "Tokenization is accelerating.\n\nThere are now over 360 onchain tokenized equity products, up +200% YTD.\n\n10 of these products have exceeded $100 million in tokenized supply. \n\nAs we saw this weekend, demand for 24/7 access to equities is rapidly expanding.\n\nIn fact, the majority of volume in these tokenized products, at ~60%, is currently taking place outside of regular market hours.\n\nToday, onchain giant Jupiter, a leader in this space, reported a +215% quarter-over-quarter jump in tokenized equity trade count.\n\nWe expect more record highs ahead in this space.",
-   "likes": 950,
-   "reposts": 134,
+   "likes": 984,
+   "reposts": 139,
    "url": "https://x.com/KobeissiLetter/status/2112908010892976554"
   },
   {
@@ -2959,7 +3067,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$AAPL  - APPLE SAYS IT WILL HAVE 'LIMITED' IPHONE DUO UNITS AVAILABLE FOR WALK-IN CUSTOMERS ON OCTOBER 23 LAUNCH DATE - STATEMENT",
-   "likes": 221,
+   "likes": 226,
    "reposts": 14,
    "url": "https://x.com/DeItaone/status/2112905626342842752"
   },
@@ -2983,8 +3091,8 @@
    "qqq": false,
    "retweet": false,
    "text": "CRITICAL BUG IN PHP AFFECTS AS MANY AS 70% OF THE WORLD'S WEBSITES, COMPANY SAYS \n\nPHP IS USED BY WORDPRESS AND MANY GOVERNMENT AND E-COMMERCE WEBSITES\n\nBUG WAS FOUND USING AI, SECURITY RESEARCHERS SAY \n\nPATCH WAS PUSHED A DAY EARLY AFTER DETAILS LEAKED OUT",
-   "likes": 907,
-   "reposts": 123,
+   "likes": 921,
+   "reposts": 128,
    "url": "https://x.com/DeItaone/status/2112904338255565098"
   },
   {
@@ -3007,7 +3115,7 @@
    "qqq": true,
    "retweet": false,
    "text": "$SPY $QQQ \nEvery day is not a day to jump in right at open\n\nI keep my traders safe, Profit taking at open so short scalps or wait for flushes\n\nMoney Saved is money made",
-   "likes": 38,
+   "likes": 39,
    "reposts": 5,
    "url": "https://x.com/ripster47/status/2112903279994712099"
   },
@@ -3019,8 +3127,8 @@
    "qqq": false,
    "retweet": false,
    "text": "CLOUDFLARE CTO: PHP CHANGES ARE LIVE",
-   "likes": 298,
-   "reposts": 15,
+   "likes": 302,
+   "reposts": 16,
    "url": "https://x.com/DeItaone/status/2112903105029554283"
   },
   {
@@ -3055,8 +3163,8 @@
    "qqq": false,
    "retweet": false,
    "text": "U.S. TAPS EMERGENCY DIESEL RESERVE AS PRICES HIT $6.32\n\nThe Trump administration will release 315,000 barrels from the Northeast's 1 million-barrel heating oil reserve as diesel prices surge ahead of the midterm elections.\n\nDiesel now averages $6.32 per gallon, according to AAA, amid disruptions linked to the Iran war.\n\nDeliveries are expected by November 13.\n\nThe key takeaway: Washington is tapping emergency fuel supplies to ease pressure from soaring energy costs.",
-   "likes": 569,
-   "reposts": 105,
+   "likes": 590,
+   "reposts": 109,
    "url": "https://x.com/DeItaone/status/2112901444969881653"
   },
   {
@@ -3082,54 +3190,6 @@
    "likes": 4,
    "reposts": 1,
    "url": "https://x.com/bespokeinvest/status/2112897699255353485"
-  },
-  {
-   "at": "2026-10-21T13:21:18Z",
-   "handle": "TheTranscript_",
-   "name": "The Transcript",
-   "tag": "analysis",
-   "qqq": true,
-   "retweet": false,
-   "text": "Meta, IBM, Texas Instruments and Lam Research among the major companies reporting quarterly results after hours today:\n\n$META $IBM $TXN $LRCX $URI $PKG $CSX $LVS $KMI $CCI $MEDP $RS $LUV $KNX $PNFP $EGP $TSLA",
-   "likes": 19,
-   "reposts": 3,
-   "url": "https://x.com/TheTranscript_/status/2112897015319580907"
-  },
-  {
-   "at": "2026-10-21T13:19:06Z",
-   "handle": "TheTranscript_",
-   "name": "The Transcript",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "AT&amp;T CEO: \"Our asset base positions us well for the AI era, with a leading position in fiber – the best technology available\"\n\n$T: -6% PM",
-   "likes": 9,
-   "reposts": 2,
-   "url": "https://x.com/TheTranscript_/status/2112896460941570400"
-  },
-  {
-   "at": "2026-10-21T13:15:58Z",
-   "handle": "TheTranscript_",
-   "name": "The Transcript",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "NextEra Energy CEO: \"...delivered strong third-quarter results...\"\n\n$NEE: +1% PM",
-   "likes": 2,
-   "reposts": 0,
-   "url": "https://x.com/TheTranscript_/status/2112895672617967846"
-  },
-  {
-   "at": "2026-10-21T13:12:31Z",
-   "handle": "TheTranscript_",
-   "name": "The Transcript",
-   "tag": "analysis",
-   "qqq": false,
-   "retweet": false,
-   "text": "Thermo Fisher CEO: \"We are very pleased to deliver another excellent quarter, with outstanding financial performance on both the top and bottom line\"\n\n$TMO: -2% PM",
-   "likes": 6,
-   "reposts": 0,
-   "url": "https://x.com/TheTranscript_/status/2112894803860128166"
   },
   {
    "at": "2026-10-21T13:10:47Z",
@@ -3163,8 +3223,8 @@
    "qqq": true,
    "retweet": false,
    "text": "This is unprecedented.\n\nMicron, $MU, and Nvidia, $NVDA are expected to account for 36% of the S&P 500’s earnings growth in Q3 2026 earnings season.\n\nThis comes as $MU and $NVDA are expected to contribute +5.2 and +4.6 percentage points to the index’s +27% YoY earnings growth, respectively.\n\nMeanwhile, the next 8 top contributors are projected to add +8.2 percentage points, accounting for ~30% of the estimated S&P 500’s net income growth.\n\nThen, the remaining 490 stocks are set to contribute just +9.2 percentage points, representing 34% of the index’s projected earnings growth.\n\nExcluding those top 10 contributors, earnings growth is estimated to decline -11% YoY in Q3.\n\nNever in history have we witnessed market concentration like this.",
-   "likes": 1615,
-   "reposts": 168,
+   "likes": 1659,
+   "reposts": 173,
    "url": "https://x.com/KobeissiLetter/status/2112893063026651226"
   },
   {
@@ -3192,6 +3252,18 @@
    "url": "https://x.com/charliebilello/status/2112891396931850432"
   },
   {
+   "at": "2026-10-21T12:52:50Z",
+   "handle": "Mr_Derivatives",
+   "name": "Heisenberg",
+   "tag": "flow",
+   "qqq": true,
+   "retweet": false,
+   "text": "Happy $META $TSLA earnings day today for those who celebrate.\n\nHow we playing this fam?",
+   "likes": 125,
+   "reposts": 3,
+   "url": "https://x.com/Mr_Derivatives/status/2112889848415895557"
+  },
+  {
    "at": "2026-10-21T12:50:50Z",
    "handle": "bespokeinvest",
    "name": "Bespoke",
@@ -3211,7 +3283,7 @@
    "qqq": false,
    "retweet": false,
    "text": "Just when they thought breadth was out...\n\nWe've seen a V-shaped recovery in market breadth since the start of October, as evidenced by the S&amp;P 500's cumulative A/D line.  $SPY",
-   "likes": 35,
+   "likes": 36,
    "reposts": 6,
    "url": "https://x.com/bespokeinvest/status/2112889252753121750"
   },
@@ -3283,7 +3355,7 @@
    "qqq": false,
    "retweet": false,
    "text": "To build wealth quickly, concentrate your portfolio and add leverage. \n\nTo destroy wealth quickly, concentrate your portfolio and add leverage.",
-   "likes": 149,
+   "likes": 156,
    "reposts": 7,
    "url": "https://x.com/BrianFeroldi/status/2112861808989991334"
   }
