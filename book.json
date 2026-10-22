@@ -1514,7 +1514,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-22 09:00 PT",
-  "props_today": 449,
+  "props_today": 450,
   "kalshi_props_today": 168,
   "kalshi_priced_today": 13,
   "books_on_kalshi_props": {
@@ -1522,7 +1522,7 @@
    "AN Open": 165,
    "BetMGM": 116,
    "BetRivers": 114,
-   "Caesars": 129,
+   "Caesars": 128,
    "DraftKings": 165,
    "FanDuel": 156,
    "Fanatics": 129,
@@ -1540,7 +1540,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
