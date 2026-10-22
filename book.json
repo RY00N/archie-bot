@@ -1546,7 +1546,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-22 14:00 PT",
-  "props_today": 459,
+  "props_today": 458,
   "kalshi_props_today": 169,
   "kalshi_priced_today": 14,
   "books_on_kalshi_props": {
@@ -3670,8 +3670,8 @@
    "line": 1.5,
    "start": "2026-10-22T23:00:00Z",
    "p": 0.354,
-   "price": 0.28,
-   "edge": 0.06,
+   "price": 0.27,
+   "edge": 0.07,
    "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
    "result": null
   },
@@ -3775,8 +3775,8 @@
    "line": 1.5,
    "start": "2026-10-22T23:00:00Z",
    "p": 0.57,
-   "price": 0.49,
-   "edge": 0.063,
+   "price": 0.48,
+   "edge": 0.073,
    "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
    "result": null
   },
@@ -3805,8 +3805,8 @@
    "line": 7.5,
    "start": "2026-10-23T01:30:00Z",
    "p": 0.616,
-   "price": 0.53,
-   "edge": 0.069,
+   "price": 0.54,
+   "edge": 0.059,
    "news": "Thomas Sorber (C) is out, so Isaiah Hartenstein's role likely grows.",
    "result": null
   },
