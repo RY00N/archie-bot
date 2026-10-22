@@ -1572,7 +1572,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -3654,9 +3654,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-22T23:00:00Z",
-   "p": 0.679,
-   "price": 0.61,
-   "edge": 0.052,
+   "p": 0.676,
+   "price": 0.6,
+   "edge": 0.059,
    "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
    "result": null
   },
