@@ -1514,7 +1514,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-22 07:00 PT",
-  "props_today": 402,
+  "props_today": 403,
   "kalshi_props_today": 168,
   "kalshi_priced_today": 13,
   "books_on_kalshi_props": {
@@ -1525,9 +1525,9 @@
    "Caesars": 139,
    "DraftKings": 165,
    "FanDuel": 157,
-   "Fanatics": 126,
+   "Fanatics": 127,
    "Hard Rock Bet": 37,
-   "Parx": 134,
+   "Parx": 133,
    "Pinnacle": 133,
    "Sleeper": 165,
    "Underdog": 168,
@@ -3727,9 +3727,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.415,
+   "p": 0.414,
    "price": 0.35,
-   "edge": 0.049,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
