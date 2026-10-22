@@ -1483,24 +1483,24 @@
  "diag": {
   "props_at": "2026-10-22 00:00 PT",
   "props_today": 386,
-  "kalshi_props_today": 163,
-  "kalshi_priced_today": 5,
+  "kalshi_props_today": 108,
+  "kalshi_priced_today": 9,
   "books_on_kalshi_props": {
-   "AN Consensus": 125,
-   "AN Open": 122,
-   "BetMGM": 16,
-   "BetRivers": 100,
-   "Caesars": 102,
-   "DraftKings": 121,
-   "FanDuel": 120,
-   "Fanatics": 89,
-   "Hard Rock Bet": 14,
-   "Parx": 103,
-   "Pinnacle": 109,
-   "Sleeper": 161,
-   "Underdog": 163,
-   "Unibet": 6,
-   "bet365": 125
+   "AN Consensus": 107,
+   "AN Open": 107,
+   "BetMGM": 47,
+   "BetRivers": 71,
+   "Caesars": 98,
+   "DraftKings": 107,
+   "FanDuel": 104,
+   "Fanatics": 76,
+   "Hard Rock Bet": 36,
+   "Parx": 89,
+   "Pinnacle": 79,
+   "Sleeper": 106,
+   "Underdog": 108,
+   "Unibet": 13,
+   "bet365": 104
   },
   "data_files": [
    "mlb.sqlite",
@@ -1508,7 +1508,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 0
+  "kalshi_legs_today": 2
  },
  "shadow": [
   {
@@ -3665,9 +3665,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.611,
+   "p": 0.61,
    "price": 0.5,
-   "edge": 0.093,
+   "edge": 0.092,
    "news": "CHI's LB T.J. Edwards is out, an easier matchup; CHI's DE Dayo Odeyingbo is out, an easier matchup.",
    "result": null
   }
