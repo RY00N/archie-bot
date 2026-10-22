@@ -1547,24 +1547,24 @@
  "diag": {
   "props_at": "2026-10-22 15:00 PT",
   "props_today": 459,
-  "kalshi_props_today": 173,
+  "kalshi_props_today": 174,
   "kalshi_priced_today": 14,
   "books_on_kalshi_props": {
-   "AN Consensus": 169,
-   "AN Open": 170,
+   "AN Consensus": 170,
+   "AN Open": 171,
    "BetMGM": 128,
    "BetRivers": 116,
    "Caesars": 146,
    "DraftKings": 168,
-   "FanDuel": 157,
+   "FanDuel": 158,
    "Fanatics": 131,
    "Hard Rock Bet": 38,
    "Parx": 137,
    "Pinnacle": 132,
-   "Sleeper": 167,
-   "Underdog": 173,
+   "Sleeper": 168,
+   "Underdog": 174,
    "Unibet": 21,
-   "bet365": 171
+   "bet365": 172
   },
   "data_files": [
    "mlb.sqlite",
