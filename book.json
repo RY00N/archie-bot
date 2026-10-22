@@ -1572,7 +1572,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -3835,8 +3835,8 @@
    "line": 1.5,
    "start": "2026-10-23T00:15:00Z",
    "p": 0.416,
-   "price": 0.36,
-   "edge": 0.04,
+   "price": 0.35,
+   "edge": 0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3898,6 +3898,21 @@
    "price": 0.5,
    "edge": 0.09,
    "news": "CHI's LB T.J. Edwards is out, an easier matchup; CHI's DE Dayo Odeyingbo is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "KXNFLRSHATT-26OCT22NECHI-CHIRJOHNSON23-7",
+   "league": "nfl",
+   "player": "Roschon Johnson",
+   "stat": "rush_att",
+   "side": "under",
+   "line": 6.5,
+   "start": "2026-10-23T00:15:00Z",
+   "p": 0.487,
+   "price": 0.44,
+   "edge": 0.03,
+   "news": "Kyle Monangai is out: Roschon Johnson hit the under in 1/2 games without him vs 8/8 with him.",
    "result": null
   },
   {
