@@ -1481,7 +1481,7 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-21 21:00 PT",
+  "props_at": "2026-10-21 22:00 PT",
   "props_today": 0,
   "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
@@ -3649,9 +3649,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.611,
+   "p": 0.613,
    "price": 0.5,
-   "edge": 0.093,
+   "edge": 0.095,
    "news": "CHI's LB T.J. Edwards is out, an easier matchup; CHI's DE Dayo Odeyingbo is out, an easier matchup.",
    "result": null
   }
