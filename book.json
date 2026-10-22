@@ -1546,7 +1546,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-22 12:00 PT",
-  "props_today": 454,
+  "props_today": 453,
   "kalshi_props_today": 168,
   "kalshi_priced_today": 13,
   "books_on_kalshi_props": {
@@ -3654,9 +3654,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-22T23:00:00Z",
-   "p": 0.68,
+   "p": 0.686,
    "price": 0.6,
-   "edge": 0.063,
+   "edge": 0.069,
    "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
    "result": null
   },
@@ -3669,9 +3669,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T23:00:00Z",
-   "p": 0.374,
+   "p": 0.366,
    "price": 0.28,
-   "edge": 0.08,
+   "edge": 0.072,
    "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
    "result": null
   },
@@ -3744,9 +3744,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-22T23:00:00Z",
-   "p": 0.63,
+   "p": 0.629,
    "price": 0.58,
-   "edge": 0.033,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
