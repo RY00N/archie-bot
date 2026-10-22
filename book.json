@@ -1553,8 +1553,8 @@
    "AN Consensus": 108,
    "AN Open": 108,
    "BetMGM": 87,
-   "BetRivers": 65,
-   "Caesars": 93,
+   "BetRivers": 63,
+   "Caesars": 92,
    "DraftKings": 106,
    "FanDuel": 99,
    "Fanatics": 78,
@@ -3973,6 +3973,21 @@
    "price": 0.46,
    "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KXNBA3PT-26OCT23NYKBOS-NYKJHART3-2",
+   "league": "nba",
+   "player": "Josh Hart",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-10-23T23:00:00Z",
+   "p": 0.565,
+   "price": 0.5,
+   "edge": 0.047,
+   "news": "News: What\u2019s Wrong With Josh Hart\u2019s Finger? Why Knicks Star Has Right Ring Wrapped for Injury - Yahoo Sports",
    "result": null
   }
  ]
