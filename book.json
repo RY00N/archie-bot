@@ -1493,14 +1493,14 @@
    "Caesars": 138,
    "DraftKings": 161,
    "FanDuel": 156,
-   "Fanatics": 126,
+   "Fanatics": 125,
    "Hard Rock Bet": 36,
    "Parx": 130,
    "Pinnacle": 109,
    "Sleeper": 162,
    "Underdog": 165,
    "Unibet": 15,
-   "bet365": 162
+   "bet365": 163
   },
   "data_files": [
    "mlb.sqlite",
@@ -3620,9 +3620,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-22T23:00:00Z",
-   "p": 0.63,
+   "p": 0.627,
    "price": 0.57,
-   "edge": 0.043,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3666,8 +3666,8 @@
    "line": 1.5,
    "start": "2026-10-23T00:15:00Z",
    "p": 0.415,
-   "price": 0.36,
-   "edge": 0.039,
+   "price": 0.35,
+   "edge": 0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
