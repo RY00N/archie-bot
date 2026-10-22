@@ -1564,7 +1564,7 @@
    "Sleeper": 168,
    "Underdog": 174,
    "Unibet": 21,
-   "bet365": 172
+   "bet365": 167
   },
   "data_files": [
    "mlb.sqlite",
@@ -3774,9 +3774,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T23:00:00Z",
-   "p": 0.558,
+   "p": 0.559,
    "price": 0.47,
-   "edge": 0.071,
+   "edge": 0.072,
    "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
    "result": null
   },
