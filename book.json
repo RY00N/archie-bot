@@ -1508,7 +1508,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -3598,6 +3598,21 @@
   },
   {
    "date": "2026-10-22",
+   "ticker": "KXNBAAST-26OCT22CLEPHI-CLEJHARDEN1-8",
+   "league": "nba",
+   "player": "James Harden",
+   "stat": "assists",
+   "side": "under",
+   "line": 7.5,
+   "start": "2026-10-22T23:00:00Z",
+   "p": 0.635,
+   "price": 0.58,
+   "edge": 0.038,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-22",
    "ticker": "KXNBAAST-26OCT22CLEPHI-PHITMAXEY0-6",
    "league": "nba",
    "player": "Tyrese Maxey",
@@ -3621,8 +3636,8 @@
    "line": 1.5,
    "start": "2026-10-23T00:15:00Z",
    "p": 0.414,
-   "price": 0.35,
-   "edge": 0.048,
+   "price": 0.36,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
