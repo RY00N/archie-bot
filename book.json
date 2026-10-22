@@ -1482,7 +1482,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-22 03:00 PT",
-  "props_today": 386,
+  "props_today": 387,
   "kalshi_props_today": 165,
   "kalshi_priced_today": 14,
   "books_on_kalshi_props": {
@@ -1491,7 +1491,7 @@
    "BetMGM": 111,
    "BetRivers": 110,
    "Caesars": 137,
-   "DraftKings": 160,
+   "DraftKings": 161,
    "FanDuel": 156,
    "Fanatics": 117,
    "Hard Rock Bet": 36,
@@ -1508,7 +1508,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -3598,6 +3598,21 @@
   },
   {
    "date": "2026-10-22",
+   "ticker": "KXNBA3PT-26OCT22DENOKC-OKCJMCCAIN3-3",
+   "league": "nba",
+   "player": "Jared McCain",
+   "stat": "threes",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-23T01:30:00Z",
+   "p": 0.491,
+   "price": 0.36,
+   "edge": 0.115,
+   "news": "Nikola Topic is out: Jared McCain hit the over in 16/30 games without him vs 4/10 with him; Otega Oweh (G) is out, so Jared McCain's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-22",
    "ticker": "KXNBAAST-26OCT22CLEPHI-CLEJHARDEN1-8",
    "league": "nba",
    "player": "James Harden",
@@ -3635,9 +3650,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.414,
+   "p": 0.413,
    "price": 0.35,
-   "edge": 0.048,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
