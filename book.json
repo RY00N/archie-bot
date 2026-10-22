@@ -1493,7 +1493,7 @@
    "Caesars": 137,
    "DraftKings": 161,
    "FanDuel": 156,
-   "Fanatics": 117,
+   "Fanatics": 115,
    "Hard Rock Bet": 36,
    "Parx": 128,
    "Pinnacle": 109,
@@ -1508,7 +1508,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -3606,8 +3606,8 @@
    "line": 7.5,
    "start": "2026-10-22T23:00:00Z",
    "p": 0.635,
-   "price": 0.58,
-   "edge": 0.038,
+   "price": 0.57,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
