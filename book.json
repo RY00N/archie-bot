@@ -1557,7 +1557,7 @@
    "Caesars": 143,
    "DraftKings": 166,
    "FanDuel": 154,
-   "Fanatics": 128,
+   "Fanatics": 127,
    "Hard Rock Bet": 37,
    "Parx": 135,
    "Pinnacle": 132,
@@ -1572,7 +1572,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -3804,9 +3804,9 @@
    "side": "over",
    "line": 33.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.548,
-   "price": 0.47,
-   "edge": 0.061,
+   "p": 0.547,
+   "price": 0.45,
+   "edge": 0.08,
    "news": "NE's CB Carlton Davis III is out, an easier matchup.",
    "result": null
   },
