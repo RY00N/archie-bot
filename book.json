@@ -1484,22 +1484,10 @@
   "props_at": "2026-10-21 19:00 PT",
   "props_today": 82,
   "kalshi_props_today": 44,
-  "kalshi_priced_today": 4,
+  "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
-   "AN Consensus": 43,
-   "AN Open": 44,
-   "BetMGM": 34,
-   "BetRivers": 33,
-   "Caesars": 38,
-   "DraftKings": 41,
-   "FanDuel": 37,
-   "Fanatics": 39,
-   "Parx": 33,
-   "Pinnacle": 28,
    "Sleeper": 44,
-   "Underdog": 44,
-   "Unibet": 7,
-   "bet365": 44
+   "Underdog": 44
   },
   "data_files": [
    "mlb.sqlite",
