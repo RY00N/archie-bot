@@ -1500,7 +1500,7 @@
    "Sleeper": 161,
    "Underdog": 163,
    "Unibet": 13,
-   "bet365": 160
+   "bet365": 161
   },
   "data_files": [
    "mlb.sqlite",
@@ -3620,9 +3620,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.415,
+   "p": 0.416,
    "price": 0.36,
-   "edge": 0.039,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
