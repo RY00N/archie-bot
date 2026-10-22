@@ -1546,7 +1546,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-22 10:00 PT",
-  "props_today": 450,
+  "props_today": 451,
   "kalshi_props_today": 167,
   "kalshi_priced_today": 12,
   "books_on_kalshi_props": {
@@ -1554,7 +1554,7 @@
    "AN Open": 164,
    "BetMGM": 126,
    "BetRivers": 113,
-   "Caesars": 142,
+   "Caesars": 141,
    "DraftKings": 165,
    "FanDuel": 153,
    "Fanatics": 130,
@@ -3657,6 +3657,21 @@
    "p": 0.698,
    "price": 0.63,
    "edge": 0.052,
+   "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "KXNBA3PT-26OCT22CLEPHI-CLEEMOBLEY4-2",
+   "league": "nba",
+   "player": "Evan Mobley",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-22T23:00:00Z",
+   "p": 0.375,
+   "price": 0.31,
+   "edge": 0.05,
    "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
    "result": null
   },
