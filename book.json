@@ -1482,8 +1482,8 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 17:00 PT",
-  "props_today": 460,
-  "kalshi_props_today": 252,
+  "props_today": 357,
+  "kalshi_props_today": 201,
   "kalshi_priced_today": 13,
   "books_on_kalshi_props": {
    "AN Consensus": 201,
@@ -1493,11 +1493,11 @@
    "Caesars": 172,
    "DraftKings": 190,
    "FanDuel": 176,
-   "Fanatics": 156,
+   "Fanatics": 158,
    "Parx": 160,
    "Pinnacle": 136,
-   "Sleeper": 243,
-   "Underdog": 252,
+   "Sleeper": 192,
+   "Underdog": 201,
    "Unibet": 35,
    "bet365": 201
   },
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -2074,9 +2074,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.595,
+   "p": 0.594,
    "price": 0.52,
-   "edge": 0.058,
+   "edge": 0.057,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2104,9 +2104,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.408,
+   "p": 0.407,
    "price": 0.36,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -2629,9 +2629,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-22T02:30:00Z",
-   "p": 0.506,
-   "price": 0.45,
-   "edge": 0.039,
+   "p": 0.493,
+   "price": 0.44,
+   "edge": 0.036,
    "news": "Bradley Beal (G) is out, so Darius Garland's role likely grows; Jordan Miller is out: Darius Garland hit the under in 4/5 games without him vs 11/15 with him.",
    "result": null
   },
@@ -2929,9 +2929,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.54,
+   "p": 0.541,
    "price": 0.48,
-   "edge": 0.043,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3184,9 +3184,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.517,
+   "p": 0.518,
    "price": 0.47,
-   "edge": 0.03,
+   "edge": 0.031,
    "news": "News: \u2018I\u2019m All Emotional Now,\u2019 \u2018Got Goosebumps Watching This\u2019 \u2013 NBA Fans React to Mavericks\u2019 Heartwarming Tribute to Kyrie Irving Ahead of Injury Return - Yahoo Sports Jett Howard (G) is out, so Kyrie Irving's role likely grows.",
    "result": null
   },
@@ -3229,9 +3229,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-22T00:30:00Z",
-   "p": 0.498,
+   "p": 0.496,
    "price": 0.43,
-   "edge": 0.051,
+   "edge": 0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3530,8 +3530,8 @@
    "line": 1.5,
    "start": "2026-10-23T00:15:00Z",
    "p": 0.416,
-   "price": 0.36,
-   "edge": 0.04,
+   "price": 0.35,
+   "edge": 0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
