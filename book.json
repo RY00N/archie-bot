@@ -1481,7 +1481,7 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-21 18:00 PT",
+  "props_at": "2026-10-21 19:00 PT",
   "props_today": 266,
   "kalshi_props_today": 142,
   "kalshi_priced_today": 7,
@@ -1489,11 +1489,11 @@
    "AN Consensus": 142,
    "AN Open": 142,
    "BetMGM": 107,
-   "BetRivers": 112,
+   "BetRivers": 116,
    "Caesars": 124,
    "DraftKings": 134,
-   "FanDuel": 124,
-   "Fanatics": 116,
+   "FanDuel": 125,
+   "Fanatics": 117,
    "Parx": 116,
    "Pinnacle": 95,
    "Sleeper": 136,
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 1
  },
  "shadow": [
   {
@@ -2659,9 +2659,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-22T02:30:00Z",
-   "p": 0.49,
+   "p": 0.489,
    "price": 0.44,
-   "edge": 0.033,
+   "edge": 0.032,
    "news": "Bradley Beal (G) is out, so Darius Garland's role likely grows; Jordan Miller is out: Darius Garland hit the under in 4/5 games without him vs 11/15 with him.",
    "result": null
   },
