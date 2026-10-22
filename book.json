@@ -1525,7 +1525,7 @@
    "Caesars": 140,
    "DraftKings": 165,
    "FanDuel": 157,
-   "Fanatics": 131,
+   "Fanatics": 129,
    "Hard Rock Bet": 37,
    "Parx": 134,
    "Pinnacle": 133,
@@ -1540,7 +1540,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -3638,8 +3638,8 @@
    "line": 1.5,
    "start": "2026-10-23T01:30:00Z",
    "p": 0.459,
-   "price": 0.39,
-   "edge": 0.052,
+   "price": 0.38,
+   "edge": 0.063,
    "news": "Otega Oweh (G) is out, so Alex Caruso's role likely grows.",
    "result": null
   },
@@ -3653,8 +3653,8 @@
    "line": 2.5,
    "start": "2026-10-23T01:30:00Z",
    "p": 0.509,
-   "price": 0.37,
-   "edge": 0.123,
+   "price": 0.38,
+   "edge": 0.113,
    "news": "Nikola Topic is out: Jared McCain hit the over in 16/30 games without him vs 4/10 with him; Otega Oweh (G) is out, so Jared McCain's role likely grows.",
    "result": null
   },
@@ -3832,9 +3832,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T00:00:00Z",
-   "p": 0.559,
+   "p": 0.557,
    "price": 0.5,
-   "edge": 0.042,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
