@@ -1482,7 +1482,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-21 17:00 PT",
-  "props_today": 261,
+  "props_today": 262,
   "kalshi_props_today": 144,
   "kalshi_priced_today": 8,
   "books_on_kalshi_props": {
@@ -1490,13 +1490,13 @@
    "AN Open": 144,
    "BetMGM": 108,
    "BetRivers": 112,
-   "Caesars": 123,
+   "Caesars": 125,
    "DraftKings": 136,
    "FanDuel": 126,
    "Fanatics": 112,
    "Parx": 112,
    "Pinnacle": 95,
-   "Sleeper": 84,
+   "Sleeper": 141,
    "Underdog": 144,
    "Unibet": 25,
    "bet365": 144
@@ -1507,7 +1507,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -3349,9 +3349,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-22T02:00:00Z",
-   "p": 0.531,
+   "p": 0.53,
    "price": 0.47,
-   "edge": 0.044,
+   "edge": 0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3364,10 +3364,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-22T02:00:00Z",
-   "p": 0.61,
+   "p": 0.63,
    "price": 0.56,
-   "edge": 0.033,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": 0.053,
+   "news": "Luke Kennard (G) is out, so Jalen Green's role likely grows.",
    "result": null
   },
   {
@@ -3545,8 +3545,8 @@
    "line": 1.5,
    "start": "2026-10-23T00:15:00Z",
    "p": 0.416,
-   "price": 0.35,
-   "edge": 0.05,
+   "price": 0.36,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
