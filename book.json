@@ -1550,7 +1550,7 @@
   "kalshi_props_today": 168,
   "kalshi_priced_today": 12,
   "books_on_kalshi_props": {
-   "AN Consensus": 164,
+   "AN Consensus": 165,
    "AN Open": 165,
    "BetMGM": 127,
    "BetRivers": 114,
@@ -1559,7 +1559,7 @@
    "FanDuel": 153,
    "Fanatics": 130,
    "Hard Rock Bet": 37,
-   "Parx": 136,
+   "Parx": 135,
    "Pinnacle": 132,
    "Sleeper": 165,
    "Underdog": 168,
@@ -1572,7 +1572,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -3744,9 +3744,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-22T23:00:00Z",
-   "p": 0.629,
+   "p": 0.63,
    "price": 0.58,
-   "edge": 0.032,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -3774,9 +3774,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-22T23:00:00Z",
-   "p": 0.584,
+   "p": 0.568,
    "price": 0.48,
-   "edge": 0.087,
+   "edge": 0.071,
    "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
    "result": null
   },
