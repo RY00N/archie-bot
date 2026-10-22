@@ -291,6 +291,29 @@ def pnl_text():
     return "\n".join(lines)[:1990]
 
 
+STATUS_INFO = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "reconnects": 0}
+READY_SEEN = [False]
+
+
+def status_loop():
+    """Every 15 min, put the bot's health in bot_status.json on the ask branch, so the project thread
+    can tell from GitHub whether BetterBot is connected (it can't see the droplet's logs)."""
+    while True:
+        time.sleep(60 if "pushed" not in STATUS_INFO else 900)
+        try:
+            body = dict(STATUS_INFO, at=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+            body.pop("pushed", None)
+            try:
+                sha = gh("GET", f"/contents/bot_status.json?ref={ASK_BRANCH}")["sha"]
+            except urllib.error.HTTPError:
+                sha = None
+            gh("PUT", "/contents/bot_status.json", {"message": "BetterBot status", "branch": ASK_BRANCH,
+               "content": base64.b64encode(json.dumps(body, indent=1).encode()).decode(), **({"sha": sha} if sha else {})})
+            STATUS_INFO["pushed"] = True
+        except Exception as e:
+            print("status push failed:", e, flush=True)
+
+
 def gateway_host():
     req = urllib.request.Request("https://discord.com/api/v10/gateway/bot",
                                  headers={"Authorization": f"Bot {TOKEN}", "User-Agent": UA})
@@ -375,12 +398,27 @@ def run_once():
     seq = [None]
     alive = [True]
 
+    acked = [True]
+
     def beat():
+        # A silently dead connection blocked recv forever and /bp stopped working (Ryan 2026-10-22).
+        # No heartbeat ACK since the last beat, or a failed send, closes the socket so we reconnect.
         time.sleep(interval * random.random())
         while alive[0]:
-            ws.send({"op": 1, "d": seq[0]})
+            if not acked[0]:
+                print("no heartbeat ack; reconnecting", flush=True); break
+            acked[0] = False
+            try:
+                ws.send({"op": 1, "d": seq[0]})
+            except Exception as e:
+                print("heartbeat send failed:", e, flush=True); break
             time.sleep(interval)
+        try:
+            ws.s.shutdown(socket.SHUT_RDWR)
+        except Exception:
+            pass
 
+    ws.s.settimeout(interval * 2 + 15)   # recv raises instead of hanging if Discord goes quiet
     threading.Thread(target=beat, daemon=True).start()
     ws.send({"op": 2, "d": {
         "token": TOKEN, "intents": 0,
@@ -390,10 +428,14 @@ def run_once():
     try:
         while True:
             m = ws.recv()
+            STATUS_INFO["last_event"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+            if m.get("op") == 11:
+                acked[0] = True
             if m.get("s") is not None:
                 seq[0] = m["s"]
             if m.get("t") == "READY":
                 print("online as", m["d"]["user"]["username"], flush=True)
+                STATUS_INFO["online_since"] = STATUS_INFO["last_event"]; READY_SEEN[0] = True
                 for cmd in ({"name": "pnl", "description": "BetterPicks wins vs losses by player prop (practice)", "type": 1},
                             {"name": "bp", "description": "Ask BetterPicks a question", "type": 1, "options": [
                                 {"type": 3, "name": "question", "description": "What do you want to ask?", "required": True}]}):
@@ -433,13 +475,17 @@ if __name__ == "__main__":
     except Exception as e:
         print("could not write version:", e, flush=True)
     threading.Thread(target=answers_loop, daemon=True).start()
+    if GH_TOKEN:
+        threading.Thread(target=status_loop, daemon=True).start()
     wait = 5
     while True:
+        READY_SEEN[0] = False
         try:
             run_once()
         except Exception as e:
             print("disconnected:", e, flush=True)
+            STATUS_INFO["reconnects"] += 1; STATUS_INFO["last_error"] = str(e)[:200]
             if "4004" in str(e):
                 sys.exit("bad bot token (4004); fix DISCORD_BOT_TOKEN")
+        wait = 5 if READY_SEEN[0] else min(wait * 2, 300)
         time.sleep(wait)
-        wait = min(wait * 2, 300)
