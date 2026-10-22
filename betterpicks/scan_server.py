@@ -16,7 +16,7 @@ import gzip, hashlib, json, os, re, shutil, subprocess, sys, time
 REPO = os.environ.get("BP_REPO", "/home/archie/bp-repo")
 WORK = os.environ.get("BP_WORK", "/home/archie/bp")
 EVERY = int(os.environ.get("SCAN_EVERY", "180"))
-CODE = ["books.py", "betterpicks.py", "parlays.py", "discord_post.py", "news.py", "rules.json"]
+CODE = ["books.py", "betterpicks.py", "parlays.py", "discord_post.py", "news.py", "rules.json", "record.py"]
 
 
 def log(*a):

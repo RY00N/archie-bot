@@ -34,7 +34,7 @@ def key_parlay(e):
 
 
 def fmt_pick(p):
-    return (f"**{p['bet']} {p['odds']:+.0f}** ({p.get('app') or 'sportsbook'}), ${p['stake']:.0f} practice\n"
+    return (f"**{p['bet']} {p['odds']:+.0f}** ({p.get('app') or 'sportsbook'}), ${p['stake']:.0f}\n"
             f"{p['game']}\n{p['why']}")
 
 
@@ -43,7 +43,7 @@ def fmt_parlay(e):
     legs = "\n".join(f"- {leg_label(l)} ({l['game']})"
                      + (f" edge {l['edge'] * 100:+.1f}%" if l.get("edge") is not None else "")
                      for l in e["legs"])
-    return f"**{e['app']} {e['type']}**, ${e['stake']:.0f} practice, {pay}, {e['win_p']:.0%} win chance\n{legs}"
+    return f"**{e['app']} {e['type']}**, ${e['stake']:.0f}, {pay}, {e['win_p']:.0%} win chance\n{legs}"
 
 
 KALSHI_API = "https://api.elections.kalshi.com/trade-api/v2"
@@ -88,32 +88,50 @@ def leg_label(l):
     return f"{'YES' if l['side'] == 'over' else 'NO'} on {title}"
 
 
+def rec_text(rec):
+    if "won" not in rec:
+        return "BetterPicks"
+    sign = "-" if rec["pnl"] < 0 else "+"
+    return f"BetterPicks record: {rec['won']}-{rec['lost']}, {sign}${abs(rec['pnl']):.2f}"
+
+
+def record_line():
+    """'Record: 5-0, +$25.65' from the project's feed (picks that pass today's rules, Ryan 2026-10-22)."""
+    rec = feed_doc().get("record") or {}
+    return rec_text(rec)
+
+
 def embed_parlay(e):
-    """BetterPicks-branded embed with a tap-to-open Kalshi market link per leg (practice only)."""
-    pay = f"{e['payout_x']}x" if e.get("payout_x") else "check Kalshi for the multiplier"
+    """One clean card per pick (Ryan 2026-10-22: posts were scuffed): each leg says what to tap on Kalshi,
+    the price, our win chance and edge, why we like it, and a tap-to-open link."""
+    pay = f"pays {e['payout_x']}x" if e.get("payout_x") else "check Kalshi for the payout"
     fields = []
     for l in e["legs"]:
         url = kalshi_url(l.get("ticker"))
-        price = f", {round(l['price'] * 100)}c" if l.get("price") else ""
-        name = leg_label(l)
         edge = l.get("edge")
         if edge is None and l.get("price"):
             edge = l["p"] - l["price"] - 0.07 * l["price"] * (1 - l["price"])
-        name += f" (edge {edge * 100:+.1f}%)" if edge is not None else ""
-        val = (f"{l['game']}{price}, our fair {l['p']:.0%}" + (f"\n{l['news']}" if l.get("news") else "")
-               + (f"\n[Open on Kalshi]({url})" if url else ""))
-        fields.append({"name": name[:256], "value": val[:1024]})
+        nums = " · ".join(x for x in (f"{round(l['price'] * 100)}¢ on Kalshi" if l.get("price") else "",
+                                      f"we have it at {l['p']:.0%}", f"edge {edge * 100:+.1f}%" if edge is not None else "") if x)
+        why = (l.get("case") or l.get("why") or "").strip()
+        val = "\n".join(x for x in (f"{l['game']} · {nums}", f"**Why:** {why}" if why else "",
+                                      f"**News:** {l['news']}" if l.get("news") else "",
+                                      f"[Open on Kalshi]({url})" if url else "") if x)
+        fields.append({"name": leg_label(l)[:256], "value": val[:1024]})
     first = next((kalshi_url(l.get("ticker")) for l in e["legs"] if l.get("ticker")), None)
-    return {"title": f"BetterPicks: {e['app']} {e['type']}"[:256], **({"url": first} if first else {}),
-            "description": f"PRACTICE PICK, NOT A REAL BET. ${e['stake']:.0f} practice, {pay}, {e['win_p']:.0%} win chance."
-                           " Tap each leg's link to open it on Kalshi and add it to your slip.",
-            "color": 0x00B37E, "fields": fields[:25], "footer": {"text": "BetterPicks practice bankroll. 21+ only for real wagers."}}
+    title = leg_label(e["legs"][0]) if e.get("lock") or len(e["legs"]) == 1 else f"{len(e['legs'])}-leg combo"
+    return {"title": title[:256], **({"url": first} if first else {}),
+            "description": f"${e['stake']:.0f} · {pay} · {e['win_p']:.0%} to hit",
+            "color": 0x00B37E, "fields": fields[:25], "footer": {"text": record_line()}}
 
 
 def kalshi_post(e):
-    """Short header line; the legs and their Kalshi links live inside the one parlay embed (Ryan 2026-10-12)."""
-    kind = f"1-leg lock: {leg_label(e['legs'][0])}" if e.get("lock") else e["type"]
-    return f"**{'LOCK, ' if e.get('lock') else ''}BetterPicks {e['app']} {kind}** (practice pick, not a real bet)"
+    """Short header line; the legs and their Kalshi links live inside the one card (Ryan 2026-10-12)."""
+    if e.get("lock"):
+        return "\U0001F512 **BetterPicks lock**"
+    if e["type"].startswith("pick of the day"):
+        return "\u2B50 **BetterPicks pick of the day**"
+    return f"**BetterPicks {e['type']}**"
 
 
 def send(text, embeds=None):
@@ -152,7 +170,7 @@ def today(dry=False):
     quiet_key = f"quiet:{day}"
     if (not new and now.hour >= hi and quiet_key not in sent and book.get("no_games_left") == day
             and not any(k.startswith(f"parlay:{day}:") for k in sent)):
-        msg = "Bad day, no picks from me today. No Kalshi games left to play. (BetterPicks, practice)"
+        msg = "Bad day, no picks from me today. No Kalshi games left to play."
         print(msg) if dry else (send(msg), json.dump(sorted(sent | {quiet_key}), open(SENT, "w"), indent=1))
         return
     # Ryan 2026-10-12 17:46Z: between 6am and noon PT, if nothing has gone out yet, say so every 2 hours (8am, 10am)
@@ -160,12 +178,12 @@ def today(dry=False):
     upd_key = f"update:{day}:{slot}"
     if (not new and lo < slot < hi and upd_key not in sent
             and not any(k.startswith(f"parlay:{day}:") for k in sent)):
-        msg = "Couldn't find anything yet, market looks bad. Still scanning Kalshi. (BetterPicks, practice)"
+        msg = "Couldn't find anything yet, market looks bad. Still scanning Kalshi."
         print(msg) if dry else (send(msg), json.dump(sorted(sent | {upd_key}), open(SENT, "w"), indent=1))
         return
     if not new:
         print("nothing new to post"); return
-    head = [] if all(isinstance(t, dict) and t.get("lock") for _, t in new) else [f"**BetterPicks {day}** (practice picks, not real bets)"]
+    head = [] if all(isinstance(t, dict) and t.get("lock") for _, t in new) else [f"**BetterPicks {datetime.fromisoformat(day).strftime('%A, %b %-d')}**"]
     msgs = head + [t for _, t in new]
     for m in msgs:
         if isinstance(m, dict):   # a parlay: Kalshi ones get the link embed, others plain text
@@ -186,10 +204,10 @@ MARK = {"won": "\u2705", "lost": "\u274c", "void": "\u2796", "push": "\u2796"}
 
 
 def verdict_post(v, rec):
-    """'HIT' or 'LOST' once the parlay's last game is graded, one embed per parlay (practice only)."""
+    """'HIT' or 'LOST' once the parlay's last game is graded, one embed per parlay."""
     day = datetime.fromisoformat(v["date"]).strftime("%b %-d")
     word = {"won": "HIT", "lost": "LOST", "void": "VOID"}[v["status"]]
-    money = {"won": f"+${v['pnl']:.2f} practice", "lost": f"-${v['stake']:.2f} practice",
+    money = {"won": f"+${v['pnl']:.2f}", "lost": f"-${v['stake']:.2f}",
              "void": "no action, stake back"}[v["status"]]
     name = f"1-leg lock" if v.get("lock") else v["type"]
     head = f"{MARK[v['status']]} **{word}: BetterPicks {v['app']} {name} ({day})**, {money}"
@@ -198,7 +216,7 @@ def verdict_post(v, rec):
         got = f"finished with {l['actual']:g}" if isinstance(l.get("actual"), (int, float)) else (
             "no result (voided)" if l.get("result") == "void" else "")
         fields.append({"name": f"{MARK.get(l.get('result'), '')} {leg_label(l)}"[:256], "value": f"{l['game']}" + (f", {got}" if got else "")})
-    foot = (f"Leg rule record: {rec['won']}-{rec['lost']}, ${rec['pnl']:+.2f} practice. " if rec else "") + "Practice picks, not real bets."
+    foot = rec_text(rec or {})
     color = {"won": 0x00B37E, "lost": 0xE5484D, "void": 0x8B8D98}[v["status"]]
     return head, {"title": f"Verdict: {word}", "color": color, "fields": fields[:25], "footer": {"text": foot}}
 
@@ -248,7 +266,7 @@ def retractions(dry=False):
                 print("delete failed:", ex)
             picks = ", ".join(leg_label(l) for l in r["legs"])
             send(f"\u21a9\ufe0f **Taking back a pick: {picks}.** It doesn't pass our updated rules, so fade it "
-                 f"(skip it, or take the other side if you're on it). {r.get('why', '')} (practice pick, not a real bet)".replace("  ", " "))
+                 f"(skip it, or take the other side if you're on it). {r.get('why', '')}".replace("  ", " "))
         sent.add(f"retract:{k}"); sent.add(k)
         if not dry:
             json.dump(sorted(sent), open(SENT, "w"), indent=1)
@@ -269,7 +287,7 @@ def verdicts(dry=False):
             continue
         picks = ", ".join(leg_label(l) for l in dl["legs"])
         msg = (f"\u23f8\ufe0f **Game delayed: {dl['game']} ({dl['status']}).** The BetterPicks {dl['type']} ({picks}) still stands "
-               "for the makeup game, so keep it on your slip. Kalshi keeps the market open. (practice pick, not a real bet)")
+               "for the makeup game, so keep it on your slip. Kalshi keeps the market open.")
         if dry:
             print(msg); continue
         send(msg)

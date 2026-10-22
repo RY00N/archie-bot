@@ -9,6 +9,8 @@ books_feed.json; the hourly routine commits it and parlays.py on the droplet mer
 """
 import json, os, sys, urllib.request
 from datetime import datetime, timedelta, timezone
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import record   # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 KEEP_OUT = {"PrizePicks", "Underdog", "Sleeper", "Kalshi", "Polymarket"}   # the droplet fetches these itself
@@ -37,9 +39,7 @@ def verdicts():
                         "type": e["type"], "lock": e.get("lock"), "status": e["status"], "pnl": e["pnl"],
                         "stake": e["stake"], "payout_x": e.get("payout_x"),
                         "legs": [{k: l.get(k) for k in LEG_KEEP} for l in e["legs"]]})
-    rule = [e for e in book.get("parlays", []) if e["app"] == "Kalshi" and e["date"] >= "2026-10-13" and e["status"] in ("won", "lost")]
-    rec = {"won": sum(e["status"] == "won" for e in rule), "lost": sum(e["status"] == "lost" for e in rule),
-           "pnl": round(sum(e["pnl"] for e in rule), 2)}
+    rec = record.record(book.get("parlays", []))   # Ryan 2026-10-22: the record = picks that pass today's rules
     posted = [e for e in book.get("parlays", []) if e["date"] >= "2026-10-12" and not e.get("test")
               and f"parlay:{e['date']}:{e['app']}:{e['type']}" in done]
     # Ryan 2026-10-21: picks the project takes back; the droplet deletes the post (if it went out) and says fade it
@@ -47,7 +47,11 @@ def verdicts():
                 "lock": e.get("lock"), "why": e.get("retract_why", ""), "legs": [{k: l.get(k) for k in LEG_KEEP} for l in e["legs"]]}
                for e in book.get("parlays", []) if e.get("retracted")]
     live = [e for e in posted if not e.get("retracted")]
-    return {"parlays": out, "record": rec, "props": prop_record(live), "delays": delays(live), "board": board(live),
+    picks = [{"date": e["date"], "type": e["type"], "status": e["status"], "pnl": e["pnl"],
+              "legs": [{k: l.get(k) for k in LEG_KEEP} for l in e["legs"]]}
+             for e in sorted(book.get("parlays", []), key=lambda x: x["date"]) if record.counts(e) and e["status"] in ("won", "lost")][-10:]
+    return {"parlays": out, "record": rec | {"recent": picks}, "props": prop_record([e for e in live if record.counts(e)]),
+            "delays": delays(live), "board": board(live),
             "retract": retract}
 
 

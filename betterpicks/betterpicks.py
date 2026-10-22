@@ -11,6 +11,11 @@ Singles (since 2026-10-12): only when a sportsbook's moneyline beats the de-vigg
 """
 import json, os, sys, urllib.request
 from datetime import datetime, timedelta, timezone
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:   # current-rules record (Ryan 2026-10-22); the droplet only gets record.py after a scanner restart
+    import record   # noqa: E402
+except ImportError:
+    record = None
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BOOK = os.path.join(HERE, "book.json")
@@ -236,9 +241,11 @@ def apps_view(book):
     apps = {}
     for e in book.get("parlays", []):
         a = apps.setdefault(e["app"], {"pnl": 0, "won": 0, "lost": 0, "open": 0, "staked": 0, "parlays": []})
-        a["pnl"] = round(a["pnl"] + e["pnl"], 2); a["staked"] += e["stake"]
-        a[e["status"] if e["status"] in ("won", "lost", "open") else "open"] += e["status"] != "void"
-        a["parlays"].append({"date": e["date"], "type": e["type"], "stake": e["stake"], "multiplier": e["payout_x"],
+        ok = record.counts(e) if record else True   # totals = current-rules record; other picks listed as old rules
+        if ok:
+            a["pnl"] = round(a["pnl"] + e["pnl"], 2); a["staked"] += e["stake"]
+            a[e["status"] if e["status"] in ("won", "lost", "open") else "open"] += e["status"] != "void"
+        a["parlays"].append({"date": e["date"], "type": e["type"] + ("" if ok else " (old rules)"), "counts": ok, "stake": e["stake"], "multiplier": e["payout_x"],
                              "to_win": round(e["stake"] * e["payout_x"], 2) if e["payout_x"] else None, "status": e["status"], "pnl": e["pnl"],
                              "hit_chance": e["win_p"], "breakdown": e.get("breakdown"),
                              "legs": [{"pick": kalshi_words(l) if e["app"] == "Kalshi" else f"{l['player']} {l['side']} {l['line']} {l['stat'].replace('_', ' ')}",
@@ -248,12 +255,10 @@ def apps_view(book):
                                        "why": l.get("case") or l.get("why"), "chance": l.get("p")}
                                       for l in e["legs"]]})
     singles = [p for p in book["picks"]]
-    if singles:
+    if singles:   # pre-Kalshi sportsbook singles: history only, outside the record (Kalshi only since Oct 12)
         apps["Sportsbook singles"] = {
-            "pnl": round(sum(p["pnl"] for p in singles), 2), "won": sum(p["status"] == "won" for p in singles),
-            "lost": sum(p["status"] == "lost" for p in singles), "open": sum(p["status"] == "open" for p in singles),
-            "staked": sum(p["stake"] for p in singles),
-            "parlays": [{"date": p["date"], "type": "single", "stake": p["stake"],
+            "pnl": 0, "won": 0, "lost": 0, "open": 0, "staked": 0,
+            "parlays": [{"date": p["date"], "type": "single (old rules)", "counts": False, "stake": p["stake"],
                          "multiplier": round(1 + (p["odds"] / 100 if p["odds"] > 0 else 100 / -p["odds"]), 2),
                          "to_win": round(p["stake"] + payout(p["odds"], p["stake"]), 2), "status": p["status"],
                          "pnl": p["pnl"], "legs": [{"pick": f"{p['bet']} {p['odds']:+.0f}", "game": p["game"],
@@ -274,12 +279,21 @@ def report():
     pars = book.get("parlays", [])
     pdone = [e for e in pars if e["status"] in ("won", "lost")]
     ppnl = round(sum(e["pnl"] for e in pdone), 2)
-    summary = {"bankroll": book["bankroll"], "start": book["start_bankroll"], "record": f"{w}-{l}-{len(done)-w-l}",
-               "pnl": pnl, "roi_pct": round(100 * pnl / risked, 1) if risked else 0,
-               "open": len([p for p in ps if p["status"] == "open"]),
-               "parlay_record": f"{sum(e['status'] == 'won' for e in pdone)}-{sum(e['status'] == 'lost' for e in pdone)}",
-               "parlay_pnl": ppnl, "parlays_open": len([e for e in pars if e["status"] == "open"]),
-               "total_pnl": round(pnl + ppnl, 2),
+    # Ryan 2026-10-22: the record is the current rules' record (record.py); sportsbook singles, PrizePicks and
+    # picks that fail today's rules stay listed as history but sit outside it. All-time numbers kept alongside.
+    if record is None:   # droplet without record.py: only 'pick' runs there, so the summary can stay simple
+        rec = {"won": sum(e["status"] == "won" for e in pdone), "lost": sum(e["status"] == "lost" for e in pdone),
+               "open": len([e for e in pars if e["status"] == "open"]), "pnl": ppnl, "staked": sum(e["stake"] for e in pdone)}
+    else:
+        rec = record.record(pars)
+    summary = {"bankroll": round(book["start_bankroll"] + rec["pnl"], 2), "start": book["start_bankroll"],
+               "record": f"{rec['won']}-{rec['lost']}", "pnl": rec["pnl"],
+               "roi_pct": round(100 * rec["pnl"] / rec["staked"], 1) if rec["staked"] else 0,
+               "open": rec["open"], "parlay_record": f"{rec['won']}-{rec['lost']}", "parlay_pnl": rec["pnl"],
+               "parlays_open": rec["open"], "total_pnl": rec["pnl"], "record_rules": "current rules (Oct 21)",
+               "all_time": {"bankroll": book["bankroll"], "singles_record": f"{w}-{l}-{len(done)-w-l}", "singles_pnl": pnl,
+                            "parlay_record": f"{sum(e['status'] == 'won' for e in pdone)}-{sum(e['status'] == 'lost' for e in pdone)}",
+                            "parlay_pnl": ppnl, "total_pnl": round(pnl + ppnl, 2)},
                "as_of": datetime.now(timezone.utc).isoformat(timespec="seconds")}
     summary["apps"] = apps_view(book)
     book["summary"] = summary

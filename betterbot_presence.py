@@ -105,7 +105,7 @@ def on_bp(d):
         reply = f"**{q['user']} asked BetterPicks:** {text}\n{quick}"
     else:
         reply = (f"**{q['user']} asked BetterPicks:** {text}\n"
-                 "Got it, BetterPicks is on it. The answer will post here as a reply. (practice picks, not real bets)")
+                 "Got it, BetterPicks is on it. The answer will post here as a reply.")
     try:
         q["message_id"] = http("PATCH", f"{API}/webhooks/{d['application_id']}/{d['token']}/messages/@original",
                                {"content": reply[:1990], "allowed_mentions": {"parse": []}}, auth=False)["id"]
@@ -175,13 +175,15 @@ def leg_text(x):
     return f"{mark}{side} {x['player']} {int(x['line'] + 0.5)}+ {STAT_WORDS.get(x['stat'], x['stat'].replace('_', ' '))}{got}"
 
 
-RESULT_WORDS = ("hit", "won", "win", "lost", "lose", "loss", "result", "cash", "how did", "how'd", "today", "tonight",
-                "yesterday", "open", "pending", "picks", "locks", "parlay", "playing", "what do we have", "board")
-RECORD_WORDS = ("record", "pnl", "p&l", "profit", "bankroll", "up or down", "how much")
-
-
+# Ryan 2026-10-22: auto-replies sometimes "send some random bullshit that doesn't even answer my question".
+# The droplet now answers by itself only when the question plainly asks for one of four things; anything
+# else (analysis, advice, "what should I", follow-ups) goes to the project thread for a real answer.
+RECORD_RE = re.compile(r"\b(record|pnl|p&l|p and l|profit|bankroll|are we up|are we down|how much (are we|have we|did we))\b")
+RESULT_RE = re.compile(r"\b(did\b.*\b(hit|win|cash|lose)|how did\b.*\b(do|go|end)|how'd\b.*\b(do|go)|results?\b|what hit|what (won|lost)|any (wins|hits))")
+PICKS_RE = re.compile(r"^(what|whats|what's|wheres|where's|show|list|send|post|give)\b.{0,25}\b(picks?|locks?|plays?|board)\b|^(picks|locks|board)\b|"
+                      r"\bwhat (are|is) (the |our |your )?(picks?|locks?|plays?)\b|\bwhat do we have\b|\bwhat'?s open\b")
 WHY_WORDS = ("why", "explain", "explanation", "reason", "how come", "break down", "breakdown")
-PICK_WORDS = ("picks", "pick ", "tonight", "today", "what are", "what do we have", "board", "open", "pending", "locks")
+ADVICE_RE = re.compile(r"\b(should|would|could|think|opinion|add|change|tomorrow|make|build|recommend|best|instead|better|fade|tail|rules?)\b")
 
 
 def why_text(e):
@@ -199,52 +201,63 @@ def why_text(e):
     return "\n".join(out)
 
 
+def named_picks(t, board):
+    return [e for e in board if any(re.search(rf"\b{re.escape(w)}\b", t) for l in e["legs"]
+            for w in {l["player"].lower(), l["player"].lower().split()[-1]} if len(w) > 2)]
+
+
 def quick_answer(text):
-    """/bp answered by the droplet itself in seconds (Ryan 2026-10-21: /bp must not depend on the project
-    session): results, record, tonight's picks, and why we made a pick. Anything else returns None and
-    goes to the project's BetterPicks thread."""
-    t = text.lower()
-    b = ((feed().get("verdicts") or {}).get("board"))
+    """/bp answered by the droplet itself in seconds (Ryan 2026-10-21), only for questions that plainly ask
+    for our record, results, the current picks, or why we made a named pick (Ryan 2026-10-22). Returns None
+    for anything else so the project's BetterPicks thread writes a real answer."""
+    t = re.sub(r"\s+", " ", text.lower()).strip()
+    b = (feed().get("verdicts") or {}).get("board")
     if not t or b is None:
         return None
     if any(w in t for w in WHY_WORDS):
-        named = [e for e in b if any(w in t for l in e["legs"] for w in
-                 {l["player"].lower(), l["player"].lower().split()[-1]})]
-        if not named and any(w in t for w in ("last", "latest", "recent", "those", "these", "picks", "tonight")):
-            n = next((int(x) for x in re.findall(r"\b([1-5])\b", t)), 3)
-            named = [e for e in b if e["status"] == "open"][-n:]
-        if named:
-            return "\n".join(why_text(e) for e in named) + "\nPractice picks, not real bets."
+        named = named_picks(t, b)
+        if not named:
+            m = re.search(r"\blast (\d|two|three|four|five)\b", t)
+            if m:
+                n = {"two": 2, "three": 3, "four": 4, "five": 5}.get(m.group(1)) or int(m.group(1))
+                named = sorted(b, key=lambda e: e["date"])[-n:]
+        if named and len(t.split()) <= 20 and not ADVICE_RE.search(t):
+            return "\n\n".join(why_text(e) for e in named)
         return None
-    if any(w in t for w in ("should", "think", "add ", "change", "tomorrow", "make ", "build")):
+    if ADVICE_RE.search(t) or len(t.split()) > 12:
         return None
-    if any(w in t for w in RECORD_WORDS):
+    if RECORD_RE.search(t):
         return pnl_text()
-    if not any(w in t for w in RESULT_WORDS + PICK_WORDS):
-        return None
-    pt = time.gmtime(time.time() - 7 * 3600)
-    day = time.strftime("%Y-%m-%d", pt)
+    if RESULT_RE.search(t):
+        named = named_picks(t, b)
+        if named:
+            return "\n".join(result_text(e) for e in named)
+        return results_text(b)
+    if PICKS_RE.search(t):
+        return open_text(b)
+    return None
+
+
+def result_text(e):
+    word = {"won": "HIT \u2705", "lost": "LOST \u274c", "void": "VOID (stake back)", "open": "still open"}.get(e["status"], e["status"])
+    money = f", {'+' if e['pnl'] >= 0 else '-'}${abs(e['pnl']):.2f}" if e["status"] in ("won", "lost") and isinstance(e.get("pnl"), (int, float)) else ""
+    return f"**{e['type'].split(':')[0]} ({e['date'][5:]}): {word}{money}**\n" + "\n".join(f"  {leg_text(l)}" for l in e["legs"])
+
+
+def results_text(b):
     yday = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 31 * 3600))
-    settled = [e for e in b if e["status"] in ("won", "lost", "void")
-               and max((l.get("start") or e["date"]) for l in e["legs"])[:10] >= yday]
+    settled = [e for e in b if e["status"] in ("won", "lost", "void") and max((l.get("start") or e["date"]) for l in e["legs"])[:10] >= yday]
+    if not settled:
+        return f"Nothing has settled since {yday[5:]}.\n" + open_text(b)
+    return "**Latest results:**\n" + "\n".join(result_text(e) for e in settled)
+
+
+def open_text(b):
     live = [e for e in b if e["status"] == "open"]
-    lines = []
-    if settled:
-        lines.append("**Latest results (practice):**")
-        for e in settled:
-            word = {"won": "HIT", "lost": "LOST", "void": "VOID"}[e["status"]]
-            money = f" ({e['pnl']:+.2f})" if isinstance(e.get("pnl"), (int, float)) else ""
-            lines.append(f"{e['type'].split(':')[0]} ({e['date'][5:]}): **{word}**{money}")
-            lines += [f"  {leg_text(l)}" for l in e["legs"]]
-    if live:
-        lines.append("**Still open:**")
-        for e in live:
-            lines.append(f"{e['type'].split(':')[0]} ({e['date'][5:]})")
-            lines += [f"  {leg_text(l)}" for l in e["legs"]]
-    if not lines:
-        lines.append(f"Nothing settled since {yday[5:]} and no open picks right now.")
-    lines.append("Practice picks, not real bets.")
-    return "\n".join(lines)
+    if not live:
+        return "No open picks right now. New ones post here as soon as we find them."
+    return "**Open picks:**\n" + "\n".join(f"{e['type'].split(':')[0]} ({e['date'][5:]}): " + ", ".join(
+        f"{leg_text(l)} ({l['game']})" for l in e["legs"]) for e in live)
 
 
 def late_notes():
@@ -258,7 +271,7 @@ def late_notes():
         if q.get("auto") or q["id"] in done or f"late:{q['id']}" in done or q["at"] > cut or q["at"] < "2026-10-21T22:00":
             continue
         body = {"content": "Still working on this one. For instant answers, ask /bp about results, tonight's picks, "
-                "our record, or why we made a pick (name the player). (practice picks, not real bets)",
+                "our record, or why we made a pick (name the player).",
                 "allowed_mentions": {"parse": []}}
         if q.get("message_id"):
             body["message_reference"] = {"message_id": q["message_id"], "fail_if_not_exists": False}
@@ -271,23 +284,16 @@ def late_notes():
 
 
 def pnl_text():
-    """Practice record by player prop (each leg), graded from Kalshi's own settlement."""
-    pr = (feed().get("verdicts") or {}).get("props")
-    if not pr:
-        return "No graded props yet. (BetterPicks practice record)"
-    w, l = pr["won"], pr["lost"]
-    lines = [f"**BetterPicks prop record: {w}-{l}**" + (f" ({w / (w + l):.0%} hit rate)" if w + l else "")]
-    lines += [f"{lg}: {a}-{b}" for lg, (a, b) in sorted(pr.get("by_league", {}).items())]
-    lines.append(f"Parlay P&L: ${pr.get('parlay_pnl', 0):+.2f} practice")
-    rec = pr.get("recent") or []
-    if rec:
-        lines.append("Last props:")
-        for x in reversed(rec):
-            mark = "\u2705" if x["result"] == "won" else "\u274c"
-            side = "YES" if x["side"] == "over" else "NO"
-            got = f", finished {x['actual']:g}" if isinstance(x.get("actual"), (int, float)) else ""
-            lines.append(f"{mark} {side} {x['player']} {int(x['line'] + 0.5)}+ {STAT_WORDS.get(x['stat'], x['stat'].replace('_', ' '))} ({x['date'][5:]}){got}")
-    lines.append("Practice picks, not real bets.")
+    """Ryan 2026-10-22: the record is the current rules' record (record.py on the project side), pick by pick."""
+    rec = (feed().get("verdicts") or {}).get("record") or {}
+    if "won" not in rec:
+        return "Couldn't load the record right now, try again in a minute."
+    w, l = rec["won"], rec["lost"]
+    sign = "-" if rec["pnl"] < 0 else "+"
+    lines = [f"**BetterPicks record: {w}-{l}** ({sign}${abs(rec['pnl']):.2f})" + (f", {rec['open']} open" if rec.get("open") else "")]
+    for e in reversed(rec.get("recent") or []):
+        mark = {"won": "\u2705", "lost": "\u274c"}.get(e["status"], "")
+        lines.append(f"{mark} {e['date'][5:]}: " + ", ".join(leg_text(dict(x, result=None)) for x in e["legs"]))
     return "\n".join(lines)[:1990]
 
 
@@ -436,7 +442,7 @@ def run_once():
             if m.get("t") == "READY":
                 print("online as", m["d"]["user"]["username"], flush=True)
                 STATUS_INFO["online_since"] = STATUS_INFO["last_event"]; READY_SEEN[0] = True
-                for cmd in ({"name": "pnl", "description": "BetterPicks wins vs losses by player prop (practice)", "type": 1},
+                for cmd in ({"name": "pnl", "description": "BetterPicks record and recent results", "type": 1},
                             {"name": "bp", "description": "Ask BetterPicks a question", "type": 1, "options": [
                                 {"type": 3, "name": "question", "description": "What do you want to ask?", "required": True}]}):
                     try:   # register (or refresh) the slash commands
