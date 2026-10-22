@@ -1509,6 +1509,38 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-22",
+   "app": "Kalshi",
+   "type": "1-leg lock: Evan Mobley over 0.5 threes",
+   "stake": 5.0,
+   "payout_x": 1.59,
+   "win_p": 0.698,
+   "ev_pct": 10.8,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Evan Mobley",
+     "team": "CLE",
+     "stat": "threes",
+     "side": "over",
+     "line": 0.5,
+     "price": 0.63,
+     "ticker": "KXNBA3PT-26OCT22CLEPHI-CLEEMOBLEY4-1",
+     "game": "CLE @ PHI",
+     "start": "2026-10-22T23:00:00Z",
+     "p": 0.698,
+     "edge": 0.052,
+     "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
+     "why": "Evan Mobley over 0.5 threes: 3 books price it 64%; hit 83% of last 12 (avg 1.2); 6/16 over vs PHI, avg 0.6. In games vs PHI: 0.6 avg over 16 games, 29% of that rotation is still there, so the matchup counts as 54% over 0.5. Fair 70%.",
+     "case": "Last 5 games: 2, 0, 1, 1, 2 (4 of 5 over 0.5). In games vs PHI: 0.6 avg over 16 games, 29% of that rotation is still there, so the matchup counts as 54% over 0.5.",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
@@ -1516,13 +1548,13 @@
   "props_at": "2026-10-22 09:00 PT",
   "props_today": 452,
   "kalshi_props_today": 168,
-  "kalshi_priced_today": 12,
+  "kalshi_priced_today": 14,
   "books_on_kalshi_props": {
-   "AN Consensus": 166,
+   "AN Consensus": 167,
    "AN Open": 165,
    "BetMGM": 116,
    "BetRivers": 114,
-   "Caesars": 128,
+   "Caesars": 142,
    "DraftKings": 165,
    "FanDuel": 155,
    "Fanatics": 129,
@@ -1531,7 +1563,7 @@
    "Pinnacle": 132,
    "Sleeper": 165,
    "Underdog": 168,
-   "Unibet": 18,
+   "Unibet": 19,
    "bet365": 166
   },
   "data_files": [
@@ -3611,6 +3643,21 @@
    "price": 0.43,
    "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-22",
+   "ticker": "KXNBA3PT-26OCT22CLEPHI-CLEEMOBLEY4-1",
+   "league": "nba",
+   "player": "Evan Mobley",
+   "stat": "threes",
+   "side": "over",
+   "line": 0.5,
+   "start": "2026-10-22T23:00:00Z",
+   "p": 0.698,
+   "price": 0.63,
+   "edge": 0.052,
+   "news": "Khalifa Diop (C) is out, so Evan Mobley's role likely grows.",
    "result": null
   },
   {
