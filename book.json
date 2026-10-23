@@ -1674,17 +1674,17 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 05:00 PT",
-  "props_today": 1675,
+  "props_today": 1674,
   "kalshi_props_today": 623,
-  "kalshi_priced_today": 34,
+  "kalshi_priced_today": 35,
   "books_on_kalshi_props": {
-   "AN Consensus": 617,
+   "AN Consensus": 618,
    "AN Open": 617,
    "BetMGM": 294,
    "BetRivers": 359,
    "Caesars": 563,
    "DraftKings": 542,
-   "FanDuel": 531,
+   "FanDuel": 532,
    "Fanatics": 506,
    "Parx": 376,
    "Pinnacle": 216,
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 18
+  "kalshi_legs_today": 17
  },
  "shadow": [
   {
@@ -4306,9 +4306,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.685,
+   "p": 0.683,
    "price": 0.61,
-   "edge": 0.058,
+   "edge": 0.056,
    "news": "Injury report: Day-To-Day: Podziemski (back) is questionable for Friday's game against the Grizzlies. Moses Moody is out: Brandin Podziemski hit the over in 19/24 games without him vs 6/16 with him.",
    "result": null
   },
@@ -4337,8 +4337,8 @@
    "line": 1.5,
    "start": "2026-10-24T01:30:00Z",
    "p": 0.465,
-   "price": 0.38,
-   "edge": 0.069,
+   "price": 0.37,
+   "edge": 0.079,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4501,9 +4501,9 @@
    "side": "under",
    "line": 34.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.653,
+   "p": 0.652,
    "price": 0.54,
-   "edge": 0.096,
+   "edge": 0.095,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/14 games without him vs 19/26 with him.",
    "result": null
   },
@@ -4516,9 +4516,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-24T00:00:00Z",
-   "p": 0.564,
+   "p": 0.563,
    "price": 0.51,
-   "edge": 0.037,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4531,9 +4531,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.561,
+   "p": 0.56,
    "price": 0.51,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4546,9 +4546,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.671,
+   "p": 0.67,
    "price": 0.51,
-   "edge": 0.144,
+   "edge": 0.143,
    "news": "Grant Williams is out: Brandon Miller hit the under in 13/14 games without him vs 18/26 with him.",
    "result": null
   },
@@ -4666,9 +4666,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.605,
+   "p": 0.606,
    "price": 0.55,
-   "edge": 0.038,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
