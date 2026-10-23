@@ -1656,7 +1656,7 @@
    "Fanatics": 460,
    "Parx": 252,
    "Pinnacle": 216,
-   "Sleeper": 564,
+   "Sleeper": 565,
    "Underdog": 598,
    "Unibet": 20,
    "bet365": 587
@@ -1667,7 +1667,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 16
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -4245,8 +4245,8 @@
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.62,
-   "price": 0.47,
-   "edge": 0.133,
+   "price": 0.46,
+   "edge": 0.143,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/7 games without him vs 16/33 with him.",
    "result": null
   },
@@ -4395,8 +4395,8 @@
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.674,
-   "price": 0.51,
-   "edge": 0.147,
+   "price": 0.52,
+   "edge": 0.137,
    "news": "Grant Williams is out: Brandon Miller hit the under in 13/14 games without him vs 18/26 with him.",
    "result": null
   },
