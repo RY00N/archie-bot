@@ -1676,19 +1676,19 @@
   "props_at": "2026-10-23 09:00 PT",
   "props_today": 1674,
   "kalshi_props_today": 624,
-  "kalshi_priced_today": 36,
+  "kalshi_priced_today": 37,
   "books_on_kalshi_props": {
    "AN Consensus": 619,
    "AN Open": 618,
    "BetMGM": 445,
-   "BetRivers": 496,
+   "BetRivers": 498,
    "Caesars": 563,
    "DraftKings": 545,
    "FanDuel": 529,
-   "Fanatics": 530,
-   "Parx": 516,
+   "Fanatics": 528,
+   "Parx": 517,
    "Pinnacle": 401,
-   "Sleeper": 590,
+   "Sleeper": 591,
    "Underdog": 624,
    "Unibet": 89,
    "bet365": 616
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 27
+  "kalshi_legs_today": 26
  },
  "shadow": [
   {
@@ -4156,9 +4156,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-24T00:00:00Z",
-   "p": 0.439,
+   "p": 0.44,
    "price": 0.39,
-   "edge": 0.032,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4396,9 +4396,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.608,
+   "p": 0.611,
    "price": 0.55,
-   "edge": 0.041,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4426,9 +4426,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.58,
+   "p": 0.581,
    "price": 0.48,
-   "edge": 0.083,
+   "edge": 0.084,
    "news": "News: Deni Avdija injury could force Jrue Holiday\u2019s move to forward for Blazers - Rip City Project Chris Youngblood (G) is out, so Jrue Holiday's role likely grows; Shaedon Sharpe is out: Jrue Holiday hit the over in 23/34 games without him vs 3/6 with him.",
    "result": null
   },
@@ -4621,9 +4621,9 @@
    "side": "under",
    "line": 34.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.662,
+   "p": 0.659,
    "price": 0.56,
-   "edge": 0.085,
+   "edge": 0.082,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/14 games without him vs 19/26 with him.",
    "result": null
   },
@@ -4666,9 +4666,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.571,
+   "p": 0.57,
    "price": 0.52,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4681,9 +4681,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.674,
+   "p": 0.672,
    "price": 0.52,
-   "edge": 0.137,
+   "edge": 0.135,
    "news": "Grant Williams is out: Brandon Miller hit the under in 13/14 games without him vs 18/26 with him.",
    "result": null
   },
@@ -4711,9 +4711,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-23T20:00:00Z",
-   "p": 0.565,
+   "p": 0.567,
    "price": 0.48,
-   "edge": 0.068,
+   "edge": 0.07,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
