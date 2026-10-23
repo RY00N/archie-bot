@@ -1688,7 +1688,7 @@
    "Fanatics": 496,
    "Parx": 423,
    "Pinnacle": 216,
-   "Sleeper": 582,
+   "Sleeper": 583,
    "Underdog": 623,
    "Unibet": 57,
    "bet365": 615
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 18
+  "kalshi_legs_today": 19
  },
  "shadow": [
   {
@@ -4486,9 +4486,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.673,
+   "p": 0.668,
    "price": 0.52,
-   "edge": 0.136,
+   "edge": 0.131,
    "news": "Injury report: Day-To-Day: Podziemski (back) is questionable for Friday's game against the Grizzlies. Moses Moody is out: Brandin Podziemski hit the under in 15/24 games without him vs 4/16 with him.",
    "result": null
   },
