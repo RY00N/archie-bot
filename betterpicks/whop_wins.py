@@ -12,33 +12,31 @@ import record  # noqa: E402
 
 PRODUCT = "prod_M44sTTPJ3OFlS"
 STATE = os.path.join(BP, ".whop_wins_state")
-MAX_LIST = 40  # Whop description stays readable; older wins roll into the count
+LIMIT = 1400  # Whop rejects descriptions over 1500 characters (margin for emoji counting); older wins and misses drop off the list to fit
 
 STAT = {"pitcher_ks": "strikeouts", "pra": "pts+reb+ast", "threes": "threes", "receptions": "receptions",
         "assists": "assists", "rebounds": "rebounds", "points": "points"}
 
-HEAD = """BetterPicks is a picks bot that scans player props around the clock and only posts when its model finds a real edge over the market price. No hype picks, no filler.
+HEAD = """BetterPicks is a bot that scans player props around the clock and only posts when it finds a real edge over the price.
 
-RECORD: {won}-{lost} on picks that meet our current rules, {pnl} at $5 a pick ({roi} return on money risked). Updated automatically after every game.
+RECORD: {won}-{lost} on picks that meet our current rules, {pnl} at $5 a pick ({roi} return). Updates after every game.
 
 EVERY WIN ({won}){more}
 {wins}
 {losses}
 HOW IT PICKS
-- Every pick needs a 60%+ win chance AND a 5%+ edge over the price, or it doesn't post
-- Injuries and matchups checked before every pick (teammate out, defender out, minutes trends)
-- Combos max 2 legs, every leg 65%+
-- If news turns a pick bad, the bot pulls it and tells you to fade
+- 60%+ win chance AND 5%+ edge, or it doesn't post
+- Injuries and matchups checked on every pick
+- Bad news? The bot pulls the pick and says fade
 
-WHAT YOU GET
-- Every pick posted live in the Discord PICKS channel, any hour, with win chance and edge shown
-- HIT / LOST results posted after every game
-- /bp: ask BetterBot about any pick and get an answer in seconds
-- A running record tracked in the open
+YOU GET
+- Live picks in the Discord PICKS channel with win chance + edge
+- HIT/LOST results after every game
+- /bp: ask BetterBot about any pick, answers in seconds
 
-Sports: NBA, NFL, MLB, soccer (in season).
+JOIN: buy a plan, join https://discord.gg/bmVz2WhyZC, then type /verify with your Whop email in Purchase.
 
-Past results don't guarantee future results. Picks are information, not financial advice. 18+ (21+ where required). Bet responsibly. Not affiliated with Kalshi or any sportsbook."""
+NBA, NFL, MLB, soccer. Past results don't guarantee future results. Not financial advice. 18+ (21+ where required). Not affiliated with Kalshi or any sportsbook."""
 
 
 def leg_text(l):
@@ -76,13 +74,20 @@ def build():
     wins = sorted([e for e in c if e["status"] == "won"], key=lambda e: e.get("date", ""), reverse=True)
     lost = sorted([e for e in c if e["status"] == "lost"], key=lambda e: e.get("date", ""), reverse=True)
     roi = f"{r['pnl'] / r['staked'] * 100:+.0f}%" if r["staked"] else "n/a"
-    shown = wins[:MAX_LIST]
-    return HEAD.format(
-        won=r["won"], lost=r["lost"], pnl=f"{'+' if r['pnl'] >= 0 else '-'}${abs(r['pnl']):.2f}", roi=roi,
-        more=f", latest {MAX_LIST} shown" if len(wins) > MAX_LIST else "",
-        wins="\n".join("✅ " + pick_text(e) for e in shown) or "(none yet)",
-        losses=("\nMISSES (we post the losses too)\n" + "\n".join("❌ " + pick_text(e) for e in lost[:10]) + "\n") if lost else "",
-    )
+    n_w, n_l = len(wins), min(len(lost), 5)
+    while True:
+        text = HEAD.format(
+            won=r["won"], lost=r["lost"], pnl=f"{'+' if r['pnl'] >= 0 else '-'}${abs(r['pnl']):.2f}", roi=roi,
+            more=f", latest {n_w} shown" if n_w < len(wins) else "",
+            wins="\n".join("✅ " + pick_text(e) for e in wins[:n_w]) or "(none yet)",
+            losses=("\nLATEST MISSES\n" + "\n".join("❌ " + pick_text(e) for e in lost[:n_l]) + "\n") if n_l else "",
+        )
+        if len(text) <= LIMIT or (n_w <= 1 and n_l <= 1):
+            return text[:LIMIT]
+        if n_l > 1 and n_l * 3 > n_w:
+            n_l -= 1
+        else:
+            n_w -= 1
 
 
 def main():
