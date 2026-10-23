@@ -1688,7 +1688,7 @@
    "Fanatics": 521,
    "Parx": 461,
    "Pinnacle": 374,
-   "Sleeper": 541,
+   "Sleeper": 585,
    "Underdog": 623,
    "Unibet": 59,
    "bet365": 615
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 18
+  "kalshi_legs_today": 21
  },
  "shadow": [
   {
@@ -4644,6 +4644,21 @@
   },
   {
    "date": "2026-10-23",
+   "ticker": "KXNBAPTS-26OCT23DALIND-DALKIRVING11-20",
+   "league": "nba",
+   "player": "Kyrie Irving",
+   "stat": "points",
+   "side": "over",
+   "line": 19.5,
+   "start": "2026-10-23T23:00:00Z",
+   "p": 0.562,
+   "price": 0.5,
+   "edge": 0.045,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
    "ticker": "KXNBAPTS-26OCT23HOUSAS-HOUJSMITH10-15",
    "league": "nba",
    "player": "Jabari Smith Jr.",
@@ -4711,9 +4726,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.54,
+   "p": 0.539,
    "price": 0.49,
-   "edge": 0.033,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
