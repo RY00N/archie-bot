@@ -240,6 +240,7 @@
     "bull": "TQQQ",
     "bear": "SQQQ",
     "share_stop_pct": 15,
-    "book_frac": 0.3
+    "book_frac": 0.3,
+    "disagree_frac": 0.15
   }
 }

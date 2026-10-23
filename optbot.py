@@ -251,7 +251,8 @@ def step(bot, log):
         qty = int((c["budget_start"] + st.get("realized", 0)) * c.get("book_frac", 1.0) * mult // ask)
     elif c.get("book_frac") and ask > 0:  # 10/23 Ryan "$1000 to $4000 in 3 months": a set share of the book per trade, compounding, 1 contract minimum
         cash = c["budget_start"] + st.get("realized", 0)
-        qty = int(cash * c["book_frac"] // (ask * 100))
+        frac = c.get("disagree_frac", c["book_frac"]) if agree is False else c["book_frac"]  # 10/23: half size when SPY disagrees
+        qty = int(cash * frac // (ask * 100))
         if qty < 1 and cash >= ask * 100:
             qty = 1
     elif c.get("min_qty") and ask > 0:  # 10/23 Ryan: "treat it like i gave u $1000": always 1+ contract if the account can pay for it
