@@ -1644,16 +1644,16 @@
   "props_at": "2026-10-23 00:00 PT",
   "props_today": 1557,
   "kalshi_props_today": 593,
-  "kalshi_priced_today": 31,
+  "kalshi_priced_today": 32,
   "books_on_kalshi_props": {
    "AN Consensus": 588,
    "AN Open": 588,
    "BetMGM": 51,
    "BetRivers": 234,
-   "Caesars": 378,
-   "DraftKings": 338,
+   "Caesars": 387,
+   "DraftKings": 342,
    "FanDuel": 544,
-   "Fanatics": 455,
+   "Fanatics": 457,
    "Parx": 252,
    "Pinnacle": 216,
    "Sleeper": 558,
@@ -1667,7 +1667,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -4230,8 +4230,8 @@
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.623,
-   "price": 0.47,
-   "edge": 0.136,
+   "price": 0.45,
+   "edge": 0.156,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/7 games without him vs 16/33 with him.",
    "result": null
   },
@@ -4380,8 +4380,8 @@
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.674,
-   "price": 0.5,
-   "edge": 0.157,
+   "price": 0.52,
+   "edge": 0.137,
    "news": "Grant Williams is out: Brandon Miller hit the under in 13/14 games without him vs 18/26 with him.",
    "result": null
   },
