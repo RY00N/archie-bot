@@ -299,6 +299,32 @@ def pnl_text():
     return "\n".join(lines)[:1990]
 
 
+INTENTS = [2]   # drops to 0 if Discord refuses the members intent (close 4014), so the bot stays online
+OG_ROLE, OG_MAX = os.environ.get("BP_OG_ROLE_ID", "1563068490162642974"), 15
+OG_GIVEN = os.path.join(WORK, "og_given.json")
+
+
+def og_on_join(d):
+    """Ryan 2026-10-23: the next 15 people who join get the OG Premium role (free access), then no more.
+    Counted by people given it, so someone leaving doesn't open a new spot."""
+    u = d.get("user") or {}
+    if u.get("bot") or not d.get("guild_id"):
+        return
+    with state_lock:
+        given = load(OG_GIVEN, [])
+        if len(given) >= OG_MAX or u["id"] in given:
+            return
+        given.append(u["id"]); save(OG_GIVEN, given)
+    try:
+        http("PUT", f"{API}/guilds/{d['guild_id']}/members/{u['id']}/roles/{OG_ROLE}", {})
+        print(f"OG Premium {len(given)}/{OG_MAX}:", u.get("username"), flush=True)
+    except Exception as e:
+        print("OG role failed:", e, flush=True)
+        with state_lock:
+            save(OG_GIVEN, [x for x in load(OG_GIVEN, []) if x != u["id"]])
+    STATUS_INFO["og_given"] = len(load(OG_GIVEN, []))
+
+
 STATUS_INFO = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "reconnects": 0}
 READY_SEEN = [False]
 
@@ -429,7 +455,7 @@ def run_once():
     ws.s.settimeout(interval * 2 + 15)   # recv raises instead of hanging if Discord goes quiet
     threading.Thread(target=beat, daemon=True).start()
     ws.send({"op": 2, "d": {
-        "token": TOKEN, "intents": 0,
+        "token": TOKEN, "intents": INTENTS[0],   # GUILD_MEMBERS: see new joins for the OG Premium giveaway
         "properties": {"os": "linux", "browser": "betterpicks", "device": "betterpicks"},
         "presence": {"status": "online", "afk": False, "since": None,
                      "activities": [{"name": STATUS, "type": 3}]}}})   # type 3 = "Watching ..."
@@ -451,6 +477,8 @@ def run_once():
                         http("POST", f"{API}/applications/{m['d']['application']['id']}/commands", cmd)
                     except Exception as e:
                         print("could not register /" + cmd["name"], e, flush=True)
+            if m.get("t") == "GUILD_MEMBER_ADD":
+                threading.Thread(target=og_on_join, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "bp":
                 threading.Thread(target=bp_safe, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "pnl":
@@ -493,6 +521,8 @@ if __name__ == "__main__":
         except Exception as e:
             print("disconnected:", e, flush=True)
             STATUS_INFO["reconnects"] += 1; STATUS_INFO["last_error"] = str(e)[:200]
+            if "4014" in str(e) and INTENTS[0]:
+                print("members intent not allowed; running without the OG giveaway", flush=True); INTENTS[0] = 0
             if "4004" in str(e):
                 sys.exit("bad bot token (4004); fix DISCORD_BOT_TOKEN")
         wait = 5 if READY_SEEN[0] else min(wait * 2, 300)
