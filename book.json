@@ -4098,6 +4098,21 @@
   },
   {
    "date": "2026-10-23",
+   "ticker": "KXNBA3PT-26OCT23MINORL-MINAEDWARDS5-4",
+   "league": "nba",
+   "player": "Anthony Edwards",
+   "stat": "threes",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-10-23T23:00:00Z",
+   "p": 0.631,
+   "price": 0.47,
+   "edge": 0.144,
+   "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/7 games without him vs 16/33 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
    "ticker": "KXNBA3PT-26OCT23NOPUTA-NOPSBEY41-2",
    "league": "nba",
    "player": "Saddiq Bey",
