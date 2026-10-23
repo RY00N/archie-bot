@@ -1678,19 +1678,19 @@
   "kalshi_props_today": 622,
   "kalshi_priced_today": 33,
   "books_on_kalshi_props": {
-   "AN Consensus": 615,
+   "AN Consensus": 616,
    "AN Open": 617,
    "BetMGM": 196,
    "BetRivers": 270,
    "Caesars": 557,
    "DraftKings": 542,
    "FanDuel": 547,
-   "Fanatics": 467,
+   "Fanatics": 468,
    "Parx": 288,
    "Pinnacle": 216,
    "Sleeper": 581,
    "Underdog": 622,
-   "Unibet": 34,
+   "Unibet": 42,
    "bet365": 614
   },
   "data_files": [
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 16
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -4246,9 +4246,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.439,
+   "p": 0.438,
    "price": 0.36,
-   "edge": 0.063,
+   "edge": 0.062,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
    "result": null
   },
@@ -4292,8 +4292,8 @@
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.621,
-   "price": 0.47,
-   "edge": 0.134,
+   "price": 0.46,
+   "edge": 0.144,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/7 games without him vs 16/33 with him.",
    "result": null
   },
@@ -4561,9 +4561,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.528,
+   "p": 0.527,
    "price": 0.48,
-   "edge": 0.031,
+   "edge": 0.03,
    "news": "Shaedon Sharpe is out: Damian Lillard hit the over in 19/23 games without him vs 17/17 with him.",
    "result": null
   },
