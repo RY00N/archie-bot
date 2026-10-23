@@ -1678,7 +1678,7 @@
   "kalshi_props_today": 672,
   "kalshi_priced_today": 38,
   "books_on_kalshi_props": {
-   "AN Consensus": 667,
+   "AN Consensus": 666,
    "AN Open": 665,
    "BetMGM": 461,
    "BetRivers": 513,
@@ -1688,7 +1688,7 @@
    "Fanatics": 529,
    "Parx": 531,
    "Pinnacle": 401,
-   "Sleeper": 630,
+   "Sleeper": 631,
    "Underdog": 672,
    "Unibet": 98,
    "bet365": 664
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 26
+  "kalshi_legs_today": 28
  },
  "shadow": [
   {
@@ -4081,9 +4081,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-24T00:00:00Z",
-   "p": 0.448,
+   "p": 0.452,
    "price": 0.4,
-   "edge": 0.031,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4201,9 +4201,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-23T20:00:00Z",
-   "p": 0.511,
+   "p": 0.51,
    "price": 0.46,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4291,9 +4291,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.395,
+   "p": 0.396,
    "price": 0.31,
-   "edge": 0.07,
+   "edge": 0.071,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4366,9 +4366,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.682,
+   "p": 0.684,
    "price": 0.61,
-   "edge": 0.055,
+   "edge": 0.057,
    "news": "Injury report: Day-To-Day: Podziemski (back) is questionable for Friday's game against the Grizzlies. Moses Moody is out: Brandin Podziemski hit the over in 19/24 games without him vs 6/16 with him.",
    "result": null
   },
@@ -4576,9 +4576,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.677,
-   "price": 0.49,
-   "edge": 0.17,
+   "p": 0.648,
+   "price": 0.48,
+   "edge": 0.151,
    "news": "Caleb Martin is out: Naji Marshall hit the over in 11/16 games without him vs 9/24 with him; Tarik Biberovic (F) is out, so Naji Marshall's role likely grows.",
    "result": null
   },
@@ -5191,9 +5191,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.53,
+   "p": 0.531,
    "price": 0.45,
-   "edge": 0.063,
+   "edge": 0.064,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
