@@ -134,10 +134,10 @@ def kalshi_post(e):
     return f"**BetterPicks {e['type']}**"
 
 
-def send(text, embeds=None):
+def send(text, embeds=None, channel=None):
     hook = os.environ.get("DISCORD_WEBHOOK_URL")
-    tok, chan = os.environ.get("DISCORD_BOT_TOKEN"), os.environ.get("DISCORD_CHANNEL_ID")
-    if hook:
+    tok, chan = os.environ.get("DISCORD_BOT_TOKEN"), channel or os.environ.get("DISCORD_CHANNEL_ID")
+    if hook and not (channel and tok):
         url, headers = hook, {}
     elif tok and chan:
         url, headers = f"https://discord.com/api/v10/channels/{chan}/messages", {"Authorization": f"Bot {tok}"}
@@ -150,6 +150,46 @@ def send(text, embeds=None):
     req = urllib.request.Request(url, data=body, method="POST",
                                  headers={"Content-Type": "application/json", "User-Agent": "BetterPicks (1.0)", **headers})
     urllib.request.urlopen(req, timeout=20).read()
+
+
+# Ryan 2026-10-23: "Send one free pick every 3 days make sure it's a lock so we can get customers". The first lock
+# (65%+ win chance on every leg) posted once 3 days have passed since the last free pick is copied to the free channel,
+# and its HIT/LOST result goes there too.
+FREE_CH = os.environ.get("BP_FREE_CHANNEL_ID", "1563073629799981076")
+PURCHASE_CH = os.environ.get("BP_PURCHASE_CHANNEL_ID", "1509754956666634382")
+FREE_EVERY, FREE_MIN_P = 3, 0.65
+
+
+def free_due(sent, day):
+    last = max((k.split(":")[2] for k in sent if k.startswith("free:parlay:")), default=None)
+    return last is None or (datetime.fromisoformat(day) - datetime.fromisoformat(last)).days >= FREE_EVERY
+
+
+def free_ok(e):
+    shaky = ("questionable", "doubtful", "day-to-day", "game-time")   # a free pick is the sales pitch: no injury doubts
+    return (e.get("app") == "Kalshi" and e.get("lock") and all((l.get("p") or 0) >= FREE_MIN_P and
+            not any(w in (l.get("news") or "").lower() for w in shaky) for l in e.get("legs", [])))
+
+
+def free_pick(book, sent, day, dry):
+    """Copy today's first qualifying lock that already went to PICKS (and hasn't started) to the free channel."""
+    if not free_due(sent, day):
+        return
+    now = datetime.now(timezone.utc).isoformat()
+    gone = {r["key"] for r in feed_doc().get("retract", [])}
+    for e in book.get("parlays", []):
+        k = key_parlay(e)
+        if (e["date"] != day or k not in sent or k in gone or e.get("status") != "open" or not free_ok(e)
+                or any((l.get("start") or "") <= now for l in e["legs"])):
+            continue
+        head = f"\U0001F381 **Free BetterPicks lock**\nMembers get every pick like this live. Get VIP in <#{PURCHASE_CH}>."
+        if dry:
+            print("FREE:", head, k); return
+        send(head, [embed_parlay(e)], channel=FREE_CH)
+        sent.add(f"free:{k}")
+        json.dump(sorted(sent), open(SENT, "w"), indent=1)
+        print("posted free pick", k)
+        return
 
 
 def today(dry=False):
@@ -166,6 +206,7 @@ def today(dry=False):
               if e["date"] == day and e["app"] in apps and not e.get("test")]   # Ryan 2026-10-14: post whenever, no window
     gone = {r["key"] for r in feed_doc().get("retract", [])}   # Ryan 2026-10-21: taken-back picks never post
     new = [(k, t) for k, t in items if k not in sent and k not in gone]
+    free_pick(book, sent, day, dry)
     # Ryan 2026-10-12: if nothing goes out today, say so once (only after noon and once parlays.py finds no Kalshi games left today)
     quiet_key = f"quiet:{day}"
     if (not new and now.hour >= hi and quiet_key not in sent and book.get("no_games_left") == day
@@ -190,6 +231,7 @@ def today(dry=False):
             if m["app"] == "Kalshi":
                 emb = embed_parlay(m)
                 print(kalshi_post(m), json.dumps(emb, indent=1), "\n") if dry else send(kalshi_post(m), [emb])
+
             else:
                 print(fmt_parlay(m), "\n") if dry else send(fmt_parlay(m))
         else:
@@ -299,6 +341,8 @@ def verdicts(dry=False):
         if dry:
             print(head, json.dumps(emb, indent=1), "\n"); continue
         send(head, [emb])
+        if f"free:{v['key']}" in sent:   # the free lock's result goes to the free channel too
+            send(head, [emb], channel=FREE_CH)
         sent.add(f"verdict:{v['key']}")
         json.dump(sorted(sent), open(SENT, "w"), indent=1)
         print("posted verdict", v["key"])
