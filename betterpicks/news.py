@@ -24,6 +24,7 @@ BAD = re.compile(r"\b(injur\w*|hurt|sore\w*|strain\w*|sprain\w*|illness|ill|sick
                  r"limited|rest(ed|ing)?|personal (reasons?|matter)|family (matter|emergency)|bereavement|paternity|"
                  r"divorce\w*|arrest\w*|suspen\w*|concussion|benched|slump\w*|struggl\w*)\b", re.I)
 OVER_HIT_SHAKY, OVER_HIT_BAD = 0.08, 0.05   # win-chance points taken off an over
+MINUTES = None   # parlays.py sets this to minutes(league, player) -> {(date, opp): minutes} (NBA only)
 ROWS = None   # parlays.py sets this to rows_for(league, stat, player) -> [(value, date, opp), ...] newest first
 ALIAS = {"JAC": "JAX", "WAS": "WSH", "GS": "GSW", "NO": "NOP", "NY": "NYK", "SA": "SAS", "UTAH": "UTA", "CHW": "CWS",
          "AZ": "ARI", "KCR": "KC", "SDP": "SD", "SFG": "SF", "TBR": "TB", "WSN": "WSH", "LA": "LAR", "PHO": "PHX"}
@@ -150,6 +151,29 @@ def without_split(league, stat, player, mate, line, side):
                 f"vs {round(hw * len(w))}/{len(w)} with him")
 
 
+def role_grew(league, stat, player, mate):
+    """Ryan 2026-10-23 (Hartenstein: Sorber out, 23 min, 6 boards): a teammate being out only means a bigger role
+    if this player's minutes actually went up in past games without him. True / False, or None when it can't be
+    measured (no minutes data, e.g. NFL). With no shared games at all the absence is old news: his recent games
+    were already without that teammate, so it's False."""
+    if ROWS is None:
+        return None
+    mine, theirs = ROWS(league, stat, player) or [], ROWS(league, stat, mate) or []
+    shared = {(r[1], r[2]) for r in theirs}
+    together = [(d, o) for v, d, o in mine if (d, o) in shared]
+    if not together:
+        return False
+    mins = MINUTES(league, player) if MINUTES else None
+    if not mins:
+        return None
+    start = min(d for d, o in together)
+    w = [m for k, m in mins.items() if k[0] >= start and k in shared]
+    wo = [m for k, m in mins.items() if k[0] >= start and k not in shared]
+    if len(w) < 3 or len(wo) < 2:
+        return None
+    return sum(wo) / len(wo) >= sum(w) / len(w) + 1.5   # at least ~1.5 more minutes a game without him
+
+
 def regular(league, stat, name, since):
     """Plays most games lately (a starter-level piece, not a deep reserve)."""
     if ROWS is None:
@@ -180,9 +204,10 @@ def context(leg, c):
         if league != "mlb" and not same:
             continue
         sp = without_split(league, stat, player, m["name"], line, side)
-        if sp and abs(sp[0]) >= 0.01:
+        if sp and abs(sp[0]) >= 0.01:   # measured with/without split: real results, no minutes check needed
             dp += sp[0]; notes.append(sp[1])
-        elif sp is None and same and my_grp != "QB" and m["date"] >= fresh:   # no shared games to measure (new teammate)
+        elif (sp is None and same and my_grp != "QB" and m["date"] >= fresh
+              and role_grew(league, stat, player, m["name"]) is not False):   # unmeasured bump needs the minutes check
             dp += -0.05 if side == "under" else 0.02
             notes.append(f"{m['name']} ({m['pos']}) is out, so {player}'s role likely grows")
     hits = 0

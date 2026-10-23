@@ -88,7 +88,7 @@ def stat_query(league, stat):
     return ("soccer.sqlite" if league == "epl" else f"{league}.sqlite"), f"select {expr}, date, opp from {table} where player=? or player=? order by date desc"
 
 
-_CONN, _ROWS, _TEAM = {}, {}, {}
+_CONN, _ROWS, _TEAM, _MIN = {}, {}, {}, {}
 # ESPN codes in the stats DB vs the codes on Kalshi/sportsbook props
 NBA_CODE = {"GS": "GSW", "NY": "NYK", "NO": "NOP", "SA": "SAS", "UTAH": "UTA", "WSH": "WAS"}
 
@@ -125,6 +125,7 @@ def rows_for(league, stat, player):
                 mins = sorted(r[4] for r in rows[:60] if r[4])
                 norm = mins[len(mins) // 2] if mins else 0
                 rows = [r for r in rows if r[3] == rows[0][3]]
+                _MIN[(league, player)] = {(r[1], r[2]): r[4] for r in rows if r[4]}   # for news.minutes_split
                 rows = [r[:3] for r in rows if not norm or r[4] is None or r[4] >= 0.7 * norm]
         _ROWS[key] = rows if rows is not None else _CONN[q[0]].execute(q[1], (player, player)).fetchall()
     return _ROWS[key]
@@ -358,6 +359,7 @@ def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi"), min_ed
         sys.path.insert(0, HERE)   # python3 -I leaves the script's folder off sys.path
         import news
         news.ROWS = rows_for   # with/without-teammate splits from the stats DBs
+        news.MINUTES = lambda league, player: (rows_for(league, "points", player), _MIN.get((league, player)))[1]
         legs = [l for l in news.adjust(legs) if l["app"] != "Kalshi" or l["edge"] >= min_edge]
     except Exception as ex:
         print("news check skipped:", ex)
