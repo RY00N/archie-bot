@@ -221,6 +221,8 @@ def quick_answer(text):
             if m:
                 n = {"two": 2, "three": 3, "four": 4, "five": 5}.get(m.group(1)) or int(m.group(1))
                 named = sorted(b, key=lambda e: e["date"])[-n:]
+            elif re.search(r"\b(today|tonight|these|those|current|open)('?s)?\b.{0,20}\b(picks?|locks?|plays?)\b|\b(picks?|locks?) (for )?(today|tonight)\b", t):
+                named = [e for e in b if e["status"] == "open"]
         if named and len(t.split()) <= 20 and not ADVICE_RE.search(t):
             return "\n\n".join(why_text(e) for e in named)
         return None
