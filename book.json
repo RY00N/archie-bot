@@ -1578,12 +1578,10 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-22 18:00 PT",
-  "props_today": 113,
-  "kalshi_props_today": 52,
+  "props_today": 0,
+  "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {
-   "Underdog": 52
-  },
+  "books_on_kalshi_props": {},
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
@@ -4093,8 +4091,8 @@
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.678,
-   "price": 0.51,
-   "edge": 0.151,
+   "price": 0.53,
+   "edge": 0.131,
    "news": "Grant Williams is out: Brandon Miller hit the under in 13/14 games without him vs 18/26 with him.",
    "result": null
   },
