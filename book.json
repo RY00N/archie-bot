@@ -1682,15 +1682,15 @@
    "AN Open": 610,
    "BetMGM": 163,
    "BetRivers": 235,
-   "Caesars": 528,
-   "DraftKings": 508,
+   "Caesars": 529,
+   "DraftKings": 517,
    "FanDuel": 547,
    "Fanatics": 465,
    "Parx": 253,
    "Pinnacle": 216,
    "Sleeper": 577,
    "Underdog": 615,
-   "Unibet": 27,
+   "Unibet": 29,
    "bet365": 607
   },
   "data_files": [
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -4292,8 +4292,8 @@
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.619,
-   "price": 0.44,
-   "edge": 0.162,
+   "price": 0.46,
+   "edge": 0.142,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/7 games without him vs 16/33 with him.",
    "result": null
   },
