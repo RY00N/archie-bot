@@ -217,8 +217,8 @@
  "options": {
   "enabled": true,
   "symbol": "QQQ",
-  "budget_start": 100000,
-  "size": 6000,
+  "budget_start": 1000,
+  "size": 600,
   "stop_pct": 50,
   "lock_pct": 100000,
   "keep_pct": 2,
@@ -235,6 +235,8 @@
   "min_close_pos": 0.35,
   "spy_agree_mult": 1.18,
   "spy_disagree_mult": 0.25,
-  "disagree_hold_min": 90
+  "disagree_hold_min": 90,
+  "skip_trade_mult": 0.25,
+  "min_qty": 1
  }
 }

@@ -83,13 +83,19 @@ def signal(bot, c, today, now_m):
     if "f" in t and now_m in (575, 576) and f5 and day[0][1] == 570:  # first 5 minutes' direction (10/17 tick backtest winner)
         # 10/18: read the 9:30-9:34 bars directly so a late 9:34 bar on IEX retries at 9:36 instead of missing the day
         c5 = f5[-1][5]
+        _last["skip_why"] = None  # 10/23 Ryan: with skip_trade_mult set, skip days trade small instead of sitting out
+        small = c.get("skip_trade_mult")
         pd = [b for b in prev if b[0] == prev[-1][0]] if prev else []
         if pd and (max(b[3] for b in pd) - min(b[4] for b in pd)) / pd[-1][5] * 100 > c.get("max_prev_range_pct", 99):  # high - low (10/18 fix: was low - close)
-            return "skip", "yesterday's range too wide", c5, 574  # 10/17: wild prior days lost in 2024-25 and 2026
+            if not small:
+                return "skip", "yesterday's range too wide", c5, 574  # 10/17: wild prior days lost in 2024-25 and 2026
+            _last["skip_why"] = "yesterday's range too wide"
         hi, lo = max(b[3] for b in f5), min(b[4] for b in f5)
         pos = ((c5 - lo) if c5 > day[0][2] else (hi - c5)) / (hi - lo + 1e-9)
         if pos < c.get("min_close_pos", 0):  # 10/18: a 9:34 close far from the move's extreme often reverses
-            return "skip", f"first 5 min closed weak ({pos:.2f})", c5, 574
+            if not small:
+                return "skip", f"first 5 min closed weak ({pos:.2f})", c5, 574
+            _last["skip_why"] = _last["skip_why"] or f"first 5 min closed weak ({pos:.2f})"
         side = 1 if c5 > day[0][2] else -1
         _last["spy_agree"] = None  # 10/20: size up when SPY's first 5 min point the same way, down when not
         if "spy_agree_mult" in c:
@@ -217,13 +223,20 @@ def step(bot, log):
         log(f"OPT {why}: no contract found"); save(st); return
     bid, ask = _quote(bot, osym)
     if ask > 0 and (bid + ask) / 2 / px * 100 > c.get("max_opt_pct", 99):  # option too expensive = market too jumpy
-        st["done"], st["why_done"] = True, f"skipped: option too expensive ({(bid + ask) / 2:.2f})"
-        log(f"OPT {st['why_done']}"); save(st); return
+        if not c.get("skip_trade_mult"):
+            st["done"], st["why_done"] = True, f"skipped: option too expensive ({(bid + ask) / 2:.2f})"
+            log(f"OPT {st['why_done']}"); save(st); return
+        _last["skip_why"] = _last.get("skip_why") or f"option too expensive ({(bid + ask) / 2:.2f})"
     agree = _last.get("spy_agree")
     mult = 1.0 if agree is None else c.get("spy_agree_mult", 1.0) if agree else c.get("spy_disagree_mult", 1.0)
     if agree is not None:
         why += f" (SPY {'agrees' if agree else 'disagrees'}, size x{mult})"
+    if _last.get("skip_why") and c.get("skip_trade_mult"):
+        mult *= c["skip_trade_mult"]; why += f" (skip day: {_last['skip_why']}, small size x{c['skip_trade_mult']})"
     qty = int(c["size"] * mult // (ask * 100)) if ask > 0 else 0
+    if c.get("min_qty") and ask > 0:  # 10/23 Ryan: "treat it like i gave u $1000": always 1+ contract if the account can pay for it
+        cash = c["budget_start"] + st.get("realized", 0)
+        qty = min(max(qty, c["min_qty"]), int(cash // (ask * 100)))
     if qty < 1:
         save(st); return
     od = bot.trade("POST", "/v2/orders", body={"symbol": osym, "qty": str(qty), "side": "buy", "type": "limit",
