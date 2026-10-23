@@ -1637,6 +1637,38 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-23",
+   "app": "Kalshi",
+   "type": "1-leg lock: Franz Wagner under 5.5 rebounds",
+   "stake": 5.0,
+   "payout_x": 1.89,
+   "win_p": 0.657,
+   "ev_pct": 24.0,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Franz Wagner",
+     "team": "ORL",
+     "stat": "rebounds",
+     "side": "under",
+     "line": 5.5,
+     "price": 0.53,
+     "ticker": "KXNBAREB-26OCT23MINORL-ORLFWAGNER22-6",
+     "game": "MIN @ ORL",
+     "start": "2026-10-23T23:00:00Z",
+     "p": 0.657,
+     "edge": 0.11,
+     "news": "News: Franz Wagner injury update: Magic forward expects to play in opener - DAZN Jonathan Isaac is out: Franz Wagner hit the under in 11/24 games without him vs 6/16 with him; Noah Penda is out: Franz Wagner hit the under in 10/23 games without him vs 2/6 with him.",
+     "why": "Franz Wagner under 5.5 rebounds: 8 books price it 55%; hit 33% of last 12 (avg 5.4); 3/6 over vs MIN, avg 5.0. In games vs MIN: 4.3 avg over 7 games, 38% of that rotation is still there, so the matchup counts as 38% over 5.5. Fair 66%.",
+     "case": "Last 5 games: 6, 5, 5, 7, 5 (3 of 5 under 5.5). In games vs MIN: 4.3 avg over 7 games, 38% of that rotation is still there, so the matchup counts as 38% over 5.5.",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
@@ -1650,16 +1682,16 @@
    "AN Open": 600,
    "BetMGM": 51,
    "BetRivers": 235,
-   "Caesars": 467,
-   "DraftKings": 434,
+   "Caesars": 481,
+   "DraftKings": 446,
    "FanDuel": 546,
-   "Fanatics": 472,
+   "Fanatics": 473,
    "Parx": 253,
    "Pinnacle": 216,
    "Sleeper": 574,
    "Underdog": 605,
    "Unibet": 21,
-   "bet365": 594
+   "bet365": 597
   },
   "data_files": [
    "mlb.sqlite",
@@ -4214,9 +4246,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.469,
+   "p": 0.47,
    "price": 0.39,
-   "edge": 0.062,
+   "edge": 0.063,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4590,9 +4622,24 @@
    "line": 5.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.473,
-   "price": 0.42,
-   "edge": 0.036,
+   "price": 0.41,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KXNBAREB-26OCT23MINORL-ORLFWAGNER22-6",
+   "league": "nba",
+   "player": "Franz Wagner",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 5.5,
+   "start": "2026-10-23T23:00:00Z",
+   "p": 0.657,
+   "price": 0.53,
+   "edge": 0.11,
+   "news": "News: Franz Wagner injury update: Magic forward expects to play in opener - DAZN Jonathan Isaac is out: Franz Wagner hit the under in 11/24 games without him vs 6/16 with him; Noah Penda is out: Franz Wagner hit the under in 10/23 games without him vs 2/6 with him.",
    "result": null
   },
   {
