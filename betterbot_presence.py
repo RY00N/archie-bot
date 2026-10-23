@@ -397,6 +397,138 @@ def counters_loop():
         MEMBERS_CHANGED.wait(20)
 
 
+# Ryan 2026-10-23: Whop buyers get Premium. Whop's own Discord app couldn't be mapped, so BetterBot does it:
+# /verify <email> links a valid BetterPicks VIP membership to the Discord account (one account per membership),
+# and every 10 minutes it rechecks the links and removes Premium once a membership stops being valid.
+# Memberships that already carry a Discord id get Premium without /verify. OG Premium is never touched.
+WHOP_KEY = os.environ.get("WHOP_BP_API")
+WHOP_PRODUCT, WHOP_LIFETIME = "prod_M44sTTPJ3OFlS", "plan_dR8emUZ99wAIf"
+PREMIUM_ROLE = os.environ.get("BP_PREMIUM_ROLE_ID", "1563068488195772517")
+WHOP_LINKS = os.path.join(WORK, "whop_links.json")   # {discord_id: membership_id}
+
+
+def whop_memberships():
+    out, page = [], 1
+    while True:
+        req = urllib.request.Request(f"https://api.whop.com/api/v2/memberships?product_id={WHOP_PRODUCT}&page={page}&per=50",
+                                     headers={"Authorization": f"Bearer {WHOP_KEY}", "User-Agent": UA})
+        doc = json.load(urllib.request.urlopen(req, timeout=20))
+        rows = doc.get("data") or []
+        pid = lambda m: m["product"].get("id") if isinstance(m.get("product"), dict) else m.get("product")
+        out += [m for m in rows if pid(m) in (WHOP_PRODUCT, None)]
+        pg = doc.get("pagination") or {}
+        if not rows or page >= (pg.get("total_page") or pg.get("total_pages") or 1):
+            return out
+        page += 1
+
+
+def whop_membership(mid):
+    """One membership, for a link missing from the list; None only when Whop says it doesn't exist."""
+    try:
+        req = urllib.request.Request(f"https://api.whop.com/api/v2/memberships/{mid}",
+                                     headers={"Authorization": f"Bearer {WHOP_KEY}", "User-Agent": UA})
+        return json.load(urllib.request.urlopen(req, timeout=20))
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return None
+        raise
+
+
+def m_plan(m):
+    return (m.get("plan") or {}).get("id") if isinstance(m.get("plan"), dict) else m.get("plan")
+
+
+def m_email(m):
+    u = m.get("user") if isinstance(m.get("user"), dict) else {}
+    return (m.get("email") or u.get("email") or "").strip().lower()
+
+
+def m_discord(m):
+    d = m.get("discord") or (m.get("user") if isinstance(m.get("user"), dict) else {}).get("discord") or {}
+    return str(d.get("id")) if isinstance(d, dict) and d.get("id") else None
+
+
+def m_valid(m):
+    if m_plan(m) == WHOP_LIFETIME and m.get("status") not in ("refunded", "disputed"):
+        return True   # Lifetime keeps Premium
+    if "valid" in m:
+        return bool(m["valid"])
+    return m.get("status") in ("active", "trialing", "completed")
+
+
+def set_premium(uid, on):
+    http("PUT" if on else "DELETE", f"{API}/guilds/{GUILD}/members/{uid}/roles/{PREMIUM_ROLE}", {} if on else None)
+
+
+def on_verify(d):
+    uid = ((d.get("member") or {}).get("user") or d.get("user") or {}).get("id")
+    email = next((o["value"] for o in d["data"].get("options", []) if o["name"] == "email"), "").strip().lower()
+    reply = lambda text: http("PATCH", f"{API}/webhooks/{d['application_id']}/{d['token']}/messages/@original",
+                              {"content": text, "allowed_mentions": {"parse": []}}, auth=False)
+    http("POST", f"{API}/interactions/{d['id']}/{d['token']}/callback", {"type": 5, "data": {"flags": 64}}, auth=False)
+    if not WHOP_KEY:
+        return reply("Verification is down for a moment, try again later.")
+    try:
+        ms = [m for m in whop_memberships() if m_email(m) == email and m_valid(m)]
+    except Exception as e:
+        print("/verify Whop lookup failed:", e, flush=True)
+        return reply("Couldn't reach Whop right now, try again in a minute.")
+    with state_lock:
+        links = load(WHOP_LINKS, {})
+        taken = {mid for k, mid in links.items() if k != uid}
+        m = next((m for m in ms if m["id"] not in taken), None)
+        if m:
+            links[uid] = m["id"]; save(WHOP_LINKS, links)
+    if not ms:
+        return reply("No active BetterPicks VIP membership found for that email. Use the email you bought with on Whop.")
+    if not m:
+        return reply("That membership is already linked to another Discord account. Open a support ticket if that's wrong.")
+    try:
+        set_premium(uid, True)
+    except Exception as e:
+        print("/verify role failed:", e, flush=True)
+        return reply("Found your membership but couldn't add the role. Open a support ticket.")
+    print("Premium verified:", uid, m["id"], flush=True)
+    reply("\u2705 Verified! You have Premium now. The picks channel is open to you.")
+
+
+def verify_safe(d):
+    try:
+        on_verify(d)
+    except Exception as e:
+        print("/verify failed:", e, flush=True)
+
+
+def whop_loop():
+    while WHOP_KEY:
+        try:
+            ms = {m["id"]: m for m in whop_memberships()}
+            with state_lock:
+                links = load(WHOP_LINKS, {})
+                linked = set(links.values())
+                for m in ms.values():   # Whop already knows their Discord account
+                    did = m_discord(m)
+                    if did and m_valid(m) and m["id"] not in linked and did not in links:
+                        links[did] = m["id"]; linked.add(m["id"])
+                save(WHOP_LINKS, links)
+            for uid, mid in list(links.items()):
+                m = ms.get(mid) or whop_membership(mid)
+                ok = bool(m and m_valid(m))
+                try:
+                    set_premium(uid, ok)
+                except urllib.error.HTTPError as e:
+                    if e.code != 404:   # 404 = they left the server
+                        print("Premium sync failed:", uid, e, flush=True)
+                if not ok:
+                    print("Premium removed (membership ended):", uid, mid, flush=True)
+                    with state_lock:
+                        cur = load(WHOP_LINKS, {}); cur.pop(uid, None); save(WHOP_LINKS, cur)
+            STATUS_INFO["whop_linked"] = len(load(WHOP_LINKS, {}))
+        except Exception as e:
+            print("Whop sync failed:", e, flush=True)
+        time.sleep(600)
+
+
 STATUS_INFO = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "reconnects": 0}
 READY_SEEN = [False]
 
@@ -548,7 +680,9 @@ def run_once():
                 STATUS_INFO["online_since"] = STATUS_INFO["last_event"]; READY_SEEN[0] = True
                 for cmd in ({"name": "pnl", "description": "BetterPicks record and recent results", "type": 1},
                             {"name": "bp", "description": "Ask BetterPicks a question", "type": 1, "options": [
-                                {"type": 3, "name": "question", "description": "What do you want to ask?", "required": True}]}):
+                                {"type": 3, "name": "question", "description": "What do you want to ask?", "required": True}]},
+                            {"name": "verify", "description": "Get Premium with the email you used on Whop", "type": 1, "options": [
+                                {"type": 3, "name": "email", "description": "The email on your Whop purchase", "required": True}]}):
                     try:   # register (or refresh) the slash commands
                         http("POST", f"{API}/applications/{m['d']['application']['id']}/commands", cmd)
                     except Exception as e:
@@ -559,6 +693,8 @@ def run_once():
                 MEMBERS_CHANGED.set()
             if m.get("t") == "GUILD_MEMBER_ADD":
                 threading.Thread(target=og_on_join, args=(m["d"],), daemon=True).start()
+            if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "verify":
+                threading.Thread(target=verify_safe, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "bp":
                 threading.Thread(target=bp_safe, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "pnl":
@@ -592,6 +728,7 @@ if __name__ == "__main__":
         print("could not write version:", e, flush=True)
     threading.Thread(target=answers_loop, daemon=True).start()
     threading.Thread(target=counters_loop, daemon=True).start()
+    threading.Thread(target=whop_loop, daemon=True).start()
     if GH_TOKEN:
         threading.Thread(target=status_loop, daemon=True).start()
     wait = 5
