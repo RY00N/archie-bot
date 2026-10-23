@@ -112,3 +112,4 @@ Moves to an Interactive Brokers paper account once Ryan opens one.
 - 2026-10-20 (hourly study): SPY sizing retuned to x1.18 when SPY agrees, x0.25 when it disagrees (was 1.12/0.5; same average size). Ticks 4c+3c: 24-25 +110.6k dd 17.1 (was 107.8k/17.7), 2026 +77.0k dd 18.6 (was 72.2k/19.0), L10 +21.7k (was 20.6k).
 - 2026-10-21 (hourly study): skips tightened together: prior-day range > 1.60% (was 1.65%) and weak close < 0.35 (was 0.30). Ticks 4c+3c with 1.18/0.25 SPY sizing: 24-25 +118.6k (was 110.6k), 2026 +83.7k dd 15.6k (was 77.0k / 18.6k), L10 +24.7k (was 21.7k).
 - 2026-10-21 7:45pm ET: SPY-disagree trades (0.25x size) now hold 90 min instead of 60 (disagree_hold_min 90). Tick test: 24-25 +123.6k vs 118.6k, 2026 +84.1k vs 83.7k, L10 +25.0k vs 24.7k, drawdown no worse. Small gain; graded nightly.
+- 2026-10-23: Ryan chose to stay on the free IEX signal feed (no $99/mo SIP plan) for paper; revisit when going to real money.
