@@ -345,6 +345,58 @@ def og_on_join(d):
     STATUS_INFO["og_given"] = len(load(OG_GIVEN, []))
 
 
+GUILD = os.environ.get("BP_GUILD_ID", "1509315900874948729")
+# Ryan 2026-10-23: three counter voice channels at the top of the server. Members updates when someone joins
+# or leaves, Wins/Losses when a pick settles (the record in the feed changes; checked every few minutes).
+# Discord allows only 2 renames per channel per 10 minutes, so a change that lands sooner waits its turn.
+COUNTERS = {"members": (os.environ.get("BP_MEMBERS_CH", "1563072752607436900"), "\U0001F464Members: {}"),
+            "wins": (os.environ.get("BP_WINS_CH", "1563072753773318224"), "\U0001F4B0Wins: {}"),
+            "losses": (os.environ.get("BP_LOSSES_CH", "1563072754536677388"), "\u274cLosses: {}")}
+MEMBERS_CHANGED = threading.Event()
+
+
+def human_count():
+    n, after = 0, "0"
+    while True:
+        page = http("GET", f"{API}/guilds/{GUILD}/members?limit=1000&after={after}")
+        n += sum(not m["user"].get("bot") for m in page)
+        if len(page) < 1000:
+            return n
+        after = page[-1]["user"]["id"]
+
+
+def counters_loop():
+    want, shown, renamed, last_rec = {}, {}, {}, 0
+    MEMBERS_CHANGED.set()   # count once at start
+    while True:
+        if MEMBERS_CHANGED.is_set():
+            MEMBERS_CHANGED.clear()
+            try:
+                want["members"] = human_count()
+            except Exception as e:
+                print("member count failed:", e, flush=True); MEMBERS_CHANGED.set()
+        if time.time() - last_rec >= 180:
+            last_rec = time.time()
+            try:
+                rec = (feed().get("verdicts") or {}).get("record") or {}
+            except Exception as e:
+                rec = {}; print("record fetch failed:", e, flush=True)
+            if "won" in rec:
+                want["wins"], want["losses"] = rec["won"], rec["lost"]
+        for k, n in want.items():
+            ch, fmt = COUNTERS[k]
+            if shown.get(k) == n or time.time() - renamed.get(k, 0) < 300:
+                continue
+            try:
+                if shown.get(k) is None and http("GET", f"{API}/channels/{ch}")["name"] == fmt.format(n):
+                    shown[k] = n; continue
+                http("PATCH", f"{API}/channels/{ch}", {"name": fmt.format(n)})
+                shown[k], renamed[k] = n, time.time()
+            except Exception as e:
+                print(f"{k} counter failed:", e, flush=True)
+        MEMBERS_CHANGED.wait(20)
+
+
 STATUS_INFO = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "reconnects": 0}
 READY_SEEN = [False]
 
@@ -503,6 +555,8 @@ def run_once():
                         print("could not register /" + cmd["name"], e, flush=True)
             if m.get("t") == "MESSAGE_CREATE" and INTENTS[0] & 32768:
                 threading.Thread(target=winners_filter, args=(m["d"],), daemon=True).start()
+            if m.get("t") in ("GUILD_MEMBER_ADD", "GUILD_MEMBER_REMOVE"):
+                MEMBERS_CHANGED.set()
             if m.get("t") == "GUILD_MEMBER_ADD":
                 threading.Thread(target=og_on_join, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "bp":
@@ -537,6 +591,7 @@ if __name__ == "__main__":
     except Exception as e:
         print("could not write version:", e, flush=True)
     threading.Thread(target=answers_loop, daemon=True).start()
+    threading.Thread(target=counters_loop, daemon=True).start()
     if GH_TOKEN:
         threading.Thread(target=status_loop, daemon=True).start()
     wait = 5
