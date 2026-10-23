@@ -1667,7 +1667,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 16
  },
  "shadow": [
   {
@@ -4245,8 +4245,8 @@
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.623,
-   "price": 0.45,
-   "edge": 0.156,
+   "price": 0.47,
+   "edge": 0.136,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/7 games without him vs 16/33 with him.",
    "result": null
   },
@@ -4530,8 +4530,8 @@
    "line": 3.5,
    "start": "2026-10-24T01:30:00Z",
    "p": 0.549,
-   "price": 0.49,
-   "edge": 0.042,
+   "price": 0.5,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
