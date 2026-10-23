@@ -1674,24 +1674,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 13:00 PT",
-  "props_today": 1546,
-  "kalshi_props_today": 659,
+  "props_today": 1594,
+  "kalshi_props_today": 679,
   "kalshi_priced_today": 35,
   "books_on_kalshi_props": {
-   "AN Consensus": 593,
-   "AN Open": 594,
-   "BetMGM": 412,
-   "BetRivers": 451,
-   "Caesars": 497,
-   "DraftKings": 522,
-   "FanDuel": 473,
-   "Fanatics": 473,
-   "Parx": 470,
-   "Pinnacle": 365,
-   "Sleeper": 621,
-   "Underdog": 659,
-   "Unibet": 85,
-   "bet365": 593
+   "AN Consensus": 613,
+   "AN Open": 614,
+   "BetMGM": 429,
+   "BetRivers": 471,
+   "Caesars": 517,
+   "DraftKings": 542,
+   "FanDuel": 492,
+   "Fanatics": 492,
+   "Parx": 490,
+   "Pinnacle": 377,
+   "Sleeper": 641,
+   "Underdog": 679,
+   "Unibet": 88,
+   "bet365": 613
   },
   "data_files": [
    "mlb.sqlite",
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 28
+  "kalshi_legs_today": 29
  },
  "shadow": [
   {
@@ -4351,9 +4351,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.422,
-   "price": 0.37,
-   "edge": 0.036,
+   "p": 0.4,
+   "price": 0.35,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4397,8 +4397,8 @@
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
    "p": 0.679,
-   "price": 0.61,
-   "edge": 0.052,
+   "price": 0.6,
+   "edge": 0.062,
    "news": "Injury report: Day-To-Day: Podziemski (back) is probable for Friday's game against the Grizzlies. Moses Moody is out: Brandin Podziemski hit the over in 19/24 games without him vs 6/16 with him.",
    "result": null
   },
@@ -4877,8 +4877,8 @@
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.673,
-   "price": 0.52,
-   "edge": 0.136,
+   "price": 0.53,
+   "edge": 0.126,
    "news": "Grant Williams is out: Brandon Miller hit the under in 13/14 games without him vs 18/26 with him.",
    "result": null
   },
