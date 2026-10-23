@@ -1674,24 +1674,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 02:00 PT",
-  "props_today": 1609,
-  "kalshi_props_today": 611,
+  "props_today": 1616,
+  "kalshi_props_today": 615,
   "kalshi_priced_today": 32,
   "books_on_kalshi_props": {
-   "AN Consensus": 604,
-   "AN Open": 606,
+   "AN Consensus": 609,
+   "AN Open": 610,
    "BetMGM": 93,
    "BetRivers": 235,
-   "Caesars": 499,
-   "DraftKings": 471,
+   "Caesars": 496,
+   "DraftKings": 478,
    "FanDuel": 547,
-   "Fanatics": 464,
+   "Fanatics": 465,
    "Parx": 253,
    "Pinnacle": 216,
    "Sleeper": 576,
-   "Underdog": 611,
+   "Underdog": 615,
    "Unibet": 21,
-   "bet365": 603
+   "bet365": 606
   },
   "data_files": [
    "mlb.sqlite",
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -4126,9 +4126,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.599,
+   "p": 0.598,
    "price": 0.55,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4216,9 +4216,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.397,
+   "p": 0.396,
    "price": 0.35,
-   "edge": 0.031,
+   "edge": 0.03,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4261,9 +4261,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.683,
+   "p": 0.681,
    "price": 0.6,
-   "edge": 0.066,
+   "edge": 0.064,
    "news": "Injury report: Day-To-Day: Podziemski (back) is questionable for Friday's game against the Grizzlies. Moses Moody is out: Brandin Podziemski hit the over in 19/24 games without him vs 6/16 with him.",
    "result": null
   },
@@ -4291,9 +4291,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.462,
+   "p": 0.461,
    "price": 0.38,
-   "edge": 0.066,
+   "edge": 0.065,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
