@@ -555,6 +555,29 @@ STATUS_INFO = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "r
 READY_SEEN = [False]
 
 
+def free_file_loop():
+    """Every 2 min, push the day's free pick (written by discord_post.py) to free_pick_today.json on the ask
+    branch, so the social thread can put it in the morning Reel (Ryan 2026-10-23)."""
+    path, last = os.path.join(WORK, "free_pick_today.json"), None
+    while True:
+        time.sleep(120)
+        try:
+            if not os.path.exists(path):
+                continue
+            raw = open(path, "rb").read()
+            if raw == last:
+                continue
+            try:
+                sha = gh("GET", f"/contents/free_pick_today.json?ref={ASK_BRANCH}")["sha"]
+            except urllib.error.HTTPError:
+                sha = None
+            gh("PUT", "/contents/free_pick_today.json", {"message": "BetterPicks free pick", "branch": ASK_BRANCH,
+               "content": base64.b64encode(raw).decode(), **({"sha": sha} if sha else {})})
+            last = raw
+        except Exception as e:
+            print("free pick push failed:", e, flush=True)
+
+
 def status_loop():
     """Every 15 min, put the bot's health in bot_status.json on the ask branch, so the project thread
     can tell from GitHub whether BetterBot is connected (it can't see the droplet's logs)."""
@@ -762,6 +785,7 @@ if __name__ == "__main__":
     threading.Thread(target=whop_loop, daemon=True).start()
     if GH_TOKEN:
         threading.Thread(target=status_loop, daemon=True).start()
+        threading.Thread(target=free_file_loop, daemon=True).start()
     wait = 5
     while True:
         READY_SEEN[0] = False

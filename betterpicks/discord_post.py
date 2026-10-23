@@ -173,8 +173,23 @@ def free_ok(e):
             not any(w in (l.get("news") or "").lower() for w in shaky) for l in e.get("legs", [])))
 
 
+FREE_FILE = os.path.join(HERE, "free_pick_today.json")   # BetterBot pushes it to betterpicks-ask for the social thread
+
+
+def free_record(e, **extra):
+    l = e["legs"][0]
+    start = datetime.fromisoformat(l["start"].replace("Z", "+00:00")).astimezone(timezone(timedelta(hours=-7)))
+    return {"date": e["date"], "key": key_parlay(e), "player": l.get("player"), "pick": leg_label(l).split(" on ", 1)[-1],
+            "side": "YES" if l.get("side") == "over" else "NO", "sport": l.get("league"), "game": l.get("game"),
+            "start_pt": start.strftime("%-I:%M %p PT"), "win_chance": l.get("p"), "edge": l.get("edge"), **extra}
+
+
 def free_pick(book, sent, day, dry):
     """Copy today's first qualifying lock that already went to PICKS (and hasn't started) to the free channel."""
+    pt = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=-7)))
+    cur = load(FREE_FILE, {})
+    if not dry and cur.get("date") != day and (pt.hour, pt.minute) >= (8, 15) and free_due(sent, day):
+        json.dump({"date": day, "none": True}, open(FREE_FILE, "w"), indent=1)   # nothing qualified by 8:15am PT
     if not free_due(sent, day):
         return
     now = datetime.now(timezone.utc).isoformat()
@@ -189,6 +204,7 @@ def free_pick(book, sent, day, dry):
             print("FREE:", head, k); return
         send(head, [embed_parlay(e)], channel=FREE_CH)
         sent.add(f"free:{k}")
+        json.dump(free_record(e, posted_at=datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")), open(FREE_FILE, "w"), indent=1)
         json.dump(sorted(sent), open(SENT, "w"), indent=1)
         print("posted free pick", k)
         return
@@ -345,6 +361,9 @@ def verdicts(dry=False):
         send(head, [emb])
         if f"free:{v['key']}" in sent:   # the free lock's result goes to the free channel too
             send(head, [emb], channel=FREE_CH)
+            cur = load(FREE_FILE, {})
+            if cur.get("key") == v["key"]:
+                cur["result"] = v.get("status"); json.dump(cur, open(FREE_FILE, "w"), indent=1)
         sent.add(f"verdict:{v['key']}")
         json.dump(sorted(sent), open(SENT, "w"), indent=1)
         print("posted verdict", v["key"])
