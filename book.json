@@ -1674,20 +1674,20 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 03:00 PT",
-  "props_today": 1615,
+  "props_today": 1614,
   "kalshi_props_today": 617,
   "kalshi_priced_today": 33,
   "books_on_kalshi_props": {
    "AN Consensus": 611,
    "AN Open": 612,
    "BetMGM": 163,
-   "BetRivers": 270,
-   "Caesars": 557,
-   "DraftKings": 538,
-   "FanDuel": 547,
+   "BetRivers": 269,
+   "Caesars": 556,
+   "DraftKings": 537,
+   "FanDuel": 546,
    "Fanatics": 466,
-   "Parx": 288,
-   "Pinnacle": 216,
+   "Parx": 287,
+   "Pinnacle": 215,
    "Sleeper": 579,
    "Underdog": 617,
    "Unibet": 32,
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -4292,8 +4292,8 @@
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.619,
-   "price": 0.46,
-   "edge": 0.142,
+   "price": 0.45,
+   "edge": 0.152,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/7 games without him vs 16/33 with him.",
    "result": null
   },
