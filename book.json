@@ -1680,12 +1680,12 @@
   "books_on_kalshi_props": {
    "AN Consensus": 615,
    "AN Open": 617,
-   "BetMGM": 163,
+   "BetMGM": 196,
    "BetRivers": 270,
-   "Caesars": 516,
-   "DraftKings": 539,
+   "Caesars": 557,
+   "DraftKings": 542,
    "FanDuel": 547,
-   "Fanatics": 468,
+   "Fanatics": 467,
    "Parx": 288,
    "Pinnacle": 216,
    "Sleeper": 581,
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 16
  },
  "shadow": [
   {
@@ -4246,9 +4246,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.437,
+   "p": 0.439,
    "price": 0.36,
-   "edge": 0.061,
+   "edge": 0.063,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
    "result": null
   },
@@ -4261,9 +4261,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.471,
+   "p": 0.47,
    "price": 0.39,
-   "edge": 0.064,
+   "edge": 0.063,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4291,9 +4291,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.619,
-   "price": 0.45,
-   "edge": 0.152,
+   "p": 0.621,
+   "price": 0.47,
+   "edge": 0.134,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/7 games without him vs 16/33 with him.",
    "result": null
   },
@@ -4546,9 +4546,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.582,
+   "p": 0.581,
    "price": 0.51,
-   "edge": 0.055,
+   "edge": 0.054,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
    "result": null
   },
@@ -4561,9 +4561,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.53,
+   "p": 0.528,
    "price": 0.48,
-   "edge": 0.033,
+   "edge": 0.031,
    "news": "Shaedon Sharpe is out: Damian Lillard hit the over in 19/23 games without him vs 17/17 with him.",
    "result": null
   },
@@ -4594,6 +4594,21 @@
    "p": 0.544,
    "price": 0.49,
    "edge": 0.037,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KXNBAREB-26OCT23DETMIA-MIABADEBAYO13-10",
+   "league": "nba",
+   "player": "Bam Adebayo",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 9.5,
+   "start": "2026-10-24T00:00:00Z",
+   "p": 0.505,
+   "price": 0.4,
+   "edge": 0.088,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
