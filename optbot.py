@@ -10,7 +10,7 @@ Settings: rules.json "options". daytrader.tick calls ensure_thread(), which star
 step() EVERY SECOND (Ryan 10/17: "these trades are quick"): open trades are checked each second, and the chart is read
 right after each 1-min candle closes. The thread always runs the newest loaded code. PAPER ONLY:
 refuses to run unless the account number starts with PA."""
-import json, math, os, sys, threading, time, traceback
+import json, math, os, re, sys, threading, time, traceback
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -135,7 +135,19 @@ def _contract(bot, sym, side, price, today):
     return None
 
 
+def _shares(c):
+    return c.get("instrument") == "shares"
+
+
+def _stock_px(bot, sym):
+    """Last trade price; 10/23 shares mode prices its limits off this (IEX quotes are often one-sided)."""
+    return float(bot.api("GET", bot.DATA_API, f"/v2/stocks/{sym}/trades/latest")["trade"]["p"])
+
+
 def _quote(bot, osym):
+    if not re.search(r"\d{6}[CP]\d{8}$", osym):  # a stock (shares mode): +-0.2% around the last trade
+        p = _stock_px(bot, osym)
+        return round(p * 0.998, 2), round(p * 1.002, 2)
     q = bot.api("GET", bot.DATA_API, "/v1beta1/options/quotes/latest", {"symbols": osym, "feed": "indicative"})["quotes"][osym]
     return float(q["bp"]), float(q["ap"])
 
@@ -158,7 +170,7 @@ def step(bot, log):
             od = bot.trade("GET", f"/v2/orders/{o['order_id']}")
             if od["status"] == "filled":
                 o.update({"state": "open", "entry": float(od["filled_avg_price"]), "qty": int(float(od["filled_qty"]))})
-                o["stop"] = round(o["entry"] * (1 - c["stop_pct"] / 100), 2); o["peak"] = o["entry"]
+                o["stop"] = round(o["entry"] * (1 - (c.get("share_stop_pct", 15) if o.get("mult") == 1 else c["stop_pct"]) / 100), 2); o["peak"] = o["entry"]
                 log(f"OPT filled {o['qty']} {o['symbol']} @ {o['entry']}")
             elif od["status"] in ("canceled", "expired", "rejected") or m - o["sent_min"] >= 2:
                 if od["status"] not in ("canceled", "expired", "rejected"):
@@ -174,7 +186,7 @@ def step(bot, log):
                     bot.trade("DELETE", f"/v2/orders/{o['close_id']}"); o["state"] = "open"  # re-try next pass at the bid
                 save(st)
                 return
-            x = float(od["filled_avg_price"]); pnl = round((x - o["entry"]) * 100 * o["qty"], 2)
+            x = float(od["filled_avg_price"]); pnl = round((x - o["entry"]) * o.get("mult", 100) * o["qty"], 2)
             tr = {**{k: o[k] for k in ("symbol", "side", "why", "qty", "entry", "entry_time")}, "exit": x,
                   "exit_time": now.isoformat()[:16], "how": o["how"], "pnl": pnl}
             st["history"].append(tr); st["realized"] = round(st.get("realized", 0) + pnl, 2)
@@ -218,30 +230,33 @@ def step(bot, log):
     if sig[0] == "skip":
         st["done"], st["why_done"] = True, f"skipped: {sig[1]}"; log(f"OPT {st['why_done']}"); save(st); return
     side, why, px, sm = sig; st["last_sig_min"] = sm
-    osym = _contract(bot, c["symbol"], side, px, today)
+    osym = (c["bull"] if side > 0 else c["bear"]) if _shares(c) else _contract(bot, c["symbol"], side, px, today)
     if not osym:
         log(f"OPT {why}: no contract found"); save(st); return
     bid, ask = _quote(bot, osym)
-    if ask > 0 and (bid + ask) / 2 / px * 100 > c.get("max_opt_pct", 99):  # option too expensive = market too jumpy
+    if not _shares(c) and ask > 0 and (bid + ask) / 2 / px * 100 > c.get("max_opt_pct", 99):  # option too expensive = market too jumpy
         if not c.get("skip_trade_mult"):
             st["done"], st["why_done"] = True, f"skipped: option too expensive ({(bid + ask) / 2:.2f})"
             log(f"OPT {st['why_done']}"); save(st); return
         _last["skip_why"] = _last.get("skip_why") or f"option too expensive ({(bid + ask) / 2:.2f})"
-    agree = _last.get("spy_agree")
+    agree = None if _shares(c) else _last.get("spy_agree")  # shares mode: tested without SPY sizing
     mult = 1.0 if agree is None else c.get("spy_agree_mult", 1.0) if agree else c.get("spy_disagree_mult", 1.0)
     if agree is not None:
         why += f" (SPY {'agrees' if agree else 'disagrees'}, size x{mult})"
     if _last.get("skip_why") and c.get("skip_trade_mult"):
         mult *= c["skip_trade_mult"]; why += f" (skip day: {_last['skip_why']}, small size x{c['skip_trade_mult']})"
-    qty = int(c["size"] * mult // (ask * 100)) if ask > 0 else 0
-    if c.get("min_qty") and ask > 0:  # 10/23 Ryan: "treat it like i gave u $1000": always 1+ contract if the account can pay for it
+    unit = 1 if _shares(c) else 100
+    qty = int(c["size"] * mult // (ask * unit)) if ask > 0 else 0
+    if _shares(c) and ask > 0:  # 10/23: shares mode puts the whole $1k book in each trade (backtest: +78% in 2024-25, dd 9%)
+        qty = int((c["budget_start"] + st.get("realized", 0)) * c.get("book_frac", 1.0) * mult // ask)
+    elif c.get("min_qty") and ask > 0:  # 10/23 Ryan: "treat it like i gave u $1000": always 1+ contract if the account can pay for it
         cash = c["budget_start"] + st.get("realized", 0)
         qty = min(max(qty, c["min_qty"]), int(cash // (ask * 100)))
     if qty < 1:
         save(st); return
     od = bot.trade("POST", "/v2/orders", body={"symbol": osym, "qty": str(qty), "side": "buy", "type": "limit",
                                                 "limit_price": f"{ask:.2f}", "time_in_force": "day"})
-    st["open"] = {"state": "pending", "order_id": od["id"], "symbol": osym, "side": "call" if side > 0 else "put",
+    st["open"] = {"state": "pending", "order_id": od["id"], "symbol": osym, "side": ("up" if side > 0 else "down") if _shares(c) else "call" if side > 0 else "put", "mult": unit,
                   "why": why, "qty": qty, "sent_min": m, "entry_min": m, "entry_time": now.isoformat()[:16],
                   "hold": c.get("disagree_hold_min", c["max_hold_min"]) if agree is False else c["max_hold_min"]}
     st["trades"] += 1
@@ -251,8 +266,8 @@ def step(bot, log):
 
 def summary():
     c = cfg(); st = load(); o = st.get("open") or {}
-    eq = c["budget_start"] + st.get("realized", 0) + ((o.get("price", o.get("entry", 0)) - o.get("entry", 0)) * 100 * o.get("qty", 0) if o.get("state") == "open" else 0)
-    return {"name": "QQQ options scalper (Alpaca paper)", "enabled": c["enabled"], "budget_start": c["budget_start"],
+    eq = c["budget_start"] + st.get("realized", 0) + ((o.get("price", o.get("entry", 0)) - o.get("entry", 0)) * o.get("mult", 100) * o.get("qty", 0) if o.get("state") == "open" else 0)
+    return {"name": "TQQQ/SQQQ first-5 day trade (Alpaca paper)" if _shares(c) else "QQQ options scalper (Alpaca paper)", "enabled": c["enabled"], "budget_start": c["budget_start"],
             "equity": round(eq, 2), "day_pnl": st.get("day_pnl", 0), "realized": st.get("realized", 0),
             "positions": [o] if o else [], "trades": st.get("history", [])[-50:],
             "status": ("off" if not c["enabled"] else st.get("why_done") or ("in a trade" if o else "watching")), "date": st.get("date")}
