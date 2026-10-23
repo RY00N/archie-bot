@@ -1676,21 +1676,21 @@
   "props_at": "2026-10-23 14:00 PT",
   "props_today": 1440,
   "kalshi_props_today": 658,
-  "kalshi_priced_today": 48,
+  "kalshi_priced_today": 49,
   "books_on_kalshi_props": {
-   "AN Consensus": 648,
+   "AN Consensus": 647,
    "AN Open": 650,
    "BetMGM": 473,
-   "BetRivers": 470,
-   "Caesars": 543,
+   "BetRivers": 471,
+   "Caesars": 544,
    "DraftKings": 563,
-   "FanDuel": 503,
-   "Fanatics": 521,
+   "FanDuel": 502,
+   "Fanatics": 519,
    "Parx": 503,
    "Pinnacle": 390,
    "Sleeper": 608,
    "Underdog": 658,
-   "Unibet": 109,
+   "Unibet": 111,
    "bet365": 644
   },
   "data_files": [
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 32
+  "kalshi_legs_today": 31
  },
  "shadow": [
   {
@@ -4171,9 +4171,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.587,
+   "p": 0.588,
    "price": 0.51,
-   "edge": 0.06,
+   "edge": 0.061,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4381,9 +4381,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.489,
+   "p": 0.487,
    "price": 0.36,
-   "edge": 0.113,
+   "edge": 0.111,
    "news": "Jake LaRavia (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -4486,9 +4486,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.609,
+   "p": 0.61,
    "price": 0.55,
-   "edge": 0.042,
+   "edge": 0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4817,8 +4817,8 @@
    "line": 34.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.661,
-   "price": 0.54,
-   "edge": 0.104,
+   "price": 0.55,
+   "edge": 0.094,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/14 games without him vs 19/26 with him.",
    "result": null
   },
@@ -4861,9 +4861,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.566,
+   "p": 0.567,
    "price": 0.51,
-   "edge": 0.039,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5314,6 +5314,36 @@
    "p": 0.478,
    "price": 0.43,
    "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLREC-26OCT25PITNO-NOJJOHNSON83-4",
+   "league": "nfl",
+   "player": "Juwan Johnson",
+   "stat": "receptions",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-25T13:30:00Z",
+   "p": 0.551,
+   "price": 0.49,
+   "edge": 0.044,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLRSHATT-26OCT25PITNO-NOKMILLER5-13",
+   "league": "nfl",
+   "player": "Kendre Miller",
+   "stat": "rush_att",
+   "side": "under",
+   "line": 12.5,
+   "start": "2026-10-25T13:30:00Z",
+   "p": 0.628,
+   "price": 0.57,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
