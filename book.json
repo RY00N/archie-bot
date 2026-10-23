@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 25
+  "kalshi_legs_today": 27
  },
  "shadow": [
   {
@@ -4051,9 +4051,9 @@
    "side": "over",
    "line": 4.5,
    "start": "2026-10-24T00:00:00Z",
-   "p": 0.484,
+   "p": 0.485,
    "price": 0.43,
-   "edge": 0.037,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4171,9 +4171,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.594,
+   "p": 0.592,
    "price": 0.54,
-   "edge": 0.037,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4712,8 +4712,8 @@
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.525,
-   "price": 0.45,
-   "edge": 0.058,
+   "price": 0.46,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4801,9 +4801,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.539,
-   "price": 0.49,
-   "edge": 0.032,
+   "p": 0.535,
+   "price": 0.48,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
