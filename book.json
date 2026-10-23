@@ -1541,6 +1541,38 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-22",
+   "app": "Kalshi",
+   "type": "1-leg lock: Nickeil Alexander-Walker over 2.5 threes",
+   "stake": 5.0,
+   "payout_x": 1.89,
+   "win_p": 0.608,
+   "ev_pct": 14.7,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Nickeil Alexander-Walker",
+     "team": "ATL",
+     "stat": "threes",
+     "side": "over",
+     "line": 2.5,
+     "price": 0.53,
+     "ticker": "KXNBA3PT-26OCT23ATLCHA-ATLNALEXANDERWALKER7-3",
+     "game": "ATL @ CHA",
+     "start": "2026-10-23T23:00:00Z",
+     "p": 0.608,
+     "edge": 0.061,
+     "news": "No injury or off-field red flags in the last 3 days.",
+     "why": "Nickeil Alexander-Walker over 2.5 threes: 3 books price it 56%; hit 83% of last 12 (avg 3.9); 2/4 over vs CHA, avg 2.5. In games vs CHA: 1.8 avg over 12 games, 28% of that rotation is still there, so the matchup counts as 37% over 2.5. Fair 61%.",
+     "case": "Last 5 games: 5, 6, 4, 1, 4 (4 of 5 over 2.5). In games vs CHA: 1.8 avg over 12 games, 28% of that rotation is still there, so the matchup counts as 37% over 2.5.",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
@@ -3968,8 +4000,8 @@
    "line": 2.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.608,
-   "price": 0.55,
-   "edge": 0.041,
+   "price": 0.53,
+   "edge": 0.061,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
