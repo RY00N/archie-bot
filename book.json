@@ -1676,22 +1676,22 @@
   "props_at": "2026-10-23 13:00 PT",
   "props_today": 1449,
   "kalshi_props_today": 621,
-  "kalshi_priced_today": 33,
+  "kalshi_priced_today": 34,
   "books_on_kalshi_props": {
-   "AN Consensus": 611,
+   "AN Consensus": 612,
    "AN Open": 614,
-   "BetMGM": 447,
+   "BetMGM": 443,
    "BetRivers": 472,
    "Caesars": 518,
    "DraftKings": 542,
    "FanDuel": 492,
-   "Fanatics": 491,
+   "Fanatics": 492,
    "Parx": 491,
    "Pinnacle": 377,
    "Sleeper": 584,
    "Underdog": 621,
-   "Unibet": 100,
-   "bet365": 613
+   "Unibet": 101,
+   "bet365": 610
   },
   "data_files": [
    "mlb.sqlite",
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 29
+  "kalshi_legs_today": 28
  },
  "shadow": [
   {
@@ -4081,9 +4081,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-24T00:00:00Z",
-   "p": 0.448,
+   "p": 0.446,
    "price": 0.39,
-   "edge": 0.041,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4366,9 +4366,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.443,
+   "p": 0.442,
    "price": 0.36,
-   "edge": 0.067,
+   "edge": 0.066,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
    "result": null
   },
@@ -4396,9 +4396,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.68,
+   "p": 0.679,
    "price": 0.6,
-   "edge": 0.063,
+   "edge": 0.062,
    "news": "Injury report: Day-To-Day: Podziemski (back) is probable for Friday's game against the Grizzlies. Moses Moody is out: Brandin Podziemski hit the over in 19/24 games without him vs 6/16 with him.",
    "result": null
   },
@@ -4651,9 +4651,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.639,
+   "p": 0.64,
    "price": 0.47,
-   "edge": 0.152,
+   "edge": 0.153,
    "news": "Caleb Martin is out: Naji Marshall hit the over in 11/16 games without him vs 9/24 with him; Tarik Biberovic (F) is out, so Naji Marshall's role likely grows.",
    "result": null
   },
