@@ -548,6 +548,14 @@ def status_loop():
             body = dict(STATUS_INFO, at=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
             ws_state = os.path.join(WORK, ".whop_wins_state")   # written by whop_wins.py after each Whop page update
             body["whop_key"] = bool(os.environ.get("WHOP_BP_API"))
+            try:
+                import PIL  # noqa: F401  (whop_gallery.py needs Pillow on the droplet)
+                body["pillow"] = True
+            except ImportError:
+                body["pillow"] = False
+            for k, f in (("whop_gallery_updated", ".whop_gallery_state"),):
+                if os.path.exists(os.path.join(WORK, f)):
+                    body[k] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(os.path.getmtime(os.path.join(WORK, f))))
             if os.path.exists(ws_state):
                 body["whop_page_updated"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(os.path.getmtime(ws_state)))
             body.pop("pushed", None)
