@@ -6,6 +6,8 @@ R=$HOME/archie-push
 [ -d "$R/.git" ] || git clone -q https://github.com/RY00N/archie-bot "$R"
 cd "$R" && git pull -q --ff-only origin main
 python3 xfeed.py
+# keep the shared project folder copy fresh too (Archie and the research bot read it there)
+[ -d /mnt/project-files/archie/feeds ] && cp feeds/qqq-x.json /mnt/project-files/archie/feeds/qqq-x.json || true
 git add feeds/qqq-x.json
 if git diff --cached --quiet; then echo "x feed unchanged"; exit 0; fi
 git -c user.name="Archie (Claude)" -c user.email="noreply@anthropic.com" commit -q -m "Archie: X feed $(date -u +%FT%H:%MZ)
