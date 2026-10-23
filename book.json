@@ -1674,21 +1674,21 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 15:00 PT",
-  "props_today": 1461,
+  "props_today": 1470,
   "kalshi_props_today": 668,
-  "kalshi_priced_today": 48,
+  "kalshi_priced_today": 49,
   "books_on_kalshi_props": {
    "AN Consensus": 660,
    "AN Open": 661,
    "BetMGM": 472,
-   "BetRivers": 475,
+   "BetRivers": 473,
    "Caesars": 549,
    "DraftKings": 576,
-   "FanDuel": 511,
-   "Fanatics": 520,
-   "Parx": 507,
+   "FanDuel": 515,
+   "Fanatics": 530,
+   "Parx": 506,
    "Pinnacle": 390,
-   "Sleeper": 617,
+   "Sleeper": 610,
    "Underdog": 668,
    "Unibet": 113,
    "bet365": 657
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 26
+  "kalshi_legs_today": 27
  },
  "shadow": [
   {
@@ -4156,9 +4156,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-24T00:00:00Z",
-   "p": 0.434,
-   "price": 0.38,
-   "edge": 0.038,
+   "p": 0.438,
+   "price": 0.39,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4171,9 +4171,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.589,
+   "p": 0.588,
    "price": 0.5,
-   "edge": 0.071,
+   "edge": 0.07,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4441,9 +4441,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.478,
+   "p": 0.479,
    "price": 0.37,
-   "edge": 0.092,
+   "edge": 0.093,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4487,8 +4487,8 @@
    "line": 1.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.609,
-   "price": 0.55,
-   "edge": 0.042,
+   "price": 0.54,
+   "edge": 0.052,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4547,8 +4547,8 @@
    "line": 2.5,
    "start": "2026-10-24T02:00:00Z",
    "p": 0.397,
-   "price": 0.35,
-   "edge": 0.031,
+   "price": 0.34,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4816,9 +4816,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.591,
+   "p": 0.59,
    "price": 0.54,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5359,6 +5359,21 @@
    "p": 0.48,
    "price": 0.43,
    "edge": 0.033,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KXNBASTL-26OCT23TORWAS-TORIQUICKLEY5-2",
+   "league": "nba",
+   "player": "Immanuel Quickley",
+   "stat": "steals",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-23T23:00:00Z",
+   "p": 0.496,
+   "price": 0.41,
+   "edge": 0.069,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
