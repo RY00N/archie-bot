@@ -49,8 +49,8 @@ def verdicts():
     live = [e for e in posted if not e.get("retracted")]
     picks = [{"date": e["date"], "type": e["type"], "status": e["status"], "pnl": e["pnl"],
               "legs": [{k: l.get(k) for k in LEG_KEEP} for l in e["legs"]]}
-             for e in sorted(book.get("parlays", []), key=lambda x: x["date"]) if record.counts(e) and e["status"] in ("won", "lost")][-10:]
-    return {"parlays": out, "record": rec | {"recent": picks}, "props": prop_record([e for e in live if record.counts(e)]),
+             for e in sorted(book.get("parlays", []), key=lambda x: x["date"]) if record.counts(e) and e["status"] in ("won", "lost")]
+    return {"parlays": out, "record": rec | {"recent": picks[-10:]}, "counted": picks,   # counted: whop_wins.py on the droplet "props": prop_record([e for e in live if record.counts(e)]),
             "delays": delays(live), "board": board(live),
             "retract": retract}
 

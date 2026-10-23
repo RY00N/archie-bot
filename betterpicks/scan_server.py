@@ -16,7 +16,7 @@ import gzip, hashlib, json, os, re, shutil, subprocess, sys, time
 REPO = os.environ.get("BP_REPO", "/home/archie/bp-repo")
 WORK = os.environ.get("BP_WORK", "/home/archie/bp")
 EVERY = int(os.environ.get("SCAN_EVERY", "180"))
-CODE = ["books.py", "betterpicks.py", "parlays.py", "discord_post.py", "news.py", "rules.json", "record.py"]
+CODE = ["books.py", "betterpicks.py", "parlays.py", "discord_post.py", "news.py", "rules.json", "record.py", "whop_wins.py"]
 
 
 def log(*a):
@@ -103,6 +103,8 @@ def scan():
     step(w("books.py"), "props")
     out = (step(w("betterpicks.py"), "pick") if sportsbook else "") + step(w("parlays.py"), "build")
     posted = step(w("discord_post.py"), "today")
+    if os.path.exists(w("whop_wins.py")):   # Ryan 2026-10-23: every win on the Whop page (skips without WHOP_BP_API)
+        step(w("whop_wins.py"), timeout=60)
     if "posted" in posted:
         log(out.strip()[:500]); log(posted.strip())
     if digest("book.json", "discord_posted.json") != before:
