@@ -1546,7 +1546,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-22 17:00 PT",
-  "props_today": 110,
+  "props_today": 109,
   "kalshi_props_today": 52,
   "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
@@ -1562,7 +1562,7 @@
    "Pinnacle": 33,
    "Sleeper": 51,
    "Underdog": 52,
-   "bet365": 51
+   "bet365": 52
   },
   "data_files": [
    "mlb.sqlite",
