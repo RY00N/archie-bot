@@ -356,6 +356,10 @@ def status_loop():
         time.sleep(60 if "pushed" not in STATUS_INFO else 900)
         try:
             body = dict(STATUS_INFO, at=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+            ws_state = os.path.join(WORK, ".whop_wins_state")   # written by whop_wins.py after each Whop page update
+            body["whop_key"] = bool(os.environ.get("WHOP_BP_API"))
+            if os.path.exists(ws_state):
+                body["whop_page_updated"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(os.path.getmtime(ws_state)))
             body.pop("pushed", None)
             try:
                 sha = gh("GET", f"/contents/bot_status.json?ref={ASK_BRANCH}")["sha"]
