@@ -299,7 +299,27 @@ def pnl_text():
     return "\n".join(lines)[:1990]
 
 
-INTENTS = [2]   # drops to 0 if Discord refuses the members intent (close 4014), so the bot stays online
+# GUILD_MEMBERS (2) for the OG giveaway, GUILD_MESSAGES (512) + MESSAGE_CONTENT (32768) for the image-only
+# WINNERS channel. On close 4014 it steps down a level, so the bot stays online; the image filter only runs
+# with MESSAGE_CONTENT, since without it every attachment list arrives empty and real images would be deleted.
+INTENT_LEVELS = [2 | 512 | 32768, 2, 0]
+INTENTS = [INTENT_LEVELS[0]]
+WINNERS = os.environ.get("BP_WINNERS_CHANNEL_ID", "1509697436480700537")
+IMAGE_EXT = (".png", ".jpg", ".jpeg", ".gif", ".webp", ".heic", ".bmp")
+
+
+def winners_filter(d):
+    """Ryan 2026-10-23: WINNERS is image only; a message without an image gets deleted."""
+    if d.get("channel_id") != WINNERS or (d.get("author") or {}).get("bot") or d.get("type") not in (0, 19):
+        return
+    for a in d.get("attachments") or []:
+        if (a.get("content_type") or "").startswith("image/") or a.get("filename", "").lower().endswith(IMAGE_EXT):
+            return
+    try:
+        http("DELETE", f"{API}/channels/{WINNERS}/messages/{d['id']}")
+        print("WINNERS: deleted a text-only message from", (d.get("author") or {}).get("username"), flush=True)
+    except Exception as e:
+        print("WINNERS delete failed:", e, flush=True)
 OG_ROLE, OG_MAX = os.environ.get("BP_OG_ROLE_ID", "1563068490162642974"), 15
 OG_GIVEN = os.path.join(WORK, "og_given.json")
 
@@ -455,7 +475,7 @@ def run_once():
     ws.s.settimeout(interval * 2 + 15)   # recv raises instead of hanging if Discord goes quiet
     threading.Thread(target=beat, daemon=True).start()
     ws.send({"op": 2, "d": {
-        "token": TOKEN, "intents": INTENTS[0],   # GUILD_MEMBERS: see new joins for the OG Premium giveaway
+        "token": TOKEN, "intents": INTENTS[0],   # see INTENT_LEVELS
         "properties": {"os": "linux", "browser": "betterpicks", "device": "betterpicks"},
         "presence": {"status": "online", "afk": False, "since": None,
                      "activities": [{"name": STATUS, "type": 3}]}}})   # type 3 = "Watching ..."
@@ -477,6 +497,8 @@ def run_once():
                         http("POST", f"{API}/applications/{m['d']['application']['id']}/commands", cmd)
                     except Exception as e:
                         print("could not register /" + cmd["name"], e, flush=True)
+            if m.get("t") == "MESSAGE_CREATE" and INTENTS[0] & 32768:
+                threading.Thread(target=winners_filter, args=(m["d"],), daemon=True).start()
             if m.get("t") == "GUILD_MEMBER_ADD":
                 threading.Thread(target=og_on_join, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "bp":
@@ -522,7 +544,8 @@ if __name__ == "__main__":
             print("disconnected:", e, flush=True)
             STATUS_INFO["reconnects"] += 1; STATUS_INFO["last_error"] = str(e)[:200]
             if "4014" in str(e) and INTENTS[0]:
-                print("members intent not allowed; running without the OG giveaway", flush=True); INTENTS[0] = 0
+                INTENTS[0] = INTENT_LEVELS[INTENT_LEVELS.index(INTENTS[0]) + 1]
+                print("intent refused; stepping down to", INTENTS[0], flush=True)
             if "4004" in str(e):
                 sys.exit("bad bot token (4004); fix DISCORD_BOT_TOKEN")
         wait = 5 if READY_SEEN[0] else min(wait * 2, 300)
