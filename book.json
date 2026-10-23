@@ -1610,7 +1610,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 00:00 PT",
-  "props_today": 1555,
+  "props_today": 1557,
   "kalshi_props_today": 593,
   "kalshi_priced_today": 31,
   "books_on_kalshi_props": {
@@ -1618,13 +1618,13 @@
    "AN Open": 588,
    "BetMGM": 51,
    "BetRivers": 234,
-   "Caesars": 324,
+   "Caesars": 334,
    "DraftKings": 311,
    "FanDuel": 544,
-   "Fanatics": 456,
+   "Fanatics": 458,
    "Parx": 252,
    "Pinnacle": 216,
-   "Sleeper": 545,
+   "Sleeper": 553,
    "Underdog": 593,
    "Unibet": 18,
    "bet365": 585
@@ -1635,7 +1635,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 11
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -4153,8 +4153,8 @@
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
    "p": 0.438,
-   "price": 0.36,
-   "edge": 0.062,
+   "price": 0.35,
+   "edge": 0.072,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
    "result": null
   },
@@ -4377,9 +4377,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.591,
+   "p": 0.588,
    "price": 0.52,
-   "edge": 0.054,
+   "edge": 0.051,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
    "result": null
   },
