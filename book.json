@@ -1676,19 +1676,19 @@
   "props_at": "2026-10-23 03:00 PT",
   "props_today": 1616,
   "kalshi_props_today": 617,
-  "kalshi_priced_today": 32,
+  "kalshi_priced_today": 33,
   "books_on_kalshi_props": {
-   "AN Consensus": 612,
+   "AN Consensus": 611,
    "AN Open": 612,
    "BetMGM": 163,
-   "BetRivers": 235,
+   "BetRivers": 270,
    "Caesars": 557,
-   "DraftKings": 527,
+   "DraftKings": 538,
    "FanDuel": 547,
    "Fanatics": 466,
-   "Parx": 253,
+   "Parx": 288,
    "Pinnacle": 216,
-   "Sleeper": 578,
+   "Sleeper": 429,
    "Underdog": 617,
    "Unibet": 32,
    "bet365": 609
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 14
  },
  "shadow": [
   {
@@ -4171,9 +4171,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-23T20:00:00Z",
-   "p": 0.44,
+   "p": 0.438,
    "price": 0.39,
-   "edge": 0.033,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4292,8 +4292,8 @@
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.619,
-   "price": 0.46,
-   "edge": 0.142,
+   "price": 0.44,
+   "edge": 0.162,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/7 games without him vs 16/33 with him.",
    "result": null
   },
@@ -4336,9 +4336,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.611,
+   "p": 0.612,
    "price": 0.55,
-   "edge": 0.044,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4389,6 +4389,21 @@
   },
   {
    "date": "2026-10-23",
+   "ticker": "KXNBAAST-26OCT23HOUSAS-HOUKDURANT7-4",
+   "league": "nba",
+   "player": "Kevin Durant",
+   "stat": "assists",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-24T01:30:00Z",
+   "p": 0.594,
+   "price": 0.54,
+   "edge": 0.037,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
    "ticker": "KXNBAAST-26OCT23LACLAL-LALAREAVES15-6",
    "league": "nba",
    "player": "Austin Reaves",
@@ -4430,6 +4445,21 @@
    "price": 0.57,
    "edge": 0.132,
    "news": "Jimmy Butler III is out: Draymond Green hit the over in 24/37 games without him vs 0/3 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KXNBAPRA-26OCT23ATLCHA-CHABMILLER24-35",
+   "league": "nba",
+   "player": "Brandon Miller",
+   "stat": "pra",
+   "side": "under",
+   "line": 34.5,
+   "start": "2026-10-23T23:00:00Z",
+   "p": 0.654,
+   "price": 0.55,
+   "edge": 0.087,
+   "news": "Grant Williams is out: Brandon Miller hit the under in 12/14 games without him vs 19/26 with him.",
    "result": null
   },
   {
