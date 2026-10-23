@@ -1546,7 +1546,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-22 17:00 PT",
-  "props_today": 340,
+  "props_today": 341,
   "kalshi_props_today": 109,
   "kalshi_priced_today": 10,
   "books_on_kalshi_props": {
@@ -1556,7 +1556,7 @@
    "BetRivers": 64,
    "Caesars": 93,
    "DraftKings": 106,
-   "FanDuel": 99,
+   "FanDuel": 98,
    "Fanatics": 76,
    "Hard Rock Bet": 38,
    "Parx": 86,
@@ -1564,7 +1564,7 @@
    "Sleeper": 105,
    "Underdog": 109,
    "Unibet": 13,
-   "bet365": 105
+   "bet365": 107
   },
   "data_files": [
    "mlb.sqlite",
@@ -3819,9 +3819,9 @@
    "side": "over",
    "line": 33.5,
    "start": "2026-10-23T00:15:00Z",
-   "p": 0.581,
+   "p": 0.58,
    "price": 0.47,
-   "edge": 0.094,
+   "edge": 0.093,
    "news": "NE's DT Joshua Farmer is out, an easier matchup; NE's CB Carlton Davis III is out, an easier matchup.",
    "result": null
   },
