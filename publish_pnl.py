@@ -229,7 +229,26 @@ def snapshot(bot, market_open):
     return {"book": "paper", "note": "Practice money. Never counts toward real totals.",
             "updated": datetime.now(timezone.utc).isoformat()[:19] + "Z", "market_open": market_open,
             "swing_enabled": bot.RULES.get("swing_enabled", True),  # off = city hides the swing P&L
-            **combined, "swing": swing, "day": day, "futures": _futures(), "prop": _prop(), "gapfill": _gapfill(), "droplong": _droplong(), "options": _options(), "meme": _meme(), "xfeed": _xfeed(), **_live()}
+            **combined, "swing": swing, "day": day, "futures": _futures(), "prop": _prop(), "gapfill": _gapfill(), "droplong": _droplong(), "options": _options(), "meme": _meme(), "xfeed": _xfeed(), "intel": _intel(), **_live()}
+
+
+def _intel():
+    """10/23 Ryan: "fix X and slave not feeding info to archie". The Slave's digest (feeds/qqq-intel.json, which
+    includes the filtered useful X posts) and verified catalysts only lived on this server; publish a short copy
+    here so the cloud study sessions can read them from live/pnl.json. Info only."""
+    out = {}
+    try:
+        r = json.load(open(os.path.join(HERE, "feeds", "qqq-intel.json")))
+        x = r.get("x") or {}
+        out = {"at_et": r.get("at_et"), "say": (r.get("summary") or {}).get("say", "")[:600],
+               "x_updated": x.get("updated"), "x_raw": x.get("raw_posts"), "x_useful": (x.get("useful") or [])[:8]}
+    except Exception as e:
+        out = {"error": str(e)[:80]}
+    try:
+        out["catalysts"] = json.load(open(os.path.join(HERE, "feeds", "qqq-catalysts.json")))[:3]
+    except Exception:
+        pass
+    return out
 
 
 def _xfeed():
