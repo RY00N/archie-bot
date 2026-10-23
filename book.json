@@ -1673,7 +1673,7 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-23 10:00 PT",
+  "props_at": "2026-10-23 11:00 PT",
   "props_today": 1659,
   "kalshi_props_today": 632,
   "kalshi_priced_today": 36,
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 25
+  "kalshi_legs_today": 29
  },
  "shadow": [
   {
@@ -4052,8 +4052,8 @@
    "line": 4.5,
    "start": "2026-10-24T00:00:00Z",
    "p": 0.484,
-   "price": 0.41,
-   "edge": 0.057,
+   "price": 0.43,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4622,8 +4622,8 @@
    "line": 34.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.66,
-   "price": 0.56,
-   "edge": 0.083,
+   "price": 0.55,
+   "edge": 0.093,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/14 games without him vs 19/26 with him.",
    "result": null
   },
@@ -4666,9 +4666,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.57,
+   "p": 0.571,
    "price": 0.52,
-   "edge": 0.033,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4794,6 +4794,21 @@
   },
   {
    "date": "2026-10-23",
+   "ticker": "KXNBAPTS-26OCT23MINORL-MINJMCDANIELS3-15",
+   "league": "nba",
+   "player": "Jaden McDaniels",
+   "stat": "points",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-10-23T23:00:00Z",
+   "p": 0.518,
+   "price": 0.47,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
    "ticker": "KXNBAPTS-26OCT23PORSAC-PORDLILLARD0-20",
    "league": "nba",
    "player": "Damian Lillard",
@@ -4876,9 +4891,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.605,
-   "price": 0.55,
-   "edge": 0.038,
+   "p": 0.617,
+   "price": 0.56,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
