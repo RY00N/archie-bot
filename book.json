@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 26
+  "kalshi_legs_today": 28
  },
  "shadow": [
   {
@@ -4606,9 +4606,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.648,
-   "price": 0.48,
-   "edge": 0.151,
+   "p": 0.641,
+   "price": 0.47,
+   "edge": 0.154,
    "news": "Caleb Martin is out: Naji Marshall hit the over in 11/16 games without him vs 9/24 with him; Tarik Biberovic (F) is out, so Naji Marshall's role likely grows.",
    "result": null
   },
@@ -4756,9 +4756,9 @@
    "side": "under",
    "line": 34.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.659,
-   "price": 0.55,
-   "edge": 0.092,
+   "p": 0.661,
+   "price": 0.56,
+   "edge": 0.084,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/14 games without him vs 19/26 with him.",
    "result": null
   },
