@@ -535,6 +535,23 @@ def whop_loop():
         time.sleep(600)
 
 
+PURCHASE_CH = os.environ.get("BP_PURCHASE_CHANNEL_ID", "1509754956666634382")
+
+
+def purchase_ping(d):
+    """Ryan 2026-10-23: @ each new member in Purchase, then delete it, so the channel lights up for them."""
+    u = d.get("user") or {}
+    if u.get("bot"):
+        return
+    try:
+        msg = http("POST", f"{API}/channels/{PURCHASE_CH}/messages",
+                   {"content": f"<@{u['id']}>", "allowed_mentions": {"users": [u["id"]]}})
+        time.sleep(2)
+        http("DELETE", f"{API}/channels/{PURCHASE_CH}/messages/{msg['id']}")
+    except Exception as e:
+        print("purchase ping failed:", e, flush=True)
+
+
 STATUS_INFO = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "reconnects": 0}
 READY_SEEN = [False]
 
@@ -706,6 +723,7 @@ def run_once():
             if m.get("t") in ("GUILD_MEMBER_ADD", "GUILD_MEMBER_REMOVE"):
                 MEMBERS_CHANGED.set()
             if m.get("t") == "GUILD_MEMBER_ADD":
+                threading.Thread(target=purchase_ping, args=(m["d"],), daemon=True).start()
                 threading.Thread(target=og_on_join, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "verify":
                 threading.Thread(target=verify_safe, args=(m["d"],), daemon=True).start()
