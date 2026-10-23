@@ -1674,22 +1674,22 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 16:00 PT",
-  "props_today": 1473,
-  "kalshi_props_today": 675,
-  "kalshi_priced_today": 36,
+  "props_today": 1364,
+  "kalshi_props_today": 630,
+  "kalshi_priced_today": 37,
   "books_on_kalshi_props": {
    "AN Consensus": 404,
    "AN Open": 405,
    "BetMGM": 293,
    "BetRivers": 251,
-   "Caesars": 327,
-   "DraftKings": 329,
-   "FanDuel": 289,
-   "Fanatics": 304,
+   "Caesars": 328,
+   "DraftKings": 331,
+   "FanDuel": 297,
+   "Fanatics": 305,
    "Parx": 282,
    "Pinnacle": 221,
-   "Sleeper": 617,
-   "Underdog": 675,
+   "Sleeper": 572,
+   "Underdog": 630,
    "Unibet": 70,
    "bet365": 402
   },
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 23
+  "kalshi_legs_today": 22
  },
  "shadow": [
   {
@@ -4081,9 +4081,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-24T00:00:00Z",
-   "p": 0.443,
+   "p": 0.444,
    "price": 0.39,
-   "edge": 0.036,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4381,9 +4381,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.492,
+   "p": 0.493,
    "price": 0.36,
-   "edge": 0.116,
+   "edge": 0.117,
    "news": "Jake LaRavia (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -5041,9 +5041,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.549,
+   "p": 0.55,
    "price": 0.5,
-   "edge": 0.032,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
