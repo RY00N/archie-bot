@@ -545,8 +545,7 @@ def purchase_ping(d):
         return
     try:
         msg = http("POST", f"{API}/channels/{PURCHASE_CH}/messages",
-                   {"content": f"<@{u['id']}>", "allowed_mentions": {"users": [u["id"]]}})
-        time.sleep(2)
+                   {"content": f"<@{u['id']}>", "allowed_mentions": {"users": [u["id"]]}})   # deleted right away
         http("DELETE", f"{API}/channels/{PURCHASE_CH}/messages/{msg['id']}")
     except Exception as e:
         print("purchase ping failed:", e, flush=True)
