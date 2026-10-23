@@ -1674,24 +1674,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 07:00 PT",
-  "props_today": 1671,
-  "kalshi_props_today": 623,
+  "props_today": 1670,
+  "kalshi_props_today": 622,
   "kalshi_priced_today": 35,
   "books_on_kalshi_props": {
-   "AN Consensus": 618,
-   "AN Open": 617,
-   "BetMGM": 414,
-   "BetRivers": 488,
-   "Caesars": 563,
-   "DraftKings": 545,
-   "FanDuel": 530,
-   "Fanatics": 523,
-   "Parx": 506,
-   "Pinnacle": 396,
-   "Sleeper": 586,
-   "Underdog": 623,
+   "AN Consensus": 617,
+   "AN Open": 616,
+   "BetMGM": 413,
+   "BetRivers": 487,
+   "Caesars": 562,
+   "DraftKings": 544,
+   "FanDuel": 529,
+   "Fanatics": 522,
+   "Parx": 505,
+   "Pinnacle": 395,
+   "Sleeper": 585,
+   "Underdog": 622,
    "Unibet": 70,
-   "bet365": 615
+   "bet365": 614
   },
   "data_files": [
    "mlb.sqlite",
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 26
+  "kalshi_legs_today": 27
  },
  "shadow": [
   {
@@ -4202,8 +4202,8 @@
    "line": 1.5,
    "start": "2026-10-23T20:00:00Z",
    "p": 0.511,
-   "price": 0.46,
-   "edge": 0.034,
+   "price": 0.44,
+   "edge": 0.054,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4216,9 +4216,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-23T20:00:00Z",
-   "p": 0.44,
-   "price": 0.39,
-   "edge": 0.033,
+   "p": 0.435,
+   "price": 0.38,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4397,8 +4397,8 @@
    "line": 1.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.609,
-   "price": 0.56,
-   "edge": 0.032,
+   "price": 0.55,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4501,10 +4501,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.473,
-   "price": 0.38,
-   "edge": 0.077,
-   "news": "Cameron Carr (G) is out, so Austin Reaves's role likely grows.",
+   "p": 0.451,
+   "price": 0.4,
+   "edge": 0.034,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
