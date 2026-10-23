@@ -1683,7 +1683,7 @@
    "BetMGM": 473,
    "BetRivers": 474,
    "Caesars": 545,
-   "DraftKings": 563,
+   "DraftKings": 566,
    "FanDuel": 506,
    "Fanatics": 522,
    "Parx": 504,
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 31
+  "kalshi_legs_today": 32
  },
  "shadow": [
   {
@@ -4681,9 +4681,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.518,
+   "p": 0.519,
    "price": 0.47,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4816,9 +4816,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.59,
+   "p": 0.591,
    "price": 0.54,
-   "edge": 0.033,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4936,10 +4936,10 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.563,
-   "price": 0.5,
-   "edge": 0.045,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "p": 0.51,
+   "price": 0.44,
+   "edge": 0.053,
+   "news": "News: Kyrie Irving's Injury Status on First Night of Back-to-Back in Mavericks-Pacers - Yahoo Sports",
    "result": null
   },
   {
@@ -5086,9 +5086,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.538,
+   "p": 0.537,
    "price": 0.49,
-   "edge": 0.031,
+   "edge": 0.03,
    "news": "News: Aaron Nesmith Questionable Oct. 23 Against Mavericks Due To Hamstring Injury - FanDuel Ben Sheppard is out: Aaron Nesmith hit the under in 2/7 games without him vs 18/33 with him; T.J. McConnell is out: Aaron Nesmith hit the under in 4/10 games without him vs 16/30 with him; Johnny Furphy is out: Aaron Nesmith hit the under in 13/20 games without him vs 7/20 with him.",
    "result": null
   },
