@@ -3975,6 +3975,21 @@
   },
   {
    "date": "2026-10-23",
+   "ticker": "KXNBA3PT-26OCT23CHIMIL-MILRROLLINS13-3",
+   "league": "nba",
+   "player": "Ryan Rollins",
+   "stat": "threes",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-23T20:00:00Z",
+   "p": 0.439,
+   "price": 0.39,
+   "edge": 0.032,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
    "ticker": "KXNBA3PT-26OCT23NYKBOS-NYKJHART3-2",
    "league": "nba",
    "player": "Josh Hart",
