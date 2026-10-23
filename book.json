@@ -1674,24 +1674,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 12:00 PT",
-  "props_today": 1534,
-  "kalshi_props_today": 656,
-  "kalshi_priced_today": 38,
+  "props_today": 1588,
+  "kalshi_props_today": 679,
+  "kalshi_priced_today": 39,
   "books_on_kalshi_props": {
-   "AN Consensus": 648,
-   "AN Open": 651,
-   "BetMGM": 454,
-   "BetRivers": 497,
-   "Caesars": 542,
-   "DraftKings": 575,
-   "FanDuel": 519,
-   "Fanatics": 515,
-   "Parx": 518,
-   "Pinnacle": 394,
-   "Sleeper": 623,
-   "Underdog": 656,
-   "Unibet": 98,
-   "bet365": 648
+   "AN Consensus": 671,
+   "AN Open": 672,
+   "BetMGM": 469,
+   "BetRivers": 517,
+   "Caesars": 557,
+   "DraftKings": 593,
+   "FanDuel": 535,
+   "Fanatics": 534,
+   "Parx": 536,
+   "Pinnacle": 406,
+   "Sleeper": 642,
+   "Underdog": 679,
+   "Unibet": 100,
+   "bet365": 671
   },
   "data_files": [
    "mlb.sqlite",
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 30
+  "kalshi_legs_today": 32
  },
  "shadow": [
   {
@@ -4201,9 +4201,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-23T20:00:00Z",
-   "p": 0.513,
+   "p": 0.512,
    "price": 0.46,
-   "edge": 0.036,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4411,9 +4411,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.624,
-   "price": 0.47,
-   "edge": 0.137,
+   "p": 0.638,
+   "price": 0.49,
+   "edge": 0.131,
    "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 6/7 games without him vs 16/33 with him.",
    "result": null
   },
@@ -4426,9 +4426,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.42,
+   "p": 0.418,
    "price": 0.35,
-   "edge": 0.054,
+   "edge": 0.052,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4621,9 +4621,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-23T20:00:00Z",
-   "p": 0.447,
+   "p": 0.446,
    "price": 0.37,
-   "edge": 0.061,
+   "edge": 0.06,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4876,9 +4876,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.675,
+   "p": 0.674,
    "price": 0.51,
-   "edge": 0.148,
+   "edge": 0.147,
    "news": "Grant Williams is out: Brandon Miller hit the under in 13/14 games without him vs 18/26 with him.",
    "result": null
   },
