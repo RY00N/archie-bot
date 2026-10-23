@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 23
  },
  "shadow": [
   {
@@ -4082,8 +4082,8 @@
    "line": 0.5,
    "start": "2026-10-24T00:00:00Z",
    "p": 0.452,
-   "price": 0.39,
-   "edge": 0.045,
+   "price": 0.4,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4579,6 +4579,21 @@
    "p": 0.446,
    "price": 0.37,
    "edge": 0.06,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KXNBAAST-26OCT23CHIMIL-MILTHERRO11-6",
+   "league": "nba",
+   "player": "Tyler Herro",
+   "stat": "assists",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-23T20:00:00Z",
+   "p": 0.434,
+   "price": 0.38,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
