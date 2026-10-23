@@ -3955,9 +3955,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T00:00:00Z",
-   "p": 0.481,
+   "p": 0.48,
    "price": 0.43,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4090,9 +4090,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.473,
+   "p": 0.472,
    "price": 0.39,
-   "edge": 0.066,
+   "edge": 0.065,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4195,9 +4195,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.674,
+   "p": 0.673,
    "price": 0.51,
-   "edge": 0.147,
+   "edge": 0.146,
    "news": "Grant Williams is out: Brandon Miller hit the under in 13/14 games without him vs 18/26 with him.",
    "result": null
   },
@@ -4229,6 +4229,21 @@
    "price": 0.52,
    "edge": 0.051,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KXNBAPTS-26OCT23PORSAC-PORDLILLARD0-20",
+   "league": "nba",
+   "player": "Damian Lillard",
+   "stat": "points",
+   "side": "over",
+   "line": 19.5,
+   "start": "2026-10-24T02:00:00Z",
+   "p": 0.549,
+   "price": 0.5,
+   "edge": 0.032,
+   "news": "Chris Youngblood (G) is out, so Damian Lillard's role likely grows; Shaedon Sharpe is out: Damian Lillard hit the over in 19/23 games without him vs 17/17 with him.",
    "result": null
   },
   {
@@ -4270,9 +4285,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-23T23:00:00Z",
-   "p": 0.472,
-   "price": 0.42,
-   "edge": 0.035,
+   "p": 0.473,
+   "price": 0.41,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4289,6 +4304,21 @@
    "price": 0.46,
    "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KXNBAREB-26OCT23PORSAC-PORDLILLARD0-4",
+   "league": "nba",
+   "player": "Damian Lillard",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-24T02:00:00Z",
+   "p": 0.539,
+   "price": 0.47,
+   "edge": 0.052,
+   "news": "Chris Youngblood (G) is out, so Damian Lillard's role likely grows.",
    "result": null
   }
  ]
