@@ -236,10 +236,10 @@
     "spy_agree_mult": 1.18,
     "spy_disagree_mult": 0.25,
     "disagree_hold_min": 90,
-    "instrument": "shares",
+    "instrument": "options",
     "bull": "TQQQ",
     "bear": "SQQQ",
     "share_stop_pct": 15,
-    "book_frac": 1.0
+    "book_frac": 0.3
   }
 }

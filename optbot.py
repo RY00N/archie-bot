@@ -239,8 +239,8 @@ def step(bot, log):
             st["done"], st["why_done"] = True, f"skipped: option too expensive ({(bid + ask) / 2:.2f})"
             log(f"OPT {st['why_done']}"); save(st); return
         _last["skip_why"] = _last.get("skip_why") or f"option too expensive ({(bid + ask) / 2:.2f})"
-    agree = None if _shares(c) else _last.get("spy_agree")  # shares mode: tested without SPY sizing
-    mult = 1.0 if agree is None else c.get("spy_agree_mult", 1.0) if agree else c.get("spy_disagree_mult", 1.0)
+    agree = _last.get("spy_agree")  # shares / book_frac sizing: tested without SPY sizing (disagree still holds 90 min)
+    mult = 1.0 if agree is None or _shares(c) or c.get("book_frac") else c.get("spy_agree_mult", 1.0) if agree else c.get("spy_disagree_mult", 1.0)
     if agree is not None:
         why += f" (SPY {'agrees' if agree else 'disagrees'}, size x{mult})"
     if _last.get("skip_why") and c.get("skip_trade_mult"):
@@ -249,6 +249,11 @@ def step(bot, log):
     qty = int(c["size"] * mult // (ask * unit)) if ask > 0 else 0
     if _shares(c) and ask > 0:  # 10/23: shares mode puts the whole $1k book in each trade (backtest: +78% in 2024-25, dd 9%)
         qty = int((c["budget_start"] + st.get("realized", 0)) * c.get("book_frac", 1.0) * mult // ask)
+    elif c.get("book_frac") and ask > 0:  # 10/23 Ryan "$1000 to $4000 in 3 months": a set share of the book per trade, compounding, 1 contract minimum
+        cash = c["budget_start"] + st.get("realized", 0)
+        qty = int(cash * c["book_frac"] // (ask * 100))
+        if qty < 1 and cash >= ask * 100:
+            qty = 1
     elif c.get("min_qty") and ask > 0:  # 10/23 Ryan: "treat it like i gave u $1000": always 1+ contract if the account can pay for it
         cash = c["budget_start"] + st.get("realized", 0)
         qty = min(max(qty, c["min_qty"]), int(cash // (ask * 100)))
