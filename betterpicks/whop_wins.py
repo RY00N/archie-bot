@@ -24,19 +24,13 @@ RECORD: {won}-{lost} on picks that meet our current rules, {pnl} at $5 a pick ({
 EVERY WIN ({won}){more}
 {wins}
 {losses}
-HOW IT PICKS
-- 60%+ win chance AND 5%+ edge, or it doesn't post
-- Injuries and matchups checked on every pick
-- Bad news? The bot pulls the pick and says fade
-
 YOU GET
 - Live picks in the Discord PICKS channel with win chance + edge
 - HIT/LOST results after every game
-- /bp: ask BetterBot about any pick, answers in seconds
 
-JOIN: buy a plan, join https://discord.gg/bmVz2WhyZC, then type /verify with your Whop email in Purchase.
+JOIN: buy a plan, join https://discord.gg/bmVz2WhyZC.
 
-NBA, NFL, MLB, soccer. Past results don't guarantee future results. Not financial advice. 18+ (21+ where required). Not affiliated with Kalshi or any sportsbook."""
+NBA, NFL, MLB, soccer. Not financial advice. 18+ (21+ where required). Not affiliated with Kalshi or any sportsbook."""
 
 
 def leg_text(l):
