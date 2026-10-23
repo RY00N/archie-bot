@@ -1679,13 +1679,13 @@
   "kalshi_priced_today": 35,
   "books_on_kalshi_props": {
    "AN Consensus": 610,
-   "AN Open": 614,
+   "AN Open": 613,
    "BetMGM": 443,
    "BetRivers": 472,
-   "Caesars": 519,
-   "DraftKings": 541,
+   "Caesars": 520,
+   "DraftKings": 542,
    "FanDuel": 492,
-   "Fanatics": 495,
+   "Fanatics": 494,
    "Parx": 491,
    "Pinnacle": 377,
    "Sleeper": 584,
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 32
+  "kalshi_legs_today": 33
  },
  "shadow": [
   {
@@ -4397,8 +4397,8 @@
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
    "p": 0.678,
-   "price": 0.61,
-   "edge": 0.051,
+   "price": 0.6,
+   "edge": 0.061,
    "news": "Injury report: Day-To-Day: Podziemski (back) is probable for Friday's game against the Grizzlies. Moses Moody is out: Brandin Podziemski hit the over in 19/24 games without him vs 6/16 with him.",
    "result": null
   },
@@ -4441,9 +4441,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.468,
+   "p": 0.469,
    "price": 0.37,
-   "edge": 0.082,
+   "edge": 0.083,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
