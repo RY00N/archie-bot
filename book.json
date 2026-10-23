@@ -1674,7 +1674,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 06:00 PT",
-  "props_today": 1675,
+  "props_today": 1673,
   "kalshi_props_today": 623,
   "kalshi_priced_today": 34,
   "books_on_kalshi_props": {
@@ -1688,7 +1688,7 @@
    "Fanatics": 513,
    "Parx": 459,
    "Pinnacle": 216,
-   "Sleeper": 584,
+   "Sleeper": 586,
    "Underdog": 623,
    "Unibet": 57,
    "bet365": 615
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 20
+  "kalshi_legs_today": 21
  },
  "shadow": [
   {
@@ -4459,6 +4459,21 @@
    "p": 0.54,
    "price": 0.49,
    "edge": 0.033,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KXNBAAST-26OCT23CHIMIL-MILRROLLINS13-6",
+   "league": "nba",
+   "player": "Ryan Rollins",
+   "stat": "assists",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-23T20:00:00Z",
+   "p": 0.461,
+   "price": 0.41,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
