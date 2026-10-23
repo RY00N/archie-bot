@@ -319,11 +319,36 @@ def reload_presence():
         print("restarting BetterBot presence on new code")
 
 
+def whop_extras():
+    """Ryan 2026-10-23: Whop home-feed posts for every settled pick and the live-record gallery images.
+    The scanner only copies its fixed file list, so the scripts and brand/ come from the repo checkout here;
+    both skip on their own without WHOP_BP_API (and the gallery without Pillow)."""
+    import shutil, subprocess
+    src = os.path.join(os.environ.get("BP_REPO", "/home/archie/bp-repo"), "betterpicks")
+    if not os.environ.get("WHOP_BP_API") or not os.path.exists(os.path.join(src, "whop_posts.py")):
+        return
+    for f in ("whop_posts.py", "whop_gallery.py"):
+        shutil.copyfile(os.path.join(src, f), os.path.join(HERE, f))
+    shutil.copytree(os.path.join(src, "brand"), os.path.join(HERE, "brand"), dirs_exist_ok=True)
+    for f in ("whop_posts.py", "whop_gallery.py"):
+        try:
+            r = subprocess.run([sys.executable, "-I", os.path.join(HERE, f)], cwd="/tmp", capture_output=True, text=True, timeout=60)
+            if r.returncode or r.stdout.strip():
+                print(f, (r.stdout + r.stderr).strip()[-300:])
+        except subprocess.TimeoutExpired:
+            print(f, "timed out")
+
+
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "today":
         retractions("--dry" in sys.argv)
         today("--dry" in sys.argv)
         verdicts("--dry" in sys.argv)
+        if "--dry" not in sys.argv:
+            try:
+                whop_extras()
+            except Exception as e:
+                print("whop extras failed:", e)
         try:
             reload_presence()
         except Exception as e:
