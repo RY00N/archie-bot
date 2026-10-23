@@ -1682,7 +1682,7 @@
    "AN Open": 617,
    "BetMGM": 196,
    "BetRivers": 270,
-   "Caesars": 545,
+   "Caesars": 556,
    "DraftKings": 542,
    "FanDuel": 547,
    "Fanatics": 467,
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 16
+  "kalshi_legs_today": 18
  },
  "shadow": [
   {
@@ -4111,9 +4111,9 @@
    "side": "under",
    "line": 6.5,
    "start": "2026-10-24T00:00:00Z",
-   "p": 0.519,
+   "p": 0.518,
    "price": 0.47,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4216,9 +4216,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.407,
+   "p": 0.409,
    "price": 0.36,
-   "edge": 0.031,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4261,9 +4261,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.471,
+   "p": 0.472,
    "price": 0.39,
-   "edge": 0.064,
+   "edge": 0.065,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4667,8 +4667,8 @@
    "line": 5.5,
    "start": "2026-10-24T02:00:00Z",
    "p": 0.617,
-   "price": 0.48,
-   "edge": 0.12,
+   "price": 0.47,
+   "edge": 0.13,
    "news": "Yanic Konan Niederhauser is out: Brook Lopez hit the over in 13/27 games without him vs 4/13 with him.",
    "result": null
   },
