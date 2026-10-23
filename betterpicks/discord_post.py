@@ -161,8 +161,10 @@ FREE_EVERY, FREE_MIN_P = 3, 0.65
 
 
 def free_due(sent, day):
+    # Ryan 2026-10-23 20:03Z: a free pick EVERY day from Oct 24 until membership grows (rules.json free_every_days)
+    every = load(os.path.join(HERE, "rules.json"), {}).get("free_every_days", FREE_EVERY)
     last = max((k.split(":")[2] for k in sent if k.startswith("free:parlay:")), default=None)
-    return last is None or (datetime.fromisoformat(day) - datetime.fromisoformat(last)).days >= FREE_EVERY
+    return last is None or (datetime.fromisoformat(day) - datetime.fromisoformat(last)).days >= every
 
 
 def free_ok(e):
