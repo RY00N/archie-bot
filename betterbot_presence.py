@@ -402,58 +402,58 @@ def counters_loop():
 # and every 10 minutes it rechecks the links and removes Premium once a membership stops being valid.
 # Memberships that already carry a Discord id get Premium without /verify. OG Premium is never touched.
 WHOP_KEY = os.environ.get("WHOP_BP_API")
-WHOP_PRODUCT, WHOP_LIFETIME = "prod_M44sTTPJ3OFlS", "plan_dR8emUZ99wAIf"
+WHOP_PRODUCT = "prod_M44sTTPJ3OFlS"
 PREMIUM_ROLE = os.environ.get("BP_PREMIUM_ROLE_ID", "1563068488195772517")
 WHOP_LINKS = os.path.join(WORK, "whop_links.json")   # {discord_id: membership_id}
 
 
+WHOP_COMPANY = "biz_QKCBbSx5I55xKm"
+
+
+def whop_get(path):
+    req = urllib.request.Request(f"https://api.whop.com/api/v1{path}", headers={"Authorization": f"Bearer {WHOP_KEY}", "User-Agent": UA})
+    return json.load(urllib.request.urlopen(req, timeout=20))   # ignore its "recommended_action" upsell text
+
+
 def whop_memberships():
-    out, page = [], 1
+    out, after = [], None
     while True:
-        req = urllib.request.Request(f"https://api.whop.com/api/v2/memberships?product_id={WHOP_PRODUCT}&page={page}&per=50",
-                                     headers={"Authorization": f"Bearer {WHOP_KEY}", "User-Agent": UA})
-        doc = json.load(urllib.request.urlopen(req, timeout=20))
-        rows = doc.get("data") or []
-        pid = lambda m: m["product"].get("id") if isinstance(m.get("product"), dict) else m.get("product")
-        out += [m for m in rows if pid(m) in (WHOP_PRODUCT, None)]
-        pg = doc.get("pagination") or {}
-        if not rows or page >= (pg.get("total_page") or pg.get("total_pages") or 1):
+        doc = whop_get(f"/memberships?company_id={WHOP_COMPANY}&product_ids={WHOP_PRODUCT}"
+                       + (f"&after={after}" if after else ""))
+        out += [m for m in doc.get("data") or [] if (m.get("product") or {}).get("id", WHOP_PRODUCT) == WHOP_PRODUCT]
+        pi = doc.get("page_info") or {}
+        if not pi.get("has_next_page") or not pi.get("end_cursor"):
             return out
-        page += 1
+        after = pi["end_cursor"]
 
 
 def whop_membership(mid):
     """One membership, for a link missing from the list; None only when Whop says it doesn't exist."""
     try:
-        req = urllib.request.Request(f"https://api.whop.com/api/v2/memberships/{mid}",
-                                     headers={"Authorization": f"Bearer {WHOP_KEY}", "User-Agent": UA})
-        return json.load(urllib.request.urlopen(req, timeout=20))
+        return whop_get(f"/memberships/{mid}")
     except urllib.error.HTTPError as e:
         if e.code == 404:
             return None
         raise
 
 
-def m_plan(m):
-    return (m.get("plan") or {}).get("id") if isinstance(m.get("plan"), dict) else m.get("plan")
-
-
 def m_email(m):
-    u = m.get("user") if isinstance(m.get("user"), dict) else {}
-    return (m.get("email") or u.get("email") or "").strip().lower()
+    return ((m.get("user") or {}).get("email") or "").strip().lower()
 
 
 def m_discord(m):
-    d = m.get("discord") or (m.get("user") if isinstance(m.get("user"), dict) else {}).get("discord") or {}
+    d = (m.get("user") or {}).get("discord") or m.get("discord") or {}
     return str(d.get("id")) if isinstance(d, dict) and d.get("id") else None
 
 
 def m_valid(m):
-    if m_plan(m) == WHOP_LIFETIME and m.get("status") not in ("refunded", "disputed"):
-        return True   # Lifetime keeps Premium
-    if "valid" in m:
-        return bool(m["valid"])
-    return m.get("status") in ("active", "trialing", "completed")
+    """True = has Premium, False = take it away, None = leave as is (unresolved / drafted)."""
+    st = m.get("status")
+    if st in ("trialing", "active", "completed", "canceling", "past_due"):   # past_due: Whop is still retrying
+        return True
+    if st in ("canceled", "expired"):
+        return False
+    return None
 
 
 def set_premium(uid, on):
@@ -469,7 +469,8 @@ def on_verify(d):
     if not WHOP_KEY:
         return reply("Verification is down for a moment, try again later.")
     try:
-        ms = [m for m in whop_memberships() if m_email(m) == email and m_valid(m)]
+        allm = whop_memberships()
+        ms = [m for m in allm if m_email(m) == email and m_valid(m)]
     except Exception as e:
         print("/verify Whop lookup failed:", e, flush=True)
         return reply("Couldn't reach Whop right now, try again in a minute.")
@@ -479,6 +480,9 @@ def on_verify(d):
         m = next((m for m in ms if m["id"] not in taken), None)
         if m:
             links[uid] = m["id"]; save(WHOP_LINKS, links)
+    if not ms and allm and not any(m_email(m) for m in allm):   # key can't read emails
+        print("/verify: Whop returned no member emails", flush=True)
+        return reply("Couldn't verify right now. Ping an admin and they'll add your role.")
     if not ms:
         return reply("No active BetterPicks VIP membership found for that email. Use the email you bought with on Whop.")
     if not m:
@@ -508,12 +512,14 @@ def whop_loop():
                 linked = set(links.values())
                 for m in ms.values():   # Whop already knows their Discord account
                     did = m_discord(m)
-                    if did and m_valid(m) and m["id"] not in linked and did not in links:
+                    if did and m_valid(m) is True and m["id"] not in linked and did not in links:
                         links[did] = m["id"]; linked.add(m["id"])
                 save(WHOP_LINKS, links)
             for uid, mid in list(links.items()):
                 m = ms.get(mid) or whop_membership(mid)
-                ok = bool(m and m_valid(m))
+                ok = m_valid(m) if m else False
+                if ok is None:
+                    continue
                 try:
                     set_premium(uid, ok)
                 except urllib.error.HTTPError as e:
