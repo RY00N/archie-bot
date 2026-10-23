@@ -113,7 +113,11 @@ def main():
     if not all(ids):
         print("whop_gallery: upload not ready, retry next run")
         return
-    whop_posts.call("PATCH", f"products/{PRODUCT}", {"gallery_images": [{"id": i} for i in ids]})
+    # A gallery-only PATCH doesn't bump updated_at, so Whop keeps serving the cached page with the old (now deleted)
+    # files and the photos show broken. Touching the description refreshes it; the second PATCH puts the text back.
+    text = whop_wins.build()
+    whop_posts.call("PATCH", f"products/{PRODUCT}", {"gallery_images": [{"id": i} for i in ids], "description": text + "\n"})
+    whop_posts.call("PATCH", f"products/{PRODUCT}", {"description": text})
     open(STATE, "w").write(key)
     print(f"whop_gallery: photos updated to {r['won']}-{r['lost']}")
 

@@ -63,6 +63,12 @@ def counted():
     return [e for e in book["parlays"] if record.counts(e)], record.record(book["parlays"])
 
 
+def headline():
+    """Product headline with the live record (it was a fixed "7-1 last week")."""
+    _, r = counted()
+    return f"{r['won']}-{r['lost']} on our picks. Edge-backed player prop picks, live in Discord."
+
+
 def build():
     c, r = counted()
     wins = sorted([e for e in c if e["status"] == "won"], key=lambda e: e.get("date", ""), reverse=True)
@@ -89,7 +95,7 @@ def main():
     if "--dry" in sys.argv:
         print(text)
         return
-    h = hashlib.sha1(text.encode()).hexdigest()
+    h = hashlib.sha1((text + headline()).encode()).hexdigest()
     if os.path.exists(STATE) and open(STATE).read().strip() == h:
         return
     key = os.environ.get("WHOP_BP_API")
@@ -97,7 +103,7 @@ def main():
         print("whop_wins: WHOP_BP_API not set, skipped")
         return
     req = urllib.request.Request(f"https://api.whop.com/api/v1/products/{PRODUCT}", method="PATCH",
-                                 data=json.dumps({"description": text}).encode(),
+                                 data=json.dumps({"description": text, "headline": headline()}).encode(),
                                  headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         resp.read()
