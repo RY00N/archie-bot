@@ -1675,11 +1675,11 @@
  "diag": {
   "props_at": "2026-10-23 04:00 PT",
   "props_today": 1674,
-  "kalshi_props_today": 622,
+  "kalshi_props_today": 623,
   "kalshi_priced_today": 35,
   "books_on_kalshi_props": {
-   "AN Consensus": 616,
-   "AN Open": 617,
+   "AN Consensus": 617,
+   "AN Open": 618,
    "BetMGM": 196,
    "BetRivers": 315,
    "Caesars": 561,
@@ -1689,9 +1689,9 @@
    "Parx": 332,
    "Pinnacle": 216,
    "Sleeper": 581,
-   "Underdog": 622,
+   "Underdog": 623,
    "Unibet": 45,
-   "bet365": 613
+   "bet365": 614
   },
   "data_files": [
    "mlb.sqlite",
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 17
+  "kalshi_legs_today": 16
  },
  "shadow": [
   {
@@ -4457,8 +4457,8 @@
    "line": 34.5,
    "start": "2026-10-23T23:00:00Z",
    "p": 0.654,
-   "price": 0.55,
-   "edge": 0.087,
+   "price": 0.54,
+   "edge": 0.097,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/14 games without him vs 19/26 with him.",
    "result": null
   },
