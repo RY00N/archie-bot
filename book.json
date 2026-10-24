@@ -1772,22 +1772,22 @@
   "props_at": "2026-10-24 11:00 PT",
   "props_today": 900,
   "kalshi_props_today": 399,
-  "kalshi_priced_today": 29,
+  "kalshi_priced_today": 27,
   "books_on_kalshi_props": {
-   "AN Consensus": 391,
+   "AN Consensus": 390,
    "AN Open": 394,
    "BetMGM": 278,
    "BetRivers": 291,
-   "Caesars": 332,
+   "Caesars": 334,
    "DraftKings": 333,
    "FanDuel": 307,
-   "Fanatics": 307,
+   "Fanatics": 306,
    "Parx": 311,
    "Pinnacle": 234,
    "Sleeper": 362,
    "Underdog": 399,
-   "Unibet": 69,
-   "bet365": 392
+   "Unibet": 70,
+   "bet365": 393
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -6127,9 +6127,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.641,
+   "p": 0.646,
    "price": 0.59,
-   "edge": 0.034,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6157,9 +6157,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.587,
+   "p": 0.59,
    "price": 0.49,
-   "edge": 0.08,
+   "edge": 0.083,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
@@ -6187,9 +6187,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.414,
+   "p": 0.412,
    "price": 0.33,
-   "edge": 0.069,
+   "edge": 0.067,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
@@ -6202,9 +6202,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-26T00:20:00Z",
-   "p": 0.678,
+   "p": 0.679,
    "price": 0.61,
-   "edge": 0.051,
+   "edge": 0.052,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6280,7 +6280,7 @@
    "p": 0.506,
    "price": 0.38,
    "edge": 0.11,
-   "news": "NYG's CB Greg Newsome II is out, an easier matchup; NYG's S Jevon Holland is out, an easier matchup.",
+   "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
   {
@@ -6295,7 +6295,7 @@
    "p": 0.585,
    "price": 0.39,
    "edge": 0.178,
-   "news": "Tank Dell is out: Xavier Hutchinson hit the over in 21/28 games without him vs 2/12 with him; NYG's CB Greg Newsome II is out, an easier matchup; NYG's S Jevon Holland is out, an easier matchup.",
+   "news": "Tank Dell is out: Xavier Hutchinson hit the over in 21/28 games without him vs 2/12 with him; NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
   {
@@ -6307,9 +6307,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.572,
+   "p": 0.573,
    "price": 0.44,
-   "edge": 0.115,
+   "edge": 0.116,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
@@ -6352,9 +6352,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-25T13:30:00Z",
-   "p": 0.555,
+   "p": 0.554,
    "price": 0.49,
-   "edge": 0.048,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6397,9 +6397,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.53,
+   "p": 0.528,
    "price": 0.42,
-   "edge": 0.093,
+   "edge": 0.091,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
    "result": null
   },
