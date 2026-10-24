@@ -1771,23 +1771,23 @@
  "diag": {
   "props_at": "2026-10-24 15:00 PT",
   "props_today": 973,
-  "kalshi_props_today": 476,
+  "kalshi_props_today": 477,
   "kalshi_priced_today": 42,
   "books_on_kalshi_props": {
-   "AN Consensus": 429,
-   "AN Open": 430,
+   "AN Consensus": 430,
+   "AN Open": 431,
    "BetMGM": 251,
-   "BetRivers": 281,
+   "BetRivers": 282,
    "Caesars": 354,
-   "DraftKings": 357,
-   "FanDuel": 329,
-   "Fanatics": 323,
-   "Parx": 303,
+   "DraftKings": 358,
+   "FanDuel": 330,
+   "Fanatics": 324,
+   "Parx": 314,
    "Pinnacle": 245,
-   "Sleeper": 431,
-   "Underdog": 475,
-   "Unibet": 88,
-   "bet365": 429
+   "Sleeper": 432,
+   "Underdog": 476,
+   "Unibet": 92,
+   "bet365": 431
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 14
  },
  "shadow": [
   {
@@ -5850,6 +5850,21 @@
   },
   {
    "date": "2026-10-24",
+   "ticker": "KXNBA3PT-26OCT24MILPHI-MILTHERRO11-3",
+   "league": "nba",
+   "player": "Tyler Herro",
+   "stat": "threes",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-24T23:30:00Z",
+   "p": 0.585,
+   "price": 0.53,
+   "edge": 0.038,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
    "ticker": "KXNBA3PT-26OCT24MILPHI-PHIASIMONS5-3",
    "league": "nba",
    "player": "Anfernee Simons",
@@ -5857,9 +5872,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.397,
+   "p": 0.398,
    "price": 0.35,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5917,9 +5932,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.521,
+   "p": 0.52,
    "price": 0.47,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5951,6 +5966,21 @@
    "price": 0.38,
    "edge": 0.057,
    "news": "Fred VanVleet (G) is out, so Amen Thompson's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
+   "ticker": "KXNBAAST-26OCT24NOPDEN-DENDDEROZAN10-4",
+   "league": "nba",
+   "player": "DeMar DeRozan",
+   "stat": "assists",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-25T01:00:00Z",
+   "p": 0.462,
+   "price": 0.38,
+   "edge": 0.066,
+   "news": "News: Cameron Johnson injury exposed Nuggets issue DeMar DeRozan can't solve - Nugg Love Julian Strawther is out: DeMar DeRozan hit the over in 1/2 games without him vs 0/3 with him.",
    "result": null
   },
   {
@@ -6195,6 +6225,21 @@
   },
   {
    "date": "2026-10-24",
+   "ticker": "KXNBAREB-26OCT24SASDAL-DALNMARSHALL3-6",
+   "league": "nba",
+   "player": "Naji Marshall",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 5.5,
+   "start": "2026-10-25T00:00:00Z",
+   "p": 0.689,
+   "price": 0.59,
+   "edge": 0.082,
+   "news": "Cooper Flagg is out: Naji Marshall hit the under in 2/2 games without him vs 21/29 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
    "ticker": "KXNBAREB-26OCT24SASDAL-SASDVASSELL24-4",
    "league": "nba",
    "player": "Devin Vassell",
@@ -6277,9 +6322,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.642,
+   "p": 0.643,
    "price": 0.59,
-   "edge": 0.035,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6472,9 +6517,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.524,
+   "p": 0.527,
    "price": 0.39,
-   "edge": 0.117,
+   "edge": 0.12,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -6487,9 +6532,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.576,
+   "p": 0.574,
    "price": 0.45,
-   "edge": 0.109,
+   "edge": 0.107,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
