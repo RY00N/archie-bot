@@ -1771,11 +1771,11 @@
  "diag": {
   "props_at": "2026-10-24 02:00 PT",
   "props_today": 1041,
-  "kalshi_props_today": 324,
+  "kalshi_props_today": 328,
   "kalshi_priced_today": 18,
   "books_on_kalshi_props": {
-   "AN Consensus": 316,
-   "AN Open": 318,
+   "AN Consensus": 320,
+   "AN Open": 322,
    "BetMGM": 45,
    "BetRivers": 2,
    "Caesars": 156,
@@ -1784,10 +1784,10 @@
    "Fanatics": 238,
    "Parx": 22,
    "Pinnacle": 75,
-   "Sleeper": 305,
-   "Underdog": 324,
+   "Sleeper": 307,
+   "Underdog": 328,
    "Unibet": 15,
-   "bet365": 237
+   "bet365": 241
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
