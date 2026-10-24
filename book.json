@@ -1772,11 +1772,11 @@
   "props_at": "2026-10-24 04:00 PT",
   "props_today": 1012,
   "kalshi_props_today": 369,
-  "kalshi_priced_today": 24,
+  "kalshi_priced_today": 23,
   "books_on_kalshi_props": {
-   "AN Consensus": 360,
+   "AN Consensus": 361,
    "AN Open": 364,
-   "BetMGM": 200,
+   "BetMGM": 143,
    "BetRivers": 27,
    "Caesars": 201,
    "DraftKings": 283,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -5737,9 +5737,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.425,
+   "p": 0.422,
    "price": 0.37,
-   "edge": 0.039,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5835,6 +5835,21 @@
   },
   {
    "date": "2026-10-24",
+   "ticker": "KXNBABLK-26OCT24BKNCLE-CLEEMOBLEY4-2",
+   "league": "nba",
+   "player": "Evan Mobley",
+   "stat": "blocks",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-24T23:30:00Z",
+   "p": 0.488,
+   "price": 0.44,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
    "ticker": "KXNBAPTS-26OCT24HOUATL-HOUJSMITH10-15",
    "league": "nba",
    "player": "Jabari Smith Jr.",
@@ -5842,9 +5857,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.569,
+   "p": 0.57,
    "price": 0.5,
-   "edge": 0.051,
+   "edge": 0.052,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5872,9 +5887,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.631,
+   "p": 0.628,
    "price": 0.58,
-   "edge": 0.034,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6023,8 +6038,8 @@
    "line": 8.5,
    "start": "2026-10-25T20:25:00Z",
    "p": 0.438,
-   "price": 0.39,
-   "edge": 0.031,
+   "price": 0.38,
+   "edge": 0.042,
    "news": "Injury report: Questionable: Nacua (calf) won't practice Friday and will be listed as questionable for Sunday's game at Las Vegas, Sarah Barshop of ESPN.com reports. Davante Adams is out: Puka Nacua hit the over in 2/3 games without him vs 9/20 with him.",
    "result": null
   },
@@ -6233,8 +6248,8 @@
    "line": 9.5,
    "start": "2026-10-25T20:25:00Z",
    "p": 0.633,
-   "price": 0.5,
-   "edge": 0.116,
+   "price": 0.49,
+   "edge": 0.126,
    "news": "DET's LB Devin White is out, an easier matchup.",
    "result": null
   },
