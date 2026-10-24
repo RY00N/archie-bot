@@ -1771,23 +1771,23 @@
  "diag": {
   "props_at": "2026-10-24 07:00 PT",
   "props_today": 885,
-  "kalshi_props_today": 383,
+  "kalshi_props_today": 386,
   "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
-   "AN Consensus": 375,
-   "AN Open": 378,
+   "AN Consensus": 378,
+   "AN Open": 381,
    "BetMGM": 260,
-   "BetRivers": 261,
-   "Caesars": 324,
-   "DraftKings": 302,
-   "FanDuel": 304,
-   "Fanatics": 305,
-   "Parx": 281,
+   "BetRivers": 263,
+   "Caesars": 327,
+   "DraftKings": 305,
+   "FanDuel": 307,
+   "Fanatics": 308,
+   "Parx": 283,
    "Pinnacle": 208,
-   "Sleeper": 352,
-   "Underdog": 383,
+   "Sleeper": 356,
+   "Underdog": 386,
    "Unibet": 41,
-   "bet365": 359
+   "bet365": 361
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 9
+  "kalshi_legs_today": 10
  },
  "shadow": [
   {
@@ -5768,8 +5768,8 @@
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
    "p": 0.591,
-   "price": 0.54,
-   "edge": 0.034,
+   "price": 0.53,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5798,8 +5798,8 @@
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
    "p": 0.444,
-   "price": 0.37,
-   "edge": 0.058,
+   "price": 0.36,
+   "edge": 0.068,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5920,6 +5920,21 @@
    "p": 0.528,
    "price": 0.47,
    "edge": 0.041,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
+   "ticker": "KXNBAPTS-26OCT24HOUATL-HOUTEASON17-10",
+   "league": "nba",
+   "player": "Tari Eason",
+   "stat": "points",
+   "side": "over",
+   "line": 9.5,
+   "start": "2026-10-25T00:30:00Z",
+   "p": 0.552,
+   "price": 0.5,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
