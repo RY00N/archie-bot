@@ -1674,24 +1674,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 17:00 PT",
-  "props_today": 868,
-  "kalshi_props_today": 413,
+  "props_today": 866,
+  "kalshi_props_today": 414,
   "kalshi_priced_today": 11,
   "books_on_kalshi_props": {
-   "AN Consensus": 250,
-   "AN Open": 254,
-   "BetMGM": 174,
+   "AN Consensus": 252,
+   "AN Open": 255,
+   "BetMGM": 175,
    "BetRivers": 211,
-   "Caesars": 220,
-   "DraftKings": 236,
-   "FanDuel": 227,
-   "Fanatics": 208,
+   "Caesars": 221,
+   "DraftKings": 237,
+   "FanDuel": 228,
+   "Fanatics": 207,
    "Parx": 209,
    "Pinnacle": 152,
-   "Sleeper": 370,
-   "Underdog": 413,
+   "Sleeper": 366,
+   "Underdog": 414,
    "Unibet": 45,
-   "bet365": 256
+   "bet365": 257
   },
   "data_files": [
    "mlb.sqlite",
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 14
  },
  "shadow": [
   {
@@ -4411,9 +4411,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.494,
+   "p": 0.493,
    "price": 0.36,
-   "edge": 0.118,
+   "edge": 0.117,
    "news": "Jake LaRavia (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -4426,9 +4426,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.674,
+   "p": 0.675,
    "price": 0.58,
-   "edge": 0.077,
+   "edge": 0.078,
    "news": "Injury report: Day-To-Day: Podziemski (back) is probable for Friday's game against the Grizzlies. Moses Moody is out: Brandin Podziemski hit the over in 19/24 games without him vs 6/16 with him.",
    "result": null
   },
@@ -4861,9 +4861,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.447,
-   "price": 0.36,
-   "edge": 0.071,
+   "p": 0.445,
+   "price": 0.38,
+   "edge": 0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5026,9 +5026,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.553,
+   "p": 0.552,
    "price": 0.49,
-   "edge": 0.046,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5086,9 +5086,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.549,
+   "p": 0.548,
    "price": 0.5,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5206,9 +5206,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-24T01:30:00Z",
-   "p": 0.545,
+   "p": 0.546,
    "price": 0.49,
-   "edge": 0.038,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
