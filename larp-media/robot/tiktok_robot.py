@@ -120,6 +120,30 @@ def screen_text(ui):
         return f"(no screen text: {e!r})"
 
 
+def retry_context(ui):
+    """Text around TikTok's Retry button (says what failed: upload, copyright check, ...)."""
+    try:
+        return ui.evaluate("""() => { const b = [...document.querySelectorAll('button')].find(x => x.innerText.trim() === 'Retry');
+            let e = b; for (let k = 0; k < 4 && e && e.parentElement; k++) e = e.parentElement;
+            return e ? e.innerText.replace(/\\s+/g, ' ').slice(0, 300) : ''; }""")
+    except Exception as e:
+        return repr(e)
+
+
+CAPTCHA = '#captcha-verify-container, [class*="captcha"], [id*="captcha"], iframe[src*="captcha"], [class*="secsdk"]'
+
+
+def captcha_seen(page):
+    for fr in page.frames:
+        try:
+            loc = fr.locator(CAPTCHA)
+            if loc.count() and loc.first.is_visible():
+                return True
+        except Exception:
+            pass
+    return False
+
+
 def close_popups(ui, page):
     """Dismiss TikTok Studio popups (feature tours, tips, 'turn on content checks') that cover the form."""
     for fr in page.frames:
@@ -155,6 +179,19 @@ def upload(item):
     path = MEDIA / item["file"]
     pw, b, ctx = browser()
     page = ctx.new_page()
+    def on_resp(r):  # log TikTok's answers to the post/publish calls (why a Post click does nothing)
+        try:
+            if r.request.method == "POST" and re.search(r"post|publish|project|create|item", r.url, re.I) \
+                    and not re.search(r"monitor|log|slardar|mssdk|webcast|collect", r.url, re.I):
+                body = ""
+                try:
+                    body = " ".join(r.text().split())[:300]
+                except Exception:
+                    pass
+                log("net", r.status, r.url.split("?")[0][-80:], body)
+        except Exception:
+            pass
+    page.on("response", on_resp)
     try:
         page.goto(UPLOAD, wait_until="domcontentloaded", timeout=180000)
         page.wait_for_timeout(6000)
@@ -173,9 +210,7 @@ def upload(item):
         for i in range(160):
             retry = ui.get_by_role("button", name="Retry", exact=True)
             if retry.count() and retry.first.is_visible():
-                why = ui.evaluate("""() => { const b = [...document.querySelectorAll('button')].find(x => x.innerText.trim() === 'Retry');
-                    let e = b; for (let k = 0; k < 4 && e && e.parentElement; k++) e = e.parentElement;
-                    return e ? e.innerText.replace(/\\s+/g, ' ').slice(0, 300) : ''; }""")
+                why = retry_context(ui)
                 log("upload error on TikTok's side:", why)
                 if retries >= 3:
                     raise RuntimeError("upload kept failing: " + why)
@@ -209,13 +244,23 @@ def upload(item):
         page.wait_for_timeout(1500)
         close_popups(ui, page)
         shot(page, "before-post")
-        try:
-            btn.click(timeout=15000)
-            log("clicked Post")
-        except Exception:
+        if ui.get_by_role("button", name="Retry", exact=True).count():
+            log("Retry button before Post, near:", retry_context(ui))
+        log("before Post:", screen_text(ui)[:400])
+        btn.scroll_into_view_if_needed()
+        page.wait_for_timeout(1000)
+        box = btn.bounding_box()
+        if box:  # a real mouse click (TikTok ignores some synthetic clicks)
+            page.mouse.move(box["x"] + box["width"] / 2 - 20, box["y"] + box["height"] / 2 + 5, steps=8)
+            page.mouse.click(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2, delay=90)
+            log("clicked Post (mouse)")
+        else:
             close_popups(ui, page)
             btn.click(force=True)
-        page.wait_for_timeout(4000)
+            log("clicked Post (forced)")
+        page.wait_for_timeout(5000)
+        if captcha_seen(page):
+            log("CAPTCHA shown after Post")
         for label in ("Post now", "Post anyway"):  # confirm dialog while TikTok's checks run
             c = ui.get_by_role("button", name=label)
             if c.count():
@@ -232,7 +277,11 @@ def upload(item):
         shot(page, "posted")
         if "/tiktokstudio/upload" not in page.url or done_text.count():
             return True
-        log("no 'posted' confirmation. Screen now:", screen_text(ui))
+        log("no 'posted' confirmation. Screen now:", screen_text(ui), "| captcha:", captcha_seen(page))
+        try:
+            log("page text:", " ".join(ui.evaluate("document.body.innerText").split())[:1200])
+        except Exception:
+            pass
         return False
     except Exception as e:
         shot(page, "error")
