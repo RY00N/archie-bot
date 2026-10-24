@@ -9,7 +9,7 @@ Reza chose this route on 2026-10-24 knowing it is against TikTok's terms (accoun
 Login = TikTok web session cookie TIKTOK_SESSIONID in /etc/larp-robot.env (never in the repo).
 State (what's posted, which slots ran) lives in /var/lib/larp-robot/state.json.
 """
-import datetime as dt, json, os, subprocess, sys
+import datetime as dt, json, os, re, subprocess, sys
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -124,7 +124,7 @@ def close_popups(ui, page):
             log("popup:", " ".join(modal.first.inner_text(timeout=3000).split())[:160])
         except Exception:
             pass
-        for label in ("Got it", "Not now", "Cancel", "Skip", "Close", "OK", "Dismiss", "Maybe later"):
+        for label in ("Got it", "Not now", "Cancel", "Skip", "Close", "OK", "Dismiss", "Maybe later", "Turn on"):
             b = modal.first.get_by_role("button", name=label, exact=True)
             if b.count() and b.first.is_visible():
                 b.first.click()
@@ -189,8 +189,18 @@ def upload(item):
             if c.count():
                 c.first.click()
                 page.wait_for_timeout(3000)
-        page.wait_for_url("**/tiktokstudio/content**", timeout=180000)
+        # success = TikTok leaves the upload page or shows a "posted / uploaded" message
+        done_text = page.get_by_text(re.compile(r"(video (has been|was) (posted|uploaded|published)|"
+                                                r"manage your posts|upload another video|view profile)", re.I))
+        for _ in range(60):
+            if "/tiktokstudio/upload" not in page.url or done_text.count():
+                break
+            page.wait_for_timeout(3000)
         shot(page, "posted")
+        if "/tiktokstudio/upload" not in page.url or done_text.count():
+            return True
+        # Post was clicked but no confirmation seen: count it as posted so a retry can never double-post.
+        log("Post clicked but no confirmation seen; check the profile. Marked posted to avoid a duplicate.")
         return True
     except Exception as e:
         shot(page, "error")
