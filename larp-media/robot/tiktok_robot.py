@@ -406,7 +406,11 @@ def main():
         log("post", i, "ok" if ok else "FAILED")
         publish_log()
         return
+    before = Path(__file__).read_bytes()
     git_pull()
+    if Path(__file__).read_bytes() != before and not os.environ.get("LARP_REEXEC"):  # new robot code: restart on it
+        os.environ["LARP_REEXEC"] = "1"
+        os.execv(sys.executable, [sys.executable, __file__, "tick"])
     queue = json.loads((MEDIA / "queue.json").read_text())
     # one-off jobs from the project (robot/jobs.json): {"jobs":[{"id":"j1","cmd":"post","n":0}|{"id":"j2","cmd":"test"}]}
     try:
