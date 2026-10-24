@@ -1769,24 +1769,24 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-24 04:00 PT",
+  "props_at": "2026-10-24 05:00 PT",
   "props_today": 1013,
   "kalshi_props_today": 369,
-  "kalshi_priced_today": 24,
+  "kalshi_priced_today": 25,
   "books_on_kalshi_props": {
-   "AN Consensus": 360,
+   "AN Consensus": 359,
    "AN Open": 364,
-   "BetMGM": 200,
-   "BetRivers": 65,
-   "Caesars": 300,
+   "BetMGM": 220,
+   "BetRivers": 109,
+   "Caesars": 296,
    "DraftKings": 283,
    "FanDuel": 290,
-   "Fanatics": 261,
-   "Parx": 85,
+   "Fanatics": 276,
+   "Parx": 130,
    "Pinnacle": 75,
    "Sleeper": 336,
    "Underdog": 369,
-   "Unibet": 18,
+   "Unibet": 19,
    "bet365": 351
   },
   "data_files": [
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 7
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -5737,9 +5737,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.423,
+   "p": 0.422,
    "price": 0.36,
-   "edge": 0.047,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5767,9 +5767,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.449,
+   "p": 0.448,
    "price": 0.37,
-   "edge": 0.063,
+   "edge": 0.062,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5782,9 +5782,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.516,
+   "p": 0.513,
    "price": 0.46,
-   "edge": 0.039,
+   "edge": 0.036,
    "news": "News: Warriors injury news could lead to Bucks trading Myles Turner - Sports Illustrated",
    "result": null
   },
@@ -5812,9 +5812,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.522,
+   "p": 0.523,
    "price": 0.47,
-   "edge": 0.035,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5977,9 +5977,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.412,
+   "p": 0.411,
    "price": 0.32,
-   "edge": 0.077,
+   "edge": 0.076,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
