@@ -1770,23 +1770,23 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 12:00 PT",
-  "props_today": 908,
+  "props_today": 907,
   "kalshi_props_today": 400,
   "kalshi_priced_today": 27,
   "books_on_kalshi_props": {
-   "AN Consensus": 391,
+   "AN Consensus": 390,
    "AN Open": 395,
    "BetMGM": 278,
    "BetRivers": 291,
-   "Caesars": 335,
+   "Caesars": 334,
    "DraftKings": 334,
    "FanDuel": 307,
-   "Fanatics": 311,
+   "Fanatics": 307,
    "Parx": 311,
    "Pinnacle": 234,
    "Sleeper": 363,
    "Underdog": 400,
-   "Unibet": 81,
+   "Unibet": 82,
    "bet365": 393
   },
   "data_files": [
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
@@ -5722,9 +5722,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.682,
-   "price": 0.63,
-   "edge": 0.036,
+   "p": 0.683,
+   "price": 0.62,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5872,10 +5872,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.448,
-   "price": 0.4,
-   "edge": 0.031,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "p": 0.453,
+   "price": 0.38,
+   "edge": 0.057,
+   "news": "Fred VanVleet (G) is out, so Amen Thompson's role likely grows.",
    "result": null
   },
   {
@@ -5917,9 +5917,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.547,
+   "p": 0.546,
    "price": 0.49,
-   "edge": 0.04,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5932,9 +5932,9 @@
    "side": "over",
    "line": 24.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.509,
-   "price": 0.46,
-   "edge": 0.032,
+   "p": 0.51,
+   "price": 0.44,
+   "edge": 0.053,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5947,9 +5947,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.553,
+   "p": 0.551,
    "price": 0.48,
-   "edge": 0.056,
+   "edge": 0.054,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6112,9 +6112,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.485,
+   "p": 0.483,
    "price": 0.4,
-   "edge": 0.068,
+   "edge": 0.066,
    "news": "DEN's S Talanoa Hufanga is out, an easier matchup.",
    "result": null
   },
@@ -6352,9 +6352,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-25T13:30:00Z",
-   "p": 0.555,
+   "p": 0.552,
    "price": 0.49,
-   "edge": 0.048,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
