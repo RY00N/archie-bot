@@ -5739,6 +5739,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNFLRSHYDS-26OCT25DENARI-DENRHARVEY12-15",
+   "league": "nfl",
+   "player": "RJ Harvey",
+   "stat": "rush_yds",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-10-25T20:05:00Z",
+   "p": 0.583,
+   "price": 0.51,
+   "edge": 0.056,
+   "news": "Jonah Coleman (RB) is out, so RJ Harvey's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNFLRSHYDS-26OCT25NYGHOU-NYGCSKATTEBO44-30",
    "league": "nfl",
    "player": "Cam Skattebo",
