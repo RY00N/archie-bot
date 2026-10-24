@@ -11,7 +11,7 @@ Ryan 2026-10-19: also look at who else is out. A teammate at the same position b
 stats database has games without that teammate, the with/without hit rates move the win chance; otherwise a
 fresh same-position absence still nudges it. Both feed the leg's win chance (and so its edge), every sport we have.
 """
-import json, os, re, sys, time, urllib.parse, urllib.request
+import json, math, os, re, sys, time, urllib.parse, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(HERE, "news_cache.json")
@@ -220,6 +220,52 @@ def context(leg, c):
     return max(-CTX_CAP, min(CTX_CAP, dp)), notes
 
 
+# Ryan 2026-10-23/24: blowout rule, on only when a blowout looks likely. Backtest (blowout.py, 2024-26 regular
+# seasons, starters): with a 32%+ chance of a 20-point game, the favored team's starters lose ~1.6-2 minutes and go
+# over their scoring average ~2 points less often (45.4% vs 48.0%, 46.1% vs 47.5%); rebounds and assists don't drop,
+# and the underdog side is mixed. So: favored-side starters, scoring props only, 2-point nudge. Below 32%, ignored.
+BLOWOUT_ON, BLOWOUT_DP, BLOWOUT_STATS, BLOWOUT_SIGMA = 0.32, 0.02, ("points", "pra", "pr", "pa"), 13.48
+
+
+def game_spread(league, game, start, c):
+    """Pregame spread from ESPN's scoreboard: (favorite team, points) or None."""
+    path = ESPN.get(league)
+    day = (start or "")[:10].replace("-", "")
+    if not path or not day:
+        return None
+    def fetch():
+        out = {}
+        for e in (_get(f"https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard?dates={day}") or {}).get("events", []):
+            o = (e.get("competitions") or [{}])[0].get("odds") or []
+            det = (o[0].get("details") if o else "") or ""
+            m = re.match(r"([A-Z]+) -([0-9.]+)", det)
+            if m:
+                out[" @ ".join(norm(x) for x in e["shortName"].split(" @ "))] = [norm(m.group(1)), float(m.group(2))]
+        return out
+    lines = _cached(c, f"spreads:{league}:{day}", fetch) or {}
+    return lines.get(" @ ".join(norm(x) for x in (game or "").split(" @ ")))
+
+
+def blowout_adj(leg, c):
+    """-> (win-chance change, note) for a likely blowout, else (0, None)."""
+    pr = leg["prop"]
+    if pr["league"] != "nba" or pr["stat"] not in BLOWOUT_STATS:
+        return 0.0, None
+    try:
+        sp = game_spread("nba", pr.get("game"), pr.get("start") or leg.get("start"), c)
+        if not sp or norm(pr.get("team")) != sp[0]:
+            return 0.0, None
+        cdf = lambda x: 0.5 * (1 + math.erf(x / math.sqrt(2)))   # same model as blowout.py, sigma fit there
+        chance = 1 - cdf((19.5 - sp[1]) / BLOWOUT_SIGMA) + cdf((-19.5 - sp[1]) / BLOWOUT_SIGMA)
+        mins = sorted((MINUTES("nba", pr["player"]) or {}).values()) if MINUTES else []
+        if chance < BLOWOUT_ON or not mins or mins[len(mins) // 2] < 24:   # starters only; bench players gain minutes
+            return 0.0, None
+    except Exception:
+        return 0.0, None
+    note = f"{pr.get('team')} are {sp[1]:g}-point favorites ({chance:.0%} blowout chance), so starters may sit late"
+    return (-BLOWOUT_DP if leg["side"] == "over" else BLOWOUT_DP), note
+
+
 def headlines(player, c):
     q = urllib.parse.quote(f'"{player}" when:3d')
     def fetch():
@@ -267,6 +313,9 @@ def adjust(legs):
         except Exception as ex:
             cdp, cnotes = 0.0, []
             print("matchup check skipped:", pr["player"], ex)
+        bdp, bnote = blowout_adj(l, c)
+        if bnote:
+            cdp += bdp; cnotes = list(cnotes) + [bnote]
         if cnotes:
             dp += cdp
             l["news"] = (note if verdict != "clear" else "") + (" " if verdict != "clear" else "") + "; ".join(cnotes) + "."
