@@ -107,6 +107,19 @@ KILL_TOURS = """() => { let n = 0;
   document.body.style.overflow = 'auto'; return n; }"""
 
 
+def screen_text(ui):
+    """Short text of what's on screen (dialogs, toasts, buttons) for the log."""
+    try:
+        return " ".join(ui.evaluate("""() => {
+          const pick = s => [...document.querySelectorAll(s)].filter(e => e.offsetParent !== null)
+              .map(e => e.innerText.trim()).filter(Boolean);
+          return [...pick('[role=dialog], .TUXModal-overlay, [class*=toast], [class*=Toast], [class*=notice]'),
+                  'BUTTONS: ' + pick('button').slice(0, 25).join(' / ')].join(' || ');
+        }""").split())[:900]
+    except Exception as e:
+        return f"(no screen text: {e!r})"
+
+
 def close_popups(ui, page):
     """Dismiss TikTok Studio popups (feature tours, tips, 'turn on content checks') that cover the form."""
     for fr in page.frames:
@@ -155,11 +168,16 @@ def upload(item):
         ui = fr  # the frame holding the upload form (main frame or an iframe)
         btn = ui.locator('button[data-e2e="post_video_button"]')
         btn.wait_for(timeout=180000)
-        # wait for TikTok to finish processing the upload
-        for _ in range(90):
-            if btn.is_enabled() and ui.get_by_text("Uploaded").count():
+        # wait for TikTok to finish processing the upload: Post button stops being disabled (slow droplet: up to 8 min)
+        for i in range(160):
+            dis = btn.get_attribute("aria-disabled") or btn.get_attribute("data-disabled") or ""
+            if btn.is_enabled() and dis not in ("true",) and ui.get_by_text("Uploaded").count():
                 break
-            page.wait_for_timeout(2000)
+            if i % 20 == 0:
+                log("waiting for upload to finish...", screen_text(ui)[:200])
+            page.wait_for_timeout(3000)
+        else:
+            raise RuntimeError("upload never finished processing")
         close_popups(ui, page)
         cap = ui.locator('div[contenteditable="true"]').first
         try:
@@ -180,6 +198,7 @@ def upload(item):
         shot(page, "before-post")
         try:
             btn.click(timeout=15000)
+            log("clicked Post")
         except Exception:
             close_popups(ui, page)
             btn.click(force=True)
@@ -189,6 +208,7 @@ def upload(item):
             if c.count():
                 c.first.click()
                 page.wait_for_timeout(3000)
+        log("after Post:", screen_text(ui)[:400])
         # success = TikTok leaves the upload page or shows a "posted / uploaded" message
         done_text = page.get_by_text(re.compile(r"(video (has been|was) (posted|uploaded|published)|"
                                                 r"manage your posts|upload another video|view profile)", re.I))
@@ -199,9 +219,8 @@ def upload(item):
         shot(page, "posted")
         if "/tiktokstudio/upload" not in page.url or done_text.count():
             return True
-        # Post was clicked but no confirmation seen: count it as posted so a retry can never double-post.
-        log("Post clicked but no confirmation seen; check the profile. Marked posted to avoid a duplicate.")
-        return True
+        log("no 'posted' confirmation. Screen now:", screen_text(ui))
+        return False
     except Exception as e:
         shot(page, "error")
         log("upload failed:", repr(e))
