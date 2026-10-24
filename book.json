@@ -1772,7 +1772,7 @@
   "props_at": "2026-10-24 04:00 PT",
   "props_today": 1012,
   "kalshi_props_today": 369,
-  "kalshi_priced_today": 23,
+  "kalshi_priced_today": 24,
   "books_on_kalshi_props": {
    "AN Consensus": 360,
    "AN Open": 364,
@@ -1781,7 +1781,7 @@
    "Caesars": 300,
    "DraftKings": 283,
    "FanDuel": 290,
-   "Fanatics": 260,
+   "Fanatics": 261,
    "Parx": 85,
    "Pinnacle": 75,
    "Sleeper": 336,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -5737,9 +5737,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.424,
+   "p": 0.423,
    "price": 0.36,
-   "edge": 0.048,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5767,9 +5767,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.45,
+   "p": 0.449,
    "price": 0.37,
-   "edge": 0.064,
+   "edge": 0.063,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5782,9 +5782,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.514,
+   "p": 0.516,
    "price": 0.46,
-   "edge": 0.037,
+   "edge": 0.039,
    "news": "News: Warriors injury news could lead to Bucks trading Myles Turner - Sports Illustrated",
    "result": null
   },
@@ -5857,9 +5857,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.57,
+   "p": 0.569,
    "price": 0.5,
-   "edge": 0.052,
+   "edge": 0.051,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5962,9 +5962,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.488,
+   "p": 0.489,
    "price": 0.41,
-   "edge": 0.061,
+   "edge": 0.062,
    "news": "DEN's S Talanoa Hufanga is out, an easier matchup.",
    "result": null
   },
@@ -6097,9 +6097,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.571,
+   "p": 0.569,
    "price": 0.44,
-   "edge": 0.114,
+   "edge": 0.112,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
