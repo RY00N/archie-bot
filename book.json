@@ -1769,24 +1769,24 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-24 07:00 PT",
+  "props_at": "2026-10-24 08:00 PT",
   "props_today": 913,
   "kalshi_props_today": 399,
-  "kalshi_priced_today": 24,
+  "kalshi_priced_today": 22,
   "books_on_kalshi_props": {
-   "AN Consensus": 392,
+   "AN Consensus": 391,
    "AN Open": 394,
    "BetMGM": 274,
-   "BetRivers": 293,
+   "BetRivers": 264,
    "Caesars": 332,
    "DraftKings": 313,
    "FanDuel": 312,
-   "Fanatics": 314,
-   "Parx": 313,
+   "Fanatics": 317,
+   "Parx": 284,
    "Pinnacle": 238,
    "Sleeper": 368,
    "Underdog": 399,
-   "Unibet": 44,
+   "Unibet": 46,
    "bet365": 393
   },
   "data_files": [
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 9
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -5677,9 +5677,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.471,
+   "p": 0.47,
    "price": 0.42,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5767,9 +5767,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.59,
+   "p": 0.592,
    "price": 0.52,
-   "edge": 0.053,
+   "edge": 0.055,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5887,9 +5887,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.507,
+   "p": 0.508,
    "price": 0.45,
-   "edge": 0.04,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5917,9 +5917,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.566,
+   "p": 0.567,
    "price": 0.5,
-   "edge": 0.048,
+   "edge": 0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5932,9 +5932,9 @@
    "side": "over",
    "line": 24.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.528,
+   "p": 0.527,
    "price": 0.47,
-   "edge": 0.041,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
