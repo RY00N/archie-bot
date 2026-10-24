@@ -1772,7 +1772,7 @@
   "props_at": "2026-10-24 01:00 PT",
   "props_today": 943,
   "kalshi_props_today": 270,
-  "kalshi_priced_today": 15,
+  "kalshi_priced_today": 14,
   "books_on_kalshi_props": {
    "AN Consensus": 264,
    "AN Open": 265,
@@ -1783,7 +1783,6 @@
    "FanDuel": 223,
    "Fanatics": 198,
    "Parx": 22,
-   "Pinnacle": 75,
    "Sleeper": 248,
    "Underdog": 270,
    "Unibet": 12,
@@ -5715,6 +5714,21 @@
   },
   {
    "date": "2026-10-24",
+   "ticker": "KXNBA3PT-26OCT24NOPDEN-DENCBRAUN0-2",
+   "league": "nba",
+   "player": "Christian Braun",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-10-25T01:00:00Z",
+   "p": 0.612,
+   "price": 0.51,
+   "edge": 0.085,
+   "news": "News: Christian Braun struggles Thursday - FantasyPros Julian Strawther is out: Christian Braun hit the under in 13/17 games without him vs 15/23 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
    "ticker": "KXNBAPTS-26OCT24HOUATL-HOUJSMITH10-15",
    "league": "nba",
    "player": "Jabari Smith Jr.",
@@ -5786,6 +5800,21 @@
    "price": 0.32,
    "edge": 0.077,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLREC-26OCT25KCSEA-KCJROYALS11-3",
+   "league": "nfl",
+   "player": "Jalen Royals",
+   "stat": "receptions",
+   "side": "under",
+   "line": 2.5,
+   "start": "2026-10-26T00:20:00Z",
+   "p": 0.679,
+   "price": 0.61,
+   "edge": 0.052,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
