@@ -1770,7 +1770,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 11:00 PT",
-  "props_today": 900,
+  "props_today": 897,
   "kalshi_props_today": 399,
   "kalshi_priced_today": 27,
   "books_on_kalshi_props": {
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -5977,9 +5977,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-25T01:00:00Z",
-   "p": 0.483,
+   "p": 0.484,
    "price": 0.43,
-   "edge": 0.036,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6248,8 +6248,8 @@
    "line": 8.5,
    "start": "2026-10-25T20:25:00Z",
    "p": 0.438,
-   "price": 0.38,
-   "edge": 0.042,
+   "price": 0.39,
+   "edge": 0.031,
    "news": "Injury report: Questionable: Nacua (calf) won't practice Friday and will be listed as questionable for Sunday's game at Las Vegas, Sarah Barshop of ESPN.com reports. Davante Adams is out: Puka Nacua hit the over in 2/3 games without him vs 9/20 with him.",
    "result": null
   },
