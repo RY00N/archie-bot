@@ -1770,22 +1770,22 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 16:00 PT",
-  "props_today": 892,
-  "kalshi_props_today": 445,
-  "kalshi_priced_today": 35,
+  "props_today": 675,
+  "kalshi_props_today": 339,
+  "kalshi_priced_today": 34,
   "books_on_kalshi_props": {
-   "AN Consensus": 328,
+   "AN Consensus": 329,
    "AN Open": 334,
-   "BetMGM": 251,
+   "BetMGM": 182,
    "BetRivers": 200,
    "Caesars": 274,
    "DraftKings": 265,
    "FanDuel": 239,
-   "Fanatics": 246,
+   "Fanatics": 248,
    "Parx": 232,
    "Pinnacle": 179,
-   "Sleeper": 400,
-   "Underdog": 444,
+   "Sleeper": 296,
+   "Underdog": 339,
    "Unibet": 70,
    "bet365": 334
   },
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 7
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -5857,9 +5857,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.426,
+   "p": 0.434,
    "price": 0.35,
-   "edge": 0.06,
+   "edge": 0.068,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5977,9 +5977,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.619,
+   "p": 0.621,
    "price": 0.47,
-   "edge": 0.132,
+   "edge": 0.134,
    "news": "Patrick Williams is out: Jalen Smith hit the over in 8/9 games without him vs 7/15 with him.",
    "result": null
   },
@@ -6052,9 +6052,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.503,
-   "price": 0.4,
-   "edge": 0.086,
+   "p": 0.502,
+   "price": 0.42,
+   "edge": 0.065,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6090,6 +6090,21 @@
   },
   {
    "date": "2026-10-24",
+   "ticker": "KXNBAPTS-26OCT24GSWPHX-PHXDBOOKER15-25",
+   "league": "nba",
+   "player": "Devin Booker",
+   "stat": "points",
+   "side": "under",
+   "line": 24.5,
+   "start": "2026-10-25T02:00:00Z",
+   "p": 0.559,
+   "price": 0.51,
+   "edge": 0.032,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
    "ticker": "KXNBAPTS-26OCT24HOUATL-HOUJSMITH10-15",
    "league": "nba",
    "player": "Jabari Smith Jr.",
@@ -6097,9 +6112,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.563,
+   "p": 0.564,
    "price": 0.51,
-   "edge": 0.036,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6247,9 +6262,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.483,
+   "p": 0.481,
    "price": 0.42,
-   "edge": 0.046,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6308,8 +6323,8 @@
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.689,
-   "price": 0.57,
-   "edge": 0.102,
+   "price": 0.56,
+   "edge": 0.112,
    "news": "Cooper Flagg is out: Naji Marshall hit the under in 2/2 games without him vs 21/29 with him.",
    "result": null
   },
