@@ -1674,13 +1674,10 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 19:00 PT",
-  "props_today": 116,
-  "kalshi_props_today": 53,
+  "props_today": 0,
+  "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {
-   "Sleeper": 50,
-   "Underdog": 53
-  },
+  "books_on_kalshi_props": {},
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
@@ -5570,8 +5567,8 @@
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.416,
-   "price": 0.32,
-   "edge": 0.081,
+   "price": 0.33,
+   "edge": 0.071,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
