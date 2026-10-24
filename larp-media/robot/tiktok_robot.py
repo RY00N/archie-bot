@@ -57,7 +57,10 @@ def browser():
     if not sid:
         sys.exit("TIKTOK_SESSIONID missing in /etc/larp-robot.env")
     pw = sync_playwright().start()
-    b = pw.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
+    b = pw.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled",
+                                                    # small droplet: /dev/shm is tiny and RAM is tight, so avoid tab crashes
+                                                    "--disable-dev-shm-usage", "--disable-gpu", "--renderer-process-limit=1",
+                                                    "--js-flags=--max-old-space-size=512"])
     ctx = b.new_context(viewport={"width": 1366, "height": 900}, locale="en-US",
                         timezone_id="America/Los_Angeles", user_agent=UA)
     ctx.add_cookies([{"name": n, "value": sid, "domain": ".tiktok.com", "path": "/",
