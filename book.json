@@ -1776,12 +1776,12 @@
   "books_on_kalshi_props": {
    "AN Consensus": 399,
    "AN Open": 401,
-   "BetMGM": 282,
+   "BetMGM": 263,
    "BetRivers": 293,
    "Caesars": 338,
    "DraftKings": 320,
    "FanDuel": 312,
-   "Fanatics": 315,
+   "Fanatics": 317,
    "Parx": 313,
    "Pinnacle": 238,
    "Sleeper": 368,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 9
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -5767,9 +5767,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.592,
+   "p": 0.593,
    "price": 0.52,
-   "edge": 0.055,
+   "edge": 0.056,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5872,9 +5872,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.448,
+   "p": 0.447,
    "price": 0.4,
-   "edge": 0.031,
+   "edge": 0.03,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5887,9 +5887,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.506,
+   "p": 0.504,
    "price": 0.44,
-   "edge": 0.049,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5917,9 +5917,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.567,
+   "p": 0.566,
    "price": 0.5,
-   "edge": 0.049,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5932,9 +5932,9 @@
    "side": "over",
    "line": 24.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.528,
+   "p": 0.526,
    "price": 0.47,
-   "edge": 0.041,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6082,9 +6082,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-26T00:20:00Z",
-   "p": 0.566,
+   "p": 0.567,
    "price": 0.5,
-   "edge": 0.048,
+   "edge": 0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6142,9 +6142,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-26T00:20:00Z",
-   "p": 0.676,
+   "p": 0.677,
    "price": 0.61,
-   "edge": 0.049,
+   "edge": 0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6293,8 +6293,8 @@
    "line": 0.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.661,
-   "price": 0.53,
-   "edge": 0.114,
+   "price": 0.55,
+   "edge": 0.094,
    "news": "SF's LB Garret Wallow is out, an easier matchup; SF's LB Luke Gifford is out, an easier matchup.",
    "result": null
   },
