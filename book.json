@@ -1769,9 +1769,9 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-24 15:00 PT",
-  "props_today": 886,
-  "kalshi_props_today": 441,
+  "props_at": "2026-10-24 16:00 PT",
+  "props_today": 887,
+  "kalshi_props_today": 442,
   "kalshi_priced_today": 43,
   "books_on_kalshi_props": {
    "AN Consensus": 432,
@@ -1784,8 +1784,8 @@
    "Fanatics": 328,
    "Parx": 319,
    "Pinnacle": 246,
-   "Sleeper": 396,
-   "Underdog": 440,
+   "Sleeper": 397,
+   "Underdog": 441,
    "Unibet": 97,
    "bet365": 436
   },
@@ -5873,8 +5873,8 @@
    "line": 1.5,
    "start": "2026-10-24T23:30:00Z",
    "p": 0.378,
-   "price": 0.33,
-   "edge": 0.033,
+   "price": 0.32,
+   "edge": 0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6053,8 +6053,8 @@
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.504,
-   "price": 0.4,
-   "edge": 0.087,
+   "price": 0.42,
+   "edge": 0.067,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
