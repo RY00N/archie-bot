@@ -1774,20 +1774,20 @@
   "kalshi_props_today": 399,
   "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
-   "AN Consensus": 387,
+   "AN Consensus": 391,
    "AN Open": 394,
-   "BetMGM": 176,
+   "BetMGM": 278,
    "BetRivers": 291,
    "Caesars": 335,
-   "DraftKings": 333,
+   "DraftKings": 334,
    "FanDuel": 307,
    "Fanatics": 310,
    "Parx": 311,
    "Pinnacle": 234,
    "Sleeper": 362,
    "Underdog": 399,
-   "Unibet": 77,
-   "bet365": 393
+   "Unibet": 79,
+   "bet365": 392
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -5767,9 +5767,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.574,
+   "p": 0.576,
    "price": 0.52,
-   "edge": 0.037,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5888,8 +5888,8 @@
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.505,
-   "price": 0.42,
-   "edge": 0.068,
+   "price": 0.43,
+   "edge": 0.058,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5947,9 +5947,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.555,
+   "p": 0.554,
    "price": 0.5,
-   "edge": 0.038,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6097,9 +6097,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-26T00:20:00Z",
-   "p": 0.564,
+   "p": 0.565,
    "price": 0.5,
-   "edge": 0.046,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6127,9 +6127,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.646,
+   "p": 0.647,
    "price": 0.59,
-   "edge": 0.039,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6202,9 +6202,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-26T00:20:00Z",
-   "p": 0.679,
+   "p": 0.678,
    "price": 0.61,
-   "edge": 0.052,
+   "edge": 0.051,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6307,9 +6307,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.573,
+   "p": 0.574,
    "price": 0.45,
-   "edge": 0.106,
+   "edge": 0.107,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
@@ -6322,9 +6322,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.698,
+   "p": 0.699,
    "price": 0.55,
-   "edge": 0.131,
+   "edge": 0.132,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
@@ -6502,9 +6502,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.585,
-   "price": 0.5,
-   "edge": 0.067,
+   "p": 0.576,
+   "price": 0.49,
+   "edge": 0.069,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
