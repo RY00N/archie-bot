@@ -1674,22 +1674,22 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 18:00 PT",
-  "props_today": 459,
-  "kalshi_props_today": 204,
+  "props_today": 337,
+  "kalshi_props_today": 142,
   "kalshi_priced_today": 6,
   "books_on_kalshi_props": {
-   "AN Consensus": 140,
+   "AN Consensus": 141,
    "AN Open": 140,
    "BetMGM": 105,
    "BetRivers": 116,
-   "Caesars": 118,
+   "Caesars": 119,
    "DraftKings": 123,
    "FanDuel": 121,
    "Fanatics": 105,
-   "Parx": 115,
+   "Parx": 116,
    "Pinnacle": 80,
-   "Sleeper": 196,
-   "Underdog": 204,
+   "Sleeper": 139,
+   "Underdog": 142,
    "Unibet": 31,
    "bet365": 142
   },
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -4381,9 +4381,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.451,
+   "p": 0.448,
    "price": 0.39,
-   "edge": 0.044,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4441,9 +4441,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.705,
+   "p": 0.706,
    "price": 0.57,
-   "edge": 0.118,
+   "edge": 0.119,
    "news": "News: Will Brandin Podziemski finally play? Warriors reveal big injury update vs. Grizzlies - BasketNews.com Moses Moody is out: Brandin Podziemski hit the over in 19/24 games without him vs 6/16 with him.",
    "result": null
   },
@@ -4906,9 +4906,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.447,
+   "p": 0.436,
    "price": 0.37,
-   "edge": 0.061,
+   "edge": 0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5131,9 +5131,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.608,
+   "p": 0.607,
    "price": 0.53,
-   "edge": 0.061,
+   "edge": 0.06,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
    "result": null
   },
@@ -5146,9 +5146,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.489,
-   "price": 0.4,
-   "edge": 0.072,
+   "p": 0.487,
+   "price": 0.41,
+   "edge": 0.06,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5386,9 +5386,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.693,
+   "p": 0.689,
    "price": 0.53,
-   "edge": 0.146,
+   "edge": 0.142,
    "news": "Kristaps Porzingis is out: Al Horford hit the over in 3/3 games without him vs 3/5 with him.",
    "result": null
   },
@@ -5401,9 +5401,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.496,
+   "p": 0.495,
    "price": 0.44,
-   "edge": 0.039,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
