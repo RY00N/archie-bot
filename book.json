@@ -1772,16 +1772,16 @@
   "props_at": "2026-10-24 08:00 PT",
   "props_today": 913,
   "kalshi_props_today": 406,
-  "kalshi_priced_today": 26,
+  "kalshi_priced_today": 25,
   "books_on_kalshi_props": {
    "AN Consensus": 399,
    "AN Open": 401,
    "BetMGM": 282,
    "BetRivers": 293,
-   "Caesars": 339,
+   "Caesars": 338,
    "DraftKings": 320,
    "FanDuel": 312,
-   "Fanatics": 317,
+   "Fanatics": 315,
    "Parx": 313,
    "Pinnacle": 238,
    "Sleeper": 368,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
@@ -5872,10 +5872,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.519,
-   "price": 0.41,
-   "edge": 0.092,
-   "news": "Reed Sheppard is out: Amen Thompson hit the over in 2/3 games without him vs 15/37 with him.",
+   "p": 0.448,
+   "price": 0.4,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -6262,9 +6262,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.702,
+   "p": 0.701,
    "price": 0.56,
-   "edge": 0.125,
+   "edge": 0.124,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
@@ -6292,9 +6292,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.659,
+   "p": 0.661,
    "price": 0.53,
-   "edge": 0.112,
+   "edge": 0.114,
    "news": "SF's LB Garret Wallow is out, an easier matchup; SF's LB Luke Gifford is out, an easier matchup.",
    "result": null
   },
@@ -6398,8 +6398,8 @@
    "line": 9.5,
    "start": "2026-10-25T20:25:00Z",
    "p": 0.628,
-   "price": 0.5,
-   "edge": 0.111,
+   "price": 0.51,
+   "edge": 0.101,
    "news": "DET's LB Devin White is out, an easier matchup.",
    "result": null
   },
