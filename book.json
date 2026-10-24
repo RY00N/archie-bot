@@ -1770,23 +1770,23 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 13:00 PT",
-  "props_today": 929,
-  "kalshi_props_today": 414,
+  "props_today": 937,
+  "kalshi_props_today": 416,
   "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
-   "AN Consensus": 404,
-   "AN Open": 409,
+   "AN Consensus": 406,
+   "AN Open": 411,
    "BetMGM": 268,
    "BetRivers": 300,
-   "Caesars": 341,
-   "DraftKings": 346,
-   "FanDuel": 324,
+   "Caesars": 346,
+   "DraftKings": 350,
+   "FanDuel": 326,
    "Fanatics": 319,
    "Parx": 320,
    "Pinnacle": 234,
-   "Sleeper": 379,
-   "Underdog": 414,
-   "Unibet": 83,
+   "Sleeper": 381,
+   "Underdog": 416,
+   "Unibet": 84,
    "bet365": 399
   },
   "data_files": [
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
@@ -5887,9 +5887,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.503,
-   "price": 0.43,
-   "edge": 0.056,
+   "p": 0.502,
+   "price": 0.42,
+   "edge": 0.065,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5980,6 +5980,21 @@
    "p": 0.479,
    "price": 0.43,
    "edge": 0.032,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
+   "ticker": "KXNBAPTS-26OCT24WASCHI-CHITJONES30-10",
+   "league": "nba",
+   "player": "Tre Jones",
+   "stat": "points",
+   "side": "over",
+   "line": 9.5,
+   "start": "2026-10-25T00:00:00Z",
+   "p": 0.59,
+   "price": 0.52,
+   "edge": 0.053,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6112,9 +6127,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.483,
+   "p": 0.482,
    "price": 0.4,
-   "edge": 0.066,
+   "edge": 0.065,
    "news": "DEN's S Talanoa Hufanga is out, an easier matchup.",
    "result": null
   },
@@ -6157,9 +6172,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.592,
+   "p": 0.59,
    "price": 0.49,
-   "edge": 0.085,
+   "edge": 0.083,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
@@ -6187,9 +6202,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.613,
+   "p": 0.598,
    "price": 0.55,
-   "edge": 0.046,
+   "edge": 0.031,
    "news": "News: Savion Williams (ankle) limited Wednesday - FantasyPros",
    "result": null
   },
@@ -6202,9 +6217,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.431,
+   "p": 0.43,
    "price": 0.38,
-   "edge": 0.035,
+   "edge": 0.034,
    "news": "Tyler Warren (TE) is out, so Will Mallory's role likely grows.",
    "result": null
   },
@@ -6217,9 +6232,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.414,
+   "p": 0.412,
    "price": 0.33,
-   "edge": 0.069,
+   "edge": 0.067,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
