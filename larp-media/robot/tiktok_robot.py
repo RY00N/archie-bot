@@ -101,8 +101,21 @@ def file_input(page, wait_s=150):
     return None, None
 
 
+KILL_TOURS = """() => { let n = 0;
+  document.querySelectorAll('#react-joyride-portal, [class*="react-joyride"], .__floater, [id^="react-joyride"]')
+    .forEach(e => { e.remove(); n++; });
+  document.body.style.overflow = 'auto'; return n; }"""
+
+
 def close_popups(ui, page):
-    """Dismiss TikTok Studio popups (tips, 'turn on content checks', etc.) that cover the form."""
+    """Dismiss TikTok Studio popups (feature tours, tips, 'turn on content checks') that cover the form."""
+    for fr in page.frames:
+        try:
+            n = fr.evaluate(KILL_TOURS)
+            if n:
+                log("removed tour overlay x", n)
+        except Exception:
+            pass
     for _ in range(6):
         modal = ui.locator('.TUXModal-overlay, [role="dialog"]')
         if not modal.count() or not modal.first.is_visible():
@@ -149,7 +162,11 @@ def upload(item):
             page.wait_for_timeout(2000)
         close_popups(ui, page)
         cap = ui.locator('div[contenteditable="true"]').first
-        cap.click()
+        try:
+            cap.click(timeout=10000)
+        except Exception:
+            close_popups(ui, page)
+            cap.click(force=True)
         page.keyboard.press("Control+A")
         page.keyboard.press("Backspace")
         for word in item["caption"].split(" "):
@@ -161,7 +178,11 @@ def upload(item):
         page.wait_for_timeout(1500)
         close_popups(ui, page)
         shot(page, "before-post")
-        btn.click()
+        try:
+            btn.click(timeout=15000)
+        except Exception:
+            close_popups(ui, page)
+            btn.click(force=True)
         page.wait_for_timeout(4000)
         for label in ("Post now", "Post anyway"):  # confirm dialog while TikTok's checks run
             c = ui.get_by_role("button", name=label)
