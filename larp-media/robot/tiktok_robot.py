@@ -56,12 +56,20 @@ def browser():
     sid = os.environ.get("TIKTOK_SESSIONID", "").strip()
     if not sid:
         sys.exit("TIKTOK_SESSIONID missing in /etc/larp-robot.env")
+    # TikTok's editor needs a working sound output (WebAudio); the droplet has none, so give it a silent PulseAudio sink
+    try:
+        subprocess.run("pactl info >/dev/null 2>&1 || pulseaudio -D --exit-idle-time=-1 2>/dev/null; sleep 1; "
+                       "pactl list short sinks | grep -q . || pactl load-module module-null-sink sink_name=silent >/dev/null",
+                       shell=True, timeout=20)
+    except Exception as e:
+        log("no pulseaudio:", e)
     pw = sync_playwright().start()
     # under xvfb-run (DISPLAY set) run a real, non-headless window: TikTok's anti-bot code breaks in headless mode
     b = pw.chromium.launch(headless=not os.environ.get("DISPLAY"), args=["--disable-blink-features=AutomationControlled",
                                                     # small droplet: /dev/shm is tiny and RAM is tight, so avoid tab crashes
                                                     "--disable-dev-shm-usage", "--disable-gpu", "--renderer-process-limit=1",
-                                                    "--js-flags=--max-old-space-size=512"])
+                                                    "--js-flags=--max-old-space-size=512",
+                                                    "--autoplay-policy=no-user-gesture-required"])
     ctx = b.new_context(viewport={"width": 1366, "height": 900}, locale="en-US",
                         timezone_id="America/Los_Angeles", user_agent=UA)
     ctx.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
@@ -255,8 +263,15 @@ def upload(item):
         page.wait_for_timeout(1500)
         close_popups(ui, page)
         shot(page, "before-post")
-        if ui.get_by_role("button", name="Retry", exact=True).count():
-            log("Retry button before Post, near:", retry_context(ui))
+        for k in range(3):  # "Something went wrong" in the editor/preview: press its Retry and let it reload
+            r = ui.get_by_role("button", name="Retry", exact=True)
+            if not (r.count() and ui.get_by_text("Something went wrong").count()):
+                break
+            log("editor error, pressing Retry", k + 1)
+            r.last.click(force=True)
+            page.wait_for_timeout(15000)
+        if ui.get_by_text("Something went wrong").count():
+            log("editor still says Something went wrong")
         log("before Post:", screen_text(ui)[:400])
         btn.scroll_into_view_if_needed()
         page.wait_for_timeout(1000)
