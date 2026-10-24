@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 7
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -5965,6 +5965,21 @@
    "p": 0.568,
    "price": 0.52,
    "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLPASSINT-26OCT25KCSEA-KCPMAHOMES15-1",
+   "league": "nfl",
+   "player": "Patrick Mahomes",
+   "stat": "pass_ints",
+   "side": "over",
+   "line": 0.5,
+   "start": "2026-10-26T00:20:00Z",
+   "p": 0.566,
+   "price": 0.5,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
