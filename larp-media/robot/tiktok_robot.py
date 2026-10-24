@@ -101,6 +101,30 @@ def file_input(page, wait_s=150):
     return None, None
 
 
+def close_popups(ui, page):
+    """Dismiss TikTok Studio popups (tips, 'turn on content checks', etc.) that cover the form."""
+    for _ in range(6):
+        modal = ui.locator('.TUXModal-overlay, [role="dialog"]')
+        if not modal.count() or not modal.first.is_visible():
+            return
+        try:
+            log("popup:", " ".join(modal.first.inner_text(timeout=3000).split())[:160])
+        except Exception:
+            pass
+        for label in ("Got it", "Not now", "Cancel", "Skip", "Close", "OK", "Dismiss", "Maybe later"):
+            b = modal.first.get_by_role("button", name=label, exact=True)
+            if b.count() and b.first.is_visible():
+                b.first.click()
+                break
+        else:
+            x = modal.first.locator('[aria-label="Close"], [class*="close"]')
+            if x.count():
+                x.first.click(force=True)
+            else:
+                page.keyboard.press("Escape")
+        page.wait_for_timeout(1500)
+
+
 def upload(item):
     path = MEDIA / item["file"]
     pw, b, ctx = browser()
@@ -123,6 +147,7 @@ def upload(item):
             if btn.is_enabled() and ui.get_by_text("Uploaded").count():
                 break
             page.wait_for_timeout(2000)
+        close_popups(ui, page)
         cap = ui.locator('div[contenteditable="true"]').first
         cap.click()
         page.keyboard.press("Control+A")
@@ -134,6 +159,7 @@ def upload(item):
                 page.keyboard.press("Escape")
             page.keyboard.type(" ", delay=40)
         page.wait_for_timeout(1500)
+        close_popups(ui, page)
         shot(page, "before-post")
         btn.click()
         page.wait_for_timeout(4000)
