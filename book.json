@@ -1770,18 +1770,18 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 02:00 PT",
-  "props_today": 939,
+  "props_today": 951,
   "kalshi_props_today": 299,
-  "kalshi_priced_today": 18,
+  "kalshi_priced_today": 17,
   "books_on_kalshi_props": {
-   "AN Consensus": 289,
-   "AN Open": 290,
+   "AN Consensus": 291,
+   "AN Open": 293,
    "BetMGM": 45,
    "BetRivers": 2,
-   "Caesars": 123,
-   "DraftKings": 140,
+   "Caesars": 130,
+   "DraftKings": 143,
    "FanDuel": 230,
-   "Fanatics": 219,
+   "Fanatics": 215,
    "Parx": 22,
    "Pinnacle": 75,
    "Sleeper": 280,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -5737,8 +5737,8 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-25T01:00:00Z",
-   "p": 0.612,
-   "price": 0.51,
+   "p": 0.603,
+   "price": 0.5,
    "edge": 0.085,
    "news": "News: Christian Braun struggles Thursday - FantasyPros Julian Strawther is out: Christian Braun hit the under in 13/17 games without him vs 15/23 with him.",
    "result": null
