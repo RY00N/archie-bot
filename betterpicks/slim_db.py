@@ -8,7 +8,7 @@ import gzip, os, shutil, sqlite3, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = sys.argv[1] if len(sys.argv) > 1 else "/mnt/project-files/betterpicks/data"
 KEEP = {
-    "nba": {"player_games": ["date", "season_type", "player", "team", "opp", "minutes", "pts", "reb", "ast", "fg3m", "pra", "pr",
+    "nba": {"player_games": ["date", "season_type", "player", "team", "opp", "minutes", "starter", "pts", "reb", "ast", "fg3m", "pra", "pr",
                              "pa", "ra", "stl", "blk", "tov", "stocks"]},   # team + season_type: Ryan 2026-10-21 (moved players)
     "mlb": {"pitcher_games": ["date", "player", "opp", "so", "outs", "er", "h"],
             "batter_games": ["date", "player", "opp", "h", "1b", "r", "rbi", "hr", "so", "total_bases", "hits_runs_rbis"]},

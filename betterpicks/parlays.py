@@ -7,7 +7,7 @@ blended with the player's recent hit rate from the 5-year stats library (data/*.
   python3 parlays.py build   # needs fresh props.json (python3 books.py props) -> adds today's practice entries
   python3 parlays.py grade   # settles entries once the stats library has the box scores
 """
-import json, math, os, sqlite3, sys
+import json, math, os, sqlite3, sys, time
 from datetime import datetime, timedelta, timezone
 from itertools import combinations
 
@@ -111,10 +111,17 @@ def rows_for(league, stat, player):
         rows = None
         if league == "nba":
             try:
-                rows = _CONN[q[0]].execute(q[1].replace(", opp from", ", opp, team, minutes from"), (player, player)).fetchall()
-            except sqlite3.OperationalError:   # older slim DB without team/minutes
+                rows = _CONN[q[0]].execute(q[1].replace(", opp from", ", opp, team, minutes, season_type, starter from"),
+                                           (player, player)).fetchall()
+            except sqlite3.OperationalError:   # older slim DB without starter (or team/minutes)
                 try:
-                    rows = [r + (None,) for r in _CONN[q[0]].execute(q[1].replace(", opp from", ", opp, team from"),
+                    rows = [r + (None, None) for r in _CONN[q[0]].execute(
+                        q[1].replace(", opp from", ", opp, team, minutes from"), (player, player)).fetchall()]
+                except sqlite3.OperationalError:
+                    rows = None
+            if rows is None:
+                try:
+                    rows = [r + (None, None, None) for r in _CONN[q[0]].execute(q[1].replace(", opp from", ", opp, team from"),
                                                                     (player, player)).fetchall()]
                 except sqlite3.OperationalError:
                     rows = None
@@ -125,10 +132,27 @@ def rows_for(league, stat, player):
                 mins = sorted(r[4] for r in rows[:60] if r[4])
                 norm = mins[len(mins) // 2] if mins else 0
                 rows = [r for r in rows if r[3] == rows[0][3]]
+                # Ryan 2026-10-24 (Brook Lopez: started last season, comes off the bench now): only games in the role he
+                # has this season count, starter or bench, so last season's starter games don't prop up a bench player
+                role = this_role(rows)
+                if role is not None:
+                    rows = [r for r in rows if r[6] == role]
+                    mins = sorted(r[4] for r in rows[:60] if r[4])
+                    norm = mins[len(mins) // 2] if mins else 0
                 _MIN[(league, player)] = {(r[1], r[2]): r[4] for r in rows if r[4]}   # for news.minutes_split
                 rows = [r[:3] for r in rows if not norm or r[4] is None or r[4] >= 0.7 * norm]
         _ROWS[key] = rows if rows is not None else _CONN[q[0]].execute(q[1], (player, player)).fetchall()
     return _ROWS[key]
+
+
+def this_role(rows):
+    """1 (starter) or 0 (bench) from this season's regular-season games on his team, else None. rows are newest
+    first (value, date, opp, team, minutes, season_type, starter); this season = within 150 days of the newest game."""
+    if not rows or rows[0][6] is None:
+        return None
+    cut = time.strftime("%Y-%m-%d", time.gmtime(time.mktime(time.strptime(str(rows[0][1])[:10], "%Y-%m-%d")) - 150 * 86400))
+    flags = [r[6] for r in rows if r[5] == "regular" and r[6] is not None and str(r[1])[:10] >= cut]
+    return (1 if 2 * sum(flags) >= len(flags) else 0) if flags else None
 
 
 def moved(league, player, team):
