@@ -49,7 +49,13 @@ def publish_log():
         env["GIT_TERMINAL_PROMPT"] = "0"
         run = lambda *c, inp=None: subprocess.run(["git", "-C", repo, *c], input=inp, capture_output=True, text=True, env=env, timeout=120)
         blob = run("hash-object", "-w", "--stdin", inp="\n".join(lines) + "\n").stdout.strip()
-        tree = run("mktree", inp=f"100644 blob {blob}\tlog.txt\n").stdout.strip()
+        entries = f"100644 blob {blob}\tlog.txt\n"
+        import time
+        pngs = sorted((p for p in SHOTS.glob("*.png") if time.time() - p.stat().st_mtime < 1800), key=lambda p: p.stat().st_mtime)[-6:]
+        for png in pngs:  # recent screenshots of the TikTok Studio page so the project can see what's on screen
+            pb = run("hash-object", "-w", str(png)).stdout.strip()
+            entries += f"100644 blob {pb}\t{png.name}\n"
+        tree = run("mktree", inp=entries).stdout.strip()
         commit = run("commit-tree", tree, "-m", "robot log " + dt.datetime.now(PT).isoformat(timespec="seconds")).stdout.strip()
         tok = os.environ.get("GH_LOG_TOKEN", "").strip()  # fine-grained token Reza made for this (archie-bot contents only)
         if not tok:
@@ -98,6 +104,8 @@ def browser():
                        shell=True, timeout=20)
     except Exception as e:
         log("no pulseaudio:", e)
+    pa = subprocess.run("pactl info 2>&1 | head -3; pactl list short sinks 2>&1 | head -3", shell=True, capture_output=True, text=True).stdout
+    log("pulse:", " | ".join(pa.split("\n")))
     pw = sync_playwright().start()
     # under xvfb-run (DISPLAY set) run a real, non-headless window: TikTok's anti-bot code breaks in headless mode
     b = pw.chromium.launch(headless=not os.environ.get("DISPLAY"), args=["--disable-blink-features=AutomationControlled",
@@ -298,15 +306,17 @@ def upload(item):
         page.wait_for_timeout(1500)
         close_popups(ui, page)
         shot(page, "before-post")
-        for k in range(3):  # "Something went wrong" in the editor/preview: press its Retry and let it reload
-            r = ui.get_by_role("button", name="Retry", exact=True)
-            if not (r.count() and ui.get_by_text("Something went wrong").count()):
-                break
-            log("editor error, pressing Retry", k + 1)
-            r.last.click(force=True)
-            page.wait_for_timeout(15000)
-        if ui.get_by_text("Something went wrong").count():
-            log("editor still says Something went wrong")
+        # what is the "Something went wrong" box part of? (log its surrounding classes/text)
+        try:
+            log("error box:", ui.evaluate("""() => { const t = [...document.querySelectorAll('*')].find(e => e.children.length === 0 && /Something went wrong/.test(e.textContent));
+                if (!t) return 'none'; const out = []; let e = t;
+                for (let k = 0; k < 7 && e; k++, e = e.parentElement) out.push((e.tagName + '.' + (e.className || '').toString().slice(0, 60)));
+                return out.join(' < '); }"""))
+            log("audio:", ui.evaluate("""async () => { try { const c = new AudioContext(); await new Promise(r => setTimeout(r, 500));
+                const s = c.state + ' ' + c.sampleRate; c.close(); return s; } catch (e) { return 'ERR ' + e; } }"""))
+        except Exception as e:
+            log("diag failed:", repr(e))
+        shot(page, "before-post")
         log("before Post:", screen_text(ui)[:400])
         btn.scroll_into_view_if_needed()
         page.wait_for_timeout(1000)
@@ -320,6 +330,14 @@ def upload(item):
             btn.click(force=True)
             log("clicked Post (forced)")
         page.wait_for_timeout(5000)
+        shot(page, "after-post")
+        if "/tiktokstudio/upload" in page.url:
+            try:
+                btn.evaluate("b => { b.focus(); b.click(); }")
+                page.wait_for_timeout(3000)
+                log("also clicked Post via JS")
+            except Exception as e:
+                log("JS click failed:", repr(e))
         if captcha_seen(page):
             log("CAPTCHA shown after Post")
         for label in ("Post now", "Post anyway"):  # confirm dialog while TikTok's checks run
