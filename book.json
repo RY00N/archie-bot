@@ -1674,7 +1674,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 18:00 PT",
-  "props_today": 583,
+  "props_today": 584,
   "kalshi_props_today": 257,
   "kalshi_priced_today": 12,
   "books_on_kalshi_props": {
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 18
+  "kalshi_legs_today": 19
  },
  "shadow": [
   {
@@ -4337,8 +4337,8 @@
    "line": 1.5,
    "start": "2026-10-24T01:30:00Z",
    "p": 0.389,
-   "price": 0.33,
-   "edge": 0.044,
+   "price": 0.32,
+   "edge": 0.054,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4689,6 +4689,21 @@
   },
   {
    "date": "2026-10-23",
+   "ticker": "KXNBAAST-26OCT23HOUSAS-HOUFVANVLEET5-6",
+   "league": "nba",
+   "player": "Fred VanVleet",
+   "stat": "assists",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-24T01:30:00Z",
+   "p": 0.539,
+   "price": 0.47,
+   "edge": 0.052,
+   "news": "Reed Sheppard (G) is out, so Fred VanVleet's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
    "ticker": "KXNBAAST-26OCT23HOUSAS-HOUKDURANT7-4",
    "league": "nba",
    "player": "Kevin Durant",
@@ -5034,6 +5049,21 @@
   },
   {
    "date": "2026-10-23",
+   "ticker": "KXNBAPTS-26OCT23HOUSAS-HOUATHOMPSON1-15",
+   "league": "nba",
+   "player": "Amen Thompson",
+   "stat": "points",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-10-24T01:30:00Z",
+   "p": 0.631,
+   "price": 0.51,
+   "edge": 0.104,
+   "news": "Reed Sheppard is out: Amen Thompson hit the over in 3/3 games without him vs 27/37 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
    "ticker": "KXNBAPTS-26OCT23HOUSAS-HOUJSMITH10-15",
    "league": "nba",
    "player": "Jabari Smith Jr.",
@@ -5057,8 +5087,8 @@
    "line": 9.5,
    "start": "2026-10-24T01:30:00Z",
    "p": 0.518,
-   "price": 0.46,
-   "edge": 0.041,
+   "price": 0.47,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
