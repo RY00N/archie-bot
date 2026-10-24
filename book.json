@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -5767,9 +5767,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.577,
+   "p": 0.576,
    "price": 0.52,
-   "edge": 0.04,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5843,8 +5843,8 @@
    "line": 1.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.521,
-   "price": 0.47,
-   "edge": 0.034,
+   "price": 0.46,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6277,10 +6277,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.476,
+   "p": 0.506,
    "price": 0.38,
-   "edge": 0.08,
-   "news": "NYG's CB Greg Newsome II is out, an easier matchup.",
+   "edge": 0.11,
+   "news": "NYG's CB Greg Newsome II is out, an easier matchup; NYG's S Jevon Holland is out, an easier matchup.",
    "result": null
   },
   {
@@ -6295,7 +6295,7 @@
    "p": 0.585,
    "price": 0.39,
    "edge": 0.178,
-   "news": "Tank Dell is out: Xavier Hutchinson hit the over in 21/28 games without him vs 2/12 with him; NYG's CB Greg Newsome II is out, an easier matchup.",
+   "news": "Tank Dell is out: Xavier Hutchinson hit the over in 21/28 games without him vs 2/12 with him; NYG's CB Greg Newsome II is out, an easier matchup; NYG's S Jevon Holland is out, an easier matchup.",
    "result": null
   },
   {
@@ -6323,8 +6323,8 @@
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.701,
-   "price": 0.56,
-   "edge": 0.124,
+   "price": 0.55,
+   "edge": 0.134,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
