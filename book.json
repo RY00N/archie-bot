@@ -1770,7 +1770,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 10:00 PT",
-  "props_today": 899,
+  "props_today": 901,
   "kalshi_props_today": 400,
   "kalshi_priced_today": 27,
   "books_on_kalshi_props": {
@@ -6173,8 +6173,8 @@
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.416,
-   "price": 0.32,
-   "edge": 0.081,
+   "price": 0.33,
+   "edge": 0.071,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
