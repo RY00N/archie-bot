@@ -1669,22 +1669,133 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-24",
+   "app": "Kalshi",
+   "type": "1-leg lock: Malachi Fields over 1.5 receptions",
+   "stake": 5.0,
+   "payout_x": 1.82,
+   "win_p": 0.702,
+   "ev_pct": 27.6,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Malachi Fields",
+     "team": "NYG",
+     "stat": "receptions",
+     "side": "over",
+     "line": 1.5,
+     "price": 0.55,
+     "ticker": "KXNFLREC-26OCT25NYGHOU-NYGMFIELDS88-2",
+     "game": "NYG @ HOU",
+     "start": "2026-10-25T17:00:00Z",
+     "p": 0.702,
+     "edge": 0.135,
+     "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
+     "why": "Malachi Fields over 1.5 receptions: 7 books price it 55%; hit 100% of last 6 (avg 2.0). Fair 70%.",
+     "case": "Last 5 games: 2, 2, 2, 2, 2 (5 of 5 over 1.5).",
+     "result": null
+    }
+   ],
+   "lock": true
+  },
+  {
+   "date": "2026-10-24",
+   "app": "Kalshi",
+   "type": "1-leg lock: MarShawn Lloyd over 9.5 rush yds",
+   "stake": 5.0,
+   "payout_x": 1.96,
+   "win_p": 0.633,
+   "ev_pct": 24.1,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "MarShawn Lloyd",
+     "team": "GB",
+     "stat": "rush_yds",
+     "side": "over",
+     "line": 9.5,
+     "price": 0.51,
+     "ticker": "KXNFLRSHYDS-26OCT25GBDET-GBMLLOYD32-10",
+     "game": "GB @ DET",
+     "start": "2026-10-25T20:25:00Z",
+     "p": 0.633,
+     "edge": 0.106,
+     "news": "DET's LB Devin White is out, an easier matchup.",
+     "why": "MarShawn Lloyd over 9.5 rush yds: 3 books price it 50%; hit 100% of last 7 (avg 19.6). Fair 63%.",
+     "case": "Last 5 games: 10, 31, 13, 11, 20 (5 of 5 over 9.5).",
+     "result": null
+    }
+   ],
+   "lock": true
+  },
+  {
+   "date": "2026-10-24",
+   "app": "Kalshi",
+   "type": "1-leg lock: Austin Hooper over 0.5 receptions",
+   "stake": 5.0,
+   "payout_x": 1.85,
+   "win_p": 0.659,
+   "ev_pct": 22.0,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Austin Hooper",
+     "team": "ATL",
+     "stat": "receptions",
+     "side": "over",
+     "line": 0.5,
+     "price": 0.54,
+     "ticker": "KXNFLREC-26OCT25SFATL-ATLAHOOPER81-1",
+     "game": "SF @ ATL",
+     "start": "2026-10-25T17:00:00Z",
+     "p": 0.659,
+     "edge": 0.102,
+     "news": "SF's LB Garret Wallow is out, an easier matchup; SF's LB Luke Gifford is out, an easier matchup.",
+     "why": "Austin Hooper over 0.5 receptions: 4 books price it 54%; hit 83% of last 12 (avg 1.4); 1/1 over vs SF, avg 2.0. Fair 66%.",
+     "case": "Last 5 games: 1, 1, 2, 2, 2 (5 of 5 over 0.5).",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-23 23:00 PT",
-  "props_today": 0,
-  "kalshi_props_today": 0,
-  "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {},
+  "props_at": "2026-10-24 00:00 PT",
+  "props_today": 716,
+  "kalshi_props_today": 129,
+  "kalshi_priced_today": 13,
+  "books_on_kalshi_props": {
+   "AN Consensus": 124,
+   "AN Open": 124,
+   "BetMGM": 12,
+   "BetRivers": 2,
+   "Caesars": 29,
+   "DraftKings": 26,
+   "FanDuel": 90,
+   "Fanatics": 84,
+   "Parx": 22,
+   "Pinnacle": 22,
+   "Sleeper": 109,
+   "Underdog": 129,
+   "Unibet": 12,
+   "bet365": 115
+  },
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 0
+  "kalshi_legs_today": 1
  },
  "shadow": [
   {
