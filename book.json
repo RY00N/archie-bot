@@ -1770,21 +1770,21 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 05:00 PT",
-  "props_today": 1013,
+  "props_today": 1014,
   "kalshi_props_today": 369,
-  "kalshi_priced_today": 26,
+  "kalshi_priced_today": 24,
   "books_on_kalshi_props": {
    "AN Consensus": 361,
    "AN Open": 364,
-   "BetMGM": 240,
+   "BetMGM": 235,
    "BetRivers": 110,
-   "Caesars": 301,
+   "Caesars": 302,
    "DraftKings": 283,
    "FanDuel": 290,
-   "Fanatics": 284,
+   "Fanatics": 282,
    "Parx": 130,
    "Pinnacle": 75,
-   "Sleeper": 336,
+   "Sleeper": 337,
    "Underdog": 369,
    "Unibet": 21,
    "bet365": 351
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -5768,8 +5768,8 @@
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
    "p": 0.448,
-   "price": 0.37,
-   "edge": 0.062,
+   "price": 0.38,
+   "edge": 0.052,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6277,9 +6277,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.633,
+   "p": 0.632,
    "price": 0.49,
-   "edge": 0.126,
+   "edge": 0.125,
    "news": "DET's LB Devin White is out, an easier matchup.",
    "result": null
   },
