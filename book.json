@@ -1770,24 +1770,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 16:00 PT",
-  "props_today": 886,
+  "props_today": 892,
   "kalshi_props_today": 445,
-  "kalshi_priced_today": 40,
+  "kalshi_priced_today": 35,
   "books_on_kalshi_props": {
-   "AN Consensus": 433,
-   "AN Open": 440,
-   "BetMGM": 322,
-   "BetRivers": 286,
-   "Caesars": 363,
-   "DraftKings": 361,
-   "FanDuel": 332,
-   "Fanatics": 332,
-   "Parx": 316,
-   "Pinnacle": 245,
+   "AN Consensus": 328,
+   "AN Open": 334,
+   "BetMGM": 251,
+   "BetRivers": 200,
+   "Caesars": 274,
+   "DraftKings": 265,
+   "FanDuel": 239,
+   "Fanatics": 246,
+   "Parx": 232,
+   "Pinnacle": 179,
    "Sleeper": 400,
    "Underdog": 444,
-   "Unibet": 98,
-   "bet365": 440
+   "Unibet": 70,
+   "bet365": 334
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -5857,9 +5857,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.437,
+   "p": 0.426,
    "price": 0.35,
-   "edge": 0.071,
+   "edge": 0.06,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5977,9 +5977,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.62,
+   "p": 0.619,
    "price": 0.47,
-   "edge": 0.133,
+   "edge": 0.132,
    "news": "Patrick Williams is out: Jalen Smith hit the over in 8/9 games without him vs 7/15 with him.",
    "result": null
   },
@@ -6053,8 +6053,8 @@
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.503,
-   "price": 0.41,
-   "edge": 0.076,
+   "price": 0.4,
+   "edge": 0.086,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6097,9 +6097,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.564,
+   "p": 0.563,
    "price": 0.51,
-   "edge": 0.037,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6247,9 +6247,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.482,
+   "p": 0.483,
    "price": 0.42,
-   "edge": 0.045,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6307,9 +6307,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.686,
-   "price": 0.59,
-   "edge": 0.079,
+   "p": 0.689,
+   "price": 0.57,
+   "edge": 0.102,
    "news": "Cooper Flagg is out: Naji Marshall hit the under in 2/2 games without him vs 21/29 with him.",
    "result": null
   },
@@ -6412,9 +6412,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.646,
+   "p": 0.645,
    "price": 0.59,
-   "edge": 0.039,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6765,6 +6765,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNFLRSHATT-26OCT25INDMIN-MINAJONES33-11",
+   "league": "nfl",
+   "player": "Aaron Jones",
+   "stat": "rush_att",
+   "side": "over",
+   "line": 10.5,
+   "start": "2026-10-25T17:00:00Z",
+   "p": 0.524,
+   "price": 0.45,
+   "edge": 0.057,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNFLRSHATT-26OCT25PITNO-NOKMILLER5-13",
    "league": "nfl",
    "player": "Kendre Miller",
@@ -6806,6 +6821,21 @@
    "price": 0.51,
    "edge": 0.102,
    "news": "DET's LB Devin White is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLRSHYDS-26OCT25INDMIN-MINAJONES33-40",
+   "league": "nfl",
+   "player": "Aaron Jones",
+   "stat": "rush_yds",
+   "side": "over",
+   "line": 39.5,
+   "start": "2026-10-25T17:00:00Z",
+   "p": 0.565,
+   "price": 0.5,
+   "edge": 0.047,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
