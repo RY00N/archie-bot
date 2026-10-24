@@ -1770,24 +1770,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 01:00 PT",
-  "props_today": 940,
-  "kalshi_props_today": 270,
-  "kalshi_priced_today": 16,
+  "props_today": 939,
+  "kalshi_props_today": 285,
+  "kalshi_priced_today": 17,
   "books_on_kalshi_props": {
-   "AN Consensus": 264,
-   "AN Open": 265,
-   "BetMGM": 41,
+   "AN Consensus": 279,
+   "AN Open": 280,
+   "BetMGM": 45,
    "BetRivers": 2,
-   "Caesars": 98,
-   "DraftKings": 116,
-   "FanDuel": 223,
-   "Fanatics": 197,
+   "Caesars": 114,
+   "DraftKings": 130,
+   "FanDuel": 230,
+   "Fanatics": 205,
    "Parx": 22,
    "Pinnacle": 75,
-   "Sleeper": 249,
-   "Underdog": 270,
-   "Unibet": 13,
-   "bet365": 195
+   "Sleeper": 258,
+   "Underdog": 285,
+   "Unibet": 14,
+   "bet365": 210
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 1
+  "kalshi_legs_today": 2
  },
  "shadow": [
   {
@@ -5759,6 +5759,21 @@
    "result": null
   },
   {
+   "date": "2026-10-24",
+   "ticker": "KXNBAREB-26OCT24WASCHI-CHICWILSON8-6",
+   "league": "nba",
+   "player": "Caleb Wilson",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 5.5,
+   "start": "2026-10-25T00:00:00Z",
+   "p": 0.512,
+   "price": 0.44,
+   "edge": 0.055,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
    "date": "2026-10-25",
    "ticker": "KXNFLPASSCOMP-26OCT25MIANYJ-MIAMWILLIS2-17",
    "league": "nfl",
@@ -5977,9 +5992,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.402,
+   "p": 0.404,
    "price": 0.35,
-   "edge": 0.036,
+   "edge": 0.038,
    "news": "News: Olamide Zaccheaus' struggles may open the door for Falcons to start Zachariah Branch - Blogging Dirty SF's S Marques Sigle is out, an easier matchup.",
    "result": null
   },
