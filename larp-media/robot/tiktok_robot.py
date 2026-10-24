@@ -23,8 +23,43 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36")
 
 
+LOGFILE = Path(os.environ.get("LARP_LOG", "/var/lib/larp-robot/robot.log"))
+
+
 def log(*a):
-    print(dt.datetime.now(PT).strftime("%m-%d %H:%M:%S"), *a, flush=True)
+    line = " ".join(str(x) for x in (dt.datetime.now(PT).strftime("%m-%d %H:%M:%S"),) + a)
+    print(line, flush=True)
+    try:
+        LOGFILE.parent.mkdir(parents=True, exist_ok=True)
+        with LOGFILE.open("a") as f:
+            f.write(line + "\n")
+    except OSError:
+        pass
+
+
+def publish_log():
+    """Push the last 400 log lines to branch larp-robot-log (log.txt) so the project can read results without the console.
+    Text only, never the cookie. Uses the push access set up by setup.sh."""
+    try:
+        lines = LOGFILE.read_text().splitlines()[-400:]
+        repo = str(MEDIA.parent)
+        env = dict(os.environ, GIT_AUTHOR_NAME="larp-robot", GIT_AUTHOR_EMAIL="robot@archie",
+                   GIT_COMMITTER_NAME="larp-robot", GIT_COMMITTER_EMAIL="robot@archie")
+        env.pop("TIKTOK_SESSIONID", None)
+        env["GIT_TERMINAL_PROMPT"] = "0"
+        run = lambda *c, inp=None: subprocess.run(["git", "-C", repo, *c], input=inp, capture_output=True, text=True, env=env, timeout=120)
+        blob = run("hash-object", "-w", "--stdin", inp="\n".join(lines) + "\n").stdout.strip()
+        tree = run("mktree", inp=f"100644 blob {blob}\tlog.txt\n").stdout.strip()
+        commit = run("commit-tree", tree, "-m", "robot log " + dt.datetime.now(PT).isoformat(timespec="seconds")).stdout.strip()
+        tok = os.environ.get("GH_LOG_TOKEN", "").strip()  # fine-grained token Reza made for this (archie-bot contents only)
+        if not tok:
+            print("log push skipped: no GH_LOG_TOKEN in /etc/larp-robot.env", flush=True)
+            return
+        r = run("push", "-q", "-f", f"https://x-access-token:{tok}@github.com/RY00N/archie-bot.git", f"{commit}:refs/heads/larp-robot-log")
+        if r.returncode:
+            print("log push failed:", r.stderr.replace(tok, "***").strip()[:200], flush=True)
+    except Exception as e:
+        print("log push failed:", repr(e), flush=True)
 
 
 def load_state():
@@ -321,24 +356,29 @@ def git_pull():
     subprocess.run(["git", "-C", str(MEDIA.parent), "pull", "-q", "--ff-only"], check=False, timeout=180)
 
 
+def main_test():
+    pw, b, ctx = browser()
+    page = ctx.new_page()
+    page.goto(UPLOAD, wait_until="domcontentloaded", timeout=180000)
+    user = who(page)
+    log("tiktok user:", user or "NOT LOGGED IN (cookie wrong or expired)")
+    fr, inp = file_input(page)
+    title = page.title()
+    log("LOGGED IN, upload page ready" if (user and inp is not None) else
+        f"NOT READY (url {page.url}, title {title!r}, frames {len(page.frames)})", "screenshot:", shot(page, "test"))
+    if inp is None:
+        body = page.evaluate("document.body ? document.body.innerText.slice(0, 400) : ''")
+        log("page text:", " | ".join(body.split("\n")[:12]))
+    ctx.close(); b.close(); pw.stop()
+    return
+
+
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else "tick"
     queue = json.loads((MEDIA / "queue.json").read_text())
     state = load_state()
     if cmd == "test":
-        pw, b, ctx = browser()
-        page = ctx.new_page()
-        page.goto(UPLOAD, wait_until="domcontentloaded", timeout=180000)
-        user = who(page)
-        log("tiktok user:", user or "NOT LOGGED IN (cookie wrong or expired)")
-        fr, inp = file_input(page)
-        title = page.title()
-        log("LOGGED IN, upload page ready" if (user and inp is not None) else
-            f"NOT READY (url {page.url}, title {title!r}, frames {len(page.frames)})", "screenshot:", shot(page, "test"))
-        if inp is None:
-            body = page.evaluate("document.body ? document.body.innerText.slice(0, 400) : ''")
-            log("page text:", " | ".join(body.split("\n")[:12]))
-        ctx.close(); b.close(); pw.stop()
+        main_test(); publish_log()
         return
     if cmd == "post":
         i = int(sys.argv[2])
@@ -346,9 +386,29 @@ def main():
         if ok and queue["items"][i]["file"] not in state["posted"]:
             state["posted"].append(queue["items"][i]["file"]); save_state(state)
         log("post", i, "ok" if ok else "FAILED")
+        publish_log()
         return
     git_pull()
     queue = json.loads((MEDIA / "queue.json").read_text())
+    # one-off jobs from the project (robot/jobs.json): {"jobs":[{"id":"j1","cmd":"post","n":0}|{"id":"j2","cmd":"test"}]}
+    try:
+        jobs = json.loads((HERE / "jobs.json").read_text()).get("jobs", [])
+    except (OSError, ValueError):
+        jobs = []
+    for j in jobs:
+        if j["id"] in state.setdefault("jobs_done", []):
+            continue
+        state["jobs_done"].append(j["id"]); save_state(state)
+        log("JOB", j["id"], j)
+        if j.get("cmd") == "post":
+            it = queue["items"][int(j["n"])]
+            ok = upload(it)
+            if ok and it["file"] not in state["posted"]:
+                state["posted"].append(it["file"]); save_state(state)
+            log("JOB", j["id"], "post", j["n"], it["file"], "ok" if ok else "FAILED")
+        elif j.get("cmd") == "test":
+            sys.argv[1:] = ["test"]; main_test()
+        publish_log()
     slot = due_slot(queue, state)
     if not slot:
         return
@@ -361,6 +421,7 @@ def main():
     if ok:
         state["posted"].append(nxt["file"]); save_state(state)
     log(slot, nxt["file"], "posted" if ok else "FAILED (retries at next slot)")
+    publish_log()
 
 
 if __name__ == "__main__":
