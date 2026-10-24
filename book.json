@@ -5574,6 +5574,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNFLPASSCOMP-26OCT25MIANYJ-MIAMWILLIS2-17",
+   "league": "nfl",
+   "player": "Malik Willis",
+   "stat": "pass_comp",
+   "side": "under",
+   "line": 16.5,
+   "start": "2026-10-25T17:00:00Z",
+   "p": 0.571,
+   "price": 0.52,
+   "edge": 0.034,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNFLREC-26OCT25INDMIN-MINJJENNINGS14-2",
    "league": "nfl",
    "player": "Jauan Jennings",
