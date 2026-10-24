@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 11
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -5872,9 +5872,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.379,
+   "p": 0.378,
    "price": 0.33,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6053,8 +6053,8 @@
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.5,
-   "price": 0.42,
-   "edge": 0.063,
+   "price": 0.4,
+   "edge": 0.083,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6457,9 +6457,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.598,
-   "price": 0.55,
-   "edge": 0.031,
+   "p": 0.586,
+   "price": 0.53,
+   "edge": 0.039,
    "news": "News: Savion Williams (ankle) limited Wednesday - FantasyPros",
    "result": null
   },
