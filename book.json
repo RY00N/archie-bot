@@ -1676,22 +1676,10 @@
   "props_at": "2026-10-23 19:00 PT",
   "props_today": 337,
   "kalshi_props_today": 142,
-  "kalshi_priced_today": 6,
+  "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
-   "AN Consensus": 141,
-   "AN Open": 140,
-   "BetMGM": 106,
-   "BetRivers": 116,
-   "Caesars": 119,
-   "DraftKings": 123,
-   "FanDuel": 121,
-   "Fanatics": 107,
-   "Parx": 116,
-   "Pinnacle": 80,
    "Sleeper": 139,
-   "Underdog": 142,
-   "Unibet": 31,
-   "bet365": 142
+   "Underdog": 142
   },
   "data_files": [
    "mlb.sqlite",
@@ -5626,9 +5614,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.571,
+   "p": 0.57,
    "price": 0.46,
-   "edge": 0.094,
+   "edge": 0.093,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
