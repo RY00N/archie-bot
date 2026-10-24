@@ -57,12 +57,14 @@ def browser():
     if not sid:
         sys.exit("TIKTOK_SESSIONID missing in /etc/larp-robot.env")
     pw = sync_playwright().start()
-    b = pw.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled",
+    # under xvfb-run (DISPLAY set) run a real, non-headless window: TikTok's anti-bot code breaks in headless mode
+    b = pw.chromium.launch(headless=not os.environ.get("DISPLAY"), args=["--disable-blink-features=AutomationControlled",
                                                     # small droplet: /dev/shm is tiny and RAM is tight, so avoid tab crashes
                                                     "--disable-dev-shm-usage", "--disable-gpu", "--renderer-process-limit=1",
                                                     "--js-flags=--max-old-space-size=512"])
     ctx = b.new_context(viewport={"width": 1366, "height": 900}, locale="en-US",
                         timezone_id="America/Los_Angeles", user_agent=UA)
+    ctx.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
     ctx.add_cookies([{"name": n, "value": sid, "domain": ".tiktok.com", "path": "/",
                       "secure": True, "httpOnly": True} for n in ("sessionid", "sessionid_ss")])
     return pw, b, ctx
@@ -192,6 +194,15 @@ def upload(item):
         except Exception:
             pass
     page.on("response", on_resp)
+    def on_bad(r):  # any failed TikTok call is a clue for "Something went wrong"
+        try:
+            if r.status >= 400 and "tiktok" in r.url:
+                log("net ERROR", r.status, r.request.method, r.url.split("?")[0][-90:])
+        except Exception:
+            pass
+    page.on("response", on_bad)
+    page.on("requestfailed", lambda q: "tiktok" in q.url and log("net FAILED", q.method, q.url.split("?")[0][-90:], q.failure))
+    page.on("console", lambda m: m.type == "error" and log("console:", m.text[:200]))
     try:
         page.goto(UPLOAD, wait_until="domcontentloaded", timeout=180000)
         page.wait_for_timeout(6000)
