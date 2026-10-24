@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 18
+  "kalshi_legs_today": 17
  },
  "shadow": [
   {
@@ -5627,8 +5627,8 @@
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.529,
-   "price": 0.4,
-   "edge": 0.112,
+   "price": 0.41,
+   "edge": 0.102,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
    "result": null
   },
