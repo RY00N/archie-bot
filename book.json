@@ -1772,7 +1772,7 @@
   "props_at": "2026-10-24 06:00 PT",
   "props_today": 1023,
   "kalshi_props_today": 414,
-  "kalshi_priced_today": 26,
+  "kalshi_priced_today": 24,
   "books_on_kalshi_props": {
    "AN Consensus": 366,
    "AN Open": 368,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -5775,6 +5775,21 @@
   },
   {
    "date": "2026-10-24",
+   "ticker": "KXNBA3PT-26OCT24HOUATL-HOUJSMITH10-2",
+   "league": "nba",
+   "player": "Jabari Smith Jr.",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-25T00:30:00Z",
+   "p": 0.668,
+   "price": 0.62,
+   "edge": 0.032,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
    "ticker": "KXNBA3PT-26OCT24HOUATL-HOUJSMITH10-3",
    "league": "nba",
    "player": "Jabari Smith Jr.",
@@ -5782,9 +5797,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.449,
+   "p": 0.447,
    "price": 0.37,
-   "edge": 0.063,
+   "edge": 0.061,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5797,9 +5812,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.514,
+   "p": 0.512,
    "price": 0.46,
-   "edge": 0.037,
+   "edge": 0.035,
    "news": "News: Warriors injury news could lead to Bucks trading Myles Turner - Sports Illustrated",
    "result": null
   },
@@ -5895,6 +5910,21 @@
   },
   {
    "date": "2026-10-24",
+   "ticker": "KXNBAPTS-26OCT24HOUATL-HOUKDURANT7-25",
+   "league": "nba",
+   "player": "Kevin Durant",
+   "stat": "points",
+   "side": "over",
+   "line": 24.5,
+   "start": "2026-10-25T00:30:00Z",
+   "p": 0.53,
+   "price": 0.47,
+   "edge": 0.043,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
    "ticker": "KXNBAPTS-26OCT24MILPHI-MILRROLLINS13-15",
    "league": "nba",
    "player": "Ryan Rollins",
@@ -5962,9 +5992,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.503,
+   "p": 0.5,
    "price": 0.43,
-   "edge": 0.056,
+   "edge": 0.053,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
