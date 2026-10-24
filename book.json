@@ -1771,23 +1771,23 @@
  "diag": {
   "props_at": "2026-10-24 13:00 PT",
   "props_today": 945,
-  "kalshi_props_today": 416,
+  "kalshi_props_today": 425,
   "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
-   "AN Consensus": 408,
-   "AN Open": 411,
-   "BetMGM": 292,
-   "BetRivers": 300,
-   "Caesars": 346,
-   "DraftKings": 358,
-   "FanDuel": 327,
-   "Fanatics": 320,
-   "Parx": 320,
+   "AN Consensus": 417,
+   "AN Open": 420,
+   "BetMGM": 228,
+   "BetRivers": 307,
+   "Caesars": 350,
+   "DraftKings": 362,
+   "FanDuel": 335,
+   "Fanatics": 328,
+   "Parx": 325,
    "Pinnacle": 234,
-   "Sleeper": 381,
-   "Underdog": 416,
+   "Sleeper": 389,
+   "Underdog": 425,
    "Unibet": 84,
-   "bet365": 402
+   "bet365": 419
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
@@ -5677,9 +5677,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.469,
+   "p": 0.468,
    "price": 0.42,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5767,9 +5767,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.573,
+   "p": 0.571,
    "price": 0.52,
-   "edge": 0.036,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6007,9 +6007,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.59,
+   "p": 0.586,
    "price": 0.5,
-   "edge": 0.072,
+   "edge": 0.068,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6037,9 +6037,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.481,
+   "p": 0.479,
    "price": 0.42,
-   "edge": 0.044,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6247,9 +6247,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.412,
+   "p": 0.416,
    "price": 0.33,
-   "edge": 0.067,
+   "edge": 0.071,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
@@ -6427,9 +6427,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.658,
+   "p": 0.657,
    "price": 0.53,
-   "edge": 0.111,
+   "edge": 0.11,
    "news": "SF's LB Garret Wallow is out, an easier matchup; SF's LB Luke Gifford is out, an easier matchup.",
    "result": null
   },
