@@ -1770,24 +1770,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 16:00 PT",
-  "props_today": 891,
-  "kalshi_props_today": 448,
-  "kalshi_priced_today": 43,
+  "props_today": 874,
+  "kalshi_props_today": 443,
+  "kalshi_priced_today": 42,
   "books_on_kalshi_props": {
-   "AN Consensus": 439,
-   "AN Open": 443,
+   "AN Consensus": 434,
+   "AN Open": 438,
    "BetMGM": 286,
-   "BetRivers": 288,
-   "Caesars": 361,
-   "DraftKings": 364,
-   "FanDuel": 336,
+   "BetRivers": 284,
+   "Caesars": 357,
+   "DraftKings": 360,
+   "FanDuel": 332,
    "Fanatics": 333,
-   "Parx": 320,
-   "Pinnacle": 246,
-   "Sleeper": 403,
-   "Underdog": 447,
+   "Parx": 316,
+   "Pinnacle": 245,
+   "Sleeper": 398,
+   "Underdog": 442,
    "Unibet": 97,
-   "bet365": 443
+   "bet365": 438
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 11
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -6071,6 +6071,21 @@
    "price": 0.44,
    "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
+   "ticker": "KXNBABLK-26OCT24MILPHI-MILMTURNER3-2",
+   "league": "nba",
+   "player": "Myles Turner",
+   "stat": "blocks",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-24T23:30:00Z",
+   "p": 0.44,
+   "price": 0.39,
+   "edge": 0.033,
+   "news": "News: Warriors injury news could lead to Bucks trading Myles Turner - Sports Illustrated",
    "result": null
   },
   {
