@@ -1676,7 +1676,7 @@
   "props_at": "2026-10-23 18:00 PT",
   "props_today": 337,
   "kalshi_props_today": 142,
-  "kalshi_priced_today": 6,
+  "kalshi_priced_today": 5,
   "books_on_kalshi_props": {
    "AN Consensus": 141,
    "AN Open": 140,
@@ -1685,7 +1685,7 @@
    "Caesars": 119,
    "DraftKings": 123,
    "FanDuel": 121,
-   "Fanatics": 105,
+   "Fanatics": 108,
    "Parx": 116,
    "Pinnacle": 80,
    "Sleeper": 139,
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 11
+  "kalshi_legs_today": 10
  },
  "shadow": [
   {
@@ -4381,9 +4381,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.448,
+   "p": 0.446,
    "price": 0.39,
-   "edge": 0.041,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -4426,9 +4426,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.494,
+   "p": 0.493,
    "price": 0.36,
-   "edge": 0.118,
+   "edge": 0.117,
    "news": "Jake LaRavia (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -5131,9 +5131,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.607,
+   "p": 0.604,
    "price": 0.53,
-   "edge": 0.06,
+   "edge": 0.057,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
    "result": null
   },
@@ -5386,9 +5386,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.689,
-   "price": 0.53,
-   "edge": 0.142,
+   "p": 0.688,
+   "price": 0.52,
+   "edge": 0.151,
    "news": "Kristaps Porzingis is out: Al Horford hit the over in 3/3 games without him vs 3/5 with him.",
    "result": null
   },
@@ -5402,8 +5402,8 @@
    "line": 9.5,
    "start": "2026-10-24T02:00:00Z",
    "p": 0.495,
-   "price": 0.44,
-   "edge": 0.038,
+   "price": 0.43,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5491,9 +5491,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.526,
+   "p": 0.525,
    "price": 0.44,
-   "edge": 0.069,
+   "edge": 0.068,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
