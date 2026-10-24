@@ -1674,24 +1674,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-23 18:00 PT",
-  "props_today": 580,
+  "props_today": 579,
   "kalshi_props_today": 257,
-  "kalshi_priced_today": 11,
+  "kalshi_priced_today": 6,
   "books_on_kalshi_props": {
-   "AN Consensus": 254,
-   "AN Open": 255,
-   "BetMGM": 191,
-   "BetRivers": 217,
-   "Caesars": 221,
-   "DraftKings": 237,
-   "FanDuel": 229,
-   "Fanatics": 203,
-   "Parx": 216,
-   "Pinnacle": 152,
+   "AN Consensus": 140,
+   "AN Open": 139,
+   "BetMGM": 105,
+   "BetRivers": 115,
+   "Caesars": 118,
+   "DraftKings": 122,
+   "FanDuel": 120,
+   "Fanatics": 105,
+   "Parx": 114,
+   "Pinnacle": 79,
    "Sleeper": 249,
    "Underdog": 257,
-   "Unibet": 52,
-   "bet365": 257
+   "Unibet": 31,
+   "bet365": 141
   },
   "data_files": [
    "mlb.sqlite",
@@ -1699,7 +1699,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 10
  },
  "shadow": [
   {
@@ -4397,8 +4397,8 @@
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
    "p": 0.462,
-   "price": 0.38,
-   "edge": 0.066,
+   "price": 0.39,
+   "edge": 0.055,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
    "result": null
   },
@@ -4427,8 +4427,8 @@
    "line": 1.5,
    "start": "2026-10-24T02:00:00Z",
    "p": 0.705,
-   "price": 0.58,
-   "edge": 0.108,
+   "price": 0.57,
+   "edge": 0.118,
    "news": "News: Will Brandin Podziemski finally play? Warriors reveal big injury update vs. Grizzlies - BasketNews.com Moses Moody is out: Brandin Podziemski hit the over in 19/24 games without him vs 6/16 with him.",
    "result": null
   },
@@ -5101,10 +5101,25 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-24T02:00:00Z",
-   "p": 0.605,
+   "p": 0.607,
    "price": 0.53,
-   "edge": 0.058,
+   "edge": 0.06,
    "news": "Cameron Carr (G) is out, so Quentin Grimes's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
+   "ticker": "KXNBAPTS-26OCT23MEMGSW-MEMJGRANT9-15",
+   "league": "nba",
+   "player": "Jerami Grant",
+   "stat": "points",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-10-24T02:00:00Z",
+   "p": 0.494,
+   "price": 0.42,
+   "edge": 0.057,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -5499,6 +5514,21 @@
   },
   {
    "date": "2026-10-23",
+   "ticker": "KXNBASTL-26OCT23MEMGSW-MEMSPIPPEN1-2",
+   "league": "nba",
+   "player": "Scotty Pippen Jr.",
+   "stat": "steals",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-24T02:00:00Z",
+   "p": 0.412,
+   "price": 0.36,
+   "edge": 0.036,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-23",
    "ticker": "KXNBASTL-26OCT23TORWAS-TORIQUICKLEY5-2",
    "league": "nba",
    "player": "Immanuel Quickley",
@@ -5522,8 +5552,8 @@
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.419,
-   "price": 0.32,
-   "edge": 0.084,
+   "price": 0.33,
+   "edge": 0.074,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
