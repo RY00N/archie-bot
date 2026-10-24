@@ -5588,6 +5588,21 @@
    "result": null
   },
   {
+   "date": "2026-10-24",
+   "ticker": "KXNBA3PT-26OCT24BKNCLE-CLEJTYSON20-2",
+   "league": "nba",
+   "player": "Jaylon Tyson",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-24T23:30:00Z",
+   "p": 0.402,
+   "price": 0.35,
+   "edge": 0.036,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
    "date": "2026-10-25",
    "ticker": "KXNFLPASSCOMP-26OCT25MIANYJ-MIAMWILLIS2-17",
    "league": "nfl",
