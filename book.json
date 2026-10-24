@@ -1770,24 +1770,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 13:00 PT",
-  "props_today": 941,
+  "props_today": 945,
   "kalshi_props_today": 416,
   "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
-   "AN Consensus": 406,
+   "AN Consensus": 408,
    "AN Open": 411,
-   "BetMGM": 268,
+   "BetMGM": 292,
    "BetRivers": 300,
    "Caesars": 346,
-   "DraftKings": 350,
-   "FanDuel": 326,
-   "Fanatics": 319,
+   "DraftKings": 358,
+   "FanDuel": 327,
+   "Fanatics": 320,
    "Parx": 320,
    "Pinnacle": 234,
    "Sleeper": 381,
    "Underdog": 416,
    "Unibet": 84,
-   "bet365": 399
+   "bet365": 402
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 9
+  "kalshi_legs_today": 10
  },
  "shadow": [
   {
@@ -5677,9 +5677,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.468,
+   "p": 0.469,
    "price": 0.42,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5722,9 +5722,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.681,
+   "p": 0.68,
    "price": 0.62,
-   "edge": 0.045,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5950,6 +5950,21 @@
    "p": 0.545,
    "price": 0.48,
    "edge": 0.048,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
+   "ticker": "KXNBAPTS-26OCT24MIACHA-MIABPORTIS95-10",
+   "league": "nba",
+   "player": "Bobby Portis",
+   "stat": "points",
+   "side": "over",
+   "line": 9.5,
+   "start": "2026-10-24T22:00:00Z",
+   "p": 0.533,
+   "price": 0.48,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6442,9 +6457,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.533,
+   "p": 0.531,
    "price": 0.42,
-   "edge": 0.096,
+   "edge": 0.094,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
    "result": null
   },
