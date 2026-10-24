@@ -1774,15 +1774,15 @@
   "kalshi_props_today": 373,
   "kalshi_priced_today": 26,
   "books_on_kalshi_props": {
-   "AN Consensus": 365,
+   "AN Consensus": 366,
    "AN Open": 368,
    "BetMGM": 257,
-   "BetRivers": 176,
+   "BetRivers": 220,
    "Caesars": 306,
    "DraftKings": 287,
    "FanDuel": 294,
-   "Fanatics": 290,
-   "Parx": 196,
+   "Fanatics": 292,
+   "Parx": 240,
    "Pinnacle": 76,
    "Sleeper": 341,
    "Underdog": 373,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -5797,9 +5797,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.513,
+   "p": 0.514,
    "price": 0.46,
-   "edge": 0.036,
+   "edge": 0.037,
    "news": "News: Warriors injury news could lead to Bucks trading Myles Turner - Sports Illustrated",
    "result": null
   },
@@ -5887,9 +5887,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.567,
+   "p": 0.566,
    "price": 0.5,
-   "edge": 0.049,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5962,9 +5962,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.514,
-   "price": 0.45,
-   "edge": 0.047,
+   "p": 0.503,
+   "price": 0.43,
+   "edge": 0.056,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6217,9 +6217,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.53,
+   "p": 0.531,
    "price": 0.42,
-   "edge": 0.093,
+   "edge": 0.094,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
    "result": null
   },
