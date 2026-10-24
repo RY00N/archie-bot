@@ -1772,16 +1772,16 @@
   "props_at": "2026-10-24 05:00 PT",
   "props_today": 1013,
   "kalshi_props_today": 369,
-  "kalshi_priced_today": 25,
+  "kalshi_priced_today": 26,
   "books_on_kalshi_props": {
    "AN Consensus": 360,
    "AN Open": 364,
    "BetMGM": 220,
-   "BetRivers": 109,
-   "Caesars": 302,
+   "BetRivers": 110,
+   "Caesars": 301,
    "DraftKings": 283,
    "FanDuel": 290,
-   "Fanatics": 276,
+   "Fanatics": 272,
    "Parx": 130,
    "Pinnacle": 75,
    "Sleeper": 336,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -5692,9 +5692,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.549,
-   "price": 0.5,
-   "edge": 0.032,
+   "p": 0.544,
+   "price": 0.49,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5782,9 +5782,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.514,
+   "p": 0.515,
    "price": 0.46,
-   "edge": 0.037,
+   "edge": 0.038,
    "news": "News: Warriors injury news could lead to Bucks trading Myles Turner - Sports Illustrated",
    "result": null
   },
@@ -5831,6 +5831,21 @@
    "price": 0.45,
    "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
+   "ticker": "KXNBAAST-26OCT24HOUATL-HOUATHOMPSON1-6",
+   "league": "nba",
+   "player": "Amen Thompson",
+   "stat": "assists",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-25T00:30:00Z",
+   "p": 0.524,
+   "price": 0.41,
+   "edge": 0.097,
+   "news": "Reed Sheppard is out: Amen Thompson hit the over in 2/3 games without him vs 15/37 with him.",
    "result": null
   },
   {
@@ -5887,9 +5902,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.628,
+   "p": 0.629,
    "price": 0.58,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
