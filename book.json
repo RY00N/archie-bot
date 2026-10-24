@@ -1772,16 +1772,16 @@
   "props_at": "2026-10-24 04:00 PT",
   "props_today": 1076,
   "kalshi_props_today": 391,
-  "kalshi_priced_today": 22,
+  "kalshi_priced_today": 21,
   "books_on_kalshi_props": {
-   "AN Consensus": 358,
+   "AN Consensus": 359,
    "AN Open": 363,
    "BetMGM": 200,
    "BetRivers": 2,
    "Caesars": 201,
-   "DraftKings": 275,
-   "FanDuel": 284,
-   "Fanatics": 265,
+   "DraftKings": 277,
+   "FanDuel": 288,
+   "Fanatics": 264,
    "Parx": 22,
    "Pinnacle": 75,
    "Sleeper": 332,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -5768,8 +5768,8 @@
    "line": 2.5,
    "start": "2026-10-25T00:30:00Z",
    "p": 0.452,
-   "price": 0.37,
-   "edge": 0.066,
+   "price": 0.38,
+   "edge": 0.056,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5782,9 +5782,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.513,
+   "p": 0.514,
    "price": 0.46,
-   "edge": 0.036,
+   "edge": 0.037,
    "news": "News: Warriors injury news could lead to Bucks trading Myles Turner - Sports Illustrated",
    "result": null
   },
@@ -5812,9 +5812,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.523,
+   "p": 0.522,
    "price": 0.46,
-   "edge": 0.046,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5880,6 +5880,21 @@
   },
   {
    "date": "2026-10-24",
+   "ticker": "KXNBAREB-26OCT24HOUATL-HOUKDURANT7-6",
+   "league": "nba",
+   "player": "Kevin Durant",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-25T00:30:00Z",
+   "p": 0.459,
+   "price": 0.41,
+   "edge": 0.032,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
    "ticker": "KXNBAREB-26OCT24MIACHA-CHABMILLER24-6",
    "league": "nba",
    "player": "Brandon Miller",
@@ -5903,8 +5918,8 @@
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.512,
-   "price": 0.44,
-   "edge": 0.055,
+   "price": 0.45,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
