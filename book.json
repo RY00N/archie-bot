@@ -1770,7 +1770,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 15:00 PT",
-  "props_today": 874,
+  "props_today": 879,
   "kalshi_props_today": 441,
   "kalshi_priced_today": 42,
   "books_on_kalshi_props": {
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -5775,6 +5775,21 @@
   },
   {
    "date": "2026-10-24",
+   "ticker": "KXNBA3PT-26OCT24BKNCLE-CLEJHARDEN1-3",
+   "league": "nba",
+   "player": "James Harden",
+   "stat": "threes",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-24T23:30:00Z",
+   "p": 0.459,
+   "price": 0.41,
+   "edge": 0.032,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
    "ticker": "KXNBA3PT-26OCT24BKNCLE-CLEJTYSON20-2",
    "league": "nba",
    "player": "Jaylon Tyson",
@@ -6038,8 +6053,8 @@
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.501,
-   "price": 0.38,
-   "edge": 0.105,
+   "price": 0.39,
+   "edge": 0.094,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
