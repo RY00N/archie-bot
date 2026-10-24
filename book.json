@@ -1770,18 +1770,18 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 15:00 PT",
-  "props_today": 873,
+  "props_today": 874,
   "kalshi_props_today": 441,
   "kalshi_priced_today": 42,
   "books_on_kalshi_props": {
    "AN Consensus": 434,
    "AN Open": 436,
-   "BetMGM": 292,
+   "BetMGM": 293,
    "BetRivers": 287,
    "Caesars": 359,
    "DraftKings": 363,
    "FanDuel": 335,
-   "Fanatics": 330,
+   "Fanatics": 331,
    "Parx": 318,
    "Pinnacle": 246,
    "Sleeper": 396,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 14
  },
  "shadow": [
   {
@@ -5962,10 +5962,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.521,
+   "p": 0.62,
    "price": 0.47,
-   "edge": 0.034,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": 0.133,
+   "news": "Patrick Williams is out: Jalen Smith hit the over in 8/9 games without him vs 7/15 with him.",
    "result": null
   },
   {
@@ -6038,8 +6038,8 @@
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.501,
-   "price": 0.4,
-   "edge": 0.084,
+   "price": 0.38,
+   "edge": 0.105,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6067,9 +6067,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.565,
+   "p": 0.566,
    "price": 0.5,
-   "edge": 0.047,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6187,9 +6187,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.509,
+   "p": 0.508,
    "price": 0.44,
-   "edge": 0.052,
+   "edge": 0.051,
    "news": "News: Cavs\u2019 Jarrett Allen provides update on knee injury, reveals playing status for season opener - Cleveland.com",
    "result": null
   },
@@ -6472,9 +6472,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.418,
+   "p": 0.419,
    "price": 0.33,
-   "edge": 0.073,
+   "edge": 0.074,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
