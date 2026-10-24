@@ -1769,25 +1769,25 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-24 02:00 PT",
+  "props_at": "2026-10-24 03:00 PT",
   "props_today": 1072,
-  "kalshi_props_today": 353,
-  "kalshi_priced_today": 18,
+  "kalshi_props_today": 355,
+  "kalshi_priced_today": 20,
   "books_on_kalshi_props": {
-   "AN Consensus": 344,
-   "AN Open": 347,
-   "BetMGM": 113,
+   "AN Consensus": 346,
+   "AN Open": 349,
+   "BetMGM": 137,
    "BetRivers": 2,
    "Caesars": 186,
    "DraftKings": 252,
    "FanDuel": 276,
-   "Fanatics": 253,
+   "Fanatics": 255,
    "Parx": 22,
    "Pinnacle": 75,
    "Sleeper": 326,
-   "Underdog": 353,
+   "Underdog": 355,
    "Unibet": 15,
-   "bet365": 271
+   "bet365": 293
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -5816,6 +5816,21 @@
    "price": 0.58,
    "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
+   "ticker": "KXNBAREB-26OCT24MIACHA-CHABMILLER24-6",
+   "league": "nba",
+   "player": "Brandon Miller",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 5.5,
+   "start": "2026-10-24T22:00:00Z",
+   "p": 0.628,
+   "price": 0.58,
+   "edge": 0.031,
+   "news": "News: Brandon Miller Struggles in Hornets' Blowout Loss to Hawks - roundtable.io",
    "result": null
   },
   {
