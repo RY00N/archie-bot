@@ -169,7 +169,20 @@ def upload(item):
         btn = ui.locator('button[data-e2e="post_video_button"]')
         btn.wait_for(timeout=180000)
         # wait for TikTok to finish processing the upload: Post button stops being disabled (slow droplet: up to 8 min)
+        retries = 0
         for i in range(160):
+            retry = ui.get_by_role("button", name="Retry", exact=True)
+            if retry.count() and retry.first.is_visible():
+                why = ui.evaluate("""() => { const b = [...document.querySelectorAll('button')].find(x => x.innerText.trim() === 'Retry');
+                    let e = b; for (let k = 0; k < 4 && e && e.parentElement; k++) e = e.parentElement;
+                    return e ? e.innerText.replace(/\\s+/g, ' ').slice(0, 300) : ''; }""")
+                log("upload error on TikTok's side:", why)
+                if retries >= 3:
+                    raise RuntimeError("upload kept failing: " + why)
+                retries += 1
+                retry.first.click()
+                page.wait_for_timeout(5000)
+                continue
             dis = btn.get_attribute("aria-disabled") or btn.get_attribute("data-disabled") or ""
             if btn.is_enabled() and dis not in ("true",) and ui.get_by_text("Uploaded").count():
                 break
