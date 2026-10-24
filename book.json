@@ -5559,6 +5559,21 @@
   },
   {
    "date": "2026-10-24",
+   "ticker": "KXMLBHIT-26OCT242000TBMIL-TBTWALLS6-1",
+   "league": "mlb",
+   "player": "Taylor Walls",
+   "stat": "hits",
+   "side": "over",
+   "line": 0.5,
+   "start": "2026-10-25T00:00:00Z",
+   "p": 0.493,
+   "price": 0.44,
+   "edge": 0.036,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
    "ticker": "KXMLBHRR-26OCT242000TBMIL-MILJCHOURIO11-2",
    "league": "mlb",
    "player": "Jackson Chourio",
