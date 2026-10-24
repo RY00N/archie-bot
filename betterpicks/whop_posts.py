@@ -66,8 +66,8 @@ def win_body(e, r):
     for l in e.get("legs", []):
         lines.append(f"**{whop_wins.leg_text(l)}**" + (f" ({l['game']})" if l.get("game") else "")
                      + ("\n" + ", ".join(leg_bits(l)) if leg_bits(l) else ""))
-    lines += [f"Record on picks meeting our current rules: **{record_text(r)}**.",
-              "Members get every pick live in the Discord PICKS channel."]
+    # no running record here: the page shows the first-week 7-1 only (Ryan 2026-10-24)
+    lines += ["Members get every pick live in the Discord PICKS channel."]
     return "\n\n".join(lines)
 
 

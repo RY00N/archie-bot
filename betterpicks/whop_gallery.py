@@ -41,19 +41,19 @@ def hero(r):
     img = Image.open(os.path.join(BRAND, "r1plate.png")).convert("RGB")
     d = ImageDraw.Draw(img)
     rec = f"{r['won']}–{r['lost']}"
-    tracked(d, (100, 110), f"BETTERPICKS · SINCE {START}", font("Bold", 18), (207, 214, 228))
+    tracked(d, (100, 110), "BETTERPICKS · FIRST WEEK · OCT 16–22", font("Bold", 18), (207, 214, 228))
     d.text((92, 146), rec, font=font("Black", 190), fill=(255, 255, 255))
     d.text((100, 372), "Player prop picks with a real", font=font("Black", 54), fill=(255, 255, 255))
     d.text((100, 432), "edge.", font=font("Black", 54), fill=(255, 255, 255))
     d.text((100, 512), "Posted live in Discord the moment the numbers line up.", font=font("Regular", 26), fill=(212, 216, 224))
-    d.text((100, 550), f"{money(r['pnl'])} at $5 a pick since {START.title()}.", font=font("Regular", 26), fill=(212, 216, 224))
+    d.text((100, 550), f"{money(r['pnl'])} at $5 a pick in our first week.", font=font("Regular", 26), fill=(212, 216, 224))
     return img
 
 
 def results(r, settled):
     from PIL import Image, ImageDraw
     img = Image.open(os.path.join(BRAND, "r3plate.png")).convert("RGBA")
-    rows = settled[:8]
+    rows = settled[:9]
     x0, y0, w = 100, 90, 640
     h = 200 + 52 * len(rows)
     glass = Image.new("RGBA", img.size, (0, 0, 0, 0))
@@ -61,7 +61,7 @@ def results(r, settled):
     gd.rounded_rectangle((x0, y0, x0 + w, y0 + h), 20, fill=(12, 14, 18, 175), outline=(255, 255, 255, 30))
     img = Image.alpha_composite(img, glass).convert("RGB")
     d = ImageDraw.Draw(img)
-    tracked(d, (x0 + 40, y0 + 38), f"RECORD · SINCE {START}", font("Bold", 18), (207, 214, 228))
+    tracked(d, (x0 + 40, y0 + 38), "FIRST WEEK · OCT 16–22", font("Bold", 18), (207, 214, 228))
     rec = f"{r['won']}–{r['lost']}"
     d.text((x0 + 36, y0 + 66), rec, font=font("Black", 84), fill=(255, 255, 255))
     d.text((x0 + 56 + d.textlength(rec, font=font("Black", 84)), y0 + 98), money(r["pnl"]), font=font("Black", 44),
@@ -98,9 +98,9 @@ def main():
     except ImportError:
         print("whop_gallery: Pillow missing, skipped")
         return
-    c, r = whop_wins.counted()
+    c, r = whop_wins.first_week()
     settled = sorted([e for e in c if e["status"] in ("won", "lost")], key=lambda e: e.get("date", ""), reverse=True)
-    key = hashlib.sha1(repr((r["won"], r["lost"], r["pnl"], [whop_posts.win_title(e) + e["status"] for e in settled[:8]])).encode()).hexdigest()
+    key = hashlib.sha1(repr((r["won"], r["lost"], r["pnl"], [whop_posts.win_title(e) + e["status"] for e in settled[:9]])).encode()).hexdigest()
     g1, g3 = png(hero(r)), png(results(r, settled))
     if dry:
         open("/tmp/whop_g1.png", "wb").write(g1)

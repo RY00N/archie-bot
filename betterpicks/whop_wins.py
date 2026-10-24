@@ -19,7 +19,7 @@ STAT = {"pitcher_ks": "strikeouts", "pra": "pts+reb+ast", "threes": "threes", "r
 
 HEAD = """BetterPicks is a bot that scans player props around the clock and only posts when it finds a real edge over the price.
 
-RECORD: {won}-{lost} on picks that meet our current rules, {pnl} at $5 a pick ({roi} return). Updates after every game.
+FIRST WEEK (Oct 16-22): {won}-{lost} on picks that meet our current rules, {pnl} at $5 a pick ({roi} return).
 
 EVERY WIN ({won}){more}
 {wins}
@@ -63,14 +63,25 @@ def counted():
     return [e for e in book["parlays"] if record.counts(e)], record.record(book["parlays"])
 
 
+FIRST_WEEK = ("2026-10-16", "2026-10-22")  # Ryan 2026-10-24: page shows the first week only, "7-1", not updating
+
+
+def first_week():
+    """The counted picks from the first week and their record. The page, headline and photos show only this."""
+    c, _ = counted()
+    wk = [e for e in c if FIRST_WEEK[0] <= e.get("date", "") <= FIRST_WEEK[1]]
+    done = [e for e in wk if e["status"] in ("won", "lost")]
+    return wk, {"won": sum(e["status"] == "won" for e in done), "lost": sum(e["status"] == "lost" for e in done),
+                "pnl": round(sum(e.get("pnl") or 0 for e in done), 2), "staked": sum(e.get("stake") or 5 for e in done)}  # $5 unit when the feed leaves stake out
+
+
 def headline():
-    """Product headline with the live record (it was a fixed "7-1 last week")."""
-    _, r = counted()
-    return f"{r['won']}-{r['lost']} on our picks. Edge-backed player prop picks, live in Discord."
+    _, r = first_week()
+    return f"{r['won']}-{r['lost']} in our first week. Edge-backed player prop picks, live in Discord."
 
 
 def build():
-    c, r = counted()
+    c, r = first_week()
     wins = sorted([e for e in c if e["status"] == "won"], key=lambda e: e.get("date", ""), reverse=True)
     lost = sorted([e for e in c if e["status"] == "lost"], key=lambda e: e.get("date", ""), reverse=True)
     roi = f"{r['pnl'] / r['staked'] * 100:+.0f}%" if r["staked"] else "n/a"
