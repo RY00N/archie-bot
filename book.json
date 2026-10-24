@@ -1770,7 +1770,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 06:00 PT",
-  "props_today": 1046,
+  "props_today": 1042,
   "kalshi_props_today": 414,
   "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
@@ -6188,8 +6188,8 @@
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.701,
-   "price": 0.55,
-   "edge": 0.134,
+   "price": 0.56,
+   "edge": 0.124,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
