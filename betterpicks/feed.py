@@ -10,7 +10,7 @@ books_feed.json; the hourly routine commits it and parlays.py on the droplet mer
 import json, os, sys, urllib.request
 from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import record   # noqa: E402
+import record, why_lost   # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 KEEP_OUT = {"PrizePicks", "Underdog", "Sleeper", "Kalshi", "Polymarket"}   # the droplet fetches these itself
@@ -38,7 +38,8 @@ def verdicts():
             out.append({"key": f"parlay:{e['date']}:{e['app']}:{e['type']}", "date": e["date"], "app": e["app"],
                         "type": e["type"], "lock": e.get("lock"), "status": e["status"], "pnl": e["pnl"],
                         "stake": e["stake"], "payout_x": e.get("payout_x"),
-                        "legs": [{k: l.get(k) for k in LEG_KEEP} for l in e["legs"]]})
+                        "legs": [{k: l.get(k) for k in LEG_KEEP} | ({"why_lost": why_lost.explain(l, l.get("league") or "nba")}
+                                  if e["status"] == "lost" and l.get("result") == "lost" else {}) for l in e["legs"]]})
     rec = record.record(book.get("parlays", []))   # Ryan 2026-10-22: the record = picks that pass today's rules
     posted = [e for e in book.get("parlays", []) if e["date"] >= "2026-10-12" and not e.get("test")
               and f"parlay:{e['date']}:{e['app']}:{e['type']}" in done]
