@@ -1784,7 +1784,7 @@
    "Fanatics": 314,
    "Parx": 313,
    "Pinnacle": 238,
-   "Sleeper": 368,
+   "Sleeper": 367,
    "Underdog": 406,
    "Unibet": 50,
    "bet365": 400
@@ -6341,6 +6341,21 @@
    "price": 0.41,
    "edge": 0.101,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLRECYDS-26OCT25NYGHOU-NYGDMOONEY17-20",
+   "league": "nfl",
+   "player": "Darnell Mooney",
+   "stat": "rec_yds",
+   "side": "over",
+   "line": 19.5,
+   "start": "2026-10-25T17:00:00Z",
+   "p": 0.593,
+   "price": 0.48,
+   "edge": 0.096,
+   "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
   {
