@@ -19,7 +19,7 @@ STAT = {"pitcher_ks": "strikeouts", "pra": "pts+reb+ast", "threes": "threes", "r
 
 HEAD = """BetterPicks is a bot that scans player props around the clock and only posts when it finds a real edge over the price.
 
-FIRST WEEK (Oct 16-22): {won}-{lost} on picks that meet our current rules, {pnl} at $5 a pick ({roi} return).
+FIRST WEEK (games Oct 16-22): {won}-{lost} on picks that meet our current rules, {pnl} at $5 a pick ({roi} return).
 
 EVERY WIN ({won}){more}
 {wins}
@@ -63,13 +63,27 @@ def counted():
     return [e for e in book["parlays"] if record.counts(e)], record.record(book["parlays"])
 
 
-FIRST_WEEK = ("2026-10-16", "2026-10-22")  # Ryan 2026-10-24: page shows the first week only, "7-1", not updating
+FIRST_WEEK = ("2026-10-16", "2026-10-22")  # Ryan 2026-10-24: page shows the first week only (games Oct 16-22), not updating
+
+
+def game_date(e):
+    """Latest game date of a pick, from its Kalshi tickers (KXNBA3PT-26OCT23ATLCHA-... -> 2026-10-23); falls back to
+    the post date. The first week counts games played Oct 16-22 (Ryan 2026-10-24: "7-1 for the first week"; the
+    Alexander-Walker pick was posted Oct 22 but its game was Oct 23)."""
+    import re
+    months = {m: i for i, m in enumerate("JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC".split(), 1)}
+    days = []
+    for l in e.get("legs") or []:
+        m = re.search(r"-(\d\d)([A-Z]{3})(\d\d)", l.get("ticker") or "")
+        if m and m.group(2) in months:
+            days.append(f"20{m.group(1)}-{months[m.group(2)]:02d}-{m.group(3)}")
+    return max(days) if days else e.get("date", "")
 
 
 def first_week():
     """The counted picks from the first week and their record. The page, headline and photos show only this."""
     c, _ = counted()
-    wk = [e for e in c if FIRST_WEEK[0] <= e.get("date", "") <= FIRST_WEEK[1]]
+    wk = [e for e in c if FIRST_WEEK[0] <= game_date(e) <= FIRST_WEEK[1]]
     done = [e for e in wk if e["status"] in ("won", "lost")]
     return wk, {"won": sum(e["status"] == "won" for e in done), "lost": sum(e["status"] == "lost" for e in done),
                 "pnl": round(sum(e.get("pnl") or 0 for e in done), 2), "staked": sum(e.get("stake") or 5 for e in done)}  # $5 unit when the feed leaves stake out
