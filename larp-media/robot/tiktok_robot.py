@@ -75,25 +75,52 @@ def shot(page, name):
     return p
 
 
+def who(page):
+    """Logged-in TikTok username for this cookie, or None."""
+    try:
+        r = page.evaluate("fetch('/passport/web/account/info/', {credentials: 'include'}).then(r => r.json())")
+        return (r.get("data") or {}).get("username") or None
+    except Exception:
+        return None
+
+
+def file_input(page, wait_s=150):
+    """The upload <input type=file>, on the page or inside an iframe (slow droplet: wait up to wait_s)."""
+    for _ in range(wait_s // 3):
+        for fr in page.frames:
+            loc = fr.locator('input[type="file"]')
+            try:
+                if loc.count():
+                    return fr, loc.first
+            except Exception:
+                pass
+        page.wait_for_timeout(3000)
+    return None, None
+
+
 def upload(item):
     path = MEDIA / item["file"]
     pw, b, ctx = browser()
     page = ctx.new_page()
     try:
-        page.goto(UPLOAD, wait_until="domcontentloaded", timeout=90000)
+        page.goto(UPLOAD, wait_until="domcontentloaded", timeout=180000)
         page.wait_for_timeout(6000)
-        if "login" in page.url:
+        if "login" in page.url or not who(page):
             shot(page, "logged-out")
             raise RuntimeError("not logged in: TIKTOK_SESSIONID expired, needs a fresh one")
-        page.locator('input[type="file"]').first.set_input_files(str(path))
-        btn = page.locator('button[data-e2e="post_video_button"]')
+        fr, inp = file_input(page)
+        if inp is None:
+            raise RuntimeError(f"upload box never appeared (user {who(page)})")
+        inp.set_input_files(str(path))
+        ui = fr  # the frame holding the upload form (main frame or an iframe)
+        btn = ui.locator('button[data-e2e="post_video_button"]')
         btn.wait_for(timeout=180000)
         # wait for TikTok to finish processing the upload
         for _ in range(90):
-            if btn.is_enabled() and page.get_by_text("Uploaded").count():
+            if btn.is_enabled() and ui.get_by_text("Uploaded").count():
                 break
             page.wait_for_timeout(2000)
-        cap = page.locator('div[contenteditable="true"]').first
+        cap = ui.locator('div[contenteditable="true"]').first
         cap.click()
         page.keyboard.press("Control+A")
         page.keyboard.press("Backspace")
@@ -108,11 +135,11 @@ def upload(item):
         btn.click()
         page.wait_for_timeout(4000)
         for label in ("Post now", "Post anyway"):  # confirm dialog while TikTok's checks run
-            c = page.get_by_role("button", name=label)
+            c = ui.get_by_role("button", name=label)
             if c.count():
                 c.first.click()
                 page.wait_for_timeout(3000)
-        page.wait_for_url("**/tiktokstudio/content**", timeout=120000)
+        page.wait_for_url("**/tiktokstudio/content**", timeout=180000)
         shot(page, "posted")
         return True
     except Exception as e:
@@ -134,10 +161,16 @@ def main():
     if cmd == "test":
         pw, b, ctx = browser()
         page = ctx.new_page()
-        page.goto(UPLOAD, wait_until="domcontentloaded", timeout=90000)
-        page.wait_for_timeout(8000)
-        ok = "login" not in page.url and page.locator('input[type="file"]').count() > 0
-        log("LOGGED IN, upload page ready" if ok else f"NOT READY (url {page.url})", "screenshot:", shot(page, "test"))
+        page.goto(UPLOAD, wait_until="domcontentloaded", timeout=180000)
+        user = who(page)
+        log("tiktok user:", user or "NOT LOGGED IN (cookie wrong or expired)")
+        fr, inp = file_input(page)
+        title = page.title()
+        log("LOGGED IN, upload page ready" if (user and inp is not None) else
+            f"NOT READY (url {page.url}, title {title!r}, frames {len(page.frames)})", "screenshot:", shot(page, "test"))
+        if inp is None:
+            body = page.evaluate("document.body ? document.body.innerText.slice(0, 400) : ''")
+            log("page text:", " | ".join(body.split("\n")[:12]))
         ctx.close(); b.close(); pw.stop()
         return
     if cmd == "post":
