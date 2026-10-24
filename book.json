@@ -1774,14 +1774,14 @@
   "kalshi_props_today": 441,
   "kalshi_priced_today": 43,
   "books_on_kalshi_props": {
-   "AN Consensus": 433,
+   "AN Consensus": 432,
    "AN Open": 436,
    "BetMGM": 252,
    "BetRivers": 287,
    "Caesars": 360,
    "DraftKings": 363,
    "FanDuel": 335,
-   "Fanatics": 326,
+   "Fanatics": 328,
    "Parx": 319,
    "Pinnacle": 246,
    "Sleeper": 396,
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -5677,9 +5677,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.468,
+   "p": 0.469,
    "price": 0.42,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5782,9 +5782,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.459,
+   "p": 0.46,
    "price": 0.41,
-   "edge": 0.032,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5977,9 +5977,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.621,
+   "p": 0.622,
    "price": 0.47,
-   "edge": 0.134,
+   "edge": 0.135,
    "news": "Patrick Williams is out: Jalen Smith hit the over in 8/9 games without him vs 7/15 with him.",
    "result": null
   },
@@ -6052,9 +6052,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.5,
+   "p": 0.504,
    "price": 0.4,
-   "edge": 0.083,
+   "edge": 0.087,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6082,9 +6082,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.566,
+   "p": 0.565,
    "price": 0.5,
-   "edge": 0.048,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6232,9 +6232,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.48,
+   "p": 0.479,
    "price": 0.42,
-   "edge": 0.043,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6427,9 +6427,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.583,
+   "p": 0.584,
    "price": 0.49,
-   "edge": 0.076,
+   "edge": 0.077,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
@@ -6487,9 +6487,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.419,
+   "p": 0.421,
    "price": 0.33,
-   "edge": 0.074,
+   "edge": 0.076,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
