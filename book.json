@@ -1770,7 +1770,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 10:00 PT",
-  "props_today": 900,
+  "props_today": 899,
   "kalshi_props_today": 399,
   "kalshi_priced_today": 27,
   "books_on_kalshi_props": {
@@ -6161,6 +6161,21 @@
    "price": 0.49,
    "edge": 0.08,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLREC-26OCT25INDMIN-INDWMALLORY86-2",
+   "league": "nfl",
+   "player": "Will Mallory",
+   "stat": "receptions",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-10-25T17:00:00Z",
+   "p": 0.431,
+   "price": 0.38,
+   "edge": 0.035,
+   "news": "Tyler Warren (TE) is out, so Will Mallory's role likely grows.",
    "result": null
   },
   {
