@@ -1769,25 +1769,25 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-24 14:00 PT",
+  "props_at": "2026-10-24 15:00 PT",
   "props_today": 973,
   "kalshi_props_today": 476,
-  "kalshi_priced_today": 45,
+  "kalshi_priced_today": 42,
   "books_on_kalshi_props": {
-   "AN Consensus": 469,
-   "AN Open": 471,
-   "BetMGM": 280,
-   "BetRivers": 305,
-   "Caesars": 389,
-   "DraftKings": 396,
-   "FanDuel": 350,
-   "Fanatics": 353,
-   "Parx": 336,
-   "Pinnacle": 273,
+   "AN Consensus": 429,
+   "AN Open": 430,
+   "BetMGM": 251,
+   "BetRivers": 281,
+   "Caesars": 354,
+   "DraftKings": 357,
+   "FanDuel": 329,
+   "Fanatics": 323,
+   "Parx": 303,
+   "Pinnacle": 245,
    "Sleeper": 431,
    "Underdog": 475,
-   "Unibet": 94,
-   "bet365": 469
+   "Unibet": 88,
+   "bet365": 429
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 11
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -5857,9 +5857,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-24T23:30:00Z",
-   "p": 0.399,
+   "p": 0.397,
    "price": 0.35,
-   "edge": 0.033,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -5978,8 +5978,8 @@
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.502,
-   "price": 0.42,
-   "edge": 0.065,
+   "price": 0.4,
+   "edge": 0.085,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6007,9 +6007,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.567,
-   "price": 0.5,
-   "edge": 0.049,
+   "p": 0.563,
+   "price": 0.51,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6097,9 +6097,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.509,
+   "p": 0.507,
    "price": 0.45,
-   "edge": 0.042,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6112,9 +6112,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-25T00:00:00Z",
-   "p": 0.592,
+   "p": 0.593,
    "price": 0.51,
-   "edge": 0.065,
+   "edge": 0.066,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
