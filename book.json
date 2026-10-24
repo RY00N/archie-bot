@@ -1770,7 +1770,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 10:00 PT",
-  "props_today": 894,
+  "props_today": 900,
   "kalshi_props_today": 399,
   "kalshi_priced_today": 27,
   "books_on_kalshi_props": {
@@ -1784,7 +1784,7 @@
    "Fanatics": 308,
    "Parx": 311,
    "Pinnacle": 234,
-   "Sleeper": 367,
+   "Sleeper": 366,
    "Underdog": 399,
    "Unibet": 64,
    "bet365": 393
@@ -5888,8 +5888,8 @@
    "line": 5.5,
    "start": "2026-10-25T00:00:00Z",
    "p": 0.505,
-   "price": 0.44,
-   "edge": 0.048,
+   "price": 0.43,
+   "edge": 0.058,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6127,9 +6127,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.647,
-   "price": 0.6,
-   "edge": 0.03,
+   "p": 0.641,
+   "price": 0.59,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6188,8 +6188,8 @@
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.416,
-   "price": 0.33,
-   "edge": 0.071,
+   "price": 0.32,
+   "edge": 0.081,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
