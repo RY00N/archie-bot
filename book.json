@@ -1770,24 +1770,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 10:00 PT",
-  "props_today": 901,
-  "kalshi_props_today": 400,
+  "props_today": 900,
+  "kalshi_props_today": 399,
   "kalshi_priced_today": 27,
   "books_on_kalshi_props": {
-   "AN Consensus": 392,
-   "AN Open": 395,
-   "BetMGM": 249,
+   "AN Consensus": 390,
+   "AN Open": 394,
+   "BetMGM": 231,
    "BetRivers": 291,
    "Caesars": 316,
    "DraftKings": 319,
-   "FanDuel": 306,
-   "Fanatics": 302,
+   "FanDuel": 307,
+   "Fanatics": 304,
    "Parx": 311,
    "Pinnacle": 233,
    "Sleeper": 366,
-   "Underdog": 400,
+   "Underdog": 399,
    "Unibet": 63,
-   "bet365": 394
+   "bet365": 393
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -5917,9 +5917,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T00:30:00Z",
-   "p": 0.547,
+   "p": 0.546,
    "price": 0.49,
-   "edge": 0.04,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6308,8 +6308,8 @@
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.701,
-   "price": 0.55,
-   "edge": 0.134,
+   "price": 0.56,
+   "edge": 0.124,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
