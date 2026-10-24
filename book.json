@@ -1770,22 +1770,22 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 00:00 PT",
-  "props_today": 828,
-  "kalshi_props_today": 206,
-  "kalshi_priced_today": 14,
+  "props_today": 943,
+  "kalshi_props_today": 250,
+  "kalshi_priced_today": 16,
   "books_on_kalshi_props": {
-   "AN Consensus": 199,
-   "AN Open": 200,
+   "AN Consensus": 244,
+   "AN Open": 244,
    "BetMGM": 12,
    "BetRivers": 2,
-   "Caesars": 70,
-   "DraftKings": 76,
-   "FanDuel": 166,
-   "Fanatics": 151,
+   "Caesars": 78,
+   "DraftKings": 91,
+   "FanDuel": 210,
+   "Fanatics": 183,
    "Parx": 22,
-   "Pinnacle": 45,
-   "Sleeper": 183,
-   "Underdog": 206,
+   "Pinnacle": 75,
+   "Sleeper": 219,
+   "Underdog": 250,
    "Unibet": 12,
    "bet365": 192
   },
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 0
+  "kalshi_legs_today": 2
  },
  "shadow": [
   {
@@ -5710,6 +5710,36 @@
    "p": 0.402,
    "price": 0.35,
    "edge": 0.036,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
+   "ticker": "KXNBAPTS-26OCT24HOUATL-HOUJSMITH10-15",
+   "league": "nba",
+   "player": "Jabari Smith Jr.",
+   "stat": "points",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-10-25T00:30:00Z",
+   "p": 0.572,
+   "price": 0.5,
+   "edge": 0.054,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-24",
+   "ticker": "KXNBAPTS-26OCT24MILPHI-MILRROLLINS13-15",
+   "league": "nba",
+   "player": "Ryan Rollins",
+   "stat": "points",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-10-24T23:30:00Z",
+   "p": 0.524,
+   "price": 0.47,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
