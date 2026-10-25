@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 25
  },
  "shadow": [
   {
@@ -6705,8 +6705,8 @@
    "line": 9.5,
    "start": "2026-10-25T22:00:00Z",
    "p": 0.515,
-   "price": 0.45,
-   "edge": 0.048,
+   "price": 0.46,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6945,8 +6945,8 @@
    "line": 1.5,
    "start": "2026-10-25T23:00:00Z",
    "p": 0.442,
-   "price": 0.38,
-   "edge": 0.046,
+   "price": 0.39,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7037,7 +7037,7 @@
    "p": 0.521,
    "price": 0.41,
    "edge": 0.094,
-   "news": "DEN's S Talanoa Hufanga is out, an easier matchup; DEN's CB Pat Surtain II is out, an easier matchup.",
+   "news": "DEN's CB Pat Surtain II is out, an easier matchup; DEN's S Talanoa Hufanga is out, an easier matchup.",
    "result": null
   },
   {
@@ -7127,7 +7127,7 @@
    "p": 0.635,
    "price": 0.52,
    "edge": 0.098,
-   "news": "ARI's S Andrew Wingard is out, an easier matchup; ARI's CB Max Melton is out, an easier matchup.",
+   "news": "ARI's CB Max Melton is out, an easier matchup; ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
   {
@@ -7139,10 +7139,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.58,
+   "p": 0.6,
    "price": 0.52,
-   "edge": 0.043,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": 0.063,
+   "news": "Jackson Meeks (WR) is out, so Jameson Williams's role likely grows.",
    "result": null
   },
   {
@@ -7473,6 +7473,21 @@
    "price": 0.42,
    "edge": 0.118,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLRECYDS-26OCT25GBDET-GBSWILLIAMS83-25",
+   "league": "nfl",
+   "player": "Savion Williams",
+   "stat": "rec_yds",
+   "side": "under",
+   "line": 24.5,
+   "start": "2026-10-25T20:25:00Z",
+   "p": 0.564,
+   "price": 0.51,
+   "edge": 0.037,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
