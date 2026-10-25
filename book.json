@@ -1866,25 +1866,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 09:00 PT",
-  "props_today": 3174,
+  "props_today": 3175,
   "kalshi_props_today": 816,
   "kalshi_priced_today": 87,
   "books_on_kalshi_props": {
-   "AN Consensus": 784,
+   "AN Consensus": 782,
    "AN Open": 791,
    "BetMGM": 584,
    "BetRivers": 485,
-   "Caesars": 704,
+   "Caesars": 705,
    "DraftKings": 755,
    "FanDuel": 734,
-   "Fanatics": 637,
-   "Hard Rock Bet": 258,
-   "Parx": 632,
+   "Fanatics": 640,
+   "Hard Rock Bet": 256,
+   "Parx": 631,
    "Pinnacle": 659,
    "Sleeper": 766,
    "Underdog": 816,
    "Unibet": 123,
-   "bet365": 734
+   "bet365": 769
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 25
+  "kalshi_legs_today": 27
  },
  "shadow": [
   {
@@ -6569,9 +6569,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.709,
+   "p": 0.708,
    "price": 0.56,
-   "edge": 0.132,
+   "edge": 0.131,
    "news": "News: Timberwolves dominate Magic despite Anthony Edwards' shooting struggles - DAZN Donte DiVincenzo is out: Anthony Edwards hit the under in 7/8 games without him vs 16/32 with him.",
    "result": null
   },
@@ -6584,9 +6584,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.564,
+   "p": 0.566,
    "price": 0.51,
-   "edge": 0.037,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6599,9 +6599,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.523,
+   "p": 0.521,
    "price": 0.47,
-   "edge": 0.036,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6734,9 +6734,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.511,
+   "p": 0.508,
    "price": 0.44,
-   "edge": 0.054,
+   "edge": 0.051,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
@@ -6809,9 +6809,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.558,
+   "p": 0.557,
    "price": 0.5,
-   "edge": 0.041,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6854,9 +6854,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.419,
+   "p": 0.422,
    "price": 0.37,
-   "edge": 0.033,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7124,9 +7124,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.502,
+   "p": 0.501,
    "price": 0.38,
-   "edge": 0.106,
+   "edge": 0.105,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -7244,9 +7244,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.542,
+   "p": 0.541,
    "price": 0.42,
-   "edge": 0.105,
+   "edge": 0.104,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
    "result": null
   },
