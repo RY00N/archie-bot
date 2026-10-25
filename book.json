@@ -1866,25 +1866,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 16:00 PT",
-  "props_today": 753,
-  "kalshi_props_today": 298,
+  "props_today": 751,
+  "kalshi_props_today": 302,
   "kalshi_priced_today": 10,
   "books_on_kalshi_props": {
-   "AN Consensus": 131,
-   "AN Open": 133,
+   "AN Consensus": 135,
+   "AN Open": 137,
    "BetMGM": 92,
    "BetRivers": 88,
    "Caesars": 113,
-   "DraftKings": 117,
-   "FanDuel": 120,
+   "DraftKings": 119,
+   "FanDuel": 124,
    "Fanatics": 106,
    "Hard Rock Bet": 29,
    "Parx": 101,
    "Pinnacle": 95,
-   "Sleeper": 291,
-   "Underdog": 298,
+   "Sleeper": 295,
+   "Underdog": 302,
    "Unibet": 31,
-   "bet365": 130
+   "bet365": 134
   },
   "data_files": [
    "mlb.sqlite",
@@ -6974,10 +6974,10 @@
    "side": "under",
    "line": 13.5,
    "start": "2026-10-26T01:00:00Z",
-   "p": 0.534,
+   "p": 0.634,
    "price": 0.48,
-   "edge": 0.037,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": 0.137,
+   "news": "Keegan Murray is out: Domantas Sabonis hit the under in 14/18 games without him vs 9/22 with him.",
    "result": null
   },
   {
