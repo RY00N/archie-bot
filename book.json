@@ -1802,25 +1802,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 00:00 PT",
-  "props_today": 3506,
+  "props_today": 3505,
   "kalshi_props_today": 773,
-  "kalshi_priced_today": 85,
+  "kalshi_priced_today": 87,
   "books_on_kalshi_props": {
    "AN Consensus": 764,
    "AN Open": 767,
    "BetMGM": 399,
    "BetRivers": 289,
-   "Caesars": 598,
-   "DraftKings": 652,
+   "Caesars": 603,
+   "DraftKings": 659,
    "FanDuel": 714,
-   "Fanatics": 589,
-   "Hard Rock Bet": 290,
-   "Parx": 446,
+   "Fanatics": 590,
+   "Hard Rock Bet": 288,
+   "Parx": 445,
    "Pinnacle": 604,
-   "Sleeper": 733,
+   "Sleeper": 732,
    "Underdog": 773,
    "Unibet": 121,
-   "bet365": 712
+   "bet365": 746
   },
   "data_files": [
    "mlb.sqlite",
@@ -1828,7 +1828,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 18
+  "kalshi_legs_today": 19
  },
  "shadow": [
   {
@@ -6738,6 +6738,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNFLREC-26OCT25KCSEA-SEAJSMITHNJIGBA11-8",
+   "league": "nfl",
+   "player": "Jaxon Smith-Njigba",
+   "stat": "receptions",
+   "side": "over",
+   "line": 7.5,
+   "start": "2026-10-26T00:20:00Z",
+   "p": 0.471,
+   "price": 0.42,
+   "edge": 0.034,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNFLREC-26OCT25LARLV-LARCPARKINSON84-3",
    "league": "nfl",
    "player": "Colby Parkinson",
@@ -7000,9 +7015,9 @@
    "side": "over",
    "line": 10.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.527,
+   "p": 0.528,
    "price": 0.45,
-   "edge": 0.06,
+   "edge": 0.061,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
