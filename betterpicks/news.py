@@ -210,6 +210,11 @@ def context(leg, c):
         return 0.0, []
     opp = teams[1] if teams[0] == team else teams[0]
     outs = [i for i in injury_list(league, c) if is_out(i["status"]) and i["name"].lower() != player.lower()]
+    # Ryan 2026-10-25: trades happen any day, so an absence only counts when today's ESPN roster (30 min cache)
+    # still has that player on the team; a traded-away teammate or opponent never moves a pick
+    if league != "mlb":
+        cur = {team: roster_pos(league, team, c), opp: roster_pos(league, opp, c)}
+        outs = [i for i in outs if i["team"] not in cur or not cur[i["team"]] or i["name"].lower() in cur[i["team"]]]
     grp_of = GROUP.get(league, {})
     my_grp = grp_of.get(roster_pos(league, team, c).get(player.lower(), ""))
     fresh = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 10 * 86400))
@@ -332,6 +337,7 @@ def adjust(legs):
         bdp, bnote = blowout_adj(l, c)
         if bnote:
             cdp += bdp; cnotes = list(cnotes) + [bnote]
+        l["ctx_dp"] = round(cdp, 3) if cnotes else 0.0   # pregame.py re-checks this part right before tip
         if cnotes:
             dp += cdp
             l["news"] = (note if verdict != "clear" else "") + (" " if verdict != "clear" else "") + "; ".join(cnotes) + "."

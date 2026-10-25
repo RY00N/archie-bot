@@ -370,7 +370,10 @@ def retractions(dry=False):
             except Exception as ex:
                 print("delete failed:", ex)
             picks = ", ".join(leg_label(l) for l in r["legs"])
-            send(f"\u21a9\ufe0f **Taking back a pick: {picks}.** It doesn't pass our updated rules, so fade it "
+            # Ryan 2026-10-25: lineup/injury news right before tip (pregame.py) gets its own wording
+            cause = ("Lineup or injury news changed before tip" if r.get("pregame")
+                     else "It doesn't pass our updated rules")
+            send(f"\u21a9\ufe0f **Taking back a pick: {picks}.** {cause}, so fade it "
                  f"(skip it, or take the other side if you're on it). {r.get('why', '')}".replace("  ", " "))
         sent.add(f"retract:{k}"); sent.add(k)
         if not dry:

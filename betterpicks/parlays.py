@@ -88,7 +88,7 @@ def stat_query(league, stat):
     return ("soccer.sqlite" if league == "epl" else f"{league}.sqlite"), f"select {expr}, date, opp from {table} where player=? or player=? order by date desc"
 
 
-_CONN, _ROWS, _TEAM, _MIN = {}, {}, {}, {}
+_CONN, _ROWS, _TEAM, _MIN, _ROLE = {}, {}, {}, {}, {}
 # ESPN codes in the stats DB vs the codes on Kalshi/sportsbook props
 NBA_CODE = {"GS": "GSW", "NY": "NYK", "NO": "NOP", "SA": "SAS", "UTAH": "UTA", "WSH": "WAS"}
 
@@ -135,6 +135,7 @@ def rows_for(league, stat, player):
                 # Ryan 2026-10-24 (Brook Lopez: started last season, comes off the bench now): only games in the role he
                 # has this season count, starter or bench, so last season's starter games don't prop up a bench player
                 role = this_role(rows)
+                _ROLE[(league, player)] = role   # pregame.py: is he a usual starter?
                 if role is not None:
                     rows = [r for r in rows if r[6] == role]
                     mins = sorted(r[4] for r in rows[:60] if r[4])
@@ -591,7 +592,7 @@ def make_entry(today, app, kind, combo, mult, ev):
             "legs": [{"league": l["prop"]["league"], "player": l["prop"]["player"], "team": l["prop"].get("team"),
                       "stat": l["prop"]["stat"], "side": l["side"], "line": l["line"], "price": l.get("price"),
                       "ticker": l.get("ticker"), "game": l["prop"]["game"], "start": l["prop"]["start"],
-                      "p": l["p"], "edge": l.get("edge"), "news": l.get("news"), "why": describe(l["prop"], l["side"], l["line"], l),
+                      "p": l["p"], "edge": l.get("edge"), "news": l.get("news"), "ctx_dp": l.get("ctx_dp"), "why": describe(l["prop"], l["side"], l["line"], l),
                       "case": " ".join(x for x in (recent_case(l["prop"]["league"], l["prop"]["stat"], l["prop"]["player"], l["side"], l["line"]),
                                                    l.get("spots")) if x),
                       "result": None} for l in combo]}

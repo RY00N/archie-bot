@@ -45,7 +45,7 @@ def verdicts():
               and f"parlay:{e['date']}:{e['app']}:{e['type']}" in done]
     # Ryan 2026-10-21: picks the project takes back; the droplet deletes the post (if it went out) and says fade it
     retract = [{"key": f"parlay:{e['date']}:{e['app']}:{e['type']}", "app": e["app"], "type": e["type"],
-                "lock": e.get("lock"), "why": e.get("retract_why", ""), "legs": [{k: l.get(k) for k in LEG_KEEP} for l in e["legs"]]}
+                "lock": e.get("lock"), "why": e.get("retract_why", ""), "pregame": bool(e.get("retract_pregame")), "legs": [{k: l.get(k) for k in LEG_KEEP} for l in e["legs"]]}
                for e in book.get("parlays", []) if e.get("retracted")]
     live = [e for e in posted if not e.get("retracted")]
     picks = [{"date": e["date"], "type": e["type"], "status": e["status"], "pnl": e["pnl"],
