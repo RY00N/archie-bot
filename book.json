@@ -1834,25 +1834,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 04:00 PT",
-  "props_today": 3704,
+  "props_today": 3703,
   "kalshi_props_today": 831,
   "kalshi_priced_today": 87,
   "books_on_kalshi_props": {
-   "AN Consensus": 822,
+   "AN Consensus": 820,
    "AN Open": 825,
-   "BetMGM": 502,
+   "BetMGM": 539,
    "BetRivers": 288,
    "Caesars": 734,
    "DraftKings": 788,
    "FanDuel": 741,
-   "Fanatics": 659,
+   "Fanatics": 658,
    "Hard Rock Bet": 290,
    "Parx": 445,
    "Pinnacle": 621,
-   "Sleeper": 797,
+   "Sleeper": 796,
    "Underdog": 831,
    "Unibet": 121,
-   "bet365": 800
+   "bet365": 777
   },
   "data_files": [
    "mlb.sqlite",
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 24
+  "kalshi_legs_today": 22
  },
  "shadow": [
   {
@@ -6522,9 +6522,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.701,
-   "price": 0.55,
-   "edge": 0.134,
+   "p": 0.702,
+   "price": 0.54,
+   "edge": 0.145,
    "news": "News: Timberwolves dominate Magic despite Anthony Edwards' shooting struggles - DAZN Donte DiVincenzo is out: Anthony Edwards hit the under in 7/8 games without him vs 16/32 with him.",
    "result": null
   },
@@ -6642,9 +6642,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.477,
+   "p": 0.479,
    "price": 0.42,
-   "edge": 0.04,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6702,9 +6702,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-26T00:20:00Z",
-   "p": 0.568,
+   "p": 0.567,
    "price": 0.5,
-   "edge": 0.05,
+   "edge": 0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6747,9 +6747,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.417,
+   "p": 0.414,
    "price": 0.35,
-   "edge": 0.051,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
