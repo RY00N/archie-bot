@@ -1866,25 +1866,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 08:00 PT",
-  "props_today": 3146,
-  "kalshi_props_today": 793,
+  "props_today": 3176,
+  "kalshi_props_today": 816,
   "kalshi_priced_today": 88,
   "books_on_kalshi_props": {
-   "AN Consensus": 780,
-   "AN Open": 787,
-   "BetMGM": 577,
-   "BetRivers": 483,
-   "Caesars": 702,
-   "DraftKings": 751,
-   "FanDuel": 730,
-   "Fanatics": 636,
+   "AN Consensus": 784,
+   "AN Open": 791,
+   "BetMGM": 580,
+   "BetRivers": 479,
+   "Caesars": 704,
+   "DraftKings": 754,
+   "FanDuel": 734,
+   "Fanatics": 639,
    "Hard Rock Bet": 259,
-   "Parx": 627,
-   "Pinnacle": 656,
-   "Sleeper": 762,
-   "Underdog": 793,
-   "Unibet": 120,
-   "bet365": 721
+   "Parx": 630,
+   "Pinnacle": 659,
+   "Sleeper": 766,
+   "Underdog": 816,
+   "Unibet": 121,
+   "bet365": 735
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 26
+  "kalshi_legs_today": 25
  },
  "shadow": [
   {
@@ -6599,9 +6599,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.522,
+   "p": 0.523,
    "price": 0.47,
-   "edge": 0.035,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6809,9 +6809,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.559,
+   "p": 0.557,
    "price": 0.5,
-   "edge": 0.042,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6839,9 +6839,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.649,
+   "p": 0.651,
    "price": 0.6,
-   "edge": 0.032,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7214,9 +7214,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.663,
+   "p": 0.661,
    "price": 0.55,
-   "edge": 0.096,
+   "edge": 0.094,
    "news": "SF's LB Garret Wallow is out, an easier matchup; SF's LB Luke Gifford is out, an easier matchup.",
    "result": null
   },
@@ -7244,9 +7244,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.541,
+   "p": 0.542,
    "price": 0.42,
-   "edge": 0.104,
+   "edge": 0.105,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
    "result": null
   },
@@ -7364,10 +7364,10 @@
    "side": "over",
    "line": 10.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.528,
-   "price": 0.45,
-   "edge": 0.061,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "p": 0.477,
+   "price": 0.43,
+   "edge": 0.03,
+   "news": "News: New Aaron Jones injury details just made his 2026 season even more impressive - The Viking Age",
    "result": null
   },
   {
