@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 08:00 PT",
-  "props_today": 3124,
+  "props_today": 3117,
   "kalshi_props_today": 799,
   "kalshi_priced_today": 89,
   "books_on_kalshi_props": {
@@ -1881,7 +1881,7 @@
    "Hard Rock Bet": 264,
    "Parx": 628,
    "Pinnacle": 661,
-   "Sleeper": 772,
+   "Sleeper": 773,
    "Underdog": 799,
    "Unibet": 119,
    "bet365": 771
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 27
+  "kalshi_legs_today": 28
  },
  "shadow": [
   {
@@ -6809,9 +6809,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.559,
-   "price": 0.51,
-   "edge": 0.032,
+   "p": 0.557,
+   "price": 0.5,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6855,8 +6855,8 @@
    "line": 2.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.417,
-   "price": 0.37,
-   "edge": 0.031,
+   "price": 0.36,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7200,8 +7200,8 @@
    "line": 0.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.659,
-   "price": 0.54,
-   "edge": 0.102,
+   "price": 0.55,
+   "edge": 0.092,
    "news": "SF's LB Garret Wallow is out, an easier matchup; SF's LB Luke Gifford is out, an easier matchup.",
    "result": null
   },
