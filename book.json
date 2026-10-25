@@ -1870,16 +1870,16 @@
   "kalshi_props_today": 533,
   "kalshi_priced_today": 43,
   "books_on_kalshi_props": {
-   "AN Consensus": 526,
+   "AN Consensus": 527,
    "AN Open": 533,
-   "BetMGM": 365,
+   "BetMGM": 369,
    "BetRivers": 355,
-   "Caesars": 446,
+   "Caesars": 445,
    "DraftKings": 494,
-   "FanDuel": 476,
+   "FanDuel": 477,
    "Fanatics": 418,
    "Hard Rock Bet": 108,
-   "Parx": 411,
+   "Parx": 410,
    "Pinnacle": 393,
    "Sleeper": 521,
    "Underdog": 533,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 21
  },
  "shadow": [
   {
@@ -6809,9 +6809,9 @@
    "side": "under",
    "line": 13.5,
    "start": "2026-10-26T01:00:00Z",
-   "p": 0.528,
+   "p": 0.531,
    "price": 0.48,
-   "edge": 0.031,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6854,9 +6854,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.51,
+   "p": 0.512,
    "price": 0.44,
-   "edge": 0.053,
+   "edge": 0.055,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
@@ -7064,9 +7064,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.58,
+   "p": 0.581,
    "price": 0.49,
-   "edge": 0.073,
+   "edge": 0.074,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
