@@ -1770,24 +1770,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 17:00 PT",
-  "props_today": 290,
-  "kalshi_props_today": 137,
-  "kalshi_priced_today": 2,
+  "props_today": 288,
+  "kalshi_props_today": 136,
+  "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
-   "AN Consensus": 79,
-   "AN Open": 80,
+   "AN Consensus": 78,
+   "AN Open": 79,
    "BetMGM": 54,
-   "BetRivers": 66,
+   "BetRivers": 65,
    "Caesars": 67,
    "DraftKings": 75,
    "FanDuel": 65,
    "Fanatics": 58,
-   "Parx": 66,
+   "Parx": 65,
    "Pinnacle": 48,
    "Sleeper": 125,
-   "Underdog": 137,
+   "Underdog": 136,
    "Unibet": 14,
-   "bet365": 80
+   "bet365": 79
   },
   "data_files": [
    "mlb.sqlite",
