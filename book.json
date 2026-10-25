@@ -1844,7 +1844,7 @@
    "BetRivers": 288,
    "Caesars": 733,
    "DraftKings": 788,
-   "FanDuel": 741,
+   "FanDuel": 737,
    "Fanatics": 641,
    "Hard Rock Bet": 290,
    "Parx": 445,
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 23
+  "kalshi_legs_today": 21
  },
  "shadow": [
   {
@@ -6627,9 +6627,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.521,
+   "p": 0.519,
    "price": 0.47,
-   "edge": 0.034,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7003,8 +7003,8 @@
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.7,
-   "price": 0.55,
-   "edge": 0.133,
+   "price": 0.56,
+   "edge": 0.123,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
