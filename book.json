@@ -1834,25 +1834,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 07:00 PT",
-  "props_today": 3114,
-  "kalshi_props_today": 792,
-  "kalshi_priced_today": 86,
+  "props_today": 3120,
+  "kalshi_props_today": 795,
+  "kalshi_priced_today": 88,
   "books_on_kalshi_props": {
-   "AN Consensus": 778,
-   "AN Open": 783,
+   "AN Consensus": 783,
+   "AN Open": 789,
    "BetMGM": 583,
-   "BetRivers": 475,
-   "Caesars": 689,
-   "DraftKings": 751,
-   "FanDuel": 727,
-   "Fanatics": 635,
-   "Hard Rock Bet": 261,
-   "Parx": 625,
-   "Pinnacle": 658,
-   "Sleeper": 765,
-   "Underdog": 792,
+   "BetRivers": 480,
+   "Caesars": 694,
+   "DraftKings": 754,
+   "FanDuel": 732,
+   "Fanatics": 638,
+   "Hard Rock Bet": 263,
+   "Parx": 626,
+   "Pinnacle": 659,
+   "Sleeper": 767,
+   "Underdog": 795,
    "Unibet": 119,
-   "bet365": 760
+   "bet365": 762
   },
   "data_files": [
    "mlb.sqlite",
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 30
+  "kalshi_legs_today": 27
  },
  "shadow": [
   {
@@ -6522,9 +6522,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.463,
+   "p": 0.461,
    "price": 0.4,
-   "edge": 0.046,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6552,9 +6552,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.564,
+   "p": 0.563,
    "price": 0.51,
-   "edge": 0.037,
+   "edge": 0.036,
    "news": "News: Desmond Bane struggles vs. Minnesota, fouls out - NBC Sports",
    "result": null
   },
@@ -6717,9 +6717,9 @@
    "side": "under",
    "line": 16.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.573,
+   "p": 0.575,
    "price": 0.52,
-   "edge": 0.036,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6882,9 +6882,9 @@
    "side": "under",
    "line": 4.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.518,
+   "p": 0.519,
    "price": 0.47,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "News: Jordan Love, Christian Watson among Packers off injury report and set to play vs. Lions - NBC Sports",
    "result": null
   },
@@ -6942,9 +6942,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.418,
+   "p": 0.414,
    "price": 0.33,
-   "edge": 0.073,
+   "edge": 0.069,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
@@ -7062,9 +7062,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.53,
-   "price": 0.39,
-   "edge": 0.123,
+   "p": 0.529,
+   "price": 0.38,
+   "edge": 0.133,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
