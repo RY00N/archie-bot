@@ -85,6 +85,18 @@ def norm(t):
     return ALIAS.get(t, t)
 
 
+def team_abbrs(league, c):
+    """{ESPN team id: abbreviation} for the league."""
+    path = ESPN.get(league)
+    if not path:
+        return {}
+    def fetch():
+        d = _get(f"https://site.api.espn.com/apis/site/v2/sports/{path}/teams")
+        return {str(t["team"]["id"]): t["team"]["abbreviation"]
+                for lg in d.get("sports", [{}])[0].get("leagues", []) for t in lg.get("teams", [])}
+    return _cached(c, f"teams:{league}", fetch) or {}
+
+
 def injury_list(league, c):
     """[{name, team, pos, status, date}] for everyone on ESPN's league injury report."""
     path = ESPN.get(league)
@@ -92,12 +104,16 @@ def injury_list(league, c):
         return []
     def fetch():
         d = _get(f"https://site.api.espn.com/apis/site/v2/sports/{path}/injuries")
+        abbr = team_abbrs(league, c)
         out = []
         for team in d.get("injuries", []):
             for i in team.get("injuries", []):
                 a = i.get("athlete") or {}
                 if a.get("displayName"):
-                    out.append({"name": a["displayName"], "team": norm((a.get("team") or {}).get("abbreviation")),
+                    # Ryan 2026-10-25 (Barnes/Ingram): the athlete's own team tag can be stale after a trade
+                    # (Ingram listed TOR while on the Clippers' report), so the report's team group wins
+                    tm = abbr.get(str(team.get("id"))) or (a.get("team") or {}).get("abbreviation")
+                    out.append({"name": a["displayName"], "team": norm(tm),
                                 "pos": (a.get("position") or {}).get("abbreviation", ""),
                                 "status": i.get("status", ""), "date": (i.get("date") or "")[:10]})
         return out
