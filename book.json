@@ -1849,7 +1849,7 @@
    "Hard Rock Bet": 258,
    "Parx": 622,
    "Pinnacle": 656,
-   "Sleeper": 758,
+   "Sleeper": 759,
    "Underdog": 786,
    "Unibet": 119,
    "bet365": 760
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 27
+  "kalshi_legs_today": 28
  },
  "shadow": [
   {
@@ -6856,6 +6856,21 @@
    "price": 0.53,
    "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLREC-26OCT25GBDET-GBCWATSON9-5",
+   "league": "nfl",
+   "player": "Christian Watson",
+   "stat": "receptions",
+   "side": "under",
+   "line": 4.5,
+   "start": "2026-10-25T20:25:00Z",
+   "p": 0.518,
+   "price": 0.47,
+   "edge": 0.031,
+   "news": "News: Jordan Love, Christian Watson among Packers off injury report and set to play vs. Lions - NBC Sports",
    "result": null
   },
   {
