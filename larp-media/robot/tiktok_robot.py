@@ -264,6 +264,14 @@ def upload(item):
         except Exception:
             pass
     page.on("response", on_resp)
+    posted = {"ok": False}
+    def on_post(r):
+        try:
+            if "/web/project/post/" in r.url and r.status == 200 and '"status_code":0' in r.text():
+                posted["ok"] = True
+        except Exception:
+            pass
+    page.on("response", on_post)
     def on_bad(r):  # any failed TikTok call is a clue for "Something went wrong"
         try:
             if r.status >= 400 and "tiktok" in r.url:
@@ -333,8 +341,7 @@ def upload(item):
                 if picked == "none":
                     page.keyboard.press("Enter")  # most hashtag lists also take Enter for the top suggestion
                 page.wait_for_timeout(800)
-                continue  # picking a suggestion already adds the trailing space
-            page.keyboard.type(" ", delay=40)
+            page.keyboard.type(" ", delay=40)  # tags must be separated, "#a#b" makes them plain text
         page.wait_for_timeout(1500)
         try:
             log("caption now:", " ".join(cap.inner_text().split())[:200], "| hashtag chips:",
@@ -368,6 +375,10 @@ def upload(item):
             log("clicked Post (forced)")
         page.wait_for_timeout(5000)
         shot(page, "after-post")
+        if posted["ok"]:
+            log("TikTok accepted the post")
+            shot(page, "posted")
+            return True
         if "/tiktokstudio/upload" in page.url:
             try:
                 btn.evaluate("b => { b.focus(); b.click(); }")
@@ -410,42 +421,43 @@ def upload(item):
 CONTENT = "https://www.tiktok.com/tiktokstudio/content"
 
 
-def privatize_older_duplicate(prefix):
-    """Reza 2026-10-25: after re-uploading d3 with real hashtags, set the OLDER copy to "Only me" (no deleting:
-    "I don't want to fuck up the algorithm"). Touches exactly one post, only when 2+ posts start with prefix."""
+def privatize_all(prefix):
+    """Reza 2026-10-25: set EVERY post whose caption starts with prefix to "Only me" (no deleting).
+    Only touches rows matching prefix that are not already Only me."""
     pw, b, ctx = browser()
     page = ctx.new_page()
+    done = 0
     try:
-        page.goto(CONTENT, wait_until="domcontentloaded", timeout=180000)
-        page.wait_for_timeout(15000)
-        for fr in page.frames:
-            try:
-                fr.evaluate(KILL_TOURS)
-            except Exception:
-                pass
-        close_popups(page, page)
-        hits = page.get_by_text(prefix, exact=False)
-        n = hits.count()
-        log("private: posts matching", repr(prefix), "=", n)
-        if n < 2:
-            shot(page, "private-refused")
-            return False
-        row = hits.nth(n - 1).locator("xpath=ancestor::*[count(.//button)>=3][1]")  # newest first: last = oldest
-        log("private: row =", " ".join(row.inner_text().split())[:150])
-        row.get_by_text(re.compile(r"^(Everyone|Friends|Only me)$")).first.click()
-        page.wait_for_timeout(2000)
-        page.get_by_text("Only me", exact=True).last.click()
-        page.wait_for_timeout(3000)
-        for label in ("Confirm", "OK", "Save"):
-            c = page.locator('[role="dialog"], .TUXModal-overlay').last.get_by_role("button", name=label, exact=True)
-            if c.count():
-                c.first.click(); page.wait_for_timeout(2000)
-        page.reload(); page.wait_for_timeout(12000)
-        row = page.get_by_text(prefix, exact=False).nth(n - 1).locator("xpath=ancestor::*[count(.//button)>=3][1]")
-        shot(page, "private-done")
-        txt = " ".join(row.inner_text().split())
-        log("private: row now =", txt[:150])
-        return "Only me" in txt
+        for attempt in range(6):
+            page.goto(CONTENT, wait_until="domcontentloaded", timeout=180000)
+            page.wait_for_timeout(15000)
+            for fr in page.frames:
+                try:
+                    fr.evaluate(KILL_TOURS)
+                except Exception:
+                    pass
+            close_popups(page, page)
+            hits = page.get_by_text(prefix, exact=False)
+            rows = [hits.nth(i).locator("xpath=ancestor::*[count(.//button)>=3][1]") for i in range(hits.count())]
+            texts = [" ".join(r.inner_text().split()) for r in rows]
+            log("private: rows", [t[:90] for t in texts])
+            todo = [r for r, t in zip(rows, texts) if "Only me" not in t]
+            if not todo:
+                shot(page, "private-done")
+                log("private: all", len(rows), "copies are Only me")
+                return len(rows) > 0
+            r = todo[0]
+            r.get_by_text(re.compile(r"^(Everyone|Friends|Followers)$")).first.click()
+            page.wait_for_timeout(2000)
+            shot(page, "private-menu")
+            page.get_by_text("Only me", exact=True).last.click()
+            page.wait_for_timeout(3000)
+            for label in ("Confirm", "OK", "Save", "Change"):
+                c = page.locator('[role="dialog"], .TUXModal-overlay').last.get_by_role("button", name=label, exact=True)
+                if c.count():
+                    c.first.click(); page.wait_for_timeout(2000)
+            done += 1
+        return False
     except Exception as e:
         shot(page, "private-error")
         log("private failed:", repr(e))
@@ -504,6 +516,9 @@ def main():
     for j in jobs:
         if j["id"] in state.setdefault("jobs_done", []):
             continue
+        need = j.get("after_ok")
+        if need and need not in state.setdefault("jobs_ok", []):
+            continue  # waits until that job has succeeded (e.g. repost only after the old copies are private)
         state["jobs_done"].append(j["id"]); save_state(state)
         log("JOB", j["id"], j)
         if j.get("cmd") == "post":
@@ -512,8 +527,13 @@ def main():
             if ok and it["file"] not in state["posted"]:
                 state["posted"].append(it["file"]); save_state(state)
             log("JOB", j["id"], "post", j["n"], it["file"], "ok" if ok else "FAILED")
-        elif j.get("cmd") == "privatize_older_duplicate":
-            log("JOB", j["id"], "private", "ok" if privatize_older_duplicate(j["prefix"]) else "FAILED/REFUSED")
+            if ok:
+                state.setdefault("jobs_ok", []).append(j["id"]); save_state(state)
+        elif j.get("cmd") == "privatize_all":
+            ok = privatize_all(j["prefix"])
+            log("JOB", j["id"], "private", "ok" if ok else "FAILED")
+            if ok:
+                state.setdefault("jobs_ok", []).append(j["id"]); save_state(state)
         elif j.get("cmd") == "test":
             sys.argv[1:] = ["test"]; main_test()
         publish_log()
