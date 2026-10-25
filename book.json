@@ -1765,22 +1765,70 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-25",
+   "app": "Kalshi",
+   "type": "1-leg lock: Scottie Barnes over 19.5 points",
+   "stake": 5.0,
+   "payout_x": 2.04,
+   "win_p": 0.642,
+   "ev_pct": 31.0,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Scottie Barnes",
+     "team": "TOR",
+     "stat": "points",
+     "side": "over",
+     "line": 19.5,
+     "price": 0.49,
+     "ticker": "KXNBAPTS-26OCT25TORMIN-TORSBARNES4-20",
+     "game": "TOR @ MIN",
+     "start": "2026-10-25T23:00:00Z",
+     "p": 0.642,
+     "edge": 0.135,
+     "news": "Brandon Ingram is out: Scottie Barnes hit the over in 7/9 games without him vs 9/31 with him.",
+     "why": "Scottie Barnes over 19.5 points: 6 books price it 50%; hit 75% of last 12 (avg 23.0); 3/9 over vs MIN, avg 17.4. In games vs MIN: 17.4 avg over 9 games, 43% of that rotation is still there, so the matchup counts as 35% over 19.5. Fair 64%.",
+     "case": "Last 5 games: 28, 23, 23, 24, 25 (5 of 5 over 19.5). In games vs MIN: 17.4 avg over 9 games, 43% of that rotation is still there, so the matchup counts as 35% over 19.5.",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-24 23:00 PT",
-  "props_today": 0,
-  "kalshi_props_today": 0,
-  "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {},
+  "props_at": "2026-10-25 00:00 PT",
+  "props_today": 3422,
+  "kalshi_props_today": 739,
+  "kalshi_priced_today": 84,
+  "books_on_kalshi_props": {
+   "AN Consensus": 729,
+   "AN Open": 733,
+   "BetMGM": 399,
+   "BetRivers": 290,
+   "Caesars": 598,
+   "DraftKings": 652,
+   "FanDuel": 680,
+   "Fanatics": 563,
+   "Hard Rock Bet": 290,
+   "Parx": 446,
+   "Pinnacle": 604,
+   "Sleeper": 701,
+   "Underdog": 739,
+   "Unibet": 121,
+   "bet365": 712
+  },
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 0
+  "kalshi_legs_today": 18
  },
  "shadow": [
   {
@@ -6457,9 +6505,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.641,
+   "p": 0.642,
    "price": 0.49,
-   "edge": 0.134,
+   "edge": 0.135,
    "news": "Brandon Ingram is out: Scottie Barnes hit the over in 7/9 games without him vs 9/31 with him.",
    "result": null
   },
@@ -6952,9 +7000,9 @@
    "side": "over",
    "line": 10.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.528,
+   "p": 0.529,
    "price": 0.45,
-   "edge": 0.061,
+   "edge": 0.062,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
