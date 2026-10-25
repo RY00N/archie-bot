@@ -300,12 +300,30 @@ def upload(item):
         page.keyboard.press("Control+A")
         page.keyboard.press("Backspace")
         for word in item["caption"].split(" "):
-            page.keyboard.type(word, delay=40)
+            page.keyboard.type(word, delay=60)
             if word.startswith("#"):
-                page.wait_for_timeout(1500)  # let the hashtag popup show, then close it
-                page.keyboard.press("Escape")
+                # a tag only becomes a real (clickable) hashtag when picked from TikTok's suggestion list
+                page.wait_for_timeout(2500)
+                picked = ui.evaluate("""(tag) => {
+                  const vis = e => e.offsetParent !== null && e.getBoundingClientRect().height > 0;
+                  const opts = [...document.querySelectorAll('[class*="hashtag" i] [class*="item" i], [class*="mention-list" i] [class*="item" i], [role="option"], [class*="suggest" i] li, [class*="Hashtag" i] li')].filter(vis);
+                  const want = tag.toLowerCase();
+                  const hit = opts.find(o => (o.innerText || '').trim().toLowerCase().split(/\\s/)[0] === want) || opts[0];
+                  if (!hit) return 'none';
+                  hit.dispatchEvent(new MouseEvent('mousedown', {bubbles: true})); hit.click();
+                  return (hit.innerText || '').trim().split('\\n')[0] + ' (of ' + opts.length + ')'; }""", word)
+                log("hashtag", word, "->", picked)
+                if picked == "none":
+                    page.keyboard.press("Enter")  # most hashtag lists also take Enter for the top suggestion
+                page.wait_for_timeout(800)
+                continue  # picking a suggestion already adds the trailing space
             page.keyboard.type(" ", delay=40)
         page.wait_for_timeout(1500)
+        try:
+            log("caption now:", " ".join(cap.inner_text().split())[:200], "| hashtag chips:",
+                cap.locator('[class*="hashtag" i], a, span[data-text]').count())
+        except Exception:
+            pass
         close_popups(ui, page)
         shot(page, "before-post")
         # what is the "Something went wrong" box part of? (log its surrounding classes/text)
