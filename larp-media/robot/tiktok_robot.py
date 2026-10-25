@@ -247,7 +247,7 @@ def close_popups(ui, page):
         page.wait_for_timeout(1500)
 
 
-def upload(item):
+def upload(item, dry_run=False):
     path = MEDIA / item["file"]
     pw, b, ctx = browser()
     page = ctx.new_page()
@@ -350,6 +350,13 @@ def upload(item):
             pass
         close_popups(ui, page)
         shot(page, "before-post")
+        if dry_run:  # tag test: show what the caption box holds, never press Post
+            try:
+                log("caption html:", cap.inner_html()[:1500])
+                cap.screenshot(path=str(SHOTS / f"{dt.datetime.now(PT):%m%d-%H%M%S}-caption.png"))
+            except Exception as e:
+                log("caption dump failed:", repr(e))
+            return True
         # what is the "Something went wrong" box part of? (log its surrounding classes/text)
         try:
             log("error box:", ui.evaluate("""() => { const t = [...document.querySelectorAll('*')].find(e => e.children.length === 0 && /Something went wrong/.test(e.textContent));
@@ -534,6 +541,9 @@ def main():
             log("JOB", j["id"], "private", "ok" if ok else "FAILED")
             if ok:
                 state.setdefault("jobs_ok", []).append(j["id"]); save_state(state)
+        elif j.get("cmd") == "tagtest":  # fills the upload form but never posts
+            it = queue["items"][int(j.get("n", 0))]
+            log("JOB", j["id"], "tagtest", "done" if upload(it, dry_run=True) else "FAILED")
         elif j.get("cmd") == "test":
             sys.argv[1:] = ["test"]; main_test()
         publish_log()
