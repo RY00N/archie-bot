@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 09:00 PT",
-  "props_today": 3107,
+  "props_today": 3108,
   "kalshi_props_today": 810,
   "kalshi_priced_today": 89,
   "books_on_kalshi_props": {
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 28
+  "kalshi_legs_today": 30
  },
  "shadow": [
   {
@@ -6502,6 +6502,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNBA3PT-26OCT25DETPHI-PHIVEDGECOMBE77-2",
+   "league": "nba",
+   "player": "VJ Edgecombe",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-10-25T23:30:00Z",
+   "p": 0.451,
+   "price": 0.4,
+   "edge": 0.034,
+   "news": "News: VJ Edgecombe Injury: Exits to locker room - RotoWire",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNBA3PT-26OCT25INDBKN-INDTHALIBURTON0-3",
    "league": "nba",
    "player": "Tyrese Haliburton",
@@ -6735,8 +6750,23 @@
    "line": 5.5,
    "start": "2026-10-25T23:30:00Z",
    "p": 0.522,
-   "price": 0.47,
-   "edge": 0.035,
+   "price": 0.46,
+   "edge": 0.045,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBAREB-26OCT25MEMSAC-SACDSABONIS11-14",
+   "league": "nba",
+   "player": "Domantas Sabonis",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 13.5,
+   "start": "2026-10-26T01:00:00Z",
+   "p": 0.528,
+   "price": 0.48,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
