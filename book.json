@@ -1874,7 +1874,7 @@
    "AN Open": 537,
    "BetMGM": 367,
    "BetRivers": 360,
-   "Caesars": 449,
+   "Caesars": 448,
    "DraftKings": 497,
    "FanDuel": 482,
    "Fanatics": 430,
@@ -1883,7 +1883,7 @@
    "Pinnacle": 396,
    "Sleeper": 524,
    "Underdog": 537,
-   "Unibet": 66,
+   "Unibet": 67,
    "bet365": 531
   },
   "data_files": [
@@ -6689,9 +6689,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.566,
+   "p": 0.567,
    "price": 0.51,
-   "edge": 0.039,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6704,9 +6704,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-25T22:00:00Z",
-   "p": 0.54,
+   "p": 0.541,
    "price": 0.49,
-   "edge": 0.033,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6809,9 +6809,9 @@
    "side": "under",
    "line": 13.5,
    "start": "2026-10-26T01:00:00Z",
-   "p": 0.529,
+   "p": 0.528,
    "price": 0.48,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
