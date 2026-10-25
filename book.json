@@ -1866,25 +1866,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 15:00 PT",
-  "props_today": 852,
-  "kalshi_props_today": 349,
+  "props_today": 814,
+  "kalshi_props_today": 339,
   "kalshi_priced_today": 19,
   "books_on_kalshi_props": {
-   "AN Consensus": 347,
-   "AN Open": 349,
-   "BetMGM": 231,
-   "BetRivers": 258,
-   "Caesars": 292,
-   "DraftKings": 319,
-   "FanDuel": 312,
-   "Fanatics": 277,
+   "AN Consensus": 337,
+   "AN Open": 339,
+   "BetMGM": 224,
+   "BetRivers": 250,
+   "Caesars": 284,
+   "DraftKings": 310,
+   "FanDuel": 303,
+   "Fanatics": 269,
    "Hard Rock Bet": 29,
-   "Parx": 272,
-   "Pinnacle": 230,
-   "Sleeper": 342,
-   "Underdog": 349,
-   "Unibet": 40,
-   "bet365": 347
+   "Parx": 264,
+   "Pinnacle": 222,
+   "Sleeper": 246,
+   "Underdog": 339,
+   "Unibet": 38,
+   "bet365": 337
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 9
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -6648,6 +6648,21 @@
    "price": 0.56,
    "edge": 0.131,
    "news": "News: Timberwolves dominate Magic despite Anthony Edwards' shooting struggles - DAZN Donte DiVincenzo is out: Anthony Edwards hit the under in 7/8 games without him vs 16/32 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBAAST-26OCT25DETPHI-DETCCUNNINGHAM2-10",
+   "league": "nba",
+   "player": "Cade Cunningham",
+   "stat": "assists",
+   "side": "under",
+   "line": 9.5,
+   "start": "2026-10-25T23:30:00Z",
+   "p": 0.561,
+   "price": 0.51,
+   "edge": 0.034,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
