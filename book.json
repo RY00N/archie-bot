@@ -1866,25 +1866,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 08:00 PT",
-  "props_today": 3102,
-  "kalshi_props_today": 799,
+  "props_today": 3091,
+  "kalshi_props_today": 795,
   "kalshi_priced_today": 88,
   "books_on_kalshi_props": {
-   "AN Consensus": 787,
-   "AN Open": 793,
-   "BetMGM": 583,
+   "AN Consensus": 783,
+   "AN Open": 789,
+   "BetMGM": 579,
    "BetRivers": 480,
-   "Caesars": 706,
-   "DraftKings": 757,
-   "FanDuel": 732,
-   "Fanatics": 638,
-   "Hard Rock Bet": 264,
+   "Caesars": 703,
+   "DraftKings": 753,
+   "FanDuel": 728,
+   "Fanatics": 634,
+   "Hard Rock Bet": 261,
    "Parx": 626,
-   "Pinnacle": 661,
-   "Sleeper": 773,
-   "Underdog": 799,
+   "Pinnacle": 658,
+   "Sleeper": 764,
+   "Underdog": 795,
    "Unibet": 119,
-   "bet365": 773
+   "bet365": 769
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 27
+  "kalshi_legs_today": 28
  },
  "shadow": [
   {
@@ -6855,8 +6855,23 @@
    "line": 2.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.417,
-   "price": 0.36,
-   "edge": 0.041,
+   "price": 0.37,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLREC-26OCT25CLETEN-TENEAYOMANOR5-2",
+   "league": "nfl",
+   "player": "Elic Ayomanor",
+   "stat": "receptions",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-10-25T17:00:00Z",
+   "p": 0.563,
+   "price": 0.51,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
