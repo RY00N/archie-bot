@@ -1868,15 +1868,15 @@
   "props_at": "2026-10-25 10:00 PT",
   "props_today": 1587,
   "kalshi_props_today": 510,
-  "kalshi_priced_today": 41,
+  "kalshi_priced_today": 40,
   "books_on_kalshi_props": {
-   "AN Consensus": 509,
+   "AN Consensus": 508,
    "AN Open": 510,
-   "BetMGM": 357,
+   "BetMGM": 360,
    "BetRivers": 349,
    "Caesars": 439,
    "DraftKings": 475,
-   "FanDuel": 466,
+   "FanDuel": 467,
    "Fanatics": 416,
    "Hard Rock Bet": 103,
    "Parx": 403,
@@ -1884,7 +1884,7 @@
    "Sleeper": 490,
    "Underdog": 510,
    "Unibet": 61,
-   "bet365": 504
+   "bet365": 497
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 19
+  "kalshi_legs_today": 18
  },
  "shadow": [
   {
@@ -6555,8 +6555,8 @@
    "line": 1.5,
    "start": "2026-10-25T21:00:00Z",
    "p": 0.446,
-   "price": 0.36,
-   "edge": 0.07,
+   "price": 0.37,
+   "edge": 0.06,
    "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -6644,9 +6644,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.531,
+   "p": 0.532,
    "price": 0.48,
-   "edge": 0.034,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6659,9 +6659,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.559,
+   "p": 0.558,
    "price": 0.5,
-   "edge": 0.042,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7065,8 +7065,8 @@
    "line": 4.5,
    "start": "2026-10-25T20:25:00Z",
    "p": 0.48,
-   "price": 0.42,
-   "edge": 0.043,
+   "price": 0.43,
+   "edge": 0.033,
    "news": "News: Golden remains limited by shoulder on Thursday - NBC Sports",
    "result": null
   },
@@ -7529,9 +7529,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.566,
+   "p": 0.565,
    "price": 0.5,
-   "edge": 0.048,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
