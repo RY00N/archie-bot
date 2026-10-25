@@ -1866,20 +1866,20 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 12:00 PT",
-  "props_today": 1617,
+  "props_today": 1614,
   "kalshi_props_today": 533,
   "kalshi_priced_today": 44,
   "books_on_kalshi_props": {
-   "AN Consensus": 528,
+   "AN Consensus": 529,
    "AN Open": 533,
-   "BetMGM": 355,
-   "BetRivers": 355,
+   "BetMGM": 354,
+   "BetRivers": 356,
    "Caesars": 448,
    "DraftKings": 494,
    "FanDuel": 478,
-   "Fanatics": 413,
+   "Fanatics": 425,
    "Hard Rock Bet": 108,
-   "Parx": 411,
+   "Parx": 415,
    "Pinnacle": 393,
    "Sleeper": 521,
    "Underdog": 533,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 21
+  "kalshi_legs_today": 20
  },
  "shadow": [
   {
@@ -6689,9 +6689,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.566,
+   "p": 0.565,
    "price": 0.51,
-   "edge": 0.039,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6704,9 +6704,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-25T22:00:00Z",
-   "p": 0.541,
+   "p": 0.543,
    "price": 0.49,
-   "edge": 0.034,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7064,9 +7064,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.581,
+   "p": 0.579,
    "price": 0.49,
-   "edge": 0.074,
+   "edge": 0.072,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
@@ -7095,8 +7095,8 @@
    "line": 3.5,
    "start": "2026-10-25T20:25:00Z",
    "p": 0.581,
-   "price": 0.52,
-   "edge": 0.044,
+   "price": 0.53,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7529,9 +7529,9 @@
    "side": "over",
    "line": 13.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.556,
+   "p": 0.554,
    "price": 0.5,
-   "edge": 0.039,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7544,9 +7544,9 @@
    "side": "over",
    "line": 12.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.613,
+   "p": 0.616,
    "price": 0.52,
-   "edge": 0.076,
+   "edge": 0.079,
    "news": "DET's LB Devin White is out, an easier matchup.",
    "result": null
   },
@@ -7604,9 +7604,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.567,
+   "p": 0.566,
    "price": 0.5,
-   "edge": 0.049,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
