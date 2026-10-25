@@ -1870,21 +1870,21 @@
   "kalshi_props_today": 539,
   "kalshi_priced_today": 43,
   "books_on_kalshi_props": {
-   "AN Consensus": 532,
+   "AN Consensus": 534,
    "AN Open": 539,
-   "BetMGM": 372,
+   "BetMGM": 369,
    "BetRivers": 364,
    "Caesars": 458,
    "DraftKings": 499,
    "FanDuel": 483,
-   "Fanatics": 428,
+   "Fanatics": 430,
    "Hard Rock Bet": 111,
    "Parx": 423,
    "Pinnacle": 393,
    "Sleeper": 526,
    "Underdog": 539,
    "Unibet": 69,
-   "bet365": 534
+   "bet365": 537
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 25
+  "kalshi_legs_today": 26
  },
  "shadow": [
   {
@@ -6869,9 +6869,9 @@
    "side": "under",
    "line": 13.5,
    "start": "2026-10-26T01:00:00Z",
-   "p": 0.531,
+   "p": 0.533,
    "price": 0.48,
-   "edge": 0.034,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6914,9 +6914,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.511,
+   "p": 0.51,
    "price": 0.42,
-   "edge": 0.074,
+   "edge": 0.073,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
@@ -7064,9 +7064,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.523,
-   "price": 0.41,
-   "edge": 0.096,
+   "p": 0.524,
+   "price": 0.4,
+   "edge": 0.107,
    "news": "DEN's CB Pat Surtain II is out, an easier matchup; DEN's S Talanoa Hufanga is out, an easier matchup.",
    "result": null
   },
@@ -7169,9 +7169,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.6,
+   "p": 0.601,
    "price": 0.52,
-   "edge": 0.063,
+   "edge": 0.064,
    "news": "Jackson Meeks (WR) is out, so Jameson Williams's role likely grows.",
    "result": null
   },
@@ -7199,9 +7199,9 @@
    "side": "under",
    "line": 4.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.48,
+   "p": 0.478,
    "price": 0.43,
-   "edge": 0.033,
+   "edge": 0.031,
    "news": "News: Golden remains limited by shoulder on Thursday - NBC Sports",
    "result": null
   },
@@ -7619,9 +7619,9 @@
    "side": "over",
    "line": 13.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.552,
+   "p": 0.551,
    "price": 0.5,
-   "edge": 0.035,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7634,9 +7634,9 @@
    "side": "over",
    "line": 12.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.617,
-   "price": 0.53,
-   "edge": 0.07,
+   "p": 0.618,
+   "price": 0.52,
+   "edge": 0.081,
    "news": "DET's LB Devin White is out, an easier matchup.",
    "result": null
   },
