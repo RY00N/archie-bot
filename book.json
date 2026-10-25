@@ -6390,6 +6390,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNBA3PT-26OCT25LACOKC-OKCCHOLMGREN7-1",
+   "league": "nba",
+   "player": "Chet Holmgren",
+   "stat": "threes",
+   "side": "under",
+   "line": 0.5,
+   "start": "2026-10-25T23:00:00Z",
+   "p": 0.464,
+   "price": 0.41,
+   "edge": 0.037,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNBA3PT-26OCT25TORMIN-MINAEDWARDS5-4",
    "league": "nba",
    "player": "Anthony Edwards",
