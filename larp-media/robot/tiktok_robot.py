@@ -154,10 +154,12 @@ def file_input(page, wait_s=150):
     return None, None
 
 
-KILL_TOURS = """() => { let n = 0;
-  document.querySelectorAll('#react-joyride-portal, [class*="react-joyride"], .__floater, [id^="react-joyride"]')
-    .forEach(e => { e.remove(); n++; });
-  document.body.style.overflow = 'auto'; return n; }"""
+KILL_TOURS = """() => {  // HIDE feature-tour overlays with CSS. Never remove them: removing React's nodes crashed the
+  // page ("removeChild" errors -> "Something went wrong") and the Post button then did nothing.
+  if (document.getElementById('larp-hide-tours')) return 0;
+  const st = document.createElement('style'); st.id = 'larp-hide-tours';
+  st.textContent = '#react-joyride-portal, [class*="react-joyride"], .__floater, [id^="react-joyride"] { display: none !important; pointer-events: none !important; }';
+  document.head.appendChild(st); return 1; }"""
 
 
 def screen_text(ui):
@@ -203,7 +205,7 @@ def close_popups(ui, page):
         try:
             n = fr.evaluate(KILL_TOURS)
             if n:
-                log("removed tour overlay x", n)
+                log("hid tour overlays")
         except Exception:
             pass
     for _ in range(6):
