@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 11:00 PT",
-  "props_today": 1606,
+  "props_today": 1605,
   "kalshi_props_today": 533,
   "kalshi_priced_today": 43,
   "books_on_kalshi_props": {
@@ -6855,8 +6855,8 @@
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
    "p": 0.512,
-   "price": 0.44,
-   "edge": 0.055,
+   "price": 0.43,
+   "edge": 0.065,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
