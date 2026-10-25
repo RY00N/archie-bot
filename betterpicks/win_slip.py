@@ -8,6 +8,7 @@ from datetime import datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 W, H = 1080, 1350
+SHOW = 100   # dollars shown on the slip
 GREEN, WHITE, SOFT, DIM = (0, 179, 126), (255, 255, 255), (206, 212, 222), (150, 156, 168)
 WORDS = {"threes": "threes", "rebounds": "rebounds", "points": "points", "assists": "assists", "pra": "pts + reb + ast",
          "pts_reb": "pts + reb", "pts_ast": "pts + ast", "reb_ast": "reb + ast", "receptions": "receptions",
@@ -48,7 +49,7 @@ def render(v):
     img = img.resize((int(img.width * s) + 1, int(img.height * s) + 1)).crop((0, 0, W, H)).filter(ImageFilter.GaussianBlur(14))
     img = Image.blend(img, Image.new("RGB", (W, H), (8, 10, 16)), 0.72).convert("RGBA")
     legs = v["legs"][:4]
-    card_h = 300 + 190 * len(legs)
+    card_h = 340 + 190 * len(legs)
     y0 = (H - card_h) // 2
     layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     ImageDraw.Draw(layer).rounded_rectangle((60, y0, W - 60, y0 + card_h), 36, fill=(14, 17, 25, 235), outline=(40, 46, 60, 255), width=2)
@@ -62,9 +63,12 @@ def render(v):
     pw = d.textlength("WIN", font=pill) + 64
     d.rounded_rectangle((W - 110 - pw, y0 + 54, W - 110, y0 + 120), 16, fill=GREEN)
     d.text((W - 110 - pw + 32, y0 + 62), "WIN", font=pill, fill=(6, 20, 14))
-    stake, pay = v.get("stake") or 5, (v.get("stake") or 5) + (v.get("pnl") or 0)
-    d.text((x, y0 + 168), f"${stake:.0f} to ${pay:.2f}", font=font("Black", 92), fill=WHITE)
-    y = y0 + 310
+    # Ryan 2026-10-25: show it as a $100 bet ("way more dramatic"); same real payout multiple as our $5 pick
+    stake = v.get("stake") or 5
+    pay = SHOW * (stake + (v.get("pnl") or 0)) / stake
+    d.text((x, y0 + 168), f"${SHOW} to ${pay:,.0f}", font=font("Black", 92), fill=WHITE)
+    d.text((x, y0 + 270), f"What ${SHOW} on this pick paid at our posted price", font=font("Regular", 24), fill=DIM)
+    y = y0 + 350
     for l in legs:
         d.line((x, y - 24, W - 110, y - 24), fill=(40, 46, 60), width=2)
         d.text((x, y), l["player"], font=fit(d, l["player"], "Black", 46, 620), fill=WHITE)
