@@ -1772,22 +1772,22 @@
   "props_at": "2026-10-24 18:00 PT",
   "props_today": 188,
   "kalshi_props_today": 83,
-  "kalshi_priced_today": 2,
+  "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
-   "AN Consensus": 83,
-   "AN Open": 83,
-   "BetMGM": 60,
-   "BetRivers": 69,
-   "Caesars": 70,
-   "DraftKings": 79,
-   "FanDuel": 67,
-   "Fanatics": 60,
-   "Parx": 69,
-   "Pinnacle": 48,
+   "AN Consensus": 34,
+   "AN Open": 34,
+   "BetMGM": 26,
+   "BetRivers": 29,
+   "Caesars": 30,
+   "DraftKings": 33,
+   "FanDuel": 29,
+   "Fanatics": 25,
+   "Parx": 29,
+   "Pinnacle": 20,
    "Sleeper": 79,
    "Underdog": 83,
-   "Unibet": 15,
-   "bet365": 83
+   "Unibet": 8,
+   "bet365": 34
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 1
+  "kalshi_legs_today": 0
  },
  "shadow": [
   {
@@ -6652,9 +6652,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.504,
+   "p": 0.499,
    "price": 0.38,
-   "edge": 0.108,
+   "edge": 0.103,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -6877,9 +6877,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.629,
+   "p": 0.626,
    "price": 0.51,
-   "edge": 0.102,
+   "edge": 0.099,
    "news": "DET's LB Devin White is out, an easier matchup.",
    "result": null
   },
