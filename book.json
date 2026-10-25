@@ -1866,24 +1866,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 09:00 PT",
-  "props_today": 3175,
+  "props_today": 3176,
   "kalshi_props_today": 816,
   "kalshi_priced_today": 87,
   "books_on_kalshi_props": {
    "AN Consensus": 782,
-   "AN Open": 791,
+   "AN Open": 793,
    "BetMGM": 584,
    "BetRivers": 485,
-   "Caesars": 705,
+   "Caesars": 704,
    "DraftKings": 755,
-   "FanDuel": 734,
+   "FanDuel": 732,
    "Fanatics": 640,
-   "Hard Rock Bet": 256,
+   "Hard Rock Bet": 259,
    "Parx": 631,
    "Pinnacle": 659,
    "Sleeper": 772,
    "Underdog": 816,
-   "Unibet": 123,
+   "Unibet": 126,
    "bet365": 769
   },
   "data_files": [
@@ -6554,9 +6554,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.463,
+   "p": 0.462,
    "price": 0.4,
-   "edge": 0.046,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6577,6 +6577,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNBAAST-26OCT25DETPHI-PHITMAXEY0-6",
+   "league": "nba",
+   "player": "Tyrese Maxey",
+   "stat": "assists",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-25T23:30:00Z",
+   "p": 0.558,
+   "price": 0.51,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNBAAST-26OCT25ORLNYK-ORLDBANE3-4",
    "league": "nba",
    "player": "Desmond Bane",
@@ -6587,7 +6602,7 @@
    "p": 0.566,
    "price": 0.51,
    "edge": 0.039,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: Desmond Bane struggles vs. Minnesota, fouls out - NBC Sports",
    "result": null
   },
   {
@@ -6599,9 +6614,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.521,
+   "p": 0.522,
    "price": 0.47,
-   "edge": 0.034,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6704,9 +6719,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.518,
+   "p": 0.521,
    "price": 0.47,
-   "edge": 0.031,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7127,7 +7142,7 @@
    "p": 0.501,
    "price": 0.38,
    "edge": 0.105,
-   "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
+   "news": "NYG's CB Greg Newsome II is out, an easier matchup; NYG's S Jevon Holland is out, an easier matchup.",
    "result": null
   },
   {
@@ -7142,7 +7157,7 @@
    "p": 0.531,
    "price": 0.38,
    "edge": 0.135,
-   "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
+   "news": "NYG's CB Greg Newsome II is out, an easier matchup; NYG's S Jevon Holland is out, an easier matchup.",
    "result": null
   },
   {
@@ -7217,7 +7232,7 @@
    "p": 0.662,
    "price": 0.55,
    "edge": 0.095,
-   "news": "SF's LB Garret Wallow is out, an easier matchup; SF's LB Luke Gifford is out, an easier matchup.",
+   "news": "SF's S Marques Sigle is out, an easier matchup; SF's LB Garret Wallow is out, an easier matchup.",
    "result": null
   },
   {
@@ -7244,9 +7259,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.541,
+   "p": 0.547,
    "price": 0.42,
-   "edge": 0.104,
+   "edge": 0.11,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
    "result": null
   },
