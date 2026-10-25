@@ -1867,24 +1867,24 @@
  "diag": {
   "props_at": "2026-10-25 12:00 PT",
   "props_today": 1614,
-  "kalshi_props_today": 536,
+  "kalshi_props_today": 539,
   "kalshi_priced_today": 43,
   "books_on_kalshi_props": {
-   "AN Consensus": 531,
-   "AN Open": 536,
-   "BetMGM": 370,
-   "BetRivers": 361,
-   "Caesars": 455,
-   "DraftKings": 496,
-   "FanDuel": 479,
-   "Fanatics": 424,
-   "Hard Rock Bet": 110,
-   "Parx": 420,
+   "AN Consensus": 534,
+   "AN Open": 539,
+   "BetMGM": 372,
+   "BetRivers": 364,
+   "Caesars": 457,
+   "DraftKings": 498,
+   "FanDuel": 483,
+   "Fanatics": 428,
+   "Hard Rock Bet": 111,
+   "Parx": 423,
    "Pinnacle": 393,
-   "Sleeper": 524,
-   "Underdog": 536,
+   "Sleeper": 527,
+   "Underdog": 539,
    "Unibet": 69,
-   "bet365": 534
+   "bet365": 537
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 21
+  "kalshi_legs_today": 22
  },
  "shadow": [
   {
@@ -6704,9 +6704,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-25T22:00:00Z",
-   "p": 0.507,
+   "p": 0.515,
    "price": 0.45,
-   "edge": 0.04,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6917,6 +6917,21 @@
    "p": 0.448,
    "price": 0.39,
    "edge": 0.041,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBASTL-26OCT25TORMIN-TORIQUICKLEY5-2",
+   "league": "nba",
+   "player": "Immanuel Quickley",
+   "stat": "steals",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-25T23:00:00Z",
+   "p": 0.442,
+   "price": 0.38,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7544,9 +7559,9 @@
    "side": "over",
    "line": 13.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.554,
+   "p": 0.552,
    "price": 0.5,
-   "edge": 0.037,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
