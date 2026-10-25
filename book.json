@@ -1868,18 +1868,18 @@
   "props_at": "2026-10-25 08:00 PT",
   "props_today": 3119,
   "kalshi_props_today": 797,
-  "kalshi_priced_today": 87,
+  "kalshi_priced_today": 88,
   "books_on_kalshi_props": {
-   "AN Consensus": 784,
+   "AN Consensus": 783,
    "AN Open": 791,
    "BetMGM": 583,
    "BetRivers": 480,
    "Caesars": 704,
    "DraftKings": 755,
-   "FanDuel": 733,
-   "Fanatics": 639,
+   "FanDuel": 732,
+   "Fanatics": 638,
    "Hard Rock Bet": 263,
-   "Parx": 627,
+   "Parx": 626,
    "Pinnacle": 659,
    "Sleeper": 769,
    "Underdog": 797,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 29
+  "kalshi_legs_today": 27
  },
  "shadow": [
   {
@@ -6599,9 +6599,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.519,
+   "p": 0.52,
    "price": 0.47,
-   "edge": 0.032,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6989,9 +6989,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.414,
+   "p": 0.411,
    "price": 0.33,
-   "edge": 0.069,
+   "edge": 0.066,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
@@ -7072,6 +7072,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNFLREC-26OCT25LARLV-LARTHIGBEE89-4",
+   "league": "nfl",
+   "player": "Tyler Higbee",
+   "stat": "receptions",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-10-25T20:25:00Z",
+   "p": 0.468,
+   "price": 0.42,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNFLREC-26OCT25MIANYJ-NYJMTAYLOR85-3",
    "league": "nfl",
    "player": "Mason Taylor",
@@ -7124,9 +7139,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.582,
+   "p": 0.581,
    "price": 0.47,
-   "edge": 0.095,
+   "edge": 0.094,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
