@@ -1842,8 +1842,8 @@
    "AN Open": 811,
    "BetMGM": 403,
    "BetRivers": 289,
-   "Caesars": 658,
-   "DraftKings": 724,
+   "Caesars": 660,
+   "DraftKings": 729,
    "FanDuel": 741,
    "Fanatics": 616,
    "Hard Rock Bet": 287,
@@ -1852,7 +1852,7 @@
    "Sleeper": 781,
    "Underdog": 817,
    "Unibet": 121,
-   "bet365": 763
+   "bet365": 772
   },
   "data_files": [
    "mlb.sqlite",
@@ -6597,9 +6597,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.518,
-   "price": 0.46,
-   "edge": 0.041,
+   "p": 0.52,
+   "price": 0.47,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6732,9 +6732,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.58,
+   "p": 0.581,
    "price": 0.49,
-   "edge": 0.073,
+   "edge": 0.074,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
