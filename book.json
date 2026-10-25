@@ -1770,13 +1770,10 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 19:00 PT",
-  "props_today": 100,
-  "kalshi_props_today": 34,
+  "props_today": 0,
+  "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {
-   "Sleeper": 34,
-   "Underdog": 34
-  },
+  "books_on_kalshi_props": {},
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
@@ -6731,8 +6728,8 @@
    "line": 0.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.658,
-   "price": 0.53,
-   "edge": 0.111,
+   "price": 0.54,
+   "edge": 0.101,
    "news": "SF's LB Garret Wallow is out, an easier matchup; SF's LB Luke Gifford is out, an easier matchup.",
    "result": null
   },
