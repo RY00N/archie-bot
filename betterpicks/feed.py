@@ -15,7 +15,7 @@ import record, why_lost   # noqa: E402
 HERE = os.path.dirname(os.path.abspath(__file__))
 KEEP_OUT = {"PrizePicks", "Underdog", "Sleeper", "Kalshi", "Polymarket"}   # the droplet fetches these itself
 GRADED = os.environ.get("BP_GRADED_BOOK", "/mnt/project-files/betterpicks/book.json")   # the project grades parlays
-LEG_KEEP = ("player", "stat", "side", "line", "ticker", "game", "result", "actual")
+LEG_KEEP = ("player", "stat", "side", "line", "ticker", "game", "result", "actual", "league")
 BOARD_KEEP = ("player", "stat", "side", "line", "game", "result", "actual", "start", "league", "p", "edge", "price",
               "news", "case")   # p/edge/news/case let the droplet explain a pick on /bp by itself
 

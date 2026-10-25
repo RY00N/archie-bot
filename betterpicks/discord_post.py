@@ -152,6 +152,49 @@ def send(text, embeds=None, channel=None):
     urllib.request.urlopen(req, timeout=20).read()
 
 
+def send_file(text, data, name, channel):
+    """Post a message with one image attached (multipart), as BetterBot."""
+    tok = os.environ.get("DISCORD_BOT_TOKEN")
+    if not tok:
+        return
+    bound = "bpslip" + os.urandom(8).hex()
+    meta = json.dumps({"content": text[:1990], "allowed_mentions": {"parse": []},
+                       "attachments": [{"id": 0, "filename": name}]})
+    body = (f"--{bound}\r\nContent-Disposition: form-data; name=\"payload_json\"\r\nContent-Type: application/json\r\n\r\n"
+            f"{meta}\r\n--{bound}\r\nContent-Disposition: form-data; name=\"files[0]\"; filename=\"{name}\"\r\n"
+            f"Content-Type: image/png\r\n\r\n").encode() + data + f"\r\n--{bound}--\r\n".encode()
+    req = urllib.request.Request(f"https://discord.com/api/v10/channels/{channel}/messages", data=body, method="POST",
+                                 headers={"Authorization": f"Bot {tok}", "User-Agent": "BetterPicks (1.0)",
+                                          "Content-Type": f"multipart/form-data; boundary={bound}"})
+    urllib.request.urlopen(req, timeout=30).read()
+
+
+# Ryan 2026-10-25 ("Yes do that"): every real HIT also posts a BetterPicks win slip image to WINNERS
+WINNERS_CH = os.environ.get("BP_WINNERS_CHANNEL_ID", "1509697436480700537")
+
+
+def win_slip(v, sent, dry=False):
+    if v.get("status") != "won" or f"winslip:{v['key']}" in sent:
+        return
+    try:
+        import shutil, importlib
+        src = os.path.join(os.environ.get("BP_REPO", "/home/archie/bp-repo"), "betterpicks", "win_slip.py")
+        if os.path.exists(src):   # not in the scanner's fixed code list, so it comes from the repo checkout
+            shutil.copyfile(src, os.path.join(HERE, "win_slip.py"))
+        sys.path.insert(0, HERE)
+        import win_slip as ws
+        importlib.reload(ws)
+        png = ws.render(v)
+    except Exception as e:
+        print("win slip skipped:", e)
+        return
+    if dry:
+        open("/tmp/win_slip_dry.png", "wb").write(png); print("win slip -> /tmp/win_slip_dry.png"); return
+    day = datetime.fromisoformat(v["date"]).strftime("%b %-d")
+    send_file(f"\u2705 Cashed: {', '.join(l['player'] for l in v['legs'])} ({day})", png, "betterpicks-win.png", WINNERS_CH)
+    sent.add(f"winslip:{v['key']}")
+
+
 # Ryan 2026-10-23: "Send one free pick every 3 days make sure it's a lock so we can get customers". The first lock
 # (65%+ win chance on every leg) posted once 3 days have passed since the last free pick is copied to the free channel,
 # and its HIT/LOST result goes there too.
@@ -359,7 +402,7 @@ def verdicts(dry=False):
     for v in todo:
         head, emb = verdict_post(v, doc.get("record"))
         if dry:
-            print(head, json.dumps(emb, indent=1), "\n"); continue
+            print(head, json.dumps(emb, indent=1), "\n"); win_slip(v, sent, dry=True); continue
         send(head, [emb])
         if f"free:{v['key']}" in sent:   # the free lock's result goes to the free channel too
             send(head, [emb], channel=FREE_CH)
@@ -367,6 +410,7 @@ def verdicts(dry=False):
             if cur.get("key") == v["key"]:
                 cur["result"] = v.get("status"); json.dump(cur, open(FREE_FILE, "w"), indent=1)
         sent.add(f"verdict:{v['key']}")
+        win_slip(v, sent)
         json.dump(sorted(sent), open(SENT, "w"), indent=1)
         print("posted verdict", v["key"])
 
