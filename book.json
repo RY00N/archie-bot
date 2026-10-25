@@ -1810,14 +1810,14 @@
    "AN Open": 768,
    "BetMGM": 399,
    "BetRivers": 289,
-   "Caesars": 603,
+   "Caesars": 615,
    "DraftKings": 659,
    "FanDuel": 715,
-   "Fanatics": 590,
-   "Hard Rock Bet": 288,
+   "Fanatics": 589,
+   "Hard Rock Bet": 290,
    "Parx": 445,
    "Pinnacle": 604,
-   "Sleeper": 734,
+   "Sleeper": 735,
    "Underdog": 774,
    "Unibet": 121,
    "bet365": 747
@@ -1828,7 +1828,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 19
+  "kalshi_legs_today": 21
  },
  "shadow": [
   {
@@ -6438,6 +6438,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNBA3PT-26OCT25INDBKN-INDTHALIBURTON0-3",
+   "league": "nba",
+   "player": "Tyrese Haliburton",
+   "stat": "threes",
+   "side": "under",
+   "line": 2.5,
+   "start": "2026-10-25T22:00:00Z",
+   "p": 0.611,
+   "price": 0.5,
+   "edge": 0.093,
+   "news": "News: Tyrese Haliburton (Achilles) absent from injury report - NBC Sports Ben Sheppard is out: Tyrese Haliburton hit the under in 14/21 games without him vs 10/19 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNBA3PT-26OCT25LACOKC-OKCCHOLMGREN7-1",
    "league": "nba",
    "player": "Chet Holmgren",
@@ -6460,9 +6475,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.461,
+   "p": 0.46,
    "price": 0.4,
-   "edge": 0.044,
+   "edge": 0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6479,6 +6494,21 @@
    "price": 0.54,
    "edge": 0.144,
    "news": "News: Timberwolves dominate Magic despite Anthony Edwards' shooting struggles - DAZN Donte DiVincenzo is out: Anthony Edwards hit the under in 7/8 games without him vs 16/32 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBAAST-26OCT25ORLNYK-ORLDBANE3-4",
+   "league": "nba",
+   "player": "Desmond Bane",
+   "stat": "assists",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-10-25T23:00:00Z",
+   "p": 0.571,
+   "price": 0.52,
+   "edge": 0.034,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
