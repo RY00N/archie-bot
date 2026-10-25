@@ -1866,11 +1866,11 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 12:00 PT",
-  "props_today": 1614,
+  "props_today": 1613,
   "kalshi_props_today": 539,
   "kalshi_priced_today": 43,
   "books_on_kalshi_props": {
-   "AN Consensus": 533,
+   "AN Consensus": 532,
    "AN Open": 539,
    "BetMGM": 372,
    "BetRivers": 364,
@@ -1884,7 +1884,7 @@
    "Sleeper": 527,
    "Underdog": 539,
    "Unibet": 69,
-   "bet365": 537
+   "bet365": 534
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 25
+  "kalshi_legs_today": 26
  },
  "shadow": [
   {
@@ -6847,6 +6847,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNBAREB-26OCT25MEMSAC-MEMJWELLS0-4",
+   "league": "nba",
+   "player": "Jaylen Wells",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-26T01:00:00Z",
+   "p": 0.403,
+   "price": 0.35,
+   "edge": 0.037,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNBAREB-26OCT25MEMSAC-SACDSABONIS11-14",
    "league": "nba",
    "player": "Domantas Sabonis",
@@ -6914,9 +6929,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.489,
-   "price": 0.44,
-   "edge": 0.032,
+   "p": 0.482,
+   "price": 0.43,
+   "edge": 0.035,
    "news": "Injury report: Day-To-Day: Thompson (ankle) did not participate in Sunday morning's shootaround, Coty M. Davis of The Detroit News reports.",
    "result": null
   },
@@ -7124,9 +7139,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.579,
+   "p": 0.581,
    "price": 0.49,
-   "edge": 0.072,
+   "edge": 0.074,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
@@ -7139,9 +7154,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.635,
+   "p": 0.637,
    "price": 0.52,
-   "edge": 0.098,
+   "edge": 0.1,
    "news": "ARI's CB Max Melton is out, an easier matchup; ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
