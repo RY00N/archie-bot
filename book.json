@@ -1866,24 +1866,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 09:00 PT",
-  "props_today": 3175,
-  "kalshi_props_today": 827,
-  "kalshi_priced_today": 87,
+  "props_today": 3107,
+  "kalshi_props_today": 808,
+  "kalshi_priced_today": 88,
   "books_on_kalshi_props": {
-   "AN Consensus": 794,
+   "AN Consensus": 796,
    "AN Open": 804,
    "BetMGM": 597,
-   "BetRivers": 490,
-   "Caesars": 714,
-   "DraftKings": 766,
+   "BetRivers": 489,
+   "Caesars": 715,
+   "DraftKings": 767,
    "FanDuel": 739,
-   "Fanatics": 648,
-   "Hard Rock Bet": 261,
-   "Parx": 637,
+   "Fanatics": 645,
+   "Hard Rock Bet": 259,
+   "Parx": 636,
    "Pinnacle": 665,
    "Sleeper": 783,
-   "Underdog": 827,
-   "Unibet": 127,
+   "Underdog": 808,
+   "Unibet": 128,
    "bet365": 780
   },
   "data_files": [
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 28
+  "kalshi_legs_today": 31
  },
  "shadow": [
   {
@@ -6524,9 +6524,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.463,
+   "p": 0.465,
    "price": 0.41,
-   "edge": 0.036,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6614,9 +6614,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.522,
+   "p": 0.523,
    "price": 0.47,
-   "edge": 0.035,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6644,9 +6644,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.558,
+   "p": 0.559,
    "price": 0.5,
-   "edge": 0.041,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6693,6 +6693,21 @@
    "price": 0.51,
    "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBAPTS-26OCT25ORLNYK-ORLDBANE3-20",
+   "league": "nba",
+   "player": "Desmond Bane",
+   "stat": "points",
+   "side": "under",
+   "line": 19.5,
+   "start": "2026-10-25T23:00:00Z",
+   "p": 0.549,
+   "price": 0.5,
+   "edge": 0.032,
+   "news": "News: Desmond Bane struggles vs. Minnesota, fouls out - NBC Sports",
    "result": null
   },
   {
@@ -6768,6 +6783,21 @@
    "price": 0.44,
    "edge": 0.032,
    "news": "Injury report: Day-To-Day: Thompson (ankle) did not participate in Sunday morning's shootaround, Coty M. Davis of The Detroit News reports.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBASTL-26OCT25LACOKC-OKCCWALLACE22-2",
+   "league": "nba",
+   "player": "Cason Wallace",
+   "stat": "steals",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-25T23:00:00Z",
+   "p": 0.608,
+   "price": 0.55,
+   "edge": 0.041,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
