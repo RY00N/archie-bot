@@ -1834,7 +1834,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 03:00 PT",
-  "props_today": 3678,
+  "props_today": 3679,
   "kalshi_props_today": 831,
   "kalshi_priced_today": 87,
   "books_on_kalshi_props": {
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 23
  },
  "shadow": [
   {
@@ -6554,6 +6554,21 @@
    "start": "2026-10-25T23:00:00Z",
    "p": 0.518,
    "price": 0.47,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBAAST-26OCT25TORMIN-TORIQUICKLEY5-6",
+   "league": "nba",
+   "player": "Immanuel Quickley",
+   "stat": "assists",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-25T23:00:00Z",
+   "p": 0.538,
+   "price": 0.49,
    "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
