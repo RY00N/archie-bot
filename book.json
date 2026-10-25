@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 27
+  "kalshi_legs_today": 29
  },
  "shadow": [
   {
@@ -6658,8 +6658,8 @@
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
    "p": 0.444,
-   "price": 0.36,
-   "edge": 0.068,
+   "price": 0.35,
+   "edge": 0.078,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6672,9 +6672,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.523,
-   "price": 0.46,
-   "edge": 0.046,
+   "p": 0.519,
+   "price": 0.44,
+   "edge": 0.062,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
@@ -6882,9 +6882,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.586,
-   "price": 0.53,
-   "edge": 0.039,
+   "p": 0.588,
+   "price": 0.54,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
