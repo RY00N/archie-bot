@@ -1829,6 +1829,38 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-25",
+   "app": "Kalshi",
+   "type": "1-leg lock: Marvin Mims Jr. over 1.5 receptions",
+   "stake": 5.0,
+   "payout_x": 1.89,
+   "win_p": 0.609,
+   "ev_pct": 14.9,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Marvin Mims Jr.",
+     "team": "DEN",
+     "stat": "receptions",
+     "side": "over",
+     "line": 1.5,
+     "price": 0.53,
+     "ticker": "KXNFLREC-26OCT25DENARI-DENMMIMS19-2",
+     "game": "DEN @ ARI",
+     "start": "2026-10-25T20:05:00Z",
+     "p": 0.609,
+     "edge": 0.062,
+     "news": "ARI's S Andrew Wingard is out, an easier matchup.",
+     "why": "Marvin Mims Jr. over 1.5 receptions: 8 books price it 54%; hit 75% of last 12 (avg 2.7). Fair 61%.",
+     "case": "Last 5 games: 2, 2, 1, 0, 4 (3 of 5 over 1.5).",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
@@ -1836,23 +1868,23 @@
   "props_at": "2026-10-25 07:00 PT",
   "props_today": 3120,
   "kalshi_props_today": 795,
-  "kalshi_priced_today": 87,
+  "kalshi_priced_today": 88,
   "books_on_kalshi_props": {
-   "AN Consensus": 783,
+   "AN Consensus": 782,
    "AN Open": 789,
    "BetMGM": 583,
-   "BetRivers": 479,
-   "Caesars": 694,
+   "BetRivers": 472,
+   "Caesars": 693,
    "DraftKings": 754,
    "FanDuel": 732,
-   "Fanatics": 638,
-   "Hard Rock Bet": 262,
+   "Fanatics": 639,
+   "Hard Rock Bet": 263,
    "Parx": 628,
    "Pinnacle": 659,
    "Sleeper": 767,
    "Underdog": 795,
    "Unibet": 119,
-   "bet365": 764
+   "bet365": 762
   },
   "data_files": [
    "mlb.sqlite",
@@ -6590,6 +6622,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNBAPRA-26OCT25LALUTA-UTAKGEORGE3-30",
+   "league": "nba",
+   "player": "Keyonte George",
+   "stat": "pra",
+   "side": "over",
+   "line": 29.5,
+   "start": "2026-10-25T21:00:00Z",
+   "p": 0.56,
+   "price": 0.5,
+   "edge": 0.043,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNBAPTS-26OCT25DETPHI-DETJCOLLINS20-15",
    "league": "nba",
    "player": "John Collins",
@@ -6687,9 +6734,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.515,
+   "p": 0.514,
    "price": 0.44,
-   "edge": 0.058,
+   "edge": 0.057,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
@@ -7018,8 +7065,8 @@
    "line": 8.5,
    "start": "2026-10-25T20:25:00Z",
    "p": 0.421,
-   "price": 0.37,
-   "edge": 0.035,
+   "price": 0.34,
+   "edge": 0.065,
    "news": "Injury report: Questionable: The Rams are optimistic that Nacua (calf), who is listed as questionable for Week 7, will play in Sunday's game at Las Vegas, Adam Schefter of ESPN reports. Davante Adams is out: Puka Nacua hit the over in 2/3 games without him vs 9/20 with him.",
    "result": null
   },
@@ -7062,9 +7109,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.53,
+   "p": 0.529,
    "price": 0.38,
-   "edge": 0.134,
+   "edge": 0.133,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -7407,9 +7454,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.518,
+   "p": 0.519,
    "price": 0.47,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
