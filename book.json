@@ -1876,7 +1876,7 @@
    "BetRivers": 258,
    "Caesars": 289,
    "DraftKings": 319,
-   "FanDuel": 309,
+   "FanDuel": 311,
    "Fanatics": 276,
    "Hard Rock Bet": 29,
    "Parx": 272,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 9
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -6719,9 +6719,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.563,
+   "p": 0.561,
    "price": 0.51,
-   "edge": 0.036,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6824,9 +6824,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.638,
+   "p": 0.637,
    "price": 0.48,
-   "edge": 0.141,
+   "edge": 0.14,
    "news": "Brandon Ingram is out: Scottie Barnes hit the over in 7/9 games without him vs 9/31 with him.",
    "result": null
   },
@@ -7004,9 +7004,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.443,
+   "p": 0.445,
    "price": 0.37,
-   "edge": 0.057,
+   "edge": 0.059,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
