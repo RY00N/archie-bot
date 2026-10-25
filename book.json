@@ -1833,26 +1833,26 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-25 05:00 PT",
-  "props_today": 3657,
+  "props_at": "2026-10-25 06:00 PT",
+  "props_today": 3705,
   "kalshi_props_today": 831,
   "kalshi_priced_today": 87,
   "books_on_kalshi_props": {
    "AN Consensus": 823,
    "AN Open": 825,
    "BetMGM": 569,
-   "BetRivers": 320,
+   "BetRivers": 363,
    "Caesars": 734,
    "DraftKings": 788,
    "FanDuel": 740,
-   "Fanatics": 658,
-   "Hard Rock Bet": 286,
-   "Parx": 489,
+   "Fanatics": 659,
+   "Hard Rock Bet": 287,
+   "Parx": 527,
    "Pinnacle": 621,
    "Sleeper": 796,
    "Underdog": 831,
    "Unibet": 127,
-   "bet365": 799
+   "bet365": 802
   },
   "data_files": [
    "mlb.sqlite",
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 23
+  "kalshi_legs_today": 24
  },
  "shadow": [
   {
@@ -6537,9 +6537,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.565,
+   "p": 0.563,
    "price": 0.51,
-   "edge": 0.038,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6567,9 +6567,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.533,
+   "p": 0.532,
    "price": 0.48,
-   "edge": 0.036,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6732,9 +6732,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.641,
+   "p": 0.643,
    "price": 0.59,
-   "edge": 0.034,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6867,9 +6867,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.422,
+   "p": 0.42,
    "price": 0.33,
-   "edge": 0.077,
+   "edge": 0.075,
    "news": "IND's CB Sauce Gardner is out, an easier matchup.",
    "result": null
   },
@@ -6972,9 +6972,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.501,
+   "p": 0.503,
    "price": 0.38,
-   "edge": 0.105,
+   "edge": 0.107,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -6987,9 +6987,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.531,
+   "p": 0.53,
    "price": 0.39,
-   "edge": 0.124,
+   "edge": 0.123,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -7002,9 +7002,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.584,
+   "p": 0.585,
    "price": 0.47,
-   "edge": 0.097,
+   "edge": 0.098,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
