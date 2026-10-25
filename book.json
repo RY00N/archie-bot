@@ -1868,7 +1868,7 @@
   "props_at": "2026-10-25 10:00 PT",
   "props_today": 1605,
   "kalshi_props_today": 533,
-  "kalshi_priced_today": 41,
+  "kalshi_priced_today": 42,
   "books_on_kalshi_props": {
    "AN Consensus": 530,
    "AN Open": 533,
@@ -1876,14 +1876,14 @@
    "BetRivers": 356,
    "Caesars": 441,
    "DraftKings": 495,
-   "FanDuel": 474,
-   "Fanatics": 431,
+   "FanDuel": 476,
+   "Fanatics": 429,
    "Hard Rock Bet": 107,
    "Parx": 412,
    "Pinnacle": 396,
    "Sleeper": 520,
    "Underdog": 533,
-   "Unibet": 64,
+   "Unibet": 65,
    "bet365": 527
   },
   "data_files": [
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 20
  },
  "shadow": [
   {
@@ -6539,9 +6539,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.465,
+   "p": 0.464,
    "price": 0.41,
-   "edge": 0.038,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6555,8 +6555,8 @@
    "line": 1.5,
    "start": "2026-10-25T21:00:00Z",
    "p": 0.447,
-   "price": 0.36,
-   "edge": 0.071,
+   "price": 0.35,
+   "edge": 0.081,
    "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -6644,9 +6644,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.532,
+   "p": 0.533,
    "price": 0.48,
-   "edge": 0.035,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6674,9 +6674,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.565,
+   "p": 0.566,
    "price": 0.5,
-   "edge": 0.047,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6824,9 +6824,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.511,
+   "p": 0.51,
    "price": 0.44,
-   "edge": 0.054,
+   "edge": 0.053,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
@@ -7514,9 +7514,9 @@
    "side": "over",
    "line": 12.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.61,
+   "p": 0.612,
    "price": 0.51,
-   "edge": 0.083,
+   "edge": 0.085,
    "news": "DET's LB Devin White is out, an easier matchup.",
    "result": null
   },
