@@ -1866,25 +1866,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 10:00 PT",
-  "props_today": 1587,
-  "kalshi_props_today": 510,
-  "kalshi_priced_today": 40,
+  "props_today": 1589,
+  "kalshi_props_today": 515,
+  "kalshi_priced_today": 42,
   "books_on_kalshi_props": {
-   "AN Consensus": 508,
-   "AN Open": 510,
-   "BetMGM": 360,
-   "BetRivers": 349,
-   "Caesars": 439,
-   "DraftKings": 475,
-   "FanDuel": 467,
-   "Fanatics": 416,
-   "Hard Rock Bet": 103,
-   "Parx": 403,
-   "Pinnacle": 390,
-   "Sleeper": 498,
-   "Underdog": 510,
-   "Unibet": 61,
-   "bet365": 497
+   "AN Consensus": 513,
+   "AN Open": 515,
+   "BetMGM": 364,
+   "BetRivers": 352,
+   "Caesars": 440,
+   "DraftKings": 480,
+   "FanDuel": 470,
+   "Fanatics": 422,
+   "Hard Rock Bet": 106,
+   "Parx": 408,
+   "Pinnacle": 395,
+   "Sleeper": 503,
+   "Underdog": 514,
+   "Unibet": 62,
+   "bet365": 500
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 19
+  "kalshi_legs_today": 21
  },
  "shadow": [
   {
@@ -6554,9 +6554,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.446,
+   "p": 0.447,
    "price": 0.36,
-   "edge": 0.07,
+   "edge": 0.071,
    "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -6659,9 +6659,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.558,
+   "p": 0.557,
    "price": 0.5,
-   "edge": 0.041,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6674,9 +6674,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.564,
+   "p": 0.563,
    "price": 0.51,
-   "edge": 0.037,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6693,6 +6693,21 @@
    "price": 0.49,
    "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBAPTS-26OCT25LALUTA-LALSMAMUKELASHVILI54-10",
+   "league": "nba",
+   "player": "Sandro Mamukelashvili",
+   "stat": "points",
+   "side": "over",
+   "line": 9.5,
+   "start": "2026-10-25T21:00:00Z",
+   "p": 0.509,
+   "price": 0.44,
+   "edge": 0.052,
+   "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
   {
@@ -6734,9 +6749,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.639,
+   "p": 0.64,
    "price": 0.49,
-   "edge": 0.132,
+   "edge": 0.133,
    "news": "Brandon Ingram is out: Scottie Barnes hit the over in 7/9 games without him vs 9/31 with him.",
    "result": null
   },
@@ -6752,6 +6767,21 @@
    "p": 0.52,
    "price": 0.46,
    "edge": 0.043,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBAREB-26OCT25LALUTA-UTAJJACKSON20-6",
+   "league": "nba",
+   "player": "Jaren Jackson Jr.",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 5.5,
+   "start": "2026-10-25T21:00:00Z",
+   "p": 0.543,
+   "price": 0.45,
+   "edge": 0.076,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6794,9 +6824,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.509,
+   "p": 0.51,
    "price": 0.44,
-   "edge": 0.052,
+   "edge": 0.053,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
