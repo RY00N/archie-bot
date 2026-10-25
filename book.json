@@ -1836,23 +1836,23 @@
   "props_at": "2026-10-25 07:00 PT",
   "props_today": 3120,
   "kalshi_props_today": 795,
-  "kalshi_priced_today": 88,
+  "kalshi_priced_today": 87,
   "books_on_kalshi_props": {
    "AN Consensus": 783,
    "AN Open": 789,
    "BetMGM": 583,
-   "BetRivers": 480,
+   "BetRivers": 479,
    "Caesars": 694,
    "DraftKings": 754,
    "FanDuel": 732,
    "Fanatics": 638,
-   "Hard Rock Bet": 263,
-   "Parx": 626,
+   "Hard Rock Bet": 262,
+   "Parx": 628,
    "Pinnacle": 659,
    "Sleeper": 767,
    "Underdog": 795,
    "Unibet": 119,
-   "bet365": 762
+   "bet365": 764
   },
   "data_files": [
    "mlb.sqlite",
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 27
+  "kalshi_legs_today": 28
  },
  "shadow": [
   {
@@ -7047,9 +7047,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.502,
+   "p": 0.501,
    "price": 0.38,
-   "edge": 0.106,
+   "edge": 0.105,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -7062,9 +7062,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.529,
+   "p": 0.53,
    "price": 0.38,
-   "edge": 0.133,
+   "edge": 0.134,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -7167,9 +7167,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.539,
+   "p": 0.54,
    "price": 0.42,
-   "edge": 0.102,
+   "edge": 0.103,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
    "result": null
   },
@@ -7395,6 +7395,21 @@
    "p": 0.46,
    "price": 0.41,
    "edge": 0.033,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXMLBKS-26OCT262000MILTB-MILRGASSER54-4",
+   "league": "mlb",
+   "player": "Robert Gasser",
+   "stat": "pitcher_ks",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-27T00:00:00Z",
+   "p": 0.518,
+   "price": 0.47,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
