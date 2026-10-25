@@ -327,20 +327,28 @@ def upload(item, dry_run=False):
         for word in item["caption"].split(" "):
             page.keyboard.type(word, delay=60)
             if word.startswith("#"):
-                # a tag only becomes a real (clickable) hashtag when picked from TikTok's suggestion list
-                page.wait_for_timeout(2500)
-                picked = ui.evaluate("""(tag) => {
-                  const vis = e => e.offsetParent !== null && e.getBoundingClientRect().height > 0;
-                  const opts = [...document.querySelectorAll('[class*="hashtag" i] [class*="item" i], [class*="mention-list" i] [class*="item" i], [role="option"], [class*="suggest" i] li, [class*="Hashtag" i] li')].filter(vis);
-                  const want = tag.toLowerCase();
-                  const hit = opts.find(o => (o.innerText || '').trim().toLowerCase().split(/\\s/)[0] === want) || opts[0];
-                  if (!hit) return 'none';
-                  hit.dispatchEvent(new MouseEvent('mousedown', {bubbles: true})); hit.click();
-                  return (hit.innerText || '').trim().split('\\n')[0] + ' (of ' + opts.length + ')'; }""", word)
-                log("hashtag", word, "->", picked)
-                if picked == "none":
-                    page.keyboard.press("Enter")  # most hashtag lists also take Enter for the top suggestion
-                page.wait_for_timeout(800)
+                # A tag only becomes a real hashtag when chosen from TikTok's suggestion list with the keyboard:
+                # nudge the list open (space + backspace), wait for it, arrow to the exact tag, press Enter.
+                page.keyboard.type(" ", delay=60); page.keyboard.press("Backspace")
+                opts_js = """() => { const vis = e => e.offsetParent !== null && e.getBoundingClientRect().height > 0;
+                  return [...document.querySelectorAll('[class*="hashtag" i] [class*="item" i], [class*="mention-list" i] [class*="item" i], [role="option"], [class*="suggest" i] li, [class*="Hashtag" i] li')]
+                    .filter(vis).map(o => (o.innerText || '').trim().split(/\\s/)[0].toLowerCase()); }"""
+                opts = []
+                for _ in range(16):
+                    page.wait_for_timeout(500)
+                    opts = ui.evaluate(opts_js)
+                    if opts and word.lower() in opts:
+                        break
+                if opts:
+                    idx = opts.index(word.lower()) if word.lower() in opts else 0
+                    for _ in range(idx):
+                        page.keyboard.press("ArrowDown"); page.wait_for_timeout(120)
+                    page.keyboard.press("Enter")
+                    log("hashtag", word, "-> picked", opts[idx], f"({idx + 1} of {len(opts)})")
+                    page.wait_for_timeout(900)
+                    if cap.inner_text().replace("\u00a0", " ").endswith(" "):
+                        continue  # the suggestion already added a trailing space
+                log("hashtag", word, "-> no suggestion list, left as text")
             page.keyboard.type(" ", delay=40)  # tags must be separated, "#a#b" makes them plain text
         page.wait_for_timeout(1500)
         try:
