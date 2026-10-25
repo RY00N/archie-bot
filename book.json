@@ -1838,21 +1838,21 @@
   "kalshi_props_today": 817,
   "kalshi_priced_today": 86,
   "books_on_kalshi_props": {
-   "AN Consensus": 808,
+   "AN Consensus": 809,
    "AN Open": 811,
    "BetMGM": 403,
-   "BetRivers": 289,
-   "Caesars": 660,
-   "DraftKings": 729,
+   "BetRivers": 288,
+   "Caesars": 693,
+   "DraftKings": 733,
    "FanDuel": 741,
    "Fanatics": 616,
-   "Hard Rock Bet": 287,
+   "Hard Rock Bet": 288,
    "Parx": 446,
    "Pinnacle": 621,
    "Sleeper": 781,
    "Underdog": 817,
    "Unibet": 121,
-   "bet365": 772
+   "bet365": 790
   },
   "data_files": [
    "mlb.sqlite",
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 23
+  "kalshi_legs_today": 24
  },
  "shadow": [
   {
@@ -6538,8 +6538,8 @@
    "line": 3.5,
    "start": "2026-10-25T23:00:00Z",
    "p": 0.56,
-   "price": 0.51,
-   "edge": 0.033,
+   "price": 0.5,
+   "edge": 0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6552,9 +6552,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.516,
+   "p": 0.518,
    "price": 0.46,
-   "edge": 0.039,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6597,9 +6597,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.52,
+   "p": 0.534,
    "price": 0.47,
-   "edge": 0.033,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6612,9 +6612,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.478,
+   "p": 0.477,
    "price": 0.42,
-   "edge": 0.041,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6972,9 +6972,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.7,
+   "p": 0.703,
    "price": 0.55,
-   "edge": 0.133,
+   "edge": 0.136,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
