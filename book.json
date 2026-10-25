@@ -1867,24 +1867,24 @@
  "diag": {
   "props_at": "2026-10-25 10:00 PT",
   "props_today": 1602,
-  "kalshi_props_today": 530,
+  "kalshi_props_today": 533,
   "kalshi_priced_today": 41,
   "books_on_kalshi_props": {
-   "AN Consensus": 526,
-   "AN Open": 530,
+   "AN Consensus": 529,
+   "AN Open": 533,
    "BetMGM": 365,
-   "BetRivers": 354,
+   "BetRivers": 356,
    "Caesars": 441,
    "DraftKings": 495,
-   "FanDuel": 473,
+   "FanDuel": 475,
    "Fanatics": 426,
    "Hard Rock Bet": 107,
-   "Parx": 410,
+   "Parx": 412,
    "Pinnacle": 396,
-   "Sleeper": 516,
-   "Underdog": 530,
+   "Sleeper": 519,
+   "Underdog": 533,
    "Unibet": 62,
-   "bet365": 520
+   "bet365": 527
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 21
  },
  "shadow": [
   {
@@ -6569,9 +6569,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.462,
+   "p": 0.463,
    "price": 0.4,
-   "edge": 0.045,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6659,9 +6659,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.559,
+   "p": 0.555,
    "price": 0.5,
-   "edge": 0.042,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6825,8 +6825,8 @@
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
    "p": 0.51,
-   "price": 0.44,
-   "edge": 0.053,
+   "price": 0.43,
+   "edge": 0.063,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
