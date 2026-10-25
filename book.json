@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 11:00 PT",
-  "props_today": 1596,
+  "props_today": 1604,
   "kalshi_props_today": 533,
   "kalshi_priced_today": 43,
   "books_on_kalshi_props": {
@@ -7530,8 +7530,8 @@
    "line": 12.5,
    "start": "2026-10-25T20:25:00Z",
    "p": 0.613,
-   "price": 0.53,
-   "edge": 0.066,
+   "price": 0.52,
+   "edge": 0.076,
    "news": "DET's LB Devin White is out, an easier matchup.",
    "result": null
   },
