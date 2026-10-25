@@ -1769,14 +1769,14 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-24 17:00 PT",
+  "props_at": "2026-10-24 18:00 PT",
   "props_today": 188,
   "kalshi_props_today": 83,
-  "kalshi_priced_today": 1,
+  "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
    "AN Consensus": 83,
    "AN Open": 83,
-   "BetMGM": 59,
+   "BetMGM": 60,
    "BetRivers": 69,
    "Caesars": 70,
    "DraftKings": 79,
@@ -5992,9 +5992,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T02:00:00Z",
-   "p": 0.65,
+   "p": 0.648,
    "price": 0.6,
-   "edge": 0.033,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6535,7 +6535,7 @@
    "p": 0.586,
    "price": 0.53,
    "edge": 0.039,
-   "news": "News: Savion Williams (ankle) limited Wednesday - FantasyPros",
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -6652,9 +6652,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.503,
+   "p": 0.504,
    "price": 0.38,
-   "edge": 0.107,
+   "edge": 0.108,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -6863,8 +6863,8 @@
    "line": 14.5,
    "start": "2026-10-25T20:05:00Z",
    "p": 0.558,
-   "price": 0.5,
-   "edge": 0.041,
+   "price": 0.51,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
