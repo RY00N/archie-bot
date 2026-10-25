@@ -1834,25 +1834,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 07:00 PT",
-  "props_today": 3104,
-  "kalshi_props_today": 786,
-  "kalshi_priced_today": 85,
+  "props_today": 3110,
+  "kalshi_props_today": 790,
+  "kalshi_priced_today": 86,
   "books_on_kalshi_props": {
-   "AN Consensus": 776,
-   "AN Open": 780,
+   "AN Consensus": 779,
+   "AN Open": 784,
    "BetMGM": 583,
-   "BetRivers": 473,
-   "Caesars": 688,
-   "DraftKings": 748,
-   "FanDuel": 722,
-   "Fanatics": 631,
-   "Hard Rock Bet": 258,
-   "Parx": 622,
-   "Pinnacle": 656,
-   "Sleeper": 759,
-   "Underdog": 786,
+   "BetRivers": 476,
+   "Caesars": 689,
+   "DraftKings": 751,
+   "FanDuel": 727,
+   "Fanatics": 636,
+   "Hard Rock Bet": 261,
+   "Parx": 626,
+   "Pinnacle": 658,
+   "Sleeper": 763,
+   "Underdog": 790,
    "Unibet": 119,
-   "bet365": 760
+   "bet365": 761
   },
   "data_files": [
    "mlb.sqlite",
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 28
+  "kalshi_legs_today": 30
  },
  "shadow": [
   {
@@ -6500,6 +6500,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNBA3PT-26OCT25LALUTA-LALSMAMUKELASHVILI54-2",
+   "league": "nba",
+   "player": "Sandro Mamukelashvili",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-25T21:00:00Z",
+   "p": 0.448,
+   "price": 0.37,
+   "edge": 0.062,
+   "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNBA3PT-26OCT25LALUTA-UTAKGEORGE3-3",
    "league": "nba",
    "player": "Keyonte George",
@@ -6537,9 +6552,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.563,
+   "p": 0.564,
    "price": 0.51,
-   "edge": 0.036,
+   "edge": 0.037,
    "news": "News: Desmond Bane struggles vs. Minnesota, fouls out - NBC Sports",
    "result": null
   },
@@ -6702,9 +6717,9 @@
    "side": "under",
    "line": 16.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.575,
+   "p": 0.573,
    "price": 0.52,
-   "edge": 0.038,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6792,9 +6807,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.419,
-   "price": 0.36,
-   "edge": 0.043,
+   "p": 0.417,
+   "price": 0.37,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7216,6 +7231,21 @@
    "price": 0.49,
    "edge": 0.118,
    "news": "SF's LB Garret Wallow is out, an easier matchup; SF's LB Luke Gifford is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLRECYDS-26OCT25SFATL-ATLKPITTS8-35",
+   "league": "nfl",
+   "player": "Kyle Pitts",
+   "stat": "rec_yds",
+   "side": "over",
+   "line": 34.5,
+   "start": "2026-10-25T17:00:00Z",
+   "p": 0.539,
+   "price": 0.49,
+   "edge": 0.032,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
