@@ -537,6 +537,8 @@ def main():
         elif j.get("cmd") == "test":
             sys.argv[1:] = ["test"]; main_test()
         publish_log()
+    if queue.get("paused"):
+        return  # Reza 2026-10-25: no new TikTok uploads until he says so
     slot = due_slot(queue, state)
     if not slot:
         return
