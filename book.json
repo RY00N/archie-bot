@@ -1866,20 +1866,20 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 15:00 PT",
-  "props_today": 746,
+  "props_today": 747,
   "kalshi_props_today": 300,
   "kalshi_priced_today": 17,
   "books_on_kalshi_props": {
-   "AN Consensus": 297,
+   "AN Consensus": 296,
    "AN Open": 300,
    "BetMGM": 195,
-   "BetRivers": 213,
-   "Caesars": 231,
+   "BetRivers": 216,
+   "Caesars": 240,
    "DraftKings": 273,
    "FanDuel": 269,
-   "Fanatics": 236,
+   "Fanatics": 238,
    "Hard Rock Bet": 29,
-   "Parx": 230,
+   "Parx": 229,
    "Pinnacle": 202,
    "Sleeper": 288,
    "Underdog": 300,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
@@ -6554,9 +6554,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.377,
+   "p": 0.375,
    "price": 0.32,
-   "edge": 0.042,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6644,9 +6644,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.64,
+   "p": 0.641,
    "price": 0.59,
-   "edge": 0.033,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6749,9 +6749,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.545,
-   "price": 0.48,
-   "edge": 0.048,
+   "p": 0.543,
+   "price": 0.49,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6884,9 +6884,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.681,
+   "p": 0.697,
    "price": 0.51,
-   "edge": 0.154,
+   "edge": 0.17,
    "news": "Brandon Ingram is out: RJ Barrett hit the over in 10/11 games without him vs 17/29 with him; Kawhi Leonard (F) is out, so RJ Barrett's role likely grows.",
    "result": null
   },
@@ -6974,9 +6974,9 @@
    "side": "under",
    "line": 13.5,
    "start": "2026-10-26T01:00:00Z",
-   "p": 0.531,
+   "p": 0.532,
    "price": 0.48,
-   "edge": 0.034,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7379,9 +7379,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-26T00:20:00Z",
-   "p": 0.669,
+   "p": 0.668,
    "price": 0.61,
-   "edge": 0.042,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
