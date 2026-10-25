@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 15:00 PT",
-  "props_today": 747,
+  "props_today": 746,
   "kalshi_props_today": 300,
   "kalshi_priced_today": 17,
   "books_on_kalshi_props": {
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 9
+  "kalshi_legs_today": 10
  },
  "shadow": [
   {
@@ -6884,10 +6884,10 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.662,
+   "p": 0.681,
    "price": 0.51,
-   "edge": 0.135,
-   "news": "Brandon Ingram is out: RJ Barrett hit the over in 10/11 games without him vs 17/29 with him.",
+   "edge": 0.154,
+   "news": "Brandon Ingram is out: RJ Barrett hit the over in 10/11 games without him vs 17/29 with him; Kawhi Leonard (F) is out, so RJ Barrett's role likely grows.",
    "result": null
   },
   {
