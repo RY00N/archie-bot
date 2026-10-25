@@ -1866,14 +1866,14 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 13:00 PT",
-  "props_today": 1396,
+  "props_today": 1392,
   "kalshi_props_today": 488,
   "kalshi_priced_today": 35,
   "books_on_kalshi_props": {
    "AN Consensus": 483,
    "AN Open": 488,
    "BetMGM": 340,
-   "BetRivers": 341,
+   "BetRivers": 340,
    "Caesars": 410,
    "DraftKings": 451,
    "FanDuel": 434,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 21
+  "kalshi_legs_today": 20
  },
  "shadow": [
   {
@@ -6584,9 +6584,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.445,
+   "p": 0.444,
    "price": 0.35,
-   "edge": 0.079,
+   "edge": 0.078,
    "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -6749,9 +6749,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.51,
+   "p": 0.509,
    "price": 0.44,
-   "edge": 0.053,
+   "edge": 0.052,
    "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -7649,9 +7649,9 @@
    "side": "over",
    "line": 12.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.615,
+   "p": 0.614,
    "price": 0.53,
-   "edge": 0.068,
+   "edge": 0.067,
    "news": "DET's LB Devin White is out, an easier matchup.",
    "result": null
   },
