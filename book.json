@@ -1797,6 +1797,38 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-25",
+   "app": "Kalshi",
+   "type": "1-leg lock: Trey McBride over 6.5 receptions",
+   "stake": 5.0,
+   "payout_x": 1.79,
+   "win_p": 0.671,
+   "ev_pct": 19.8,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Trey McBride",
+     "team": "ARI",
+     "stat": "receptions",
+     "side": "over",
+     "line": 6.5,
+     "price": 0.56,
+     "ticker": "KXNFLREC-26OCT25DENARI-ARITMCBRIDE85-7",
+     "game": "DEN @ ARI",
+     "start": "2026-10-25T20:05:00Z",
+     "p": 0.671,
+     "edge": 0.094,
+     "news": "DEN's LB Jonah Elliss is out, an easier matchup; DEN's S Talanoa Hufanga is out, an easier matchup.",
+     "why": "Trey McBride over 6.5 receptions: 3 books price it 56%; hit 83% of last 12 (avg 7.9); 0/1 over vs DEN, avg 4.0. Fair 67%.",
+     "case": "Last 5 games: 7, 9, 7, 9, 8 (5 of 5 over 6.5).",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
@@ -1817,7 +1849,7 @@
    "Hard Rock Bet": 283,
    "Parx": 443,
    "Pinnacle": 604,
-   "Sleeper": 739,
+   "Sleeper": 740,
    "Underdog": 778,
    "Unibet": 121,
    "bet365": 751
@@ -1828,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 23
  },
  "shadow": [
   {
@@ -6644,6 +6676,21 @@
    "price": 0.35,
    "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLREC-26OCT25DENARI-ARITMCBRIDE85-7",
+   "league": "nfl",
+   "player": "Trey McBride",
+   "stat": "receptions",
+   "side": "over",
+   "line": 6.5,
+   "start": "2026-10-25T20:05:00Z",
+   "p": 0.671,
+   "price": 0.56,
+   "edge": 0.094,
+   "news": "DEN's LB Jonah Elliss is out, an easier matchup; DEN's S Talanoa Hufanga is out, an easier matchup.",
    "result": null
   },
   {
