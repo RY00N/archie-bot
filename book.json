@@ -1866,25 +1866,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 10:00 PT",
-  "props_today": 1598,
-  "kalshi_props_today": 517,
-  "kalshi_priced_today": 43,
+  "props_today": 1595,
+  "kalshi_props_today": 529,
+  "kalshi_priced_today": 41,
   "books_on_kalshi_props": {
-   "AN Consensus": 515,
-   "AN Open": 517,
+   "AN Consensus": 523,
+   "AN Open": 526,
    "BetMGM": 365,
    "BetRivers": 354,
    "Caesars": 441,
-   "DraftKings": 482,
-   "FanDuel": 472,
-   "Fanatics": 424,
-   "Hard Rock Bet": 107,
+   "DraftKings": 489,
+   "FanDuel": 473,
+   "Fanatics": 428,
+   "Hard Rock Bet": 106,
    "Parx": 410,
-   "Pinnacle": 395,
-   "Sleeper": 505,
-   "Underdog": 517,
+   "Pinnacle": 396,
+   "Sleeper": 511,
+   "Underdog": 529,
    "Unibet": 62,
-   "bet365": 500
+   "bet365": 518
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 21
  },
  "shadow": [
   {
@@ -6569,9 +6569,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.462,
+   "p": 0.463,
    "price": 0.4,
-   "edge": 0.045,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6659,9 +6659,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.557,
+   "p": 0.561,
    "price": 0.5,
-   "edge": 0.04,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6675,8 +6675,8 @@
    "line": 14.5,
    "start": "2026-10-25T23:30:00Z",
    "p": 0.563,
-   "price": 0.51,
-   "edge": 0.036,
+   "price": 0.5,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6794,9 +6794,9 @@
    "side": "under",
    "line": 13.5,
    "start": "2026-10-26T01:00:00Z",
-   "p": 0.528,
+   "p": 0.527,
    "price": 0.47,
-   "edge": 0.041,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7515,8 +7515,8 @@
    "line": 12.5,
    "start": "2026-10-25T20:25:00Z",
    "p": 0.61,
-   "price": 0.52,
-   "edge": 0.073,
+   "price": 0.51,
+   "edge": 0.083,
    "news": "DET's LB Devin White is out, an easier matchup.",
    "result": null
   },
