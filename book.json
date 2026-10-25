@@ -1866,24 +1866,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 16:00 PT",
-  "props_today": 398,
+  "props_today": 399,
   "kalshi_props_today": 137,
   "kalshi_priced_today": 9,
   "books_on_kalshi_props": {
-   "AN Consensus": 135,
+   "AN Consensus": 134,
    "AN Open": 137,
-   "BetMGM": 92,
+   "BetMGM": 96,
    "BetRivers": 94,
-   "Caesars": 115,
+   "Caesars": 119,
    "DraftKings": 122,
    "FanDuel": 124,
-   "Fanatics": 107,
+   "Fanatics": 110,
    "Hard Rock Bet": 29,
    "Parx": 108,
    "Pinnacle": 96,
    "Sleeper": 132,
    "Underdog": 137,
-   "Unibet": 31,
+   "Unibet": 32,
    "bet365": 137
   },
   "data_files": [
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 2
  },
  "shadow": [
   {
@@ -6524,9 +6524,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.434,
+   "p": 0.431,
    "price": 0.34,
-   "edge": 0.078,
+   "edge": 0.075,
    "news": "VJ Edgecombe (G) is out, so Anfernee Simons's role likely grows.",
    "result": null
   },
