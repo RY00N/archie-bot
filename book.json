@@ -1866,25 +1866,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 08:00 PT",
-  "props_today": 3105,
-  "kalshi_props_today": 795,
-  "kalshi_priced_today": 88,
+  "props_today": 3106,
+  "kalshi_props_today": 794,
+  "kalshi_priced_today": 90,
   "books_on_kalshi_props": {
-   "AN Consensus": 782,
-   "AN Open": 789,
-   "BetMGM": 580,
-   "BetRivers": 481,
-   "Caesars": 703,
-   "DraftKings": 753,
+   "AN Consensus": 780,
+   "AN Open": 788,
+   "BetMGM": 581,
+   "BetRivers": 482,
+   "Caesars": 702,
+   "DraftKings": 752,
    "FanDuel": 731,
-   "Fanatics": 633,
-   "Hard Rock Bet": 261,
+   "Fanatics": 634,
+   "Hard Rock Bet": 258,
    "Parx": 628,
-   "Pinnacle": 658,
-   "Sleeper": 764,
-   "Underdog": 795,
-   "Unibet": 119,
-   "bet365": 763
+   "Pinnacle": 657,
+   "Sleeper": 763,
+   "Underdog": 794,
+   "Unibet": 120,
+   "bet365": 760
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 26
+  "kalshi_legs_today": 24
  },
  "shadow": [
   {
@@ -6587,7 +6587,7 @@
    "p": 0.564,
    "price": 0.51,
    "edge": 0.037,
-   "news": "News: Desmond Bane struggles vs. Minnesota, fouls out - NBC Sports",
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -6854,9 +6854,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.419,
-   "price": 0.37,
-   "edge": 0.033,
+   "p": 0.418,
+   "price": 0.36,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6869,9 +6869,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.563,
+   "p": 0.562,
    "price": 0.49,
-   "edge": 0.056,
+   "edge": 0.055,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7244,9 +7244,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.54,
+   "p": 0.541,
    "price": 0.42,
-   "edge": 0.103,
+   "edge": 0.104,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
    "result": null
   },
@@ -7476,6 +7476,21 @@
    "result": null
   },
   {
+   "date": "2026-10-25",
+   "ticker": "KXNFLRSHYDS-26OCT25SFATL-SFBPURDY13-20",
+   "league": "nfl",
+   "player": "Brock Purdy",
+   "stat": "rush_yds",
+   "side": "over",
+   "line": 19.5,
+   "start": "2026-10-25T17:00:00Z",
+   "p": 0.598,
+   "price": 0.52,
+   "edge": 0.061,
+   "news": "ATL's CB Billy Bowman Jr. is out, an easier matchup.",
+   "result": null
+  },
+  {
    "date": "2026-10-26",
    "ticker": "KXMLBHRR-26OCT262000MILTB-MILJBAUERS9-2",
    "league": "mlb",
@@ -7499,9 +7514,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.522,
+   "p": 0.521,
    "price": 0.47,
-   "edge": 0.035,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
