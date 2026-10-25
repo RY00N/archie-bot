@@ -1833,26 +1833,26 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-25 00:00 PT",
-  "props_today": 3526,
-  "kalshi_props_today": 779,
+  "props_at": "2026-10-25 01:00 PT",
+  "props_today": 3568,
+  "kalshi_props_today": 806,
   "kalshi_priced_today": 86,
   "books_on_kalshi_props": {
-   "AN Consensus": 771,
-   "AN Open": 773,
+   "AN Consensus": 798,
+   "AN Open": 800,
    "BetMGM": 399,
    "BetRivers": 289,
-   "Caesars": 629,
-   "DraftKings": 690,
-   "FanDuel": 715,
-   "Fanatics": 586,
-   "Hard Rock Bet": 286,
+   "Caesars": 644,
+   "DraftKings": 710,
+   "FanDuel": 730,
+   "Fanatics": 605,
+   "Hard Rock Bet": 288,
    "Parx": 446,
-   "Pinnacle": 604,
-   "Sleeper": 745,
-   "Underdog": 779,
+   "Pinnacle": 615,
+   "Sleeper": 769,
+   "Underdog": 806,
    "Unibet": 121,
-   "bet365": 752
+   "bet365": 763
   },
   "data_files": [
    "mlb.sqlite",
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 23
  },
  "shadow": [
   {
@@ -6555,6 +6555,21 @@
    "p": 0.516,
    "price": 0.46,
    "edge": 0.039,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBAPTS-26OCT25INDBKN-INDIZUBAC40-15",
+   "league": "nba",
+   "player": "Ivica Zubac",
+   "stat": "points",
+   "side": "under",
+   "line": 14.5,
+   "start": "2026-10-25T22:00:00Z",
+   "p": 0.551,
+   "price": 0.48,
+   "edge": 0.054,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
