@@ -1774,7 +1774,7 @@
   "kalshi_props_today": 34,
   "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
-   "AN Consensus": 33,
+   "AN Consensus": 34,
    "AN Open": 34,
    "BetMGM": 26,
    "BetRivers": 29,
@@ -6607,9 +6607,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T20:25:00Z",
-   "p": 0.499,
+   "p": 0.5,
    "price": 0.45,
-   "edge": 0.032,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6667,9 +6667,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.529,
+   "p": 0.528,
    "price": 0.39,
-   "edge": 0.122,
+   "edge": 0.121,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
