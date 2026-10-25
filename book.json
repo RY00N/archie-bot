@@ -1834,25 +1834,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 04:00 PT",
-  "props_today": 3708,
+  "props_today": 3707,
   "kalshi_props_today": 831,
-  "kalshi_priced_today": 86,
+  "kalshi_priced_today": 87,
   "books_on_kalshi_props": {
-   "AN Consensus": 821,
+   "AN Consensus": 822,
    "AN Open": 825,
    "BetMGM": 502,
    "BetRivers": 288,
-   "Caesars": 733,
+   "Caesars": 734,
    "DraftKings": 788,
    "FanDuel": 741,
-   "Fanatics": 653,
+   "Fanatics": 659,
    "Hard Rock Bet": 290,
    "Parx": 445,
    "Pinnacle": 621,
    "Sleeper": 798,
    "Underdog": 831,
    "Unibet": 121,
-   "bet365": 804
+   "bet365": 800
   },
   "data_files": [
    "mlb.sqlite",
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 24
  },
  "shadow": [
   {
@@ -7002,9 +7002,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.581,
+   "p": 0.585,
    "price": 0.47,
-   "edge": 0.094,
+   "edge": 0.098,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
