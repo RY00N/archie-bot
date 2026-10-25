@@ -1770,7 +1770,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-24 18:00 PT",
-  "props_today": 87,
+  "props_today": 84,
   "kalshi_props_today": 34,
   "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
@@ -6791,6 +6791,21 @@
    "price": 0.48,
    "edge": 0.096,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLRECYDS-26OCT25PITNO-PITDMETCALF4-60",
+   "league": "nfl",
+   "player": "DK Metcalf",
+   "stat": "rec_yds",
+   "side": "under",
+   "line": 59.5,
+   "start": "2026-10-25T13:30:00Z",
+   "p": 0.55,
+   "price": 0.5,
+   "edge": 0.033,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
