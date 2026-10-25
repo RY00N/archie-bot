@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 13:00 PT",
-  "props_today": 963,
+  "props_today": 964,
   "kalshi_props_today": 395,
   "kalshi_priced_today": 20,
   "books_on_kalshi_props": {
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 17
+  "kalshi_legs_today": 18
  },
  "shadow": [
   {
@@ -6584,9 +6584,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.445,
+   "p": 0.444,
    "price": 0.35,
-   "edge": 0.079,
+   "edge": 0.078,
    "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -6599,9 +6599,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.464,
+   "p": 0.463,
    "price": 0.39,
-   "edge": 0.057,
+   "edge": 0.056,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6689,9 +6689,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.532,
+   "p": 0.533,
    "price": 0.47,
-   "edge": 0.045,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6704,9 +6704,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.553,
+   "p": 0.552,
    "price": 0.5,
-   "edge": 0.036,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6719,9 +6719,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.565,
+   "p": 0.564,
    "price": 0.51,
-   "edge": 0.038,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6839,9 +6839,24 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.555,
+   "p": 0.556,
    "price": 0.5,
-   "edge": 0.038,
+   "edge": 0.039,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBAREB-26OCT25LALUTA-UTAABAILEY19-4",
+   "league": "nba",
+   "player": "Ace Bailey",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-25T21:00:00Z",
+   "p": 0.586,
+   "price": 0.53,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6854,9 +6869,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.529,
+   "p": 0.528,
    "price": 0.48,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6989,9 +7004,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.44,
+   "p": 0.439,
    "price": 0.37,
-   "edge": 0.054,
+   "edge": 0.053,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
