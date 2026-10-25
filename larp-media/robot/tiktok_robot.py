@@ -80,10 +80,27 @@ def save_state(s):
     STATE.write_text(json.dumps(s, indent=1))
 
 
+def day_times(queue, day):
+    """Posting times for a day. Reza 2026-10-25: random times between 9am and 9pm PT (not fixed slots) so the
+    account doesn't look automated. Same day -> same times (seeded by date), at least 2.5 h apart."""
+    import random
+    rw = queue.get("random_window")
+    if not rw:
+        return queue["slots_pt"]
+    rng = random.Random("audemarai-" + day)
+    lo, hi = (int(x.split(":")[0]) * 60 + int(x.split(":")[1]) for x in rw)
+    n = int(queue.get("per_day", 3))
+    for _ in range(500):
+        mins = sorted(rng.randint(lo, hi - 10) for _ in range(n))
+        if all(b - a >= 150 for a, b in zip(mins, mins[1:])):
+            break
+    return [f"{m // 60:02d}:{m % 60:02d}" for m in mins]
+
+
 def due_slot(queue, state):
-    """Slot key (e.g. '2026-10-24 15:00') that is due now and not run yet, else None."""
+    """Slot key (e.g. '2026-10-24 15:07') that is due now and not run yet, else None."""
     now = dt.datetime.now(PT)
-    for hm in queue["slots_pt"]:
+    for hm in day_times(queue, now.strftime("%Y-%m-%d")):
         h, m = map(int, hm.split(":"))
         t = now.replace(hour=h, minute=m, second=0, microsecond=0)
         key = t.strftime("%Y-%m-%d %H:%M")
