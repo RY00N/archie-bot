@@ -1769,7 +1769,7 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-24 18:00 PT",
+  "props_at": "2026-10-24 19:00 PT",
   "props_today": 100,
   "kalshi_props_today": 34,
   "kalshi_priced_today": 1,
@@ -1781,7 +1781,7 @@
    "Caesars": 30,
    "DraftKings": 33,
    "FanDuel": 29,
-   "Fanatics": 26,
+   "Fanatics": 25,
    "Parx": 29,
    "Pinnacle": 20,
    "Sleeper": 34,
@@ -6488,8 +6488,8 @@
    "line": 2.5,
    "start": "2026-10-25T17:00:00Z",
    "p": 0.414,
-   "price": 0.35,
-   "edge": 0.048,
+   "price": 0.36,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
