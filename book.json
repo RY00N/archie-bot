@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 13:00 PT",
-  "props_today": 966,
+  "props_today": 967,
   "kalshi_props_today": 395,
   "kalshi_priced_today": 20,
   "books_on_kalshi_props": {
@@ -1876,8 +1876,8 @@
    "BetRivers": 296,
    "Caesars": 327,
    "DraftKings": 362,
-   "FanDuel": 348,
-   "Fanatics": 310,
+   "FanDuel": 347,
+   "Fanatics": 309,
    "Hard Rock Bet": 29,
    "Parx": 310,
    "Pinnacle": 263,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 17
+  "kalshi_legs_today": 18
  },
  "shadow": [
   {
@@ -6584,9 +6584,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.444,
+   "p": 0.445,
    "price": 0.35,
-   "edge": 0.078,
+   "edge": 0.079,
    "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -6599,9 +6599,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.463,
+   "p": 0.465,
    "price": 0.39,
-   "edge": 0.056,
+   "edge": 0.058,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6719,9 +6719,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.564,
+   "p": 0.563,
    "price": 0.51,
-   "edge": 0.037,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6779,9 +6779,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.534,
+   "p": 0.53,
    "price": 0.47,
-   "edge": 0.047,
+   "edge": 0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6824,9 +6824,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.637,
+   "p": 0.638,
    "price": 0.48,
-   "edge": 0.14,
+   "edge": 0.141,
    "news": "Brandon Ingram is out: Scottie Barnes hit the over in 7/9 games without him vs 9/31 with him.",
    "result": null
   },
@@ -6839,9 +6839,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.556,
+   "p": 0.551,
    "price": 0.5,
-   "edge": 0.039,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6854,9 +6854,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.586,
+   "p": 0.583,
    "price": 0.53,
-   "edge": 0.039,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6899,9 +6899,9 @@
    "side": "under",
    "line": 13.5,
    "start": "2026-10-26T01:00:00Z",
-   "p": 0.533,
+   "p": 0.532,
    "price": 0.48,
-   "edge": 0.036,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
