@@ -1834,24 +1834,24 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 05:00 PT",
-  "props_today": 3708,
+  "props_today": 3689,
   "kalshi_props_today": 831,
   "kalshi_priced_today": 88,
   "books_on_kalshi_props": {
-   "AN Consensus": 822,
+   "AN Consensus": 824,
    "AN Open": 825,
    "BetMGM": 571,
-   "BetRivers": 288,
-   "Caesars": 732,
+   "BetRivers": 323,
+   "Caesars": 733,
    "DraftKings": 788,
-   "FanDuel": 739,
-   "Fanatics": 655,
+   "FanDuel": 738,
+   "Fanatics": 657,
    "Hard Rock Bet": 285,
-   "Parx": 451,
+   "Parx": 487,
    "Pinnacle": 621,
    "Sleeper": 795,
    "Underdog": 831,
-   "Unibet": 125,
+   "Unibet": 126,
    "bet365": 806
   },
   "data_files": [
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 23
+  "kalshi_legs_today": 22
  },
  "shadow": [
   {
@@ -6507,9 +6507,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-25T21:00:00Z",
-   "p": 0.464,
+   "p": 0.462,
    "price": 0.4,
-   "edge": 0.047,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6627,9 +6627,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.518,
+   "p": 0.519,
    "price": 0.47,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6972,9 +6972,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.501,
+   "p": 0.5,
    "price": 0.38,
-   "edge": 0.105,
+   "edge": 0.104,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -7092,9 +7092,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.537,
+   "p": 0.539,
    "price": 0.42,
-   "edge": 0.1,
+   "edge": 0.102,
    "news": "TB's S Antoine Winfield Jr. is out, an easier matchup.",
    "result": null
   },
