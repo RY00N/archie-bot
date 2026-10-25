@@ -1866,23 +1866,23 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 16:00 PT",
-  "props_today": 406,
-  "kalshi_props_today": 138,
+  "props_today": 398,
+  "kalshi_props_today": 137,
   "kalshi_priced_today": 9,
   "books_on_kalshi_props": {
-   "AN Consensus": 136,
+   "AN Consensus": 135,
    "AN Open": 137,
    "BetMGM": 92,
    "BetRivers": 94,
    "Caesars": 115,
    "DraftKings": 122,
    "FanDuel": 124,
-   "Fanatics": 108,
+   "Fanatics": 107,
    "Hard Rock Bet": 29,
-   "Parx": 107,
+   "Parx": 108,
    "Pinnacle": 96,
-   "Sleeper": 136,
-   "Underdog": 138,
+   "Sleeper": 135,
+   "Underdog": 137,
    "Unibet": 31,
    "bet365": 137
   },
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -6513,6 +6513,21 @@
    "price": 0.6,
    "edge": 0.03,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBA3PT-26OCT25DETPHI-PHIASIMONS5-3",
+   "league": "nba",
+   "player": "Anfernee Simons",
+   "stat": "threes",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-25T23:30:00Z",
+   "p": 0.434,
+   "price": 0.36,
+   "edge": 0.058,
+   "news": "VJ Edgecombe (G) is out, so Anfernee Simons's role likely grows.",
    "result": null
   },
   {
