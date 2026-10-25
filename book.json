@@ -1774,20 +1774,20 @@
   "kalshi_props_today": 137,
   "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
-   "AN Consensus": 136,
-   "AN Open": 137,
-   "BetMGM": 92,
-   "BetRivers": 113,
-   "Caesars": 114,
-   "DraftKings": 122,
-   "FanDuel": 115,
-   "Fanatics": 105,
-   "Parx": 113,
-   "Pinnacle": 83,
+   "AN Consensus": 79,
+   "AN Open": 80,
+   "BetMGM": 54,
+   "BetRivers": 66,
+   "Caesars": 67,
+   "DraftKings": 75,
+   "FanDuel": 65,
+   "Fanatics": 58,
+   "Parx": 66,
+   "Pinnacle": 48,
    "Sleeper": 125,
    "Underdog": 137,
-   "Unibet": 22,
-   "bet365": 137
+   "Unibet": 14,
+   "bet365": 80
   },
   "data_files": [
    "mlb.sqlite",
@@ -1795,7 +1795,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 2
  },
  "shadow": [
   {
@@ -6308,8 +6308,8 @@
    "line": 5.5,
    "start": "2026-10-25T01:00:00Z",
    "p": 0.469,
-   "price": 0.39,
-   "edge": 0.062,
+   "price": 0.38,
+   "edge": 0.073,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6487,9 +6487,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.584,
+   "p": 0.583,
    "price": 0.49,
-   "edge": 0.077,
+   "edge": 0.076,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
@@ -6637,9 +6637,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.503,
+   "p": 0.506,
    "price": 0.38,
-   "edge": 0.107,
+   "edge": 0.11,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -6667,9 +6667,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.585,
+   "p": 0.587,
    "price": 0.47,
-   "edge": 0.098,
+   "edge": 0.1,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
@@ -6682,9 +6682,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.698,
+   "p": 0.697,
    "price": 0.56,
-   "edge": 0.121,
+   "edge": 0.12,
    "news": "HOU's S Jalen Pitre is out, an easier matchup; HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
