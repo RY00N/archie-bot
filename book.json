@@ -1834,25 +1834,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 05:00 PT",
-  "props_today": 3707,
+  "props_today": 3706,
   "kalshi_props_today": 831,
   "kalshi_priced_today": 88,
   "books_on_kalshi_props": {
-   "AN Consensus": 819,
+   "AN Consensus": 822,
    "AN Open": 825,
    "BetMGM": 571,
-   "BetRivers": 291,
-   "Caesars": 733,
+   "BetRivers": 288,
+   "Caesars": 732,
    "DraftKings": 788,
    "FanDuel": 739,
-   "Fanatics": 656,
-   "Hard Rock Bet": 289,
-   "Parx": 449,
+   "Fanatics": 655,
+   "Hard Rock Bet": 285,
+   "Parx": 451,
    "Pinnacle": 621,
    "Sleeper": 795,
    "Underdog": 831,
-   "Unibet": 124,
-   "bet365": 804
+   "Unibet": 125,
+   "bet365": 806
   },
   "data_files": [
    "mlb.sqlite",
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 21
+  "kalshi_legs_today": 23
  },
  "shadow": [
   {
@@ -6537,9 +6537,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.566,
+   "p": 0.567,
    "price": 0.51,
-   "edge": 0.039,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6972,9 +6972,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.502,
+   "p": 0.501,
    "price": 0.38,
-   "edge": 0.106,
+   "edge": 0.105,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -6987,9 +6987,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.531,
+   "p": 0.529,
    "price": 0.39,
-   "edge": 0.124,
+   "edge": 0.122,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
@@ -7190,6 +7190,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNFLRSHATT-26OCT25PITNO-NOTSHOUGH6-4",
+   "league": "nfl",
+   "player": "Tyler Shough",
+   "stat": "rush_att",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-25T13:30:00Z",
+   "p": 0.488,
+   "price": 0.44,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNFLRSHYDS-26OCT25DENARI-DENRHARVEY12-15",
    "league": "nfl",
    "player": "RJ Harvey",
@@ -7198,8 +7213,8 @@
    "line": 14.5,
    "start": "2026-10-25T20:05:00Z",
    "p": 0.561,
-   "price": 0.51,
-   "edge": 0.034,
+   "price": 0.5,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
