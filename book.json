@@ -1881,7 +1881,7 @@
    "Hard Rock Bet": 103,
    "Parx": 403,
    "Pinnacle": 390,
-   "Sleeper": 490,
+   "Sleeper": 498,
    "Underdog": 510,
    "Unibet": 61,
    "bet365": 497
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 18
+  "kalshi_legs_today": 19
  },
  "shadow": [
   {
@@ -6555,8 +6555,8 @@
    "line": 1.5,
    "start": "2026-10-25T21:00:00Z",
    "p": 0.446,
-   "price": 0.37,
-   "edge": 0.06,
+   "price": 0.36,
+   "edge": 0.07,
    "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows.",
    "result": null
   },
@@ -6674,9 +6674,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.568,
-   "price": 0.52,
-   "edge": 0.031,
+   "p": 0.564,
+   "price": 0.51,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
