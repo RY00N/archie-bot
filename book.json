@@ -1834,7 +1834,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 02:00 PT",
-  "props_today": 3618,
+  "props_today": 3617,
   "kalshi_props_today": 825,
   "kalshi_priced_today": 86,
   "books_on_kalshi_props": {
@@ -1845,8 +1845,8 @@
    "Caesars": 728,
    "DraftKings": 788,
    "FanDuel": 741,
-   "Fanatics": 628,
-   "Hard Rock Bet": 287,
+   "Fanatics": 630,
+   "Hard Rock Bet": 288,
    "Parx": 446,
    "Pinnacle": 621,
    "Sleeper": 790,
@@ -7032,9 +7032,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.66,
+   "p": 0.659,
    "price": 0.54,
-   "edge": 0.103,
+   "edge": 0.102,
    "news": "SF's LB Garret Wallow is out, an easier matchup; SF's LB Luke Gifford is out, an easier matchup.",
    "result": null
   },
