@@ -1866,25 +1866,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 16:00 PT",
-  "props_today": 724,
-  "kalshi_props_today": 290,
-  "kalshi_priced_today": 19,
+  "props_today": 753,
+  "kalshi_props_today": 298,
+  "kalshi_priced_today": 10,
   "books_on_kalshi_props": {
-   "AN Consensus": 288,
-   "AN Open": 290,
-   "BetMGM": 164,
-   "BetRivers": 209,
-   "Caesars": 234,
-   "DraftKings": 263,
-   "FanDuel": 262,
-   "Fanatics": 228,
+   "AN Consensus": 131,
+   "AN Open": 133,
+   "BetMGM": 92,
+   "BetRivers": 88,
+   "Caesars": 113,
+   "DraftKings": 117,
+   "FanDuel": 120,
+   "Fanatics": 106,
    "Hard Rock Bet": 29,
-   "Parx": 224,
-   "Pinnacle": 195,
-   "Sleeper": 284,
-   "Underdog": 290,
-   "Unibet": 52,
-   "bet365": 290
+   "Parx": 101,
+   "Pinnacle": 95,
+   "Sleeper": 291,
+   "Underdog": 298,
+   "Unibet": 31,
+   "bet365": 130
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 2
  },
  "shadow": [
   {
@@ -6974,9 +6974,9 @@
    "side": "under",
    "line": 13.5,
    "start": "2026-10-26T01:00:00Z",
-   "p": 0.532,
+   "p": 0.534,
    "price": 0.48,
-   "edge": 0.035,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -7379,9 +7379,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-26T00:20:00Z",
-   "p": 0.67,
+   "p": 0.668,
    "price": 0.61,
-   "edge": 0.043,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
