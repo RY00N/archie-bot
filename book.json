@@ -1838,14 +1838,14 @@
   "kalshi_props_today": 787,
   "kalshi_priced_today": 81,
   "books_on_kalshi_props": {
-   "AN Consensus": 778,
+   "AN Consensus": 777,
    "AN Open": 781,
    "BetMGM": 579,
    "BetRivers": 482,
    "Caesars": 690,
    "DraftKings": 743,
    "FanDuel": 699,
-   "Fanatics": 631,
+   "Fanatics": 633,
    "Hard Rock Bet": 258,
    "Parx": 630,
    "Pinnacle": 656,
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 24
+  "kalshi_legs_today": 25
  },
  "shadow": [
   {
@@ -6522,9 +6522,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.709,
+   "p": 0.708,
    "price": 0.56,
-   "edge": 0.132,
+   "edge": 0.131,
    "news": "News: Timberwolves dominate Magic despite Anthony Edwards' shooting struggles - DAZN Donte DiVincenzo is out: Anthony Edwards hit the under in 7/8 games without him vs 16/32 with him.",
    "result": null
   },
@@ -6567,9 +6567,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.531,
+   "p": 0.532,
    "price": 0.48,
-   "edge": 0.034,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6642,9 +6642,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.473,
+   "p": 0.451,
    "price": 0.36,
-   "edge": 0.097,
+   "edge": 0.075,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6762,9 +6762,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.644,
-   "price": 0.59,
-   "edge": 0.037,
+   "p": 0.647,
+   "price": 0.6,
+   "edge": 0.03,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
