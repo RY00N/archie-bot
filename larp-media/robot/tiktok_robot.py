@@ -390,6 +390,53 @@ def upload(item):
         ctx.close(); b.close(); pw.stop()
 
 
+CONTENT = "https://www.tiktok.com/tiktokstudio/content"
+
+
+def privatize_older_duplicate(prefix):
+    """Reza 2026-10-25: after re-uploading d3 with real hashtags, set the OLDER copy to "Only me" (no deleting:
+    "I don't want to fuck up the algorithm"). Touches exactly one post, only when 2+ posts start with prefix."""
+    pw, b, ctx = browser()
+    page = ctx.new_page()
+    try:
+        page.goto(CONTENT, wait_until="domcontentloaded", timeout=180000)
+        page.wait_for_timeout(15000)
+        for fr in page.frames:
+            try:
+                fr.evaluate(KILL_TOURS)
+            except Exception:
+                pass
+        close_popups(page, page)
+        hits = page.get_by_text(prefix, exact=False)
+        n = hits.count()
+        log("private: posts matching", repr(prefix), "=", n)
+        if n < 2:
+            shot(page, "private-refused")
+            return False
+        row = hits.nth(n - 1).locator("xpath=ancestor::*[count(.//button)>=3][1]")  # newest first: last = oldest
+        log("private: row =", " ".join(row.inner_text().split())[:150])
+        row.get_by_text(re.compile(r"^(Everyone|Friends|Only me)$")).first.click()
+        page.wait_for_timeout(2000)
+        page.get_by_text("Only me", exact=True).last.click()
+        page.wait_for_timeout(3000)
+        for label in ("Confirm", "OK", "Save"):
+            c = page.locator('[role="dialog"], .TUXModal-overlay').last.get_by_role("button", name=label, exact=True)
+            if c.count():
+                c.first.click(); page.wait_for_timeout(2000)
+        page.reload(); page.wait_for_timeout(12000)
+        row = page.get_by_text(prefix, exact=False).nth(n - 1).locator("xpath=ancestor::*[count(.//button)>=3][1]")
+        shot(page, "private-done")
+        txt = " ".join(row.inner_text().split())
+        log("private: row now =", txt[:150])
+        return "Only me" in txt
+    except Exception as e:
+        shot(page, "private-error")
+        log("private failed:", repr(e))
+        return False
+    finally:
+        ctx.close(); b.close(); pw.stop()
+
+
 def git_pull():
     subprocess.run(["git", "-C", str(MEDIA.parent), "pull", "-q", "--ff-only"], check=False, timeout=180)
 
@@ -448,6 +495,8 @@ def main():
             if ok and it["file"] not in state["posted"]:
                 state["posted"].append(it["file"]); save_state(state)
             log("JOB", j["id"], "post", j["n"], it["file"], "ok" if ok else "FAILED")
+        elif j.get("cmd") == "privatize_older_duplicate":
+            log("JOB", j["id"], "private", "ok" if privatize_older_duplicate(j["prefix"]) else "FAILED/REFUSED")
         elif j.get("cmd") == "test":
             sys.argv[1:] = ["test"]; main_test()
         publish_log()
