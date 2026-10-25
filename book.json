@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 9
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -6884,9 +6884,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.661,
+   "p": 0.662,
    "price": 0.51,
-   "edge": 0.134,
+   "edge": 0.135,
    "news": "Brandon Ingram is out: RJ Barrett hit the over in 10/11 games without him vs 17/29 with him.",
    "result": null
   },
@@ -7080,8 +7080,8 @@
    "line": 1.5,
    "start": "2026-10-25T23:00:00Z",
    "p": 0.457,
-   "price": 0.39,
-   "edge": 0.05,
+   "price": 0.4,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
