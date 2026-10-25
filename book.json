@@ -1834,25 +1834,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 06:00 PT",
-  "props_today": 3484,
+  "props_today": 3481,
   "kalshi_props_today": 871,
   "kalshi_priced_today": 82,
   "books_on_kalshi_props": {
-   "AN Consensus": 775,
+   "AN Consensus": 774,
    "AN Open": 779,
-   "BetMGM": 583,
+   "BetMGM": 579,
    "BetRivers": 412,
    "Caesars": 693,
    "DraftKings": 742,
-   "FanDuel": 696,
-   "Fanatics": 624,
+   "FanDuel": 698,
+   "Fanatics": 625,
    "Hard Rock Bet": 255,
-   "Parx": 559,
+   "Parx": 558,
    "Pinnacle": 655,
    "Sleeper": 756,
    "Underdog": 871,
    "Unibet": 116,
-   "bet365": 758
+   "bet365": 749
   },
   "data_files": [
    "mlb.sqlite",
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 27
+  "kalshi_legs_today": 26
  },
  "shadow": [
   {
@@ -6522,9 +6522,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.709,
+   "p": 0.71,
    "price": 0.56,
-   "edge": 0.132,
+   "edge": 0.133,
    "news": "News: Timberwolves dominate Magic despite Anthony Edwards' shooting struggles - DAZN Donte DiVincenzo is out: Anthony Edwards hit the under in 7/8 games without him vs 16/32 with him.",
    "result": null
   },
@@ -6567,9 +6567,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.532,
+   "p": 0.531,
    "price": 0.48,
-   "edge": 0.035,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6627,9 +6627,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:30:00Z",
-   "p": 0.519,
+   "p": 0.52,
    "price": 0.47,
-   "edge": 0.032,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6657,9 +6657,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.53,
+   "p": 0.524,
    "price": 0.46,
-   "edge": 0.053,
+   "edge": 0.047,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
