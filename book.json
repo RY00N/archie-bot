@@ -1834,23 +1834,23 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 01:00 PT",
-  "props_today": 3573,
-  "kalshi_props_today": 806,
+  "props_today": 3584,
+  "kalshi_props_today": 811,
   "kalshi_priced_today": 86,
   "books_on_kalshi_props": {
-   "AN Consensus": 798,
-   "AN Open": 800,
-   "BetMGM": 399,
+   "AN Consensus": 802,
+   "AN Open": 805,
+   "BetMGM": 403,
    "BetRivers": 289,
-   "Caesars": 644,
-   "DraftKings": 710,
-   "FanDuel": 730,
-   "Fanatics": 605,
-   "Hard Rock Bet": 288,
+   "Caesars": 652,
+   "DraftKings": 718,
+   "FanDuel": 735,
+   "Fanatics": 610,
+   "Hard Rock Bet": 287,
    "Parx": 446,
-   "Pinnacle": 615,
-   "Sleeper": 769,
-   "Underdog": 806,
+   "Pinnacle": 619,
+   "Sleeper": 774,
+   "Underdog": 811,
    "Unibet": 121,
    "bet365": 763
   },
@@ -1860,7 +1860,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 23
+  "kalshi_legs_today": 24
  },
  "shadow": [
   {
@@ -6590,6 +6590,21 @@
   },
   {
    "date": "2026-10-25",
+   "ticker": "KXNBAREB-26OCT25DETPHI-DETCCUNNINGHAM2-6",
+   "league": "nba",
+   "player": "Cade Cunningham",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 5.5,
+   "start": "2026-10-25T23:30:00Z",
+   "p": 0.518,
+   "price": 0.46,
+   "edge": 0.041,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
    "ticker": "KXNBAREB-26OCT25TORMIN-MINJMCDANIELS3-6",
    "league": "nba",
    "player": "Jaden McDaniels",
@@ -6717,9 +6732,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.579,
+   "p": 0.58,
    "price": 0.49,
-   "edge": 0.072,
+   "edge": 0.073,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
@@ -6927,9 +6942,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-25T17:00:00Z",
-   "p": 0.53,
+   "p": 0.529,
    "price": 0.39,
-   "edge": 0.123,
+   "edge": 0.122,
    "news": "NYG's S Jevon Holland is out, an easier matchup; NYG's CB Greg Newsome II is out, an easier matchup.",
    "result": null
   },
