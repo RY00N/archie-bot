@@ -1865,8 +1865,8 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-25 14:00 PT",
-  "props_today": 858,
+  "props_at": "2026-10-25 15:00 PT",
+  "props_today": 852,
   "kalshi_props_today": 349,
   "kalshi_priced_today": 19,
   "books_on_kalshi_props": {
@@ -1877,7 +1877,7 @@
    "Caesars": 292,
    "DraftKings": 319,
    "FanDuel": 312,
-   "Fanatics": 276,
+   "Fanatics": 277,
    "Hard Rock Bet": 29,
    "Parx": 272,
    "Pinnacle": 230,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
@@ -6543,6 +6543,21 @@
    "price": 0.5,
    "edge": 0.105,
    "news": "News: Tyrese Haliburton (Achilles) absent from injury report - NBC Sports Ben Sheppard is out: Tyrese Haliburton hit the under in 14/21 games without him vs 10/19 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNBA3PT-26OCT25LACOKC-OKCACARUSO9-2",
+   "league": "nba",
+   "player": "Alex Caruso",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-25T23:00:00Z",
+   "p": 0.395,
+   "price": 0.33,
+   "edge": 0.05,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
