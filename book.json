@@ -1866,20 +1866,20 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-25 09:00 PT",
-  "props_today": 3173,
+  "props_today": 3174,
   "kalshi_props_today": 827,
-  "kalshi_priced_today": 88,
+  "kalshi_priced_today": 87,
   "books_on_kalshi_props": {
    "AN Consensus": 794,
    "AN Open": 804,
-   "BetMGM": 592,
+   "BetMGM": 597,
    "BetRivers": 490,
    "Caesars": 714,
    "DraftKings": 766,
-   "FanDuel": 738,
-   "Fanatics": 646,
+   "FanDuel": 739,
+   "Fanatics": 648,
    "Hard Rock Bet": 261,
-   "Parx": 638,
+   "Parx": 637,
    "Pinnacle": 665,
    "Sleeper": 783,
    "Underdog": 827,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 25
+  "kalshi_legs_today": 27
  },
  "shadow": [
   {
@@ -6614,9 +6614,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.521,
+   "p": 0.522,
    "price": 0.47,
-   "edge": 0.034,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6629,9 +6629,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.535,
+   "p": 0.533,
    "price": 0.48,
-   "edge": 0.038,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -6749,9 +6749,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-25T23:00:00Z",
-   "p": 0.507,
+   "p": 0.509,
    "price": 0.44,
-   "edge": 0.05,
+   "edge": 0.052,
    "news": "Brandon Ingram is out: Collin Murray-Boyles hit the over in 5/11 games without him vs 12/29 with him.",
    "result": null
   },
@@ -6783,6 +6783,21 @@
    "price": 0.52,
    "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-25",
+   "ticker": "KXNFLPASSINT-26OCT25CLETEN-CLEDWATSON4-1",
+   "league": "nfl",
+   "player": "Deshaun Watson",
+   "stat": "pass_ints",
+   "side": "under",
+   "line": 0.5,
+   "start": "2026-10-25T17:00:00Z",
+   "p": 0.583,
+   "price": 0.53,
+   "edge": 0.036,
+   "news": "News: Browns vs. Titans prediction, best bets: Cam Ward, Deshaun Watson to struggle in Week 7 - New York Post",
    "result": null
   },
   {
@@ -6914,9 +6929,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.575,
+   "p": 0.577,
    "price": 0.49,
-   "edge": 0.068,
+   "edge": 0.07,
    "news": "ARI's S Andrew Wingard is out, an easier matchup.",
    "result": null
   },
@@ -7424,9 +7439,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-25T20:05:00Z",
-   "p": 0.564,
+   "p": 0.565,
    "price": 0.5,
-   "edge": 0.046,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
