@@ -298,7 +298,12 @@ def main(dry=False):
 def urgent(n):
     """Worth waking the thread now: anything on an open pick, in-game exits, trades/moves, news, price moves,
     and a player newly ruled Out. Day-to-day/probable/cleared report changes ride along with the next one."""
-    if n.get("open_pick") or n["kind"] != "injury report":
+    if n.get("open_pick"):
+        return True
+    if n["kind"] == "roster move" and re.search(r"practice squad|two-way|G League|minor league|injured reserve", n["text"], re.I) \
+            and not re.search(r"(?<!practice squad )\b(signed|acquired|traded)\b(?! .*practice squad)", n["text"], re.I):
+        return False
+    if n["kind"] != "injury report":
         return True
     return ": Out (" in n["text"]
 
