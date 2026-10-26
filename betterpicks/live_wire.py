@@ -291,7 +291,16 @@ def main(dry=False):
             wire = []
         wire = (wire + new)[-500:]
         json.dump(wire, open(WIRE, "w"), indent=1)
-        open(FLAG, "a").close()
+        if any(urgent(n) for n in new):   # minor report changes wait for the next urgent alert
+            open(FLAG, "a").close()
+
+
+def urgent(n):
+    """Worth waking the thread now: anything on an open pick, in-game exits, trades/moves, news, price moves,
+    and a player newly ruled Out. Day-to-day/probable/cleared report changes ride along with the next one."""
+    if n.get("open_pick") or n["kind"] != "injury report":
+        return True
+    return ": Out (" in n["text"]
 
 
 def unposted():
