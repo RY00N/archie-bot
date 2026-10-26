@@ -1965,7 +1965,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 15:00 PT",
-  "props_today": 1391,
+  "props_today": 1392,
   "kalshi_props_today": 597,
   "kalshi_priced_today": 48,
   "books_on_kalshi_props": {
@@ -1976,11 +1976,11 @@
    "Caesars": 485,
    "DraftKings": 492,
    "FanDuel": 465,
-   "Fanatics": 455,
+   "Fanatics": 458,
    "Hard Rock Bet": 19,
    "Parx": 454,
    "Pinnacle": 386,
-   "Sleeper": 538,
+   "Sleeper": 537,
    "Underdog": 597,
    "Unibet": 101,
    "bet365": 591
@@ -8378,9 +8378,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.567,
+   "p": 0.568,
    "price": 0.46,
-   "edge": 0.09,
+   "edge": 0.091,
    "news": "Jalen Williams is out: Jared McCain hit the under in 21/29 games without him vs 7/10 with him; Cason Wallace is out: Jared McCain hit the under in 13/20 games without him vs 16/20 with him; Nikola Topic is out: Jared McCain hit the under in 23/30 games without him vs 3/7 with him; PHX has allowed bench guards 1% fewer assists than average (likely on him: Collin Gillespie, Jordan Goodwin).",
    "result": null
   },
@@ -8543,9 +8543,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.632,
-   "price": 0.51,
-   "edge": 0.105,
+   "p": 0.631,
+   "price": 0.52,
+   "edge": 0.094,
    "news": "Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him; WSH has allowed starting forwards 5% more points than average (likely on him: Anthony Gill, Anthony Davis); Alex Sarr can switch onto him (WSH allowed forwards 8% fewer points with him playing; he plays tonight).",
    "result": null
   },
