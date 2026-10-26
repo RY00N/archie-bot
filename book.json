@@ -1865,18 +1865,34 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-25 23:00 PT",
-  "props_today": 0,
-  "kalshi_props_today": 0,
-  "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {},
+  "props_at": "2026-10-26 00:00 PT",
+  "props_today": 999,
+  "kalshi_props_today": 399,
+  "kalshi_priced_today": 24,
+  "books_on_kalshi_props": {
+   "AN Consensus": 391,
+   "AN Open": 391,
+   "BetMGM": 78,
+   "BetRivers": 67,
+   "Caesars": 223,
+   "DraftKings": 207,
+   "FanDuel": 348,
+   "Fanatics": 292,
+   "Hard Rock Bet": 16,
+   "Parx": 97,
+   "Pinnacle": 56,
+   "Sleeper": 354,
+   "Underdog": 399,
+   "Unibet": 19,
+   "bet365": 91
+  },
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 0
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -7936,6 +7952,21 @@
    "p": 0.521,
    "price": 0.47,
    "edge": 0.034,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBAPTS-26OCT26PHXOKC-PHXJGREEN4-15",
+   "league": "nba",
+   "player": "Jalen Green",
+   "stat": "points",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-10-27T00:00:00Z",
+   "p": 0.548,
+   "price": 0.5,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
