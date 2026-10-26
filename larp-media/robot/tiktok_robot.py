@@ -23,6 +23,7 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36")
 
 
+PRESSED_POST = [False]
 LOGFILE = Path(os.environ.get("LARP_LOG", "/var/lib/larp-robot/robot.log"))
 
 
@@ -379,6 +380,7 @@ def upload(item, dry_run=False):
         log("before Post:", screen_text(ui)[:400])
         btn.scroll_into_view_if_needed()
         page.wait_for_timeout(1000)
+        PRESSED_POST[0] = True  # from here on a failure may still have posted, so never retry it
         box = btn.bounding_box()
         if box:  # a real mouse click (TikTok ignores some synthetic clicks)
             page.mouse.move(box["x"] + box["width"] / 2 - 20, box["y"] + box["height"] / 2 + 5, steps=8)
@@ -561,13 +563,21 @@ def main():
     if not slot:
         return
     nxt = next((it for it in queue["items"] if it["file"] not in state["posted"]), None)
-    state["slots_done"].append(slot); save_state(state)  # one try per slot, never double-post
+    tries = state.setdefault("slot_tries", {})
+    tries[slot] = tries.get(slot, 0) + 1
+    state["slots_done"].append(slot); save_state(state)  # marked done first, so a crash can never double-post
     if not nxt:
         log(slot, "queue empty")
         return
     ok = upload(nxt)
     if ok:
         state["posted"].append(nxt["file"]); save_state(state)
+    elif not PRESSED_POST[0] and tries[slot] < 3:
+        # failed before Post was pressed (e.g. upload box never loaded): nothing went up, so try again next tick
+        state["slots_done"].remove(slot); save_state(state)
+        log(slot, nxt["file"], f"FAILED before Post (try {tries[slot]}/3), retrying in 5 min")
+        publish_log()
+        return
     log(slot, nxt["file"], "posted" if ok else "FAILED (retries at next slot)")
     publish_log()
 
