@@ -322,6 +322,17 @@ def winners_filter(d):
         print("WINNERS delete failed:", e, flush=True)
 OG_ROLE, OG_MAX = os.environ.get("BP_OG_ROLE_ID", "1563068490162642974"), 15
 OG_GIVEN = os.path.join(WORK, "og_given.json")
+# Ryan 2026-10-26 07:11Z: "5 more then stop the giveaway". The cap is fixed the first time this code runs:
+# whatever was given by then + 5, saved so restarts don't move it.
+OG_CAP = os.path.join(WORK, "og_cap.json")
+
+
+def og_max():
+    cap = load(OG_CAP, None)
+    if not cap:
+        cap = {"max": len(load(OG_GIVEN, [])) + 5, "set": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+        save(OG_CAP, cap)
+    return cap["max"]
 
 
 def og_on_join(d):
@@ -332,17 +343,17 @@ def og_on_join(d):
         return
     with state_lock:
         given = load(OG_GIVEN, [])
-        if len(given) >= OG_MAX or u["id"] in given:
+        if len(given) >= og_max() or u["id"] in given:
             return
         given.append(u["id"]); save(OG_GIVEN, given)
     try:
         http("PUT", f"{API}/guilds/{d['guild_id']}/members/{u['id']}/roles/{OG_ROLE}", {})
-        print(f"OG Premium {len(given)}/{OG_MAX}:", u.get("username"), flush=True)
+        print(f"OG Premium {len(given)}/{og_max()}:", u.get("username"), flush=True)
     except Exception as e:
         print("OG role failed:", e, flush=True)
         with state_lock:
             save(OG_GIVEN, [x for x in load(OG_GIVEN, []) if x != u["id"]])
-    STATUS_INFO["og_given"] = len(load(OG_GIVEN, []))
+    STATUS_INFO["og_given"] = len(load(OG_GIVEN, [])); STATUS_INFO["og_max"] = og_max()
 
 
 # Ryan 2026-10-26: people joining through a special invite link get a role (old-server members -> OG Premium, free).
@@ -387,6 +398,7 @@ def on_join(d):
 
 
 def invite_prime():
+    STATUS_INFO["og_given"] = len(load(OG_GIVEN, [])); STATUS_INFO["og_max"] = og_max()   # fixes the cap on first run
     with invite_lock:
         try:
             INVITE_USES.update(invite_snapshot())
