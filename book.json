@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 05:00 PT",
-  "props_today": 1260,
+  "props_today": 1259,
   "kalshi_props_today": 534,
   "kalshi_priced_today": 30,
   "books_on_kalshi_props": {
@@ -8070,8 +8070,8 @@
    "line": 7.5,
    "start": "2026-10-26T23:00:00Z",
    "p": 0.63,
-   "price": 0.55,
-   "edge": 0.063,
+   "price": 0.56,
+   "edge": 0.053,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
