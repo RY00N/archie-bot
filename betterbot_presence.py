@@ -647,8 +647,10 @@ def welcome(d, channel=WELCOME_CH, note=""):
             av = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=15).read()
         except Exception:
             pass
-        g = http("GET", f"{API}/guilds/{GUILD}?with_counts=true")
-        num = g.get("approximate_member_count") or 0
+        try:   # exact live human count (Ryan 2026-10-26: leavers must come off the count)
+            num = human_count()
+        except Exception:
+            num = http("GET", f"{API}/guilds/{GUILD}?with_counts=true").get("approximate_member_count") or 0
         png = welcome_card.render(name, av, num)
         payload = {
             "content": note + f"<@{u['id']}>", "allowed_mentions": {"users": [u["id"]]},
