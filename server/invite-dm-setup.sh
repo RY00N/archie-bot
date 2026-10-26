@@ -6,6 +6,7 @@
 set -euo pipefail
 mkdir -p /home/archie/invite-dm
 curl -fsSL https://raw.githubusercontent.com/RY00N/archie-bot/claude/project-thread-lwpe8v/invite/invite_dm.py -o /home/archie/invite-dm/invite_dm.py
+rm -f /home/archie/invite-dm/STOPPED   # re-running after a stop resumes from sent.json
 chown -R archie:archie /home/archie/invite-dm
 if [ ! -f /etc/invite-dm.env ]; then
   echo "Paste the INVITE bot's token (BetterPicksAI, not BetterBot). It stays on this server; hidden as you type."
@@ -26,6 +27,6 @@ RestartSec=300
 UNIT
 systemctl daemon-reload
 sudo -u archie env $(cat /etc/betterbot.env /etc/invite-dm.env | xargs) python3 -I /home/archie/invite-dm/invite_dm.py --dry-run | head -3
-systemctl enable -q --now invite-dm
+systemctl enable -q invite-dm && systemctl restart invite-dm
 sleep 5 && journalctl -u invite-dm --no-pager -n 5
 echo "Done. One DM about every 90 seconds, any hour."

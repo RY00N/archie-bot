@@ -83,14 +83,14 @@ def members(guild, token):
 
 
 def dm(uid, token):
-    """'sent', 'closed' (user has DMs off / blocked) or raises Stop."""
+    """'sent', 'closed' (DMs off, blocked us, or left the old server since the list was read) or raises Stop."""
     st, ch = call("POST", "/users/@me/channels", token, {"recipient_id": uid})
     if st != 200:
         raise Stop(f"open DM: HTTP {st} {ch}")
     st, b = call("POST", f"/channels/{ch['id']}/messages", token, {"content": TEXT})
     if st == 200:
         return "sent"
-    if st == 403 and (b or {}).get("code") == 50007:
+    if st == 403 and (b or {}).get("code") in (50007, 50278):   # 50278 = no mutual server (they left)
         return "closed"
     raise Stop(f"send DM: HTTP {st} {b}")
 
