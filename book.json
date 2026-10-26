@@ -1898,8 +1898,8 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-26 10:00 PT",
-  "props_today": 1299,
+  "props_at": "2026-10-26 11:00 PT",
+  "props_today": 1300,
   "kalshi_props_today": 527,
   "kalshi_priced_today": 37,
   "books_on_kalshi_props": {
@@ -1925,7 +1925,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 16
  },
  "shadow": [
   {
@@ -8210,6 +8210,21 @@
    "p": 0.616,
    "price": 0.56,
    "edge": 0.039,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBAAST-26OCT26MEMUTA-UTAKGEORGE3-8",
+   "league": "nba",
+   "player": "Keyonte George",
+   "stat": "assists",
+   "side": "under",
+   "line": 7.5,
+   "start": "2026-10-27T01:00:00Z",
+   "p": 0.624,
+   "price": 0.57,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
