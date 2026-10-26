@@ -345,6 +345,56 @@ def og_on_join(d):
     STATUS_INFO["og_given"] = len(load(OG_GIVEN, []))
 
 
+# Ryan 2026-10-26: people joining through a special invite link get a role (old-server members -> OG Premium, free).
+# Discord doesn't say which invite someone used, so we keep each invite's use count and see which one went up.
+INVITE_ROLES = {"857TCcDMj": OG_ROLE}   # invite code -> role id ("BetterPicks (old)" members, free OG Premium)
+INVITE_USES, invite_lock = {}, threading.Lock()
+
+
+def invite_snapshot():
+    return {i["code"]: i.get("uses", 0) for i in http("GET", f"{API}/guilds/{GUILD}/invites")}
+
+
+def invite_role_on_join(d):
+    """True when the member came in through one of INVITE_ROLES (then the OG giveaway leaves them alone)."""
+    u = d.get("user") or {}
+    if u.get("bot") or not INVITE_ROLES:
+        return False
+    with invite_lock:
+        before = dict(INVITE_USES)
+        try:
+            now = invite_snapshot()
+        except Exception as e:
+            print("invite check failed:", e, flush=True)
+            return False
+        INVITE_USES.clear(); INVITE_USES.update(now)
+        STATUS_INFO["invite_roles"] = {c: now.get(c) for c in INVITE_ROLES}
+    # a single-use invite disappears once used, so a vanished code counts as the one used
+    used = [c for c in INVITE_ROLES if c in before and now.get(c, before[c] + 1) > before[c]]
+    if not used:
+        return False
+    try:
+        http("PUT", f"{API}/guilds/{d['guild_id']}/members/{u['id']}/roles/{INVITE_ROLES[used[0]]}", {})
+        print(f"invite {used[0]} role given:", u.get("username"), flush=True)
+    except Exception as e:
+        print("invite role failed:", e, flush=True)
+    return True
+
+
+def on_join(d):
+    if not invite_role_on_join(d):
+        og_on_join(d)
+
+
+def invite_prime():
+    with invite_lock:
+        try:
+            INVITE_USES.update(invite_snapshot())
+            STATUS_INFO["invite_roles"] = {c: INVITE_USES.get(c) for c in INVITE_ROLES}
+        except Exception as e:
+            print("invite snapshot failed:", e, flush=True)
+
+
 GUILD = os.environ.get("BP_GUILD_ID", "1509315900874948729")
 # Ryan 2026-10-23: three counter voice channels at the top of the server. Members updates when someone joins
 # or leaves, Wins/Losses when a pick settles (the record in the feed changes; checked every few minutes).
@@ -729,6 +779,7 @@ def run_once():
             if m.get("s") is not None:
                 seq[0] = m["s"]
             if m.get("t") == "READY":
+                threading.Thread(target=invite_prime, daemon=True).start()
                 print("online as", m["d"]["user"]["username"], flush=True)
                 STATUS_INFO["online_since"] = STATUS_INFO["last_event"]; READY_SEEN[0] = True
                 for cmd in ({"name": "pnl", "description": "BetterPicks record and recent results", "type": 1},
@@ -746,7 +797,7 @@ def run_once():
                 MEMBERS_CHANGED.set()
             if m.get("t") == "GUILD_MEMBER_ADD":
                 threading.Thread(target=purchase_ping, args=(m["d"],), daemon=True).start()
-                threading.Thread(target=og_on_join, args=(m["d"],), daemon=True).start()
+                threading.Thread(target=on_join, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "verify":
                 threading.Thread(target=verify_safe, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "bp":
