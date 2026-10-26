@@ -408,8 +408,7 @@ def verdicts(dry=False):
         if dry:
             print(head, json.dumps(emb, indent=1), "\n"); win_slip(v, sent, dry=True); continue
         send(head, [emb], channel=RESULTS_CH)   # Ryan 2026-10-26: HIT/LOST go to WINS/LOSSES, not PICKS
-        if f"free:{v['key']}" in sent:   # the free lock's result goes to the free channel too
-            send(head, [emb], channel=FREE_CH)
+        if f"free:{v['key']}" in sent:   # Ryan 2026-10-26: results only in WINS/LOSSES, never in the free channel
             cur = load(FREE_FILE, {})
             if cur.get("key") == v["key"]:
                 cur["result"] = v.get("status"); json.dump(cur, open(FREE_FILE, "w"), indent=1)
