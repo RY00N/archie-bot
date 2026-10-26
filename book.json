@@ -1861,28 +1861,61 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-26",
+   "app": "Kalshi",
+   "type": "1-leg lock: Ayo Dosunmu over 0.5 threes",
+   "stake": 5.0,
+   "payout_x": 1.54,
+   "win_p": 0.785,
+   "ev_pct": 20.8,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Ayo Dosunmu",
+     "team": "MIN",
+     "stat": "threes",
+     "side": "over",
+     "line": 0.5,
+     "price": 0.65,
+     "ticker": "KXNBA3PT-26OCT26MINCLE-MINADOSUNMU13-1",
+     "game": "MIN @ CLE",
+     "start": "2026-10-26T23:00:00Z",
+     "p": 0.785,
+     "edge": 0.119,
+     "news": "Donte DiVincenzo is out: Ayo Dosunmu hit the over in 7/7 games without him vs 13/18 with him.",
+     "ctx_dp": 0.088,
+     "why": "Ayo Dosunmu over 0.5 threes: 4 books price it 64%; hit 92% of last 12 (avg 2.0). In games vs CLE: 1.5 avg over 16 games, 29% of that rotation is still there, so the matchup counts as 76% over 0.5. Fair 78%.",
+     "case": "Last 5 games: 1, 1, 1, 1, 3 (5 of 5 over 0.5). In games vs CLE: 1.5 avg over 16 games, 29% of that rotation is still there, so the matchup counts as 76% over 0.5.",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 09:00 PT",
-  "props_today": 1286,
-  "kalshi_props_today": 536,
+  "props_today": 1299,
+  "kalshi_props_today": 540,
   "kalshi_priced_today": 39,
   "books_on_kalshi_props": {
    "AN Consensus": 530,
-   "AN Open": 529,
-   "BetMGM": 356,
-   "BetRivers": 400,
-   "Caesars": 454,
-   "DraftKings": 443,
-   "FanDuel": 443,
-   "Fanatics": 415,
+   "AN Open": 533,
+   "BetMGM": 359,
+   "BetRivers": 404,
+   "Caesars": 458,
+   "DraftKings": 447,
+   "FanDuel": 447,
+   "Fanatics": 419,
    "Hard Rock Bet": 19,
-   "Parx": 432,
-   "Pinnacle": 310,
-   "Sleeper": 503,
-   "Underdog": 536,
+   "Parx": 435,
+   "Pinnacle": 311,
+   "Sleeper": 507,
+   "Underdog": 540,
    "Unibet": 70,
    "bet365": 525
   },
@@ -1892,7 +1925,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -8062,6 +8095,21 @@
   },
   {
    "date": "2026-10-26",
+   "ticker": "KXNBA3PT-26OCT26MINCLE-MINADOSUNMU13-1",
+   "league": "nba",
+   "player": "Ayo Dosunmu",
+   "stat": "threes",
+   "side": "over",
+   "line": 0.5,
+   "start": "2026-10-26T23:00:00Z",
+   "p": 0.785,
+   "price": 0.65,
+   "edge": 0.119,
+   "news": "Donte DiVincenzo is out: Ayo Dosunmu hit the over in 7/7 games without him vs 13/18 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
    "ticker": "KXNBA3PT-26OCT26MINCLE-MINAEDWARDS5-4",
    "league": "nba",
    "player": "Anthony Edwards",
@@ -8294,9 +8342,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-27T00:30:00Z",
-   "p": 0.503,
+   "p": 0.504,
    "price": 0.45,
-   "edge": 0.036,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8369,9 +8417,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-27T00:15:00Z",
-   "p": 0.558,
+   "p": 0.559,
    "price": 0.49,
-   "edge": 0.051,
+   "edge": 0.052,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
