@@ -1868,7 +1868,7 @@
   "props_at": "2026-10-26 05:00 PT",
   "props_today": 1260,
   "kalshi_props_today": 534,
-  "kalshi_priced_today": 31,
+  "kalshi_priced_today": 30,
   "books_on_kalshi_props": {
    "AN Consensus": 527,
    "AN Open": 528,
@@ -1877,7 +1877,7 @@
    "Caesars": 444,
    "DraftKings": 439,
    "FanDuel": 439,
-   "Fanatics": 384,
+   "Fanatics": 387,
    "Hard Rock Bet": 18,
    "Parx": 133,
    "Pinnacle": 56,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -7964,9 +7964,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:30:00Z",
-   "p": 0.531,
+   "p": 0.528,
    "price": 0.47,
-   "edge": 0.044,
+   "edge": 0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8039,10 +8039,10 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.479,
+   "p": 0.478,
    "price": 0.43,
-   "edge": 0.032,
-   "news": "News: Pickaxe and Roll: Reacting to Nuggets opener loss and Nikola Jokic, Jamal Murray struggles - Mile High Sports",
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -8069,9 +8069,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.626,
+   "p": 0.627,
    "price": 0.56,
-   "edge": 0.049,
+   "edge": 0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8100,8 +8100,8 @@
    "line": 1.5,
    "start": "2026-10-26T23:00:00Z",
    "p": 0.482,
-   "price": 0.41,
-   "edge": 0.055,
+   "price": 0.42,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8114,9 +8114,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.531,
+   "p": 0.534,
    "price": 0.47,
-   "edge": 0.044,
+   "edge": 0.047,
    "news": "Nikola Topic (G) is out, so Ajay Mitchell's role likely grows.",
    "result": null
   },
@@ -8147,7 +8147,7 @@
    "p": 0.641,
    "price": 0.52,
    "edge": 0.104,
-   "news": "News: Brandon Miller Struggles in Hornets' Blowout Loss to Hawks - Yahoo Sports Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him.",
+   "news": "News: Hornets have HISTORIC Loss | Brandon Miller STRUGGLES | Should We PANIC? - kcentv.com Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him.",
    "result": null
   },
   {
@@ -8222,7 +8222,7 @@
    "p": 0.608,
    "price": 0.56,
    "edge": 0.031,
-   "news": "News: Brandon Miller Struggles in Hornets' Blowout Loss to Hawks - Yahoo Sports",
+   "news": "News: Hornets have HISTORIC Loss | Brandon Miller STRUGGLES | Should We PANIC? - kcentv.com",
    "result": null
   }
  ]
