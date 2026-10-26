@@ -1881,10 +1881,10 @@
    "Hard Rock Bet": 19,
    "Parx": 388,
    "Pinnacle": 310,
-   "Sleeper": 501,
+   "Sleeper": 500,
    "Underdog": 536,
-   "Unibet": 54,
-   "bet365": 530
+   "Unibet": 64,
+   "bet365": 529
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -8077,6 +8077,21 @@
   },
   {
    "date": "2026-10-26",
+   "ticker": "KXNBAAST-26OCT26ATLHOU-HOUASENGUN28-6",
+   "league": "nba",
+   "player": "Alperen Sengun",
+   "stat": "assists",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-10-27T00:30:00Z",
+   "p": 0.461,
+   "price": 0.41,
+   "edge": 0.034,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
    "ticker": "KXNBAAST-26OCT26GSWDEN-DENJMURRAY27-6",
    "league": "nba",
    "player": "Jamal Murray",
@@ -8264,9 +8279,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-27T00:30:00Z",
-   "p": 0.507,
+   "p": 0.503,
    "price": 0.45,
-   "edge": 0.04,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
