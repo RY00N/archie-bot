@@ -1870,18 +1870,18 @@
   "kalshi_props_today": 534,
   "kalshi_priced_today": 34,
   "books_on_kalshi_props": {
-   "AN Consensus": 528,
+   "AN Consensus": 529,
    "AN Open": 528,
-   "BetMGM": 296,
+   "BetMGM": 320,
    "BetRivers": 187,
    "Caesars": 448,
    "DraftKings": 439,
    "FanDuel": 439,
    "Fanatics": 414,
    "Hard Rock Bet": 18,
-   "Parx": 219,
+   "Parx": 218,
    "Pinnacle": 56,
-   "Sleeper": 496,
+   "Sleeper": 498,
    "Underdog": 534,
    "Unibet": 27,
    "bet365": 528
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -8069,9 +8069,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.635,
+   "p": 0.634,
    "price": 0.55,
-   "edge": 0.068,
+   "edge": 0.067,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8099,9 +8099,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.483,
-   "price": 0.41,
-   "edge": 0.056,
+   "p": 0.484,
+   "price": 0.4,
+   "edge": 0.067,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8159,9 +8159,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.631,
+   "p": 0.632,
    "price": 0.52,
-   "edge": 0.094,
+   "edge": 0.095,
    "news": "News: Hornets have HISTORIC Loss | Brandon Miller STRUGGLES | Should We PANIC? - kcentv.com Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him.",
    "result": null
   },
