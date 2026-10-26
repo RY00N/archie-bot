@@ -5,13 +5,13 @@ DMs every human member of the old server "BetterPicks (old)" one at a time, slow
 throwaway invite bot (INVITE_BOT_TOKEN), never from BetterBot. Members already in the new server are
 skipped (read with BetterBot's DISCORD_BOT_TOKEN, read only).
 
-- One DM about every 90 seconds (75-105 random), any hour; once half are done, two per 90 s (35-55) (Ryan 2026-10-26).
+- About 10 DMs a minute (one every 4-8 s random), any hour (Ryan 2026-10-26 11:53am PT).
 - sent.json keeps who got it (or can't get DMs) so a restart resumes where it left off.
 - Stops for good on a rate limit (429), 40003 (opening DMs too fast), 40002/401 (bot flagged or token
   dead) or any other Discord error, and writes the reason to STOPPED. Delete STOPPED to let it run again.
 - Touch STOP in the work folder to pause it by hand.
 - Most active members go first (activity(), from the old server's Dyno log).
-- Pushes counts only (no user ids) to the invite-dm-status branch every 30 min when GITHUB_TOKEN is set.
+- Pushes counts only (no user ids) to the invite-dm-status branch every 10 min when GITHUB_TOKEN is set.
 Standard library only.  Usage: invite_dm.py [--dry-run]
 """
 import json, os, random, re, subprocess, sys, time, urllib.error, urllib.request
@@ -24,8 +24,7 @@ DYNO_LOGS = os.environ.get("OLD_LOG_CHANNEL", "1044703060900986880")   # the old
 NEW_GUILD = os.environ.get("BP_GUILD_ID", "1509315900874948729")
 WORK = os.environ.get("INVITE_WORK", "/home/archie/invite-dm")
 LINK = os.environ.get("INVITE_LINK", "https://discord.gg/857TCcDMj")
-GAP = (75, 105)
-FAST_GAP = (35, 55)   # after the halfway mark
+GAP = (4, 8)
 PT = ZoneInfo("America/Los_Angeles")
 TEXT = ("Hey! \U0001F44B Thanks for being part of the old BetterPicks server. We just launched a brand new "
         "BetterPicks server with daily picks, live injury and lineup updates, and win slips. As a thank-you to "
@@ -173,10 +172,9 @@ def main():
             status["sent" if res == "sent" else "dms_closed"] += 1; status["left"] -= 1
             status["updated"] = datetime.now(PT).isoformat(timespec="seconds")
             log(res, u.get("username"), f"({status['left']} left)")
-            if time.time() - last_push > 1800:
+            if time.time() - last_push > 600:
                 push_status(status); last_push = time.time()
-            done = status["sent"] + status["dms_closed"]
-            time.sleep(random.uniform(*(FAST_GAP if done >= status["left"] else GAP)))   # halfway: done >= left
+            time.sleep(random.uniform(*GAP))
         log("done, everyone reached")
         status["done"] = True
     except Stop as e:
