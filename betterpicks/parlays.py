@@ -467,8 +467,15 @@ def build():
     ok = (lambda c: math.prod(l["p"] for l in c) >= min_win) if mode == "whole" else (lambda c: all(leg_ok(l, combo_bar) for l in c))
     # still-open picks from earlier days count too: a postponed game's pick carries over, never re-posted (Ryan 2026-10-19)
     shadow(book, legs, now_pt)
+    # The droplet's book never gets grades (the project grades), so an old "open" pick only blocks its own market
+    # (a postponed game keeps its ticker); the player is blocked only while that game is still to be played.
+    # Ryan 2026-10-26: Podziemski/Edwards sat at 75%+ for hours unposted because Oct 20-23 picks looked open forever.
+    live = lambda e: any(datetime.fromisoformat(l["start"].replace("Z", "+00:00")) > now - timedelta(hours=5)
+                         for l in e["legs"] if l.get("start"))
     used = {(l["player"], l["stat"]) for e in book["parlays"]
-            if e["date"] >= now_pt.date().isoformat() or e.get("status") == "open" for l in e["legs"]}
+            if e["date"] >= now_pt.date().isoformat() or (e.get("status") == "open" and live(e)) for l in e["legs"]}
+    open_tickers = {l.get("ticker") for e in book["parlays"] if e.get("status") == "open" for l in e["legs"]} - {None}
+    legs = [l for l in legs if l.get("ticker") not in open_tickers]
     entries = []
     # 1) locks: any time, single leg, big Kalshi edge
     today = now_pt.date().isoformat()
