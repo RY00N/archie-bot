@@ -32,9 +32,11 @@ NEWS_SKIP = re.compile(r"(Game Highlights|fantasy|odds|picks?\b|prediction|previ
                        r"square off|matchup|power rankings|takeaways|grades)", re.I)
 RECAP = re.compile(r"\b(beat|beats|win|wins|victory|rout\w*|loss|lose|loses|fall|falls|edge|top|tops|rally|rallies|"
                    r"scores?|step back|stay|stays|unbeaten|undefeated)\b", re.I)
-STRONG = re.compile(r"\b(injur\w*|exits?|leaves|ruled out|out (for|with|due|at least|indefinitely)|questionable|"
-                    r"doubtful|trade[ds]?|acquir\w*|signs?|signed|waive[ds]?|suspen\w*|eject\w*|surgery|sprain\w*|"
-                    r"strain\w*|concussion|carted|benching|benched|will start|to start|starting)\b", re.I)
+STRONG = re.compile(r"\b(injur\w*|exits?|leaves|ruled (out|in)|out (for|with|due|at least|indefinitely|tonight)|"
+                    r"questionable|doubtful|trade[ds]?|acquir\w*|signs?|signed|waive[ds]?|releas(ed|es)|suspen\w*|"
+                    r"eject\w*|surgery|sprain\w*|strain\w*|concussion|carted|benching|benched|will start|to start|"
+                    r"starting|rest(s|ed|ing)?|scratch\w*|won't play|will miss|to miss|misses|return(s|ing)? from|"
+                    r"back from|cleared|activated|illness|minutes restriction|lineup)\b", re.I)
 INGAME = re.compile(r"(was injured during the play|Injury Update)", re.I)
 
 
@@ -193,7 +195,7 @@ def check_news(league, st, new):
         if key in seen:
             continue
         seen[key] = a.get("published", "")[:10]
-        if a.get("published", "") < RECENT or first or NEWS_SKIP.search(h) or not NEWS_KW.search(h) or (RECAP.search(h) and not STRONG.search(h)) or (a.get("type") or "") == "Media":
+        if a.get("published", "") < RECENT or first or NEWS_SKIP.search(h) or not STRONG.search(h) or (a.get("type") or "") == "Media":
             continue
         new.append({"league": league, "kind": "news", "text": h})
 
