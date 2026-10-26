@@ -1965,25 +1965,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 15:00 PT",
-  "props_today": 1390,
-  "kalshi_props_today": 597,
-  "kalshi_priced_today": 48,
+  "props_today": 1388,
+  "kalshi_props_today": 596,
+  "kalshi_priced_today": 46,
   "books_on_kalshi_props": {
    "AN Consensus": 589,
-   "AN Open": 591,
-   "BetMGM": 441,
-   "BetRivers": 412,
-   "Caesars": 485,
+   "AN Open": 590,
+   "BetMGM": 442,
+   "BetRivers": 411,
+   "Caesars": 483,
    "DraftKings": 495,
-   "FanDuel": 465,
-   "Fanatics": 458,
+   "FanDuel": 463,
+   "Fanatics": 453,
    "Hard Rock Bet": 19,
-   "Parx": 454,
-   "Pinnacle": 386,
-   "Sleeper": 545,
-   "Underdog": 597,
+   "Parx": 453,
+   "Pinnacle": 385,
+   "Sleeper": 544,
+   "Underdog": 596,
    "Unibet": 101,
-   "bet365": 591
+   "bet365": 590
   },
   "data_files": [
    "mlb.sqlite",
@@ -1991,7 +1991,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -8093,9 +8093,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.487,
+   "p": 0.485,
    "price": 0.42,
-   "edge": 0.05,
+   "edge": 0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8378,9 +8378,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.568,
+   "p": 0.567,
    "price": 0.46,
-   "edge": 0.091,
+   "edge": 0.09,
    "news": "Jalen Williams is out: Jared McCain hit the under in 21/29 games without him vs 7/10 with him; Cason Wallace is out: Jared McCain hit the under in 13/20 games without him vs 16/20 with him; Nikola Topic is out: Jared McCain hit the under in 23/30 games without him vs 3/7 with him; PHX has allowed bench guards 1% fewer assists than average (likely on him: Collin Gillespie, Jordan Goodwin).",
    "result": null
   },
@@ -8528,9 +8528,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.552,
+   "p": 0.551,
    "price": 0.5,
-   "edge": 0.035,
+   "edge": 0.034,
    "news": "OKC has allowed starting guards 0% fewer points than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Kenrich Williams can switch onto him (OKC allowed guards 10% fewer points with him playing; he plays tonight); Jaylin Williams can switch onto him (OKC allowed guards 9% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -8543,9 +8543,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.631,
+   "p": 0.626,
    "price": 0.52,
-   "edge": 0.094,
+   "edge": 0.089,
    "news": "Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him; WSH has allowed starting forwards 5% more points than average (likely on him: Anthony Gill, Anthony Davis); Alex Sarr can switch onto him (WSH allowed forwards 8% fewer points with him playing; he plays tonight).",
    "result": null
   },
