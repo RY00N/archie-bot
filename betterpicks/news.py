@@ -287,6 +287,58 @@ def positions(league, c):
     return out
 
 
+# Ryan 2026-10-26: "incorporate teammate switches so a better defender could defend the player". A defender at
+# another position can switch onto him, so for every active opposing player at a switchable spot (guards <-> wings,
+# wings <-> bigs) we measure what the opponent allowed to his position group in its last 40 games with that defender
+# playing vs without him, shrunk toward no effect by how few games he missed. The two biggest effects move the
+# opponent's number to tonight's lineup (with him if he plays, without him if he's out).
+SWITCH = {"G": ("G", "F"), "F": ("G", "F", "C"), "C": ("F", "C")}
+SWITCH_GAMES, SWITCH_SHRINK, SWITCH_MIN_OFF = 40, 8, 4
+
+
+def switchers(opp_db, opp, grp, col, pos, c, better=False):
+    """-> [(factor for tonight, name, effect, playing)] for the opponent's defenders who can switch onto this group."""
+    rows = SQL("nba", f"select date, player, {col} from player_games where opp=? and season_type='regular' "
+                      f"and minutes>=12 order by date desc limit 1500", (opp_db,))
+    dates = sorted({r[0] for r in rows}, reverse=True)[:SWITCH_GAMES]
+    if len(dates) < 20:
+        return []
+    keep = set(dates)
+    per = {d: [] for d in dates}
+    for d, p, v in rows:
+        if d in keep and GROUP["nba"].get(pos.get((p or "").lower(), "")) == grp:
+            per[d].append(v or 0)
+    game_val = {d: sum(v) / len(v) for d, v in per.items() if v}
+    if len(game_val) < 20:
+        return []
+    m = sum(game_val.values()) / len(game_val)
+    if m <= 0:
+        return []
+    played = {}
+    for p, d in SQL("nba", "select player, date from player_games where team=? and minutes>=10 and date>=?",
+                    (opp_db, min(dates))):
+        if d in keep:
+            played.setdefault(p, set()).add(d)
+    rost = roster_pos("nba", opp, c)
+    outs = {i["name"].lower() for i in injury_list("nba", c) if is_out(i["status"])}
+    out = []
+    for p, ds in played.items():
+        if p.lower() not in rost or GROUP["nba"].get(pos.get(p.lower(), "")) not in SWITCH[grp] or len(ds) < 8:
+            continue
+        w = [v for d, v in game_val.items() if d in ds]
+        wo = [v for d, v in game_val.items() if d not in ds]
+        if len(wo) < SWITCH_MIN_OFF:
+            continue
+        mw, mwo = sum(w) / len(w), sum(wo) / len(wo)
+        k = len(wo) / (len(wo) + SWITCH_SHRINK)
+        mw, mwo = m + k * (mw - m), m + k * (mwo - m)   # shrunk toward the team average
+        playing = p.lower() not in outs
+        out.append(((mw if playing else mwo) / m, p, mw / mwo - 1 if mwo else 0, playing))
+    if better:
+        out = [x for x in out if x[2] < 0]
+    return sorted(out, key=lambda x: x[2])[:2]
+
+
 def pos_defense(leg, c):
     """-> (win-chance change, note) from the opponent's defense vs his position + role, else (0, None)."""
     pr, side = leg["prop"], leg["side"]
@@ -318,7 +370,11 @@ def pos_defense(leg, c):
     a, b = sum(r[1] or 0 for r in vs) / len(vs), sum(r[1] or 0 for r in lg) / len(lg)
     if b <= 0:
         return 0.0, None
-    ratio = a / b
+    ratio = base = a / b
+    # only defenders who make it harder (allowed 8%+ less with them playing): the ones a switch would put on him
+    sw = [x for x in switchers(DB_TEAM.get(opp, opp), opp, grp, col, pos, c, better=True) if x[2] <= -0.08]
+    for f, *_ in sw:
+        ratio *= f
     dp = max(-POSDEF_CAP, min(POSDEF_CAP, POSDEF_K * (ratio - 1)))
     if side == "under":
         dp = -dp
@@ -326,13 +382,16 @@ def pos_defense(leg, c):
     outs = {i["name"].lower() for i in injury_list("nba", c) if is_out(i["status"])}
     rost = roster_pos("nba", opp, c)
     mins = SQL("nba", "select player, avg(minutes) from (select player, minutes from player_games where team=? and "
-                      "starter=? and date>=? order by date desc limit 120) group by player order by avg(minutes) desc",
+                      "starter=? and date>=? and season_type='regular' order by date desc limit 120) group by player order by avg(minutes) desc",
                (DB_TEAM.get(opp, opp), starter, time.strftime("%Y-%m-%d", time.gmtime(time.time() - 200 * 86400))))
     who = [p for p, m in mins if in_grp(p) and p.lower() in rost and p.lower() not in outs][:2]
     label = {"G": "guards", "F": "forwards", "C": "centers"}[grp]
-    word = "more" if ratio >= 1 else "fewer"
-    note = (f"{opp} has allowed {'starting' if starter else 'bench'} {label} {abs(ratio - 1):.0%} {word} "
+    word = "more" if base >= 1 else "fewer"
+    note = (f"{opp} has allowed {'starting' if starter else 'bench'} {label} {abs(base - 1):.0%} {word} "
             f"{pr['stat'].replace('_', ' ')} than average" + (f" (likely on him: {', '.join(who)})" if who else ""))
+    for f, name, eff, playing in sw:
+        note += (f"; {name} can switch onto him ({opp} allowed {label} {abs(eff):.0%} fewer "
+                 f"{pr['stat'].replace('_', ' ')} with him playing; {'he plays' if playing else 'he is out'} tonight)")
     return (round(dp, 3), note) if abs(ratio - 1) >= 0.05 or who else (0.0, None)
 
 
