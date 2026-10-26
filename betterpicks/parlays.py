@@ -626,8 +626,11 @@ def actual(leg):
     if rows is None:
         return "nodata"
     d = datetime.fromisoformat(leg["start"].replace("Z", "+00:00")).astimezone(PT).date()
+    if datetime.now(timezone.utc) < datetime.fromisoformat(leg["start"].replace("Z", "+00:00")) + timedelta(hours=2):
+        return None   # Ryan 2026-10-26: Ayo was graded off the night before's game; never grade before it's played
     for v, day, _ in rows:
-        if day and abs((datetime.fromisoformat(day[:10]).date() - d).days) <= 1:
+        # the stats DB can date a late game the next (UTC) day, never the day before
+        if day and 0 <= (datetime.fromisoformat(day[:10]).date() - d).days <= 1:
             return v
     return "void" if datetime.now(PT).date() - d > timedelta(days=3) else None
 
