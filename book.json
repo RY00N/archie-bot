@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 06:00 PT",
-  "props_today": 1258,
+  "props_today": 1259,
   "kalshi_props_today": 534,
   "kalshi_priced_today": 33,
   "books_on_kalshi_props": {
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -8100,8 +8100,8 @@
    "line": 1.5,
    "start": "2026-10-26T23:00:00Z",
    "p": 0.485,
-   "price": 0.42,
-   "edge": 0.048,
+   "price": 0.41,
+   "edge": 0.058,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
