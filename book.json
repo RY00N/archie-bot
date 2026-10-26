@@ -1904,20 +1904,20 @@
   "kalshi_priced_today": 39,
   "books_on_kalshi_props": {
    "AN Consensus": 530,
-   "AN Open": 533,
+   "AN Open": 534,
    "BetMGM": 359,
    "BetRivers": 404,
-   "Caesars": 458,
+   "Caesars": 457,
    "DraftKings": 447,
    "FanDuel": 447,
    "Fanatics": 419,
    "Hard Rock Bet": 19,
-   "Parx": 435,
+   "Parx": 436,
    "Pinnacle": 311,
-   "Sleeper": 507,
+   "Sleeper": 508,
    "Underdog": 540,
-   "Unibet": 70,
-   "bet365": 525
+   "Unibet": 72,
+   "bet365": 530
   },
   "data_files": [
    "mlb.sqlite",
@@ -1925,7 +1925,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 14
  },
  "shadow": [
   {
@@ -8102,9 +8102,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.785,
+   "p": 0.79,
    "price": 0.65,
-   "edge": 0.119,
+   "edge": 0.124,
    "news": "Donte DiVincenzo is out: Ayo Dosunmu hit the over in 7/7 games without him vs 13/18 with him.",
    "result": null
   },
@@ -8177,9 +8177,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.651,
+   "p": 0.65,
    "price": 0.5,
-   "edge": 0.134,
+   "edge": 0.133,
    "news": "Moses Moody is out: Brandin Podziemski hit the under in 17/27 games without him vs 3/13 with him.",
    "result": null
   },
@@ -8207,9 +8207,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.611,
+   "p": 0.61,
    "price": 0.56,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8240,6 +8240,21 @@
    "p": 0.485,
    "price": 0.41,
    "edge": 0.058,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBAPTS-26OCT26GSWDEN-GSWYLENDEBORG1-15",
+   "league": "nba",
+   "player": "Yaxel Lendeborg",
+   "stat": "points",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-10-27T02:00:00Z",
+   "p": 0.574,
+   "price": 0.51,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
