@@ -1872,12 +1872,12 @@
   "books_on_kalshi_props": {
    "AN Consensus": 527,
    "AN Open": 527,
-   "BetMGM": 209,
+   "BetMGM": 235,
    "BetRivers": 68,
    "Caesars": 444,
    "DraftKings": 439,
    "FanDuel": 439,
-   "Fanatics": 381,
+   "Fanatics": 380,
    "Hard Rock Bet": 18,
    "Parx": 98,
    "Pinnacle": 56,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 11
+  "kalshi_legs_today": 10
  },
  "shadow": [
   {
@@ -8024,9 +8024,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.68,
+   "p": 0.679,
    "price": 0.53,
-   "edge": 0.133,
+   "edge": 0.132,
    "news": "Moses Moody is out: Brandin Podziemski hit the under in 17/27 games without him vs 3/13 with him.",
    "result": null
   },
