@@ -339,6 +339,36 @@ def switchers(opp_db, opp, grp, col, pos, c, better=False):
     return sorted(out, key=lambda x: x[2])[:2]
 
 
+# Ryan 2026-10-26: double-team rule. A star coming off 3+ huge scoring games may draw double teams, so think about
+# what drops and who he passes to. Backtest 2021-26 (stars averaging 18+, last 3 games all 20%+ over their 20-game
+# scoring average, 518 games): vs the last-12 averages our picks use, his points held up (beat it 44% vs 46% normally,
+# 48% at 30%+ runs), his assists went over a bit more often (49-52% vs 46%), and teammates' scoring didn't rise.
+# So: no points penalty (the data says it would cost us), a small assists nudge, and a note on the pick.
+HOT_MIN_AVG, HOT_RUN, HOT_DP = 18, 1.2, 0.02
+
+
+def hot_star(leg, c):
+    """-> (win-chance change, note) for a star on a 3-game scoring run, else (0, None)."""
+    pr, side = leg["prop"], leg["side"]
+    if pr["league"] != "nba" or SQL is None:
+        return 0.0, None
+    g = SQL("nba", "select pts from player_games where player=? and season_type in ('regular', 'playoffs') "
+                   "and minutes>=10 order by date desc limit 23", (pr["player"],))
+    pts = [r[0] or 0 for r in g]
+    if len(pts) < 23:
+        return 0.0, None
+    base = sum(pts[3:]) / 20
+    if base < HOT_MIN_AVG or not all(p >= HOT_RUN * base for p in pts[:3]):
+        return 0.0, None
+    run = ", ".join(str(p) for p in pts[:3])
+    note = f"{pr['player']} is on a scoring run ({run} vs his {base:.0f} average), so expect more double teams"
+    if pr["stat"] in ("assists", "pa", "ra"):
+        return (HOT_DP if side == "over" else -HOT_DP), note + ": stars on runs like this pass a bit more"
+    if pr["stat"] in ("points", "pra", "pr"):
+        return 0.0, note + ", though in our data stars on runs like this kept scoring at their usual rate"
+    return 0.0, None
+
+
 def pos_defense(leg, c):
     """-> (win-chance change, note) from the opponent's defense vs his position + role, else (0, None)."""
     pr, side = leg["prop"], leg["side"]
@@ -472,6 +502,13 @@ def adjust(legs):
             print("position defense skipped:", pr["player"], ex)
         if pnote:
             cdp += pdp; cnotes = list(cnotes) + [pnote]
+        try:
+            hdp, hnote = hot_star(l, c)
+        except Exception as ex:
+            hdp, hnote = 0.0, None
+            print("double-team check skipped:", pr["player"], ex)
+        if hnote:
+            cdp += hdp; cnotes = list(cnotes) + [hnote]
         l["ctx_dp"] = round(cdp, 3) if cnotes else 0.0   # pregame.py re-checks this part right before tip
         if cnotes:
             dp += cdp
