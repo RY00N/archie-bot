@@ -29,7 +29,7 @@ NEWS_KW = re.compile(r"\b(injur\w*|exits?|leaves?|left|out|ruled|questionable|do
                      r"lineup|scratch\w*|illness|sick|surgery|sprain\w*|strain\w*|concussion|carted|IR|activated|"
                      r"miss\w*|status|limited|minutes restriction)\b", re.I)
 NEWS_SKIP = re.compile(r"(Game Highlights|fantasy|odds|picks?\b|prediction|preview|travels to|hosts|faces|visits|"
-                       r"square off|matchup|power rankings|takeaways|grades)", re.I)
+                       r"square off|matchup|power rankings|takeaways|grades|buzz|latest on|rumors|intel|roundup|mailbag)", re.I)
 RECAP = re.compile(r"\b(beat|beats|win|wins|victory|rout\w*|loss|lose|loses|fall|falls|edge|top|tops|rally|rallies|"
                    r"scores?|step back|stay|stays|unbeaten|undefeated)\b", re.I)
 STRONG = re.compile(r"\b(injur\w*|exits?|leaves|ruled (out|in)|out (for|with|due|at least|indefinitely|tonight)|"
