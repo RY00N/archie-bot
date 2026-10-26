@@ -1899,23 +1899,23 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 12:00 PT",
-  "props_today": 1295,
-  "kalshi_props_today": 528,
+  "props_today": 1300,
+  "kalshi_props_today": 531,
   "kalshi_priced_today": 38,
   "books_on_kalshi_props": {
-   "AN Consensus": 520,
-   "AN Open": 523,
-   "BetMGM": 396,
-   "BetRivers": 393,
-   "Caesars": 447,
-   "DraftKings": 448,
-   "FanDuel": 439,
-   "Fanatics": 411,
+   "AN Consensus": 523,
+   "AN Open": 526,
+   "BetMGM": 399,
+   "BetRivers": 396,
+   "Caesars": 450,
+   "DraftKings": 451,
+   "FanDuel": 442,
+   "Fanatics": 414,
    "Hard Rock Bet": 19,
-   "Parx": 422,
-   "Pinnacle": 339,
-   "Sleeper": 479,
-   "Underdog": 528,
+   "Parx": 425,
+   "Pinnacle": 340,
+   "Sleeper": 482,
+   "Underdog": 531,
    "Unibet": 88,
    "bet365": 522
   },
@@ -1925,7 +1925,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -8237,10 +8237,10 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.62,
+   "p": 0.619,
    "price": 0.57,
-   "edge": 0.033,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": 0.032,
+   "news": "MEM has allowed starting guards 8% more assists than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 12% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
