@@ -1966,24 +1966,24 @@
  "diag": {
   "props_at": "2026-10-26 15:00 PT",
   "props_today": 1394,
-  "kalshi_props_today": 595,
+  "kalshi_props_today": 597,
   "kalshi_priced_today": 49,
   "books_on_kalshi_props": {
-   "AN Consensus": 589,
-   "AN Open": 589,
+   "AN Consensus": 591,
+   "AN Open": 591,
    "BetMGM": 441,
    "BetRivers": 412,
-   "Caesars": 482,
-   "DraftKings": 491,
-   "FanDuel": 465,
+   "Caesars": 484,
+   "DraftKings": 492,
+   "FanDuel": 466,
    "Fanatics": 452,
    "Hard Rock Bet": 19,
    "Parx": 454,
    "Pinnacle": 385,
-   "Sleeper": 537,
-   "Underdog": 595,
+   "Sleeper": 538,
+   "Underdog": 597,
    "Unibet": 101,
-   "bet365": 589
+   "bet365": 591
   },
   "data_files": [
    "mlb.sqlite",
@@ -8351,7 +8351,7 @@
    "p": 0.567,
    "price": 0.46,
    "edge": 0.09,
-   "news": "Nikola Topic is out: Jared McCain hit the under in 23/30 games without him vs 3/7 with him; Cason Wallace is out: Jared McCain hit the under in 13/20 games without him vs 16/20 with him; Jalen Williams is out: Jared McCain hit the under in 21/29 games without him vs 7/10 with him; PHX has allowed bench guards 1% fewer assists than average (likely on him: Collin Gillespie, Jordan Goodwin).",
+   "news": "Jalen Williams is out: Jared McCain hit the under in 21/29 games without him vs 7/10 with him; Cason Wallace is out: Jared McCain hit the under in 13/20 games without him vs 16/20 with him; Nikola Topic is out: Jared McCain hit the under in 23/30 games without him vs 3/7 with him; PHX has allowed bench guards 1% fewer assists than average (likely on him: Collin Gillespie, Jordan Goodwin).",
    "result": null
   },
   {
