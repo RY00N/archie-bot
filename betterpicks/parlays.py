@@ -93,6 +93,20 @@ _CONN, _ROWS, _TEAM, _MIN, _ROLE = {}, {}, {}, {}, {}
 NBA_CODE = {"GS": "GSW", "NY": "NYK", "NO": "NOP", "SA": "SAS", "UTAH": "UTA", "WSH": "WAS"}
 
 
+def sql(league, query, args=()):
+    """Run a read query on a league's stats DB (same local copy rows_for uses)."""
+    name = f"{league}.sqlite"
+    if name not in _CONN:
+        src = os.path.join(DATA, name)
+        if not os.path.exists(src):
+            return []
+        local = os.path.join("/tmp", "betterpicks-" + name)
+        if not os.path.exists(local) or os.path.getmtime(local) < os.path.getmtime(src):
+            import shutil; shutil.copyfile(src, local)
+        _CONN[name] = sqlite3.connect(local)
+    return _CONN[name].execute(query, args).fetchall()
+
+
 def rows_for(league, stat, player):
     """All of a player's games for this stat, newest first (cached; DBs copied locally once for speed).
     NBA (Ryan 2026-10-21, lots of players changed teams): only games for his current team count, and
@@ -384,6 +398,9 @@ def collect_legs(props, now, horizon_h=40, apps=("PrizePicks", "Kalshi"), min_ed
         sys.path.insert(0, HERE)   # python3 -I leaves the script's folder off sys.path
         import news
         news.ROWS = rows_for   # with/without-teammate splits from the stats DBs
+        news.SQL = sql
+        news.STAT_COL = lambda league, stat: (STATS.get((league, stat)) or (None, None))[1]
+        news.DB_TEAM = DB_CODE.get("nba", {})
         news.MINUTES = lambda league, player: (rows_for(league, "points", player), _MIN.get((league, player)))[1]
         legs = [l for l in news.adjust(legs) if l["app"] != "Kalshi" or l["edge"] >= min_edge]
     except Exception as ex:

@@ -25,6 +25,9 @@ BAD = re.compile(r"\b(injur\w*|hurt|sore\w*|strain\w*|sprain\w*|illness|ill|sick
                  r"divorce\w*|arrest\w*|suspen\w*|concussion|benched|slump\w*|struggl\w*)\b", re.I)
 OVER_HIT_SHAKY, OVER_HIT_BAD = 0.08, 0.05   # win-chance points taken off an over
 MINUTES = None   # parlays.py sets this to minutes(league, player) -> {(date, opp): minutes} (NBA only)
+SQL = None   # parlays.py sets this to sql(league, query, args) -> rows on the stats DB (NBA position defense)
+STAT_COL = None   # parlays.py sets this to the DB column/expression for (league, stat)
+DB_TEAM = {}   # prop team code -> stats DB team code (parlays.DB_CODE)
 ROWS = None   # parlays.py sets this to rows_for(league, stat, player) -> [(value, date, opp), ...] newest first
 ALIAS = {"JAC": "JAX", "WAS": "WSH", "GS": "GSW", "NO": "NOP", "NY": "NYK", "SA": "SAS", "UTAH": "UTA", "CHW": "CWS",
          "AZ": "ARI", "KCR": "KC", "SDP": "SD", "SFG": "SF", "TBR": "TB", "WSN": "WSH", "LA": "LAR", "PHO": "PHX"}
@@ -267,6 +270,72 @@ def game_spread(league, game, start, c):
     return lines.get(" @ ".join(norm(x) for x in (game or "").split(" @ ")))
 
 
+# Ryan 2026-10-26 (Ayo Dosunmu threes): check the position and role that guards him, not just the team. NBA.com's
+# defender-tracking data isn't reachable from here, so this uses what the stats DB has: how much of this stat the
+# opponent allowed to players at his position group in his role (starter or bench) over its last 60 such player-games,
+# vs the league average for that group and role. Backtest 2024-26 (33k player-games): players beat their own recent
+# average 40-45% of the time vs the stingiest fifth of matchups and 43-48% vs the softest fifth (threes 40->43%,
+# points 45->49%, rebounds 43->46%, assists 42->48%). Small nudge, capped at 3 pts.
+POSDEF_K, POSDEF_CAP, POSDEF_MIN = 0.15, 0.03, 25
+
+
+def positions(league, c):
+    """{player name: position} from every team's ESPN roster (cached with the rosters)."""
+    out = {}
+    for team in sorted(set(team_abbrs(league, c).values())):
+        out.update({n: p for n, p in roster_pos(league, team, c).items()})
+    return out
+
+
+def pos_defense(leg, c):
+    """-> (win-chance change, note) from the opponent's defense vs his position + role, else (0, None)."""
+    pr, side = leg["prop"], leg["side"]
+    if pr["league"] != "nba" or SQL is None or STAT_COL is None:
+        return 0.0, None
+    col = STAT_COL("nba", pr["stat"])
+    teams = [norm(t) for t in (pr.get("game") or "").replace(" vs ", " @ ").split(" @ ")]
+    team = norm(pr.get("team"))
+    if not col or len(teams) != 2 or team not in teams:
+        return 0.0, None
+    opp = teams[1] if teams[0] == team else teams[0]
+    pos = positions("nba", c)
+    grp = GROUP["nba"].get(pos.get(pr["player"].lower(), ""))
+    role = SQL("nba", "select starter, date from player_games where player=? and season_type in ('regular', 'preseason') "
+                      "order by date desc limit 30", (pr["player"],))
+    cut = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 150 * 86400))
+    flags = [r[0] for r in role if r[0] is not None and r[1] >= cut][:10] or [r[0] for r in role if r[0] is not None][:10]
+    if not grp or not flags:
+        return 0.0, None
+    starter = 1 if 2 * sum(flags) >= len(flags) else 0
+    in_grp = lambda name: GROUP["nba"].get(pos.get((name or "").lower(), "")) == grp
+    since = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 400 * 86400))
+    q = (f"select player, {col}, date from player_games where season_type='regular' and starter=? and minutes>=12 "
+         f"and date>=? and {{}} order by date desc")
+    vs = [r for r in SQL("nba", q.format("opp=?"), (starter, since, DB_TEAM.get(opp, opp))) if in_grp(r[0])][:60]
+    lg = [r for r in SQL("nba", q.format("1=1"), (starter, since)) if in_grp(r[0])][:3000]
+    if len(vs) < POSDEF_MIN or len(lg) < 500:
+        return 0.0, None
+    a, b = sum(r[1] or 0 for r in vs) / len(vs), sum(r[1] or 0 for r in lg) / len(lg)
+    if b <= 0:
+        return 0.0, None
+    ratio = a / b
+    dp = max(-POSDEF_CAP, min(POSDEF_CAP, POSDEF_K * (ratio - 1)))
+    if side == "under":
+        dp = -dp
+    # likely defenders: the opponent's players at his position in his role, most minutes lately, active tonight
+    outs = {i["name"].lower() for i in injury_list("nba", c) if is_out(i["status"])}
+    rost = roster_pos("nba", opp, c)
+    mins = SQL("nba", "select player, avg(minutes) from (select player, minutes from player_games where team=? and "
+                      "starter=? and date>=? order by date desc limit 120) group by player order by avg(minutes) desc",
+               (DB_TEAM.get(opp, opp), starter, time.strftime("%Y-%m-%d", time.gmtime(time.time() - 200 * 86400))))
+    who = [p for p, m in mins if in_grp(p) and p.lower() in rost and p.lower() not in outs][:2]
+    label = {"G": "guards", "F": "forwards", "C": "centers"}[grp]
+    word = "more" if ratio >= 1 else "fewer"
+    note = (f"{opp} has allowed {'starting' if starter else 'bench'} {label} {abs(ratio - 1):.0%} {word} "
+            f"{pr['stat'].replace('_', ' ')} than average" + (f" (likely on him: {', '.join(who)})" if who else ""))
+    return (round(dp, 3), note) if abs(ratio - 1) >= 0.05 or who else (0.0, None)
+
+
 def blowout_adj(leg, c):
     """-> (win-chance change, note) for a likely blowout, else (0, None)."""
     pr = leg["prop"]
@@ -337,6 +406,13 @@ def adjust(legs):
         bdp, bnote = blowout_adj(l, c)
         if bnote:
             cdp += bdp; cnotes = list(cnotes) + [bnote]
+        try:
+            pdp, pnote = pos_defense(l, c)
+        except Exception as ex:
+            pdp, pnote = 0.0, None
+            print("position defense skipped:", pr["player"], ex)
+        if pnote:
+            cdp += pdp; cnotes = list(cnotes) + [pnote]
         l["ctx_dp"] = round(cdp, 3) if cnotes else 0.0   # pregame.py re-checks this part right before tip
         if cnotes:
             dp += cdp

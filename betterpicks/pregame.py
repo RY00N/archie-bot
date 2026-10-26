@@ -20,6 +20,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import news      # noqa: E402
 import parlays   # noqa: E402
+news.ROWS = parlays.rows_for
+news.SQL = parlays.sql
+news.STAT_COL = lambda league, stat: (parlays.STATS.get((league, stat)) or (None, None))[1]
+news.DB_TEAM = parlays.DB_CODE.get("nba", {})
 
 BOOK = os.path.join(HERE, "book.json")
 RULES = os.path.join(HERE, "rules.json")
@@ -79,7 +83,8 @@ def fresh_p(leg, c):
         return None
     dp, _ = news.context({"prop": pr, "side": leg["side"], "line": leg["line"]}, c)
     bdp, _ = news.blowout_adj({"prop": pr, "side": leg["side"], "line": leg["line"]}, c)
-    return round(leg["p"] - old + dp + bdp, 3), dp + bdp
+    pdp, _ = news.pos_defense({"prop": pr, "side": leg["side"], "line": leg["line"]}, c)
+    return round(leg["p"] - old + dp + bdp + pdp, 3), dp + bdp + pdp
 
 
 def gone_mates(leg, c):
