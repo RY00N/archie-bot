@@ -1965,25 +1965,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 16:00 PT",
-  "props_today": 1155,
+  "props_today": 1159,
   "kalshi_props_today": 510,
-  "kalshi_priced_today": 45,
+  "kalshi_priced_today": 40,
   "books_on_kalshi_props": {
-   "AN Consensus": 502,
-   "AN Open": 504,
-   "BetMGM": 381,
-   "BetRivers": 329,
-   "Caesars": 411,
-   "DraftKings": 414,
-   "FanDuel": 390,
-   "Fanatics": 372,
-   "Hard Rock Bet": 26,
-   "Parx": 376,
-   "Pinnacle": 314,
+   "AN Consensus": 399,
+   "AN Open": 399,
+   "BetMGM": 306,
+   "BetRivers": 239,
+   "Caesars": 323,
+   "DraftKings": 318,
+   "FanDuel": 301,
+   "Fanatics": 292,
+   "Hard Rock Bet": 25,
+   "Parx": 286,
+   "Pinnacle": 239,
    "Sleeper": 461,
    "Underdog": 510,
-   "Unibet": 78,
-   "bet365": 504
+   "Unibet": 62,
+   "bet365": 400
   },
   "data_files": [
    "mlb.sqlite",
@@ -1991,7 +1991,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -8093,9 +8093,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.486,
+   "p": 0.487,
    "price": 0.42,
-   "edge": 0.049,
+   "edge": 0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8543,9 +8543,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.562,
+   "p": 0.564,
    "price": 0.49,
-   "edge": 0.055,
+   "edge": 0.057,
    "news": "DEN has allowed starting forwards 13% more points than average (likely on him: Aaron Gordon, Zeke Nnaji).",
    "result": null
   },
@@ -8693,9 +8693,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.506,
+   "p": 0.509,
    "price": 0.44,
-   "edge": 0.049,
+   "edge": 0.052,
    "news": "MEM has allowed starting forwards 13% more rebounds than average (likely on him: Cameron Boozer, Cedric Coward).",
    "result": null
   },
