@@ -1870,20 +1870,20 @@
   "kalshi_props_today": 534,
   "kalshi_priced_today": 31,
   "books_on_kalshi_props": {
-   "AN Consensus": 526,
+   "AN Consensus": 527,
    "AN Open": 528,
    "BetMGM": 267,
    "BetRivers": 104,
    "Caesars": 444,
    "DraftKings": 439,
    "FanDuel": 439,
-   "Fanatics": 387,
+   "Fanatics": 384,
    "Hard Rock Bet": 18,
    "Parx": 133,
    "Pinnacle": 56,
    "Sleeper": 493,
    "Underdog": 534,
-   "Unibet": 22,
+   "Unibet": 23,
    "bet365": 528
   },
   "data_files": [
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -7964,9 +7964,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:30:00Z",
-   "p": 0.529,
+   "p": 0.531,
    "price": 0.47,
-   "edge": 0.042,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8069,9 +8069,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.624,
-   "price": 0.56,
-   "edge": 0.047,
+   "p": 0.626,
+   "price": 0.55,
+   "edge": 0.059,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8099,9 +8099,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.483,
+   "p": 0.482,
    "price": 0.42,
-   "edge": 0.046,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8114,9 +8114,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.537,
+   "p": 0.531,
    "price": 0.47,
-   "edge": 0.05,
+   "edge": 0.044,
    "news": "Nikola Topic (G) is out, so Ajay Mitchell's role likely grows.",
    "result": null
   },
@@ -8129,9 +8129,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.548,
+   "p": 0.549,
    "price": 0.5,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
