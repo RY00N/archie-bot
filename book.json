@@ -1870,14 +1870,14 @@
   "kalshi_props_today": 534,
   "kalshi_priced_today": 31,
   "books_on_kalshi_props": {
-   "AN Consensus": 528,
+   "AN Consensus": 526,
    "AN Open": 528,
-   "BetMGM": 235,
+   "BetMGM": 267,
    "BetRivers": 104,
    "Caesars": 444,
    "DraftKings": 439,
-   "FanDuel": 438,
-   "Fanatics": 384,
+   "FanDuel": 439,
+   "Fanatics": 387,
    "Hard Rock Bet": 18,
    "Parx": 133,
    "Pinnacle": 56,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -8009,9 +8009,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.464,
+   "p": 0.461,
    "price": 0.41,
-   "edge": 0.037,
+   "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8070,8 +8070,8 @@
    "line": 7.5,
    "start": "2026-10-26T23:00:00Z",
    "p": 0.624,
-   "price": 0.55,
-   "edge": 0.057,
+   "price": 0.56,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8107,6 +8107,21 @@
   },
   {
    "date": "2026-10-26",
+   "ticker": "KXNBAPTS-26OCT26PHXOKC-OKCAMITCHELL25-15",
+   "league": "nba",
+   "player": "Ajay Mitchell",
+   "stat": "points",
+   "side": "under",
+   "line": 14.5,
+   "start": "2026-10-27T00:00:00Z",
+   "p": 0.537,
+   "price": 0.47,
+   "edge": 0.05,
+   "news": "Nikola Topic (G) is out, so Ajay Mitchell's role likely grows.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
    "ticker": "KXNBAPTS-26OCT26PHXOKC-PHXJGREEN4-15",
    "league": "nba",
    "player": "Jalen Green",
@@ -8114,9 +8129,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.549,
+   "p": 0.548,
    "price": 0.5,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8144,9 +8159,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.563,
+   "p": 0.561,
    "price": 0.51,
-   "edge": 0.036,
+   "edge": 0.034,
    "news": "Jamir Watkins is out: Bilal Coulibaly hit the over in 9/13 games without him vs 14/19 with him.",
    "result": null
   },
@@ -8189,9 +8204,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.541,
+   "p": 0.539,
    "price": 0.46,
-   "edge": 0.064,
+   "edge": 0.062,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
