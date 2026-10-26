@@ -36,7 +36,7 @@ STRONG = re.compile(r"\b(injur\w*|exits?|leaves|ruled (out|in)|out (for|with|due
                     r"questionable|doubtful|trade[ds]?|acquir\w*|signs?|signed|waive[ds]?|releas(ed|es)|suspen\w*|"
                     r"eject\w*|surgery|sprain\w*|strain\w*|concussion|carted|benching|benched|will start|to start|"
                     r"starting|rest(s|ed|ing)?|scratch\w*|won't play|will miss|to miss|misses|return(s|ing)? from|"
-                    r"back from|cleared|activated|illness|minutes restriction|lineup)\b", re.I)
+                    r"back from|cleared|activated|illness|minutes restriction|lineup|sits?|sitting|plantar|fracture\w*|torn|tear)\b", re.I)
 INGAME = re.compile(r"(was injured during the play|Injury Update)", re.I)
 
 
