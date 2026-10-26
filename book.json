@@ -1867,11 +1867,11 @@
  "diag": {
   "props_at": "2026-10-26 04:00 PT",
   "props_today": 1258,
-  "kalshi_props_today": 533,
+  "kalshi_props_today": 534,
   "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
    "AN Consensus": 527,
-   "AN Open": 527,
+   "AN Open": 528,
    "BetMGM": 235,
    "BetRivers": 68,
    "Caesars": 444,
@@ -1882,9 +1882,9 @@
    "Parx": 97,
    "Pinnacle": 56,
    "Sleeper": 491,
-   "Underdog": 533,
+   "Underdog": 534,
    "Unibet": 20,
-   "bet365": 527
+   "bet365": 528
   },
   "data_files": [
    "mlb.sqlite",
@@ -8024,9 +8024,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.679,
+   "p": 0.678,
    "price": 0.53,
-   "edge": 0.132,
+   "edge": 0.131,
    "news": "Moses Moody is out: Brandin Podziemski hit the under in 17/27 games without him vs 3/13 with him.",
    "result": null
   },
@@ -8039,9 +8039,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.625,
+   "p": 0.623,
    "price": 0.55,
-   "edge": 0.058,
+   "edge": 0.056,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8102,7 +8102,7 @@
    "p": 0.641,
    "price": 0.52,
    "edge": 0.104,
-   "news": "Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him.",
+   "news": "News: Brandon Miller Struggles in Hornets' Blowout Loss to Hawks - Yahoo Sports Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him.",
    "result": null
   },
   {
@@ -8177,7 +8177,7 @@
    "p": 0.608,
    "price": 0.56,
    "edge": 0.031,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: Brandon Miller Struggles in Hornets' Blowout Loss to Hawks - Yahoo Sports",
    "result": null
   }
  ]
