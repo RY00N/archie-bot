@@ -150,7 +150,7 @@ def finish(leg, actual, why, nba_box=True, box="", score=""):
     out, need = [], (f"{leg['line'] + 0.5:g}+" if leg["side"] == "over" else f"{leg['line'] - 0.5:g} or fewer")
     if actual is not None:
         off = (leg["line"] + 0.5 - actual) if leg["side"] == "over" else (actual - (leg["line"] - 0.5))
-        out.append(f"Needed {need}, got {actual:g}" + (" (missed by one)." if off <= 1 else f" (missed by {off:g})."))
+        out.append(f"Needed {need}, missed by " + ("one." if off <= 1 else f"{off:g}."))   # card already says finished with #)
     if box:
         out.append(f"Box: {box}" + ("" if box.endswith(".") else "."))
     if score:
