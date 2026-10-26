@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Why a pick lost, in one or two plain sentences, from the game's box score (Ryan 2026-10-24: "put that in the
-reasoning for why a pick lost in the discord"). feed.py adds it to lost legs; the droplet prints it under the leg.
+"""Why a pick lost, from the game's box score (Ryan 2026-10-24: "put that in the reasoning for why a pick lost in
+the discord"; 2026-10-26: "EVERY LOSS gets a detailed explanation"). feed.py adds it to lost legs; the droplet prints
+it under the leg. Detailed = how far off it was, his full box line, the final score, what went wrong, what we
+expected going in (win chance + reason) and the takeaway.
 
 NBA: minutes vs his usual, bench vs starting, foul trouble, a blowout, shooting, the team losing the glass, and
 how close it came. Other leagues: how close it came and a blowout. Results are cached (why_lost.json) so each
@@ -34,6 +36,44 @@ def _event(league, game, start):
         if [CODE.get(t, t) for t in e["shortName"].split(" @ ")] == want:
             return e["id"]
     return None
+
+
+NBA_KEEP = ("MIN", "PTS", "FG", "3PT", "REB", "AST", "PF")
+SKIP_LABELS = {"ERA", "PC-ST", "AVG", "OBP", "SLG", "OPS", "+/-", "QBR", "RTG"}
+
+
+def box_line(summary, player):
+    """'5.0 IP, 6 H, 3 R, 0 ER, 2 BB, 3 K, 82 PC' (every stat group he shows up in), his team, started or not."""
+    parts, team, started = [], None, None
+    for t in summary.get("boxscore", {}).get("players", []):
+        for g in t.get("statistics", []):
+            for a in g.get("athletes", []):
+                if a["athlete"]["displayName"].lower() == player.lower() and a.get("stats"):
+                    team, started = t["team"]["abbreviation"], a.get("starter", started)
+                    kind = g.get("name") or g.get("type") or ""
+                    line = ", ".join(f"{v} {k}" for k, v in zip(g["labels"], a["stats"])
+                                     if k not in SKIP_LABELS and ("PTS" not in g["labels"] or k in NBA_KEEP))
+                    parts.append((f"{kind}: " if kind and len(t["statistics"]) > 1 and kind != "pitching" else "") + line)
+    return "; ".join(parts), team, started
+
+
+def final_score(summary):
+    comp = summary["header"]["competitions"][0]["competitors"]
+    away = next((c for c in comp if c.get("homeAway") == "away"), comp[0])
+    home = next((c for c in comp if c is not away), comp[-1])
+    return f"Final: {away['team']['abbreviation']} {away.get('score')}, {home['team']['abbreviation']} {home.get('score')}."
+
+
+def expected(leg):
+    """What we thought going in: win chance and the reason we posted it."""
+    p = leg.get("p")
+    why = (leg.get("case") or leg.get("why") or "").strip().rstrip(".")
+    if len(why) > 220:
+        why = why[:220].rsplit(" ", 1)[0] + "..."
+    if not p and not why:
+        return ""
+    s = f"We had it at {p * 100:.0f}%" if isinstance(p, (int, float)) else "Going in"
+    return s + (f": {why[0].lower() + why[1:]}." if why else ".")
 
 
 def _num(x):
@@ -100,22 +140,40 @@ def nba(leg, summary, actual):
         theirs = next((v for k, v in reb.items() if k != my_team), None)
         if reb.get(my_team) and theirs and theirs - reb[my_team] >= 10 and leg["side"] == "over":
             why.append(f"the other team won the boards {theirs:g}-{reb[my_team]:g}")
-    return finish(leg, box_actual if actual is None else actual, why, known=actual is not None)
+    line, _, _ = box_line(summary, leg["player"])
+    role = ("started" if started else "off the bench") + (f", usual {usual:g} min" if usual else "")
+    return finish(leg, box_actual if actual is None else actual, why, box=f"{line} ({role})", score=final_score(summary))
 
 
-def finish(leg, actual, why, known=False, nba_box=True):
-    """known: the card already shows the final number, so don't repeat it."""
-    out = []
+def finish(leg, actual, why, nba_box=True, box="", score=""):
+    """Detailed loss note: how far off, box line, final score, what went wrong, what we expected, takeaway."""
+    out, need = [], (f"{leg['line'] + 0.5:g}+" if leg["side"] == "over" else f"{leg['line'] - 0.5:g} or fewer")
     if actual is not None:
-        close = abs(actual - leg["line"]) <= 1
-        out.append(("Missed by one." if close else "") if known else
-                   f"Finished with {actual:g}" + (", missing by one." if close else "."))
+        off = (leg["line"] + 0.5 - actual) if leg["side"] == "over" else (actual - (leg["line"] - 0.5))
+        out.append(f"Needed {need}, got {actual:g}" + (" (missed by one)." if off <= 1 else f" (missed by {off:g})."))
+    if box:
+        out.append(f"Box: {box}" + ("" if box.endswith(".") else "."))
+    if score:
+        out.append(score)
     if why:
         s = "; ".join(why)
-        out.append(s[0].upper() + s[1:] + ".")
-    elif actual is not None and nba_box:
-        out.append("Nothing unusual in the box score: normal minutes and role, just an off night." if leg["side"] == "over"
-                   else "Nothing unusual in the box score: normal minutes and role, he just had a bigger night.")
+        out.append("What went wrong: " + s[0].lower() + s[1:] + ".")
+    exp = expected(leg)
+    if exp:
+        out.append(exp)
+    if not why:
+        p = leg.get("p")
+        if nba_box and actual is not None:
+            out.append("Takeaway: normal minutes and role, nothing we missed, just an off night." if leg["side"] == "over"
+                       else "Takeaway: normal minutes and role, nothing we missed, he just had a bigger night.")
+        else:
+            out.append("Takeaway: no red flag in the box score, this one was variance." +
+                       (f" A {p * 100:.0f}% pick still loses about {100 - p * 100:.0f} times in 100."
+                        if isinstance(p, (int, float)) else ""))
+    else:
+        out.append("Takeaway: his role or minutes changed during the game, which no pregame number showed. "
+                   "The pregame check re-confirms role and lineup before every pick." if any("bench" in w or "minutes" in w for w in why)
+                   else "Takeaway: game flow went against us, not a bad read on the player.")
     return " ".join(x for x in out if x) or None
 
 
@@ -123,7 +181,7 @@ def explain(leg, league="nba"):
     """Short reason a leg lost, or None. leg needs player, stat, side, line, game, start (+ actual if known)."""
     if not leg.get("game") or not leg.get("start") or league not in ESPN:
         return None
-    key = f"{league}|{leg['player']}|{leg['stat']}|{leg['side']}|{leg['line']}|{leg['start'][:10]}"
+    key = f"v2|{league}|{leg['player']}|{leg['stat']}|{leg['side']}|{leg['line']}|{leg['start'][:10]}"
     try:
         cache = json.load(open(CACHE))
     except (OSError, ValueError):
@@ -138,7 +196,12 @@ def explain(leg, league="nba"):
         if s["header"]["competitions"][0]["status"]["type"].get("completed") is not True:
             return None
         actual = leg.get("actual") if isinstance(leg.get("actual"), (int, float)) else None
-        text = nba(leg, s, actual) if league == "nba" else finish(leg, actual, [], known=actual is not None, nba_box=False)
+        if league == "nba":
+            text = nba(leg, s, actual)
+        else:
+            line, team, _ = box_line(s, leg["player"])
+            why = [] if line or leg["side"] != "over" else ["he didn't record a stat line (scratched or left early)"]
+            text = finish(leg, actual, why, nba_box=False, box=line, score=final_score(s))
     except Exception:
         return None
     cache[key] = text
