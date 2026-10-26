@@ -1932,25 +1932,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 14:00 PT",
-  "props_today": 1328,
+  "props_today": 1329,
   "kalshi_props_today": 580,
   "kalshi_priced_today": 44,
   "books_on_kalshi_props": {
-   "AN Consensus": 573,
+   "AN Consensus": 575,
    "AN Open": 575,
-   "BetMGM": 431,
+   "BetMGM": 427,
    "BetRivers": 400,
-   "Caesars": 475,
+   "Caesars": 476,
    "DraftKings": 476,
    "FanDuel": 454,
-   "Fanatics": 438,
+   "Fanatics": 439,
    "Hard Rock Bet": 19,
    "Parx": 441,
-   "Pinnacle": 350,
-   "Sleeper": 532,
+   "Pinnacle": 375,
+   "Sleeper": 535,
    "Underdog": 580,
    "Unibet": 94,
-   "bet365": 568
+   "bet365": 567
   },
   "data_files": [
    "mlb.sqlite",
@@ -1958,7 +1958,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -8060,9 +8060,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:30:00Z",
-   "p": 0.507,
+   "p": 0.508,
    "price": 0.46,
-   "edge": 0.03,
+   "edge": 0.031,
    "news": "BOS has allowed starting forwards 2% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -8240,9 +8240,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.646,
+   "p": 0.645,
    "price": 0.5,
-   "edge": 0.129,
+   "edge": 0.128,
    "news": "Moses Moody is out: Brandin Podziemski hit the under in 17/27 games without him vs 3/13 with him; DEN has allowed starting guards 3% more assists than average (likely on him: Jamal Murray, Christian Braun).",
    "result": null
   },
@@ -8375,9 +8375,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.571,
+   "p": 0.564,
    "price": 0.49,
-   "edge": 0.064,
+   "edge": 0.057,
    "news": "DEN has allowed starting forwards 13% more points than average (likely on him: Aaron Gordon, Zeke Nnaji).",
    "result": null
   },
@@ -8390,9 +8390,9 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.587,
+   "p": 0.589,
    "price": 0.53,
-   "edge": 0.04,
+   "edge": 0.042,
    "news": "CLE has allowed starting guards 0% fewer points than average (likely on him: Donovan Mitchell, Peyton Watson).",
    "result": null
   },
@@ -8435,9 +8435,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.552,
+   "p": 0.551,
    "price": 0.5,
-   "edge": 0.035,
+   "edge": 0.034,
    "news": "OKC has allowed starting guards 0% fewer points than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Kenrich Williams can switch onto him (OKC allowed guards 10% fewer points with him playing; he plays tonight); Jaylin Williams can switch onto him (OKC allowed guards 9% fewer points with him playing; he plays tonight).",
    "result": null
   },
