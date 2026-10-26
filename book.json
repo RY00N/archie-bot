@@ -1965,25 +1965,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 14:00 PT",
-  "props_today": 1347,
-  "kalshi_props_today": 581,
-  "kalshi_priced_today": 45,
+  "props_today": 1363,
+  "kalshi_props_today": 583,
+  "kalshi_priced_today": 46,
   "books_on_kalshi_props": {
-   "AN Consensus": 573,
-   "AN Open": 576,
-   "BetMGM": 430,
-   "BetRivers": 401,
-   "Caesars": 475,
-   "DraftKings": 478,
-   "FanDuel": 453,
+   "AN Consensus": 575,
+   "AN Open": 577,
+   "BetMGM": 432,
+   "BetRivers": 403,
+   "Caesars": 437,
+   "DraftKings": 481,
+   "FanDuel": 455,
    "Fanatics": 440,
    "Hard Rock Bet": 19,
-   "Parx": 442,
-   "Pinnacle": 376,
-   "Sleeper": 522,
-   "Underdog": 581,
+   "Parx": 444,
+   "Pinnacle": 378,
+   "Sleeper": 534,
+   "Underdog": 583,
    "Unibet": 93,
-   "bet365": 569
+   "bet365": 568
   },
   "data_files": [
    "mlb.sqlite",
@@ -1991,7 +1991,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -8093,9 +8093,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-10-27T00:30:00Z",
-   "p": 0.406,
+   "p": 0.407,
    "price": 0.35,
-   "edge": 0.04,
+   "edge": 0.041,
    "news": "ATL has allowed bench forwards 9% fewer threes than average (likely on him: Corey Kispert, Zuby Ejiofor); Mouhamed Gueye can switch onto him (ATL allowed forwards 14% fewer threes with him playing; he is out tonight); Corey Kispert can switch onto him (ATL allowed forwards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -8108,9 +8108,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:30:00Z",
-   "p": 0.607,
+   "p": 0.609,
    "price": 0.46,
-   "edge": 0.13,
+   "edge": 0.132,
    "news": "Patrick Williams is out: Jalen Smith hit the over in 9/10 games without him vs 7/15 with him; BOS has allowed starting forwards 2% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -8348,9 +8348,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.567,
+   "p": 0.568,
    "price": 0.46,
-   "edge": 0.09,
+   "edge": 0.091,
    "news": "Nikola Topic is out: Jared McCain hit the under in 23/30 games without him vs 3/7 with him; Cason Wallace is out: Jared McCain hit the under in 13/20 games without him vs 16/20 with him; Jalen Williams is out: Jared McCain hit the under in 21/29 games without him vs 7/10 with him; PHX has allowed bench guards 1% fewer assists than average (likely on him: Collin Gillespie, Jordan Goodwin).",
    "result": null
   },
@@ -8363,9 +8363,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.599,
+   "p": 0.598,
    "price": 0.51,
-   "edge": 0.072,
+   "edge": 0.071,
    "news": "OKC has allowed bench guards 26% fewer assists than average (likely on him: Ajay Mitchell, Alex Caruso); Jaylin Williams can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Cason Wallace can switch onto him (OKC allowed guards 13% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -8408,9 +8408,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-10-26T23:30:00Z",
-   "p": 0.505,
+   "p": 0.506,
    "price": 0.44,
-   "edge": 0.048,
+   "edge": 0.049,
    "news": "News: Dusty May explains Mavericks\u2019 decision to rest Kyrie Irving in team\u2019s home opener - The New York Times MIA has allowed starting guards 11% more pra than average (likely on him: Davion Mitchell, Pelle Larsson).",
    "result": null
   },
@@ -8498,9 +8498,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.551,
+   "p": 0.552,
    "price": 0.5,
-   "edge": 0.034,
+   "edge": 0.035,
    "news": "OKC has allowed starting guards 0% fewer points than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Kenrich Williams can switch onto him (OKC allowed guards 10% fewer points with him playing; he plays tonight); Jaylin Williams can switch onto him (OKC allowed guards 9% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -8588,9 +8588,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.505,
+   "p": 0.506,
    "price": 0.44,
-   "edge": 0.048,
+   "edge": 0.049,
    "news": "MEM has allowed starting forwards 13% more rebounds than average (likely on him: Cameron Boozer, Cedric Coward).",
    "result": null
   },
