@@ -1870,15 +1870,15 @@
   "kalshi_props_today": 536,
   "kalshi_priced_today": 38,
   "books_on_kalshi_props": {
-   "AN Consensus": 528,
+   "AN Consensus": 529,
    "AN Open": 529,
    "BetMGM": 356,
    "BetRivers": 400,
-   "Caesars": 453,
+   "Caesars": 454,
    "DraftKings": 443,
    "FanDuel": 443,
-   "Fanatics": 415,
-   "Hard Rock Bet": 18,
+   "Fanatics": 418,
+   "Hard Rock Bet": 19,
    "Parx": 431,
    "Pinnacle": 310,
    "Sleeper": 503,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -8024,9 +8024,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.752,
+   "p": 0.753,
    "price": 0.61,
-   "edge": 0.125,
+   "edge": 0.126,
    "news": "Moses Moody is out: Brandin Podziemski hit the over in 20/27 games without him vs 7/13 with him.",
    "result": null
   },
@@ -8084,9 +8084,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.439,
+   "p": 0.441,
    "price": 0.38,
-   "edge": 0.043,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8189,9 +8189,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.482,
+   "p": 0.485,
    "price": 0.41,
-   "edge": 0.055,
+   "edge": 0.058,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8369,9 +8369,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-27T00:15:00Z",
-   "p": 0.561,
+   "p": 0.56,
    "price": 0.49,
-   "edge": 0.054,
+   "edge": 0.053,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
