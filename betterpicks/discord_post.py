@@ -101,6 +101,15 @@ def record_line():
     return rec_text(rec)
 
 
+def game_day(l):
+    """The leg's game date in Pacific time (YYYY-MM-DD), from its UTC start."""
+    try:
+        t = datetime.fromisoformat(l["start"].replace("Z", "+00:00"))
+    except Exception:
+        return None
+    return t.astimezone(timezone(timedelta(hours=-7 if 3 <= t.month <= 10 else -8))).date().isoformat()
+
+
 def embed_parlay(e):
     """One clean card per pick (Ryan 2026-10-22: posts were scuffed): each leg says what to tap on Kalshi,
     the price, our win chance and edge, why we like it, and a tap-to-open link."""
@@ -120,8 +129,12 @@ def embed_parlay(e):
         fields.append({"name": leg_label(l)[:256], "value": val[:1024]})
     first = next((kalshi_url(l.get("ticker")) for l in e["legs"] if l.get("ticker")), None)
     title = leg_label(e["legs"][0]) if e.get("lock") or len(e["legs"]) == 1 else f"{len(e['legs'])}-leg combo"
+    # Ryan 2026-10-26: say so on the card when the pick's game isn't on the day it's posted under
+    other = sorted({d for d in (game_day(l) for l in e["legs"]) if d and d != e["date"]})
+    when = "".join(f"\U0001F4C5 **For {datetime.fromisoformat(d).strftime('%a, %b %-d')}** (not today's games)\n"
+                   for d in other)
     return {"title": title[:256], **({"url": first} if first else {}),
-            "description": f"${e['stake']:.0f} · {pay} · {e['win_p']:.0%} to hit",
+            "description": when + f"${e['stake']:.0f} · {pay} · {e['win_p']:.0%} to hit",
             "color": 0x00B37E, "fields": fields[:25], "footer": {"text": record_line()}}
 
 
@@ -199,6 +212,7 @@ def win_slip(v, sent, dry=False):
 # (65%+ win chance on every leg) posted once 3 days have passed since the last free pick is copied to the free channel,
 # and its HIT/LOST result goes there too.
 FREE_CH = os.environ.get("BP_FREE_CHANNEL_ID", "1563073629799981076")
+RESULTS_CH = os.environ.get("BP_RESULTS_CHANNEL_ID", "1564169511291068546")   # WINS/LOSSES, above WINNERS
 PURCHASE_CH = os.environ.get("BP_PURCHASE_CHANNEL_ID", "1509754956666634382")
 FREE_EVERY, FREE_MIN_P = 3, 0.65
 
@@ -285,7 +299,9 @@ def today(dry=False):
         return
     if not new:
         print("nothing new to post"); return
-    head = [] if all(isinstance(t, dict) and t.get("lock") for _, t in new) else [f"**BetterPicks {datetime.fromisoformat(day).strftime('%A, %b %-d')}**"]
+    # Ryan 2026-10-26: the day's date in bold goes up once, before that day's first pick
+    head_key = f"dayhead:{day}"
+    head = [] if head_key in sent else [f"**{datetime.fromisoformat(day).strftime('%A, %b %-d')}**"]
     msgs = head + [t for _, t in new]
     for m in msgs:
         if isinstance(m, dict):   # a parlay: Kalshi ones get the link embed, others plain text
@@ -298,7 +314,7 @@ def today(dry=False):
         else:
             print(m, "\n") if dry else send(m)
     if not dry:
-        json.dump(sorted(sent | {k for k, _ in new}), open(SENT, "w"), indent=1)
+        json.dump(sorted(sent | {k for k, _ in new} | {head_key}), open(SENT, "w"), indent=1)
         print("posted", len(new))
 
 
@@ -406,9 +422,8 @@ def verdicts(dry=False):
         head, emb = verdict_post(v, doc.get("record"))
         if dry:
             print(head, json.dumps(emb, indent=1), "\n"); win_slip(v, sent, dry=True); continue
-        send(head, [emb])
-        if f"free:{v['key']}" in sent:   # the free lock's result goes to the free channel too
-            send(head, [emb], channel=FREE_CH)
+        send(head, [emb], channel=RESULTS_CH)   # Ryan 2026-10-26: HIT/LOST go to WINS/LOSSES, not PICKS
+        if f"free:{v['key']}" in sent:   # Ryan 2026-10-26: results only in WINS/LOSSES, never in the free channel
             cur = load(FREE_FILE, {})
             if cur.get("key") == v["key"]:
                 cur["result"] = v.get("status"); json.dump(cur, open(FREE_FILE, "w"), indent=1)

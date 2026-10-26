@@ -460,7 +460,9 @@ def build():
     legs = [l for l in legs if (l["prop"]["player"].lower(), l["prop"]["stat"]) not in ban]
     min_win, mode = r.get("parlay_min_win_p", 0.65), r.get("parlay_mode", "whole")
     under_p = r.get("under_min_p", 0.0)   # Ryan 2026-10-21: unders need more margin
-    leg_ok = lambda l, bar: l["p"] >= (max(bar, under_p) if l["side"] == "under" else bar)
+    # Ryan 2026-10-26: lean YES (people can combo them); a NO only goes out when it's a genuine lock
+    no_p, no_edge = r.get("no_lock_min_p", 0.0), r.get("no_lock_min_edge", 0.0)
+    leg_ok = lambda l, bar: (l["p"] >= max(bar, under_p, no_p) and l["edge"] >= no_edge) if l["side"] == "under" else l["p"] >= bar
     combo_bar = r.get("combo_min_leg_p", min_win)
     ok = (lambda c: math.prod(l["p"] for l in c) >= min_win) if mode == "whole" else (lambda c: all(leg_ok(l, combo_bar) for l in c))
     # still-open picks from earlier days count too: a postponed game's pick carries over, never re-posted (Ryan 2026-10-19)
@@ -528,7 +530,8 @@ def build():
     if now_pt.hour >= r.get("daily_pick_after_pt", 12) and not any(e["date"] == today for e in book["parlays"] + entries):
         pool = sorted([l for l in collect_legs(props, now, apps=("Kalshi",), min_edge=0.0)
                        if datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == today
-                       and (l["prop"]["player"], l["prop"]["stat"]) not in used], key=lambda l: -l["p"])[:15]
+                       and (l["prop"]["player"], l["prop"]["stat"]) not in used
+                       and (l["side"] != "under" or (l["p"] >= no_p and l["edge"] >= no_edge))], key=lambda l: -l["p"])[:15]
         cands = []
         for size in range(1, max_legs + 1):
             for c in combinations(pool, size):

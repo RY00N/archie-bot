@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Keep BetterPicks' Discord bot showing as online (green dot + "Watching for locks").
+"""Keep BetterPicks' Discord bot showing as online (green dot + "📡Scanning for locks...").
 
 Discord only shows a bot online while it holds a gateway connection, so this runs
 forever on the server. Standard library only (no pip). Needs DISCORD_BOT_TOKEN.
@@ -12,7 +12,7 @@ back as replies.
 import base64, hashlib, json, os, random, re, socket, ssl, struct, sys, threading, time, urllib.error, urllib.request
 
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN") or sys.exit("DISCORD_BOT_TOKEN not set")
-STATUS = os.environ.get("BETTERBOT_STATUS", "for locks")
+STATUS = os.environ.get("BETTERBOT_STATUS", "📡Scanning for locks...")   # Ryan 2026-10-26
 UA = "BetterPicks (1.0)"
 API = "https://discord.com/api/v10"
 FEED_URL = "https://raw.githubusercontent.com/RY00N/archie-bot/claude/project-thread-8sdhk6/betterpicks/books_feed.json"
@@ -322,6 +322,17 @@ def winners_filter(d):
         print("WINNERS delete failed:", e, flush=True)
 OG_ROLE, OG_MAX = os.environ.get("BP_OG_ROLE_ID", "1563068490162642974"), 15
 OG_GIVEN = os.path.join(WORK, "og_given.json")
+# Ryan 2026-10-26 07:11Z: "5 more then stop the giveaway". The cap is fixed the first time this code runs:
+# whatever was given by then + 5, saved so restarts don't move it.
+OG_CAP = os.path.join(WORK, "og_cap.json")
+
+
+def og_max():
+    cap = load(OG_CAP, None)
+    if not cap:
+        cap = {"max": len(load(OG_GIVEN, [])) + 5, "set": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+        save(OG_CAP, cap)
+    return cap["max"]
 
 
 def og_on_join(d):
@@ -332,17 +343,68 @@ def og_on_join(d):
         return
     with state_lock:
         given = load(OG_GIVEN, [])
-        if len(given) >= OG_MAX or u["id"] in given:
+        if len(given) >= og_max() or u["id"] in given:
             return
         given.append(u["id"]); save(OG_GIVEN, given)
     try:
         http("PUT", f"{API}/guilds/{d['guild_id']}/members/{u['id']}/roles/{OG_ROLE}", {})
-        print(f"OG Premium {len(given)}/{OG_MAX}:", u.get("username"), flush=True)
+        print(f"OG Premium {len(given)}/{og_max()}:", u.get("username"), flush=True)
     except Exception as e:
         print("OG role failed:", e, flush=True)
         with state_lock:
             save(OG_GIVEN, [x for x in load(OG_GIVEN, []) if x != u["id"]])
-    STATUS_INFO["og_given"] = len(load(OG_GIVEN, []))
+    STATUS_INFO["og_given"] = len(load(OG_GIVEN, [])); STATUS_INFO["og_max"] = og_max()
+
+
+# Ryan 2026-10-26: people joining through a special invite link get a role (old-server members -> OG Premium, free).
+# Discord doesn't say which invite someone used, so we keep each invite's use count and see which one went up.
+INVITE_ROLES = {"857TCcDMj": OG_ROLE}   # invite code -> role id ("BetterPicks (old)" members, free OG Premium)
+INVITE_USES, invite_lock = {}, threading.Lock()
+
+
+def invite_snapshot():
+    return {i["code"]: i.get("uses", 0) for i in http("GET", f"{API}/guilds/{GUILD}/invites")}
+
+
+def invite_role_on_join(d):
+    """True when the member came in through one of INVITE_ROLES (then the OG giveaway leaves them alone)."""
+    u = d.get("user") or {}
+    if u.get("bot") or not INVITE_ROLES:
+        return False
+    with invite_lock:
+        before = dict(INVITE_USES)
+        try:
+            now = invite_snapshot()
+        except Exception as e:
+            print("invite check failed:", e, flush=True)
+            return False
+        INVITE_USES.clear(); INVITE_USES.update(now)
+        STATUS_INFO["invite_roles"] = {c: now.get(c) for c in INVITE_ROLES}
+    # a single-use invite disappears once used, so a vanished code counts as the one used
+    used = [c for c in INVITE_ROLES if c in before and now.get(c, before[c] + 1) > before[c]]
+    if not used:
+        return False
+    try:
+        http("PUT", f"{API}/guilds/{d['guild_id']}/members/{u['id']}/roles/{INVITE_ROLES[used[0]]}", {})
+        print(f"invite {used[0]} role given:", u.get("username"), flush=True)
+    except Exception as e:
+        print("invite role failed:", e, flush=True)
+    return True
+
+
+def on_join(d):
+    if not invite_role_on_join(d):
+        og_on_join(d)
+
+
+def invite_prime():
+    STATUS_INFO["og_given"] = len(load(OG_GIVEN, [])); STATUS_INFO["og_max"] = og_max()   # fixes the cap on first run
+    with invite_lock:
+        try:
+            INVITE_USES.update(invite_snapshot())
+            STATUS_INFO["invite_roles"] = {c: INVITE_USES.get(c) for c in INVITE_ROLES}
+        except Exception as e:
+            print("invite snapshot failed:", e, flush=True)
 
 
 GUILD = os.environ.get("BP_GUILD_ID", "1509315900874948729")
@@ -551,8 +613,88 @@ def purchase_ping(d):
         print("purchase ping failed:", e, flush=True)
 
 
+# Ryan 2026-10-26: Sapphire-style welcome. Each new member gets a branded card (round avatar, name, member number)
+# in WELCOME inside an embed with link buttons. The card is drawn by betterpicks/welcome_card.py.
+WELCOME_CH = os.environ.get("BP_WELCOME_CHANNEL_ID", "1509317341996126319")
+FREEPICKS_CH, SUPPORT_CH, PURCHASE_CH_W = "1563073629799981076", "1509712100161884200", "1509754956666634382"
+WHOP_URL = "https://whop.com/betterpicks-vip/"
+
+
+def post_with_file(channel, payload, png, filename):
+    boundary = "bp" + hashlib.md5(png[:64] + str(time.time()).encode()).hexdigest()
+    body = (f"--{boundary}\r\nContent-Disposition: form-data; name=\"payload_json\"\r\n"
+            f"Content-Type: application/json\r\n\r\n{json.dumps(payload)}\r\n"
+            f"--{boundary}\r\nContent-Disposition: form-data; name=\"files[0]\"; filename=\"{filename}\"\r\n"
+            f"Content-Type: image/png\r\n\r\n").encode() + png + f"\r\n--{boundary}--\r\n".encode()
+    req = urllib.request.Request(f"{API}/channels/{channel}/messages", data=body, method="POST", headers={
+        "User-Agent": UA, "Authorization": f"Bot {TOKEN}", "Content-Type": f"multipart/form-data; boundary={boundary}"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read())
+
+
+def welcome(d, channel=WELCOME_CH, note=""):
+    u = d.get("user") or {}
+    if u.get("bot"):
+        return
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "betterpicks"))
+        import welcome_card
+        name = d.get("nick") or u.get("global_name") or u.get("username") or "friend"
+        av = None
+        url = (f"https://cdn.discordapp.com/avatars/{u['id']}/{u['avatar']}.png?size=256" if u.get("avatar")
+               else f"https://cdn.discordapp.com/embed/avatars/{(int(u['id']) >> 22) % 6}.png")
+        try:
+            av = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=15).read()
+        except Exception:
+            pass
+        try:   # exact live human count (Ryan 2026-10-26: leavers must come off the count)
+            num = human_count()
+        except Exception:
+            num = http("GET", f"{API}/guilds/{GUILD}?with_counts=true").get("approximate_member_count") or 0
+        png = welcome_card.render(name, av, num)
+        payload = {
+            "content": note + f"<@{u['id']}>", "allowed_mentions": {"users": [u["id"]]},
+            "embeds": [{"color": 0x111111, "title": "Welcome to BetterPicks.ai \U0001F512",
+                        "description": f"Hey <@{u['id']}>, glad you're here!\n\n"
+                                       f"\U0001F3AF Free picks drop in <#{FREEPICKS_CH}>\n"
+                                       f"\U0001F48E Premium gets every lock & you can grab it in <#{PURCHASE_CH_W}>\n"
+                                       f"\U0001F6E0 Questions? Hit <#{SUPPORT_CH}>",
+                        "image": {"url": "attachment://welcome.png"},
+                        "footer": {"text": f"Member #{num}"}}],
+            "components": [{"type": 1, "components": [
+                {"type": 2, "style": 5, "label": "Get Premium", "url": WHOP_URL, "emoji": {"name": "\U0001F48E"}},
+                {"type": 2, "style": 5, "label": "Free Picks", "url": f"https://discord.com/channels/{GUILD}/{FREEPICKS_CH}"},
+                {"type": 2, "style": 5, "label": "Support", "url": f"https://discord.com/channels/{GUILD}/{SUPPORT_CH}"}]}]}
+        post_with_file(channel, payload, png, "welcome.png")
+    except Exception as e:
+        print("welcome failed:", e, flush=True)
+
+
 STATUS_INFO = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "reconnects": 0}
 READY_SEEN = [False]
+
+
+TICKET_TALK = 1024 | 2048 | 16384 | 32768 | 65536   # view, send, embed links, attach files, read history
+
+
+def ticket_loop():
+    """Ryan 2026-10-26: whoever opens a ticket must be able to talk in it. Every minute, each ticket channel's
+    member overwrites (the opener, added by Ticket Tool) get view/send/embed/attach/history if any are missing."""
+    while True:
+        time.sleep(60)
+        try:
+            for c in http("GET", f"{API}/guilds/{GUILD}/channels"):
+                if c.get("type") != 0 or "ticket" not in c.get("name", "").lower():
+                    continue
+                for o in c.get("permission_overwrites", []):
+                    allow, deny = int(o["allow"]), int(o["deny"])
+                    if o["type"] != 1 or (allow & TICKET_TALK == TICKET_TALK and not deny & TICKET_TALK):
+                        continue
+                    http("PUT", f"{API}/channels/{c['id']}/permissions/{o['id']}",
+                         {"type": 1, "allow": str(allow | TICKET_TALK), "deny": str(deny & ~TICKET_TALK)})
+                    print("ticket: let", o["id"], "talk in", c["name"], flush=True)
+        except Exception as e:
+            print("ticket check failed:", e, flush=True)
 
 
 def free_file_loop():
@@ -719,7 +861,7 @@ def run_once():
         "token": TOKEN, "intents": INTENTS[0],   # see INTENT_LEVELS
         "properties": {"os": "linux", "browser": "betterpicks", "device": "betterpicks"},
         "presence": {"status": "online", "afk": False, "since": None,
-                     "activities": [{"name": STATUS, "type": 3}]}}})   # type 3 = "Watching ..."
+                     "activities": [{"name": "Custom Status", "state": STATUS, "type": 4}]}}})   # type 4 = custom status, shown as-is
     try:
         while True:
             m = ws.recv()
@@ -729,6 +871,7 @@ def run_once():
             if m.get("s") is not None:
                 seq[0] = m["s"]
             if m.get("t") == "READY":
+                threading.Thread(target=invite_prime, daemon=True).start()
                 print("online as", m["d"]["user"]["username"], flush=True)
                 STATUS_INFO["online_since"] = STATUS_INFO["last_event"]; READY_SEEN[0] = True
                 for cmd in ({"name": "pnl", "description": "BetterPicks record and recent results", "type": 1},
@@ -746,7 +889,8 @@ def run_once():
                 MEMBERS_CHANGED.set()
             if m.get("t") == "GUILD_MEMBER_ADD":
                 threading.Thread(target=purchase_ping, args=(m["d"],), daemon=True).start()
-                threading.Thread(target=og_on_join, args=(m["d"],), daemon=True).start()
+                threading.Thread(target=on_join, args=(m["d"],), daemon=True).start()
+                threading.Thread(target=welcome, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "verify":
                 threading.Thread(target=verify_safe, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "bp":
@@ -783,6 +927,7 @@ if __name__ == "__main__":
     threading.Thread(target=answers_loop, daemon=True).start()
     threading.Thread(target=counters_loop, daemon=True).start()
     threading.Thread(target=whop_loop, daemon=True).start()
+    threading.Thread(target=ticket_loop, daemon=True).start()
     if GH_TOKEN:
         threading.Thread(target=status_loop, daemon=True).start()
         threading.Thread(target=free_file_loop, daemon=True).start()
