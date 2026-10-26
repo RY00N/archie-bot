@@ -28,4 +28,4 @@ systemctl daemon-reload
 sudo -u archie env $(cat /etc/betterbot.env /etc/invite-dm.env | xargs) python3 -I /home/archie/invite-dm/invite_dm.py --dry-run | head -3
 systemctl enable -q --now invite-dm
 sleep 5 && journalctl -u invite-dm --no-pager -n 5
-echo "Done. One DM every 2-3 min, 8am-10pm Pacific."
+echo "Done. One DM about every 90 seconds, any hour."

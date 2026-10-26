@@ -5,7 +5,7 @@ DMs every human member of the old server "BetterPicks (old)" one at a time, slow
 throwaway invite bot (INVITE_BOT_TOKEN), never from BetterBot. Members already in the new server are
 skipped (read with BetterBot's DISCORD_BOT_TOKEN, read only).
 
-- One DM every 2-3 minutes (random), only 8am-10pm Pacific.
+- One DM about every 90 seconds (75-105 random), any hour (Ryan 2026-10-26).
 - sent.json keeps who got it (or can't get DMs) so a restart resumes where it left off.
 - Stops for good on a rate limit (429), 40003 (opening DMs too fast), 40002/401 (bot flagged or token
   dead) or any other Discord error, and writes the reason to STOPPED. Delete STOPPED to let it run again.
@@ -22,8 +22,7 @@ OLD_GUILD = os.environ.get("OLD_GUILD_ID", "1044695203908431882")
 NEW_GUILD = os.environ.get("BP_GUILD_ID", "1509315900874948729")
 WORK = os.environ.get("INVITE_WORK", "/home/archie/invite-dm")
 LINK = os.environ.get("INVITE_LINK", "https://discord.gg/857TCcDMj")
-GAP = (120, 180)
-HOURS = (8, 22)   # Pacific, so nobody's phone buzzes at night
+GAP = (75, 105)
 PT = ZoneInfo("America/Los_Angeles")
 TEXT = ("Hey! \U0001F44B Thanks for being part of the old BetterPicks server. We just launched a brand new "
         "BetterPicks server with daily picks, live injury and lineup updates, and win slips. As a thank-you to "
@@ -134,12 +133,8 @@ def main():
     last_push = 0
     try:
         for u in todo:
-            while True:
-                if os.path.exists(path("STOP")):
-                    raise Stop("paused by hand (STOP file)")
-                if HOURS[0] <= datetime.now(PT).hour < HOURS[1]:
-                    break
-                time.sleep(300)
+            if os.path.exists(path("STOP")):
+                raise Stop("paused by hand (STOP file)")
             res = dm(u["id"], tok)
             sent[u["id"]] = res; save("sent.json", sent)
             status["sent" if res == "sent" else "dms_closed"] += 1; status["left"] -= 1
