@@ -1932,7 +1932,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 13:00 PT",
-  "props_today": 1325,
+  "props_today": 1322,
   "kalshi_props_today": 540,
   "kalshi_priced_today": 36,
   "books_on_kalshi_props": {
@@ -1958,7 +1958,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 14
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -8391,8 +8391,8 @@
    "line": 19.5,
    "start": "2026-10-26T23:00:00Z",
    "p": 0.589,
-   "price": 0.53,
-   "edge": 0.042,
+   "price": 0.52,
+   "edge": 0.052,
    "news": "CLE has allowed starting guards 0% fewer points than average (likely on him: Donovan Mitchell, Peyton Watson).",
    "result": null
   },
@@ -8526,8 +8526,8 @@
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
    "p": 0.509,
-   "price": 0.44,
-   "edge": 0.052,
+   "price": 0.45,
+   "edge": 0.042,
    "news": "MEM has allowed starting forwards 13% more rebounds than average (likely on him: Cameron Boozer, Cedric Coward).",
    "result": null
   },
