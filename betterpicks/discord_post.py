@@ -332,11 +332,11 @@ def verdict_post(v, rec):
     head = f"{MARK[v['status']]} **{word}: BetterPicks {v['app']} {name} ({day})**, {money}"
     fields = []
     for l in v["legs"]:
-        got = f"finished with {l['actual']:g}" if isinstance(l.get("actual"), (int, float)) else (
-            "no result (voided)" if l.get("result") == "void" else "")
+        got = f"**Finished with {l['actual']:g}**" if isinstance(l.get("actual"), (int, float)) else (
+            "no result (voided)" if l.get("result") == "void" else "")   # Ryan 2026-10-26: every pick shows it
         why = f"\nWhy it lost: {l['why_lost']}" if l.get("why_lost") else ""   # Ryan 2026-10-24
         fields.append({"name": f"{MARK.get(l.get('result'), '')} {leg_label(l)}"[:256],
-                       "value": (f"{l['game']}" + (f", {got}" if got else "") + why)[:1024]})
+                       "value": (f"{l['game']}" + (f"\n{got}" if got else "") + why)[:1024]})
     foot = rec_text(rec or {})
     color = {"won": 0x00B37E, "lost": 0xE5484D, "void": 0x8B8D98}[v["status"]]
     return head, {"title": f"Verdict: {word}", "color": color, "fields": fields[:25], "footer": {"text": foot}}
