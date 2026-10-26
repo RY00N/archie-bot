@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Keep BetterPicks' Discord bot showing as online (green dot + "📡Scanning for lock...").
+"""Keep BetterPicks' Discord bot showing as online (green dot + "📡Scanning for locks...").
 
 Discord only shows a bot online while it holds a gateway connection, so this runs
 forever on the server. Standard library only (no pip). Needs DISCORD_BOT_TOKEN.
@@ -12,7 +12,7 @@ back as replies.
 import base64, hashlib, json, os, random, re, socket, ssl, struct, sys, threading, time, urllib.error, urllib.request
 
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN") or sys.exit("DISCORD_BOT_TOKEN not set")
-STATUS = os.environ.get("BETTERBOT_STATUS", "📡Scanning for lock...")   # Ryan 2026-10-26
+STATUS = os.environ.get("BETTERBOT_STATUS", "📡Scanning for locks...")   # Ryan 2026-10-26
 UA = "BetterPicks (1.0)"
 API = "https://discord.com/api/v10"
 FEED_URL = "https://raw.githubusercontent.com/RY00N/archie-bot/claude/project-thread-8sdhk6/betterpicks/books_feed.json"
