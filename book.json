@@ -1965,12 +1965,12 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 15:00 PT",
-  "props_today": 1387,
-  "kalshi_props_today": 593,
+  "props_today": 1389,
+  "kalshi_props_today": 595,
   "kalshi_priced_today": 46,
   "books_on_kalshi_props": {
-   "AN Consensus": 585,
-   "AN Open": 587,
+   "AN Consensus": 587,
+   "AN Open": 589,
    "BetMGM": 440,
    "BetRivers": 408,
    "Caesars": 480,
@@ -1981,9 +1981,9 @@
    "Parx": 450,
    "Pinnacle": 382,
    "Sleeper": 536,
-   "Underdog": 593,
+   "Underdog": 595,
    "Unibet": 101,
-   "bet365": 587
+   "bet365": 589
   },
   "data_files": [
    "mlb.sqlite",
@@ -1991,7 +1991,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -8574,8 +8574,8 @@
    "line": 24.5,
    "start": "2026-10-26T23:00:00Z",
    "p": 0.628,
-   "price": 0.51,
-   "edge": 0.101,
+   "price": 0.52,
+   "edge": 0.091,
    "news": "Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him; WSH has allowed starting forwards 5% more points than average (likely on him: Anthony Gill, Anthony Davis); Alex Sarr can switch onto him (WSH allowed forwards 8% fewer points with him playing; he plays tonight).",
    "result": null
   },
