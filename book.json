@@ -1927,30 +1927,63 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-26",
+   "app": "Kalshi",
+   "type": "1-leg lock: Jalen Smith over 1.5 threes",
+   "stake": 5.0,
+   "payout_x": 2.17,
+   "win_p": 0.607,
+   "ev_pct": 32.0,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Jalen Smith",
+     "team": "CHI",
+     "stat": "threes",
+     "side": "over",
+     "line": 1.5,
+     "price": 0.46,
+     "ticker": "KXNBA3PT-26OCT26CHIBOS-CHIJSMITH25-2",
+     "game": "CHI @ BOS",
+     "start": "2026-10-26T23:30:00Z",
+     "p": 0.607,
+     "edge": 0.13,
+     "news": "Patrick Williams is out: Jalen Smith hit the over in 9/10 games without him vs 7/15 with him; BOS has allowed starting forwards 2% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 10% fewer threes with him playing; he plays tonight).",
+     "ctx_dp": 0.097,
+     "why": "Jalen Smith over 1.5 threes: 8 books price it 45%; hit 83% of last 12 (avg 1.9); 1/1 over vs BOS, avg 2.0. In games vs BOS: 0.8 avg over 16 games, 51% of that rotation is still there, so the matchup counts as 20% over 1.5. Fair 61%.",
+     "case": "Last 5 games: 2, 2, 0, 3, 2 (4 of 5 over 1.5). In games vs BOS: 0.8 avg over 16 games, 51% of that rotation is still there, so the matchup counts as 20% over 1.5.",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 14:00 PT",
-  "props_today": 1340,
-  "kalshi_props_today": 582,
-  "kalshi_priced_today": 46,
+  "props_today": 1347,
+  "kalshi_props_today": 581,
+  "kalshi_priced_today": 45,
   "books_on_kalshi_props": {
-   "AN Consensus": 574,
-   "AN Open": 577,
-   "BetMGM": 431,
+   "AN Consensus": 573,
+   "AN Open": 576,
+   "BetMGM": 430,
    "BetRivers": 401,
-   "Caesars": 476,
-   "DraftKings": 479,
-   "FanDuel": 454,
-   "Fanatics": 441,
+   "Caesars": 475,
+   "DraftKings": 478,
+   "FanDuel": 453,
+   "Fanatics": 440,
    "Hard Rock Bet": 19,
    "Parx": 442,
-   "Pinnacle": 375,
-   "Sleeper": 515,
-   "Underdog": 582,
-   "Unibet": 97,
-   "bet365": 570
+   "Pinnacle": 376,
+   "Sleeper": 522,
+   "Underdog": 581,
+   "Unibet": 93,
+   "bet365": 569
   },
   "data_files": [
    "mlb.sqlite",
@@ -8075,10 +8108,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:30:00Z",
-   "p": 0.507,
+   "p": 0.607,
    "price": 0.46,
-   "edge": 0.03,
-   "news": "BOS has allowed starting forwards 2% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 10% fewer threes with him playing; he plays tonight).",
+   "edge": 0.13,
+   "news": "Patrick Williams is out: Jalen Smith hit the over in 9/10 games without him vs 7/15 with him; BOS has allowed starting forwards 2% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -8364,6 +8397,21 @@
    "price": 0.46,
    "edge": 0.071,
    "news": "Injury report: Day-To-Day: Flagg (shoulder) was spotted going through Monday's morning shootaround, Grant Afseth of DallasHoopsJournal.com reports. Caleb Martin is out: Cooper Flagg hit the over in 11/21 games without him vs 6/19 with him; Naji Marshall is out: Cooper Flagg hit the over in 15/29 games without him vs 2/11 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBAPRA-26OCT26DALMIA-DALKIRVING11-30",
+   "league": "nba",
+   "player": "Kyrie Irving",
+   "stat": "pra",
+   "side": "over",
+   "line": 29.5,
+   "start": "2026-10-26T23:30:00Z",
+   "p": 0.505,
+   "price": 0.44,
+   "edge": 0.048,
+   "news": "News: Dusty May explains Mavericks\u2019 decision to rest Kyrie Irving in team\u2019s home opener - The New York Times MIA has allowed starting guards 11% more pra than average (likely on him: Davion Mitchell, Pelle Larsson).",
    "result": null
   },
   {
