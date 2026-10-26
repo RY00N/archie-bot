@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Keep BetterPicks' Discord bot showing as online (green dot + "Watching for locks").
+"""Keep BetterPicks' Discord bot showing as online (green dot + "📡Scanning for lock...").
 
 Discord only shows a bot online while it holds a gateway connection, so this runs
 forever on the server. Standard library only (no pip). Needs DISCORD_BOT_TOKEN.
@@ -12,7 +12,7 @@ back as replies.
 import base64, hashlib, json, os, random, re, socket, ssl, struct, sys, threading, time, urllib.error, urllib.request
 
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN") or sys.exit("DISCORD_BOT_TOKEN not set")
-STATUS = os.environ.get("BETTERBOT_STATUS", "for locks")
+STATUS = os.environ.get("BETTERBOT_STATUS", "📡Scanning for lock...")   # Ryan 2026-10-26
 UA = "BetterPicks (1.0)"
 API = "https://discord.com/api/v10"
 FEED_URL = "https://raw.githubusercontent.com/RY00N/archie-bot/claude/project-thread-8sdhk6/betterpicks/books_feed.json"
@@ -769,7 +769,7 @@ def run_once():
         "token": TOKEN, "intents": INTENTS[0],   # see INTENT_LEVELS
         "properties": {"os": "linux", "browser": "betterpicks", "device": "betterpicks"},
         "presence": {"status": "online", "afk": False, "since": None,
-                     "activities": [{"name": STATUS, "type": 3}]}}})   # type 3 = "Watching ..."
+                     "activities": [{"name": "Custom Status", "state": STATUS, "type": 4}]}}})   # type 4 = custom status, shown as-is
     try:
         while True:
             m = ws.recv()
