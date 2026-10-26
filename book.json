@@ -8002,6 +8002,21 @@
   },
   {
    "date": "2026-10-26",
+   "ticker": "KXNBA3PT-26OCT26MEMUTA-UTADPETERSON22-2",
+   "league": "nba",
+   "player": "Darryn Peterson",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-10-27T01:00:00Z",
+   "p": 0.714,
+   "price": 0.65,
+   "edge": 0.048,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
    "ticker": "KXNBA3PT-26OCT26MEMUTA-UTAKGEORGE3-3",
    "league": "nba",
    "player": "Keyonte George",
@@ -8027,7 +8042,7 @@
    "p": 0.722,
    "price": 0.57,
    "edge": 0.135,
-   "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 7/8 games without him vs 16/32 with him.",
+   "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 8/9 games without him vs 16/31 with him.",
    "result": null
   },
   {
@@ -8099,9 +8114,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.526,
+   "p": 0.527,
    "price": 0.46,
-   "edge": 0.049,
+   "edge": 0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8114,9 +8129,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.484,
+   "p": 0.485,
    "price": 0.41,
-   "edge": 0.057,
+   "edge": 0.058,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8159,9 +8174,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.554,
+   "p": 0.555,
    "price": 0.5,
-   "edge": 0.037,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8280,8 +8295,8 @@
    "line": 11.5,
    "start": "2026-10-26T23:00:00Z",
    "p": 0.495,
-   "price": 0.41,
-   "edge": 0.068,
+   "price": 0.4,
+   "edge": 0.078,
    "news": "AJ Dybantsa (F) is out, so Anthony Davis's role likely grows.",
    "result": null
   },
