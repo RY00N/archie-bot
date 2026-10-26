@@ -660,6 +660,29 @@ STATUS_INFO = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "r
 READY_SEEN = [False]
 
 
+TICKET_TALK = 1024 | 2048 | 16384 | 32768 | 65536   # view, send, embed links, attach files, read history
+
+
+def ticket_loop():
+    """Ryan 2026-10-26: whoever opens a ticket must be able to talk in it. Every minute, each ticket channel's
+    member overwrites (the opener, added by Ticket Tool) get view/send/embed/attach/history if any are missing."""
+    while True:
+        time.sleep(60)
+        try:
+            for c in http("GET", f"{API}/guilds/{GUILD}/channels"):
+                if c.get("type") != 0 or "ticket" not in c.get("name", "").lower():
+                    continue
+                for o in c.get("permission_overwrites", []):
+                    allow, deny = int(o["allow"]), int(o["deny"])
+                    if o["type"] != 1 or (allow & TICKET_TALK == TICKET_TALK and not deny & TICKET_TALK):
+                        continue
+                    http("PUT", f"{API}/channels/{c['id']}/permissions/{o['id']}",
+                         {"type": 1, "allow": str(allow | TICKET_TALK), "deny": str(deny & ~TICKET_TALK)})
+                    print("ticket: let", o["id"], "talk in", c["name"], flush=True)
+        except Exception as e:
+            print("ticket check failed:", e, flush=True)
+
+
 def free_file_loop():
     """Every 2 min, push the day's free pick (written by discord_post.py) to free_pick_today.json on the ask
     branch, so the social thread can put it in the morning Reel (Ryan 2026-10-23)."""
@@ -890,6 +913,7 @@ if __name__ == "__main__":
     threading.Thread(target=answers_loop, daemon=True).start()
     threading.Thread(target=counters_loop, daemon=True).start()
     threading.Thread(target=whop_loop, daemon=True).start()
+    threading.Thread(target=ticket_loop, daemon=True).start()
     if GH_TOKEN:
         threading.Thread(target=status_loop, daemon=True).start()
         threading.Thread(target=free_file_loop, daemon=True).start()
