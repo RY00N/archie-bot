@@ -1881,7 +1881,7 @@
    "Hard Rock Bet": 16,
    "Parx": 97,
    "Pinnacle": 56,
-   "Sleeper": 394,
+   "Sleeper": 395,
    "Underdog": 438,
    "Unibet": 19,
    "bet365": 164
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -7953,6 +7953,21 @@
    "price": 0.47,
    "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBA3PT-26OCT26MINCLE-MINAEDWARDS5-4",
+   "league": "nba",
+   "player": "Anthony Edwards",
+   "stat": "threes",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-10-26T23:00:00Z",
+   "p": 0.722,
+   "price": 0.57,
+   "edge": 0.135,
+   "news": "Donte DiVincenzo is out: Anthony Edwards hit the under in 7/8 games without him vs 16/32 with him.",
    "result": null
   },
   {
