@@ -7938,6 +7938,21 @@
    "edge": 0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBAPTS-26OCT26WASCHA-WASBCOULIBALY0-10",
+   "league": "nba",
+   "player": "Bilal Coulibaly",
+   "stat": "points",
+   "side": "over",
+   "line": 9.5,
+   "start": "2026-10-26T23:00:00Z",
+   "p": 0.572,
+   "price": 0.52,
+   "edge": 0.035,
+   "news": "Jamir Watkins is out: Bilal Coulibaly hit the over in 9/13 games without him vs 14/19 with him.",
+   "result": null
   }
  ]
 }
