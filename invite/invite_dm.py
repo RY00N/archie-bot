@@ -10,15 +10,17 @@ skipped (read with BetterBot's DISCORD_BOT_TOKEN, read only).
 - Stops for good on a rate limit (429), 40003 (opening DMs too fast), 40002/401 (bot flagged or token
   dead) or any other Discord error, and writes the reason to STOPPED. Delete STOPPED to let it run again.
 - Touch STOP in the work folder to pause it by hand.
+- Most active members go first (activity(), from the old server's Dyno log).
 - Pushes counts only (no user ids) to the invite-dm-status branch every 30 min when GITHUB_TOKEN is set.
 Standard library only.  Usage: invite_dm.py [--dry-run]
 """
-import json, os, random, subprocess, sys, time, urllib.error, urllib.request
+import json, os, random, re, subprocess, sys, time, urllib.error, urllib.request
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
 API = "https://discord.com/api/v10"
 OLD_GUILD = os.environ.get("OLD_GUILD_ID", "1044695203908431882")
+DYNO_LOGS = os.environ.get("OLD_LOG_CHANNEL", "1044703060900986880")   # the old chat channels are gone; Dyno logs are what is left
 NEW_GUILD = os.environ.get("BP_GUILD_ID", "1509315900874948729")
 WORK = os.environ.get("INVITE_WORK", "/home/archie/invite-dm")
 LINK = os.environ.get("INVITE_LINK", "https://discord.gg/857TCcDMj")
@@ -83,6 +85,34 @@ def members(guild, token):
         time.sleep(1)
 
 
+def activity(token):
+    """Ryan 2026-10-26: most active first. Score per user from the old server's Dyno log: past Premium (x5),
+    messages edited/deleted (x2), any other role given (x1). Read once, cached in activity.json."""
+    score = load("activity.json", None)
+    if score is not None:
+        return score
+    score, before = {}, ""
+    while True:
+        st, b = call("GET", f"/channels/{DYNO_LOGS}/messages?limit=100{before}", token)
+        if st == 429:
+            time.sleep(float((b or {}).get("retry_after", 5)) + 1); continue
+        if st != 200 or not b:
+            break
+        for m in b:
+            for e in m.get("embeds", []):
+                d = e.get("description") or ""
+                f = re.search(r"ID: (\d+)", (e.get("footer") or {}).get("text", ""))
+                u = f.group(1) if f else (re.search(r"<@!?(\d+)>", d) or [None, None])[1]
+                w = 5 if "was given the `Premium" in d else 2 if "Message" in d[:20] else 1 if "was given the" in d else 0
+                if u and w:
+                    score[u] = score.get(u, 0) + w
+        before = "&before=" + b[-1]["id"]
+        time.sleep(1.2)
+    save("activity.json", score)
+    log("activity scores for", len(score), "users")
+    return score
+
+
 def dm(uid, token):
     """'sent', 'closed' (DMs off, blocked us, or left the old server since the list was read) or raises Stop."""
     st, ch = call("POST", "/users/@me/channels", token, {"recipient_id": uid})
@@ -125,6 +155,8 @@ def main():
     except Exception as e:
         log("couldn't read new server members, not skipping any:", e); already = set()
     todo = [u for u in old if u["id"] not in sent and u["id"] not in already]
+    score = activity(tok)
+    todo.sort(key=lambda u: -score.get(u["id"], 0))   # stable: everyone else keeps the old order
     status = {"old_members": len(old), "already_in_new": len([u for u in old if u["id"] in already]),
               "sent": sum(v == "sent" for v in sent.values()), "dms_closed": sum(v == "closed" for v in sent.values()),
               "left": len(todo), "stopped": None}
