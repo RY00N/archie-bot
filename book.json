@@ -1872,18 +1872,18 @@
   "books_on_kalshi_props": {
    "AN Consensus": 527,
    "AN Open": 528,
-   "BetMGM": 267,
+   "BetMGM": 296,
    "BetRivers": 104,
    "Caesars": 444,
    "DraftKings": 439,
    "FanDuel": 439,
-   "Fanatics": 387,
+   "Fanatics": 392,
    "Hard Rock Bet": 18,
    "Parx": 133,
    "Pinnacle": 56,
    "Sleeper": 493,
    "Underdog": 534,
-   "Unibet": 23,
+   "Unibet": 24,
    "bet365": 528
   },
   "data_files": [
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -8069,9 +8069,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.627,
+   "p": 0.63,
    "price": 0.55,
-   "edge": 0.06,
+   "edge": 0.063,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8100,8 +8100,8 @@
    "line": 1.5,
    "start": "2026-10-26T23:00:00Z",
    "p": 0.482,
-   "price": 0.42,
-   "edge": 0.045,
+   "price": 0.41,
+   "edge": 0.055,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
