@@ -438,6 +438,9 @@ def build():
     slate = now_pt.date().isoformat()
     book.setdefault("parlays", [])
     legs = collect_legs(props, now, apps=apps)
+    # Ryan's banned player/stat pairs (rules.json "banned"), never picked in any form
+    ban = {(b["player"].lower(), st) for b in r.get("banned", []) for st in b.get("stats", [])}
+    legs = [l for l in legs if (l["prop"]["player"].lower(), l["prop"]["stat"]) not in ban]
     min_win, mode = r.get("parlay_min_win_p", 0.65), r.get("parlay_mode", "whole")
     under_p = r.get("under_min_p", 0.0)   # Ryan 2026-10-21: unders need more margin
     leg_ok = lambda l, bar: l["p"] >= (max(bar, under_p) if l["side"] == "under" else bar)

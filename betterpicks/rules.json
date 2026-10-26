@@ -54,5 +54,17 @@
   "under_min_p": 0.65,
   "loss_min_note": "Ryan 2026-10-21 05:52Z ('whatever minimizes losses'): singles first (1-leg locks at 60%+ with 5%+ edge after Kalshi's fee, max_locks_per_day), combos max 2 legs with every leg 65%+ (combo_min_leg_p), every under needs 65%+ (under_min_p). Since Oct 13 singles were 3-0 +$17.80, combos 1-7 -$24.60. Daily pick of the day unchanged. Judge rule changes on 30+ graded shadow legs.",
   "free_every_days": 1,
-  "free_every_note": "Ryan 2026-10-23: free pick every day starting Oct 24 until membership grows, then back to every 3 days when he says"
+  "free_every_note": "Ryan 2026-10-23: free pick every day starting Oct 24 until membership grows, then back to every 3 days when he says",
+  "banned": [
+    {
+      "player": "Scottie Barnes",
+      "stats": [
+        "points",
+        "pra",
+        "pr",
+        "pa"
+      ]
+    }
+  ],
+  "banned_note": "Ryan 2026-10-26 01:06Z: ban Scottie Barnes for points (never a lock or any pick again; includes points combos PRA/PR/PA). Add players here the same way."
 }
