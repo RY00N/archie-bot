@@ -1873,7 +1873,7 @@
    "AN Consensus": 528,
    "AN Open": 528,
    "BetMGM": 296,
-   "BetRivers": 186,
+   "BetRivers": 187,
    "Caesars": 448,
    "DraftKings": 439,
    "FanDuel": 439,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -8099,9 +8099,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.485,
-   "price": 0.4,
-   "edge": 0.068,
+   "p": 0.483,
+   "price": 0.41,
+   "edge": 0.056,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8144,9 +8144,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.553,
+   "p": 0.554,
    "price": 0.5,
-   "edge": 0.036,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8159,9 +8159,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.632,
+   "p": 0.631,
    "price": 0.52,
-   "edge": 0.095,
+   "edge": 0.094,
    "news": "News: Hornets have HISTORIC Loss | Brandon Miller STRUGGLES | Should We PANIC? - kcentv.com Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him.",
    "result": null
   },
@@ -8249,10 +8249,25 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.608,
-   "price": 0.56,
-   "edge": 0.031,
+   "p": 0.607,
+   "price": 0.55,
+   "edge": 0.04,
    "news": "News: Hornets have HISTORIC Loss | Brandon Miller STRUGGLES | Should We PANIC? - kcentv.com",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBAREB-26OCT26WASCHA-WASADAVIS23-12",
+   "league": "nba",
+   "player": "Anthony Davis",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 11.5,
+   "start": "2026-10-26T23:00:00Z",
+   "p": 0.495,
+   "price": 0.42,
+   "edge": 0.058,
+   "news": "AJ Dybantsa (F) is out, so Anthony Davis's role likely grows.",
    "result": null
   },
   {
