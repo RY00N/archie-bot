@@ -1965,7 +1965,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 16:00 PT",
-  "props_today": 941,
+  "props_today": 940,
   "kalshi_props_today": 406,
   "kalshi_priced_today": 39,
   "books_on_kalshi_props": {
@@ -1980,7 +1980,7 @@
    "Hard Rock Bet": 26,
    "Parx": 291,
    "Pinnacle": 239,
-   "Sleeper": 363,
+   "Sleeper": 362,
    "Underdog": 406,
    "Unibet": 62,
    "bet365": 399
@@ -1991,7 +1991,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 11
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -8236,6 +8236,21 @@
   },
   {
    "date": "2026-10-26",
+   "ticker": "KXNBA3PT-26OCT26INDMIL-MILTHERRO11-3",
+   "league": "nba",
+   "player": "Tyler Herro",
+   "stat": "threes",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-10-27T00:00:00Z",
+   "p": 0.613,
+   "price": 0.55,
+   "edge": 0.046,
+   "news": "IND has allowed starting guards 9% more threes than average (likely on him: Tyrese Haliburton, Kobe Brown).",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
    "ticker": "KXNBA3PT-26OCT26MEMUTA-UTADPETERSON22-2",
    "league": "nba",
    "player": "Darryn Peterson",
@@ -8454,8 +8469,8 @@
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
    "p": 0.598,
-   "price": 0.5,
-   "edge": 0.08,
+   "price": 0.51,
+   "edge": 0.071,
    "news": "OKC has allowed bench guards 26% fewer assists than average (likely on him: Ajay Mitchell, Alex Caruso); Jaylin Williams can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Cason Wallace can switch onto him (OKC allowed guards 13% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -8709,8 +8724,8 @@
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
    "p": 0.507,
-   "price": 0.45,
-   "edge": 0.04,
+   "price": 0.44,
+   "edge": 0.05,
    "news": "MEM has allowed starting forwards 13% more rebounds than average (likely on him: Cameron Boozer, Cedric Coward).",
    "result": null
   },
