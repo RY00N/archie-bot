@@ -1877,14 +1877,14 @@
    "Caesars": 406,
    "DraftKings": 391,
    "FanDuel": 434,
-   "Fanatics": 363,
+   "Fanatics": 367,
    "Hard Rock Bet": 16,
    "Parx": 98,
    "Pinnacle": 56,
    "Sleeper": 472,
    "Underdog": 503,
    "Unibet": 19,
-   "bet365": 430
+   "bet365": 441
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
