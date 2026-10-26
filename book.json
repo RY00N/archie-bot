@@ -1934,22 +1934,22 @@
   "props_at": "2026-10-26 14:00 PT",
   "props_today": 1329,
   "kalshi_props_today": 580,
-  "kalshi_priced_today": 45,
+  "kalshi_priced_today": 46,
   "books_on_kalshi_props": {
-   "AN Consensus": 574,
+   "AN Consensus": 575,
    "AN Open": 575,
    "BetMGM": 431,
    "BetRivers": 400,
-   "Caesars": 477,
+   "Caesars": 476,
    "DraftKings": 476,
    "FanDuel": 454,
    "Fanatics": 439,
    "Hard Rock Bet": 19,
-   "Parx": 440,
+   "Parx": 441,
    "Pinnacle": 375,
    "Sleeper": 535,
    "Underdog": 580,
-   "Unibet": 94,
+   "Unibet": 96,
    "bet365": 568
   },
   "data_files": [
@@ -1958,7 +1958,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -8030,9 +8030,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.494,
-   "price": 0.42,
-   "edge": 0.057,
+   "p": 0.493,
+   "price": 0.43,
+   "edge": 0.046,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8045,9 +8045,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-27T00:30:00Z",
-   "p": 0.569,
+   "p": 0.568,
    "price": 0.52,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "HOU has allowed starting guards 7% more threes than average (likely on him: Amen Thompson, Fred VanVleet); Jae'Sean Tate can switch onto him (HOU allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -8315,9 +8315,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.566,
-   "price": 0.46,
-   "edge": 0.089,
+   "p": 0.567,
+   "price": 0.47,
+   "edge": 0.08,
    "news": "Nikola Topic is out: Jared McCain hit the under in 23/30 games without him vs 3/7 with him; Cason Wallace is out: Jared McCain hit the under in 13/20 games without him vs 16/20 with him; Jalen Williams is out: Jared McCain hit the under in 21/29 games without him vs 7/10 with him; PHX has allowed bench guards 1% fewer assists than average (likely on him: Collin Gillespie, Jordan Goodwin).",
    "result": null
   },
@@ -8330,9 +8330,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.6,
+   "p": 0.598,
    "price": 0.51,
-   "edge": 0.073,
+   "edge": 0.071,
    "news": "OKC has allowed bench guards 26% fewer assists than average (likely on him: Ajay Mitchell, Alex Caruso); Jaylin Williams can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Cason Wallace can switch onto him (OKC allowed guards 13% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -8405,9 +8405,9 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.584,
+   "p": 0.583,
    "price": 0.52,
-   "edge": 0.047,
+   "edge": 0.046,
    "news": "CLE has allowed starting guards 0% fewer points than average (likely on him: Donovan Mitchell, Peyton Watson).",
    "result": null
   },
@@ -8465,9 +8465,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.633,
+   "p": 0.631,
    "price": 0.51,
-   "edge": 0.106,
+   "edge": 0.104,
    "news": "News: Hornets have HISTORIC Loss | Brandon Miller STRUGGLES | Should We PANIC? - kcentv.com Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him; WSH has allowed starting forwards 5% more points than average (likely on him: Anthony Gill, Anthony Davis); Alex Sarr can switch onto him (WSH allowed forwards 8% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -8540,9 +8540,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.504,
+   "p": 0.505,
    "price": 0.45,
-   "edge": 0.037,
+   "edge": 0.038,
    "news": "MEM has allowed starting forwards 13% more rebounds than average (likely on him: Cameron Boozer, Cedric Coward).",
    "result": null
   },
