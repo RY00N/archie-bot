@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 02:00 PT",
-  "props_today": 1193,
+  "props_today": 1192,
   "kalshi_props_today": 496,
   "kalshi_priced_today": 26,
   "books_on_kalshi_props": {
@@ -1874,7 +1874,7 @@
    "AN Open": 481,
    "BetMGM": 78,
    "BetRivers": 68,
-   "Caesars": 379,
+   "Caesars": 380,
    "DraftKings": 362,
    "FanDuel": 431,
    "Fanatics": 363,
@@ -1884,7 +1884,7 @@
    "Sleeper": 467,
    "Underdog": 496,
    "Unibet": 19,
-   "bet365": 360
+   "bet365": 376
   },
   "data_files": [
    "mlb.sqlite",
@@ -7979,9 +7979,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.471,
+   "p": 0.47,
    "price": 0.41,
-   "edge": 0.044,
+   "edge": 0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8114,9 +8114,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.546,
+   "p": 0.542,
    "price": 0.48,
-   "edge": 0.049,
+   "edge": 0.045,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
