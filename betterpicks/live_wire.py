@@ -247,6 +247,16 @@ def check_prices(st, new):
         if not now:
             continue
         ref = last.get(tk, leg["price"])
+        started = leg.get("start") and time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()) >= leg["start"]
+        if started:   # in-game prices swing every possession: only say when it's nearly decided either way
+            band = "hit" if now >= 0.95 else ("gone" if now <= 0.15 else "")
+            if band and last.get(tk + ":band") != band:
+                last[tk + ":band"] = band
+                new.append({"league": leg.get("league"), "kind": "price move", "player": leg["player"],
+                            "text": f"Open pick {leg['player']} {leg.get('side')} {leg.get('line')} {leg.get('stat')}: "
+                                    + (f"Kalshi at {now:.2f}, basically cashed" if band == "hit"
+                                       else f"Kalshi down to {now:.2f}, in trouble")})
+            continue
         if abs(now - ref) >= PRICE_MOVE:
             last[tk] = now
             way = "up" if now > ref else "down"
