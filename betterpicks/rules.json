@@ -1,70 +1,73 @@
 {
-  "leagues": [
-    "nfl",
-    "ncaaf",
-    "nba",
-    "mlb"
-  ],
-  "bankroll": 1000,
-  "unit": 5,
-  "min_edge": 0.05,
-  "big_edge": 0.1,
-  "max_picks_per_day": 2,
-  "max_dog_odds": 250,
-  "max_fav_odds": -300,
-  "hours_ahead": 36,
-  "skip_preseason": true,
-  "parlay_min_win_p": 0.6,
-  "parlay_mode": "leg",
-  "parlay_rule_note": "Ryan 2026-10-13 20:10Z: every leg (player prop) must be 55%+ on its own (mode 'leg'), each leg still +EV vs Kalshi's price. Was whole-parlay >= 55% (2026-10-12).",
-  "kalshi_combo_markup": 1.079,
-  "prizepicks_power_payouts": {
-    "2": 3.0,
-    "3": 6.0,
-    "4": 10.0
-  },
-  "payout_note": "Kalshi markup calibrated from Ryan's real slip 2026-10-07 (46/49/58% -> 7.09x). PrizePicks payouts unconfirmed until Ryan sends an in-app screenshot.",
-  "singles_note": "Ryan 2026-10-12: fewer singles (max 2/day), and only when a sportsbook moneyline beats the de-vigged Pinnacle line by >= sharp_min_ev (3%); 2u at sharp_big_ev (6%). ESPN win model no longer used to pick.",
-  "sharp_min_ev": 0.03,
-  "sharp_big_ev": 0.06,
-  "apps": [
-    "Kalshi"
-  ],
-  "max_legs": 2,
-  "max_parlays_per_day": 3,
-  "post_window_pt": [
-    6,
-    12
-  ],
-  "lock_single_edge": 0.05,
-  "lock_single_min_p": 0.6,
-  "max_locks_per_day": 3,
-  "kalshi_only_note": "Ryan 2026-10-12 06:25Z: stick to Kalshi for now (no PrizePicks or sportsbook singles); parlays max 3 legs (1-2 ok); max 3 parlays per day posted whenever found (no time window since 2026-10-14); a can't-pass-up single leg (edge >= lock_single_edge, fair >= lock_single_min_p) goes out any time as a 1-leg lock and doesn't count toward the 3 (max_locks_per_day).",
-  "parlay_stake": 5.0,
-  "same_day_parlays": true,
-  "stake_note": "Ryan 2026-10-12 06:49Z: 1 unit = $5, every parlay/lock is exactly $5 (min and max). Every game in a parlay must be played the same day (PT). Parlays must be good: winning % first. Practice only; Claude does not place real bets.",
-  "daily_pick_min_p": 0.4,
-  "daily_pick_note": "Ryan 2026-10-13 18:04Z: at least one 1-3 leg Kalshi pick every day. If noon PT passes with nothing for today, post the best combo left in today's games (best expected return with >= daily_pick_min_p win chance), even under parlay_min_win_p. Extras still need the normal bar. Every leg shows our edge % in Discord.",
-  "sports_note": "Ryan 2026-10-13 20:00Z: only baseball, basketball, football, soccer. UFC only when the pick is a near-certainty by the stats AND what people are saying online (no UFC props are scanned today). NHL never.",
-  "news_note": "Ryan 2026-10-13 20:00Z: every leg is checked against ESPN injury reports and the last 3 days of news (news.py): Out/IL/suspended = dropped; questionable or bad news (illness, personal/family matter, divorce, slump) = overs lose 5-8 win-chance points. Note shows in Discord.",
-  "post_window_note": "Ryan 2026-10-14 01:08Z: no posting cutoff, picks post whenever found (any hour). post_window_pt now only sets the 8am/10am 'nothing yet' notes and when the bad-day note may go (after noon, only if no Kalshi games left today).",
-  "daily_pick_after_pt": 12,
-  "parlay_min_win_p_note": "Ryan 2026-10-19 02:47Z: each leg 60%+ after the injury/matchup check (final call; 57% was live for a minute).",
-  "combo_min_leg_p": 0.65,
-  "under_min_p": 0.65,
-  "loss_min_note": "Ryan 2026-10-21 05:52Z ('whatever minimizes losses'): singles first (1-leg locks at 60%+ with 5%+ edge after Kalshi's fee, max_locks_per_day), combos max 2 legs with every leg 65%+ (combo_min_leg_p), every under needs 65%+ (under_min_p). Since Oct 13 singles were 3-0 +$17.80, combos 1-7 -$24.60. Daily pick of the day unchanged. Judge rule changes on 30+ graded shadow legs.",
-  "free_every_days": 1,
-  "free_every_note": "Ryan 2026-10-23: free pick every day starting Oct 24 until membership grows, then back to every 3 days when he says",
-  "banned": [
-    {
-      "player": "Scottie Barnes",
-      "stats": [
-        "points",
-        "pra",
-        "pr",
-        "pa"
-      ]
-    }
-  ],
-  "banned_note": "Ryan 2026-10-26 01:06Z: ban Scottie Barnes for points (never a lock or any pick again; includes points combos PRA/PR/PA). Add players here the same way."
+ "leagues": [
+  "nfl",
+  "ncaaf",
+  "nba",
+  "mlb"
+ ],
+ "bankroll": 1000,
+ "unit": 5,
+ "min_edge": 0.05,
+ "big_edge": 0.1,
+ "max_picks_per_day": 2,
+ "max_dog_odds": 250,
+ "max_fav_odds": -300,
+ "hours_ahead": 36,
+ "skip_preseason": true,
+ "parlay_min_win_p": 0.6,
+ "parlay_mode": "leg",
+ "parlay_rule_note": "Ryan 2026-10-13 20:10Z: every leg (player prop) must be 55%+ on its own (mode 'leg'), each leg still +EV vs Kalshi's price. Was whole-parlay >= 55% (2026-10-12).",
+ "kalshi_combo_markup": 1.079,
+ "prizepicks_power_payouts": {
+  "2": 3.0,
+  "3": 6.0,
+  "4": 10.0
+ },
+ "payout_note": "Kalshi markup calibrated from Ryan's real slip 2026-10-07 (46/49/58% -> 7.09x). PrizePicks payouts unconfirmed until Ryan sends an in-app screenshot.",
+ "singles_note": "Ryan 2026-10-12: fewer singles (max 2/day), and only when a sportsbook moneyline beats the de-vigged Pinnacle line by >= sharp_min_ev (3%); 2u at sharp_big_ev (6%). ESPN win model no longer used to pick.",
+ "sharp_min_ev": 0.03,
+ "sharp_big_ev": 0.06,
+ "apps": [
+  "Kalshi"
+ ],
+ "max_legs": 2,
+ "max_parlays_per_day": 3,
+ "post_window_pt": [
+  6,
+  12
+ ],
+ "lock_single_edge": 0.05,
+ "lock_single_min_p": 0.6,
+ "max_locks_per_day": 3,
+ "kalshi_only_note": "Ryan 2026-10-12 06:25Z: stick to Kalshi for now (no PrizePicks or sportsbook singles); parlays max 3 legs (1-2 ok); max 3 parlays per day posted whenever found (no time window since 2026-10-14); a can't-pass-up single leg (edge >= lock_single_edge, fair >= lock_single_min_p) goes out any time as a 1-leg lock and doesn't count toward the 3 (max_locks_per_day).",
+ "parlay_stake": 5.0,
+ "same_day_parlays": true,
+ "stake_note": "Ryan 2026-10-12 06:49Z: 1 unit = $5, every parlay/lock is exactly $5 (min and max). Every game in a parlay must be played the same day (PT). Parlays must be good: winning % first. Practice only; Claude does not place real bets.",
+ "daily_pick_min_p": 0.4,
+ "daily_pick_note": "Ryan 2026-10-13 18:04Z: at least one 1-3 leg Kalshi pick every day. If noon PT passes with nothing for today, post the best combo left in today's games (best expected return with >= daily_pick_min_p win chance), even under parlay_min_win_p. Extras still need the normal bar. Every leg shows our edge % in Discord.",
+ "sports_note": "Ryan 2026-10-13 20:00Z: only baseball, basketball, football, soccer. UFC only when the pick is a near-certainty by the stats AND what people are saying online (no UFC props are scanned today). NHL never.",
+ "news_note": "Ryan 2026-10-13 20:00Z: every leg is checked against ESPN injury reports and the last 3 days of news (news.py): Out/IL/suspended = dropped; questionable or bad news (illness, personal/family matter, divorce, slump) = overs lose 5-8 win-chance points. Note shows in Discord.",
+ "post_window_note": "Ryan 2026-10-14 01:08Z: no posting cutoff, picks post whenever found (any hour). post_window_pt now only sets the 8am/10am 'nothing yet' notes and when the bad-day note may go (after noon, only if no Kalshi games left today).",
+ "daily_pick_after_pt": 12,
+ "parlay_min_win_p_note": "Ryan 2026-10-19 02:47Z: each leg 60%+ after the injury/matchup check (final call; 57% was live for a minute).",
+ "combo_min_leg_p": 0.65,
+ "under_min_p": 0.65,
+ "loss_min_note": "Ryan 2026-10-21 05:52Z ('whatever minimizes losses'): singles first (1-leg locks at 60%+ with 5%+ edge after Kalshi's fee, max_locks_per_day), combos max 2 legs with every leg 65%+ (combo_min_leg_p), every under needs 65%+ (under_min_p). Since Oct 13 singles were 3-0 +$17.80, combos 1-7 -$24.60. Daily pick of the day unchanged. Judge rule changes on 30+ graded shadow legs.",
+ "free_every_days": 1,
+ "free_every_note": "Ryan 2026-10-23: free pick every day starting Oct 24 until membership grows, then back to every 3 days when he says",
+ "banned": [
+  {
+   "player": "Scottie Barnes",
+   "stats": [
+    "points",
+    "pra",
+    "pr",
+    "pa"
+   ]
+  }
+ ],
+ "banned_note": "Ryan 2026-10-26 01:06Z: ban Scottie Barnes for points (never a lock or any pick again; includes points combos PRA/PR/PA). Add players here the same way.",
+ "no_lock_min_p": 0.72,
+ "no_lock_min_edge": 0.08,
+ "no_lock_note": "Ryan 2026-10-26 07:09Z: steer away from NO player props unless it's a GENUINE LOCK; go for YES because people can combo them. A NO (under) needs 72%+ win chance and 8%+ edge for any pick (locks and pick of the day); combos stay YES-only."
 }
