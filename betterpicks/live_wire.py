@@ -108,6 +108,10 @@ def check_report(league, st, new, mine):
         was = old.get(name)
         if was == v["status"] or v["status"].lower() == "active" and was is None:
             continue
+        # ESPN resets last night's Out players to Day-To-Day each morning while the note still says "out for
+        # <yesterday>": not news unless it's on one of our open picks
+        if (was or "").lower() == "out" and v["status"].lower() == "day-to-day" and name.lower() not in mine:
+            continue
         what = f"{v['status']}" + (f" (was {was})" if was else " (new on report)")
         new.append({"league": league, "kind": "injury report", "player": name, "team": v["team"],
                     "text": f"{name} ({v['team']}): {what}" + (f". {v['detail']}" if v["detail"] else "")})
