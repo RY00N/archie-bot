@@ -1867,24 +1867,24 @@
  "diag": {
   "props_at": "2026-10-26 02:00 PT",
   "props_today": 1192,
-  "kalshi_props_today": 496,
+  "kalshi_props_today": 497,
   "kalshi_priced_today": 26,
   "books_on_kalshi_props": {
-   "AN Consensus": 481,
-   "AN Open": 481,
+   "AN Consensus": 483,
+   "AN Open": 483,
    "BetMGM": 78,
    "BetRivers": 68,
-   "Caesars": 380,
-   "DraftKings": 362,
+   "Caesars": 383,
+   "DraftKings": 368,
    "FanDuel": 431,
    "Fanatics": 363,
    "Hard Rock Bet": 16,
    "Parx": 98,
    "Pinnacle": 56,
-   "Sleeper": 467,
-   "Underdog": 496,
+   "Sleeper": 468,
+   "Underdog": 497,
    "Unibet": 19,
-   "bet365": 376
+   "bet365": 399
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 7
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
@@ -8002,6 +8002,21 @@
   },
   {
    "date": "2026-10-26",
+   "ticker": "KXNBAAST-26OCT26GSWDEN-GSWBPODZIEMSKI2-4",
+   "league": "nba",
+   "player": "Brandin Podziemski",
+   "stat": "assists",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-10-27T02:00:00Z",
+   "p": 0.679,
+   "price": 0.53,
+   "edge": 0.132,
+   "news": "Moses Moody is out: Brandin Podziemski hit the under in 17/27 games without him vs 3/13 with him.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
    "ticker": "KXNBAAST-26OCT26MINCLE-MINLBALL1-8",
    "league": "nba",
    "player": "LaMelo Ball",
@@ -8010,8 +8025,8 @@
    "line": 7.5,
    "start": "2026-10-26T23:00:00Z",
    "p": 0.632,
-   "price": 0.56,
-   "edge": 0.055,
+   "price": 0.55,
+   "edge": 0.065,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8027,6 +8042,21 @@
    "p": 0.529,
    "price": 0.47,
    "edge": 0.042,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBABLK-26OCT26MINCLE-CLEEMOBLEY4-2",
+   "league": "nba",
+   "player": "Evan Mobley",
+   "stat": "blocks",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-26T23:00:00Z",
+   "p": 0.486,
+   "price": 0.41,
+   "edge": 0.059,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
