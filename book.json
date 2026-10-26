@@ -1898,21 +1898,21 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-26 11:00 PT",
+  "props_at": "2026-10-26 12:00 PT",
   "props_today": 1289,
   "kalshi_props_today": 525,
-  "kalshi_priced_today": 39,
+  "kalshi_priced_today": 38,
   "books_on_kalshi_props": {
    "AN Consensus": 517,
    "AN Open": 520,
-   "BetMGM": 393,
+   "BetMGM": 390,
    "BetRivers": 384,
    "Caesars": 445,
    "DraftKings": 442,
    "FanDuel": 436,
-   "Fanatics": 407,
+   "Fanatics": 409,
    "Hard Rock Bet": 19,
-   "Parx": 411,
+   "Parx": 412,
    "Pinnacle": 338,
    "Sleeper": 476,
    "Underdog": 525,
@@ -1925,7 +1925,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -7967,9 +7967,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.484,
+   "p": 0.482,
    "price": 0.43,
-   "edge": 0.037,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8327,9 +8327,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.567,
+   "p": 0.565,
    "price": 0.49,
-   "edge": 0.06,
+   "edge": 0.058,
    "news": "DEN has allowed starting forwards 13% more points than average (likely on him: Aaron Gordon, Zeke Nnaji).",
    "result": null
   },
