@@ -1,12 +1,13 @@
 {
- "started": "2026-10-24T23:43:21Z",
- "reconnects": 15,
+ "started": "2026-10-26T06:45:54Z",
+ "reconnects": 0,
  "whop_linked": 0,
- "last_event": "2026-10-26T06:32:23Z",
- "online_since": "2026-10-26T05:39:56Z",
- "last_error": "gateway op 7",
- "og_given": 8,
- "at": "2026-10-26T06:32:30Z",
+ "last_event": "2026-10-26T06:46:53Z",
+ "online_since": "2026-10-26T06:45:55Z",
+ "invite_roles": {
+  "857TCcDMj": 0
+ },
+ "at": "2026-10-26T06:46:54Z",
  "whop_key": true,
  "pillow": true,
  "whop_gallery_updated": "2026-10-24T09:08:57Z",
