@@ -1866,7 +1866,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 02:00 PT",
-  "props_today": 1192,
+  "props_today": 1193,
   "kalshi_props_today": 496,
   "kalshi_priced_today": 26,
   "books_on_kalshi_props": {
@@ -1874,8 +1874,8 @@
    "AN Open": 481,
    "BetMGM": 78,
    "BetRivers": 68,
-   "Caesars": 374,
-   "DraftKings": 359,
+   "Caesars": 379,
+   "DraftKings": 362,
    "FanDuel": 431,
    "Fanatics": 363,
    "Hard Rock Bet": 16,
@@ -1884,7 +1884,7 @@
    "Sleeper": 467,
    "Underdog": 496,
    "Unibet": 19,
-   "bet365": 346
+   "bet365": 360
   },
   "data_files": [
    "mlb.sqlite",
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -8010,8 +8010,8 @@
    "line": 7.5,
    "start": "2026-10-26T23:00:00Z",
    "p": 0.632,
-   "price": 0.55,
-   "edge": 0.065,
+   "price": 0.56,
+   "edge": 0.055,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8084,9 +8084,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-27T00:30:00Z",
-   "p": 0.471,
-   "price": 0.42,
-   "edge": 0.034,
+   "p": 0.465,
+   "price": 0.41,
+   "edge": 0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8129,9 +8129,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.617,
+   "p": 0.614,
    "price": 0.56,
-   "edge": 0.04,
+   "edge": 0.037,
    "news": "News: Hornets have HISTORIC Loss | Brandon Miller STRUGGLES | Should We PANIC? - kcentv.com",
    "result": null
   }
