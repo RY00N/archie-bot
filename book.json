@@ -1866,11 +1866,11 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 09:00 PT",
-  "props_today": 1287,
+  "props_today": 1286,
   "kalshi_props_today": 536,
   "kalshi_priced_today": 39,
   "books_on_kalshi_props": {
-   "AN Consensus": 529,
+   "AN Consensus": 530,
    "AN Open": 529,
    "BetMGM": 356,
    "BetRivers": 400,
@@ -1883,7 +1883,7 @@
    "Pinnacle": 310,
    "Sleeper": 503,
    "Underdog": 536,
-   "Unibet": 69,
+   "Unibet": 70,
    "bet365": 525
   },
   "data_files": [
@@ -8249,9 +8249,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.632,
+   "p": 0.638,
    "price": 0.52,
-   "edge": 0.095,
+   "edge": 0.101,
    "news": "News: Hornets have HISTORIC Loss | Brandon Miller STRUGGLES | Should We PANIC? - kcentv.com Grant Williams is out: Brandon Miller hit the under in 16/19 games without him vs 16/21 with him.",
    "result": null
   },
