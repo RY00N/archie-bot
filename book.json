@@ -1899,11 +1899,11 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 11:00 PT",
-  "props_today": 1290,
+  "props_today": 1289,
   "kalshi_props_today": 525,
   "kalshi_priced_today": 39,
   "books_on_kalshi_props": {
-   "AN Consensus": 515,
+   "AN Consensus": 517,
    "AN Open": 520,
    "BetMGM": 393,
    "BetRivers": 384,
@@ -1912,7 +1912,7 @@
    "FanDuel": 436,
    "Fanatics": 407,
    "Hard Rock Bet": 19,
-   "Parx": 410,
+   "Parx": 411,
    "Pinnacle": 338,
    "Sleeper": 476,
    "Underdog": 525,
@@ -1925,7 +1925,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -7967,9 +7967,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.487,
+   "p": 0.484,
    "price": 0.43,
-   "edge": 0.04,
+   "edge": 0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8001,6 +8001,21 @@
    "price": 0.45,
    "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBA3PT-26OCT26ATLHOU-HOUTEASON17-1",
+   "league": "nba",
+   "player": "Tari Eason",
+   "stat": "threes",
+   "side": "under",
+   "line": 0.5,
+   "start": "2026-10-27T00:30:00Z",
+   "p": 0.405,
+   "price": 0.35,
+   "edge": 0.039,
+   "news": "ATL has allowed bench forwards 9% fewer threes than average (likely on him: Corey Kispert, Zuby Ejiofor); Mouhamed Gueye can switch onto him (ATL allowed forwards 14% fewer threes with him playing; he is out tonight); Corey Kispert can switch onto him (ATL allowed forwards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
