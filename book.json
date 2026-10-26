@@ -1866,23 +1866,23 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 01:00 PT",
-  "props_today": 1105,
-  "kalshi_props_today": 440,
+  "props_today": 1152,
+  "kalshi_props_today": 463,
   "kalshi_priced_today": 25,
   "books_on_kalshi_props": {
-   "AN Consensus": 429,
-   "AN Open": 429,
+   "AN Consensus": 452,
+   "AN Open": 452,
    "BetMGM": 78,
    "BetRivers": 67,
-   "Caesars": 285,
-   "DraftKings": 269,
-   "FanDuel": 388,
-   "Fanatics": 324,
+   "Caesars": 308,
+   "DraftKings": 292,
+   "FanDuel": 411,
+   "Fanatics": 343,
    "Hard Rock Bet": 16,
    "Parx": 97,
    "Pinnacle": 56,
-   "Sleeper": 411,
-   "Underdog": 440,
+   "Sleeper": 434,
+   "Underdog": 463,
    "Unibet": 19,
    "bet365": 228
   },
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -8027,6 +8027,21 @@
    "p": 0.471,
    "price": 0.42,
    "edge": 0.034,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBAREB-26OCT26MEMUTA-UTAJJACKSON20-6",
+   "league": "nba",
+   "player": "Jaren Jackson Jr.",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 5.5,
+   "start": "2026-10-27T01:00:00Z",
+   "p": 0.541,
+   "price": 0.48,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
