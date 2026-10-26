@@ -199,6 +199,7 @@ def win_slip(v, sent, dry=False):
 # (65%+ win chance on every leg) posted once 3 days have passed since the last free pick is copied to the free channel,
 # and its HIT/LOST result goes there too.
 FREE_CH = os.environ.get("BP_FREE_CHANNEL_ID", "1563073629799981076")
+RESULTS_CH = os.environ.get("BP_RESULTS_CHANNEL_ID", "1564169511291068546")   # WINS/LOSSES, above WINNERS
 PURCHASE_CH = os.environ.get("BP_PURCHASE_CHANNEL_ID", "1509754956666634382")
 FREE_EVERY, FREE_MIN_P = 3, 0.65
 
@@ -406,7 +407,7 @@ def verdicts(dry=False):
         head, emb = verdict_post(v, doc.get("record"))
         if dry:
             print(head, json.dumps(emb, indent=1), "\n"); win_slip(v, sent, dry=True); continue
-        send(head, [emb])
+        send(head, [emb], channel=RESULTS_CH)   # Ryan 2026-10-26: HIT/LOST go to WINS/LOSSES, not PICKS
         if f"free:{v['key']}" in sent:   # the free lock's result goes to the free channel too
             send(head, [emb], channel=FREE_CH)
             cur = load(FREE_FILE, {})
