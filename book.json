@@ -1866,18 +1866,18 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 07:00 PT",
-  "props_today": 1273,
+  "props_today": 1276,
   "kalshi_props_today": 535,
   "kalshi_priced_today": 36,
   "books_on_kalshi_props": {
    "AN Consensus": 527,
    "AN Open": 529,
-   "BetMGM": 354,
+   "BetMGM": 356,
    "BetRivers": 272,
    "Caesars": 453,
-   "DraftKings": 441,
+   "DraftKings": 442,
    "FanDuel": 440,
-   "Fanatics": 413,
+   "Fanatics": 414,
    "Hard Rock Bet": 18,
    "Parx": 303,
    "Pinnacle": 309,
@@ -1892,7 +1892,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -8009,9 +8009,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.747,
+   "p": 0.745,
    "price": 0.61,
-   "edge": 0.12,
+   "edge": 0.118,
    "news": "Moses Moody is out: Brandin Podziemski hit the over in 20/27 games without him vs 7/13 with him.",
    "result": null
   },
@@ -8024,9 +8024,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.713,
+   "p": 0.715,
    "price": 0.65,
-   "edge": 0.047,
+   "edge": 0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8084,9 +8084,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.67,
+   "p": 0.668,
    "price": 0.51,
-   "edge": 0.143,
+   "edge": 0.141,
    "news": "Moses Moody is out: Brandin Podziemski hit the under in 17/27 games without him vs 3/13 with him.",
    "result": null
   },
@@ -8099,9 +8099,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.618,
-   "price": 0.57,
-   "edge": 0.031,
+   "p": 0.616,
+   "price": 0.56,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8129,9 +8129,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.541,
-   "price": 0.48,
-   "edge": 0.044,
+   "p": 0.549,
+   "price": 0.5,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8144,9 +8144,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.487,
+   "p": 0.483,
    "price": 0.41,
-   "edge": 0.06,
+   "edge": 0.056,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8249,9 +8249,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-27T00:30:00Z",
-   "p": 0.513,
+   "p": 0.507,
    "price": 0.43,
-   "edge": 0.066,
+   "edge": 0.06,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8264,9 +8264,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.545,
+   "p": 0.543,
    "price": 0.47,
-   "edge": 0.058,
+   "edge": 0.056,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8294,9 +8294,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.607,
+   "p": 0.606,
    "price": 0.55,
-   "edge": 0.04,
+   "edge": 0.039,
    "news": "News: Hornets have HISTORIC Loss | Brandon Miller STRUGGLES | Should We PANIC? - kcentv.com",
    "result": null
   },
@@ -8324,9 +8324,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-27T00:15:00Z",
-   "p": 0.559,
+   "p": 0.561,
    "price": 0.5,
-   "edge": 0.042,
+   "edge": 0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
