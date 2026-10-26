@@ -1925,7 +1925,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 15
+  "kalshi_legs_today": 16
  },
  "shadow": [
   {
@@ -8102,9 +8102,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-26T23:00:00Z",
-   "p": 0.79,
+   "p": 0.789,
    "price": 0.65,
-   "edge": 0.124,
+   "edge": 0.123,
    "news": "Donte DiVincenzo is out: Ayo Dosunmu hit the over in 7/7 games without him vs 13/18 with him.",
    "result": null
   },
