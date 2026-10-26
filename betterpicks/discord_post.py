@@ -187,7 +187,7 @@ WINNERS_CH = os.environ.get("BP_WINNERS_CHANNEL_ID", "1509697436480700537")
 
 
 def win_slip(v, sent, dry=False):
-    if v.get("status") != "won" or f"winslip:{v['key']}" in sent:
+    if v.get("status") != "won" or f"winslip:{v.get('verdict_key', v['key'])}" in sent:
         return
     try:
         import shutil, importlib
@@ -205,7 +205,7 @@ def win_slip(v, sent, dry=False):
         open("/tmp/win_slip_dry.png", "wb").write(png); print("win slip -> /tmp/win_slip_dry.png"); return
     day = datetime.fromisoformat(v["date"]).strftime("%b %-d")
     send_file(f"\u2705 Cashed: {', '.join(l['player'] for l in v['legs'])} ({day})", png, "betterpicks-win.png", WINNERS_CH)
-    sent.add(f"winslip:{v['key']}")
+    sent.add(f"winslip:{v.get('verdict_key', v['key'])}")
 
 
 # Ryan 2026-10-23: "Send one free pick every 3 days make sure it's a lock so we can get customers". The first lock
@@ -404,7 +404,7 @@ def verdicts(dry=False):
         return
     sent = set(load(SENT, []))
     todo = [v for v in sorted(doc.get("parlays", []), key=lambda v: v["date"])
-            if v["key"] in sent and f"verdict:{v['key']}" not in sent and f"retract:{v['key']}" not in sent]
+            if v["key"] in sent and f"verdict:{v.get('verdict_key', v['key'])}" not in sent and f"retract:{v['key']}" not in sent]
     for dl in doc.get("delays", []):   # Ryan 2026-10-18: say when a posted pick's game is delayed; the pick carries over
         k = f"delay:{dl['key']}:{dl['game']}"
         if dl["key"] not in sent or k in sent:
@@ -427,7 +427,7 @@ def verdicts(dry=False):
             cur = load(FREE_FILE, {})
             if cur.get("key") == v["key"]:
                 cur["result"] = v.get("status"); json.dump(cur, open(FREE_FILE, "w"), indent=1)
-        sent.add(f"verdict:{v['key']}")
+        sent.add(f"verdict:{v.get('verdict_key', v['key'])}")
         win_slip(v, sent)
         json.dump(sorted(sent), open(SENT, "w"), indent=1)
         print("posted verdict", v["key"])

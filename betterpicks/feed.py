@@ -20,6 +20,13 @@ BOARD_KEEP = ("player", "stat", "side", "line", "game", "result", "actual", "sta
               "news", "case")   # p/edge/news/case let the droplet explain a pick on /bp by itself
 
 
+def vkey(e):
+    """Key the droplet marks a verdict posted under. A pick graded by mistake and reopened gets 'regraded' so its
+    real result still posts (Ryan 2026-10-26: Ayo showed HIT before tip)."""
+    k = f"parlay:{e['date']}:{e['app']}:{e['type']}"
+    return k + (f":regrade{e['regraded']}" if e.get("regraded") else "")
+
+
 def verdicts():
     """Ryan 2026-10-18: once a parlay's last game is graded, the droplet posts HIT or LOST in Discord.
     Only the project grades, so the settled parlays ride along in the feed (Discord era, Oct 12 on)."""
@@ -34,8 +41,8 @@ def verdicts():
     out = []
     for e in book.get("parlays", []):
         if (e["status"] in ("won", "lost", "void") and e["date"] >= "2026-10-12" and not e.get("test") and not e.get("retracted")
-                and f"verdict:parlay:{e['date']}:{e['app']}:{e['type']}" not in done):
-            out.append({"key": f"parlay:{e['date']}:{e['app']}:{e['type']}", "date": e["date"], "app": e["app"],
+                and f"verdict:{vkey(e)}" not in done):
+            out.append({"key": f"parlay:{e['date']}:{e['app']}:{e['type']}", "verdict_key": vkey(e), "date": e["date"], "app": e["app"],
                         "type": e["type"], "lock": e.get("lock"), "status": e["status"], "pnl": e["pnl"],
                         "stake": e["stake"], "payout_x": e.get("payout_x"),
                         "legs": [{k: l.get(k) for k in LEG_KEEP} | ({"why_lost": why_lost.explain(l, l.get("league") or "nba")}
