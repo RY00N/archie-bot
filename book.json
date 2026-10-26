@@ -1932,25 +1932,25 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 14:00 PT",
-  "props_today": 1342,
-  "kalshi_props_today": 580,
+  "props_today": 1338,
+  "kalshi_props_today": 579,
   "kalshi_priced_today": 45,
   "books_on_kalshi_props": {
-   "AN Consensus": 574,
-   "AN Open": 575,
-   "BetMGM": 431,
-   "BetRivers": 400,
-   "Caesars": 476,
-   "DraftKings": 478,
-   "FanDuel": 454,
+   "AN Consensus": 571,
+   "AN Open": 574,
+   "BetMGM": 430,
+   "BetRivers": 399,
+   "Caesars": 475,
+   "DraftKings": 477,
+   "FanDuel": 453,
    "Fanatics": 438,
    "Hard Rock Bet": 19,
-   "Parx": 441,
+   "Parx": 440,
    "Pinnacle": 375,
-   "Sleeper": 535,
-   "Underdog": 580,
+   "Sleeper": 533,
+   "Underdog": 579,
    "Unibet": 97,
-   "bet365": 568
+   "bet365": 567
   },
   "data_files": [
    "mlb.sqlite",
@@ -1958,7 +1958,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -8030,9 +8030,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.493,
+   "p": 0.492,
    "price": 0.42,
-   "edge": 0.056,
+   "edge": 0.055,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8060,9 +8060,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-10-27T00:30:00Z",
-   "p": 0.407,
+   "p": 0.406,
    "price": 0.35,
-   "edge": 0.041,
+   "edge": 0.04,
    "news": "ATL has allowed bench forwards 9% fewer threes than average (likely on him: Corey Kispert, Zuby Ejiofor); Mouhamed Gueye can switch onto him (ATL allowed forwards 14% fewer threes with him playing; he is out tonight); Corey Kispert can switch onto him (ATL allowed forwards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -8315,9 +8315,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.568,
+   "p": 0.567,
    "price": 0.46,
-   "edge": 0.091,
+   "edge": 0.09,
    "news": "Nikola Topic is out: Jared McCain hit the under in 23/30 games without him vs 3/7 with him; Cason Wallace is out: Jared McCain hit the under in 13/20 games without him vs 16/20 with him; Jalen Williams is out: Jared McCain hit the under in 21/29 games without him vs 7/10 with him; PHX has allowed bench guards 1% fewer assists than average (likely on him: Collin Gillespie, Jordan Goodwin).",
    "result": null
   },
@@ -8330,9 +8330,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T00:00:00Z",
-   "p": 0.6,
+   "p": 0.599,
    "price": 0.51,
-   "edge": 0.073,
+   "edge": 0.072,
    "news": "OKC has allowed bench guards 26% fewer assists than average (likely on him: Ajay Mitchell, Alex Caruso); Jaylin Williams can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Cason Wallace can switch onto him (OKC allowed guards 13% fewer assists with him playing; he is out tonight).",
    "result": null
   },
