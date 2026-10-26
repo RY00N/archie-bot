@@ -601,6 +601,61 @@ def purchase_ping(d):
         print("purchase ping failed:", e, flush=True)
 
 
+# Ryan 2026-10-26: Sapphire-style welcome. Each new member gets a branded card (round avatar, name, member number)
+# in WELCOME inside an embed with link buttons. The card is drawn by betterpicks/welcome_card.py.
+WELCOME_CH = os.environ.get("BP_WELCOME_CHANNEL_ID", "1509317341996126319")
+FREEPICKS_CH, SUPPORT_CH, PURCHASE_CH_W = "1563073629799981076", "1509712100161884200", "1509754956666634382"
+WHOP_URL = "https://whop.com/betterpicks-vip/"
+
+
+def post_with_file(channel, payload, png, filename):
+    boundary = "bp" + hashlib.md5(png[:64] + str(time.time()).encode()).hexdigest()
+    body = (f"--{boundary}\r\nContent-Disposition: form-data; name=\"payload_json\"\r\n"
+            f"Content-Type: application/json\r\n\r\n{json.dumps(payload)}\r\n"
+            f"--{boundary}\r\nContent-Disposition: form-data; name=\"files[0]\"; filename=\"{filename}\"\r\n"
+            f"Content-Type: image/png\r\n\r\n").encode() + png + f"\r\n--{boundary}--\r\n".encode()
+    req = urllib.request.Request(f"{API}/channels/{channel}/messages", data=body, method="POST", headers={
+        "User-Agent": UA, "Authorization": f"Bot {TOKEN}", "Content-Type": f"multipart/form-data; boundary={boundary}"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read())
+
+
+def welcome(d, channel=WELCOME_CH, note=""):
+    u = d.get("user") or {}
+    if u.get("bot"):
+        return
+    try:
+        sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "betterpicks"))
+        import welcome_card
+        name = d.get("nick") or u.get("global_name") or u.get("username") or "friend"
+        av = None
+        url = (f"https://cdn.discordapp.com/avatars/{u['id']}/{u['avatar']}.png?size=256" if u.get("avatar")
+               else f"https://cdn.discordapp.com/embed/avatars/{(int(u['id']) >> 22) % 6}.png")
+        try:
+            av = urllib.request.urlopen(urllib.request.Request(url, headers={"User-Agent": UA}), timeout=15).read()
+        except Exception:
+            pass
+        g = http("GET", f"{API}/guilds/{GUILD}?with_counts=true")
+        num = g.get("approximate_member_count") or 0
+        png = welcome_card.render(name, av, num)
+        payload = {
+            "content": note + f"<@{u['id']}>", "allowed_mentions": {"users": [u["id"]]},
+            "embeds": [{"color": 0x111111, "title": "Welcome to BetterPicks.ai \U0001F512",
+                        "description": f"Hey <@{u['id']}>, glad you're here!\n\n"
+                                       f"\U0001F3AF Free picks drop in <#{FREEPICKS_CH}>\n"
+                                       f"\U0001F48E Premium gets every lock & you can grab it in <#{PURCHASE_CH_W}>\n"
+                                       f"\U0001F6E0 Questions? Hit <#{SUPPORT_CH}>",
+                        "image": {"url": "attachment://welcome.png"},
+                        "footer": {"text": f"Member #{num}"}}],
+            "components": [{"type": 1, "components": [
+                {"type": 2, "style": 5, "label": "Get Premium", "url": WHOP_URL, "emoji": {"name": "\U0001F48E"}},
+                {"type": 2, "style": 5, "label": "Free Picks", "url": f"https://discord.com/channels/{GUILD}/{FREEPICKS_CH}"},
+                {"type": 2, "style": 5, "label": "Support", "url": f"https://discord.com/channels/{GUILD}/{SUPPORT_CH}"}]}]}
+        post_with_file(channel, payload, png, "welcome.png")
+    except Exception as e:
+        print("welcome failed:", e, flush=True)
+
+
 STATUS_INFO = {"started": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "reconnects": 0}
 READY_SEEN = [False]
 
@@ -798,6 +853,7 @@ def run_once():
             if m.get("t") == "GUILD_MEMBER_ADD":
                 threading.Thread(target=purchase_ping, args=(m["d"],), daemon=True).start()
                 threading.Thread(target=on_join, args=(m["d"],), daemon=True).start()
+                threading.Thread(target=welcome, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "verify":
                 threading.Thread(target=verify_safe, args=(m["d"],), daemon=True).start()
             if m.get("t") == "INTERACTION_CREATE" and m["d"].get("type") == 2 and m["d"]["data"].get("name") == "bp":
