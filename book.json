@@ -2002,14 +2002,14 @@
   "kalshi_props_today": 311,
   "kalshi_priced_today": 34,
   "books_on_kalshi_props": {
-   "AN Consensus": 305,
+   "AN Consensus": 304,
    "AN Open": 306,
    "BetMGM": 225,
    "BetRivers": 168,
    "Caesars": 241,
    "DraftKings": 250,
    "FanDuel": 217,
-   "Fanatics": 225,
+   "Fanatics": 226,
    "Hard Rock Bet": 26,
    "Parx": 203,
    "Pinnacle": 182,
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 13
+  "kalshi_legs_today": 10
  },
  "shadow": [
   {
@@ -9071,9 +9071,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.543,
+   "p": 0.545,
    "price": 0.46,
-   "edge": 0.066,
+   "edge": 0.068,
    "news": "Ben Simmons (G) is out, so Zach LaVine's role likely grows; SAS has allowed starting guards 11% fewer threes than average (likely on him: Devin Vassell, De'Aaron Fox); Carter Bryant can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9236,9 +9236,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.583,
+   "p": 0.584,
    "price": 0.53,
-   "edge": 0.036,
+   "edge": 0.037,
    "news": "SAC has allowed bench forwards 1% fewer points than average (likely on him: Precious Achiuwa, Jonathan Mogbo); Nique Clifford can switch onto him (SAC allowed forwards 11% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -9341,9 +9341,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.552,
+   "p": 0.55,
    "price": 0.47,
-   "edge": 0.065,
+   "edge": 0.063,
    "news": "Injury report: Day-To-Day: Thompson (ankle) was a full participant at Tuesday's shootaround, Coty M. Davis of The Detroit News reports. NYK has allowed starting guards 4% fewer steals than average (likely on him: Jalen Brunson, Josh Hart); Tyler Kolek can switch onto him (NYK allowed guards 18% fewer steals with him playing; he plays tonight); Jordan Clarkson can switch onto him (NYK allowed guards 10% fewer steals with him playing; he plays tonight).",
    "result": null
   },
