@@ -1976,7 +1976,7 @@
    "Caesars": 203,
    "DraftKings": 207,
    "FanDuel": 191,
-   "Fanatics": 186,
+   "Fanatics": 187,
    "Parx": 180,
    "Pinnacle": 153,
    "Sleeper": 234,
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -9082,9 +9082,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.582,
+   "p": 0.583,
    "price": 0.53,
-   "edge": 0.035,
+   "edge": 0.036,
    "news": "SAC has allowed bench forwards 1% fewer points than average (likely on him: Precious Achiuwa, Jonathan Mogbo); Nique Clifford can switch onto him (SAC allowed forwards 11% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -9112,9 +9112,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-28T03:00:00Z",
-   "p": 0.479,
+   "p": 0.481,
    "price": 0.43,
-   "edge": 0.032,
+   "edge": 0.034,
    "news": "Chris Youngblood (G) is out, so Jrue Holiday's role likely grows; LAL has allowed bench guards 25% fewer rebounds than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
