@@ -413,28 +413,34 @@ GUILD = os.environ.get("BP_GUILD_ID", "1509315900874948729")
 # Discord allows only 2 renames per channel per 10 minutes, so a change that lands sooner waits its turn.
 COUNTERS = {"members": (os.environ.get("BP_MEMBERS_CH", "1563072752607436900"), "\U0001F464Members: {}"),
             "wins": (os.environ.get("BP_WINS_CH", "1563072753773318224"), "\U0001F4B0Wins: {}"),
-            "losses": (os.environ.get("BP_LOSSES_CH", "1563072754536677388"), "\u274cLosses: {}")}
+            "losses": (os.environ.get("BP_LOSSES_CH", "1563072754536677388"), "\u274cLosses: {}"),
+            # Ryan 2026-10-27: under Members, everyone holding Premium or OG Premium
+            "premium": (os.environ.get("BP_PREMIUM_CH", "1564731560387944569"), "\U0001F464Premium: {}")}
 MEMBERS_CHANGED = threading.Event()
 
 
-def human_count():
-    n, after = 0, "0"
+def human_count(premium=False):
+    """Humans in the server; premium=True returns (humans, humans with Premium or OG Premium)."""
+    n, p, after = 0, 0, "0"
+    paid = {os.environ.get("BP_PREMIUM_ROLE_ID", "1563068488195772517"), OG_ROLE}
     while True:
         page = http("GET", f"{API}/guilds/{GUILD}/members?limit=1000&after={after}")
-        n += sum(not m["user"].get("bot") for m in page)
+        humans = [m for m in page if not m["user"].get("bot")]
+        n += len(humans)
+        p += sum(bool(paid & set(m.get("roles", []))) for m in humans)
         if len(page) < 1000:
-            return n
+            return (n, p) if premium else n
         after = page[-1]["user"]["id"]
 
 
 def counters_loop():
-    want, shown, renamed, last_rec = {}, {}, {}, 0
+    want, shown, renamed, last_rec, last_count = {}, {}, {}, 0, 0
     MEMBERS_CHANGED.set()   # count once at start
     while True:
-        if MEMBERS_CHANGED.is_set():
-            MEMBERS_CHANGED.clear()
+        if MEMBERS_CHANGED.is_set() or time.time() - last_count >= 600:   # role changes also recounted every 10 min
+            MEMBERS_CHANGED.clear(); last_count = time.time()
             try:
-                want["members"] = human_count()
+                want["members"], want["premium"] = human_count(premium=True)
             except Exception as e:
                 print("member count failed:", e, flush=True); MEMBERS_CHANGED.set()
         if time.time() - last_rec >= 180:
@@ -885,7 +891,7 @@ def run_once():
                         print("could not register /" + cmd["name"], e, flush=True)
             if m.get("t") == "MESSAGE_CREATE" and INTENTS[0] & 32768:
                 threading.Thread(target=winners_filter, args=(m["d"],), daemon=True).start()
-            if m.get("t") in ("GUILD_MEMBER_ADD", "GUILD_MEMBER_REMOVE"):
+            if m.get("t") in ("GUILD_MEMBER_ADD", "GUILD_MEMBER_REMOVE", "GUILD_MEMBER_UPDATE"):
                 MEMBERS_CHANGED.set()
             if m.get("t") == "GUILD_MEMBER_ADD":
                 threading.Thread(target=purchase_ping, args=(m["d"],), daemon=True).start()
