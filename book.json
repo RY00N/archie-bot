@@ -2002,11 +2002,11 @@
   "kalshi_props_today": 324,
   "kalshi_priced_today": 34,
   "books_on_kalshi_props": {
-   "AN Consensus": 265,
+   "AN Consensus": 266,
    "AN Open": 266,
    "BetMGM": 201,
    "BetRivers": 128,
-   "Caesars": 202,
+   "Caesars": 203,
    "DraftKings": 213,
    "FanDuel": 181,
    "Fanatics": 196,
@@ -2015,7 +2015,7 @@
    "Pinnacle": 148,
    "Sleeper": 295,
    "Underdog": 324,
-   "Unibet": 46,
+   "Unibet": 47,
    "bet365": 266
   },
   "data_files": [
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 7
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -8891,9 +8891,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.548,
+   "p": 0.549,
    "price": 0.5,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8906,9 +8906,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.599,
+   "p": 0.598,
    "price": 0.55,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -9041,9 +9041,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.651,
+   "p": 0.649,
    "price": 0.59,
-   "edge": 0.044,
+   "edge": 0.042,
    "news": "NYK has allowed starting guards 7% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he is out tonight); Landry Shamet can switch onto him (NYK allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9131,9 +9131,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.503,
+   "p": 0.502,
    "price": 0.41,
-   "edge": 0.076,
+   "edge": 0.075,
    "news": "SAS has allowed starting forwards 14% fewer assists than average (likely on him: Victor Wembanyama, Julian Champagnie); Stephon Castle can switch onto him (SAS allowed forwards 16% fewer assists with him playing; he plays tonight).",
    "result": null
   },
