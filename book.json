@@ -1967,7 +1967,7 @@
   "props_at": "2026-10-27 07:00 PT",
   "props_today": 576,
   "kalshi_props_today": 249,
-  "kalshi_priced_today": 22,
+  "kalshi_priced_today": 23,
   "books_on_kalshi_props": {
    "AN Consensus": 244,
    "AN Open": 244,
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -8857,9 +8857,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.466,
+   "p": 0.467,
    "price": 0.41,
-   "edge": 0.039,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8932,9 +8932,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.462,
+   "p": 0.463,
    "price": 0.4,
-   "edge": 0.045,
+   "edge": 0.046,
    "news": "Tyler Bilodeau (F) is out, so Julius Randle's role likely grows; BOS has allowed starting forwards 1% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
