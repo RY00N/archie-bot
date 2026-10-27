@@ -1998,12 +1998,12 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-27 12:00 PT",
-  "props_today": 583,
+  "props_today": 582,
   "kalshi_props_today": 253,
   "kalshi_priced_today": 20,
   "books_on_kalshi_props": {
-   "AN Consensus": 247,
-   "AN Open": 247,
+   "AN Consensus": 248,
+   "AN Open": 248,
    "BetMGM": 183,
    "BetRivers": 160,
    "Caesars": 204,
@@ -2016,7 +2016,7 @@
    "Sleeper": 235,
    "Underdog": 253,
    "Unibet": 43,
-   "bet365": 247
+   "bet365": 248
   },
   "data_files": [
    "mlb.sqlite",
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
@@ -9056,9 +9056,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.582,
+   "p": 0.583,
    "price": 0.51,
-   "edge": 0.055,
+   "edge": 0.056,
    "news": "Injury report: Day-To-Day: White (right hip) is probable for Tuesday's game against the Nets. BKN has allowed starting guards 2% fewer pra than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
@@ -9086,9 +9086,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.576,
+   "p": 0.575,
    "price": 0.52,
-   "edge": 0.039,
+   "edge": 0.038,
    "news": "SAC has allowed starting guards 3% more pra than average (likely on him: Nique Clifford, Zach LaVine); Zach LaVine can switch onto him (SAC allowed guards 8% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -9102,8 +9102,8 @@
    "line": 14.5,
    "start": "2026-10-27T23:30:00Z",
    "p": 0.56,
-   "price": 0.48,
-   "edge": 0.063,
+   "price": 0.49,
+   "edge": 0.053,
    "news": "Injury report: Day-To-Day: White (right hip) is probable for Tuesday's game against the Nets. BKN has allowed starting guards 5% fewer points than average (likely on him: Ben Saraf, Keon Ellis); Michael Porter Jr. can switch onto him (BKN allowed guards 8% fewer points with him playing; he plays tonight); Egor Demin can switch onto him (BKN allowed guards 8% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -9221,9 +9221,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.608,
+   "p": 0.607,
    "price": 0.48,
-   "edge": 0.111,
+   "edge": 0.11,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
