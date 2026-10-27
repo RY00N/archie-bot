@@ -1998,7 +1998,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-27 12:00 PT",
-  "props_today": 581,
+  "props_today": 582,
   "kalshi_props_today": 253,
   "kalshi_priced_today": 20,
   "books_on_kalshi_props": {
@@ -2013,7 +2013,7 @@
    "Hard Rock Bet": 17,
    "Parx": 180,
    "Pinnacle": 153,
-   "Sleeper": 233,
+   "Sleeper": 234,
    "Underdog": 253,
    "Unibet": 43,
    "bet365": 247
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 7
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -9146,9 +9146,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.583,
+   "p": 0.582,
    "price": 0.53,
-   "edge": 0.036,
+   "edge": 0.035,
    "news": "SAC has allowed bench forwards 1% fewer points than average (likely on him: Precious Achiuwa, Jonathan Mogbo); Nique Clifford can switch onto him (SAC allowed forwards 11% fewer points with him playing; he plays tonight).",
    "result": null
   },
