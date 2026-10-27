@@ -1980,7 +1980,7 @@
    "Hard Rock Bet": 17,
    "Parx": 180,
    "Pinnacle": 153,
-   "Sleeper": 235,
+   "Sleeper": 233,
    "Underdog": 253,
    "Unibet": 42,
    "bet365": 248
@@ -1991,7 +1991,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -8859,8 +8859,8 @@
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
    "p": 0.457,
-   "price": 0.41,
-   "edge": 0.03,
+   "price": 0.4,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -9046,6 +9046,21 @@
   },
   {
    "date": "2026-10-27",
+   "ticker": "KXNBAPRA-26OCT27SACSAS-SASSCASTLE5-30",
+   "league": "nba",
+   "player": "Stephon Castle",
+   "stat": "pra",
+   "side": "under",
+   "line": 29.5,
+   "start": "2026-10-28T00:00:00Z",
+   "p": 0.574,
+   "price": 0.52,
+   "edge": 0.037,
+   "news": "SAC has allowed starting guards 3% more pra than average (likely on him: Nique Clifford, Zach LaVine); Zach LaVine can switch onto him (SAC allowed guards 8% fewer pra with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-10-27",
    "ticker": "KXNBAPTS-26OCT27BKNBOS-BOSDWHITE9-15",
    "league": "nba",
    "player": "Derrick White",
@@ -9188,9 +9203,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.71,
+   "p": 0.712,
    "price": 0.66,
-   "edge": 0.034,
+   "edge": 0.036,
    "news": "Injury report: Day-To-Day: White (right hip) is probable for Tuesday's game against the Nets. BKN has allowed starting guards 1% fewer steals than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
