@@ -2002,14 +2002,14 @@
   "kalshi_props_today": 319,
   "kalshi_priced_today": 35,
   "books_on_kalshi_props": {
-   "AN Consensus": 312,
+   "AN Consensus": 314,
    "AN Open": 314,
    "BetMGM": 222,
-   "BetRivers": 169,
+   "BetRivers": 168,
    "Caesars": 241,
    "DraftKings": 258,
    "FanDuel": 224,
-   "Fanatics": 235,
+   "Fanatics": 234,
    "Hard Rock Bet": 26,
    "Parx": 204,
    "Pinnacle": 183,
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 11
+  "kalshi_legs_today": 10
  },
  "shadow": [
   {
@@ -9011,9 +9011,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.454,
+   "p": 0.455,
    "price": 0.39,
-   "edge": 0.047,
+   "edge": 0.048,
    "news": "Tyler Bilodeau (F) is out, so Julius Randle's role likely grows; BOS has allowed starting forwards 1% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9041,9 +9041,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.649,
+   "p": 0.651,
    "price": 0.59,
-   "edge": 0.042,
+   "edge": 0.044,
    "news": "NYK has allowed starting guards 7% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he is out tonight); Landry Shamet can switch onto him (NYK allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9071,9 +9071,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.508,
+   "p": 0.507,
    "price": 0.41,
-   "edge": 0.081,
+   "edge": 0.08,
    "news": "Jose Alvarado is out: Josh Hart hit the over in 7/16 games without him vs 8/24 with him; DET has allowed starting guards 5% fewer threes than average (likely on him: Daniss Jenkins, Cade Cunningham); Ronald Holland II can switch onto him (DET allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9101,9 +9101,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.535,
-   "price": 0.46,
-   "edge": 0.058,
+   "p": 0.534,
+   "price": 0.45,
+   "edge": 0.067,
    "news": "Ben Simmons (G) is out, so Zach LaVine's role likely grows; SAS has allowed starting guards 11% fewer threes than average (likely on him: Devin Vassell, De'Aaron Fox); Carter Bryant can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9146,9 +9146,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.589,
+   "p": 0.588,
    "price": 0.53,
-   "edge": 0.042,
+   "edge": 0.041,
    "news": "News: Derrick White dealing with hip injury following win over Bulls - 98.5 The Sports Hub BKN has allowed starting guards 2% fewer pra than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
@@ -9341,9 +9341,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.614,
+   "p": 0.613,
    "price": 0.49,
-   "edge": 0.107,
+   "edge": 0.106,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
