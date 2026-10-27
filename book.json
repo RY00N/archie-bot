@@ -1965,8 +1965,8 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 17:00 PT",
-  "props_today": 943,
-  "kalshi_props_today": 406,
+  "props_today": 543,
+  "kalshi_props_today": 213,
   "kalshi_priced_today": 14,
   "books_on_kalshi_props": {
    "AN Consensus": 212,
@@ -1980,8 +1980,8 @@
    "Hard Rock Bet": 26,
    "Parx": 178,
    "Pinnacle": 141,
-   "Sleeper": 361,
-   "Underdog": 406,
+   "Sleeper": 199,
+   "Underdog": 213,
    "Unibet": 37,
    "bet365": 213
   },
@@ -8724,8 +8724,8 @@
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
    "p": 0.506,
-   "price": 0.43,
-   "edge": 0.059,
+   "price": 0.44,
+   "edge": 0.049,
    "news": "MEM has allowed starting forwards 13% more rebounds than average (likely on him: Cameron Boozer, Cedric Coward).",
    "result": null
   },
