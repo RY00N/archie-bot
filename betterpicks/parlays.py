@@ -693,8 +693,9 @@ ESPN_NBA = {"points": ["PTS"], "rebounds": ["REB"], "assists": ["AST"], "threes"
             "blocks": ["BLK"], "turnovers": ["TO"], "stocks": ["STL", "BLK"]}
 
 
-def espn_actual(leg):
-    """NBA stat from ESPN's final box score for the leg's game (None if not final, not NBA, or not found)."""
+def espn_actual(leg, live=False):
+    """NBA stat from ESPN's final box score for the leg's game (None if not final, not NBA, or not found).
+    live=True also reads games in progress (Ryan 2026-10-27: call an over a HIT the moment it clears)."""
     cols = ESPN_NBA.get(leg["stat"]) if leg.get("league") == "nba" else None
     if not cols:
         return None
@@ -705,7 +706,7 @@ def espn_actual(leg):
         with urllib.request.urlopen(base + "scoreboard?dates=" + day, timeout=15) as r:
             events = json.loads(r.read())["events"]
         for ev in events:
-            if not ev["status"]["type"].get("completed"):
+            if not ev["status"]["type"].get("completed") and not (live and ev["status"]["type"].get("state") == "in"):
                 continue
             with urllib.request.urlopen(base + "summary?event=" + ev["id"], timeout=15) as r:
                 box = json.loads(r.read())["boxscore"]["players"]
