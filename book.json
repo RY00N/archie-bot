@@ -2009,13 +2009,13 @@
    "Caesars": 204,
    "DraftKings": 212,
    "FanDuel": 195,
-   "Fanatics": 187,
+   "Fanatics": 190,
    "Hard Rock Bet": 17,
    "Parx": 180,
    "Pinnacle": 153,
    "Sleeper": 233,
    "Underdog": 253,
-   "Unibet": 42,
+   "Unibet": 43,
    "bet365": 247
   },
   "data_files": [
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -8966,9 +8966,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.457,
+   "p": 0.456,
    "price": 0.39,
-   "edge": 0.05,
+   "edge": 0.049,
    "news": "Tyler Bilodeau (F) is out, so Julius Randle's role likely grows; BOS has allowed starting forwards 1% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9056,9 +9056,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.579,
-   "price": 0.52,
-   "edge": 0.042,
+   "p": 0.578,
+   "price": 0.51,
+   "edge": 0.051,
    "news": "Injury report: Day-To-Day: White (right hip) is probable for Tuesday's game against the Nets. BKN has allowed starting guards 2% fewer pra than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
@@ -9086,9 +9086,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.574,
+   "p": 0.576,
    "price": 0.52,
-   "edge": 0.037,
+   "edge": 0.039,
    "news": "SAC has allowed starting guards 3% more pra than average (likely on him: Nique Clifford, Zach LaVine); Zach LaVine can switch onto him (SAC allowed guards 8% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -9101,9 +9101,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.556,
+   "p": 0.555,
    "price": 0.48,
-   "edge": 0.059,
+   "edge": 0.058,
    "news": "Injury report: Day-To-Day: White (right hip) is probable for Tuesday's game against the Nets. BKN has allowed starting guards 5% fewer points than average (likely on him: Ben Saraf, Keon Ellis); Michael Porter Jr. can switch onto him (BKN allowed guards 8% fewer points with him playing; he plays tonight); Egor Demin can switch onto him (BKN allowed guards 8% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -9176,9 +9176,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-28T03:00:00Z",
-   "p": 0.48,
+   "p": 0.481,
    "price": 0.43,
-   "edge": 0.033,
+   "edge": 0.034,
    "news": "Chris Youngblood (G) is out, so Jrue Holiday's role likely grows; LAL has allowed bench guards 25% fewer rebounds than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -9221,9 +9221,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.605,
+   "p": 0.606,
    "price": 0.48,
-   "edge": 0.108,
+   "edge": 0.109,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
