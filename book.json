@@ -1967,22 +1967,22 @@
   "props_at": "2026-10-26 17:00 PT",
   "props_today": 333,
   "kalshi_props_today": 167,
-  "kalshi_priced_today": 6,
+  "kalshi_priced_today": 4,
   "books_on_kalshi_props": {
-   "AN Consensus": 165,
-   "AN Open": 167,
-   "BetMGM": 121,
-   "BetRivers": 137,
-   "Caesars": 139,
-   "DraftKings": 142,
-   "FanDuel": 140,
-   "Fanatics": 126,
-   "Parx": 137,
-   "Pinnacle": 101,
+   "AN Consensus": 107,
+   "AN Open": 107,
+   "BetMGM": 75,
+   "BetRivers": 84,
+   "Caesars": 85,
+   "DraftKings": 87,
+   "FanDuel": 85,
+   "Fanatics": 74,
+   "Parx": 84,
+   "Pinnacle": 62,
    "Sleeper": 158,
    "Underdog": 167,
-   "Unibet": 28,
-   "bet365": 167
+   "Unibet": 14,
+   "bet365": 107
   },
   "data_files": [
    "mlb.sqlite",
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -8212,9 +8212,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.77,
+   "p": 0.769,
    "price": 0.61,
-   "edge": 0.143,
+   "edge": 0.142,
    "news": "Moses Moody is out: Brandin Podziemski hit the over in 20/27 games without him vs 7/13 with him; DEN has allowed starting guards 11% more threes than average (likely on him: Jamal Murray, Christian Braun); Jamal Murray can switch onto him (DEN allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -8377,10 +8377,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.616,
-   "price": 0.56,
-   "edge": 0.039,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "p": 0.59,
+   "price": 0.54,
+   "edge": 0.033,
+   "news": "News: Time to trade red-hot Ty Jerome, drop struggling Draymond Green? - ESPN La Crosse 105.5 DEN has allowed starting forwards 22% more assists than average (likely on him: Aaron Gordon, Zeke Nnaji).",
    "result": null
   },
   {
@@ -8411,6 +8411,21 @@
    "price": 0.45,
    "edge": 0.055,
    "news": "T.J. McConnell is out: Tyrese Haliburton hit the under in 2/4 games without him vs 13/36 with him; MIL has allowed starting guards 13% more assists than average (likely on him: AJ Green, Cormac Ryan); Pete Nance can switch onto him (MIL allowed guards 12% fewer assists with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-10-26",
+   "ticker": "KXNBAAST-26OCT26MEMUTA-MEMSPIPPEN1-4",
+   "league": "nba",
+   "player": "Scotty Pippen Jr.",
+   "stat": "assists",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-27T01:00:00Z",
+   "p": 0.501,
+   "price": 0.45,
+   "edge": 0.034,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -8722,9 +8737,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.5,
+   "p": 0.496,
    "price": 0.43,
-   "edge": 0.053,
+   "edge": 0.049,
    "news": "MEM has allowed starting forwards 13% more rebounds than average (likely on him: Cameron Boozer, Cedric Coward).",
    "result": null
   },
