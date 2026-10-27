@@ -1969,19 +1969,19 @@
   "kalshi_props_today": 249,
   "kalshi_priced_today": 22,
   "books_on_kalshi_props": {
-   "AN Consensus": 243,
+   "AN Consensus": 244,
    "AN Open": 244,
    "BetMGM": 167,
    "BetRivers": 160,
    "Caesars": 203,
-   "DraftKings": 202,
+   "DraftKings": 203,
    "FanDuel": 191,
-   "Fanatics": 181,
+   "Fanatics": 184,
    "Parx": 180,
    "Pinnacle": 145,
    "Sleeper": 230,
    "Underdog": 249,
-   "Unibet": 29,
+   "Unibet": 30,
    "bet365": 244
   },
   "data_files": [
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 7
+  "kalshi_legs_today": 8
  },
  "shadow": [
   {
@@ -8857,9 +8857,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.469,
+   "p": 0.466,
    "price": 0.41,
-   "edge": 0.042,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8977,9 +8977,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.504,
+   "p": 0.503,
    "price": 0.42,
-   "edge": 0.067,
+   "edge": 0.066,
    "news": "SAS has allowed starting forwards 14% fewer assists than average (likely on him: Victor Wembanyama, Julian Champagnie); Stephon Castle can switch onto him (SAS allowed forwards 16% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -8992,9 +8992,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.567,
+   "p": 0.566,
    "price": 0.5,
-   "edge": 0.049,
+   "edge": 0.048,
    "news": "BKN has allowed starting guards 2% fewer pra than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
