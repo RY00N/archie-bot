@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -8858,8 +8858,8 @@
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
    "p": 0.46,
-   "price": 0.4,
-   "edge": 0.043,
+   "price": 0.41,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -9022,9 +9022,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-10-28T03:00:00Z",
-   "p": 0.539,
+   "p": 0.547,
    "price": 0.48,
-   "edge": 0.042,
+   "edge": 0.05,
    "news": "Injury report: Day-To-Day: Henderson is questionable for Tuesday's game against the Lakers due to left ankle soreness. Chris Youngblood (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the over in 21/26 games without him vs 9/14 with him; LAL has allowed bench guards 1% more points than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 10% fewer points with him playing; he plays tonight).",
    "result": null
   },
