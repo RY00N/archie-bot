@@ -1976,7 +1976,7 @@
    "Caesars": 181,
    "DraftKings": 185,
    "FanDuel": 193,
-   "Fanatics": 166,
+   "Fanatics": 168,
    "Parx": 21,
    "Pinnacle": 85,
    "Sleeper": 229,
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -8887,9 +8887,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.552,
+   "p": 0.553,
    "price": 0.5,
-   "edge": 0.035,
+   "edge": 0.036,
    "news": "BKN has allowed starting guards 0% more assists than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
