@@ -1969,14 +1969,14 @@
   "kalshi_props_today": 249,
   "kalshi_priced_today": 23,
   "books_on_kalshi_props": {
-   "AN Consensus": 244,
+   "AN Consensus": 243,
    "AN Open": 244,
    "BetMGM": 167,
    "BetRivers": 159,
-   "Caesars": 203,
+   "Caesars": 201,
    "DraftKings": 203,
    "FanDuel": 191,
-   "Fanatics": 186,
+   "Fanatics": 185,
    "Parx": 179,
    "Pinnacle": 145,
    "Sleeper": 230,
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 7
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -8932,9 +8932,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.463,
+   "p": 0.462,
    "price": 0.4,
-   "edge": 0.046,
+   "edge": 0.045,
    "news": "Tyler Bilodeau (F) is out, so Julius Randle's role likely grows; BOS has allowed starting forwards 1% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -8992,9 +8992,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.562,
+   "p": 0.564,
    "price": 0.5,
-   "edge": 0.045,
+   "edge": 0.046,
    "news": "BKN has allowed starting guards 2% fewer pra than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
@@ -9097,9 +9097,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.6,
+   "p": 0.602,
    "price": 0.49,
-   "edge": 0.093,
+   "edge": 0.095,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
