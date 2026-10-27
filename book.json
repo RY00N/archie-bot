@@ -1997,7 +1997,7 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-27 14:00 PT",
+  "props_at": "2026-10-27 15:00 PT",
   "props_today": 592,
   "kalshi_props_today": 307,
   "kalshi_priced_today": 34,
@@ -2009,7 +2009,7 @@
    "Caesars": 238,
    "DraftKings": 247,
    "FanDuel": 214,
-   "Fanatics": 222,
+   "Fanatics": 221,
    "Hard Rock Bet": 26,
    "Parx": 200,
    "Pinnacle": 182,
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -8906,9 +8906,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.461,
+   "p": 0.462,
    "price": 0.41,
-   "edge": 0.034,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8982,8 +8982,8 @@
    "line": 2.5,
    "start": "2026-10-28T00:00:00Z",
    "p": 0.458,
-   "price": 0.4,
-   "edge": 0.041,
+   "price": 0.41,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -9206,9 +9206,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.583,
+   "p": 0.582,
    "price": 0.53,
-   "edge": 0.036,
+   "edge": 0.035,
    "news": "SAC has allowed bench forwards 1% fewer points than average (likely on him: Precious Achiuwa, Jonathan Mogbo); Nique Clifford can switch onto him (SAC allowed forwards 11% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -9221,9 +9221,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-28T03:00:00Z",
-   "p": 0.545,
+   "p": 0.544,
    "price": 0.49,
-   "edge": 0.038,
+   "edge": 0.037,
    "news": "LAL has allowed starting guards 4% fewer rebounds than average (likely on him: Austin Reaves, Luka Doncic); Bronny James can switch onto him (LAL allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -9281,9 +9281,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.613,
+   "p": 0.615,
    "price": 0.5,
-   "edge": 0.095,
+   "edge": 0.097,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
