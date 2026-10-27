@@ -1993,6 +1993,39 @@
     }
    ],
    "daily": true
+  },
+  {
+   "date": "2026-10-27",
+   "app": "Kalshi",
+   "type": "1-leg lock: Cade Cunningham over 1.5 threes",
+   "stake": 5.0,
+   "payout_x": 1.69,
+   "win_p": 0.669,
+   "ev_pct": 13.4,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Cade Cunningham",
+     "team": "DET",
+     "stat": "threes",
+     "side": "over",
+     "line": 1.5,
+     "price": 0.59,
+     "ticker": "KXNBA3PT-26OCT27DETNYK-DETCCUNNINGHAM2-2",
+     "game": "DET @ NYK",
+     "start": "2026-10-28T00:00:00Z",
+     "p": 0.669,
+     "edge": 0.062,
+     "news": "Isaiah Joe (G) is out, so Cade Cunningham's role likely grows; NYK has allowed starting guards 7% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he is out tonight); Landry Shamet can switch onto him (NYK allowed guards 17% fewer threes with him playing; he plays tonight).",
+     "ctx_dp": 0.031,
+     "why": "Cade Cunningham over 1.5 threes: 8 books price it 60%; hit 83% of last 12 (avg 2.7). In games vs NY: 2.1 avg over 18 games, 47% of that rotation is still there, so the matchup counts as 54% over 1.5. Fair 67%.",
+     "case": "Last 5 games: 3, 2, 1, 2, 0 (3 of 5 over 1.5). In games vs NY: 2.1 avg over 18 games, 47% of that rotation is still there, so the matchup counts as 54% over 1.5.",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
@@ -9041,10 +9074,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.649,
+   "p": 0.669,
    "price": 0.59,
-   "edge": 0.042,
-   "news": "NYK has allowed starting guards 7% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he is out tonight); Landry Shamet can switch onto him (NYK allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "edge": 0.062,
+   "news": "Isaiah Joe (G) is out, so Cade Cunningham's role likely grows; NYK has allowed starting guards 7% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he is out tonight); Landry Shamet can switch onto him (NYK allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -9266,9 +9299,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.582,
-   "price": 0.52,
-   "edge": 0.045,
+   "p": 0.583,
+   "price": 0.53,
+   "edge": 0.036,
    "news": "SAC has allowed bench forwards 1% fewer points than average (likely on him: Precious Achiuwa, Jonathan Mogbo); Nique Clifford can switch onto him (SAC allowed forwards 11% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -9342,8 +9375,8 @@
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
    "p": 0.612,
-   "price": 0.49,
-   "edge": 0.105,
+   "price": 0.5,
+   "edge": 0.094,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
