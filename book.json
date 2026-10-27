@@ -2006,7 +2006,7 @@
    "AN Open": 255,
    "BetMGM": 183,
    "BetRivers": 165,
-   "Caesars": 203,
+   "Caesars": 204,
    "DraftKings": 215,
    "FanDuel": 200,
    "Fanatics": 197,
@@ -2016,7 +2016,7 @@
    "Sleeper": 242,
    "Underdog": 260,
    "Unibet": 44,
-   "bet365": 252
+   "bet365": 254
   },
   "data_files": [
    "mlb.sqlite",
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
