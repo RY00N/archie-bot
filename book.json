@@ -1997,7 +1997,7 @@
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-27 13:00 PT",
+  "props_at": "2026-10-27 14:00 PT",
   "props_today": 587,
   "kalshi_props_today": 306,
   "kalshi_priced_today": 33,
@@ -8884,6 +8884,21 @@
   },
   {
    "date": "2026-10-27",
+   "ticker": "KXMLBHIT-26OCT272000MILTB-MILDHAMILTON6-1",
+   "league": "mlb",
+   "player": "David Hamilton",
+   "stat": "hits",
+   "side": "over",
+   "line": 0.5,
+   "start": "2026-10-28T00:00:00Z",
+   "p": 0.548,
+   "price": 0.5,
+   "edge": 0.031,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-10-27",
    "ticker": "KXMLBHIT-26OCT272000MILTB-TBTWALLS6-1",
    "league": "mlb",
    "player": "Taylor Walls",
@@ -8907,8 +8922,8 @@
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
    "p": 0.489,
-   "price": 0.44,
-   "edge": 0.032,
+   "price": 0.43,
+   "edge": 0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -9102,8 +9117,8 @@
    "line": 24.5,
    "start": "2026-10-27T23:30:00Z",
    "p": 0.583,
-   "price": 0.53,
-   "edge": 0.036,
+   "price": 0.52,
+   "edge": 0.046,
    "news": "Injury report: Day-To-Day: White (right hip) is probable for Tuesday's game against the Nets. BKN has allowed starting guards 2% fewer pra than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
