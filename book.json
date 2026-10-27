@@ -1976,7 +1976,7 @@
    "Caesars": 202,
    "DraftKings": 203,
    "FanDuel": 191,
-   "Fanatics": 185,
+   "Fanatics": 186,
    "Parx": 179,
    "Pinnacle": 153,
    "Sleeper": 230,
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -8857,9 +8857,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.458,
+   "p": 0.457,
    "price": 0.4,
-   "edge": 0.041,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8940,6 +8940,21 @@
   },
   {
    "date": "2026-10-27",
+   "ticker": "KXNBA3PT-26OCT27BKNBOS-BOSPPRITCHARD11-3",
+   "league": "nba",
+   "player": "Payton Pritchard",
+   "stat": "threes",
+   "side": "under",
+   "line": 2.5,
+   "start": "2026-10-27T23:30:00Z",
+   "p": 0.544,
+   "price": 0.47,
+   "edge": 0.057,
+   "news": "BKN has allowed bench guards 5% more threes than average (likely on him: Mikel Brown Jr., Nolan Traore); Danny Wolf can switch onto him (BKN allowed guards 20% fewer threes with him playing; he plays tonight); Chaney Johnson can switch onto him (BKN allowed guards 14% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-10-27",
    "ticker": "KXNBA3PT-26OCT27DETNYK-DETJCOLLINS20-2",
    "league": "nba",
    "player": "John Collins",
@@ -8992,9 +9007,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.568,
+   "p": 0.566,
    "price": 0.5,
-   "edge": 0.05,
+   "edge": 0.048,
    "news": "BKN has allowed starting guards 2% fewer pra than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
