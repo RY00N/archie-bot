@@ -1967,7 +1967,7 @@
   "props_at": "2026-10-27 11:00 PT",
   "props_today": 583,
   "kalshi_props_today": 253,
-  "kalshi_priced_today": 22,
+  "kalshi_priced_today": 23,
   "books_on_kalshi_props": {
    "AN Consensus": 248,
    "AN Open": 248,
@@ -1976,7 +1976,7 @@
    "Caesars": 203,
    "DraftKings": 207,
    "FanDuel": 191,
-   "Fanatics": 189,
+   "Fanatics": 190,
    "Parx": 180,
    "Pinnacle": 153,
    "Sleeper": 234,
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
@@ -8857,9 +8857,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.455,
+   "p": 0.457,
    "price": 0.4,
-   "edge": 0.038,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -9045,6 +9045,21 @@
   },
   {
    "date": "2026-10-27",
+   "ticker": "KXNBAPTS-26OCT27BKNBOS-BOSDWHITE9-15",
+   "league": "nba",
+   "player": "Derrick White",
+   "stat": "points",
+   "side": "under",
+   "line": 14.5,
+   "start": "2026-10-27T23:30:00Z",
+   "p": 0.561,
+   "price": 0.49,
+   "edge": 0.054,
+   "news": "Injury report: Day-To-Day: White (right hip) is probable for Tuesday's game against the Nets. BKN has allowed starting guards 5% fewer points than average (likely on him: Ben Saraf, Keon Ellis); Michael Porter Jr. can switch onto him (BKN allowed guards 8% fewer points with him playing; he plays tonight); Egor Demin can switch onto him (BKN allowed guards 8% fewer points with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-10-27",
    "ticker": "KXNBAPTS-26OCT27PORLAL-PORDLILLARD0-20",
    "league": "nba",
    "player": "Damian Lillard",
@@ -9157,9 +9172,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.604,
+   "p": 0.605,
    "price": 0.48,
-   "edge": 0.107,
+   "edge": 0.108,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
