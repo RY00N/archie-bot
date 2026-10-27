@@ -688,6 +688,38 @@ def kalshi_value(leg):
     return float(m.group(1)) if m else None
 
 
+ESPN_NBA = {"points": ["PTS"], "rebounds": ["REB"], "assists": ["AST"], "threes": ["3PT"], "pra": ["PTS", "REB", "AST"],
+            "pts_reb": ["PTS", "REB"], "pts_ast": ["PTS", "AST"], "reb_ast": ["REB", "AST"], "steals": ["STL"],
+            "blocks": ["BLK"], "turnovers": ["TO"], "stocks": ["STL", "BLK"]}
+
+
+def espn_actual(leg):
+    """NBA stat from ESPN's final box score for the leg's game (None if not final, not NBA, or not found)."""
+    cols = ESPN_NBA.get(leg["stat"]) if leg.get("league") == "nba" else None
+    if not cols:
+        return None
+    import urllib.request
+    base = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/"
+    day = datetime.fromisoformat(leg["start"].replace("Z", "+00:00")).astimezone(PT).strftime("%Y%m%d")
+    try:
+        with urllib.request.urlopen(base + "scoreboard?dates=" + day, timeout=15) as r:
+            events = json.loads(r.read())["events"]
+        for ev in events:
+            if not ev["status"]["type"].get("completed"):
+                continue
+            with urllib.request.urlopen(base + "summary?event=" + ev["id"], timeout=15) as r:
+                box = json.loads(r.read())["boxscore"]["players"]
+            for team in box:
+                for s in team["statistics"]:
+                    for a in s["athletes"]:
+                        if a["athlete"]["displayName"].lower() == leg["player"].lower() and a.get("stats"):
+                            row = dict(zip(s["labels"], a["stats"]))
+                            return sum(int(str(row[c]).split("-")[0]) for c in cols)
+    except Exception:
+        return None
+    return None
+
+
 def kalshi_result(leg):
     """Kalshi's own settlement decides Kalshi legs: 'won'/'lost'/'void', 'wait' while the market is still open
     (postponed games carry over), or None if Kalshi can't be reached (then the stats decide)."""
@@ -712,6 +744,12 @@ def grade():
             if l["result"] is None and l.get("ticker"):
                 k = kalshi_result(l)
                 if k == "wait":   # Ryan 2026-10-18: a delayed game isn't void; Kalshi keeps the market open for the makeup game
+                    # Ryan 2026-10-27: Kalshi can sit hours before settling a finished game (Ayo); grade from the box score
+                    st = datetime.fromisoformat(l["start"].replace("Z", "+00:00")) if l.get("start") else None
+                    v = espn_actual(l) if st and datetime.now(timezone.utc) > st + timedelta(hours=2) else None
+                    if isinstance(v, (int, float)):
+                        l["actual"], l["graded_by"] = v, "box score"
+                        l["result"] = "push" if v == l["line"] else ("won" if (v > l["line"]) == (l["side"] == "over") else "lost")
                     continue
                 if k:
                     v = kalshi_value(l)
