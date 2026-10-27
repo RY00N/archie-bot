@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 11
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -8922,8 +8922,8 @@
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
    "p": 0.489,
-   "price": 0.43,
-   "edge": 0.042,
+   "price": 0.44,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -9026,9 +9026,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.649,
+   "p": 0.65,
    "price": 0.59,
-   "edge": 0.042,
+   "edge": 0.043,
    "news": "NYK has allowed starting guards 7% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he is out tonight); Landry Shamet can switch onto him (NYK allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
