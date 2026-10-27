@@ -1965,13 +1965,10 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 19:00 PT",
-  "props_today": 102,
-  "kalshi_props_today": 46,
+  "props_today": 0,
+  "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {
-   "Sleeper": 45,
-   "Underdog": 46
-  },
+  "books_on_kalshi_props": {},
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
