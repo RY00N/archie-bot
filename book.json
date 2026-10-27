@@ -1960,11 +1960,44 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-10-27",
+   "app": "Kalshi",
+   "type": "pick of the day (1-leg)",
+   "stake": 5.0,
+   "payout_x": 2.04,
+   "win_p": 0.611,
+   "ev_pct": 24.7,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Jalen Brunson",
+     "team": "NYK",
+     "stat": "pra",
+     "side": "over",
+     "line": 34.5,
+     "price": 0.49,
+     "ticker": "KXNBAPRA-26OCT27DETNYK-NYKJBRUNSON11-35",
+     "game": "DET @ NYK",
+     "start": "2026-10-28T00:00:00Z",
+     "p": 0.611,
+     "edge": 0.104,
+     "news": "Jose Alvarado is out: Jalen Brunson hit the over in 11/14 games without him vs 12/26 with him; DET has allowed starting guards 10% fewer pra than average (likely on him: Daniss Jenkins, Cade Cunningham).",
+     "ctx_dp": 0.085,
+     "why": "Jalen Brunson over 34.5 pra: 6 books price it 51%; hit 58% of last 12 (avg 35.2); 13/19 over vs DET, avg 39.3. In games vs DET: 36.6 avg over 24 games, 30% of that rotation is still there, so the matchup counts as 65% over 34.5. Fair 61%.",
+     "case": "Last 5 games: 35, 25, 29, 30, 51 (2 of 5 over 34.5). In games vs DET: 36.6 avg over 24 games, 30% of that rotation is still there, so the matchup counts as 65% over 34.5.",
+     "result": null
+    }
+   ],
+   "daily": true
   }
  ],
  "no_games_left": "2026-10-14",
  "diag": {
-  "props_at": "2026-10-27 11:00 PT",
+  "props_at": "2026-10-27 12:00 PT",
   "props_today": 581,
   "kalshi_props_today": 253,
   "kalshi_priced_today": 20,
@@ -9024,8 +9057,8 @@
    "line": 24.5,
    "start": "2026-10-27T23:30:00Z",
    "p": 0.579,
-   "price": 0.51,
-   "edge": 0.052,
+   "price": 0.52,
+   "edge": 0.042,
    "news": "Injury report: Day-To-Day: White (right hip) is probable for Tuesday's game against the Nets. BKN has allowed starting guards 2% fewer pra than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
@@ -9068,9 +9101,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.56,
-   "price": 0.49,
-   "edge": 0.053,
+   "p": 0.556,
+   "price": 0.48,
+   "edge": 0.059,
    "news": "Injury report: Day-To-Day: White (right hip) is probable for Tuesday's game against the Nets. BKN has allowed starting guards 5% fewer points than average (likely on him: Ben Saraf, Keon Ellis); Michael Porter Jr. can switch onto him (BKN allowed guards 8% fewer points with him playing; he plays tonight); Egor Demin can switch onto him (BKN allowed guards 8% fewer points with him playing; he plays tonight).",
    "result": null
   },
