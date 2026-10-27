@@ -2000,7 +2000,7 @@
   "props_at": "2026-10-27 16:00 PT",
   "props_today": 497,
   "kalshi_props_today": 271,
-  "kalshi_priced_today": 34,
+  "kalshi_priced_today": 33,
   "books_on_kalshi_props": {
    "AN Consensus": 266,
    "AN Open": 266,
@@ -2009,7 +2009,7 @@
    "Caesars": 204,
    "DraftKings": 213,
    "FanDuel": 181,
-   "Fanatics": 196,
+   "Fanatics": 193,
    "Hard Rock Bet": 26,
    "Parx": 167,
    "Pinnacle": 148,
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 7
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -8891,9 +8891,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.549,
+   "p": 0.548,
    "price": 0.5,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -9102,8 +9102,8 @@
    "line": 2.5,
    "start": "2026-10-28T00:00:00Z",
    "p": 0.535,
-   "price": 0.45,
-   "edge": 0.068,
+   "price": 0.46,
+   "edge": 0.058,
    "news": "Ben Simmons (G) is out, so Zach LaVine's role likely grows; SAS has allowed starting guards 11% fewer threes than average (likely on him: Devin Vassell, De'Aaron Fox); Carter Bryant can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9342,8 +9342,8 @@
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
    "p": 0.613,
-   "price": 0.5,
-   "edge": 0.095,
+   "price": 0.49,
+   "edge": 0.106,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
