@@ -1971,12 +1971,12 @@
   "books_on_kalshi_props": {
    "AN Consensus": 245,
    "AN Open": 245,
-   "BetMGM": 168,
+   "BetMGM": 167,
    "BetRivers": 161,
    "Caesars": 203,
    "DraftKings": 203,
    "FanDuel": 192,
-   "Fanatics": 183,
+   "Fanatics": 182,
    "Parx": 181,
    "Pinnacle": 146,
    "Sleeper": 231,
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -8970,6 +8970,21 @@
   },
   {
    "date": "2026-10-27",
+   "ticker": "KXNBAAST-26OCT27SACSAS-SACDSABONIS11-6",
+   "league": "nba",
+   "player": "Domantas Sabonis",
+   "stat": "assists",
+   "side": "under",
+   "line": 5.5,
+   "start": "2026-10-28T00:00:00Z",
+   "p": 0.526,
+   "price": 0.43,
+   "edge": 0.079,
+   "news": "SAS has allowed starting forwards 14% fewer assists than average (likely on him: Victor Wembanyama, Julian Champagnie); Stephon Castle can switch onto him (SAS allowed forwards 16% fewer assists with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-10-27",
    "ticker": "KXNBAPRA-26OCT27BKNBOS-BOSDWHITE9-25",
    "league": "nba",
    "player": "Derrick White",
@@ -9007,9 +9022,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.583,
+   "p": 0.582,
    "price": 0.53,
-   "edge": 0.036,
+   "edge": 0.035,
    "news": "SAC has allowed bench forwards 1% fewer points than average (likely on him: Precious Achiuwa, Jonathan Mogbo); Nique Clifford can switch onto him (SAC allowed forwards 11% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -9022,9 +9037,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-28T03:00:00Z",
-   "p": 0.541,
+   "p": 0.54,
    "price": 0.49,
-   "edge": 0.034,
+   "edge": 0.033,
    "news": "LAL has allowed starting guards 4% fewer rebounds than average (likely on him: Austin Reaves, Luka Doncic); Bronny James can switch onto him (LAL allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
