@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 6
+  "kalshi_legs_today": 5
  },
  "shadow": [
   {
@@ -8966,6 +8966,21 @@
    "price": 0.48,
    "edge": 0.034,
    "news": "LAL has allowed starting guards 4% fewer rebounds than average (likely on him: Austin Reaves, Luka Doncic); Bronny James can switch onto him (LAL allowed guards 14% fewer rebounds with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "KXNBAREB-26OCT27PORLAL-PORJMORANT1-4",
+   "league": "nba",
+   "player": "Ja Morant",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-10-28T03:00:00Z",
+   "p": 0.477,
+   "price": 0.43,
+   "edge": 0.03,
+   "news": "Chris Youngblood (G) is out, so Ja Morant's role likely grows; LAL has allowed starting guards 4% fewer rebounds than average (likely on him: Austin Reaves, Luka Doncic); Bronny James can switch onto him (LAL allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
