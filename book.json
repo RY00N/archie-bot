@@ -2005,13 +2005,13 @@
    "AN Consensus": 304,
    "AN Open": 305,
    "BetMGM": 225,
-   "BetRivers": 165,
+   "BetRivers": 167,
    "Caesars": 241,
    "DraftKings": 249,
-   "FanDuel": 215,
-   "Fanatics": 225,
+   "FanDuel": 217,
+   "Fanatics": 231,
    "Hard Rock Bet": 26,
-   "Parx": 200,
+   "Parx": 203,
    "Pinnacle": 182,
    "Sleeper": 281,
    "Underdog": 310,
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -8906,9 +8906,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.461,
+   "p": 0.462,
    "price": 0.41,
-   "edge": 0.034,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8921,9 +8921,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.489,
+   "p": 0.488,
    "price": 0.44,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8981,9 +8981,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.458,
+   "p": 0.457,
    "price": 0.41,
-   "edge": 0.031,
+   "edge": 0.03,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8996,9 +8996,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.457,
+   "p": 0.455,
    "price": 0.39,
-   "edge": 0.05,
+   "edge": 0.048,
    "news": "Tyler Bilodeau (F) is out, so Julius Randle's role likely grows; BOS has allowed starting forwards 1% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9296,9 +9296,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.612,
+   "p": 0.613,
    "price": 0.49,
-   "edge": 0.105,
+   "edge": 0.106,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
