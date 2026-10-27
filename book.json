@@ -2002,14 +2002,14 @@
   "kalshi_props_today": 311,
   "kalshi_priced_today": 34,
   "books_on_kalshi_props": {
-   "AN Consensus": 304,
+   "AN Consensus": 303,
    "AN Open": 306,
    "BetMGM": 225,
    "BetRivers": 168,
    "Caesars": 241,
    "DraftKings": 250,
    "FanDuel": 217,
-   "Fanatics": 226,
+   "Fanatics": 225,
    "Hard Rock Bet": 26,
    "Parx": 203,
    "Pinnacle": 182,
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 12
  },
  "shadow": [
   {
@@ -8891,9 +8891,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.548,
+   "p": 0.549,
    "price": 0.5,
-   "edge": 0.031,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -9056,9 +9056,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-28T03:00:00Z",
-   "p": 0.471,
+   "p": 0.472,
    "price": 0.39,
-   "edge": 0.064,
+   "edge": 0.065,
    "news": "LAL has allowed starting guards 25% fewer threes than average (likely on him: Austin Reaves, Luka Doncic); Bronny James can switch onto him (LAL allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9071,9 +9071,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.545,
+   "p": 0.544,
    "price": 0.46,
-   "edge": 0.068,
+   "edge": 0.067,
    "news": "Ben Simmons (G) is out, so Zach LaVine's role likely grows; SAS has allowed starting guards 11% fewer threes than average (likely on him: Devin Vassell, De'Aaron Fox); Carter Bryant can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
