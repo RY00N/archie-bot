@@ -2000,16 +2000,16 @@
   "props_at": "2026-10-27 13:00 PT",
   "props_today": 592,
   "kalshi_props_today": 263,
-  "kalshi_priced_today": 21,
+  "kalshi_priced_today": 20,
   "books_on_kalshi_props": {
    "AN Consensus": 258,
    "AN Open": 258,
    "BetMGM": 187,
    "BetRivers": 165,
-   "Caesars": 212,
+   "Caesars": 211,
    "DraftKings": 223,
    "FanDuel": 201,
-   "Fanatics": 196,
+   "Fanatics": 194,
    "Hard Rock Bet": 17,
    "Parx": 185,
    "Pinnacle": 153,
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 9
  },
  "shadow": [
   {
@@ -9026,9 +9026,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-28T03:00:00Z",
-   "p": 0.477,
+   "p": 0.478,
    "price": 0.39,
-   "edge": 0.07,
+   "edge": 0.071,
    "news": "LAL has allowed starting guards 25% fewer threes than average (likely on him: Austin Reaves, Luka Doncic); Bronny James can switch onto him (LAL allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9086,9 +9086,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.584,
+   "p": 0.583,
    "price": 0.52,
-   "edge": 0.047,
+   "edge": 0.046,
    "news": "Injury report: Day-To-Day: White (right hip) is probable for Tuesday's game against the Nets. BKN has allowed starting guards 2% fewer pra than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
