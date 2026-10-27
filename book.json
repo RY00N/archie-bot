@@ -1998,23 +1998,23 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-27 16:00 PT",
-  "props_today": 611,
-  "kalshi_props_today": 324,
+  "props_today": 497,
+  "kalshi_props_today": 271,
   "kalshi_priced_today": 34,
   "books_on_kalshi_props": {
    "AN Consensus": 266,
    "AN Open": 266,
    "BetMGM": 201,
-   "BetRivers": 128,
-   "Caesars": 203,
+   "BetRivers": 132,
+   "Caesars": 204,
    "DraftKings": 213,
    "FanDuel": 181,
    "Fanatics": 196,
    "Hard Rock Bet": 26,
-   "Parx": 163,
+   "Parx": 167,
    "Pinnacle": 148,
    "Sleeper": 242,
-   "Underdog": 324,
+   "Underdog": 271,
    "Unibet": 47,
    "bet365": 266
   },
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 9
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -9342,8 +9342,8 @@
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
    "p": 0.613,
-   "price": 0.49,
-   "edge": 0.106,
+   "price": 0.5,
+   "edge": 0.095,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
