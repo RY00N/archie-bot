@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 6
  },
  "shadow": [
   {
@@ -8873,8 +8873,8 @@
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
    "p": 0.598,
-   "price": 0.54,
-   "edge": 0.041,
+   "price": 0.55,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8932,9 +8932,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.549,
+   "p": 0.55,
    "price": 0.5,
-   "edge": 0.032,
+   "edge": 0.033,
    "news": "BKN has allowed starting guards 0% more assists than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
