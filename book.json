@@ -1965,16 +1965,16 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 17:00 PT",
-  "props_today": 335,
+  "props_today": 331,
   "kalshi_props_today": 168,
   "kalshi_priced_today": 6,
   "books_on_kalshi_props": {
-   "AN Consensus": 168,
+   "AN Consensus": 167,
    "AN Open": 168,
    "BetMGM": 121,
    "BetRivers": 138,
    "Caesars": 136,
-   "DraftKings": 139,
+   "DraftKings": 142,
    "FanDuel": 140,
    "Fanatics": 126,
    "Parx": 138,
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 3
+  "kalshi_legs_today": 4
  },
  "shadow": [
   {
@@ -8122,9 +8122,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T00:30:00Z",
-   "p": 0.638,
+   "p": 0.632,
    "price": 0.56,
-   "edge": 0.061,
+   "edge": 0.055,
    "news": "News: Rockets Announced Reed Sheppard Injury Designation vs. Spurs - Yahoo Sports ATL has allowed bench guards 19% more threes than average (likely on him: Aaron Wiggins, RayJ Dennis); Mouhamed Gueye can switch onto him (ATL allowed guards 9% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -8362,9 +8362,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.646,
-   "price": 0.5,
-   "edge": 0.129,
+   "p": 0.658,
+   "price": 0.51,
+   "edge": 0.131,
    "news": "Moses Moody is out: Brandin Podziemski hit the under in 17/27 games without him vs 3/13 with him; DEN has allowed starting guards 3% more assists than average (likely on him: Jamal Murray, Christian Braun).",
    "result": null
   },
