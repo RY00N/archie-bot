@@ -1973,7 +1973,7 @@
    "AN Open": 245,
    "BetMGM": 167,
    "BetRivers": 161,
-   "Caesars": 202,
+   "Caesars": 204,
    "DraftKings": 203,
    "FanDuel": 192,
    "Fanatics": 182,
@@ -1981,7 +1981,7 @@
    "Pinnacle": 146,
    "Sleeper": 231,
    "Underdog": 250,
-   "Unibet": 28,
+   "Unibet": 29,
    "bet365": 245
   },
   "data_files": [
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -8857,8 +8857,8 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.479,
-   "price": 0.43,
+   "p": 0.469,
+   "price": 0.42,
    "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
@@ -8932,9 +8932,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.464,
+   "p": 0.462,
    "price": 0.4,
-   "edge": 0.047,
+   "edge": 0.045,
    "news": "Tyler Bilodeau (F) is out, so Julius Randle's role likely grows; BOS has allowed starting forwards 1% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -8977,9 +8977,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.508,
+   "p": 0.504,
    "price": 0.43,
-   "edge": 0.061,
+   "edge": 0.057,
    "news": "SAS has allowed starting forwards 14% fewer assists than average (likely on him: Victor Wembanyama, Julian Champagnie); Stephon Castle can switch onto him (SAS allowed forwards 16% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -8992,9 +8992,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.565,
+   "p": 0.567,
    "price": 0.5,
-   "edge": 0.047,
+   "edge": 0.049,
    "news": "BKN has allowed starting guards 2% fewer pra than average (likely on him: Ben Saraf, Keon Ellis).",
    "result": null
   },
