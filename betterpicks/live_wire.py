@@ -313,6 +313,11 @@ def urgent(n):
     if n["kind"] == "roster move" and re.search(r"practice squad|two-way|G League|minor league|injured reserve", n["text"], re.I) \
             and not re.search(r"(?<!practice squad )\b(signed|acquired|traded)\b(?! .*practice squad)", n["text"], re.I):
         return False
+    # 2026-10-27: NFL "injured during the play" lines and game recaps woke the thread every few minutes; they ride along
+    if n["kind"] == "in-game" and n.get("league") == "nfl":
+        return False
+    if n["kind"] == "news" and re.search(r"\b(lead|leads|past|beat|beats|rout|routs|top|tops|edge|edges)\b.*\d+-\d+", n["text"]):
+        return False
     if n["kind"] != "injury report":
         return True
     return ": Out (" in n["text"]
