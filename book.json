@@ -1998,7 +1998,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-27 15:00 PT",
-  "props_today": 592,
+  "props_today": 593,
   "kalshi_props_today": 311,
   "kalshi_priced_today": 34,
   "books_on_kalshi_props": {
@@ -2009,7 +2009,7 @@
    "Caesars": 241,
    "DraftKings": 250,
    "FanDuel": 217,
-   "Fanatics": 232,
+   "Fanatics": 225,
    "Hard Rock Bet": 26,
    "Parx": 203,
    "Pinnacle": 182,
@@ -2024,7 +2024,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 12
+  "kalshi_legs_today": 13
  },
  "shadow": [
   {
@@ -8891,9 +8891,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.549,
+   "p": 0.548,
    "price": 0.5,
-   "edge": 0.032,
+   "edge": 0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8981,9 +8981,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.457,
+   "p": 0.46,
    "price": 0.41,
-   "edge": 0.03,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -8996,9 +8996,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T23:30:00Z",
-   "p": 0.454,
+   "p": 0.456,
    "price": 0.39,
-   "edge": 0.047,
+   "edge": 0.049,
    "news": "Tyler Bilodeau (F) is out, so Julius Randle's role likely grows; BOS has allowed starting forwards 1% more threes than average (likely on him: Jayson Tatum, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -9266,9 +9266,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-28T03:00:00Z",
-   "p": 0.481,
-   "price": 0.43,
-   "edge": 0.034,
+   "p": 0.488,
+   "price": 0.44,
+   "edge": 0.031,
    "news": "Chris Youngblood (G) is out, so Jrue Holiday's role likely grows; LAL has allowed bench guards 25% fewer rebounds than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -9311,9 +9311,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.613,
+   "p": 0.611,
    "price": 0.5,
-   "edge": 0.095,
+   "edge": 0.093,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -9341,9 +9341,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.548,
+   "p": 0.552,
    "price": 0.47,
-   "edge": 0.061,
+   "edge": 0.065,
    "news": "Injury report: Day-To-Day: Thompson (ankle) was a full participant at Tuesday's shootaround, Coty M. Davis of The Detroit News reports. NYK has allowed starting guards 4% fewer steals than average (likely on him: Jalen Brunson, Josh Hart); Tyler Kolek can switch onto him (NYK allowed guards 18% fewer steals with him playing; he plays tonight); Jordan Clarkson can switch onto him (NYK allowed guards 10% fewer steals with him playing; he plays tonight).",
    "result": null
   },
