@@ -1974,9 +1974,9 @@
    "BetMGM": 169,
    "BetRivers": 160,
    "Caesars": 200,
-   "DraftKings": 207,
+   "DraftKings": 210,
    "FanDuel": 191,
-   "Fanatics": 190,
+   "Fanatics": 188,
    "Parx": 180,
    "Pinnacle": 153,
    "Sleeper": 234,
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 8
+  "kalshi_legs_today": 7
  },
  "shadow": [
   {
@@ -9112,9 +9112,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-28T03:00:00Z",
-   "p": 0.542,
+   "p": 0.541,
    "price": 0.48,
-   "edge": 0.045,
+   "edge": 0.044,
    "news": "LAL has allowed starting guards 4% fewer rebounds than average (likely on him: Austin Reaves, Luka Doncic); Bronny James can switch onto him (LAL allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -9172,9 +9172,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-28T00:00:00Z",
-   "p": 0.605,
+   "p": 0.606,
    "price": 0.48,
-   "edge": 0.108,
+   "edge": 0.109,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 2/2 games without him vs 9/11 with him; SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
