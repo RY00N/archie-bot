@@ -199,7 +199,7 @@ def check_news(league, st, new):
         if key in seen:
             continue
         seen[key] = a.get("published", "")[:10]
-        if a.get("published", "") < RECENT or first or NEWS_SKIP.search(h) or not STRONG.search(h) or (a.get("type") or "") == "Media":
+        if a.get("published", "") < RECENT or first or NEWS_SKIP.search(h) or h.rstrip().endswith("?") or not STRONG.search(h) or (a.get("type") or "") == "Media":
             continue
         new.append({"league": league, "kind": "news", "text": h})
 
