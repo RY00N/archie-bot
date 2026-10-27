@@ -1982,7 +1982,7 @@
    "Sleeper": 105,
    "Underdog": 108,
    "Unibet": 15,
-   "bet365": 107
+   "bet365": 108
   },
   "data_files": [
    "mlb.sqlite",
@@ -8377,9 +8377,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.591,
+   "p": 0.592,
    "price": 0.54,
-   "edge": 0.034,
+   "edge": 0.035,
    "news": "News: Time to trade red-hot Ty Jerome, drop struggling Draymond Green? - ESPN La Crosse 105.5 DEN has allowed starting forwards 22% more assists than average (likely on him: Aaron Gordon, Zeke Nnaji).",
    "result": null
   },
@@ -8737,9 +8737,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-10-27T01:00:00Z",
-   "p": 0.496,
+   "p": 0.498,
    "price": 0.43,
-   "edge": 0.049,
+   "edge": 0.051,
    "news": "MEM has allowed starting forwards 13% more rebounds than average (likely on him: Cameron Boozer, Cedric Coward).",
    "result": null
   },
