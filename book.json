@@ -1965,7 +1965,7 @@
  "no_games_left": "2026-10-14",
  "diag": {
   "props_at": "2026-10-26 17:00 PT",
-  "props_today": 325,
+  "props_today": 324,
   "kalshi_props_today": 165,
   "kalshi_priced_today": 6,
   "books_on_kalshi_props": {
@@ -1976,7 +1976,7 @@
    "Caesars": 136,
    "DraftKings": 139,
    "FanDuel": 137,
-   "Fanatics": 124,
+   "Fanatics": 123,
    "Parx": 138,
    "Pinnacle": 101,
    "Sleeper": 157,
@@ -1990,7 +1990,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 5
+  "kalshi_legs_today": 3
  },
  "shadow": [
   {
@@ -8122,9 +8122,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-27T00:30:00Z",
-   "p": 0.639,
+   "p": 0.638,
    "price": 0.56,
-   "edge": 0.062,
+   "edge": 0.061,
    "news": "News: Rockets Announced Reed Sheppard Injury Designation vs. Spurs - Yahoo Sports ATL has allowed bench guards 19% more threes than average (likely on him: Aaron Wiggins, RayJ Dennis); Mouhamed Gueye can switch onto him (ATL allowed guards 9% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -8557,9 +8557,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-27T02:00:00Z",
-   "p": 0.563,
+   "p": 0.564,
    "price": 0.49,
-   "edge": 0.056,
+   "edge": 0.057,
    "news": "DEN has allowed starting forwards 13% more points than average (likely on him: Aaron Gordon, Zeke Nnaji).",
    "result": null
   },
