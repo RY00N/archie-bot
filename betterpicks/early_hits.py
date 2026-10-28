@@ -45,6 +45,7 @@ def main():
     if not hits:
         return
     parlays.grade()
+    subprocess.run(["python3", "-I", f"{BP}/betterpicks.py", "report"], cwd="/tmp", capture_output=True)   # summary/record for city + footer
     print(now.isoformat(timespec="seconds"), "early HIT:", "; ".join(hits))
     # push the verdict now instead of waiting for the 4-minute refresh
     subprocess.run(["python3", "-I", f"{REPO}/betterpicks/feed.py"], cwd="/tmp", capture_output=True)
