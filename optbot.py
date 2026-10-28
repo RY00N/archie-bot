@@ -172,6 +172,13 @@ def step(bot, log):
             threading.Thread(target=dtskill.news, args=(log, True), name="dts-news", daemon=True).start()
         except Exception as e:
             log(f"DTS news hook error: {e}")
+    try:  # 10/28 Ryan: all-day QQQ book picked by day-trader-skill (dtsbook.py), its own thread, newest code after each pull
+        import importlib, dtsbook
+        if time.time() - _last.get("dtsbook_reload", 0) > 300:
+            importlib.reload(dtsbook); _last["dtsbook_reload"] = time.time()
+        dtsbook.ensure_thread(bot, log)
+    except Exception as e:
+        log(f"dtsbook hook error: {e}")
     o = st.get("open")
     if o:  # manage the open option: stop, profit lock + trail, time stop
         if o.get("state") == "pending":

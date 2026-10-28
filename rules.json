@@ -242,5 +242,22 @@
     "share_stop_pct": 15,
     "book_frac": 0.3,
     "disagree_frac": 0.15
+  },
+  "dtsbook": {
+    "enabled": true,
+    "budget": 60000,
+    "risk_per_trade": 125,
+    "day_goal": 750,
+    "day_brake": 250,
+    "max_trades": 10,
+    "first_min": 575,
+    "last_min": 930,
+    "flat_min": 955,
+    "level_stop": "pct:0.4",
+    "go": [
+      "Leans toward the target",
+      "Strongly toward the target"
+    ],
+    "note": "Ryan 10/28: QQQ trades only when day-trader-skill's Time Machine leans to the target and its risk check passes; stop the day at +$750 / -$250"
   }
 }

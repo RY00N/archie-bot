@@ -171,6 +171,14 @@ def _gapfill():
         return {"status": f"error: {e}"}
 
 
+def _dtsbook():
+    try:  # 10/28: QQQ day trades picked by day-trader-skill
+        import dtsbook
+        return dtsbook.summary()
+    except Exception as e:
+        return {"error": str(e)[:200]}
+
+
 def _options():
     try:
         import importlib, optbot
@@ -229,7 +237,7 @@ def snapshot(bot, market_open):
     return {"book": "paper", "note": "Practice money. Never counts toward real totals.",
             "updated": datetime.now(timezone.utc).isoformat()[:19] + "Z", "market_open": market_open,
             "swing_enabled": bot.RULES.get("swing_enabled", True),  # off = city hides the swing P&L
-            **combined, "swing": swing, "day": day, "futures": _futures(), "prop": _prop(), "gapfill": _gapfill(), "droplong": _droplong(), "options": _options(), "meme": _meme(), "xfeed": _xfeed(), "intel": _intel(), **_live()}
+            **combined, "swing": swing, "day": day, "futures": _futures(), "prop": _prop(), "gapfill": _gapfill(), "droplong": _droplong(), "options": _options(), "dtsbook": _dtsbook(), "meme": _meme(), "xfeed": _xfeed(), "intel": _intel(), **_live()}
 
 
 def _intel():
