@@ -81,9 +81,8 @@ def injuries(league, c):
                     out[name.lower()] = f"{i.get('status', '')}: {i.get('shortComment', '')}"[:300]
         return out
     out = dict(_cached(c, f"inj:{league}", fetch) or {})
-    if league == "nba":
-        for k, o in official_nba(c).items():
-            out[k] = f"{o['status']}: {o['reason']} (official NBA report)"[:300]
+    for k, o in official(league, c).items():
+        out[k] = f"{o['status']}: {o['reason']} (official {league.upper()} report)"[:300]
     return out
 
 
@@ -104,8 +103,8 @@ def team_abbrs(league, c):
     return _cached(c, f"teams:{league}", fetch) or {}
 
 
-# Ryan 2026-10-28: "switch to it" - the NBA's own injury report (nba_injury_report.py) overrides ESPN's status for
-# every player it lists and adds anyone ESPN hasn't caught yet. The droplet gets it parsed inside books_feed.json.
+# Ryan 2026-10-28: "switch to it" / "all sports possible" - each league's own report (official_reports.py) overrides
+# ESPN's status for every player it lists and adds anyone ESPN hasn't caught yet. NFL team names stay as nfl.com gives them.
 OFFICIAL = None
 NBA_TEAM = {"Atlanta Hawks": "ATL", "Boston Celtics": "BOS", "Brooklyn Nets": "BKN", "Charlotte Hornets": "CHA",
             "Chicago Bulls": "CHI", "Cleveland Cavaliers": "CLE", "Dallas Mavericks": "DAL", "Denver Nuggets": "DEN",
@@ -117,15 +116,17 @@ NBA_TEAM = {"Atlanta Hawks": "ATL", "Boston Celtics": "BOS", "Brooklyn Nets": "B
             "Toronto Raptors": "TOR", "Utah Jazz": "UTA", "Washington Wizards": "WSH"}
 
 
-def official_nba(c):
-    """{name lower: {name, team, status, reason}} from the newest official NBA injury report, else {}."""
-    if OFFICIAL and OFFICIAL.get("players"):
-        return OFFICIAL["players"]
+def official(league, c):
+    """{name lower: {name, team, status, reason}} from the league's own report (official_reports.py), else {}.
+    The droplet gets these parsed in books_feed.json (OFFICIAL); the project side fetches them itself."""
+    if OFFICIAL and league in OFFICIAL:
+        return OFFICIAL[league] or {}
     try:
-        import nba_injury_report
+        import official_reports
     except Exception:
         return {}
-    return (_cached(c, "nba_official", nba_injury_report.latest) or {}).get("players", {})
+    fn = official_reports.SOURCES.get(league)
+    return (_cached(c, f"official:{league}", fn) or {}) if fn else {}
 
 
 def injury_list(league, c):
@@ -149,16 +150,16 @@ def injury_list(league, c):
                                 "status": i.get("status", ""), "date": (i.get("date") or "")[:10]})
         return out
     out = [dict(i) for i in (_cached(c, f"injl:{league}", fetch) or [])]
-    if league == "nba":
-        off = official_nba(c)
+    off = official(league, c)
+    if off:
         seen = set()
         for i in out:
             o = off.get(i["name"].lower())
             if o:
-                i["status"], i["source"] = o["status"], "nba"
+                i["status"], i["source"] = o["status"], "official"
                 seen.add(i["name"].lower())
-        out += [{"name": o["name"], "team": norm(NBA_TEAM.get(o["team"], "")), "pos": "", "status": o["status"],
-                 "date": "", "source": "nba"} for k, o in off.items() if k not in seen]
+        out += [{"name": o["name"], "team": norm(NBA_TEAM.get(o["team"], o["team"])), "pos": "", "status": o["status"],
+                 "date": "", "source": "official"} for k, o in off.items() if k not in seen]
     return out
 
 

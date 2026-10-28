@@ -10,7 +10,7 @@ books_feed.json; the hourly routine commits it and parlays.py on the droplet mer
 import json, os, sys, urllib.request
 from datetime import datetime, timedelta, timezone
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import record, why_lost, nba_injury_report   # noqa: E402
+import record, why_lost, official_reports   # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 KEEP_OUT = {"PrizePicks", "Underdog", "Sleeper", "Kalshi", "Polymarket"}   # the droplet fetches these itself
@@ -137,12 +137,9 @@ def main():
         if books:
             feed[key(pr)] = books
     v = verdicts()
-    try:
-        ir = nba_injury_report.latest()   # Ryan 2026-10-28: official NBA injury report, parsed here for the droplet
-    except Exception:
-        ir = None
+    off = official_reports.all_leagues()   # Ryan 2026-10-28: each league's official report, parsed here for the droplet
     json.dump({"generated_at": doc.get("generated_at"), "props": feed, **({"verdicts": v} if v else {}),
-               **({"nba_injuries": ir} if ir and ir.get("players") else {})},
+               **({"official_injuries": off} if off else {})},
               open(out, "w"), separators=(",", ":"))
     print(f"feed: {len(feed)} props, {len(v['parlays']) if v else 0} graded parlays -> {out}")
 
