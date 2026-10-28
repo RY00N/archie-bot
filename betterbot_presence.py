@@ -433,6 +433,24 @@ def human_count(premium=False):
         after = page[-1]["user"]["id"]
 
 
+WINLOSS_CH = os.environ.get("BP_WINLOSS_CH", "1564169511291068546")
+
+
+def channel_record():
+    """(hits, losses) as posted in the Wins/Losses channel (Ryan 2026-10-28: the counters must match what members see)."""
+    hit = lost = 0
+    before = None
+    while True:
+        page = http("GET", f"{API}/channels/{WINLOSS_CH}/messages?limit=100" + (f"&before={before}" if before else ""))
+        for m in page:
+            t = (m.get("content") or "") + " ".join(e.get("title") or "" for e in m.get("embeds", []))
+            hit += "**HIT:" in t
+            lost += "**LOST:" in t
+        if len(page) < 100:
+            return hit, lost
+        before = page[-1]["id"]
+
+
 def counters_loop():
     want, shown, renamed, last_rec, last_count = {}, {}, {}, 0, 0
     MEMBERS_CHANGED.set()   # count once at start
@@ -446,11 +464,11 @@ def counters_loop():
         if time.time() - last_rec >= 180:
             last_rec = time.time()
             try:
-                rec = (feed().get("verdicts") or {}).get("record") or {}
+                h, l = channel_record()
+                if h or l:
+                    want["wins"], want["losses"] = h, l
             except Exception as e:
-                rec = {}; print("record fetch failed:", e, flush=True)
-            if "won" in rec:
-                want["wins"], want["losses"] = rec["won"], rec["lost"]
+                print("record count failed:", e, flush=True)
         for k, n in want.items():
             ch, fmt = COUNTERS[k]
             if shown.get(k) == n or time.time() - renamed.get(k, 0) < 300:
