@@ -431,6 +431,7 @@ def merge_feed(props):
     if age > timedelta(hours=3):
         return 0
     if doc.get("official_injuries"):
+        sys.path.insert(0, HERE)   # python3 -I (the droplet) leaves the script's folder off sys.path
         import news
         news.OFFICIAL = doc["official_injuries"]
     feed, n = doc.get("props", {}), 0
