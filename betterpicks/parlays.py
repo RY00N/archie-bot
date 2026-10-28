@@ -738,7 +738,9 @@ def combo_ok(l):
     event = next(("-".join(parts[:i]) for i in range(len(parts) - 1, 1, -1) if "-".join(parts[:i]) in _combo_rules), None)
     if _combo_rules and event is None:
         return False
-    return l["side"] == "over" or _combo_rules.get(event) is False
+    # Ryan 2026-10-28: "you can't put a no inside of a combo" - YES legs only, whatever Kalshi's flag says
+    # (an MLB World Series event slipped through as not-yes-only and a NO leg went out in a combo)
+    return l["side"] == "over"
 
 
 def kalshi_value(leg):
