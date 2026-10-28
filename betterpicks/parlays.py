@@ -473,6 +473,10 @@ def build():
     legs = collect_legs(props, now, apps=apps)
     # Ryan's banned player/stat pairs (rules.json "banned"), never picked in any form
     ban = {(b["player"].lower(), st) for b in r.get("banned", []) for st in b.get("stats", [])}
+    # Ryan 2026-10-28: whole stats switched off per league (rules.json "banned_stats"), e.g. NBA rebounds went 4-14
+    # at 60%+ in the shadow log. Still shadow-logged below, so we can see when a fix makes them trustworthy again.
+    off = lambda l: l["prop"]["stat"] in r.get("banned_stats", {}).get(l["prop"]["league"], [])
+    blocked = lambda l: (l["prop"]["player"].lower(), l["prop"]["stat"]) in ban or off(l)
     legs = [l for l in legs if (l["prop"]["player"].lower(), l["prop"]["stat"]) not in ban]
     min_win, mode = r.get("parlay_min_win_p", 0.65), r.get("parlay_mode", "whole")
     under_p = r.get("under_min_p", 0.0)   # Ryan 2026-10-21: unders need more margin
@@ -483,6 +487,7 @@ def build():
     ok = (lambda c: math.prod(l["p"] for l in c) >= min_win) if mode == "whole" else (lambda c: all(leg_ok(l, combo_bar) for l in c))
     # still-open picks from earlier days count too: a postponed game's pick carries over, never re-posted (Ryan 2026-10-19)
     shadow(book, legs, now_pt)
+    legs = [l for l in legs if not off(l)]
     # The droplet's book never gets grades (the project grades), so an old "open" pick only blocks its own market
     # (a postponed game keeps its ticker); the player is blocked only while that game is still to be played.
     # Ryan 2026-10-26: Podziemski/Edwards sat at 75%+ for hours unposted because Oct 20-23 picks looked open forever.
@@ -556,7 +561,7 @@ def build():
     if now_pt.hour >= r.get("daily_pick_after_pt", 12) and not any(e["date"] == today for e in book["parlays"] + entries):
         pool = sorted([l for l in collect_legs(props, now, apps=("Kalshi",), min_edge=0.0)
                        if datetime.fromisoformat(l["prop"]["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == today
-                       and (l["prop"]["player"], l["prop"]["stat"]) not in used
+                       and (l["prop"]["player"], l["prop"]["stat"]) not in used and not blocked(l)
                        and (l["side"] != "under" or (l["p"] >= no_p and l["edge"] >= no_edge))], key=lambda l: -l["p"])[:15]
         cands = []
         for size in range(1, max_legs + 1):
