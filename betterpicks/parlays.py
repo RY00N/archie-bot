@@ -576,6 +576,8 @@ def build():
                 wp = math.prod(l["p"] for l in c)
                 mult = 1 / c[0]["price"] if size == 1 else kalshi_combo_mult([l["price"] for l in c])
                 cands.append((wp >= r.get("daily_pick_min_p", 0.40), wp * mult, wp, c, mult))
+        # Ryan 2026-10-28: pick of the day needs 50%+ (daily_pick_min_p) as a hard floor, no fallback below it
+        cands = [x for x in cands if x[0]]
         if cands:
             _, ev, wp, c, mult = max(cands, key=lambda t: (t[0], t[1] if t[0] else t[2]))
             e = make_entry(today, "Kalshi", f"pick of the day ({len(c)}-leg)", list(c), mult if len(c) == 1 else None, ev - 1)
