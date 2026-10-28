@@ -369,6 +369,26 @@ def hot_star(leg, c):
     return 0.0, None
 
 
+# Ryan 2026-10-28: weigh the likely defenders by how well they actually defend. NBA.com's season defense dashboards
+# (pulled through Ryan's Chrome, build_defenders.py) give each defender's DIFF%: FG% allowed minus what those shooters
+# normally hit. Backtest 2025-26 (likely defenders = opponent's top-2 minutes at his position, rated on 2024-25 data):
+# vs the stingiest fifth (DIFF% -1.9 or lower) players beat their own scoring average 47% (points) / 47% (PRA) vs
+# 49-54% for every other fifth; no clear effect for threes, rebounds or rim defense, so points-type props only.
+DEF_URL = "https://raw.githubusercontent.com/RY00N/archie-bot/claude/project-thread-8sdhk6/betterpicks/nba_defenders.json"
+DEF_STATS, DEF_STINGY, DEF_DP = ("points", "pra", "pr", "pa"), -2.0, 0.03
+
+
+def defenders(c):
+    """{defender name lower: [overall DIFF%, shots defended]} (local file, else the repo copy, cached)."""
+    path = os.path.join(HERE, "nba_defenders.json")
+    if os.path.exists(path):
+        try:
+            return json.load(open(path)).get("overall", {})
+        except Exception:
+            pass
+    return (_cached(c, "nba_defenders", lambda: _get(DEF_URL)) or {}).get("overall", {})
+
+
 def pos_defense(leg, c):
     """-> (win-chance change, note) from the opponent's defense vs his position + role, else (0, None)."""
     pr, side = leg["prop"], leg["side"]
@@ -415,6 +435,13 @@ def pos_defense(leg, c):
                       "starter=? and date>=? and season_type='regular' order by date desc limit 120) group by player order by avg(minutes) desc",
                (DB_TEAM.get(opp, opp), starter, time.strftime("%Y-%m-%d", time.gmtime(time.time() - 200 * 86400))))
     who = [p for p, m in mins if in_grp(p) and p.lower() in rost and p.lower() not in outs][:2]
+    stingy = None
+    if pr["stat"] in DEF_STATS and who:
+        dd = defenders(c)
+        rated = [dd[w.lower()][0] for w in who if w.lower() in dd and dd[w.lower()][1] >= 150]
+        if rated and sum(rated) / len(rated) <= DEF_STINGY:
+            stingy = sum(rated) / len(rated)
+            dp += -DEF_DP if side == "over" else DEF_DP
     label = {"G": "guards", "F": "forwards", "C": "centers"}[grp]
     word = "more" if base >= 1 else "fewer"
     note = (f"{opp} has allowed {'starting' if starter else 'bench'} {label} {abs(base - 1):.0%} {word} "
@@ -422,6 +449,8 @@ def pos_defense(leg, c):
     for f, name, eff, playing in sw:
         note += (f"; {name} can switch onto him ({opp} allowed {label} {abs(eff):.0%} fewer "
                  f"{pr['stat'].replace('_', ' ')} with him playing; {'he plays' if playing else 'he is out'} tonight)")
+    if stingy is not None:
+        note += f"; those defenders hold shooters {abs(stingy):.1f}% below their normal FG%, among the league's stingiest"
     return (round(dp, 3), note) if abs(ratio - 1) >= 0.05 or who else (0.0, None)
 
 
