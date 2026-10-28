@@ -80,5 +80,33 @@
  "min_kalshi_edge": -1.0,
  "edge_note": "Ryan 2026-10-28 04:43Z: edge rule removed (-1 = off). Picks ranked by win chance.",
  "history_min_games": 8,
- "potd_note": "Ryan 2026-10-28 04:46Z: fade (turn off) pick of the day; only data-backed props: his own log of 8+ games must agree with the side (>50%)."
+ "potd_note": "Ryan 2026-10-28 04:46Z: fade (turn off) pick of the day; only data-backed props: his own log of 8+ games must agree with the side (>50%).",
+ "manual_posts": [
+  {
+   "date": "2026-10-28",
+   "player": "Kevin Huerter",
+   "stat": "threes"
+  },
+  {
+   "date": "2026-10-28",
+   "player": "Jonny DeLuca",
+   "stat": "hits"
+  },
+  {
+   "date": "2026-10-28",
+   "player": "Junior Caminero",
+   "stat": "hits"
+  },
+  {
+   "date": "2026-10-28",
+   "player": "Kyshawn George",
+   "stat": "steals"
+  },
+  {
+   "date": "2026-10-28",
+   "player": "Cade Cunningham",
+   "stat": "threes"
+  }
+ ],
+ "manual_posts_note": "2026-10-28: droplet build was crashing, project posted these 5 by hand; droplet skips them. Ryan: try not to do 5 a day, but post if good enough."
 }

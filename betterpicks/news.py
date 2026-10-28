@@ -338,7 +338,7 @@ SWITCH_GAMES, SWITCH_SHRINK, SWITCH_MIN_OFF = 40, 8, 4
 
 def switchers(opp_db, opp, grp, col, pos, c, better=False):
     """-> [(factor for tonight, name, effect, playing)] for the opponent's defenders who can switch onto this group."""
-    rows = SQL("nba", f"select date, player, {col} from player_games where opp=? and season_type='regular' "
+    rows = _sql_memo("nba", f"select date, player, {col} from player_games where opp=? and season_type='regular' "
                       f"and minutes>=12 order by date desc limit 1500", (opp_db,))
     dates = sorted({r[0] for r in rows}, reverse=True)[:SWITCH_GAMES]
     if len(dates) < 20:
@@ -429,6 +429,18 @@ def defenders(c):
     return (_cached(c, "nba_defenders", lambda: _get(DEF_URL)) or {}).get("overall", {})
 
 
+_MEMO = {}
+
+
+def _sql_memo(league, q, args):
+    """SQL with a per-run memo: pos_defense/switchers ask the same league-wide queries for every leg (2026-10-28:
+    ~60s of a build, enough to push the droplet past its step timeout)."""
+    k = (league, q, tuple(args))
+    if k not in _MEMO:
+        _MEMO[k] = SQL(league, q, args)
+    return _MEMO[k]
+
+
 def pos_defense(leg, c):
     """-> (win-chance change, note) from the opponent's defense vs his position + role, else (0, None)."""
     pr, side = leg["prop"], leg["side"]
@@ -453,8 +465,8 @@ def pos_defense(leg, c):
     since = time.strftime("%Y-%m-%d", time.gmtime(time.time() - 400 * 86400))
     q = (f"select player, {col}, date from player_games where season_type='regular' and starter=? and minutes>=12 "
          f"and date>=? and {{}} order by date desc")
-    vs = [r for r in SQL("nba", q.format("opp=?"), (starter, since, DB_TEAM.get(opp, opp))) if in_grp(r[0])][:60]
-    lg = [r for r in SQL("nba", q.format("1=1"), (starter, since)) if in_grp(r[0])][:3000]
+    vs = [r for r in _sql_memo("nba", q.format("opp=?"), (starter, since, DB_TEAM.get(opp, opp))) if in_grp(r[0])][:60]
+    lg = [r for r in _sql_memo("nba", q.format("1=1"), (starter, since)) if in_grp(r[0])][:3000]
     if len(vs) < POSDEF_MIN or len(lg) < 500:
         return 0.0, None
     a, b = sum(r[1] or 0 for r in vs) / len(vs), sum(r[1] or 0 for r in lg) / len(lg)
@@ -471,7 +483,7 @@ def pos_defense(leg, c):
     # likely defenders: the opponent's players at his position in his role, most minutes lately, active tonight
     outs = {i["name"].lower() for i in injury_list("nba", c) if is_out(i["status"])}
     rost = roster_pos("nba", opp, c)
-    mins = SQL("nba", "select player, avg(minutes) from (select player, minutes from player_games where team=? and "
+    mins = _sql_memo("nba", "select player, avg(minutes) from (select player, minutes from player_games where team=? and "
                       "starter=? and date>=? and season_type='regular' order by date desc limit 120) group by player order by avg(minutes) desc",
                (DB_TEAM.get(opp, opp), starter, time.strftime("%Y-%m-%d", time.gmtime(time.time() - 200 * 86400))))
     who = [p for p, m in mins if in_grp(p) and p.lower() in rost and p.lower() not in outs][:2]

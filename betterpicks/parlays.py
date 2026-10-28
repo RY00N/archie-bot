@@ -515,6 +515,11 @@ def build():
     today = now_pt.date().isoformat()
     lock_edge, lock_p = r.get("lock_single_edge", 0.10), r.get("lock_single_min_p", 0.60)
     n_locks = sum(1 for e in book["parlays"] if e["date"] == today and e.get("lock"))
+    # picks the project posted by hand while the droplet was down (rules.json manual_posts): never post them again,
+    # and they count toward the day's lock cap
+    for m in r.get("manual_posts", []):
+        if m["date"] == today:
+            used.add((m["player"], m["stat"])); n_locks += 1
     for l in sorted([l for l in legs if l["app"] == "Kalshi" and l["edge"] >= lock_edge and leg_ok(l, lock_p)], key=lambda l: (-l["p"], -l["edge"])):
         if n_locks >= r.get("max_locks_per_day", 3):
             break
@@ -557,8 +562,8 @@ def build():
     is_today = lambda pr: bool(pr.get("start")) and datetime.fromisoformat(pr["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == today
     k_today = [pr for pr in props if is_today(pr) and (pr["sources"].get("Kalshi") or {}).get("ladder")]
     probe = (book.get("diag") or {}).get("nba_stats_probe") or {}
-    if not probe.get("at") or now - datetime.fromisoformat(probe["at"].replace("Z", "+00:00")) > timedelta(hours=1):
-        probe = nba_stats_probe()
+    # 2026-10-28: probe retired (stats.nba.com blocks the droplet for good) - its 20s hang helped push build past
+    # scan_server's 170s step timeout, so no picks were saved
     book["diag"] = {"nba_stats_probe": probe, "props_at": props_at.astimezone(PT).strftime("%Y-%m-%d %H:00 PT") if props_at else None,
                     "props_today": sum(1 for pr in props if is_today(pr)), "kalshi_props_today": len(k_today),
                     "kalshi_priced_today": sum(1 for pr in k_today if (pr["league"], pr["stat"]) in STATS
