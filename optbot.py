@@ -164,6 +164,14 @@ def step(bot, log):
         if not bot.trade("GET", "/v2/account")["account_number"].startswith("PA"):
             return
         _last["paper"] = today
+    if _last.get("dts_news") != today:  # 10/28: day-trader-skill news check once a day at the open (info only, own thread)
+        _last["dts_news"] = today
+        try:
+            import importlib, dtskill
+            importlib.reload(dtskill)
+            threading.Thread(target=dtskill.news, args=(log, True), name="dts-news", daemon=True).start()
+        except Exception as e:
+            log(f"DTS news hook error: {e}")
     o = st.get("open")
     if o:  # manage the open option: stop, profit lock + trail, time stop
         if o.get("state") == "pending":
@@ -260,6 +268,15 @@ def step(bot, log):
         qty = min(max(qty, c["min_qty"]), int(cash // (ask * 100)))
     if qty < 1:
         save(st); return
+    try:  # 10/28 Ryan: run Jake Schincariol's day-trader-skill risk check on every order (vendor/day-trader-skill, dtskill.py)
+        import dtskill
+        ok = dtskill.risk_check(osym, qty, ask, c.get("share_stop_pct", 15) if _shares(c) else c["stop_pct"],
+                                c["budget_start"] + st.get("realized", 0), c.get("max_trades", 1), log, unit=unit)
+    except Exception as e:
+        log(f"DTS hook error: {e}"); ok = True
+    if not ok:
+        st["done"], st["why_done"] = True, f"skipped: day-trader-skill risk check blocked {qty} {osym}"
+        log(f"OPT {st['why_done']}"); save(st); return
     od = bot.trade("POST", "/v2/orders", body={"symbol": osym, "qty": str(qty), "side": "buy", "type": "limit",
                                                 "limit_price": f"{ask:.2f}", "time_in_force": "day"})
     st["open"] = {"state": "pending", "order_id": od["id"], "symbol": osym, "side": ("up" if side > 0 else "down") if _shares(c) else "call" if side > 0 else "put", "mult": unit,
@@ -276,7 +293,16 @@ def summary():
     return {"name": "TQQQ/SQQQ first-5 day trade (Alpaca paper)" if _shares(c) else "QQQ options scalper (Alpaca paper)", "enabled": c["enabled"], "budget_start": c["budget_start"],
             "equity": round(eq, 2), "day_pnl": st.get("day_pnl", 0), "realized": st.get("realized", 0),
             "positions": [o] if o else [], "trades": st.get("history", [])[-50:],
-            "status": ("off" if not c["enabled"] else st.get("why_done") or ("in a trade" if o else "watching")), "date": st.get("date")}
+            "status": ("off" if not c["enabled"] else st.get("why_done") or ("in a trade" if o else "watching")), "date": st.get("date"),
+            "dts": _dts_summary()}
+
+
+def _dts_summary():
+    try:
+        import dtskill
+        return dtskill.summary()
+    except Exception as e:
+        return {"error": str(e)[:200]}
 
 
 def _loop(bot, log):
