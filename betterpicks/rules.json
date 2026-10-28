@@ -36,7 +36,7 @@
   6,
   12
  ],
- "lock_single_edge": -1.0,
+ "lock_single_edge": 0.035,
  "lock_single_min_p": 0.635,
  "max_locks_per_day": 3,
  "kalshi_only_note": "Ryan 2026-10-12 06:25Z: stick to Kalshi for now (no PrizePicks or sportsbook singles); parlays max 3 legs (1-2 ok); max 3 parlays per day posted whenever found (no time window since 2026-10-14); a can't-pass-up single leg (edge >= lock_single_edge, fair >= lock_single_min_p) goes out any time as a 1-leg lock and doesn't count toward the 3 (max_locks_per_day).",
@@ -68,7 +68,7 @@
  ],
  "banned_note": "Ryan 2026-10-26 01:06Z: ban Scottie Barnes for points (never a lock or any pick again; includes points combos PRA/PR/PA). Add players here the same way.",
  "no_lock_min_p": 0.72,
- "no_lock_min_edge": -1.0,
+ "no_lock_min_edge": 0.035,
  "no_lock_note": "Ryan 2026-10-26 07:09Z: steer away from NO player props unless it's a GENUINE LOCK; go for YES because people can combo them. A NO (under) needs 72%+ win chance and 8%+ edge for any pick (locks and pick of the day); combos stay YES-only.",
  "banned_stats": {
   "nba": [
@@ -77,6 +77,6 @@
  },
  "banned_stats_note": "Ryan 2026-10-28 04:04Z: cut NBA rebounds (shadow 4-14 at 60%+, real 0-3) until a backtested fix; still shadow-logged.",
  "bar_note_2026_10_28": "Ryan 2026-10-28 04:19Z: singles (SP) 63.5%+, pick of the day (POTD) 50%+ hard floor.",
- "min_kalshi_edge": -1.0,
- "edge_note": "Ryan 2026-10-28 04:19Z: don't require beating Kalshi's price, only the win-chance bars (63.5% singles, 65% combo legs, 72% NO, 50% POTD). Edge floors off (-1); locks ranked by win chance."
+ "min_kalshi_edge": 0.035,
+ "edge_note": "Ryan 2026-10-28 04:25Z: keep beating Kalshi's price, by 3.5% (all picks incl. NO). Bars: singles 63.5%, combo legs 65%, NO 72%, POTD 50% hard floor. Locks ranked by win chance."
 }
