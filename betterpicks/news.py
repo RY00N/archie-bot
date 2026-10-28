@@ -80,7 +80,11 @@ def injuries(league, c):
                 if name:
                     out[name.lower()] = f"{i.get('status', '')}: {i.get('shortComment', '')}"[:300]
         return out
-    return _cached(c, f"inj:{league}", fetch) or {}
+    out = dict(_cached(c, f"inj:{league}", fetch) or {})
+    if league == "nba":
+        for k, o in official_nba(c).items():
+            out[k] = f"{o['status']}: {o['reason']} (official NBA report)"[:300]
+    return out
 
 
 def norm(t):
@@ -98,6 +102,30 @@ def team_abbrs(league, c):
         return {str(t["team"]["id"]): t["team"]["abbreviation"]
                 for lg in d.get("sports", [{}])[0].get("leagues", []) for t in lg.get("teams", [])}
     return _cached(c, f"teams:{league}", fetch) or {}
+
+
+# Ryan 2026-10-28: "switch to it" - the NBA's own injury report (nba_injury_report.py) overrides ESPN's status for
+# every player it lists and adds anyone ESPN hasn't caught yet. The droplet gets it parsed inside books_feed.json.
+OFFICIAL = None
+NBA_TEAM = {"Atlanta Hawks": "ATL", "Boston Celtics": "BOS", "Brooklyn Nets": "BKN", "Charlotte Hornets": "CHA",
+            "Chicago Bulls": "CHI", "Cleveland Cavaliers": "CLE", "Dallas Mavericks": "DAL", "Denver Nuggets": "DEN",
+            "Detroit Pistons": "DET", "Golden State Warriors": "GSW", "Houston Rockets": "HOU", "Indiana Pacers": "IND",
+            "LA Clippers": "LAC", "Los Angeles Lakers": "LAL", "Memphis Grizzlies": "MEM", "Miami Heat": "MIA",
+            "Milwaukee Bucks": "MIL", "Minnesota Timberwolves": "MIN", "New Orleans Pelicans": "NOP",
+            "New York Knicks": "NYK", "Oklahoma City Thunder": "OKC", "Orlando Magic": "ORL", "Philadelphia 76ers": "PHI",
+            "Phoenix Suns": "PHX", "Portland Trail Blazers": "POR", "Sacramento Kings": "SAC", "San Antonio Spurs": "SAS",
+            "Toronto Raptors": "TOR", "Utah Jazz": "UTA", "Washington Wizards": "WSH"}
+
+
+def official_nba(c):
+    """{name lower: {name, team, status, reason}} from the newest official NBA injury report, else {}."""
+    if OFFICIAL and OFFICIAL.get("players"):
+        return OFFICIAL["players"]
+    try:
+        import nba_injury_report
+    except Exception:
+        return {}
+    return (_cached(c, "nba_official", nba_injury_report.latest) or {}).get("players", {})
 
 
 def injury_list(league, c):
@@ -120,7 +148,18 @@ def injury_list(league, c):
                                 "pos": (a.get("position") or {}).get("abbreviation", ""),
                                 "status": i.get("status", ""), "date": (i.get("date") or "")[:10]})
         return out
-    return _cached(c, f"injl:{league}", fetch) or []
+    out = [dict(i) for i in (_cached(c, f"injl:{league}", fetch) or [])]
+    if league == "nba":
+        off = official_nba(c)
+        seen = set()
+        for i in out:
+            o = off.get(i["name"].lower())
+            if o:
+                i["status"], i["source"] = o["status"], "nba"
+                seen.add(i["name"].lower())
+        out += [{"name": o["name"], "team": norm(NBA_TEAM.get(o["team"], "")), "pos": "", "status": o["status"],
+                 "date": "", "source": "nba"} for k, o in off.items() if k not in seen]
+    return out
 
 
 def roster_pos(league, team, c):

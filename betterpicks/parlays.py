@@ -430,6 +430,9 @@ def merge_feed(props):
         return 0
     if age > timedelta(hours=3):
         return 0
+    if doc.get("nba_injuries"):
+        import news
+        news.OFFICIAL = doc["nba_injuries"]
     feed, n = doc.get("props", {}), 0
     for pr in props:
         books = feed.get("|".join((pr["league"], pr["player"].lower(), pr["stat"], (pr.get("start") or "")[:10])))
