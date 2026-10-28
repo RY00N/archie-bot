@@ -93,6 +93,21 @@ _CONN, _ROWS, _TEAM, _MIN, _ROLE = {}, {}, {}, {}, {}
 NBA_CODE = {"GS": "GSW", "NY": "NYK", "NO": "NOP", "SA": "SAS", "UTAH": "UTA", "WSH": "WAS"}
 
 
+def _open(local):
+    """Connect to the local DB copy and index the columns the lookups filter on (the DBs ship with no indexes;
+    2026-10-28 the per-player scans made the droplet's build blow past its 170s step timeout)."""
+    con = sqlite3.connect(local)
+    try:
+        cols = {r[1] for r in con.execute("pragma table_info(player_games)")}
+        for col in ("player", "opp", "team", "player_display_name", "player_name", "opponent_team"):
+            if col in cols:
+                con.execute(f"create index if not exists ix_pg_{col} on player_games({col})")
+        con.commit()
+    except sqlite3.Error:
+        pass
+    return con
+
+
 def sql(league, query, args=()):
     """Run a read query on a league's stats DB (same local copy rows_for uses)."""
     name = f"{league}.sqlite"
@@ -103,7 +118,7 @@ def sql(league, query, args=()):
         local = os.path.join("/tmp", "betterpicks-" + name)
         if not os.path.exists(local) or os.path.getmtime(local) < os.path.getmtime(src):
             import shutil; shutil.copyfile(src, local)
-        _CONN[name] = sqlite3.connect(local)
+        _CONN[name] = _open(local)
     return _CONN[name].execute(query, args).fetchall()
 
 
@@ -121,7 +136,7 @@ def rows_for(league, stat, player):
             src = os.path.join(DATA, q[0])
             if not os.path.exists(local) or os.path.getmtime(local) < os.path.getmtime(src):
                 import shutil; shutil.copyfile(src, local)
-            _CONN[q[0]] = sqlite3.connect(local)
+            _CONN[q[0]] = _open(local)
         rows = None
         if league == "nba":
             try:
