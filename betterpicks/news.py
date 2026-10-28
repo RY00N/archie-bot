@@ -494,6 +494,37 @@ def pos_defense(leg, c):
     return (round(dp, 3), note) if abs(ratio - 1) >= 0.05 or who else (0.0, None)
 
 
+# Ryan 2026-10-28: "be your own version of their service" (minutes projections, free). Our projection = average of his
+# last-5 and last-15 minutes (beat last-15 alone, last-5 alone, and versions adding freed-up teammate minutes: MAE 4.99
+# vs 5.21 over 46k games, 2024-26). Backtest, players 20+ min / 8+ pts: projection minus his last-15 minutes vs how often
+# he beat his last-15 scoring average: +3 or more 59%, +1..3 50%, -1..1 46%, -3..-1 42%, -3 or less 32%.
+# Applied at about half those gaps, points-type props only (the only stats tested).
+MIN_STATS = ("points", "pra", "pr", "pa")
+MIN_STEPS = ((3, 0.06), (1, 0.02), (-1, 0.0), (-3, -0.02), (-99, -0.06))
+
+
+def minutes_trend(leg, c):
+    """-> (win-chance change, note) from his minutes trend (our own minutes projection), else (0, None)."""
+    pr, side = leg["prop"], leg["side"]
+    if pr["league"] != "nba" or pr["stat"] not in MIN_STATS or SQL is None:
+        return 0.0, None
+    g = [r[0] or 0 for r in SQL("nba", "select minutes from player_games where player=? and season_type in "
+                                       "('regular', 'playoffs') and minutes>0 order by date desc limit 15", (pr["player"],))]
+    if len(g) < 10:
+        return 0.0, None
+    l5, l15 = sum(g[:5]) / 5, sum(g) / len(g)
+    if l15 < 20:
+        return 0.0, None
+    proj = (l5 + l15) / 2
+    d = proj - l15
+    dp = next(v for cut, v in MIN_STEPS if d >= cut)
+    if not dp:
+        return 0.0, None
+    note = (f"minutes trending {'up' if d > 0 else 'down'} (we project {proj:.0f}, his last 5 avg {l5:.0f} vs "
+            f"{l15:.0f} over 15)")
+    return (dp if side == "over" else -dp), note
+
+
 def blowout_adj(leg, c):
     """-> (win-chance change, note) for a likely blowout, else (0, None)."""
     pr = leg["prop"]
@@ -578,6 +609,13 @@ def adjust(legs):
             print("double-team check skipped:", pr["player"], ex)
         if hnote:
             cdp += hdp; cnotes = list(cnotes) + [hnote]
+        try:
+            mdp, mnote = minutes_trend(l, c)
+        except Exception as ex:
+            mdp, mnote = 0.0, None
+            print("minutes check skipped:", pr["player"], ex)
+        if mnote:
+            cdp += mdp; cnotes = list(cnotes) + [mnote]
         l["ctx_dp"] = round(cdp, 3) if cnotes else 0.0   # pregame.py re-checks this part right before tip
         if cnotes:
             dp += cdp

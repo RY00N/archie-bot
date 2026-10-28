@@ -85,7 +85,8 @@ def fresh_p(leg, c):
     bdp, _ = news.blowout_adj({"prop": pr, "side": leg["side"], "line": leg["line"]}, c)
     pdp, _ = news.pos_defense({"prop": pr, "side": leg["side"], "line": leg["line"]}, c)
     hdp, _ = news.hot_star({"prop": pr, "side": leg["side"], "line": leg["line"]}, c)
-    return round(leg["p"] - old + dp + bdp + pdp + hdp, 3), dp + bdp + pdp + hdp
+    mdp, _ = news.minutes_trend({"prop": pr, "side": leg["side"], "line": leg["line"]}, c)
+    return round(leg["p"] - old + dp + bdp + pdp + hdp + mdp, 3), dp + bdp + pdp + hdp + mdp
 
 
 def gone_mates(leg, c):
