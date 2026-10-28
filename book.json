@@ -2035,18 +2035,18 @@
    "at": "2026-10-28T02:34:53+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-10-27 19:00 PT",
+  "props_at": "2026-10-27 20:00 PT",
   "props_today": 118,
   "kalshi_props_today": 56,
   "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
-   "AN Consensus": 55,
+   "AN Consensus": 56,
    "AN Open": 56,
    "BetMGM": 36,
    "BetRivers": 41,
    "Caesars": 43,
    "DraftKings": 50,
-   "FanDuel": 47,
+   "FanDuel": 46,
    "Fanatics": 35,
    "Parx": 41,
    "Pinnacle": 35,
@@ -2061,7 +2061,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 1
+  "kalshi_legs_today": 0
  },
  "shadow": [
   {
