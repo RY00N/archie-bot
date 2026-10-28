@@ -31,7 +31,7 @@
   "Kalshi"
  ],
  "max_legs": 2,
- "max_parlays_per_day": 0,
+ "max_parlays_per_day": 1,
  "post_window_pt": [
   6,
   12
@@ -117,6 +117,5 @@
  "big_day_count": 5,
  "big_day_min_p": 0.7,
  "big_day_note": "Ryan 2026-10-28 20:34Z: post the top 3-4 picks by win chance; a 5th only if most of the day's 5 (3+) are 70%+. Hand posts: send Ryan the exact list first.",
- "max_parlays_per_day_was": 3,
- "combos_paused_note": "2026-10-28 22:30Z: combos paused (locks only) while Ryan decides; he said post only the top 3-5 picks."
+ "combo_note_2026_10_28": "Ryan 2026-10-28 22:36Z (decision card): keep combos, max 1 a day, on top of the 3-5 singles."
 }
