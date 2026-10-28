@@ -473,7 +473,9 @@ def build():
     max_legs, max_par = r.get("max_legs", 3), r.get("max_parlays_per_day", 3)
     slate = now_pt.date().isoformat()
     book.setdefault("parlays", [])
-    legs = collect_legs(props, now, apps=apps)
+    # Ryan 2026-10-28: "idc if its better than kalshi's price, i just want to make sure the pick hits" -> the edge floors
+    # come from rules.json (min_kalshi_edge, lock_single_edge, no_lock_min_edge), set to -1 = off; picks rank by win chance
+    legs = collect_legs(props, now, apps=apps, min_edge=r.get("min_kalshi_edge", MIN_KALSHI_EDGE))
     # Ryan's banned player/stat pairs (rules.json "banned"), never picked in any form
     ban = {(b["player"].lower(), st) for b in r.get("banned", []) for st in b.get("stats", [])}
     # Ryan 2026-10-28: whole stats switched off per league (rules.json "banned_stats"), e.g. NBA rebounds went 4-14
@@ -505,7 +507,7 @@ def build():
     today = now_pt.date().isoformat()
     lock_edge, lock_p = r.get("lock_single_edge", 0.10), r.get("lock_single_min_p", 0.60)
     n_locks = sum(1 for e in book["parlays"] if e["date"] == today and e.get("lock"))
-    for l in sorted([l for l in legs if l["app"] == "Kalshi" and l["edge"] >= lock_edge and leg_ok(l, lock_p)], key=lambda l: -l["edge"]):
+    for l in sorted([l for l in legs if l["app"] == "Kalshi" and l["edge"] >= lock_edge and leg_ok(l, lock_p)], key=lambda l: (-l["p"], -l["edge"])):
         if n_locks >= r.get("max_locks_per_day", 3):
             break
         if (l["prop"]["player"], l["prop"]["stat"]) in used or l["prop"]["player"] in {u[0] for u in used}:

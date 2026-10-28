@@ -41,7 +41,7 @@ def fmt_pick(p):
 def fmt_parlay(e):
     pay = f"{e['payout_x']}x" if e.get("payout_x") else "multiplier: check the app"
     legs = "\n".join(f"- {leg_label(l)} ({l['game']})"
-                     + (f" edge {l['edge'] * 100:+.1f}%" if l.get("edge") is not None else "")
+                     + (f" edge {l['edge'] * 100:+.1f}%" if (l.get("edge") or 0) > 0 else "")
                      for l in e["legs"])
     return f"**{e['app']} {e['type']}**, ${e['stake']:.0f}, {pay}, {e['win_p']:.0%} win chance\n{legs}"
 
@@ -120,8 +120,9 @@ def embed_parlay(e):
         edge = l.get("edge")
         if edge is None and l.get("price"):
             edge = l["p"] - l["price"] - 0.07 * l["price"] * (1 - l["price"])
+        # Ryan 2026-10-28: accuracy over price; only show a real edge
         nums = " · ".join(x for x in (f"{round(l['price'] * 100)}¢ on Kalshi" if l.get("price") else "",
-                                      f"we have it at {l['p']:.0%}", f"edge {edge * 100:+.1f}%" if edge is not None else "") if x)
+                                      f"we have it at {l['p']:.0%}", f"edge {edge * 100:+.1f}%" if (edge or 0) > 0 else "") if x)
         why = (l.get("case") or l.get("why") or "").strip()
         val = "\n".join(x for x in (f"{l['game']} · {nums}", f"**Why:** {why}" if why else "",
                                       f"**News:** {l['news']}" if l.get("news") else "",
