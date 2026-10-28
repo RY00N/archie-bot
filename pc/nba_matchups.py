@@ -1,6 +1,6 @@
 """Daily NBA defender-matchup pull, run on Ryan's PC (home connection; stats.nba.com blocks cloud/datacenter IPs).
 Ryan OK'd 2026-10-28. Pulls each finished game's boxscorematchupsv3 (who guarded whom, possessions, points allowed)
-for the given PT dates (default: yesterday) and writes one JSON per date to OUT. Honest User-Agent, no header spoofing:
+for the given PT dates (default: any of the last 3 days not pulled yet) and writes one JSON per date to OUT. Honest User-Agent, no header spoofing:
 if the site refuses, it says so and stops. Standard library only.
   python nba_matchups.py [YYYY-MM-DD ...] [--out D:\\BetterPicks\\nba_matchups] [--test]"""
 import json, os, sys, time, urllib.request
@@ -45,7 +45,10 @@ def main(argv):
         out_dir = argv[argv.index("--out") + 1]
         del argv[argv.index("--out"):argv.index("--out") + 2]
     test = "--test" in argv
-    dates = [a for a in argv if a[:2] == "20"] or [(datetime.now(timezone(timedelta(hours=-7))) - timedelta(days=1)).strftime("%Y-%m-%d")]
+    today = datetime.now(timezone(timedelta(hours=-7)))
+    # default: catch up on any of the last 3 days not pulled yet (the PC may have been off)
+    dates = [a for a in argv if a[:2] == "20"] or [d for d in ((today - timedelta(days=i)).strftime("%Y-%m-%d") for i in (3, 2, 1))
+                                                    if not os.path.exists(os.path.join(out_dir, f"{d}.json"))]
     if test:
         t = time.time()
         try:
