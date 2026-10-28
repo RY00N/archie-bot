@@ -493,6 +493,13 @@ def build():
     # still-open picks from earlier days count too: a postponed game's pick carries over, never re-posted (Ryan 2026-10-19)
     shadow(book, legs, now_pt)
     legs = [l for l in legs if not off(l)]
+    # Ryan 2026-10-28: "only bet on backed up player props with info we have on it": a pick needs his own game log
+    # (history_min_games+) and that log has to agree with the side (hit it more than half the time)
+    hmin = r.get("history_min_games", 0)
+    if hmin:
+        backed = lambda l: bool(l.get("hist")) and l["hist"].get("games", 0) >= hmin and (
+            l["hist"]["hit_rate"] if l["side"] == "over" else 1 - l["hist"]["hit_rate"]) > 0.5
+        legs = [l for l in legs if backed(l)]
     # The droplet's book never gets grades (the project grades), so an old "open" pick only blocks its own market
     # (a postponed game keeps its ticker); the player is blocked only while that game is still to be played.
     # Ryan 2026-10-26: Podziemski/Edwards sat at 75%+ for hours unposted because Oct 20-23 picks looked open forever.

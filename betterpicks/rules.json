@@ -48,7 +48,7 @@
  "sports_note": "Ryan 2026-10-13 20:00Z: only baseball, basketball, football, soccer. UFC only when the pick is a near-certainty by the stats AND what people are saying online (no UFC props are scanned today). NHL never.",
  "news_note": "Ryan 2026-10-13 20:00Z: every leg is checked against ESPN injury reports and the last 3 days of news (news.py): Out/IL/suspended = dropped; questionable or bad news (illness, personal/family matter, divorce, slump) = overs lose 5-8 win-chance points. Note shows in Discord.",
  "post_window_note": "Ryan 2026-10-14 01:08Z: no posting cutoff, picks post whenever found (any hour). post_window_pt now only sets the 8am/10am 'nothing yet' notes and when the bad-day note may go (after noon, only if no Kalshi games left today).",
- "daily_pick_after_pt": 12,
+ "daily_pick_after_pt": 24,
  "parlay_min_win_p_note": "Ryan 2026-10-19 02:47Z: each leg 60%+ after the injury/matchup check (final call; 57% was live for a minute).",
  "combo_min_leg_p": 0.65,
  "under_min_p": 0.65,
@@ -78,5 +78,7 @@
  "banned_stats_note": "Ryan 2026-10-28 04:04Z: cut NBA rebounds (shadow 4-14 at 60%+, real 0-3) until a backtested fix; still shadow-logged.",
  "bar_note_2026_10_28": "Ryan 2026-10-28 04:43Z FINAL: singles 62%+ win chance, NO edge requirement (shadow 9 days: 28-5, 85%, best profit). POTD 50%+ hard floor. Combo legs 65%, NO picks 72%.",
  "min_kalshi_edge": -1.0,
- "edge_note": "Ryan 2026-10-28 04:43Z: edge rule removed (-1 = off). Picks ranked by win chance."
+ "edge_note": "Ryan 2026-10-28 04:43Z: edge rule removed (-1 = off). Picks ranked by win chance.",
+ "history_min_games": 8,
+ "potd_note": "Ryan 2026-10-28 04:46Z: fade (turn off) pick of the day; only data-backed props: his own log of 8+ games must agree with the side (>50%)."
 }
