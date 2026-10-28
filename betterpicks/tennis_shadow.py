@@ -3,7 +3,7 @@ Each run: Pinnacle's tennis moneylines (de-vigged = fair win chance) vs Kalshi's
 Every Kalshi player whose fair chance is 60%+ gets logged once per match with the YES ask at first sighting;
 later runs grade settled markets from Kalshi. `report` prints hit rate and ROI by win-chance band.
   python3 tennis_shadow.py [run|report]"""
-import json, os, sys, unicodedata, urllib.parse, urllib.request
+import json, os, sys, time, unicodedata, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
 PIN = "https://guest.api.arcadia.pinnacle.com/0.1"
@@ -13,9 +13,15 @@ LOG = "/mnt/project-files/betterpicks/tennis_shadow.json"
 MIN_P = 0.60
 
 
-def get(url):
+def get(url, tries=4):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (BetterPicks)"})
-    return json.loads(urllib.request.urlopen(req, timeout=25).read())
+    for i in range(tries):
+        try:
+            return json.loads(urllib.request.urlopen(req, timeout=25).read())
+        except urllib.error.HTTPError as e:   # Kalshi rate-limits (429) when the loop's other jobs hit it at once
+            if e.code != 429 or i == tries - 1:
+                raise
+            time.sleep(2 * 2 ** i)
 
 
 def key(name):
