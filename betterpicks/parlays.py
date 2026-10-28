@@ -439,6 +439,22 @@ def merge_feed(props):
     return n
 
 
+def nba_stats_probe():
+    """Ryan 2026-10-28: can this machine reach stats.nba.com's defender matchup data? Plain request with an honest
+    user agent (no browser disguise), at most hourly; the result rides along in book.json diag."""
+    import urllib.request
+    t = time.time()
+    try:
+        req = urllib.request.Request("https://stats.nba.com/stats/boxscorematchupsv3?GameID=0022600001",
+                                     headers={"User-Agent": "BetterPicks (1.0)"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            res = {"status": r.status, "bytes": len(r.read())}
+    except Exception as e:
+        res = {"error": str(e)[:200]}
+    res.update(at=datetime.now(timezone.utc).isoformat(timespec="seconds"), secs=round(time.time() - t, 1))
+    return res
+
+
 def build():
     # Ryan 2026-10-12 06:25Z rules (rules.json): Kalshi only for now; parlays of at most 3 legs (1-2 fine);
     # at most 3 parlays per slate day. Ryan 2026-10-14 01:08Z: no posting window, keep checking Kalshi and post whenever.
@@ -522,7 +538,10 @@ def build():
         props_at, props_fresh = None, False
     is_today = lambda pr: bool(pr.get("start")) and datetime.fromisoformat(pr["start"].replace("Z", "+00:00")).astimezone(PT).date().isoformat() == today
     k_today = [pr for pr in props if is_today(pr) and (pr["sources"].get("Kalshi") or {}).get("ladder")]
-    book["diag"] = {"props_at": props_at.astimezone(PT).strftime("%Y-%m-%d %H:00 PT") if props_at else None,
+    probe = (book.get("diag") or {}).get("nba_stats_probe") or {}
+    if not probe.get("at") or now - datetime.fromisoformat(probe["at"].replace("Z", "+00:00")) > timedelta(hours=1):
+        probe = nba_stats_probe()
+    book["diag"] = {"nba_stats_probe": probe, "props_at": props_at.astimezone(PT).strftime("%Y-%m-%d %H:00 PT") if props_at else None,
                     "props_today": sum(1 for pr in props if is_today(pr)), "kalshi_props_today": len(k_today),
                     "kalshi_priced_today": sum(1 for pr in k_today if (pr["league"], pr["stat"]) in STATS
                                                and fair(pr, pr["sources"]["Kalshi"]["ladder"][0]["line"], "over")),
