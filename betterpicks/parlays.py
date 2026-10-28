@@ -515,20 +515,24 @@ def build():
     today = now_pt.date().isoformat()
     lock_edge, lock_p = r.get("lock_single_edge", 0.10), r.get("lock_single_min_p", 0.60)
     n_locks = sum(1 for e in book["parlays"] if e["date"] == today and e.get("lock"))
+    day_ps = [e["legs"][0].get("p") or 0 for e in book["parlays"] if e["date"] == today and e.get("lock")]
     # picks the project posted by hand while the droplet was down (rules.json manual_posts): never post them again,
     # and they count toward the day's lock cap
     for m in r.get("manual_posts", []):
         if m["date"] == today:
-            used.add((m["player"], m["stat"])); n_locks += 1
+            used.add((m["player"], m["stat"])); n_locks += 1; day_ps.append(m.get("p", 0))
     for l in sorted([l for l in legs if l["app"] == "Kalshi" and l["edge"] >= lock_edge and leg_ok(l, lock_p)], key=lambda l: (-l["p"], -l["edge"])):
         if n_locks >= r.get("max_locks_per_day", 3):
+            break
+        # Ryan 2026-10-28: top 3-4 a day; a 5th only when most of the day's 5 (3+) are 70%+
+        if n_locks + 1 >= r.get("big_day_count", 5) and sum(x >= r.get("big_day_min_p", 0.70) for x in day_ps + [l["p"]]) < 3:
             break
         if (l["prop"]["player"], l["prop"]["stat"]) in used or l["prop"]["player"] in {u[0] for u in used}:
             continue   # one pick per player (Ryan 2026-10-21 rules: no stacking the same player)
         e = make_entry(today, "Kalshi", f"1-leg lock: {l['prop']['player']} {l['side']} {l['line']} {l['prop']['stat'].replace('_', ' ')}",
                        [l], round(1 / l["price"], 2), None)
         e["lock"] = True; e["ev_pct"] = round(100 * (l["p"] / l["price"] - 1), 1)
-        entries.append(e); used.add((l["prop"]["player"], l["prop"]["stat"])); n_locks += 1
+        entries.append(e); used.add((l["prop"]["player"], l["prop"]["stat"])); n_locks += 1; day_ps.append(l["p"])
     # 2) up to max_par parlays per slate day (Ryan: every game in a parlay is played that same day), 2..max_legs legs, one leg per game, no reused players.
     # Ryan 2026-10-14 01:08Z: no cutoff. Always hunt today's remaining games and tomorrow's (tomorrow's post once its day starts).
     slates = [today, (now_pt.date() + timedelta(days=1)).isoformat()]
