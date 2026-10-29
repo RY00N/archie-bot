@@ -266,8 +266,11 @@ def check_prices(st, new):
                                     + (f"Kalshi at {now:.2f}, basically cashed" if band == "hit"
                                        else f"Kalshi down to {now:.2f}, in trouble")})
             continue
-        if abs(now - ref) >= PRICE_MOVE and not overnight:
+        # thin pregame books flap (0.70 <-> 0.79 every few minutes): at most one move alert per pick per hour
+        cool = time.time() - last.get(tk + ":alerted", 0) < 3600
+        if abs(now - ref) >= PRICE_MOVE and not overnight and not cool:
             last[tk] = now
+            last[tk + ":alerted"] = time.time()
             way = "up" if now > ref else "down"
             new.append({"league": leg.get("league"), "kind": "price move", "player": leg["player"],
                         "text": f"Open pick {leg['player']} {leg.get('side')} {leg.get('line')} {leg.get('stat')}: "
