@@ -2112,7 +2112,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 10
+  "kalshi_legs_today": 11
  },
  "shadow": [
   {
@@ -11877,7 +11877,7 @@
    "p": 0.387,
    "price": 0.4,
    "edge": -0.03,
-   "news": "LAL has allowed bench centers 5% fewer threes than average; Jarred Vanderbilt can switch onto him (LAL allowed centers 32% fewer threes with him playing; he plays tonight).",
+   "news": "LAL has allowed bench centers 7% fewer threes than average; Jarred Vanderbilt can switch onto him (LAL allowed centers 37% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -11892,7 +11892,7 @@
    "p": 0.613,
    "price": 0.61,
    "edge": -0.014,
-   "news": "LAL has allowed bench centers 5% fewer threes than average; Jarred Vanderbilt can switch onto him (LAL allowed centers 32% fewer threes with him playing; he plays tonight).",
+   "news": "LAL has allowed bench centers 7% fewer threes than average; Jarred Vanderbilt can switch onto him (LAL allowed centers 37% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -11907,7 +11907,7 @@
    "p": 0.498,
    "price": 0.58,
    "edge": -0.099,
-   "news": "LAL has allowed starting guards 25% fewer threes than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 13% fewer threes with him playing; he plays tonight).",
+   "news": "LAL has allowed starting guards 24% fewer threes than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -11920,9 +11920,9 @@
    "line": 2.5,
    "start": "2026-10-29T02:30:00Z",
    "p": 0.502,
-   "price": 0.43,
-   "edge": 0.055,
-   "news": "LAL has allowed starting guards 25% fewer threes than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 13% fewer threes with him playing; he plays tonight).",
+   "price": 0.44,
+   "edge": 0.045,
+   "news": "LAL has allowed starting guards 24% fewer threes than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -11934,10 +11934,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.563,
+   "p": 0.562,
    "price": 0.59,
-   "edge": -0.044,
-   "news": "LAL has allowed bench guards 10% fewer threes than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 13% fewer threes with him playing; he plays tonight).",
+   "edge": -0.045,
+   "news": "LAL has allowed bench guards 15% fewer threes than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -11949,10 +11949,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.437,
+   "p": 0.438,
    "price": 0.43,
-   "edge": -0.01,
-   "news": "LAL has allowed bench guards 10% fewer threes than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 13% fewer threes with him playing; he plays tonight).",
+   "edge": -0.009,
+   "news": "LAL has allowed bench guards 15% fewer threes than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -11964,10 +11964,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.459,
+   "p": 0.464,
    "price": 0.47,
-   "edge": -0.028,
-   "news": "Luka Doncic is out: Austin Reaves hit the over in 4/9 games without him vs 11/31 with him; LAC has allowed starting guards 2% fewer threes than average (likely on him: Darius Garland, Kris Dunn); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
+   "edge": -0.023,
+   "news": "Luka Doncic is out: Austin Reaves hit the over in 4/9 games without him vs 12/31 with him; LAC has allowed starting guards 2% fewer threes than average (likely on him: Darius Garland, Kris Dunn); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -11979,10 +11979,10 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.541,
+   "p": 0.536,
    "price": 0.54,
-   "edge": -0.016,
-   "news": "Luka Doncic is out: Austin Reaves hit the under in 5/9 games without him vs 20/31 with him; LAC has allowed starting guards 2% fewer threes than average (likely on him: Darius Garland, Kris Dunn); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
+   "edge": -0.021,
+   "news": "Luka Doncic is out: Austin Reaves hit the under in 5/9 games without him vs 19/31 with him; LAC has allowed starting guards 2% fewer threes than average (likely on him: Darius Garland, Kris Dunn); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -11994,9 +11994,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.442,
+   "p": 0.441,
    "price": 0.45,
-   "edge": -0.025,
+   "edge": -0.026,
    "news": "Luka Doncic (G) is out, so Collin Sexton's role likely grows; LAC has allowed bench guards 4% fewer threes than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -12009,9 +12009,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.528,
+   "p": 0.529,
    "price": 0.56,
-   "edge": -0.049,
+   "edge": -0.048,
    "news": "Luka Doncic (G) is out, so Collin Sexton's role likely grows; LAC has allowed bench guards 4% fewer threes than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -12024,10 +12024,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.312,
+   "p": 0.341,
    "price": 0.37,
-   "edge": -0.074,
-   "news": "Ziaire Williams is out: Jake LaRavia hit the over in 1/2 games without him vs 2/3 with him; LAC has allowed bench forwards 14% fewer threes than average (likely on him: Baba Miller, Nick Martinelli); Kobe Sanders can switch onto him (LAC allowed forwards 16% fewer threes with him playing; he plays tonight); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 9% fewer threes with him playing; he is out tonight).",
+   "edge": -0.045,
+   "news": "LAC has allowed bench forwards 14% fewer threes than average (likely on him: Baba Miller, Nick Martinelli); Kobe Sanders can switch onto him (LAC allowed forwards 16% fewer threes with him playing; he plays tonight); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 9% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -12039,10 +12039,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.688,
+   "p": 0.659,
    "price": 0.64,
-   "edge": 0.032,
-   "news": "Ziaire Williams is out: Jake LaRavia hit the under in 1/2 games without him vs 1/3 with him; LAC has allowed bench forwards 14% fewer threes than average (likely on him: Baba Miller, Nick Martinelli); Kobe Sanders can switch onto him (LAC allowed forwards 16% fewer threes with him playing; he plays tonight); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 9% fewer threes with him playing; he is out tonight).",
+   "edge": 0.003,
+   "news": "LAC has allowed bench forwards 14% fewer threes than average (likely on him: Baba Miller, Nick Martinelli); Kobe Sanders can switch onto him (LAC allowed forwards 16% fewer threes with him playing; he plays tonight); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 9% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -12054,10 +12054,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.483,
+   "p": 0.48,
    "price": 0.46,
-   "edge": 0.006,
-   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed starting guards 2% fewer threes than average (likely on him: Darius Garland, Kris Dunn); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
+   "edge": 0.003,
+   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed bench guards 4% fewer threes than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -12069,10 +12069,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.487,
+   "p": 0.49,
    "price": 0.55,
-   "edge": -0.08,
-   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed starting guards 2% fewer threes than average (likely on him: Darius Garland, Kris Dunn); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
+   "edge": -0.077,
+   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed bench guards 4% fewer threes than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -12084,10 +12084,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.539,
+   "p": 0.552,
    "price": 0.41,
-   "edge": 0.112,
-   "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows; Ziaire Williams is out: Sandro Mamukelashvili hit the over in 3/3 games without him vs 1/4 with him; LAC has allowed bench forwards 14% fewer threes than average (likely on him: Baba Miller, Nick Martinelli); Kobe Sanders can switch onto him (LAC allowed forwards 16% fewer threes with him playing; he plays tonight); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 9% fewer threes with him playing; he is out tonight).",
+   "edge": 0.125,
+   "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows; Ziaire Williams is out: Sandro Mamukelashvili hit the over in 3/3 games without him vs 2/5 with him; LAC has allowed bench forwards 14% fewer threes than average (likely on him: Baba Miller, Nick Martinelli); Kobe Sanders can switch onto him (LAC allowed forwards 16% fewer threes with him playing; he plays tonight); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 9% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -12099,10 +12099,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.461,
+   "p": 0.448,
    "price": 0.6,
-   "edge": -0.156,
-   "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows; Ziaire Williams is out: Sandro Mamukelashvili hit the under in 0/3 games without him vs 3/4 with him; LAC has allowed bench forwards 14% fewer threes than average (likely on him: Baba Miller, Nick Martinelli); Kobe Sanders can switch onto him (LAC allowed forwards 16% fewer threes with him playing; he plays tonight); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 9% fewer threes with him playing; he is out tonight).",
+   "edge": -0.169,
+   "news": "Adou Thiero (F) is out, so Sandro Mamukelashvili's role likely grows; Ziaire Williams is out: Sandro Mamukelashvili hit the under in 0/3 games without him vs 3/5 with him; LAC has allowed bench forwards 14% fewer threes than average (likely on him: Baba Miller, Nick Martinelli); Kobe Sanders can switch onto him (LAC allowed forwards 16% fewer threes with him playing; he plays tonight); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 9% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -14754,9 +14754,9 @@
    "side": "over",
    "line": 7.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.432,
+   "p": 0.431,
    "price": 0.48,
-   "edge": -0.065,
+   "edge": -0.066,
    "news": "LAL has allowed starting guards 4% more assists than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -14769,9 +14769,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.568,
+   "p": 0.569,
    "price": 0.53,
-   "edge": 0.021,
+   "edge": 0.022,
    "news": "LAL has allowed starting guards 4% more assists than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -14784,10 +14784,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.435,
+   "p": 0.434,
    "price": 0.45,
-   "edge": -0.032,
-   "news": "LAL has allowed bench guards 10% fewer assists than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 15% fewer assists with him playing; he plays tonight).",
+   "edge": -0.033,
+   "news": "LAL has allowed bench guards 13% fewer assists than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -14799,10 +14799,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.565,
+   "p": 0.566,
    "price": 0.57,
-   "edge": -0.022,
-   "news": "LAL has allowed bench guards 10% fewer assists than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 15% fewer assists with him playing; he plays tonight).",
+   "edge": -0.021,
+   "news": "LAL has allowed bench guards 13% fewer assists than average (likely on him: Quentin Grimes, Collin Sexton); Bronny James can switch onto him (LAL allowed guards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -14814,9 +14814,9 @@
    "side": "over",
    "line": 7.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.532,
+   "p": 0.515,
    "price": 0.48,
-   "edge": 0.035,
+   "edge": 0.018,
    "news": "Luka Doncic is out: Austin Reaves hit the over in 4/9 games without him vs 5/31 with him; LAC has allowed starting guards 0% fewer assists than average (likely on him: Darius Garland, Kris Dunn).",
    "result": null
   },
@@ -14829,9 +14829,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.468,
+   "p": 0.485,
    "price": 0.53,
-   "edge": -0.079,
+   "edge": -0.062,
    "news": "Luka Doncic is out: Austin Reaves hit the under in 5/9 games without him vs 26/31 with him; LAC has allowed starting guards 0% fewer assists than average (likely on him: Darius Garland, Kris Dunn).",
    "result": null
   },
@@ -14844,10 +14844,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.443,
+   "p": 0.45,
    "price": 0.39,
-   "edge": 0.036,
-   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed starting guards 0% fewer assists than average (likely on him: Darius Garland, Kris Dunn).",
+   "edge": 0.043,
+   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed bench guards 2% more assists than average (likely on him: Keaton Wagler, Kobe Sanders).",
    "result": null
   },
   {
@@ -14859,10 +14859,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.527,
+   "p": 0.52,
    "price": 0.62,
-   "edge": -0.109,
-   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed starting guards 0% fewer assists than average (likely on him: Darius Garland, Kris Dunn).",
+   "edge": -0.116,
+   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed bench guards 2% more assists than average (likely on him: Keaton Wagler, Kobe Sanders).",
    "result": null
   },
   {
@@ -16074,10 +16074,10 @@
    "side": "over",
    "line": 34.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.406,
+   "p": 0.409,
    "price": 0.54,
-   "edge": -0.151,
-   "news": "LAL has allowed starting guards 8% fewer pra than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 11% fewer pra with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 35 vs 31 over 15).",
+   "edge": -0.148,
+   "news": "LAL has allowed starting guards 7% fewer pra than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 11% fewer pra with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 35 vs 31 over 15).",
    "result": null
   },
   {
@@ -16089,10 +16089,10 @@
    "side": "under",
    "line": 34.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.594,
+   "p": 0.591,
    "price": 0.51,
-   "edge": 0.067,
-   "news": "LAL has allowed starting guards 8% fewer pra than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 11% fewer pra with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 35 vs 31 over 15).",
+   "edge": 0.064,
+   "news": "LAL has allowed starting guards 7% fewer pra than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 11% fewer pra with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 35 vs 31 over 15).",
    "result": null
   },
   {
@@ -16944,10 +16944,10 @@
    "side": "over",
    "line": 24.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.462,
+   "p": 0.466,
    "price": 0.46,
-   "edge": -0.015,
-   "news": "Jordan Miller is out: Darius Garland hit the over in 3/8 games without him vs 3/13 with him; LAL has allowed starting guards 12% fewer points than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 10% fewer points with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 35 vs 31 over 15).",
+   "edge": -0.011,
+   "news": "Jordan Miller is out: Darius Garland hit the over in 3/8 games without him vs 3/13 with him; LAL has allowed starting guards 10% fewer points than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 10% fewer points with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 35 vs 31 over 15).",
    "result": null
   },
   {
@@ -16959,10 +16959,10 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.538,
+   "p": 0.534,
    "price": 0.55,
-   "edge": -0.029,
-   "news": "Jordan Miller is out: Darius Garland hit the under in 5/8 games without him vs 10/13 with him; LAL has allowed starting guards 12% fewer points than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 10% fewer points with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 35 vs 31 over 15).",
+   "edge": -0.033,
+   "news": "Jordan Miller is out: Darius Garland hit the under in 5/8 games without him vs 10/13 with him; LAL has allowed starting guards 10% fewer points than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 10% fewer points with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 35 vs 31 over 15).",
    "result": null
   },
   {
@@ -16974,10 +16974,10 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.534,
-   "price": 0.54,
-   "edge": -0.023,
-   "news": "Luka Doncic (G) is out, so Collin Sexton's role likely grows; LAC has allowed bench guards 7% fewer points than average (likely on him: Keaton Wagler, Kobe Sanders).",
+   "p": 0.504,
+   "price": 0.52,
+   "edge": -0.033,
+   "news": "Luka Doncic (G) is out, so Collin Sexton's role likely grows; LAC has allowed bench guards 7% fewer points than average (likely on him: Keaton Wagler, Kobe Sanders); minutes trending down (we project 23, his last 5 avg 21 vs 26 over 15).",
    "result": null
   },
   {
@@ -16989,10 +16989,10 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.436,
-   "price": 0.47,
-   "edge": -0.051,
-   "news": "Luka Doncic (G) is out, so Collin Sexton's role likely grows; LAC has allowed bench guards 7% fewer points than average (likely on him: Keaton Wagler, Kobe Sanders).",
+   "p": 0.466,
+   "price": 0.52,
+   "edge": -0.071,
+   "news": "Luka Doncic (G) is out, so Collin Sexton's role likely grows; LAC has allowed bench guards 7% fewer points than average (likely on him: Keaton Wagler, Kobe Sanders); minutes trending down (we project 23, his last 5 avg 21 vs 26 over 15).",
    "result": null
   },
   {
@@ -17004,9 +17004,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.434,
+   "p": 0.43,
    "price": 0.48,
-   "edge": -0.063,
+   "edge": -0.067,
    "news": "LAC has allowed starting centers 5% fewer points than average (likely on him: Brook Lopez); Isaiah Jackson can switch onto him (LAC allowed centers 8% fewer points with him playing; he plays tonight); those defenders hold shooters 5.7% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -17019,9 +17019,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.566,
+   "p": 0.57,
    "price": 0.55,
-   "edge": -0.001,
+   "edge": 0.003,
    "news": "LAC has allowed starting centers 5% fewer points than average (likely on him: Brook Lopez); Isaiah Jackson can switch onto him (LAC allowed centers 8% fewer points with him playing; he plays tonight); those defenders hold shooters 5.7% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -18474,10 +18474,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.528,
+   "p": 0.521,
    "price": 0.57,
-   "edge": -0.059,
-   "news": "Adou Thiero is out: Jake LaRavia hit the over in 11/27 games without him vs 5/10 with him; Ziaire Williams is out: Jake LaRavia hit the over in 1/2 games without him vs 1/3 with him; LAC has allowed bench forwards 12% more rebounds than average (likely on him: Baba Miller, Nick Martinelli); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 20% fewer rebounds with him playing; he is out tonight); Derrick Jones Jr. can switch onto him (LAC allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.066,
+   "news": "Adou Thiero is out: Jake LaRavia hit the over in 11/28 games without him vs 5/10 with him; Ziaire Williams is out: Jake LaRavia hit the over in 1/2 games without him vs 1/4 with him; LAC has allowed bench forwards 12% more rebounds than average (likely on him: Baba Miller, Nick Martinelli); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 20% fewer rebounds with him playing; he is out tonight); Derrick Jones Jr. can switch onto him (LAC allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -18489,10 +18489,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.472,
+   "p": 0.479,
    "price": 0.44,
-   "edge": 0.015,
-   "news": "Adou Thiero is out: Jake LaRavia hit the under in 16/27 games without him vs 5/10 with him; Ziaire Williams is out: Jake LaRavia hit the under in 1/2 games without him vs 2/3 with him; LAC has allowed bench forwards 12% more rebounds than average (likely on him: Baba Miller, Nick Martinelli); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 20% fewer rebounds with him playing; he is out tonight); Derrick Jones Jr. can switch onto him (LAC allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
+   "edge": 0.022,
+   "news": "Adou Thiero is out: Jake LaRavia hit the under in 17/28 games without him vs 5/10 with him; Ziaire Williams is out: Jake LaRavia hit the under in 1/2 games without him vs 3/4 with him; LAC has allowed bench forwards 12% more rebounds than average (likely on him: Baba Miller, Nick Martinelli); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 20% fewer rebounds with him playing; he is out tonight); Derrick Jones Jr. can switch onto him (LAC allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -18504,10 +18504,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.594,
+   "p": 0.567,
    "price": 0.57,
-   "edge": 0.007,
-   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed starting guards 0% fewer rebounds than average (likely on him: Darius Garland, Kris Dunn).",
+   "edge": -0.02,
+   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed bench guards 19% fewer rebounds than average (likely on him: Keaton Wagler, Kobe Sanders).",
    "result": null
   },
   {
@@ -18519,10 +18519,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.376,
+   "p": 0.403,
    "price": 0.46,
-   "edge": -0.101,
-   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed starting guards 0% fewer rebounds than average (likely on him: Darius Garland, Kris Dunn).",
+   "edge": -0.074,
+   "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed bench guards 19% fewer rebounds than average (likely on him: Keaton Wagler, Kobe Sanders).",
    "result": null
   },
   {
@@ -20007,7 +20007,7 @@
    "p": 0.223,
    "price": 0.35,
    "edge": -0.143,
-   "news": "Jordan Miller is out: Darius Garland hit the over in 0/8 games without him vs 6/13 with him; LAL has allowed starting guards 8% fewer steals than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 21% fewer steals with him playing; he plays tonight).",
+   "news": "Jordan Miller is out: Darius Garland hit the over in 0/8 games without him vs 6/13 with him; LAL has allowed starting guards 13% fewer steals than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 20% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -20022,7 +20022,7 @@
    "p": 0.777,
    "price": 0.66,
    "edge": 0.101,
-   "news": "Jordan Miller is out: Darius Garland hit the under in 8/8 games without him vs 7/13 with him; LAL has allowed starting guards 8% fewer steals than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 21% fewer steals with him playing; he plays tonight).",
+   "news": "Jordan Miller is out: Darius Garland hit the under in 8/8 games without him vs 7/13 with him; LAL has allowed starting guards 13% fewer steals than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 20% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -20034,10 +20034,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.238,
+   "p": 0.239,
    "price": 0.31,
-   "edge": -0.087,
-   "news": "Luka Doncic is out: Austin Reaves hit the over in 0/9 games without him vs 13/31 with him; LAC has allowed starting guards 2% more steals than average (likely on him: Darius Garland, Kris Dunn); Jordan Miller can switch onto him (LAC allowed guards 13% fewer steals with him playing; he is out tonight); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer steals with him playing; he plays tonight).",
+   "edge": -0.086,
+   "news": "Luka Doncic is out: Austin Reaves hit the over in 0/9 games without him vs 12/31 with him; LAC has allowed starting guards 2% more steals than average (likely on him: Darius Garland, Kris Dunn); Jordan Miller can switch onto him (LAC allowed guards 13% fewer steals with him playing; he is out tonight); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -20049,10 +20049,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
-   "p": 0.762,
-   "price": 0.74,
-   "edge": 0.009,
-   "news": "Luka Doncic is out: Austin Reaves hit the under in 9/9 games without him vs 18/31 with him; LAC has allowed starting guards 2% more steals than average (likely on him: Darius Garland, Kris Dunn); Jordan Miller can switch onto him (LAC allowed guards 13% fewer steals with him playing; he is out tonight); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer steals with him playing; he plays tonight).",
+   "p": 0.761,
+   "price": 0.73,
+   "edge": 0.017,
+   "news": "Luka Doncic is out: Austin Reaves hit the under in 9/9 games without him vs 19/31 with him; LAC has allowed starting guards 2% more steals than average (likely on him: Darius Garland, Kris Dunn); Jordan Miller can switch onto him (LAC allowed guards 13% fewer steals with him playing; he is out tonight); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21040,8 +21040,8 @@
    "line": 14.5,
    "start": "2026-10-30T00:15:00Z",
    "p": 0.437,
-   "price": 0.48,
-   "edge": -0.06,
+   "price": 0.47,
+   "edge": -0.05,
    "news": "News: Josh Jacobs says Packers running backs must help out their injury-riddled offensive line - fox10tv.com CAR's LB Jaelan Phillips is out, an easier matchup.",
    "result": null
   },
