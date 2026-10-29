@@ -2077,6 +2077,105 @@
      "result": null
     }
    ]
+  },
+  {
+   "date": "2026-10-29",
+   "app": "Kalshi",
+   "type": "1-leg lock: Zion Williamson under 0.5 threes",
+   "stake": 10.0,
+   "payout_x": 1.2,
+   "win_p": 0.759,
+   "ev_pct": -8.6,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Zion Williamson",
+     "team": "NOP",
+     "stat": "threes",
+     "side": "under",
+     "line": 0.5,
+     "price": 0.83,
+     "ticker": "KXNBA3PT-26OCT29SACNOP-NOPZWILLIAMSON1-1",
+     "game": "SAC @ NOP",
+     "start": "2026-10-30T00:00:00Z",
+     "p": 0.759,
+     "edge": -0.081,
+     "news": "SAC has allowed starting forwards 8% more threes than average (likely on him: Domantas Sabonis, Precious Achiuwa); Zach LaVine can switch onto him (SAC allowed forwards 11% fewer threes with him playing; he plays tonight); Nique Clifford can switch onto him (SAC allowed forwards 9% fewer threes with him playing; he plays tonight).",
+     "ctx_dp": 0.005,
+     "why": "Zion Williamson under 0.5 threes: 3 books price it 71%; hit 8% of last 12 (avg 0.2); 2/12 over vs SAC, avg 0.2. In games vs SAC: 0.2 avg over 12 games, 22% of that rotation is still there, so the matchup counts as 19% over 0.5. Fair 76%.",
+     "case": "Last 5 games: 0, 0, 2, 0, 0 (4 of 5 under 0.5). In games vs SAC: 0.2 avg over 12 games, 22% of that rotation is still there, so the matchup counts as 19% over 0.5.",
+     "result": null
+    }
+   ],
+   "lock": true
+  },
+  {
+   "date": "2026-10-29",
+   "app": "Kalshi",
+   "type": "1-leg lock: Zach LaVine over 2.5 threes",
+   "stake": 10.0,
+   "payout_x": 1.72,
+   "win_p": 0.655,
+   "ev_pct": 12.9,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Zach LaVine",
+     "team": "SAC",
+     "stat": "threes",
+     "side": "over",
+     "line": 2.5,
+     "price": 0.58,
+     "ticker": "KXNBA3PT-26OCT29SACNOP-SACZLAVINE8-3",
+     "game": "SAC @ NOP",
+     "start": "2026-10-30T00:00:00Z",
+     "p": 0.655,
+     "edge": 0.058,
+     "news": "Ben Simmons (G) is out, so Zach LaVine's role likely grows; NOP has allowed starting guards 13% more threes than average.",
+     "ctx_dp": 0.04,
+     "why": "Zach LaVine over 2.5 threes: 3 books price it 56%; hit 83% of last 12 (avg 3.0). In games vs NO: 4.3 avg over 11 games, 20% of that rotation is still there, so the matchup counts as 67% over 2.5. Fair 66%.",
+     "case": "Last 5 games: 3, 3, 3, 3, 1 (4 of 5 over 2.5). In games vs NO: 4.3 avg over 11 games, 20% of that rotation is still there, so the matchup counts as 67% over 2.5.",
+     "result": null
+    }
+   ],
+   "lock": true
+  },
+  {
+   "date": "2026-10-29",
+   "app": "Kalshi",
+   "type": "1-leg lock: Jordan Love over 1.5 pass tds",
+   "stake": 10.0,
+   "payout_x": 1.69,
+   "win_p": 0.62,
+   "ev_pct": 5.1,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Jordan Love",
+     "team": "GB",
+     "stat": "pass_tds",
+     "side": "over",
+     "line": 1.5,
+     "price": 0.59,
+     "ticker": "KXNFLPASSTDS-26OCT29CARGB-GBJLOVE10-2",
+     "game": "CAR @ GB",
+     "start": "2026-10-30T00:15:00Z",
+     "p": 0.62,
+     "edge": 0.013,
+     "news": "CAR's CB Akayleb Evans is out, an easier matchup.",
+     "ctx_dp": 0.03,
+     "why": "Jordan Love over 1.5 pass tds: 9 books price it 57%; hit 67% of last 12 (avg 1.9); 1/2 over vs CAR, avg 1.0. Fair 62%.",
+     "case": "Last 5 games: 1, 2, 2, 2, 2 (4 of 5 over 1.5).",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
@@ -2086,18 +2185,34 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-10-28 23:00 PT",
-  "props_today": 0,
-  "kalshi_props_today": 0,
-  "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {},
+  "props_at": "2026-10-29 00:00 PT",
+  "props_today": 504,
+  "kalshi_props_today": 121,
+  "kalshi_priced_today": 10,
+  "books_on_kalshi_props": {
+   "AN Consensus": 121,
+   "AN Open": 121,
+   "BetMGM": 38,
+   "BetRivers": 23,
+   "Caesars": 87,
+   "DraftKings": 116,
+   "FanDuel": 90,
+   "Fanatics": 101,
+   "Hard Rock Bet": 25,
+   "Parx": 37,
+   "Pinnacle": 63,
+   "Sleeper": 115,
+   "Underdog": 121,
+   "Unibet": 9,
+   "bet365": 119
+  },
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 0
+  "kalshi_legs_today": 27
  },
  "shadow": [
   {
@@ -20710,8 +20825,8 @@
    "line": 0.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.241,
-   "price": 0.36,
-   "edge": -0.135,
+   "price": 0.35,
+   "edge": -0.125,
    "news": "SAC has allowed starting forwards 8% more threes than average (likely on him: Domantas Sabonis, Precious Achiuwa); Zach LaVine can switch onto him (SAC allowed forwards 11% fewer threes with him playing; he plays tonight); Nique Clifford can switch onto him (SAC allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -20725,8 +20840,8 @@
    "line": 0.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.759,
-   "price": 0.84,
-   "edge": -0.09,
+   "price": 0.83,
+   "edge": -0.081,
    "news": "SAC has allowed starting forwards 8% more threes than average (likely on him: Domantas Sabonis, Precious Achiuwa); Zach LaVine can switch onto him (SAC allowed forwards 11% fewer threes with him playing; he plays tonight); Nique Clifford can switch onto him (SAC allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -21070,8 +21185,8 @@
    "line": 5.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.468,
-   "price": 0.44,
-   "edge": 0.011,
+   "price": 0.46,
+   "edge": -0.009,
    "news": "POR has allowed starting forwards 0% more rebounds than average (likely on him: Deni Avdija, Toumani Camara); Sidy Cissoko can switch onto him (POR allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -21085,8 +21200,8 @@
    "line": 3.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.392,
-   "price": 0.39,
-   "edge": -0.015,
+   "price": 0.41,
+   "edge": -0.035,
    "news": "POR has allowed starting forwards 0% more rebounds than average (likely on him: Deni Avdija, Toumani Camara); Sidy Cissoko can switch onto him (POR allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -21115,8 +21230,8 @@
    "line": 3.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.417,
-   "price": 0.45,
-   "edge": -0.05,
+   "price": 0.46,
+   "edge": -0.06,
    "news": "POR has allowed starting guards 1% more rebounds than average (likely on him: Jrue Holiday, Damian Lillard).",
    "result": null
   },
@@ -21130,8 +21245,8 @@
    "line": 3.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.583,
-   "price": 0.57,
-   "edge": -0.004,
+   "price": 0.58,
+   "edge": -0.014,
    "news": "POR has allowed starting guards 1% more rebounds than average (likely on him: Jrue Holiday, Damian Lillard).",
    "result": null
   },
@@ -21190,8 +21305,8 @@
    "line": 3.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.43,
-   "price": 0.51,
-   "edge": -0.097,
+   "price": 0.52,
+   "edge": -0.107,
    "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 13% more rebounds than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -21205,8 +21320,8 @@
    "line": 3.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.516,
-   "price": 0.49,
-   "edge": 0.009,
+   "price": 0.5,
+   "edge": -0.001,
    "news": "MEM has allowed bench guards 19% more rebounds than average (likely on him: Javon Small, Scotty Pippen Jr.); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -21220,8 +21335,8 @@
    "line": 3.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.484,
-   "price": 0.54,
-   "edge": -0.073,
+   "price": 0.55,
+   "edge": -0.083,
    "news": "MEM has allowed bench guards 19% more rebounds than average (likely on him: Javon Small, Scotty Pippen Jr.); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -21235,8 +21350,8 @@
    "line": 3.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.419,
-   "price": 0.44,
-   "edge": -0.038,
+   "price": 0.45,
+   "edge": -0.048,
    "news": "MEM has allowed starting guards 13% more rebounds than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -21280,8 +21395,8 @@
    "line": 3.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.428,
-   "price": 0.44,
-   "edge": -0.029,
+   "price": 0.45,
+   "edge": -0.039,
    "news": "MEM has allowed starting forwards 13% more rebounds than average (likely on him: Cameron Boozer, Cedric Coward); Taylor Hendricks can switch onto him (MEM allowed forwards 8% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
