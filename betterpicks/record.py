@@ -19,6 +19,12 @@ def counts(e, r=RULES):
     if e.get("app") != "Kalshi" or e.get("test") or e.get("retracted") or e["type"].startswith("Ryan's"):
         return False
     legs = e.get("legs") or []
+    # Ryan 2026-10-29 "we should be 19-6": the record = every HIT/LOST in the Wins/Losses channel, i.e. all singles
+    # from Oct 16 on and combos from the Oct 28 combo rule on, whatever bar they were picked at
+    if r.get("record_mode") == "posted":
+        if e.get("record_skip") or not legs or len(legs) > r.get("max_legs", 2):
+            return False
+        return e["date"] >= (r["record_singles_from"] if len(legs) == 1 else r["record_combos_from"])
     if not legs or len(legs) > r.get("max_legs", 2):
         return False
     if e["type"].startswith("pick of the day"):

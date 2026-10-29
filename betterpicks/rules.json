@@ -117,5 +117,9 @@
  "big_day_count": 5,
  "big_day_min_p": 0.7,
  "big_day_note": "Ryan 2026-10-28 20:34Z: post the top 3-4 picks by win chance; a 5th only if most of the day's 5 (3+) are 70%+. Hand posts: send Ryan the exact list first.",
- "combo_note_2026_10_28": "Ryan 2026-10-28 22:36Z (decision card): keep combos, max 1 a day, on top of the 3-5 singles."
+ "combo_note_2026_10_28": "Ryan 2026-10-28 22:36Z (decision card): keep combos, max 1 a day, on top of the 3-5 singles.",
+ "record_mode": "posted",
+ "record_singles_from": "2026-10-16",
+ "record_combos_from": "2026-10-28",
+ "record_note": "Ryan 2026-10-29: record must match the Wins/Losses channel (19-6 on Oct 28). Oct 17 Allgeier lock (won) never got a HIT post, so it has record_skip."
 }
