@@ -2087,24 +2087,24 @@
    "secs": 0.0
   },
   "props_at": "2026-10-28 17:00 PT",
-  "props_today": 933,
-  "kalshi_props_today": 453,
+  "props_today": 767,
+  "kalshi_props_today": 344,
   "kalshi_priced_today": 4,
   "books_on_kalshi_props": {
-   "AN Consensus": 128,
-   "AN Open": 130,
-   "BetMGM": 86,
-   "BetRivers": 110,
-   "Caesars": 114,
-   "DraftKings": 110,
-   "FanDuel": 120,
-   "Fanatics": 104,
-   "Parx": 110,
-   "Pinnacle": 81,
-   "Sleeper": 419,
-   "Underdog": 453,
+   "AN Consensus": 126,
+   "AN Open": 127,
+   "BetMGM": 83,
+   "BetRivers": 106,
+   "Caesars": 110,
+   "DraftKings": 106,
+   "FanDuel": 118,
+   "Fanatics": 100,
+   "Parx": 106,
+   "Pinnacle": 77,
+   "Sleeper": 339,
+   "Underdog": 344,
    "Unibet": 10,
-   "bet365": 129
+   "bet365": 126
   },
   "data_files": [
    "mlb.sqlite",
@@ -2112,7 +2112,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 30
+  "kalshi_legs_today": 29
  },
  "shadow": [
   {
@@ -12010,8 +12010,8 @@
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
    "p": 0.517,
-   "price": 0.58,
-   "edge": -0.08,
+   "price": 0.56,
+   "edge": -0.06,
    "news": "Luka Doncic (G) is out, so Collin Sexton's role likely grows; LAC has allowed bench guards 4% fewer threes than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -12910,8 +12910,8 @@
    "line": 2.5,
    "start": "2026-10-29T01:30:00Z",
    "p": 0.515,
-   "price": 0.5,
-   "edge": -0.002,
+   "price": 0.51,
+   "edge": -0.012,
    "news": "Injury report: Questionable: Injury/Illness - Left Knee Injury (official NBA report) OKC has allowed starting guards 3% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -12970,8 +12970,8 @@
    "line": 1.5,
    "start": "2026-10-29T01:30:00Z",
    "p": 0.46,
-   "price": 0.51,
-   "edge": -0.067,
+   "price": 0.5,
+   "edge": -0.057,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -13000,8 +13000,8 @@
    "line": 1.5,
    "start": "2026-10-29T01:30:00Z",
    "p": 0.573,
-   "price": 0.69,
-   "edge": -0.132,
+   "price": 0.68,
+   "edge": -0.122,
    "news": "Injury report: Questionable: Injury/Illness - Right Ankle Sprain (official NBA report) Nikola Topic (G) is out, so Ajay Mitchell's role likely grows; Jalen Williams is out: Ajay Mitchell hit the under in 11/13 games without him vs 21/27 with him; Cason Wallace is out: Ajay Mitchell hit the under in 16/22 games without him vs 16/18 with him; DAL has allowed bench guards 10% more threes than average (likely on him: Marcus Sasser, Walter Clayton Jr.); Naji Marshall can switch onto him (DAL allowed guards 10% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -13810,8 +13810,8 @@
    "line": 2.5,
    "start": "2026-10-29T01:00:00Z",
    "p": 0.567,
-   "price": 0.58,
-   "edge": -0.03,
+   "price": 0.63,
+   "edge": -0.079,
    "news": "UTA has allowed bench forwards 15% more threes than average.",
    "result": null
   },
@@ -13840,8 +13840,8 @@
    "line": 2.5,
    "start": "2026-10-29T01:00:00Z",
    "p": 0.588,
-   "price": 0.64,
-   "edge": -0.068,
+   "price": 0.65,
+   "edge": -0.078,
    "news": "UTA has allowed starting guards 24% more threes than average.",
    "result": null
   },
@@ -16165,8 +16165,8 @@
    "line": 29.5,
    "start": "2026-10-29T01:00:00Z",
    "p": 0.46,
-   "price": 0.51,
-   "edge": -0.067,
+   "price": 0.5,
+   "edge": -0.057,
    "news": "UTA has allowed starting guards 19% more pra than average; minutes trending down (we project 31, his last 5 avg 30 vs 32 over 15).",
    "result": null
   },
@@ -16180,8 +16180,8 @@
    "line": 29.5,
    "start": "2026-10-29T01:00:00Z",
    "p": 0.54,
-   "price": 0.5,
-   "edge": 0.023,
+   "price": 0.55,
+   "edge": -0.027,
    "news": "UTA has allowed starting guards 19% more pra than average; minutes trending down (we project 31, his last 5 avg 30 vs 32 over 15).",
    "result": null
   },
@@ -16210,8 +16210,8 @@
    "line": 39.5,
    "start": "2026-10-29T01:00:00Z",
    "p": 0.53,
-   "price": 0.52,
-   "edge": -0.007,
+   "price": 0.51,
+   "edge": 0.003,
    "news": "minutes trending down (we project 34, his last 5 avg 32 vs 36 over 15).",
    "result": null
   },
@@ -17305,8 +17305,8 @@
    "line": 9.5,
    "start": "2026-10-29T01:00:00Z",
    "p": 0.445,
-   "price": 0.52,
-   "edge": -0.092,
+   "price": 0.53,
+   "edge": -0.102,
    "news": "UTA has allowed bench forwards 8% more points than average; minutes trending down (we project 29, his last 5 avg 28 vs 31 over 15).",
    "result": null
   },
@@ -17320,8 +17320,8 @@
    "line": 9.5,
    "start": "2026-10-29T01:00:00Z",
    "p": 0.555,
-   "price": 0.49,
-   "edge": 0.048,
+   "price": 0.55,
+   "edge": -0.012,
    "news": "UTA has allowed bench forwards 8% more points than average; minutes trending down (we project 29, his last 5 avg 28 vs 31 over 15).",
    "result": null
   },
@@ -18955,8 +18955,8 @@
    "line": 3.5,
    "start": "2026-10-29T01:30:00Z",
    "p": 0.326,
-   "price": 0.53,
-   "edge": -0.221,
+   "price": 0.52,
+   "edge": -0.211,
    "news": "Injury report: Questionable: Injury/Illness - Right Ankle Sprain (official NBA report) Alex Caruso is out: Ajay Mitchell hit the over in 5/16 games without him vs 13/24 with him; Nikola Topic (G) is out, so Ajay Mitchell's role likely grows; Jalen Williams is out: Ajay Mitchell hit the over in 4/13 games without him vs 14/27 with him; Cason Wallace is out: Ajay Mitchell hit the over in 8/22 games without him vs 10/18 with him; DAL has allowed bench guards 10% more rebounds than average (likely on him: Marcus Sasser, Walter Clayton Jr.).",
    "result": null
   },
@@ -18970,8 +18970,8 @@
    "line": 3.5,
    "start": "2026-10-29T01:30:00Z",
    "p": 0.594,
-   "price": 0.53,
-   "edge": 0.047,
+   "price": 0.52,
+   "edge": 0.057,
    "news": "Injury report: Questionable: Injury/Illness - Right Ankle Sprain (official NBA report) Alex Caruso is out: Ajay Mitchell hit the under in 11/16 games without him vs 11/24 with him; Nikola Topic (G) is out, so Ajay Mitchell's role likely grows; Jalen Williams is out: Ajay Mitchell hit the under in 9/13 games without him vs 13/27 with him; Cason Wallace is out: Ajay Mitchell hit the under in 14/22 games without him vs 8/18 with him; DAL has allowed bench guards 10% more rebounds than average (likely on him: Marcus Sasser, Walter Clayton Jr.).",
    "result": null
   },
@@ -19030,8 +19030,8 @@
    "line": 3.5,
    "start": "2026-10-29T01:30:00Z",
    "p": 0.482,
-   "price": 0.61,
-   "edge": -0.145,
+   "price": 0.62,
+   "edge": -0.154,
    "news": "Alex Caruso is out: Jared McCain hit the under in 11/14 games without him vs 23/26 with him; Jalen Williams is out: Jared McCain hit the under in 24/29 games without him vs 9/10 with him; Cason Wallace is out: Jared McCain hit the under in 16/20 games without him vs 18/20 with him; DAL has allowed bench guards 10% more rebounds than average (likely on him: Marcus Sasser, Walter Clayton Jr.).",
    "result": null
   },
@@ -19510,8 +19510,8 @@
    "line": 5.5,
    "start": "2026-10-29T01:00:00Z",
    "p": 0.559,
-   "price": 0.56,
-   "edge": -0.018,
+   "price": 0.57,
+   "edge": -0.028,
    "news": "UTA has allowed starting guards 7% more rebounds than average.",
    "result": null
   },
@@ -20920,8 +20920,8 @@
    "line": 4.5,
    "start": "2026-10-30T00:15:00Z",
    "p": 0.459,
-   "price": 0.48,
-   "edge": -0.038,
+   "price": 0.49,
+   "edge": -0.048,
    "news": "CAR's CB Akayleb Evans is out, an easier matchup.",
    "result": null
   }
