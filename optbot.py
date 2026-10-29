@@ -225,6 +225,12 @@ def step(bot, log):
         elif m - o["entry_min"] >= o.get("hold", c["max_hold_min"]) or m >= 955:
             how = "time"
         if how:
+            try:  # sell only what is really held: never go short if something else already closed it (10/29)
+                held = int(float(bot.trade("GET", f"/v2/positions/{o['symbol']}").get("qty", 0)))
+            except Exception as e:  # only "position does not exist" means it's gone; any other error: sell as planned
+                held = 0 if "-> 404" in str(e) else o["qty"]
+            if held <= 0:
+                log(f"OPT {o['symbol']} no longer held (closed elsewhere); not selling"); st["open"] = None; save(st); return
             od = bot.trade("POST", "/v2/orders", body={"symbol": o["symbol"], "qty": str(o["qty"]), "side": "sell",
                                                         "type": "limit", "limit_price": f"{bid:.2f}", "time_in_force": "day"})
             o.update({"state": "closing", "close_id": od["id"], "close_min": m, "how": how})

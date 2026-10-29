@@ -158,9 +158,17 @@ def run(dry=False):
     fills = log_fills(state)
     clock = trade("GET", "/v2/clock")
     all_positions = trade("GET", "/v2/positions")
-    day_syms = daytrader.open_symbols()  # the day-trading sleeve owns these; the swing book leaves them alone
-    positions = {p["symbol"]: p for p in all_positions if p["symbol"] not in day_syms}
-    open_orders = [o for o in trade("GET", "/v2/orders", {"status": "open", "limit": 500}) if o["symbol"] not in day_syms]
+    day_syms = set(daytrader.open_symbols())  # the day-trading sleeve owns these; the swing book leaves them alone
+    try:  # so do the options bot and the day-trader-skill book (10/29: swing-off sold optbot's put and left it short)
+        here = os.path.dirname(os.path.abspath(__file__))
+        day_syms.add(json.load(open(os.path.join(here, "dtsbook-state.json"))).get("open") and "QQQ")
+        day_syms.add((json.load(open(os.path.join(here, "optbot-state.json"))).get("open") or {}).get("symbol"))
+    except Exception:
+        pass
+    opt = lambda sym: len(sym) > 10  # option symbols (QQQ261030P00712000) belong to optbot
+    positions = {p["symbol"]: p for p in all_positions if p["symbol"] not in day_syms and not opt(p["symbol"])}
+    open_orders = [o for o in trade("GET", "/v2/orders", {"status": "open", "limit": 500})
+                   if o["symbol"] not in day_syms and not opt(o["symbol"])]
     budget = swing_equity(acct, all_positions)
     report = {"time": datetime.now(timezone.utc).isoformat()[:19], "market_open": clock["is_open"],
               "budget_equity": round(budget, 2), "new_fills": len(fills), "actions": []}
