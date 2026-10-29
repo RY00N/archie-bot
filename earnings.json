@@ -1,105 +1,111 @@
 {
- "updated": "2026-10-25T02:08:09+00:00",
+ "updated": "2026-10-29T02:09:04+00:00",
  "window": [
-  "2026-10-24",
-  "2026-11-14"
+  "2026-10-28",
+  "2026-11-18"
  ],
  "symbols": {
   "AAPL": {
    "date": "2026-11-02",
    "hour": "amc",
    "eps_est": 2.0221,
-   "trading_days": 6
+   "trading_days": 3
   },
   "AMD": {
    "date": "2026-11-03",
    "hour": "amc",
    "eps_est": 1.9666,
-   "trading_days": 7
+   "trading_days": 4
   },
   "AMZN": {
    "date": "2026-10-29",
    "hour": "amc",
    "eps_est": 2.001,
-   "trading_days": 4
-  },
-  "BA": {
-   "date": "2026-10-27",
-   "hour": "bmo",
-   "eps_est": -0.2138,
-   "trading_days": 2
+   "trading_days": 1
   },
   "CAT": {
    "date": "2026-10-29",
    "hour": "bmo",
    "eps_est": 7.1552,
-   "trading_days": 4
+   "trading_days": 1
   },
   "COIN": {
    "date": "2026-10-29",
    "hour": "amc",
-   "eps_est": -0.1035,
-   "trading_days": 4
+   "eps_est": -0.157,
+   "trading_days": 1
   },
   "CVX": {
    "date": "2026-10-30",
    "hour": "bmo",
    "eps_est": 4.9317,
-   "trading_days": 5
+   "trading_days": 2
+  },
+  "DIS": {
+   "date": "2026-11-17",
+   "hour": "bmo",
+   "eps_est": 1.6963,
+   "trading_days": 14
   },
   "GOOGL": {
    "date": "2026-10-28",
    "hour": "amc",
-   "eps_est": 3.1103,
-   "trading_days": 3
+   "eps_est": 3.1095,
+   "trading_days": 0
+  },
+  "HD": {
+   "date": "2026-11-17",
+   "hour": "",
+   "eps_est": 3.9538,
+   "trading_days": 14
   },
   "LLY": {
    "date": "2026-10-29",
    "hour": "bmo",
-   "eps_est": 7.0121,
-   "trading_days": 4
+   "eps_est": 6.6112,
+   "trading_days": 1
   },
   "MA": {
    "date": "2026-10-29",
    "hour": "bmo",
-   "eps_est": 5.3119,
-   "trading_days": 4
+   "eps_est": 5.3156,
+   "trading_days": 1
   },
   "MSFT": {
    "date": "2026-10-28",
    "hour": "amc",
-   "eps_est": 4.8159,
-   "trading_days": 3
+   "eps_est": 4.8165,
+   "trading_days": 0
+  },
+  "NVDA": {
+   "date": "2026-11-17",
+   "hour": "amc",
+   "eps_est": 2.5263,
+   "trading_days": 14
   },
   "PLTR": {
    "date": "2026-11-02",
-   "hour": "",
-   "eps_est": 0.4231,
-   "trading_days": 6
+   "hour": "amc",
+   "eps_est": 0.4225,
+   "trading_days": 3
   },
   "SHOP": {
    "date": "2026-11-03",
    "hour": "bmo",
    "eps_est": 0.4682,
-   "trading_days": 7
+   "trading_days": 4
   },
   "UBER": {
    "date": "2026-11-04",
    "hour": "bmo",
    "eps_est": 0.9838,
-   "trading_days": 8
-  },
-  "V": {
-   "date": "2026-10-27",
-   "hour": "amc",
-   "eps_est": 3.5054,
-   "trading_days": 2
+   "trading_days": 5
   },
   "XOM": {
    "date": "2026-10-30",
    "hour": "bmo",
    "eps_est": 4.1205,
-   "trading_days": 5
+   "trading_days": 2
   }
  }
 }
