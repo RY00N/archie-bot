@@ -2087,8 +2087,8 @@
    "secs": 0.0
   },
   "props_at": "2026-10-28 18:00 PT",
-  "props_today": 313,
-  "kalshi_props_today": 127,
+  "props_today": 201,
+  "kalshi_props_today": 76,
   "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
    "AN Consensus": 75,
@@ -2102,7 +2102,7 @@
    "Parx": 66,
    "Pinnacle": 41,
    "Sleeper": 76,
-   "Underdog": 127,
+   "Underdog": 76,
    "Unibet": 5,
    "bet365": 74
   },
@@ -12055,8 +12055,8 @@
    "line": 1.5,
    "start": "2026-10-29T02:30:00Z",
    "p": 0.487,
-   "price": 0.47,
-   "edge": -0.0,
+   "price": 0.49,
+   "edge": -0.02,
    "news": "Luka Doncic (G) is out, so Quentin Grimes's role likely grows; LAC has allowed starting guards 2% fewer threes than average (likely on him: Darius Garland, Kris Dunn); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight); Derrick Jones Jr. can switch onto him (LAC allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -14770,8 +14770,8 @@
    "line": 7.5,
    "start": "2026-10-29T02:30:00Z",
    "p": 0.565,
-   "price": 0.52,
-   "edge": 0.028,
+   "price": 0.53,
+   "edge": 0.018,
    "news": "LAL has allowed starting guards 4% more assists than average (likely on him: Austin Reaves, Matisse Thybulle); Bronny James can switch onto him (LAL allowed guards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -15160,8 +15160,8 @@
    "line": 5.5,
    "start": "2026-10-29T01:30:00Z",
    "p": 0.537,
-   "price": 0.46,
-   "edge": 0.06,
+   "price": 0.45,
+   "edge": 0.07,
    "news": "Naji Marshall is out: Cooper Flagg hit the under in 17/30 games without him vs 3/10 with him; Sergio de Larrea (F) is out, so Cooper Flagg's role likely grows.",
    "result": null
   },
@@ -19135,8 +19135,8 @@
    "line": 3.5,
    "start": "2026-10-29T01:30:00Z",
    "p": 0.351,
-   "price": 0.52,
-   "edge": -0.186,
+   "price": 0.5,
+   "edge": -0.167,
    "news": "News: Ajay Mitchell on injury report vs. Mavericks with Jalen Williams, Cason Wallace, Chet Holmgren, Alex Caruso all out - Yahoo Sports Jalen Williams is out: Ajay Mitchell hit the over in 4/13 games without him vs 14/27 with him; Alex Caruso is out: Ajay Mitchell hit the over in 5/16 games without him vs 13/24 with him; Nikola Topic (G) is out, so Ajay Mitchell's role likely grows; Cason Wallace is out: Ajay Mitchell hit the over in 8/22 games without him vs 10/18 with him; DAL has allowed bench guards 10% more rebounds than average (likely on him: Marcus Sasser, Walter Clayton Jr.).",
    "result": null
   },
@@ -19150,8 +19150,8 @@
    "line": 3.5,
    "start": "2026-10-29T01:30:00Z",
    "p": 0.599,
-   "price": 0.52,
-   "edge": 0.062,
+   "price": 0.53,
+   "edge": 0.052,
    "news": "News: Ajay Mitchell on injury report vs. Mavericks with Jalen Williams, Cason Wallace, Chet Holmgren, Alex Caruso all out - Yahoo Sports Jalen Williams is out: Ajay Mitchell hit the under in 9/13 games without him vs 13/27 with him; Alex Caruso is out: Ajay Mitchell hit the under in 11/16 games without him vs 11/24 with him; Nikola Topic (G) is out, so Ajay Mitchell's role likely grows; Cason Wallace is out: Ajay Mitchell hit the under in 14/22 games without him vs 8/18 with him; DAL has allowed bench guards 10% more rebounds than average (likely on him: Marcus Sasser, Walter Clayton Jr.).",
    "result": null
   },
@@ -20680,8 +20680,8 @@
    "line": 1.5,
    "start": "2026-10-30T00:15:00Z",
    "p": 0.406,
-   "price": 0.48,
-   "edge": -0.091,
+   "price": 0.47,
+   "edge": -0.081,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
