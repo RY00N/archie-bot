@@ -16,6 +16,8 @@ CONFIRM_S = 60
 
 def main():
     book = parlays.load(parlays.BOOK, None)
+    if not book:   # caught mid-write by another job; next minute's run picks it up
+        return
     now = datetime.now(timezone.utc)
     changed, hits = False, []
     for e in book.get("parlays", []):
