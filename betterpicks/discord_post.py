@@ -405,7 +405,8 @@ def verdicts(dry=False):
         return
     sent = set(load(SENT, []))
     todo = [v for v in sorted(doc.get("parlays", []), key=lambda v: v["date"])
-            if v["key"] in sent and f"verdict:{v.get('verdict_key', v['key'])}" not in sent and f"retract:{v['key']}" not in sent]
+            if (v["key"] in sent or v.get("manual_post")) and not v.get("verdict_by_hand")   # Ryan 2026-10-28: post wins of hand-posted picks too
+            and f"verdict:{v.get('verdict_key', v['key'])}" not in sent and f"retract:{v['key']}" not in sent]
     for dl in doc.get("delays", []):   # Ryan 2026-10-18: say when a posted pick's game is delayed; the pick carries over
         k = f"delay:{dl['key']}:{dl['game']}"
         if dl["key"] not in sent or k in sent:

@@ -45,6 +45,8 @@ def verdicts():
             out.append({"key": f"parlay:{e['date']}:{e['app']}:{e['type']}", "verdict_key": vkey(e), "date": e["date"], "app": e["app"],
                         "type": e["type"], "lock": e.get("lock"), "status": e["status"], "pnl": e["pnl"],
                         "stake": e["stake"], "payout_x": e.get("payout_x"),
+                        # hand-posted picks aren't in the droplet's posted list; verdict_by_hand = result already posted by hand
+                        "manual_post": bool(e.get("manual_post")), "verdict_by_hand": bool(e.get("verdict_by_hand")),
                         "legs": [{k: l.get(k) for k in LEG_KEEP} | ({"why_lost": why_lost.explain(l, l.get("league") or "nba")}
                                   if e["status"] == "lost" and l.get("result") == "lost" else {}) for l in e["legs"]]})
     rec = record.record(book.get("parlays", []))   # Ryan 2026-10-22: the record = picks that pass today's rules
