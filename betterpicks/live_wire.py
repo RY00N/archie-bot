@@ -99,7 +99,22 @@ def check_report(league, st, new, mine):
         print("live wire: injury report", league, ex)
         return
     old = st.setdefault("report", {}).get(league)
-    st["report"][league] = {k: v["status"] for k, v in rep.items()}
+    cur = {k: v["status"] for k, v in rep.items()}
+    # ESPN's feed drops players for a single check now and then, which flapped "off the report" / "new on report"
+    # every few minutes: a player only leaves after 3 straight checks without him
+    miss = st.setdefault("missing", {}).setdefault(league, {})
+    for name in list(miss):
+        if name in cur:
+            del miss[name]
+    for name, was in (old or {}).items():
+        if name not in cur:
+            miss[name] = miss.get(name, 0) + 1
+            if miss[name] < 3:
+                cur[name] = was
+                rep[name] = {"team": "", "status": was, "detail": ""}
+            else:
+                del miss[name]
+    st["report"][league] = cur
     if old is None:
         return
     for name, v in rep.items():
