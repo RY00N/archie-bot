@@ -230,6 +230,11 @@ def check_moves(league, st, new, mine):
 
 def check_prices(st, new):
     last = st.setdefault("prices", {})
+    try:   # overnight Kalshi pauses trading and the thin book flaps 0.84 <-> 0.99; those moves mean nothing
+        if not get("https://api.elections.kalshi.com/trade-api/v2/exchange/status").get("trading_active", True):
+            return
+    except Exception:
+        pass
     for leg in open_legs():
         tk = leg.get("ticker")
         if not tk or leg.get("price") is None:
