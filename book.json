@@ -2220,11 +2220,11 @@
   },
   "props_at": "2026-10-29 02:00 PT",
   "props_today": 505,
-  "kalshi_props_today": 121,
+  "kalshi_props_today": 125,
   "kalshi_priced_today": 10,
   "books_on_kalshi_props": {
-   "AN Consensus": 120,
-   "AN Open": 121,
+   "AN Consensus": 124,
+   "AN Open": 125,
    "BetMGM": 38,
    "BetRivers": 23,
    "Caesars": 114,
@@ -2234,10 +2234,10 @@
    "Hard Rock Bet": 25,
    "Parx": 37,
    "Pinnacle": 63,
-   "Sleeper": 117,
-   "Underdog": 121,
+   "Sleeper": 118,
+   "Underdog": 125,
    "Unibet": 11,
-   "bet365": 119
+   "bet365": 123
   },
   "data_files": [
    "mlb.sqlite",
@@ -20873,8 +20873,8 @@
    "line": 0.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.759,
-   "price": 0.82,
-   "edge": -0.071,
+   "price": 0.81,
+   "edge": -0.062,
    "news": "SAC has allowed starting forwards 8% more threes than average (likely on him: Domantas Sabonis, Precious Achiuwa); Zach LaVine can switch onto him (SAC allowed forwards 11% fewer threes with him playing; he plays tonight); Nique Clifford can switch onto him (SAC allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -21158,8 +21158,8 @@
    "line": 29.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.472,
-   "price": 0.49,
-   "edge": -0.035,
+   "price": 0.51,
+   "edge": -0.055,
    "news": "SAC has allowed starting guards 3% more pra than average (likely on him: Nique Clifford, Zach LaVine); Zach LaVine can switch onto him (SAC allowed guards 10% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -21173,8 +21173,8 @@
    "line": 29.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.528,
-   "price": 0.86,
-   "edge": -0.34,
+   "price": 0.82,
+   "edge": -0.302,
    "news": "SAC has allowed starting guards 3% more pra than average (likely on him: Nique Clifford, Zach LaVine); Zach LaVine can switch onto him (SAC allowed guards 10% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -21938,8 +21938,8 @@
    "line": 5.5,
    "start": "2026-10-30T00:15:00Z",
    "p": 0.363,
-   "price": 0.42,
-   "edge": -0.074,
+   "price": 0.43,
+   "edge": -0.084,
    "news": "News: Jalen Coker off the Week 8 injury report - Yahoo Sports",
    "result": null
   },
@@ -21953,8 +21953,8 @@
    "line": 5.5,
    "start": "2026-10-30T00:15:00Z",
    "p": 0.587,
-   "price": 0.59,
-   "edge": -0.02,
+   "price": 0.58,
+   "edge": -0.01,
    "news": "News: Jalen Coker off the Week 8 injury report - Yahoo Sports",
    "result": null
   },
