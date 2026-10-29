@@ -2252,25 +2252,25 @@
    "secs": 0.0
   },
   "props_at": "2026-10-29 14:00 PT",
-  "props_today": 568,
-  "kalshi_props_today": 227,
+  "props_today": 569,
+  "kalshi_props_today": 228,
   "kalshi_priced_today": 17,
   "books_on_kalshi_props": {
-   "AN Consensus": 226,
-   "AN Open": 227,
-   "BetMGM": 163,
+   "AN Consensus": 227,
+   "AN Open": 228,
+   "BetMGM": 164,
    "BetRivers": 166,
-   "Caesars": 192,
-   "DraftKings": 217,
-   "FanDuel": 202,
+   "Caesars": 193,
+   "DraftKings": 218,
+   "FanDuel": 203,
    "Fanatics": 185,
    "Hard Rock Bet": 30,
-   "Parx": 182,
-   "Pinnacle": 175,
-   "Sleeper": 220,
-   "Underdog": 227,
+   "Parx": 183,
+   "Pinnacle": 176,
+   "Sleeper": 221,
+   "Underdog": 228,
    "Unibet": 51,
-   "bet365": 223
+   "bet365": 224
   },
   "data_files": [
    "mlb.sqlite",
@@ -2278,7 +2278,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 55
+  "kalshi_legs_today": 56
  },
  "shadow": [
   {
@@ -21536,8 +21536,8 @@
    "line": 0.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.737,
-   "price": 0.7,
-   "edge": 0.022,
+   "price": 0.77,
+   "edge": -0.045,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 26/37 games without him vs 2/3 with him; NOP has allowed starting forwards 7% fewer threes than average.",
    "result": null
   },
@@ -21641,8 +21641,8 @@
    "line": 3.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.426,
-   "price": 0.38,
-   "edge": 0.03,
+   "price": 0.39,
+   "edge": 0.019,
    "news": "CLE has allowed starting guards 12% more assists than average (likely on him: Donovan Mitchell, James Harden); Donovan Mitchell can switch onto him (CLE allowed guards 24% fewer assists with him playing; he plays tonight); Jaylon Tyson can switch onto him (CLE allowed guards 12% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -21656,8 +21656,8 @@
    "line": 3.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.574,
-   "price": 0.63,
-   "edge": -0.072,
+   "price": 0.62,
+   "edge": -0.062,
    "news": "CLE has allowed starting guards 12% more assists than average (likely on him: Donovan Mitchell, James Harden); Donovan Mitchell can switch onto him (CLE allowed guards 24% fewer assists with him playing; he plays tonight); Jaylon Tyson can switch onto him (CLE allowed guards 12% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -22286,8 +22286,8 @@
    "line": 29.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.554,
-   "price": 0.51,
-   "edge": 0.027,
+   "price": 0.53,
+   "edge": 0.007,
    "news": "News: James Harden's struggles might be the new normal in Cleveland - King James Gospel ATL has allowed starting guards 14% fewer pra than average (likely on him: Nickeil Alexander-Walker, Dyson Daniels).",
    "result": null
   },
@@ -22586,8 +22586,8 @@
    "line": 24.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.527,
-   "price": 0.53,
-   "edge": -0.02,
+   "price": 0.54,
+   "edge": -0.03,
    "news": "POR has allowed starting guards 3% fewer points than average (likely on him: Jrue Holiday, Damian Lillard); minutes trending up (we project 28, his last 5 avg 30 vs 26 over 15).",
    "result": null
   },
@@ -22886,8 +22886,8 @@
    "line": 5.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.474,
-   "price": 0.43,
-   "edge": 0.027,
+   "price": 0.44,
+   "edge": 0.017,
    "news": "POR has allowed starting forwards 0% more rebounds than average (likely on him: Deni Avdija, Toumani Camara); Sidy Cissoko can switch onto him (POR allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -22901,8 +22901,8 @@
    "line": 3.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.493,
-   "price": 0.48,
-   "edge": -0.004,
+   "price": 0.47,
+   "edge": 0.006,
    "news": "POR has allowed bench centers 0% fewer rebounds than average (likely on him: Micah Potter, Yang Hansen).",
    "result": null
   },
@@ -22916,8 +22916,8 @@
    "line": 3.5,
    "start": "2026-10-30T02:00:00Z",
    "p": 0.507,
-   "price": 0.54,
-   "edge": -0.05,
+   "price": 0.55,
+   "edge": -0.06,
    "news": "POR has allowed bench centers 0% fewer rebounds than average (likely on him: Micah Potter, Yang Hansen).",
    "result": null
   },
@@ -23501,8 +23501,8 @@
    "line": 1.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.526,
-   "price": 0.51,
-   "edge": -0.001,
+   "price": 0.52,
+   "edge": -0.011,
    "news": "SAC has allowed starting guards 10% more steals than average (likely on him: Nique Clifford, Zach LaVine); Zach LaVine can switch onto him (SAC allowed guards 20% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -23516,8 +23516,8 @@
    "line": 1.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.474,
-   "price": 0.53,
-   "edge": -0.073,
+   "price": 0.51,
+   "edge": -0.053,
    "news": "SAC has allowed starting guards 10% more steals than average (likely on him: Nique Clifford, Zach LaVine); Zach LaVine can switch onto him (SAC allowed guards 20% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -23531,8 +23531,8 @@
    "line": 1.5,
    "start": "2026-10-30T00:00:00Z",
    "p": 0.373,
-   "price": 0.41,
-   "edge": -0.054,
+   "price": 0.42,
+   "edge": -0.064,
    "news": "SAC has allowed starting forwards 12% fewer steals than average (likely on him: Domantas Sabonis, Precious Achiuwa); Malik Monk can switch onto him (SAC allowed forwards 26% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -24149,6 +24149,36 @@
    "price": 0.48,
    "edge": -0.148,
    "news": "CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "KXNFLREC-26OCT29CARGB-GBMGOLDEN0-5",
+   "league": "nfl",
+   "player": "Matthew Golden",
+   "stat": "receptions",
+   "side": "over",
+   "line": 4.5,
+   "start": "2026-10-30T00:15:00Z",
+   "p": 0.416,
+   "price": 0.52,
+   "edge": -0.121,
+   "news": "Injury report: Questionable: Shoulder, Foot; Limited Participation in Practice (official NFL report) CAR's CB Akayleb Evans is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "KXNFLREC-26OCT29CARGB-GBMGOLDEN0-5",
+   "league": "nfl",
+   "player": "Matthew Golden",
+   "stat": "receptions",
+   "side": "under",
+   "line": 4.5,
+   "start": "2026-10-30T00:15:00Z",
+   "p": 0.494,
+   "price": 0.53,
+   "edge": -0.053,
+   "news": "Injury report: Questionable: Shoulder, Foot; Limited Participation in Practice (official NFL report) CAR's CB Akayleb Evans is out, an easier matchup.",
    "result": null
   },
   {
