@@ -80,7 +80,24 @@ def reload_rules():
         importlib.reload(publish_pnl)
 
 
+_beat = [time.time()]
+
+
+def _watchdog():
+    """10/29: the main loop stalled for 75 min with the service still 'running'. If it stops ticking for 15 min,
+    exit so systemd (Restart=always) starts a fresh copy. State lives in files, so a restart is safe."""
+    import threading
+    def run():
+        while True:
+            time.sleep(60)
+            if time.time() - _beat[0] > 900:
+                log("WATCHDOG: main loop stuck for 15 min, exiting for a systemd restart")
+                os._exit(1)
+    threading.Thread(target=run, daemon=True, name="watchdog").start()
+
+
 def main():
+    _watchdog()
     acct = bot.trade("GET", "/v2/account")
     assert acct["account_number"].startswith("PA"), "Not a paper account. Refusing to run."
     log("Archie live started (paper)")
@@ -89,6 +106,7 @@ def main():
     news_since = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     flagged = set()
     while True:
+        _beat[0] = time.time()
         try:
             now = time.time()
             if now - last_reload > RELOAD_MINUTES * 60:
