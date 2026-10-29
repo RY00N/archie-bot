@@ -2086,7 +2086,7 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-10-28 20:00 PT",
+  "props_at": "2026-10-28 21:00 PT",
   "props_today": 0,
   "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
@@ -20410,8 +20410,8 @@
    "line": 0.5,
    "start": "2026-10-30T00:15:00Z",
    "p": 0.519,
-   "price": 0.53,
-   "edge": -0.028,
+   "price": 0.54,
+   "edge": -0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
