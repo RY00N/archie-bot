@@ -230,7 +230,11 @@ def check_moves(league, st, new, mine):
 
 def check_prices(st, new):
     last = st.setdefault("prices", {})
-    try:   # overnight Kalshi pauses trading and the thin book flaps 0.84 <-> 0.99; those moves mean nothing
+    # overnight (midnight-7am PT) Kalshi's thin book flaps 0.84 <-> 0.99 on pregame legs; those moves mean nothing
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    overnight = datetime.now(ZoneInfo("America/Los_Angeles")).hour < 7
+    try:
         if not get("https://api.elections.kalshi.com/trade-api/v2/exchange/status").get("trading_active", True):
             return
     except Exception:
@@ -262,7 +266,7 @@ def check_prices(st, new):
                                     + (f"Kalshi at {now:.2f}, basically cashed" if band == "hit"
                                        else f"Kalshi down to {now:.2f}, in trouble")})
             continue
-        if abs(now - ref) >= PRICE_MOVE:
+        if abs(now - ref) >= PRICE_MOVE and not overnight:
             last[tk] = now
             way = "up" if now > ref else "down"
             new.append({"league": leg.get("league"), "kind": "price move", "player": leg["player"],
