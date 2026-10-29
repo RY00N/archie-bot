@@ -758,14 +758,24 @@ ESPN_NBA = {"points": ["PTS"], "rebounds": ["REB"], "assists": ["AST"], "threes"
             "blocks": ["BLK"], "turnovers": ["TO"], "stocks": ["STL", "BLK"]}
 
 
+# Ryan 2026-10-28 "make sure u post the wins": MLB overs get the instant HIT too (box group, columns)
+ESPN_MLB = {"hits": ("batting", ["H"]), "home_runs": ("batting", ["HR"]), "rbis": ("batting", ["RBI"]),
+            "hrr": ("batting", ["H", "R", "RBI"]), "pitcher_ks": ("pitching", ["K"])}
+
+
 def espn_actual(leg, live=False):
-    """NBA stat from ESPN's final box score for the leg's game (None if not final, not NBA, or not found).
+    """NBA/MLB stat from ESPN's final box score for the leg's game (None if not final, other league, or not found).
     live=True also reads games in progress (Ryan 2026-10-27: call an over a HIT the moment it clears)."""
-    cols = ESPN_NBA.get(leg["stat"]) if leg.get("league") == "nba" else None
+    group = None
+    if leg.get("league") == "mlb":
+        group, cols = ESPN_MLB.get(leg["stat"], (None, None))
+    else:
+        cols = ESPN_NBA.get(leg["stat"]) if leg.get("league") == "nba" else None
     if not cols:
         return None
     import urllib.request
-    base = "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/"
+    base = ("https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/" if group else
+            "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/")
     day = datetime.fromisoformat(leg["start"].replace("Z", "+00:00")).astimezone(PT).strftime("%Y%m%d")
     try:
         with urllib.request.urlopen(base + "scoreboard?dates=" + day, timeout=15) as r:
@@ -777,6 +787,8 @@ def espn_actual(leg, live=False):
                 box = json.loads(r.read())["boxscore"]["players"]
             for team in box:
                 for s in team["statistics"]:
+                    if group and s.get("type") != group:
+                        continue
                     for a in s["athletes"]:
                         if a["athlete"]["displayName"].lower() == leg["player"].lower() and a.get("stats"):
                             row = dict(zip(s["labels"], a["stats"]))

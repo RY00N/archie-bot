@@ -1,5 +1,5 @@
 """Early HITs (Ryan 2026-10-27: "the second it hits say it did ... wait just a sec" in case a stat is taken back).
-An open NBA over leg whose live ESPN box score already clears the line is marked won once the box shows it on two
+An open NBA/MLB over leg whose live ESPN box score already clears the line is marked won once the box shows it on two
 checks at least 60s apart. Then the parlay is graded and the feed pushed right away so BetterBot posts the HIT.
 fast_loop.sh runs this every 60s. Practice only."""
 import json, os, subprocess, sys
@@ -22,7 +22,7 @@ def main():
         if e.get("status") != "open":
             continue
         for l in e["legs"]:
-            if l.get("result") is not None or l.get("side") != "over" or l.get("league") != "nba" or not l.get("start"):
+            if l.get("result") is not None or l.get("side") != "over" or l.get("league") not in ("nba", "mlb") or not l.get("start"):
                 continue
             if now < datetime.fromisoformat(l["start"].replace("Z", "+00:00")):
                 continue
@@ -39,12 +39,19 @@ def main():
             elif not seen:
                 l["early_seen"] = now.isoformat(timespec="seconds")
             changed = True
-    if not changed:
-        return
-    parlays.save(parlays.BOOK, book)
+    if changed:
+        parlays.save(parlays.BOOK, book)
+    if hits:
+        parlays.grade()
+    # Ryan 2026-10-28: results of hand-posted picks are posted from here (the droplet doesn't know those picks);
+    # before the feed push, so the feed already leaves them out
+    try:
+        import hand_verdicts
+        hand_verdicts.post()
+    except Exception as ex:
+        print("hand verdicts failed:", ex)
     if not hits:
         return
-    parlays.grade()
     subprocess.run(["python3", "-I", f"{BP}/betterpicks.py", "report"], cwd="/tmp", capture_output=True)   # summary/record for city + footer
     print(now.isoformat(timespec="seconds"), "early HIT:", "; ".join(hits))
     # push the verdict now instead of waiting for the 4-minute refresh
