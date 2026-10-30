@@ -127,6 +127,12 @@ def check_report(league, st, new, mine):
         # <yesterday>": not news unless it's on one of our open picks
         if (was or "").lower() == "out" and v["status"].lower() == "day-to-day" and name.lower() not in mine:
             continue
+        # ESPN flips some players Out -> Day-To-Day -> Out every few checks; the silent step above made the
+        # same "Out" alert repeat each cycle: one alert per player+status every 6 hours
+        said = st.setdefault("said", {}).setdefault(league, {})
+        if said.get(name, [None, 0])[0] == v["status"] and time.time() - said[name][1] < 6 * 3600:
+            continue
+        said[name] = [v["status"], time.time()]
         what = f"{v['status']}" + (f" (was {was})" if was else " (new on report)")
         new.append({"league": league, "kind": "injury report", "player": name, "team": v["team"],
                     "text": f"{name} ({v['team']}): {what}" + (f". {v['detail']}" if v["detail"] else "")})
