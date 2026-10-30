@@ -25240,8 +25240,8 @@
    "line": 1.5,
    "start": "2026-10-30T23:00:00Z",
    "p": 0.581,
-   "price": 0.54,
-   "edge": 0.024,
+   "price": 0.53,
+   "edge": 0.034,
    "news": "Justin Champagnie is out: Kyshawn George hit the under in 4/13 games without him vs 12/27 with him; Tristan Vukcevic is out: Kyshawn George hit the under in 14/30 games without him vs 2/10 with him; CHA has allowed starting forwards 5% more threes than average (likely on him: Brandon Miller, Moussa Diabate); Tidjane Salaun can switch onto him (CHA allowed forwards 20% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -25255,8 +25255,8 @@
    "line": 2.5,
    "start": "2026-10-30T23:00:00Z",
    "p": 0.364,
-   "price": 0.45,
-   "edge": -0.103,
+   "price": 0.46,
+   "edge": -0.113,
    "news": "Jamir Watkins is out: Trae Young hit the over in 2/8 games without him vs 1/3 with him; CHA has allowed starting guards 10% fewer threes than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
@@ -25360,8 +25360,8 @@
    "line": 2.5,
    "start": "2026-10-30T23:30:00Z",
    "p": 0.444,
-   "price": 0.58,
-   "edge": -0.153,
+   "price": 0.6,
+   "edge": -0.173,
    "news": "CHI has allowed starting forwards 4% more threes than average (likely on him: Caleb Wilson, Matas Buzelis); Tre Jones can switch onto him (CHI allowed forwards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -25450,8 +25450,8 @@
    "line": 1.5,
    "start": "2026-10-30T23:30:00Z",
    "p": 0.683,
-   "price": 0.69,
-   "edge": -0.022,
+   "price": 0.7,
+   "edge": -0.032,
    "news": "News: Josh Giddey Talks Early Struggles, Learning Bulls' New Offensive System - Yahoo Sports BOS has allowed starting guards 11% more threes than average (likely on him: Derrick White, Jordan Walsh); Ron Harper Jr. can switch onto him (BOS allowed guards 15% fewer threes with him playing; he plays tonight); Hugo Gonzalez can switch onto him (BOS allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -26207,6 +26207,36 @@
   },
   {
    "date": "2026-10-30",
+   "ticker": "KXNBA3PT-26OCT30NYKPHI-NYKLSHAMET44-2",
+   "league": "nba",
+   "player": "Landry Shamet",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-10-30T23:30:00Z",
+   "p": 0.447,
+   "price": 0.93,
+   "edge": -0.488,
+   "news": "News: Landry Shamet Injury: Exits Wednesday's game - RotoWire Jose Alvarado is out: Landry Shamet hit the over in 9/15 games without him vs 13/20 with him; PHI has allowed bench guards 7% fewer threes than average (likely on him: Kentavious Caldwell-Pope, Anfernee Simons); Justin Edwards can switch onto him (PHI allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-10-30",
+   "ticker": "KXNBA3PT-26OCT30NYKPHI-NYKLSHAMET44-2",
+   "league": "nba",
+   "player": "Landry Shamet",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-10-30T23:30:00Z",
+   "p": 0.503,
+   "price": 0.6,
+   "edge": -0.114,
+   "news": "News: Landry Shamet Injury: Exits Wednesday's game - RotoWire Jose Alvarado is out: Landry Shamet hit the under in 6/15 games without him vs 7/20 with him; PHI has allowed bench guards 7% fewer threes than average (likely on him: Kentavious Caldwell-Pope, Anfernee Simons); Justin Edwards can switch onto him (PHI allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-10-30",
    "ticker": "KXNBA3PT-26OCT30NYKPHI-NYKMBRIDGES25-2",
    "league": "nba",
    "player": "Mikal Bridges",
@@ -26230,8 +26260,8 @@
    "line": 1.5,
    "start": "2026-10-30T23:30:00Z",
    "p": 0.587,
-   "price": 0.62,
-   "edge": -0.049,
+   "price": 0.64,
+   "edge": -0.069,
    "news": "News: Mikal Bridges gets benched as reserves come up big in Knicks\u2019 comeback win - New York Post Jose Alvarado is out: Mikal Bridges hit the under in 8/16 games without him vs 16/24 with him; PHI has allowed starting guards 16% fewer threes than average (likely on him: Tyrese Maxey, Jaylen Brown); Justin Edwards can switch onto him (PHI allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -26307,7 +26337,7 @@
    "p": 0.323,
    "price": 0.39,
    "edge": -0.084,
-   "news": "News: Full injury report for Joel Embiid, Sixers vs. Knicks in the NBA Cup - Yahoo Sports NYK has allowed starting centers 7% more threes than average (likely on him: Karl-Anthony Towns).",
+   "news": "News: Full injury report for Joel Embiid, Sixers vs. Knicks in the NBA Cup - Sixers Wire NYK has allowed starting centers 7% more threes than average (likely on him: Karl-Anthony Towns).",
    "result": null
   },
   {
@@ -26322,7 +26352,7 @@
    "p": 0.627,
    "price": 0.67,
    "edge": -0.058,
-   "news": "News: Full injury report for Joel Embiid, Sixers vs. Knicks in the NBA Cup - Yahoo Sports NYK has allowed starting centers 7% more threes than average (likely on him: Karl-Anthony Towns).",
+   "news": "News: Full injury report for Joel Embiid, Sixers vs. Knicks in the NBA Cup - Sixers Wire NYK has allowed starting centers 7% more threes than average (likely on him: Karl-Anthony Towns).",
    "result": null
   },
   {
@@ -26334,10 +26364,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-10-30T23:30:00Z",
-   "p": 0.391,
+   "p": 0.341,
    "price": 0.38,
-   "edge": -0.005,
-   "news": "Jabari Walker (F) is out, so LeBron James's role likely grows; NYK has allowed starting forwards 18% more threes than average (likely on him: OG Anunoby); Tyler Kolek can switch onto him (NYK allowed forwards 26% fewer threes with him playing; he plays tonight); Mohamed Diawara can switch onto him (NYK allowed forwards 10% fewer threes with him playing; he plays tonight).",
+   "edge": -0.055,
+   "news": "News: Is LeBron James Playing Tonight? Latest Injury Updates & Odds Impact - Covers.com Jabari Walker (F) is out, so LeBron James's role likely grows; NYK has allowed starting forwards 18% more threes than average (likely on him: OG Anunoby); Tyler Kolek can switch onto him (NYK allowed forwards 26% fewer threes with him playing; he plays tonight); Mohamed Diawara can switch onto him (NYK allowed forwards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -26352,7 +26382,7 @@
    "p": 0.579,
    "price": 0.68,
    "edge": -0.116,
-   "news": "Jabari Walker (F) is out, so LeBron James's role likely grows; NYK has allowed starting forwards 18% more threes than average (likely on him: OG Anunoby); Tyler Kolek can switch onto him (NYK allowed forwards 26% fewer threes with him playing; he plays tonight); Mohamed Diawara can switch onto him (NYK allowed forwards 10% fewer threes with him playing; he plays tonight).",
+   "news": "News: Is LeBron James Playing Tonight? Latest Injury Updates & Odds Impact - Covers.com Jabari Walker (F) is out, so LeBron James's role likely grows; NYK has allowed starting forwards 18% more threes than average (likely on him: OG Anunoby); Tyler Kolek can switch onto him (NYK allowed forwards 26% fewer threes with him playing; he plays tonight); Mohamed Diawara can switch onto him (NYK allowed forwards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -26875,8 +26905,8 @@
    "line": 5.5,
    "start": "2026-10-31T00:00:00Z",
    "p": 0.495,
-   "price": 0.56,
-   "edge": -0.082,
+   "price": 0.55,
+   "edge": -0.072,
    "news": "Sergio de Larrea (F) is out, so Cooper Flagg's role likely grows; HOU has allowed starting forwards 4% more assists than average (likely on him: Kevin Durant, Jabari Smith Jr.); Clint Capela can switch onto him (HOU allowed forwards 10% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -27190,8 +27220,8 @@
    "line": 3.5,
    "start": "2026-10-30T23:30:00Z",
    "p": 0.6,
-   "price": 0.63,
-   "edge": -0.046,
+   "price": 0.64,
+   "edge": -0.056,
    "news": "News: Karl-Anthony Towns Injury: Latest updates as Knicks star exits game vs Bulls - BasketNews.com PHI has allowed starting centers 11% fewer assists than average (likely on him: Joel Embiid); Joel Embiid can switch onto him (PHI allowed centers 28% fewer assists with him playing; he plays tonight); Jabari Walker can switch onto him (PHI allowed centers 20% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -27655,8 +27685,8 @@
    "line": 9.5,
    "start": "2026-10-30T23:30:00Z",
    "p": 0.491,
-   "price": 0.53,
-   "edge": -0.056,
+   "price": 0.52,
+   "edge": -0.046,
    "news": "News: Mikal Bridges gets benched as reserves come up big in Knicks\u2019 comeback win - New York Post Jose Alvarado is out: Mikal Bridges hit the over in 13/16 games without him vs 13/24 with him; PHI has allowed starting guards 6% fewer points than average (likely on him: Tyrese Maxey, Jaylen Brown); Justin Edwards can switch onto him (PHI allowed guards 10% fewer points with him playing; he plays tonight); those defenders hold shooters 2.7% below their normal FG%, among the league's stingiest; minutes trending down (we project 29, his last 5 avg 27 vs 32 over 15).",
    "result": null
   },
@@ -27700,8 +27730,8 @@
    "line": 19.5,
    "start": "2026-10-30T23:30:00Z",
    "p": 0.476,
-   "price": 0.55,
-   "edge": -0.091,
+   "price": 0.54,
+   "edge": -0.081,
    "news": "Injury report: Questionable: Injury/Illness - Left Knee Soreness (official NBA report) NYK has allowed starting guards 11% fewer points than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 18% fewer points with him playing; he is out tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -28165,8 +28195,8 @@
    "line": 7.5,
    "start": "2026-10-30T23:30:00Z",
    "p": 0.473,
-   "price": 0.51,
-   "edge": -0.054,
+   "price": 0.49,
+   "edge": -0.034,
    "news": "Jose Alvarado is out: Josh Hart hit the over in 7/18 games without him vs 13/22 with him; PHI has allowed starting guards 4% more rebounds than average (likely on him: Tyrese Maxey, Jaylen Brown).",
    "result": null
   },
@@ -28255,8 +28285,8 @@
    "line": 5.5,
    "start": "2026-10-30T23:30:00Z",
    "p": 0.469,
-   "price": 0.56,
-   "edge": -0.108,
+   "price": 0.55,
+   "edge": -0.098,
    "news": "Injury report: Questionable: Injury/Illness - Left Knee Soreness (official NBA report) NYK has allowed starting guards 6% fewer rebounds than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 16% fewer rebounds with him playing; he is out tonight); Mohamed Diawara can switch onto him (NYK allowed guards 9% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -28287,7 +28317,7 @@
    "p": 0.388,
    "price": 0.47,
    "edge": -0.099,
-   "news": "News: Full injury report for Joel Embiid, Sixers vs. Knicks in the NBA Cup - Yahoo Sports NYK has allowed starting centers 14% fewer rebounds than average (likely on him: Karl-Anthony Towns); Mohamed Diawara can switch onto him (NYK allowed centers 18% fewer rebounds with him playing; he plays tonight).",
+   "news": "News: Full injury report for Joel Embiid, Sixers vs. Knicks in the NBA Cup - Sixers Wire NYK has allowed starting centers 14% fewer rebounds than average (likely on him: Karl-Anthony Towns); Mohamed Diawara can switch onto him (NYK allowed centers 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -28302,7 +28332,7 @@
    "p": 0.562,
    "price": 0.64,
    "edge": -0.094,
-   "news": "News: Full injury report for Joel Embiid, Sixers vs. Knicks in the NBA Cup - Yahoo Sports NYK has allowed starting centers 14% fewer rebounds than average (likely on him: Karl-Anthony Towns); Mohamed Diawara can switch onto him (NYK allowed centers 18% fewer rebounds with him playing; he plays tonight).",
+   "news": "News: Full injury report for Joel Embiid, Sixers vs. Knicks in the NBA Cup - Sixers Wire NYK has allowed starting centers 14% fewer rebounds than average (likely on him: Karl-Anthony Towns); Mohamed Diawara can switch onto him (NYK allowed centers 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -28390,8 +28420,8 @@
    "line": 3.5,
    "start": "2026-10-30T23:30:00Z",
    "p": 0.66,
-   "price": 0.56,
-   "edge": 0.083,
+   "price": 0.54,
+   "edge": 0.103,
    "news": "Jalen Suggs is out: Anthony Black hit the under in 15/26 games without him vs 6/14 with him; TOR has allowed starting guards 15% fewer rebounds than average (likely on him: Ja'Kobe Walter, Immanuel Quickley); Jamison Battle can switch onto him (TOR allowed guards 8% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
