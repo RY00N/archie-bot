@@ -2251,26 +2251,26 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-10-29 16:00 PT",
+  "props_at": "2026-10-29 17:00 PT",
   "props_today": 582,
-  "kalshi_props_today": 239,
+  "kalshi_props_today": 240,
   "kalshi_priced_today": 18,
   "books_on_kalshi_props": {
-   "AN Consensus": 236,
-   "AN Open": 239,
+   "AN Consensus": 239,
+   "AN Open": 240,
    "BetMGM": 166,
    "BetRivers": 166,
    "Caesars": 195,
    "DraftKings": 233,
    "FanDuel": 204,
-   "Fanatics": 186,
-   "Hard Rock Bet": 29,
+   "Fanatics": 188,
+   "Hard Rock Bet": 27,
    "Parx": 182,
-   "Pinnacle": 172,
-   "Sleeper": 233,
-   "Underdog": 239,
+   "Pinnacle": 173,
+   "Sleeper": 234,
+   "Underdog": 240,
    "Unibet": 53,
-   "bet365": 233
+   "bet365": 235
   },
   "data_files": [
    "mlb.sqlite",
@@ -2278,7 +2278,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 60
+  "kalshi_legs_today": 26
  },
  "shadow": [
   {
@@ -21103,7 +21103,7 @@
    "p": 0.47,
    "price": 0.47,
    "edge": -0.017,
-   "news": "POR has allowed starting guards 10% fewer threes than average (likely on him: Jrue Holiday, Damian Lillard); Scoot Henderson can switch onto him (POR allowed guards 18% fewer threes with him playing; he plays tonight); Deni Avdija can switch onto him (POR allowed guards 12% fewer threes with him playing; he plays tonight).",
+   "news": "POR has allowed starting guards 10% fewer threes than average (likely on him: Damian Lillard, Ja Morant); Scoot Henderson can switch onto him (POR allowed guards 18% fewer threes with him playing; he plays tonight); Deni Avdija can switch onto him (POR allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21118,7 +21118,7 @@
    "p": 0.53,
    "price": 0.54,
    "edge": -0.027,
-   "news": "POR has allowed starting guards 10% fewer threes than average (likely on him: Jrue Holiday, Damian Lillard); Scoot Henderson can switch onto him (POR allowed guards 18% fewer threes with him playing; he plays tonight); Deni Avdija can switch onto him (POR allowed guards 12% fewer threes with him playing; he plays tonight).",
+   "news": "POR has allowed starting guards 10% fewer threes than average (likely on him: Damian Lillard, Ja Morant); Scoot Henderson can switch onto him (POR allowed guards 18% fewer threes with him playing; he plays tonight); Deni Avdija can switch onto him (POR allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21193,7 +21193,7 @@
    "p": 0.516,
    "price": 0.6,
    "edge": -0.101,
-   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 20% more threes than average (likely on him: Jahmai Mashack, Ty Jerome); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21208,7 +21208,7 @@
    "p": 0.434,
    "price": 0.41,
    "edge": 0.007,
-   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 20% more threes than average (likely on him: Jahmai Mashack, Ty Jerome); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21223,7 +21223,7 @@
    "p": 0.575,
    "price": 0.59,
    "edge": -0.032,
-   "news": "MEM has allowed bench guards 12% fewer threes than average (likely on him: Javon Small, Scotty Pippen Jr.); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "news": "MEM has allowed bench guards 12% fewer threes than average (likely on him: Scotty Pippen Jr., Cam Spencer); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21238,7 +21238,7 @@
    "p": 0.425,
    "price": 0.42,
    "edge": -0.012,
-   "news": "MEM has allowed bench guards 12% fewer threes than average (likely on him: Javon Small, Scotty Pippen Jr.); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "news": "MEM has allowed bench guards 12% fewer threes than average (likely on him: Scotty Pippen Jr., Cam Spencer); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21253,7 +21253,7 @@
    "p": 0.391,
    "price": 0.39,
    "edge": -0.016,
-   "news": "MEM has allowed starting guards 20% more threes than average (likely on him: Jahmai Mashack, Ty Jerome); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "news": "MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21268,7 +21268,7 @@
    "p": 0.609,
    "price": 0.62,
    "edge": -0.027,
-   "news": "MEM has allowed starting guards 20% more threes than average (likely on him: Jahmai Mashack, Ty Jerome); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "news": "MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21283,7 +21283,7 @@
    "p": 0.312,
    "price": 0.35,
    "edge": -0.054,
-   "news": "News: Henderson Questionable to Play vs Lakers With Ankle Soreness - Blazer's Edge Shaedon Sharpe is out: Scoot Henderson hit the over in 12/26 games without him vs 5/14 with him; MEM has allowed bench guards 12% fewer threes than average (likely on him: Javon Small, Scotty Pippen Jr.); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "news": "News: Henderson Questionable to Play vs Lakers With Ankle Soreness - Blazer's Edge Shaedon Sharpe is out: Scoot Henderson hit the over in 12/26 games without him vs 5/14 with him; MEM has allowed bench guards 12% fewer threes than average (likely on him: Scotty Pippen Jr., Cam Spencer); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21298,7 +21298,7 @@
    "p": 0.638,
    "price": 0.66,
    "edge": -0.038,
-   "news": "News: Henderson Questionable to Play vs Lakers With Ankle Soreness - Blazer's Edge Shaedon Sharpe is out: Scoot Henderson hit the under in 14/26 games without him vs 9/14 with him; MEM has allowed bench guards 12% fewer threes than average (likely on him: Javon Small, Scotty Pippen Jr.); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "news": "News: Henderson Questionable to Play vs Lakers With Ankle Soreness - Blazer's Edge Shaedon Sharpe is out: Scoot Henderson hit the under in 14/26 games without him vs 9/14 with him; MEM has allowed bench guards 12% fewer threes than average (likely on him: Scotty Pippen Jr., Cam Spencer); Javon Small can switch onto him (MEM allowed guards 19% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21913,7 +21913,7 @@
    "p": 0.522,
    "price": 0.53,
    "edge": -0.025,
-   "news": "POR has allowed starting guards 3% fewer assists than average (likely on him: Jrue Holiday, Damian Lillard); Deni Avdija can switch onto him (POR allowed guards 16% fewer assists with him playing; he plays tonight); Scoot Henderson can switch onto him (POR allowed guards 8% fewer assists with him playing; he plays tonight).",
+   "news": "POR has allowed starting guards 3% fewer assists than average (likely on him: Damian Lillard, Ja Morant); Deni Avdija can switch onto him (POR allowed guards 16% fewer assists with him playing; he plays tonight); Scoot Henderson can switch onto him (POR allowed guards 8% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21928,7 +21928,7 @@
    "p": 0.478,
    "price": 0.48,
    "edge": -0.019,
-   "news": "POR has allowed starting guards 3% fewer assists than average (likely on him: Jrue Holiday, Damian Lillard); Deni Avdija can switch onto him (POR allowed guards 16% fewer assists with him playing; he plays tonight); Scoot Henderson can switch onto him (POR allowed guards 8% fewer assists with him playing; he plays tonight).",
+   "news": "POR has allowed starting guards 3% fewer assists than average (likely on him: Damian Lillard, Ja Morant); Deni Avdija can switch onto him (POR allowed guards 16% fewer assists with him playing; he plays tonight); Scoot Henderson can switch onto him (POR allowed guards 8% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21973,7 +21973,7 @@
    "p": 0.577,
    "price": 0.57,
    "edge": -0.01,
-   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 7% more assists than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
+   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 7% more assists than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -21988,7 +21988,7 @@
    "p": 0.373,
    "price": 0.44,
    "edge": -0.084,
-   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 7% more assists than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
+   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 7% more assists than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -22003,7 +22003,7 @@
    "p": 0.536,
    "price": 0.54,
    "edge": -0.021,
-   "news": "MEM has allowed bench guards 20% more assists than average (likely on him: Javon Small, Scotty Pippen Jr.); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
+   "news": "MEM has allowed bench guards 20% more assists than average (likely on him: Scotty Pippen Jr., Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -22018,7 +22018,7 @@
    "p": 0.464,
    "price": 0.47,
    "edge": -0.023,
-   "news": "MEM has allowed bench guards 20% more assists than average (likely on him: Javon Small, Scotty Pippen Jr.); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
+   "news": "MEM has allowed bench guards 20% more assists than average (likely on him: Scotty Pippen Jr., Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -22033,7 +22033,7 @@
    "p": 0.557,
    "price": 0.57,
    "edge": -0.03,
-   "news": "MEM has allowed starting guards 7% more assists than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
+   "news": "MEM has allowed starting guards 7% more assists than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -22048,7 +22048,7 @@
    "p": 0.443,
    "price": 0.44,
    "edge": -0.014,
-   "news": "MEM has allowed starting guards 7% more assists than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
+   "news": "MEM has allowed starting guards 7% more assists than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -22543,7 +22543,7 @@
    "p": 0.442,
    "price": 0.48,
    "edge": -0.055,
-   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 12% more pra than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 12% fewer pra with him playing; he plays tonight); Javon Small can switch onto him (MEM allowed guards 9% fewer pra with him playing; he plays tonight); minutes trending down (we project 28, his last 5 avg 25 vs 31 over 15).",
+   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 12% more pra than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 12% fewer pra with him playing; he plays tonight); Javon Small can switch onto him (MEM allowed guards 9% fewer pra with him playing; he plays tonight); minutes trending down (we project 28, his last 5 avg 25 vs 31 over 15).",
    "result": null
   },
   {
@@ -22558,7 +22558,7 @@
    "p": 0.508,
    "price": 0.54,
    "edge": -0.049,
-   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 12% more pra than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 12% fewer pra with him playing; he plays tonight); Javon Small can switch onto him (MEM allowed guards 9% fewer pra with him playing; he plays tonight); minutes trending down (we project 28, his last 5 avg 25 vs 31 over 15).",
+   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 12% more pra than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 12% fewer pra with him playing; he plays tonight); Javon Small can switch onto him (MEM allowed guards 9% fewer pra with him playing; he plays tonight); minutes trending down (we project 28, his last 5 avg 25 vs 31 over 15).",
    "result": null
   },
   {
@@ -22783,7 +22783,7 @@
    "p": 0.465,
    "price": 0.48,
    "edge": -0.032,
-   "news": "POR has allowed starting guards 3% fewer points than average (likely on him: Jrue Holiday, Damian Lillard); minutes trending up (we project 28, his last 5 avg 30 vs 26 over 15).",
+   "news": "POR has allowed starting guards 3% fewer points than average (likely on him: Damian Lillard, Ja Morant); minutes trending up (we project 28, his last 5 avg 30 vs 26 over 15).",
    "result": null
   },
   {
@@ -22798,7 +22798,7 @@
    "p": 0.535,
    "price": 0.53,
    "edge": -0.012,
-   "news": "POR has allowed starting guards 3% fewer points than average (likely on him: Jrue Holiday, Damian Lillard); minutes trending up (we project 28, his last 5 avg 30 vs 26 over 15).",
+   "news": "POR has allowed starting guards 3% fewer points than average (likely on him: Damian Lillard, Ja Morant); minutes trending up (we project 28, his last 5 avg 30 vs 26 over 15).",
    "result": null
   },
   {
@@ -23203,7 +23203,7 @@
    "p": 0.481,
    "price": 0.46,
    "edge": 0.004,
-   "news": "POR has allowed bench centers 0% fewer rebounds than average (likely on him: Micah Potter, Yang Hansen).",
+   "news": "POR has allowed bench centers 0% fewer rebounds than average (likely on him: Yang Hansen, Micah Potter).",
    "result": null
   },
   {
@@ -23218,7 +23218,7 @@
    "p": 0.519,
    "price": 0.55,
    "edge": -0.048,
-   "news": "POR has allowed bench centers 0% fewer rebounds than average (likely on him: Micah Potter, Yang Hansen).",
+   "news": "POR has allowed bench centers 0% fewer rebounds than average (likely on him: Yang Hansen, Micah Potter).",
    "result": null
   },
   {
@@ -23263,7 +23263,7 @@
    "p": 0.414,
    "price": 0.43,
    "edge": -0.033,
-   "news": "POR has allowed starting guards 1% more rebounds than average (likely on him: Jrue Holiday, Damian Lillard).",
+   "news": "POR has allowed starting guards 1% more rebounds than average (likely on him: Damian Lillard, Ja Morant).",
    "result": null
   },
   {
@@ -23278,7 +23278,7 @@
    "p": 0.586,
    "price": 0.58,
    "edge": -0.011,
-   "news": "POR has allowed starting guards 1% more rebounds than average (likely on him: Jrue Holiday, Damian Lillard).",
+   "news": "POR has allowed starting guards 1% more rebounds than average (likely on him: Damian Lillard, Ja Morant).",
    "result": null
   },
   {
@@ -23383,7 +23383,7 @@
    "p": 0.545,
    "price": 0.53,
    "edge": -0.002,
-   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 13% more rebounds than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
+   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 13% more rebounds than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -23398,7 +23398,7 @@
    "p": 0.405,
    "price": 0.48,
    "edge": -0.092,
-   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 13% more rebounds than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
+   "news": "News: Exclusive | Damian Lillard dishes on return from Achilles injury: \u2018I am who I think I am\u2019 - New York Post MEM has allowed starting guards 13% more rebounds than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -23413,7 +23413,7 @@
    "p": 0.545,
    "price": 0.51,
    "edge": 0.018,
-   "news": "MEM has allowed bench guards 19% more rebounds than average (likely on him: Javon Small, Scotty Pippen Jr.); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
+   "news": "MEM has allowed bench guards 19% more rebounds than average (likely on him: Scotty Pippen Jr., Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -23428,7 +23428,7 @@
    "p": 0.455,
    "price": 0.5,
    "edge": -0.062,
-   "news": "MEM has allowed bench guards 19% more rebounds than average (likely on him: Javon Small, Scotty Pippen Jr.); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
+   "news": "MEM has allowed bench guards 19% more rebounds than average (likely on him: Scotty Pippen Jr., Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -23443,7 +23443,7 @@
    "p": 0.427,
    "price": 0.44,
    "edge": -0.03,
-   "news": "MEM has allowed starting guards 13% more rebounds than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
+   "news": "MEM has allowed starting guards 13% more rebounds than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -23458,7 +23458,7 @@
    "p": 0.573,
    "price": 0.57,
    "edge": -0.014,
-   "news": "MEM has allowed starting guards 13% more rebounds than average (likely on him: Jahmai Mashack, Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
+   "news": "MEM has allowed starting guards 13% more rebounds than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 22% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -23980,9 +23980,9 @@
    "side": "over",
    "line": 21.5,
    "start": "2026-10-30T00:15:00Z",
-   "p": 0.493,
+   "p": 0.492,
    "price": 0.53,
-   "edge": -0.054,
+   "edge": -0.055,
    "news": "News: Will Jordan Love play in Week 8 against the Carolina Panthers tonight? Latest injury update on the Green - The Times of India CAR's CB Akayleb Evans is out, an easier matchup.",
    "result": null
   },
@@ -23995,9 +23995,9 @@
    "side": "under",
    "line": 21.5,
    "start": "2026-10-30T00:15:00Z",
-   "p": 0.447,
+   "p": 0.448,
    "price": 0.48,
-   "edge": -0.05,
+   "edge": -0.049,
    "news": "News: Will Jordan Love play in Week 8 against the Carolina Panthers tonight? Latest injury update on the Green - The Times of India CAR's CB Akayleb Evans is out, an easier matchup.",
    "result": null
   },
@@ -24071,8 +24071,8 @@
    "line": 1.5,
    "start": "2026-10-30T00:15:00Z",
    "p": 0.507,
-   "price": 0.48,
-   "edge": 0.01,
+   "price": 0.49,
+   "edge": -0.0,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -24086,8 +24086,8 @@
    "line": 1.5,
    "start": "2026-10-30T00:15:00Z",
    "p": 0.493,
-   "price": 0.53,
-   "edge": -0.054,
+   "price": 0.52,
+   "edge": -0.044,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -24130,9 +24130,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-10-30T00:15:00Z",
-   "p": 0.426,
+   "p": 0.427,
    "price": 0.47,
-   "edge": -0.061,
+   "edge": -0.06,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -24145,9 +24145,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-10-30T00:15:00Z",
-   "p": 0.574,
+   "p": 0.573,
    "price": 0.55,
-   "edge": 0.007,
+   "edge": 0.006,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -24370,9 +24370,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-10-30T00:15:00Z",
-   "p": 0.535,
+   "p": 0.536,
    "price": 0.39,
-   "edge": 0.128,
+   "edge": 0.129,
    "news": "Ja'Tavion Sanders is out: Tommy Tremble hit the over in 10/13 games without him vs 3/18 with him; GB's LB Zaire Franklin is out, an easier matchup.",
    "result": null
   },
@@ -24385,9 +24385,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-10-30T00:15:00Z",
-   "p": 0.465,
+   "p": 0.464,
    "price": 0.62,
-   "edge": -0.171,
+   "edge": -0.172,
    "news": "Ja'Tavion Sanders is out: Tommy Tremble hit the under in 3/13 games without him vs 15/18 with him; GB's LB Zaire Franklin is out, an easier matchup.",
    "result": null
   },
@@ -24820,9 +24820,9 @@
    "side": "over",
    "line": 24.5,
    "start": "2026-10-30T00:15:00Z",
-   "p": 0.467,
-   "price": 0.5,
-   "edge": -0.05,
+   "p": 0.466,
+   "price": 0.51,
+   "edge": -0.061,
    "news": "CAR's CB Akayleb Evans is out, an easier matchup.",
    "result": null
   },
@@ -24835,9 +24835,9 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-10-30T00:15:00Z",
-   "p": 0.523,
-   "price": 0.51,
-   "edge": -0.004,
+   "p": 0.524,
+   "price": 0.5,
+   "edge": 0.007,
    "news": "CAR's CB Akayleb Evans is out, an easier matchup.",
    "result": null
   },
