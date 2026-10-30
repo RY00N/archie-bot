@@ -1,111 +1,75 @@
 {
- "updated": "2026-10-29T02:09:04+00:00",
+ "updated": "2026-10-30T11:17:24+00:00",
  "window": [
-  "2026-10-28",
-  "2026-11-18"
+  "2026-10-30",
+  "2026-11-20"
  ],
  "symbols": {
   "AAPL": {
    "date": "2026-11-02",
    "hour": "amc",
    "eps_est": 2.0221,
-   "trading_days": 3
+   "trading_days": 1
   },
   "AMD": {
    "date": "2026-11-03",
    "hour": "amc",
    "eps_est": 1.9666,
-   "trading_days": 4
-  },
-  "AMZN": {
-   "date": "2026-10-29",
-   "hour": "amc",
-   "eps_est": 2.001,
-   "trading_days": 1
-  },
-  "CAT": {
-   "date": "2026-10-29",
-   "hour": "bmo",
-   "eps_est": 7.1552,
-   "trading_days": 1
-  },
-  "COIN": {
-   "date": "2026-10-29",
-   "hour": "amc",
-   "eps_est": -0.157,
-   "trading_days": 1
+   "trading_days": 2
   },
   "CVX": {
    "date": "2026-10-30",
    "hour": "bmo",
    "eps_est": 4.9317,
-   "trading_days": 2
+   "trading_days": 0
   },
   "DIS": {
    "date": "2026-11-17",
    "hour": "bmo",
    "eps_est": 1.6963,
-   "trading_days": 14
-  },
-  "GOOGL": {
-   "date": "2026-10-28",
-   "hour": "amc",
-   "eps_est": 3.1095,
-   "trading_days": 0
+   "trading_days": 12
   },
   "HD": {
    "date": "2026-11-17",
    "hour": "",
    "eps_est": 3.9538,
-   "trading_days": 14
-  },
-  "LLY": {
-   "date": "2026-10-29",
-   "hour": "bmo",
-   "eps_est": 6.6112,
-   "trading_days": 1
-  },
-  "MA": {
-   "date": "2026-10-29",
-   "hour": "bmo",
-   "eps_est": 5.3156,
-   "trading_days": 1
-  },
-  "MSFT": {
-   "date": "2026-10-28",
-   "hour": "amc",
-   "eps_est": 4.8165,
-   "trading_days": 0
+   "trading_days": 12
   },
   "NVDA": {
    "date": "2026-11-17",
    "hour": "amc",
    "eps_est": 2.5263,
-   "trading_days": 14
+   "trading_days": 12
   },
   "PLTR": {
    "date": "2026-11-02",
    "hour": "amc",
    "eps_est": 0.4225,
-   "trading_days": 3
+   "trading_days": 1
   },
   "SHOP": {
    "date": "2026-11-03",
    "hour": "bmo",
    "eps_est": 0.4682,
-   "trading_days": 4
+   "trading_days": 2
   },
   "UBER": {
    "date": "2026-11-04",
    "hour": "bmo",
    "eps_est": 0.9838,
-   "trading_days": 5
+   "trading_days": 3
+  },
+  "WMT": {
+   "date": "2026-11-19",
+   "hour": "",
+   "eps_est": 0.6427,
+   "trading_days": 14
   },
   "XOM": {
    "date": "2026-10-30",
    "hour": "bmo",
    "eps_est": 4.1205,
-   "trading_days": 2
+   "trading_days": 0
   }
  }
 }
