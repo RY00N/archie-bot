@@ -2417,13 +2417,10 @@
    "secs": 0.0
   },
   "props_at": "2026-10-30 19:00 PT",
-  "props_today": 119,
-  "kalshi_props_today": 50,
+  "props_today": 0,
+  "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {
-   "Sleeper": 50,
-   "Underdog": 50
-  },
+  "books_on_kalshi_props": {},
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
@@ -37198,8 +37195,8 @@
    "line": 224.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.533,
-   "price": 0.5,
-   "edge": 0.016,
+   "price": 0.51,
+   "edge": 0.006,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -40198,8 +40195,8 @@
    "line": 39.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.497,
-   "price": 0.51,
-   "edge": -0.03,
+   "price": 0.5,
+   "edge": -0.021,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -40438,8 +40435,8 @@
    "line": 24.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.464,
-   "price": 0.52,
-   "edge": -0.073,
+   "price": 0.51,
+   "edge": -0.063,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -40948,8 +40945,8 @@
    "line": 7.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.467,
-   "price": 0.54,
-   "edge": -0.09,
+   "price": 0.55,
+   "edge": -0.1,
    "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
