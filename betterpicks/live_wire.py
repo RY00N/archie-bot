@@ -12,7 +12,7 @@ noise is limited to players we track (props feed or open picks); NBA shows every
 `python3 live_wire.py --dry` prints what's new without saving; `--unposted` prints items not yet relayed to the thread
 and marks them relayed.
 """
-import json, os, re, sys, time, urllib.request
+import gzip, json, os, re, sys, time, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BP = "/mnt/project-files/betterpicks"
@@ -43,7 +43,9 @@ INGAME = re.compile(r"(was injured during the play|Injury Update)", re.I)
 def get(url):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=20) as r:
-        return json.load(r)
+        b = r.read()
+    # ESPN sometimes sends a gzipped body without being asked (seen on MLB news Oct 31)
+    return json.loads(gzip.decompress(b) if b[:2] == b"\x1f\x8b" else b)
 
 
 def norm(t):
