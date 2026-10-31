@@ -1,16 +1,16 @@
 {
  "started": "2026-10-28T04:32:08Z",
- "reconnects": 36,
+ "reconnects": 37,
  "whop_linked": 0,
- "last_event": "2026-10-31T02:24:27Z",
+ "last_event": "2026-10-31T02:39:23Z",
  "og_given": 15,
  "og_max": 15,
- "online_since": "2026-10-31T01:08:47Z",
+ "online_since": "2026-10-31T02:27:35Z",
  "invite_roles": {
   "857TCcDMj": 9
  },
- "last_error": "gateway op 7",
- "at": "2026-10-31T02:24:57Z",
+ "last_error": "socket closed",
+ "at": "2026-10-31T02:39:58Z",
  "whop_key": true,
  "pillow": true,
  "whop_gallery_updated": "2026-10-29T01:00:50Z",
