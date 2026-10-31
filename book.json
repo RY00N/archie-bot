@@ -2634,21 +2634,21 @@
   },
   "props_at": "2026-10-31 00:00 PT",
   "props_today": 980,
-  "kalshi_props_today": 214,
+  "kalshi_props_today": 226,
   "kalshi_priced_today": 8,
   "books_on_kalshi_props": {
-   "AN Consensus": 213,
-   "AN Open": 214,
+   "AN Consensus": 225,
+   "AN Open": 226,
    "BetRivers": 45,
    "Caesars": 106,
    "DraftKings": 139,
-   "FanDuel": 174,
-   "Fanatics": 180,
+   "FanDuel": 186,
+   "Fanatics": 188,
    "Parx": 45,
    "Pinnacle": 95,
-   "Sleeper": 205,
-   "Underdog": 214,
-   "bet365": 214
+   "Sleeper": 209,
+   "Underdog": 226,
+   "bet365": 226
   },
   "data_files": [
    "mlb.sqlite",
@@ -35804,8 +35804,8 @@
    "line": 1.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.329,
-   "price": 0.47,
-   "edge": -0.158,
+   "price": 0.48,
+   "edge": -0.168,
    "news": "Jaylon Tyson is out: Sam Merrill hit the under in 6/19 games without him vs 11/21 with him; MIL has allowed bench guards 12% more threes than average (likely on him: Kasparas Jakucionis, AJ Green); Cormac Ryan can switch onto him (MIL allowed guards 10% fewer threes with him playing; he plays tonight); Pete Nance can switch onto him (MIL allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -36524,8 +36524,8 @@
    "line": 1.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.413,
-   "price": 0.54,
-   "edge": -0.144,
+   "price": 0.58,
+   "edge": -0.184,
    "news": "SAC has allowed starting forwards 7% more threes than average (likely on him: Domantas Sabonis, Precious Achiuwa); Zach LaVine can switch onto him (SAC allowed forwards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -36539,8 +36539,8 @@
    "line": 2.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.556,
-   "price": 0.68,
-   "edge": -0.139,
+   "price": 0.7,
+   "edge": -0.159,
    "news": "Injury report: Questionable: Injury/Illness - Upper Back Soreness (official NBA report) SAC has allowed starting guards 29% more threes than average (likely on him: Zach LaVine, Darius Acuff Jr.); Zach LaVine can switch onto him (SAC allowed guards 22% fewer threes with him playing; he plays tonight); Domantas Sabonis can switch onto him (SAC allowed guards 20% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -36584,8 +36584,8 @@
    "line": 2.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.579,
-   "price": 0.91,
-   "edge": -0.337,
+   "price": 0.94,
+   "edge": -0.365,
    "news": "News: Darius Acuff Jr. stands out despite Kings' struggles in road loss to Pelicans - Yahoo Sports MEM has allowed starting guards 14% more threes than average (likely on him: Ty Jerome); Scotty Pippen Jr. can switch onto him (MEM allowed guards 20% fewer threes with him playing; he plays tonight); Javon Small can switch onto him (MEM allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -36839,8 +36839,8 @@
    "line": 3.5,
    "start": "2026-11-01T00:30:00Z",
    "p": 0.461,
-   "price": 0.43,
-   "edge": 0.014,
+   "price": 0.42,
+   "edge": 0.024,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -38444,8 +38444,8 @@
    "line": 30.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.429,
-   "price": 0.51,
-   "edge": -0.098,
+   "price": 0.5,
+   "edge": -0.089,
    "news": "IND's CB Justin Walley is out, an easier matchup; IND's CB Cam Taylor-Britt is out, an easier matchup.",
    "result": null
   },
@@ -38458,10 +38458,10 @@
    "side": "over",
    "line": 33.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.508,
+   "p": 0.458,
    "price": 0.5,
-   "edge": -0.009,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.059,
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -38476,7 +38476,7 @@
    "p": 0.492,
    "price": 0.52,
    "edge": -0.045,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -38504,8 +38504,8 @@
    "line": 33.5,
    "start": "2026-11-01T21:25:00Z",
    "p": 0.453,
-   "price": 0.52,
-   "edge": -0.084,
+   "price": 0.53,
+   "edge": -0.094,
    "news": "DEN's S Talanoa Hufanga is out, an easier matchup.",
    "result": null
   },
@@ -38534,8 +38534,8 @@
    "line": 33.5,
    "start": "2026-11-01T21:05:00Z",
    "p": 0.406,
-   "price": 0.49,
-   "edge": -0.101,
+   "price": 0.5,
+   "edge": -0.111,
    "news": "News: Matthew Stafford\u2019s wife Kelly blasts NFL over head injuries: \u2018Not good enough!\u2019 - New York Post LAC's CB Deane Leonard is out, an easier matchup.",
    "result": null
   },
@@ -38668,10 +38668,10 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.493,
+   "p": 0.443,
    "price": 0.51,
-   "edge": -0.034,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.084,
+   "news": "News: A.J. Brown, TreVeyon Henderson injury updates not ideal for Drake Maye in Dolphins clash - Yahoo Sports",
    "result": null
   },
   {
@@ -38686,7 +38686,7 @@
    "p": 0.507,
    "price": 0.5,
    "edge": -0.01,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: A.J. Brown, TreVeyon Henderson injury updates not ideal for Drake Maye in Dolphins clash - Yahoo Sports",
    "result": null
   },
   {
@@ -38968,10 +38968,10 @@
    "side": "over",
    "line": 20.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.526,
+   "p": 0.476,
    "price": 0.51,
-   "edge": -0.001,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.051,
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -38986,7 +38986,7 @@
    "p": 0.474,
    "price": 0.51,
    "edge": -0.053,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -39059,8 +39059,8 @@
    "line": 22.5,
    "start": "2026-11-01T21:05:00Z",
    "p": 0.505,
-   "price": 0.52,
-   "edge": -0.032,
+   "price": 0.53,
+   "edge": -0.042,
    "news": "News: Matthew Stafford\u2019s wife Kelly blasts NFL over head injuries: \u2018Not good enough!\u2019 - New York Post LAC's CB Deane Leonard is out, an easier matchup.",
    "result": null
   },
@@ -39238,10 +39238,10 @@
    "side": "over",
    "line": 20.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.452,
-   "price": 0.49,
-   "edge": -0.055,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "p": 0.402,
+   "price": 0.47,
+   "edge": -0.085,
+   "news": "News: A.J. Brown, TreVeyon Henderson injury updates not ideal for Drake Maye in Dolphins clash - Yahoo Sports",
    "result": null
   },
   {
@@ -39256,7 +39256,7 @@
    "p": 0.548,
    "price": 0.57,
    "edge": -0.039,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: A.J. Brown, TreVeyon Henderson injury updates not ideal for Drake Maye in Dolphins clash - Yahoo Sports",
    "result": null
   },
   {
@@ -39628,10 +39628,10 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.479,
+   "p": 0.429,
    "price": 0.48,
-   "edge": -0.018,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.068,
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -39646,7 +39646,7 @@
    "p": 0.521,
    "price": 0.53,
    "edge": -0.026,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -39898,10 +39898,10 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.513,
+   "p": 0.463,
    "price": 0.49,
-   "edge": 0.006,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.044,
+   "news": "News: A.J. Brown, TreVeyon Henderson injury updates not ideal for Drake Maye in Dolphins clash - Yahoo Sports",
    "result": null
   },
   {
@@ -39916,7 +39916,7 @@
    "p": 0.487,
    "price": 0.52,
    "edge": -0.05,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: A.J. Brown, TreVeyon Henderson injury updates not ideal for Drake Maye in Dolphins clash - Yahoo Sports",
    "result": null
   },
   {
@@ -40318,10 +40318,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.311,
+   "p": 0.261,
    "price": 0.33,
-   "edge": -0.034,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.084,
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -40336,7 +40336,7 @@
    "p": 0.689,
    "price": 0.68,
    "edge": -0.006,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -40588,10 +40588,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.533,
+   "p": 0.483,
    "price": 0.56,
-   "edge": -0.044,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.094,
+   "news": "News: A.J. Brown, TreVeyon Henderson injury updates not ideal for Drake Maye in Dolphins clash - Yahoo Sports",
    "result": null
   },
   {
@@ -40606,7 +40606,7 @@
    "p": 0.467,
    "price": 0.46,
    "edge": -0.01,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: A.J. Brown, TreVeyon Henderson injury updates not ideal for Drake Maye in Dolphins clash - Yahoo Sports",
    "result": null
   },
   {
@@ -41174,8 +41174,8 @@
    "line": 2.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.633,
-   "price": 0.64,
-   "edge": -0.023,
+   "price": 0.63,
+   "edge": -0.013,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -41474,8 +41474,8 @@
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.54,
-   "price": 0.61,
-   "edge": -0.087,
+   "price": 0.62,
+   "edge": -0.096,
    "news": "BUF's S C.J. Gardner-Johnson is out, an easier matchup.",
    "result": null
   },
@@ -41714,8 +41714,8 @@
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.585,
-   "price": 0.65,
-   "edge": -0.081,
+   "price": 0.66,
+   "edge": -0.091,
    "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
@@ -42074,8 +42074,8 @@
    "line": 2.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.552,
-   "price": 0.59,
-   "edge": -0.055,
+   "price": 0.6,
+   "edge": -0.065,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -43034,8 +43034,8 @@
    "line": 1.5,
    "start": "2026-11-01T21:05:00Z",
    "p": 0.393,
-   "price": 0.51,
-   "edge": -0.134,
+   "price": 0.5,
+   "edge": -0.124,
    "news": "Davante Adams is out: Konata Mumpfield hit the under in 1/3 games without him vs 11/15 with him; LAC's CB Deane Leonard is out, an easier matchup.",
    "result": null
   },
@@ -43334,8 +43334,8 @@
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.415,
-   "price": 0.43,
-   "edge": -0.032,
+   "price": 0.42,
+   "edge": -0.022,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -43784,8 +43784,8 @@
    "line": 6.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.625,
-   "price": 0.61,
-   "edge": -0.002,
+   "price": 0.6,
+   "edge": 0.008,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -44879,8 +44879,8 @@
    "line": 9.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.475,
-   "price": 0.53,
-   "edge": -0.072,
+   "price": 0.52,
+   "edge": -0.062,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -45464,8 +45464,8 @@
    "line": 14.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.452,
-   "price": 0.52,
-   "edge": -0.085,
+   "price": 0.51,
+   "edge": -0.075,
    "news": "Andrei Iosivas (WR) is out, so Dohnte Meyers's role likely grows.",
    "result": null
   },
@@ -45884,8 +45884,8 @@
    "line": 13.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.474,
-   "price": 0.49,
-   "edge": -0.033,
+   "price": 0.48,
+   "edge": -0.023,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -46018,10 +46018,10 @@
    "side": "over",
    "line": 4.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.448,
+   "p": 0.398,
    "price": 0.45,
-   "edge": -0.019,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.069,
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -46036,7 +46036,7 @@
    "p": 0.552,
    "price": 0.57,
    "edge": -0.035,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -46229,8 +46229,8 @@
    "line": 13.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.61,
-   "price": 0.54,
-   "edge": 0.053,
+   "price": 0.53,
+   "edge": 0.063,
    "news": "NYJ's LB David Bailey is out, an easier matchup; NYJ's DT T'Vondre Sweat is out, an easier matchup.",
    "result": null
   },
@@ -46379,8 +46379,8 @@
    "line": 6.5,
    "start": "2026-11-01T21:25:00Z",
    "p": 0.445,
-   "price": 0.46,
-   "edge": -0.032,
+   "price": 0.47,
+   "edge": -0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -46438,10 +46438,10 @@
    "side": "over",
    "line": 4.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.552,
+   "p": 0.502,
    "price": 0.54,
-   "edge": -0.005,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.055,
+   "news": "News: A.J. Brown, TreVeyon Henderson injury updates not ideal for Drake Maye in Dolphins clash - Yahoo Sports",
    "result": null
   },
   {
@@ -46456,7 +46456,7 @@
    "p": 0.448,
    "price": 0.48,
    "edge": -0.049,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: A.J. Brown, TreVeyon Henderson injury updates not ideal for Drake Maye in Dolphins clash - Yahoo Sports",
    "result": null
   },
   {
@@ -46589,8 +46589,8 @@
    "line": 79.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.539,
-   "price": 0.5,
-   "edge": 0.022,
+   "price": 0.49,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -46604,8 +46604,8 @@
    "line": 79.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.461,
-   "price": 0.53,
-   "edge": -0.086,
+   "price": 0.52,
+   "edge": -0.076,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -46708,10 +46708,10 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-11-01T21:25:00Z",
-   "p": 0.461,
+   "p": 0.411,
    "price": 0.5,
-   "edge": -0.056,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.107,
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -46726,7 +46726,7 @@
    "p": 0.539,
    "price": 0.51,
    "edge": 0.012,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: AFC West lead at stake as Patrick Mahomes and Bo Nix grind through injury comebacks - Denver7",
    "result": null
   },
   {
@@ -46994,8 +46994,8 @@
    "line": 14.5,
    "start": "2026-11-01T21:25:00Z",
    "p": 0.496,
-   "price": 0.51,
-   "edge": -0.031,
+   "price": 0.5,
+   "edge": -0.022,
    "news": "News: Jaylen Wright Off the Injury Report, Will Play in Week 8 - NFL News | Fantasy Football - RotoBaller",
    "result": null
   }
