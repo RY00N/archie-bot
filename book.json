@@ -2656,7 +2656,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 85
+  "kalshi_legs_today": 86
  },
  "shadow": [
   {
@@ -35789,8 +35789,8 @@
    "line": 1.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.668,
-   "price": 0.63,
-   "edge": 0.022,
+   "price": 0.61,
+   "edge": 0.041,
    "news": "Jaylon Tyson is out: Sam Merrill hit the over in 13/19 games without him vs 10/21 with him; MIL has allowed bench guards 12% more threes than average (likely on him: Kasparas Jakucionis, AJ Green); Cormac Ryan can switch onto him (MIL allowed guards 10% fewer threes with him playing; he plays tonight); Pete Nance can switch onto him (MIL allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -35804,8 +35804,8 @@
    "line": 1.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.332,
-   "price": 0.46,
-   "edge": -0.145,
+   "price": 0.44,
+   "edge": -0.125,
    "news": "Jaylon Tyson is out: Sam Merrill hit the under in 6/19 games without him vs 11/21 with him; MIL has allowed bench guards 12% more threes than average (likely on him: Kasparas Jakucionis, AJ Green); Cormac Ryan can switch onto him (MIL allowed guards 10% fewer threes with him playing; he plays tonight); Pete Nance can switch onto him (MIL allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -35849,8 +35849,8 @@
    "line": 1.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.43,
-   "price": 0.39,
-   "edge": 0.023,
+   "price": 0.38,
+   "edge": 0.034,
    "news": "CLE has allowed starting forwards 21% more threes than average; Craig Porter Jr. can switch onto him (CLE allowed forwards 20% fewer threes with him playing; he plays tonight); Jaylon Tyson can switch onto him (CLE allowed forwards 16% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -35969,8 +35969,8 @@
    "line": 2.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.57,
-   "price": 0.54,
-   "edge": 0.013,
+   "price": 0.53,
+   "edge": 0.023,
    "news": "CLE has allowed starting guards 5% fewer threes than average (likely on him: James Harden, Donovan Mitchell).",
    "result": null
   },
@@ -35984,8 +35984,8 @@
    "line": 2.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.43,
-   "price": 0.51,
-   "edge": -0.097,
+   "price": 0.5,
+   "edge": -0.088,
    "news": "CLE has allowed starting guards 5% fewer threes than average (likely on him: James Harden, Donovan Mitchell).",
    "result": null
   },
@@ -37206,6 +37206,21 @@
   },
   {
    "date": "2026-10-31",
+   "ticker": "KXNBA3PT-26OCT31SACMEM-SACDSABONIS11-1",
+   "league": "nba",
+   "player": "Domantas Sabonis",
+   "stat": "threes",
+   "side": "under",
+   "line": 0.5,
+   "start": "2026-11-01T00:00:00Z",
+   "p": 0.879,
+   "price": 0.94,
+   "edge": -0.065,
+   "news": "Keegan Murray is out: Domantas Sabonis hit the under in 15/21 games without him vs 12/19 with him; MEM has allowed starting forwards 20% fewer threes than average (likely on him: Cameron Boozer, Cedric Coward); Scotty Pippen Jr. can switch onto him (MEM allowed forwards 15% fewer threes with him playing; he plays tonight); Ty Jerome can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-10-31",
    "ticker": "KXNBA3PT-26OCT31SACMEM-SACPACHIUWA9-1",
    "league": "nba",
    "player": "Precious Achiuwa",
@@ -37214,8 +37229,8 @@
    "line": 0.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.254,
-   "price": 0.29,
-   "edge": -0.05,
+   "price": 0.31,
+   "edge": -0.071,
    "news": "Keegan Murray is out: Precious Achiuwa hit the over in 11/37 games without him vs 1/3 with him; MEM has allowed starting forwards 20% fewer threes than average (likely on him: Cameron Boozer, Cedric Coward); Scotty Pippen Jr. can switch onto him (MEM allowed forwards 15% fewer threes with him playing; he plays tonight); Ty Jerome can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -37544,8 +37559,8 @@
    "line": 3.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.469,
-   "price": 0.59,
-   "edge": -0.138,
+   "price": 0.58,
+   "edge": -0.128,
    "news": "Anthony Edwards is out: Ayo Dosunmu hit the over in 1/3 games without him vs 9/23 with him; Donte DiVincenzo is out: Ayo Dosunmu hit the over in 2/8 games without him vs 8/18 with him; SAS has allowed bench guards 4% more assists than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie).",
    "result": null
   },
@@ -37559,8 +37574,8 @@
    "line": 3.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.531,
-   "price": 0.43,
-   "edge": 0.084,
+   "price": 0.44,
+   "edge": 0.074,
    "news": "Anthony Edwards is out: Ayo Dosunmu hit the under in 2/3 games without him vs 14/23 with him; Donte DiVincenzo is out: Ayo Dosunmu hit the under in 6/8 games without him vs 10/18 with him; SAS has allowed bench guards 4% more assists than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie).",
    "result": null
   },
@@ -38069,8 +38084,8 @@
    "line": 34.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.544,
-   "price": 0.53,
-   "edge": -0.003,
+   "price": 0.51,
+   "edge": 0.017,
    "news": "News: Donovan Mitchell struggles from deep Thursday - FantasyPros Jaylon Tyson is out: Donovan Mitchell hit the over in 11/18 games without him vs 8/22 with him; MIL has allowed starting guards 12% more pra than average (likely on him: Tyler Herro, Ryan Rollins).",
    "result": null
   },
@@ -38144,8 +38159,8 @@
    "line": 39.5,
    "start": "2026-10-31T22:00:00Z",
    "p": 0.426,
-   "price": 0.5,
-   "edge": -0.092,
+   "price": 0.49,
+   "edge": -0.081,
    "news": "CHA has allowed starting guards 1% more pra than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
@@ -38159,8 +38174,8 @@
    "line": 39.5,
    "start": "2026-10-31T22:00:00Z",
    "p": 0.574,
-   "price": 0.56,
-   "edge": -0.003,
+   "price": 0.55,
+   "edge": 0.007,
    "news": "CHA has allowed starting guards 1% more pra than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
@@ -38174,8 +38189,8 @@
    "line": 24.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.403,
-   "price": 0.54,
-   "edge": -0.154,
+   "price": 0.52,
+   "edge": -0.134,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -38189,8 +38204,8 @@
    "line": 24.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.597,
-   "price": 0.55,
-   "edge": 0.03,
+   "price": 0.54,
+   "edge": 0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -38729,8 +38744,8 @@
    "line": 19.5,
    "start": "2026-10-31T22:00:00Z",
    "p": 0.459,
-   "price": 0.54,
-   "edge": -0.098,
+   "price": 0.53,
+   "edge": -0.088,
    "news": "News: \u2018Sad\u2019 \u2013 Angry Luka Doncic fan blames LeBron James for LA Lakers\u2019 recent struggles - Yahoo Sports Jabari Walker (F) is out, so LeBron James's role likely grows; CHA has allowed starting forwards 7% fewer points than average (likely on him: Brandon Miller, Moussa Diabate).",
    "result": null
   },
@@ -38864,8 +38879,8 @@
    "line": 14.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.489,
-   "price": 0.53,
-   "edge": -0.058,
+   "price": 0.54,
+   "edge": -0.068,
    "news": "POR has allowed starting guards 4% fewer points than average (likely on him: Damian Lillard).",
    "result": null
   },
@@ -38879,8 +38894,8 @@
    "line": 14.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.511,
-   "price": 0.49,
-   "edge": 0.004,
+   "price": 0.48,
+   "edge": 0.014,
    "news": "POR has allowed starting guards 4% fewer points than average (likely on him: Damian Lillard).",
    "result": null
   },
@@ -39569,8 +39584,8 @@
    "line": 5.5,
    "start": "2026-11-01T00:30:00Z",
    "p": 0.418,
-   "price": 0.47,
-   "edge": -0.069,
+   "price": 0.49,
+   "edge": -0.089,
    "news": "OKC has allowed starting forwards 3% more rebounds than average; Chet Holmgren can switch onto him (OKC allowed forwards 13% fewer rebounds with him playing; he is out tonight); Isaiah Hartenstein can switch onto him (OKC allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -39599,8 +39614,8 @@
    "line": 5.5,
    "start": "2026-11-01T00:30:00Z",
    "p": 0.515,
-   "price": 0.6,
-   "edge": -0.102,
+   "price": 0.61,
+   "edge": -0.112,
    "news": "OKC has allowed starting forwards 3% more rebounds than average; Chet Holmgren can switch onto him (OKC allowed forwards 13% fewer rebounds with him playing; he is out tonight); Isaiah Hartenstein can switch onto him (OKC allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -39719,8 +39734,8 @@
    "line": 7.5,
    "start": "2026-10-31T22:00:00Z",
    "p": 0.47,
-   "price": 0.55,
-   "edge": -0.097,
+   "price": 0.54,
+   "edge": -0.087,
    "news": "News: \u2018Sad\u2019 \u2013 Angry Luka Doncic fan blames LeBron James for LA Lakers\u2019 recent struggles - Yahoo Sports Jabari Walker (F) is out, so LeBron James's role likely grows; CHA has allowed starting forwards 15% fewer rebounds than average (likely on him: Brandon Miller, Moussa Diabate); Grant Williams can switch onto him (CHA allowed forwards 17% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -40094,8 +40109,8 @@
    "line": 0.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.561,
-   "price": 0.68,
-   "edge": -0.134,
+   "price": 0.7,
+   "edge": -0.154,
    "news": "SAS has allowed starting forwards 16% fewer steals than average (likely on him: Victor Wembanyama); Jordan McLaughlin can switch onto him (SAS allowed forwards 35% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -45539,8 +45554,8 @@
    "line": 2.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.361,
-   "price": 0.44,
-   "edge": -0.096,
+   "price": 0.43,
+   "edge": -0.086,
    "news": "NYJ's LB David Bailey is out, an easier matchup.",
    "result": null
   },
@@ -46439,8 +46454,8 @@
    "line": 4.5,
    "start": "2026-11-01T21:25:00Z",
    "p": 0.614,
-   "price": 0.6,
-   "edge": -0.003,
+   "price": 0.59,
+   "edge": 0.007,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
