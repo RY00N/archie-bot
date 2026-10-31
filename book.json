@@ -35292,7 +35292,7 @@
    "p": 0.554,
    "price": 0.63,
    "edge": -0.092,
-   "news": "News: Brutal Ja Morant injury comes with Scoot Henderson silver lining for Blazers - Rip City Project Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the over in 11/26 games without him vs 5/14 with him; UTA has allowed bench guards 31% more threes than average.",
+   "news": "News: Morant\u2019s Injury Presents Critical Opportunity For Scoot Henderson - Blazer's Edge Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the over in 11/26 games without him vs 5/14 with him; UTA has allowed bench guards 31% more threes than average.",
    "result": null
   },
   {
@@ -35307,7 +35307,7 @@
    "p": 0.366,
    "price": 0.4,
    "edge": -0.051,
-   "news": "News: Brutal Ja Morant injury comes with Scoot Henderson silver lining for Blazers - Rip City Project Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the under in 15/26 games without him vs 9/14 with him; UTA has allowed bench guards 31% more threes than average.",
+   "news": "News: Morant\u2019s Injury Presents Critical Opportunity For Scoot Henderson - Blazer's Edge Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the under in 15/26 games without him vs 9/14 with him; UTA has allowed bench guards 31% more threes than average.",
    "result": null
   },
   {
@@ -35335,9 +35335,39 @@
    "line": 2.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.559,
-   "price": 0.61,
-   "edge": -0.068,
+   "price": 0.6,
+   "edge": -0.058,
    "news": "UTA has allowed starting forwards 10% more threes than average.",
+   "result": null
+  },
+  {
+   "date": "2026-10-31",
+   "ticker": "KXNBA3PT-26OCT31SACMEM-MEMJWELLS0-2",
+   "league": "nba",
+   "player": "Jaylen Wells",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-01T00:00:00Z",
+   "p": 0.602,
+   "price": 0.84,
+   "edge": -0.247,
+   "news": "SAC has allowed starting forwards 7% more threes than average (likely on him: Domantas Sabonis, Precious Achiuwa); Zach LaVine can switch onto him (SAC allowed forwards 14% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-10-31",
+   "ticker": "KXNBA3PT-26OCT31SACMEM-MEMTJEROME2-3",
+   "league": "nba",
+   "player": "Ty Jerome",
+   "stat": "threes",
+   "side": "under",
+   "line": 2.5,
+   "start": "2026-11-01T00:00:00Z",
+   "p": 0.535,
+   "price": 0.77,
+   "edge": -0.247,
+   "news": "Injury report: Questionable: Injury/Illness - Upper Back Soreness (official NBA report) SAC has allowed starting guards 29% more threes than average (likely on him: Zach LaVine, Darius Acuff Jr.); Zach LaVine can switch onto him (SAC allowed guards 22% fewer threes with him playing; he plays tonight); Domantas Sabonis can switch onto him (SAC allowed guards 20% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -35382,7 +35412,7 @@
    "p": 0.316,
    "price": 0.5,
    "edge": -0.202,
-   "news": "News: Brutal Ja Morant injury comes with Scoot Henderson silver lining for Blazers - Rip City Project Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the over in 11/26 games without him vs 10/14 with him.",
+   "news": "News: Morant\u2019s Injury Presents Critical Opportunity For Scoot Henderson - Blazer's Edge Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the over in 11/26 games without him vs 10/14 with him.",
    "result": null
   },
   {
@@ -35397,7 +35427,7 @@
    "p": 0.604,
    "price": 0.54,
    "edge": 0.047,
-   "news": "News: Brutal Ja Morant injury comes with Scoot Henderson silver lining for Blazers - Rip City Project Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the under in 15/26 games without him vs 4/14 with him.",
+   "news": "News: Morant\u2019s Injury Presents Critical Opportunity For Scoot Henderson - Blazer's Edge Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the under in 15/26 games without him vs 4/14 with him.",
    "result": null
   },
   {
@@ -35442,7 +35472,7 @@
    "p": 0.371,
    "price": 0.46,
    "edge": -0.106,
-   "news": "News: Brutal Ja Morant injury comes with Scoot Henderson silver lining for Blazers - Rip City Project Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the over in 10/26 games without him vs 5/14 with him; UTA has allowed bench guards 14% more points than average; minutes trending down (we project 23, his last 5 avg 19 vs 27 over 15).",
+   "news": "News: Morant\u2019s Injury Presents Critical Opportunity For Scoot Henderson - Blazer's Edge Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the over in 10/26 games without him vs 5/14 with him; UTA has allowed bench guards 14% more points than average; minutes trending down (we project 23, his last 5 avg 19 vs 27 over 15).",
    "result": null
   },
   {
@@ -35457,7 +35487,7 @@
    "p": 0.549,
    "price": 0.57,
    "edge": -0.038,
-   "news": "News: Brutal Ja Morant injury comes with Scoot Henderson silver lining for Blazers - Rip City Project Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the under in 16/26 games without him vs 9/14 with him; UTA has allowed bench guards 14% more points than average; minutes trending down (we project 23, his last 5 avg 19 vs 27 over 15).",
+   "news": "News: Morant\u2019s Injury Presents Critical Opportunity For Scoot Henderson - Blazer's Edge Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the under in 16/26 games without him vs 9/14 with him; UTA has allowed bench guards 14% more points than average; minutes trending down (we project 23, his last 5 avg 19 vs 27 over 15).",
    "result": null
   },
   {
@@ -35562,7 +35592,7 @@
    "p": 0.262,
    "price": 0.43,
    "edge": -0.185,
-   "news": "News: Brutal Ja Morant injury comes with Scoot Henderson silver lining for Blazers - Rip City Project Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the over in 6/26 games without him vs 6/14 with him; UTA has allowed bench guards 18% more rebounds than average.",
+   "news": "News: Morant\u2019s Injury Presents Critical Opportunity For Scoot Henderson - Blazer's Edge Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the over in 6/26 games without him vs 6/14 with him; UTA has allowed bench guards 18% more rebounds than average.",
    "result": null
   },
   {
@@ -35577,7 +35607,7 @@
    "p": 0.658,
    "price": 0.73,
    "edge": -0.086,
-   "news": "News: Brutal Ja Morant injury comes with Scoot Henderson silver lining for Blazers - Rip City Project Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the under in 20/26 games without him vs 8/14 with him; UTA has allowed bench guards 18% more rebounds than average.",
+   "news": "News: Morant\u2019s Injury Presents Critical Opportunity For Scoot Henderson - Blazer's Edge Ja Morant (G) is out, so Scoot Henderson's role likely grows; Shaedon Sharpe is out: Scoot Henderson hit the under in 20/26 games without him vs 8/14 with him; UTA has allowed bench guards 18% more rebounds than average.",
    "result": null
   },
   {
@@ -35829,9 +35859,9 @@
    "side": "over",
    "line": 30.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.483,
+   "p": 0.482,
    "price": 0.5,
-   "edge": -0.035,
+   "edge": -0.036,
    "news": "LV's DE Patrick Johnson is out, an easier matchup.",
    "result": null
   },
@@ -35844,9 +35874,9 @@
    "side": "under",
    "line": 30.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.507,
+   "p": 0.508,
    "price": 0.51,
-   "edge": -0.02,
+   "edge": -0.019,
    "news": "LV's DE Patrick Johnson is out, an easier matchup.",
    "result": null
   },
@@ -36115,8 +36145,8 @@
    "line": 19.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.422,
-   "price": 0.49,
-   "edge": -0.085,
+   "price": 0.5,
+   "edge": -0.096,
    "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
@@ -36130,8 +36160,8 @@
    "line": 21.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.532,
-   "price": 0.49,
-   "edge": 0.025,
+   "price": 0.48,
+   "edge": 0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -36219,9 +36249,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.557,
+   "p": 0.553,
    "price": 0.56,
-   "edge": -0.02,
+   "edge": -0.024,
    "news": "LV's DE Patrick Johnson is out, an easier matchup.",
    "result": null
   },
@@ -36234,9 +36264,9 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.433,
+   "p": 0.437,
    "price": 0.45,
-   "edge": -0.034,
+   "edge": -0.03,
    "news": "LV's DE Patrick Johnson is out, an easier matchup.",
    "result": null
   },
@@ -36580,8 +36610,8 @@
    "line": 0.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.448,
-   "price": 0.47,
-   "edge": -0.039,
+   "price": 0.48,
+   "edge": -0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -37465,8 +37495,8 @@
    "line": 3.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.49,
-   "price": 0.49,
-   "edge": -0.017,
+   "price": 0.5,
+   "edge": -0.028,
    "news": "Jalen Brooks (WR) is out, so Kendrick Bourne's role likely grows.",
    "result": null
   },
@@ -37539,9 +37569,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.498,
+   "p": 0.501,
    "price": 0.56,
-   "edge": -0.079,
+   "edge": -0.076,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -37554,9 +37584,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.502,
+   "p": 0.499,
    "price": 0.45,
-   "edge": 0.035,
+   "edge": 0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -37569,9 +37599,9 @@
    "side": "over",
    "line": 6.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.482,
+   "p": 0.483,
    "price": 0.49,
-   "edge": -0.025,
+   "edge": -0.024,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -37584,9 +37614,9 @@
    "side": "under",
    "line": 6.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.518,
+   "p": 0.517,
    "price": 0.52,
-   "edge": -0.019,
+   "edge": -0.02,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -37659,9 +37689,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.638,
+   "p": 0.637,
    "price": 0.6,
-   "edge": 0.021,
+   "edge": 0.02,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -37674,9 +37704,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.362,
+   "p": 0.363,
    "price": 0.41,
-   "edge": -0.065,
+   "edge": -0.064,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -37689,9 +37719,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.509,
+   "p": 0.511,
    "price": 0.45,
-   "edge": 0.042,
+   "edge": 0.044,
    "news": "KaVontae Turpin is out: Ryan Flournoy hit the over in 1/2 games without him vs 6/28 with him.",
    "result": null
   },
@@ -37704,9 +37734,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.491,
+   "p": 0.489,
    "price": 0.56,
-   "edge": -0.086,
+   "edge": -0.088,
    "news": "KaVontae Turpin is out: Ryan Flournoy hit the under in 1/2 games without him vs 22/28 with him.",
    "result": null
   },
@@ -38515,8 +38545,8 @@
    "line": 3.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.523,
-   "price": 0.57,
-   "edge": -0.064,
+   "price": 0.56,
+   "edge": -0.054,
    "news": "PIT's CB Doneiko Slaughter is out, an easier matchup.",
    "result": null
   },
@@ -38560,8 +38590,8 @@
    "line": 3.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.523,
-   "price": 0.53,
-   "edge": -0.024,
+   "price": 0.52,
+   "edge": -0.014,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -38965,8 +38995,8 @@
    "line": 2.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.569,
-   "price": 0.61,
-   "edge": -0.058,
+   "price": 0.62,
+   "edge": -0.067,
    "news": "Alec Pierce is out: Laquon Treadwell hit the under in 3/4 games without him vs 7/8 with him; JAX's S Antonio Johnson is out, an easier matchup.",
    "result": null
   },
@@ -39085,8 +39115,8 @@
    "line": 2.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.647,
-   "price": 0.6,
-   "edge": 0.03,
+   "price": 0.61,
+   "edge": 0.02,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -39100,8 +39130,8 @@
    "line": 2.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.466,
-   "price": 0.46,
-   "edge": -0.011,
+   "price": 0.45,
+   "edge": -0.001,
    "news": "IND's CB Justin Walley is out, an easier matchup; IND's CB Cam Taylor-Britt is out, an easier matchup.",
    "result": null
   },
@@ -39115,8 +39145,8 @@
    "line": 2.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.514,
-   "price": 0.55,
-   "edge": -0.053,
+   "price": 0.56,
+   "edge": -0.063,
    "news": "IND's CB Justin Walley is out, an easier matchup; IND's CB Cam Taylor-Britt is out, an easier matchup.",
    "result": null
   },
@@ -39175,8 +39205,8 @@
    "line": 4.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.379,
-   "price": 0.48,
-   "edge": -0.118,
+   "price": 0.49,
+   "edge": -0.128,
    "news": "IND's CB Justin Walley is out, an easier matchup; IND's CB Cam Taylor-Britt is out, an easier matchup.",
    "result": null
   },
@@ -39369,9 +39399,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.588,
+   "p": 0.585,
    "price": 0.59,
-   "edge": -0.019,
+   "edge": -0.022,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -39384,9 +39414,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.412,
+   "p": 0.415,
    "price": 0.43,
-   "edge": -0.035,
+   "edge": -0.032,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -39519,9 +39549,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.436,
+   "p": 0.433,
    "price": 0.45,
-   "edge": -0.031,
+   "edge": -0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -39534,9 +39564,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.564,
+   "p": 0.567,
    "price": 0.58,
-   "edge": -0.033,
+   "edge": -0.03,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -40209,10 +40239,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.542,
+   "p": 0.592,
    "price": 0.53,
-   "edge": -0.005,
-   "news": "News: Eagles Make Jalen Carter Mistake on Practice Injury Report - Yahoo Sports",
+   "edge": 0.045,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -40227,7 +40257,7 @@
    "p": 0.408,
    "price": 0.49,
    "edge": -0.099,
-   "news": "News: Eagles Make Jalen Carter Mistake on Practice Injury Report - Yahoo Sports",
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -40885,8 +40915,8 @@
    "line": 79.5,
    "start": "2026-11-01T18:00:00Z",
    "p": 0.513,
-   "price": 0.49,
-   "edge": 0.006,
+   "price": 0.5,
+   "edge": -0.004,
    "news": "News: Ja\u2019Marr Chase off injury report for Titans vs. Bengals - Bengals Wire",
    "result": null
   },
@@ -41019,9 +41049,9 @@
    "side": "over",
    "line": 17.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.437,
+   "p": 0.438,
    "price": 0.5,
-   "edge": -0.081,
+   "edge": -0.08,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -41034,9 +41064,9 @@
    "side": "under",
    "line": 17.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.563,
+   "p": 0.562,
    "price": 0.52,
-   "edge": 0.026,
+   "edge": 0.025,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
