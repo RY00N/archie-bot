@@ -2633,7 +2633,7 @@
    "secs": 0.0
   },
   "props_at": "2026-10-31 03:00 PT",
-  "props_today": 1089,
+  "props_today": 1129,
   "kalshi_props_today": 318,
   "kalshi_priced_today": 12,
   "books_on_kalshi_props": {
@@ -2656,7 +2656,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 84
+  "kalshi_legs_today": 85
  },
  "shadow": [
   {
@@ -36614,8 +36614,8 @@
    "line": 2.5,
    "start": "2026-10-31T22:00:00Z",
    "p": 0.508,
-   "price": 0.59,
-   "edge": -0.099,
+   "price": 0.57,
+   "edge": -0.079,
    "news": "CHA has allowed starting guards 10% fewer threes than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
@@ -36734,8 +36734,8 @@
    "line": 0.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.39,
-   "price": 0.35,
-   "edge": 0.024,
+   "price": 0.36,
+   "edge": 0.014,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -36824,8 +36824,8 @@
    "line": 2.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.561,
-   "price": 0.62,
-   "edge": -0.075,
+   "price": 0.61,
+   "edge": -0.066,
    "news": "Ja Morant (G) is out, so Jrue Holiday's role likely grows; UTA has allowed bench guards 31% more threes than average.",
    "result": null
   },
@@ -37004,8 +37004,8 @@
    "line": 2.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.53,
-   "price": 0.56,
-   "edge": -0.047,
+   "price": 0.57,
+   "edge": -0.057,
    "news": "Injury report: Questionable: Injury/Illness - Right Wrist Sprain (official NBA report) POR has allowed starting forwards 9% fewer threes than average (likely on him: Deni Avdija, Toumani Camara); Robert Williams III can switch onto him (POR allowed forwards 20% fewer threes with him playing; he plays tonight); Scoot Henderson can switch onto him (POR allowed forwards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -37244,8 +37244,8 @@
    "line": 0.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.746,
-   "price": 0.87,
-   "edge": -0.132,
+   "price": 0.82,
+   "edge": -0.084,
    "news": "Keegan Murray is out: Precious Achiuwa hit the under in 26/37 games without him vs 2/3 with him; MEM has allowed starting forwards 20% fewer threes than average (likely on him: Cameron Boozer, Cedric Coward); Scotty Pippen Jr. can switch onto him (MEM allowed forwards 15% fewer threes with him playing; he plays tonight); Ty Jerome can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -37559,8 +37559,8 @@
    "line": 3.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.47,
-   "price": 0.58,
-   "edge": -0.127,
+   "price": 0.6,
+   "edge": -0.147,
    "news": "Anthony Edwards is out: Ayo Dosunmu hit the over in 1/3 games without him vs 9/23 with him; Donte DiVincenzo is out: Ayo Dosunmu hit the over in 2/8 games without him vs 8/18 with him; SAS has allowed bench guards 4% more assists than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie).",
    "result": null
   },
@@ -37829,8 +37829,8 @@
    "line": 3.5,
    "start": "2026-10-31T22:00:00Z",
    "p": 0.519,
-   "price": 0.53,
-   "edge": -0.028,
+   "price": 0.52,
+   "edge": -0.018,
    "news": "CHA has allowed starting guards 4% more assists than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
@@ -38054,8 +38054,8 @@
    "line": 24.5,
    "start": "2026-10-31T23:00:00Z",
    "p": 0.527,
-   "price": 0.56,
-   "edge": -0.05,
+   "price": 0.58,
+   "edge": -0.07,
    "news": "ATL has allowed starting forwards 6% fewer pra than average (likely on him: Jalen Johnson, Onyeka Okongwu); Onyeka Okongwu can switch onto him (ATL allowed forwards 11% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -38144,8 +38144,8 @@
    "line": 24.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.503,
-   "price": 0.54,
-   "edge": -0.054,
+   "price": 0.55,
+   "edge": -0.064,
    "news": "MIN has allowed starting guards 2% more pra than average (likely on him: Ayo Dosunmu, LaMelo Ball).",
    "result": null
   },
@@ -38159,8 +38159,8 @@
    "line": 39.5,
    "start": "2026-10-31T22:00:00Z",
    "p": 0.426,
-   "price": 0.49,
-   "edge": -0.081,
+   "price": 0.5,
+   "edge": -0.092,
    "news": "CHA has allowed starting guards 1% more pra than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
@@ -38174,8 +38174,8 @@
    "line": 39.5,
    "start": "2026-10-31T22:00:00Z",
    "p": 0.574,
-   "price": 0.55,
-   "edge": 0.007,
+   "price": 0.56,
+   "edge": -0.003,
    "news": "CHA has allowed starting guards 1% more pra than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
@@ -38189,8 +38189,8 @@
    "line": 24.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.403,
-   "price": 0.52,
-   "edge": -0.134,
+   "price": 0.53,
+   "edge": -0.144,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -38204,8 +38204,8 @@
    "line": 24.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.597,
-   "price": 0.54,
-   "edge": 0.04,
+   "price": 0.55,
+   "edge": 0.03,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -39554,8 +39554,8 @@
    "line": 11.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.569,
-   "price": 0.56,
-   "edge": -0.008,
+   "price": 0.57,
+   "edge": -0.018,
    "news": "MIN has allowed starting forwards 6% fewer rebounds than average (likely on him: Jaden McDaniels, Jonathan Kuminga); Terrence Shannon Jr. can switch onto him (MIN allowed forwards 17% fewer rebounds with him playing; he plays tonight); Joan Beringer can switch onto him (MIN allowed forwards 9% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -39854,8 +39854,8 @@
    "line": 3.5,
    "start": "2026-10-31T19:00:00Z",
    "p": 0.318,
-   "price": 0.45,
-   "edge": -0.149,
+   "price": 0.44,
+   "edge": -0.139,
    "news": "News: Damian Lillard struggles in loss to Memphis - FantasyPros Ja Morant (G) is out, so Damian Lillard's role likely grows; UTA has allowed starting guards 7% more rebounds than average.",
    "result": null
   },
@@ -40154,8 +40154,8 @@
    "line": 0.5,
    "start": "2026-11-01T00:00:00Z",
    "p": 0.439,
-   "price": 0.42,
-   "edge": 0.002,
+   "price": 0.41,
+   "edge": 0.012,
    "news": "SAS has allowed starting forwards 16% fewer steals than average (likely on him: Victor Wembanyama); Jordan McLaughlin can switch onto him (SAS allowed forwards 35% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -40378,10 +40378,10 @@
    "side": "over",
    "line": 31.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.47,
+   "p": 0.52,
    "price": 0.48,
-   "edge": -0.027,
-   "news": "News: Deshaun Watson was supposed to be benched. Browns are in first place instead | Opinion - USA Today PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
+   "edge": 0.023,
+   "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
   {
@@ -40396,7 +40396,7 @@
    "p": 0.46,
    "price": 0.55,
    "edge": -0.107,
-   "news": "News: Deshaun Watson was supposed to be benched. Browns are in first place instead | Opinion - USA Today PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
+   "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
   {
@@ -40948,10 +40948,10 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.508,
+   "p": 0.558,
    "price": 0.53,
-   "edge": -0.039,
-   "news": "News: Deshaun Watson was supposed to be benched. Browns are in first place instead | Opinion - USA Today PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
+   "edge": 0.011,
+   "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
   {
@@ -40966,7 +40966,7 @@
    "p": 0.422,
    "price": 0.5,
    "edge": -0.096,
-   "news": "News: Deshaun Watson was supposed to be benched. Browns are in first place instead | Opinion - USA Today PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
+   "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
   {
@@ -41638,10 +41638,10 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.436,
+   "p": 0.486,
    "price": 0.49,
-   "edge": -0.071,
-   "news": "News: Deshaun Watson was supposed to be benched. Browns are in first place instead | Opinion - USA Today PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
+   "edge": -0.021,
+   "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
   {
@@ -41656,7 +41656,7 @@
    "p": 0.494,
    "price": 0.52,
    "edge": -0.043,
-   "news": "News: Deshaun Watson was supposed to be benched. Browns are in first place instead | Opinion - USA Today PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
+   "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
   {
@@ -42358,10 +42358,10 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.671,
+   "p": 0.721,
    "price": 0.66,
-   "edge": -0.005,
-   "news": "News: Deshaun Watson was supposed to be benched. Browns are in first place instead | Opinion - USA Today PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
+   "edge": 0.045,
+   "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
   {
@@ -42376,7 +42376,7 @@
    "p": 0.259,
    "price": 0.35,
    "edge": -0.107,
-   "news": "News: Deshaun Watson was supposed to be benched. Browns are in first place instead | Opinion - USA Today PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
+   "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
   {
@@ -44698,10 +44698,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.522,
+   "p": 0.472,
    "price": 0.51,
-   "edge": -0.005,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.055,
+   "news": "News: Jakobi Meyers' injury may reveal how Jaguars truly feel about Brian Thomas Jr. - Black and Teal",
    "result": null
   },
   {
@@ -44716,7 +44716,7 @@
    "p": 0.478,
    "price": 0.5,
    "edge": -0.04,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: Jakobi Meyers' injury may reveal how Jaguars truly feel about Brian Thomas Jr. - Black and Teal",
    "result": null
   },
   {
@@ -46229,8 +46229,8 @@
    "line": 3.5,
    "start": "2026-11-01T21:25:00Z",
    "p": 0.34,
-   "price": 0.42,
-   "edge": -0.097,
+   "price": 0.43,
+   "edge": -0.107,
    "news": "News: Greg Dulcich off Week 8 injury report - NBC Sports",
    "result": null
   },
@@ -48478,10 +48478,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-01T18:00:00Z",
-   "p": 0.525,
+   "p": 0.575,
    "price": 0.53,
-   "edge": -0.022,
-   "news": "News: Deshaun Watson was supposed to be benched. Browns are in first place instead | Opinion - USA Today PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
+   "edge": 0.028,
+   "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
   {
@@ -48496,7 +48496,7 @@
    "p": 0.405,
    "price": 0.52,
    "edge": -0.132,
-   "news": "News: Deshaun Watson was supposed to be benched. Browns are in first place instead | Opinion - USA Today PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
+   "news": "PIT's CB Doneiko Slaughter is out, an easier matchup; PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
   {
