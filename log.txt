@@ -1,0 +1,400 @@
+10-28 14:51:56 console: [E:AE_GAME_TAG] ## 2026-10-28 14:51:56.562 [threadid:3416196,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/work/tiktok_effectsdk/AmazingEngine/Featu
+10-28 14:51:58 console: [E:AE_GAME_TAG] ## 2026-10-28 14:51:58.353 [threadid:3416196,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+10-28 14:51:58 console: [E:AE_GAME_TAG] ## 2026-10-28 14:51:58.405 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-28 14:51:58 console: [E:AE_GAME_TAG] ## 2026-10-28 14:51:58.501 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-28 14:51:58 console: [E:AE_GAME_TAG] ## 2026-10-28 14:51:58.538 [threadid:3416196,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f6038
+10-28 14:52:03 net FAILED GET blob:https://www.tiktok.com/8b8a47bb-250f-4dda-8815-d8b2b813a06e net::ERR_ABORTED
+10-28 14:52:19 hid tour overlays
+10-28 14:52:24 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+10-28 14:52:29 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+10-28 14:52:44 hashtag #porsche -> picked #porsche (1 of 10)
+10-28 14:52:48 hashtag #gt3 -> picked #gt3 (1 of 10)
+10-28 14:52:57 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-28 14:52:57 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-28 14:52:58 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+10-28 14:53:05 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+10-28 14:53:11 hashtag #supercars -> picked #supercars (1 of 10)
+10-28 14:53:13 caption now: 9 to 5 #porsche #gt3 #carsofinstagram #luxurylifestyle #supercars | hashtag chips: 11
+10-28 14:53:14 error box: none
+10-28 14:53:14 audio: running 44100
+10-28 14:53:14 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+10-28 14:53:17 clicked Post (mouse)
+10-28 14:53:18 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202610282153179B54DBC0BED578172DFA","now":1793224398000},"log_pb":{"impr_id":"202610282153179B54DBC0BED578172DFA"},"project_id":"7701840022474937358","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7701840033229049101","status_code":0,"s
+10-28 14:53:22 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261028215321E69E41FC6FCAE7156212","now":1793224401000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/oEaAATuDJ6BqiqlEAuirUg83
+10-28 14:53:24 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261028215321728CC3AAE48FD81CADBD","now":1793224402000},"has_more":false,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/oEaAATuDJ6BqiqlEAuirUg
+10-28 14:53:25 TikTok accepted the post
+10-28 14:53:26 2026-10-28 14:47 d1v2-9to5.mp4 posted
+10-28 20:50:04 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+10-28 20:50:17 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-28 20:50:34 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-28 20:50:39 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+10-28 20:50:44 net FAILED GET blob:https://www.tiktok.com/e9214881-a60b-4f3d-918f-ff05fd558db9 net::ERR_ABORTED
+10-28 20:50:44 net FAILED GET blob:https://www.tiktok.com/e9214881-a60b-4f3d-918f-ff05fd558db9 net::ERR_ABORTED
+10-28 20:50:47 net FAILED GET blob:https://www.tiktok.com/e9214881-a60b-4f3d-918f-ff05fd558db9 net::ERR_ABORTED
+10-28 20:51:05 console: [E:AE_GAME_TAG] ## 2026-10-28 20:51:05.453 [threadid:3416196,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+10-28 20:51:06 console: [E:AE_GAME_TAG] ## 2026-10-28 20:51:06.140 [threadid:3416196,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f6038
+10-28 20:51:06 console: [E:AE_GAME_TAG] ## 2026-10-28 20:51:06.269 [threadid:3416196,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+10-28 20:51:06 console: [E:AE_GAME_TAG] ## 2026-10-28 20:51:06.351 [threadid:3416196,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+10-28 20:51:06 console: [E:WebAudio] ## 2026-10-28 20:51:06.362 [threadid:3416196,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+10-28 20:51:06 console: [E:AE_GAME_TAG] ## 2026-10-28 20:51:06.375 [threadid:3416196,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/work/tiktok_effectsdk/AmazingEngine/Featu
+10-28 20:51:07 console: [E:AE_GAME_TAG] ## 2026-10-28 20:51:07.855 [threadid:3416196,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+10-28 20:51:07 console: [E:AE_GAME_TAG] ## 2026-10-28 20:51:07.897 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-28 20:51:08 console: [E:AE_GAME_TAG] ## 2026-10-28 20:51:08.030 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-28 20:51:08 console: [E:AE_GAME_TAG] ## 2026-10-28 20:51:08.080 [threadid:3416196,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f6038
+10-28 20:51:11 net FAILED GET blob:https://www.tiktok.com/e9214881-a60b-4f3d-918f-ff05fd558db9 net::ERR_ABORTED
+10-28 20:51:23 hid tour overlays
+10-28 20:51:25 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+10-28 20:51:51 hashtag #mclaren -> picked #mclaren (1 of 10)
+10-28 20:51:59 hashtag #supercars -> picked #supercars (1 of 10)
+10-28 20:52:10 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+10-28 20:52:18 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+10-28 20:52:23 hashtag #richlife -> picked #richlife (1 of 10)
+10-28 20:52:26 caption now: money can buy it #mclaren #supercars #carsofinstagram #luxurylifestyle #richlife | hashtag chips: 11
+10-28 20:52:26 error box: none
+10-28 20:52:27 audio: running 44100
+10-28 20:52:27 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+10-28 20:52:30 clicked Post (mouse)
+10-28 20:52:31 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202610290352300B33DFAF3BAA93000C30","now":1793245951000},"log_pb":{"impr_id":"202610290352300B33DFAF3BAA93000C30"},"project_id":"7701932593968763917","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7701932586653830413","status_code":0,"s
+10-28 20:52:34 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"2026102903523365221B860823B51FAEF7","now":1793245953000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/oIWBiBjmWByAzDFiEAAsif0iJwci1IAJTBBKwI~t
+10-28 20:52:36 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"2026102903523352B8FE53C64A4B0002EE","now":1793245953000},"has_more":false,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/oIWBiBjmWByAzDFiEAAsif0iJwci1IAJTBBKwI
+10-28 20:52:36 TikTok accepted the post
+10-28 20:52:38 2026-10-28 20:49 d2v2-happiness.mp4 posted
+10-29 10:15:11 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+10-29 10:15:21 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 10:15:24 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-29 10:15:25 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 10:15:25 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 10:15:41 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 10:15:41 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 10:15:46 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 10:15:46 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 10:15:48 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-29 10:16:03 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+10-29 10:16:11 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:13 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:18 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:18 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:18 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:18 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:18 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:18 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:22 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:23 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:23 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:26 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:28 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:28 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:30 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:30 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:35 console: [E:AE_GAME_TAG] ## 2026-10-29 10:16:35.976 [threadid:3426228,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+10-29 10:16:36 console: [E:AE_GAME_TAG] ## 2026-10-29 10:16:36.821 [threadid:3426228,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f86c0
+10-29 10:16:37 console: [E:AE_GAME_TAG] ## 2026-10-29 10:16:37.096 [threadid:3426228,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+10-29 10:16:37 console: [E:AE_GAME_TAG] ## 2026-10-29 10:16:37.291 [threadid:3426228,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+10-29 10:16:37 console: [E:WebAudio] ## 2026-10-29 10:16:37.331 [threadid:3426228,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+10-29 10:16:37 console: [E:AE_GAME_TAG] ## 2026-10-29 10:16:37.362 [threadid:3426228,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/dev/long_short/tiktok_effectsdk/AmazingEn
+10-29 10:16:39 console: [E:AE_GAME_TAG] ## 2026-10-29 10:16:39.363 [threadid:3426228,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+10-29 10:16:39 console: [E:AE_GAME_TAG] ## 2026-10-29 10:16:39.424 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-29 10:16:39 console: [E:AE_GAME_TAG] ## 2026-10-29 10:16:39.575 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-29 10:16:39 console: [E:AE_GAME_TAG] ## 2026-10-29 10:16:39.656 [threadid:3426228,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f86c0
+10-29 10:16:45 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:45 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:16:49 net FAILED GET blob:https://www.tiktok.com/15cb7504-58be-4e01-98df-2f645e0017b9 net::ERR_ABORTED
+10-29 10:17:01 hid tour overlays
+10-29 10:17:05 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+10-29 10:17:10 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 10:17:10 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 10:17:37 hashtag #bmwm4 -> picked #bmwm4 (1 of 10)
+10-29 10:17:38 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 10:17:38 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 10:17:40 hashtag #m4 -> picked #m4 (1 of 10)
+10-29 10:17:48 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+10-29 10:17:54 hashtag #bmw -> picked #bmw (1 of 10)
+10-29 10:18:02 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+10-29 10:18:04 caption now: my discord goin crazy and i'm putting out picks every day🔒 #bmwm4 #m4 #carsofinstagram #bmw #luxurylifestyle | hashtag chips: 11
+10-29 10:18:05 error box: none
+10-29 10:18:06 audio: running 44100
+10-29 10:18:06 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+10-29 10:18:09 clicked Post (mouse)
+10-29 10:18:12 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202610291718105AD6464DB628180DF20A","now":1793294290000},"log_pb":{"impr_id":"202610291718105AD6464DB628180DF20A"},"project_id":"7702140240491713549","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7702140274071440654","status_code":0,"s
+10-29 10:18:12 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 10:18:16 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261029171815AA6482065892E60D2BAB","now":1793294295000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/oU0vlGxegAkB0yAENHfIGI9A
+10-29 10:18:16 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261029171815361123B8E7B9120F512F","now":1793294295000},"has_more":false,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/oU0vlGxegAkB0yAENHfIGI
+10-29 10:18:20 TikTok accepted the post
+10-29 10:18:23 2026-10-29 10:13 o1-too-easy.mp4 posted
+10-29 13:20:03 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+10-29 13:20:12 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 13:20:14 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-29 13:20:19 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 13:20:19 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 13:20:27 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 13:20:27 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 13:20:28 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-29 13:20:35 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+10-29 13:20:38 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:39 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:41 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:41 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:41 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:41 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:41 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:42 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:42 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:42 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:45 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:45 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:20:45 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:21:01 console: [E:AE_GAME_TAG] ## 2026-10-29 13:21:00.990 [threadid:3426228,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+10-29 13:21:01 console: [E:AE_GAME_TAG] ## 2026-10-29 13:21:01.620 [threadid:3426228,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f86c0
+10-29 13:21:01 console: [E:AE_GAME_TAG] ## 2026-10-29 13:21:01.749 [threadid:3426228,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+10-29 13:21:01 console: [E:AE_GAME_TAG] ## 2026-10-29 13:21:01.910 [threadid:3426228,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+10-29 13:21:01 console: [E:WebAudio] ## 2026-10-29 13:21:01.937 [threadid:3426228,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+10-29 13:21:01 console: [E:AE_GAME_TAG] ## 2026-10-29 13:21:01.938 [threadid:3426228,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/dev/long_short/tiktok_effectsdk/AmazingEn
+10-29 13:21:04 console: [E:AE_GAME_TAG] ## 2026-10-29 13:21:04.082 [threadid:3426228,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+10-29 13:21:04 console: [E:AE_GAME_TAG] ## 2026-10-29 13:21:04.134 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-29 13:21:04 console: [E:AE_GAME_TAG] ## 2026-10-29 13:21:04.237 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-29 13:21:04 console: [E:AE_GAME_TAG] ## 2026-10-29 13:21:04.311 [threadid:3426228,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f86c0
+10-29 13:21:13 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:21:14 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:21:17 waiting for upload to finish... Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Profile > Settings Music copyright check W
+10-29 13:21:21 net FAILED GET blob:https://www.tiktok.com/b2fb1421-d641-4548-8dff-c892f5ea1564 net::ERR_ABORTED
+10-29 13:21:32 hid tour overlays
+10-29 13:21:37 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+10-29 13:21:59 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 13:21:59 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 13:22:06 hashtag #bmwm4 -> picked #bmwm4 (1 of 10)
+10-29 13:22:14 hashtag #m4competition -> picked #m4competition (1 of 10)
+10-29 13:22:14 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 13:22:14 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 13:22:21 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+10-29 13:22:25 hashtag #bmw -> picked #bmw (1 of 10)
+10-29 13:22:30 hashtag #nightdrive -> picked #nightdrive (1 of 10)
+10-29 13:22:32 caption now: tap in my discord💰 #bmwm4 #m4competition #carsofinstagram #bmw #nightdrive | hashtag chips: 11
+10-29 13:22:33 error box: none
+10-29 13:22:33 audio: running 44100
+10-29 13:22:34 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+10-29 13:22:36 clicked Post (mouse)
+10-29 13:22:37 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202610292022361ADCAD28DE274B16CD8E","now":1793305357000},"log_pb":{"impr_id":"202610292022361ADCAD28DE274B16CD8E"},"project_id":"7702187725608309774","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7702187793627368717","status_code":0,"s
+10-29 13:22:41 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"2026102920224043EC901B96AB4B1A37AF","now":1793305360000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/owUCHDF4tEDAi8AAroAgfeEHqjIIVBqDSAu6qC~t
+10-29 13:22:42 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261029202240E9648732F2DF5319B183","now":1793305360000},"has_more":false,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/owUCHDF4tEDAi8AAroAgfeEHqjIIVBqDSAu6qC
+10-29 13:22:44 TikTok accepted the post
+10-29 13:22:45 2026-10-29 13:18 o2-wake-up.mp4 posted
+10-29 20:40:04 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+10-29 20:40:11 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 20:40:13 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-29 20:40:15 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 20:40:15 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 20:40:27 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-29 20:40:27 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-29 20:40:28 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-29 20:40:33 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+10-29 20:40:37 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:40:37 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:40:39 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:40:39 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:40:39 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:40:39 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:40:40 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:40:42 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:40:42 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:40:47 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:40:51 console: [E:AE_GAME_TAG] ## 2026-10-29 20:40:51.845 [threadid:3426228,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+10-29 20:40:52 console: [E:AE_GAME_TAG] ## 2026-10-29 20:40:52.289 [threadid:3426228,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f86c0
+10-29 20:40:52 console: [E:AE_GAME_TAG] ## 2026-10-29 20:40:52.399 [threadid:3426228,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+10-29 20:40:52 console: [E:AE_GAME_TAG] ## 2026-10-29 20:40:52.485 [threadid:3426228,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+10-29 20:40:52 console: [E:WebAudio] ## 2026-10-29 20:40:52.493 [threadid:3426228,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+10-29 20:40:52 console: [E:AE_GAME_TAG] ## 2026-10-29 20:40:52.515 [threadid:3426228,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/dev/long_short/tiktok_effectsdk/AmazingEn
+10-29 20:40:53 console: [E:AE_GAME_TAG] ## 2026-10-29 20:40:53.902 [threadid:3426228,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+10-29 20:40:53 console: [E:AE_GAME_TAG] ## 2026-10-29 20:40:53.942 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-29 20:40:54 console: [E:AE_GAME_TAG] ## 2026-10-29 20:40:54.064 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-29 20:40:54 console: [E:AE_GAME_TAG] ## 2026-10-29 20:40:54.127 [threadid:3426228,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f86c0
+10-29 20:41:00 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:41:05 net FAILED GET blob:https://www.tiktok.com/2e8965d6-1957-48e7-8b11-7454150ecec1 net::ERR_ABORTED
+10-29 20:41:11 hid tour overlays
+10-29 20:41:16 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+10-29 20:41:44 hashtag #m4 -> picked #m4 (1 of 10)
+10-29 20:41:48 hashtag #bmwm4 -> picked #bmwm4 (1 of 10)
+10-29 20:41:58 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+10-29 20:42:02 hashtag #bmw -> picked #bmw (1 of 10)
+10-29 20:42:08 hashtag #carlifestyle -> picked #carlifestyle (1 of 10)
+10-29 20:42:11 caption now: tryna put y'all on, my discord is where all my picks go‼️ #m4 #bmwm4 #carsofinstagram #bmw #carlifestyle | hashtag chips: 11
+10-29 20:42:11 error box: none
+10-29 20:42:11 audio: running 44100
+10-29 20:42:12 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+10-29 20:42:14 clicked Post (mouse)
+10-29 20:42:16 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"2026103003421462CFB42C1E9F11009F4F","now":1793331735000},"log_pb":{"impr_id":"2026103003421462CFB42C1E9F11009F4F"},"project_id":"7702300655159399438","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7702301046185430285","status_code":0,"s
+10-29 20:42:20 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261030034219743A85311D52BC00A4F2","now":1793331739000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/owADAfJIDVqQfC7AwHDBQIw3
+10-29 20:42:21 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"2026103003421994664E8A9E38A100BB92","now":1793331739000},"has_more":false,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/owADAfJIDVqQfC7AwHDBQI
+10-29 20:42:22 TikTok accepted the post
+10-29 20:42:24 2026-10-29 20:40 o3-started-small.mp4 posted
+10-30 09:05:04 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+10-30 09:05:13 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-30 09:05:16 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-30 09:05:17 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-30 09:05:17 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-30 09:05:33 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-30 09:05:37 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-30 09:05:37 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-30 09:05:40 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+10-30 09:05:43 net FAILED GET blob:https://www.tiktok.com/66fcc4a1-6371-4846-8f9a-b53df2c704ff net::ERR_ABORTED
+10-30 09:05:44 net FAILED GET blob:https://www.tiktok.com/66fcc4a1-6371-4846-8f9a-b53df2c704ff net::ERR_ABORTED
+10-30 09:05:47 net FAILED GET blob:https://www.tiktok.com/66fcc4a1-6371-4846-8f9a-b53df2c704ff net::ERR_ABORTED
+10-30 09:05:47 net FAILED GET blob:https://www.tiktok.com/66fcc4a1-6371-4846-8f9a-b53df2c704ff net::ERR_ABORTED
+10-30 09:06:07 console: [E:AE_GAME_TAG] ## 2026-10-30 09:06:07.741 [threadid:3426228,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+10-30 09:06:08 console: [E:AE_GAME_TAG] ## 2026-10-30 09:06:08.246 [threadid:3426228,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f86c0
+10-30 09:06:08 console: [E:AE_GAME_TAG] ## 2026-10-30 09:06:08.382 [threadid:3426228,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+10-30 09:06:08 console: [E:AE_GAME_TAG] ## 2026-10-30 09:06:08.502 [threadid:3426228,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+10-30 09:06:08 console: [E:WebAudio] ## 2026-10-30 09:06:08.535 [threadid:3426228,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+10-30 09:06:08 console: [E:AE_GAME_TAG] ## 2026-10-30 09:06:08.549 [threadid:3426228,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/dev/long_short/tiktok_effectsdk/AmazingEn
+10-30 09:06:10 console: [E:AE_GAME_TAG] ## 2026-10-30 09:06:10.463 [threadid:3426228,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+10-30 09:06:10 console: [E:AE_GAME_TAG] ## 2026-10-30 09:06:10.510 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-30 09:06:10 console: [E:AE_GAME_TAG] ## 2026-10-30 09:06:10.683 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-30 09:06:10 console: [E:AE_GAME_TAG] ## 2026-10-30 09:06:10.719 [threadid:3426228,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f86c0
+10-30 09:06:19 net FAILED GET blob:https://www.tiktok.com/66fcc4a1-6371-4846-8f9a-b53df2c704ff net::ERR_ABORTED
+10-30 09:06:28 waiting for upload to finish... Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Profile > Settings Music copyright check W
+10-30 09:06:41 hid tour overlays
+10-30 09:06:43 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+10-30 09:07:24 hashtag #mustang -> picked #mustang (1 of 10)
+10-30 09:07:32 hashtag #gt500 -> picked #gt500 (1 of 10)
+10-30 09:07:39 hashtag #rolex -> picked #rolex (1 of 10)
+10-30 09:07:50 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+10-30 09:08:00 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+10-30 09:08:04 caption now: no regrets #mustang #gt500 #rolex #carsofinstagram #luxurylifestyle | hashtag chips: 11
+10-30 09:08:05 error box: none
+10-30 09:08:05 audio: running 44100
+10-30 09:08:06 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+10-30 09:08:10 clicked Post (mouse)
+10-30 09:08:13 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202610301608094485276CD752841F384C","now":1793376489000},"log_pb":{"impr_id":"202610301608094485276CD752841F384C"},"project_id":"7702492980451562509","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7702493264858860814","status_code":0,"s
+10-30 09:08:17 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261030160816CD3B7A0DEE6115225A85","now":1793376496000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/oIfk6ng5fAEqyCDLADVqsLCx
+10-30 09:08:19 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261030160816C297C1379C5C6C1FD233","now":1793376497000},"has_more":false,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/oIfk6ng5fAEqyCDLADVqsL
+10-30 09:08:20 TikTok accepted the post
+10-30 09:08:23 2026-10-30 09:01 p1-quit.mp4 posted
+10-30 18:05:02 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+10-30 18:05:11 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-30 18:05:13 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-30 18:05:18 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-30 18:05:18 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-30 18:05:29 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-30 18:05:35 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+10-30 18:05:39 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-30 18:05:39 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-30 18:05:42 net FAILED GET blob:https://www.tiktok.com/d9ed4bfd-b297-4589-b34c-9f1a77250f80 net::ERR_ABORTED
+10-30 18:05:42 net FAILED GET blob:https://www.tiktok.com/d9ed4bfd-b297-4589-b34c-9f1a77250f80 net::ERR_ABORTED
+10-30 18:05:44 net FAILED GET blob:https://www.tiktok.com/d9ed4bfd-b297-4589-b34c-9f1a77250f80 net::ERR_ABORTED
+10-30 18:05:44 net FAILED GET blob:https://www.tiktok.com/d9ed4bfd-b297-4589-b34c-9f1a77250f80 net::ERR_ABORTED
+10-30 18:05:44 net FAILED GET blob:https://www.tiktok.com/d9ed4bfd-b297-4589-b34c-9f1a77250f80 net::ERR_ABORTED
+10-30 18:05:57 console: [E:AE_GAME_TAG] ## 2026-10-30 18:05:57.322 [threadid:3426228,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+10-30 18:05:58 console: [E:AE_GAME_TAG] ## 2026-10-30 18:05:58.321 [threadid:3426228,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f86c0
+10-30 18:05:58 console: [E:AE_GAME_TAG] ## 2026-10-30 18:05:58.522 [threadid:3426228,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+10-30 18:05:58 console: [E:AE_GAME_TAG] ## 2026-10-30 18:05:58.719 [threadid:3426228,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+10-30 18:05:58 console: [E:WebAudio] ## 2026-10-30 18:05:58.755 [threadid:3426228,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+10-30 18:05:58 console: [E:AE_GAME_TAG] ## 2026-10-30 18:05:58.779 [threadid:3426228,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/dev/long_short/tiktok_effectsdk/AmazingEn
+10-30 18:06:00 console: [E:AE_GAME_TAG] ## 2026-10-30 18:06:00.728 [threadid:3426228,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+10-30 18:06:00 console: [E:AE_GAME_TAG] ## 2026-10-30 18:06:00.832 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-30 18:06:01 console: [E:AE_GAME_TAG] ## 2026-10-30 18:06:01.153 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-30 18:06:01 console: [E:AE_GAME_TAG] ## 2026-10-30 18:06:01.298 [threadid:3426228,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f86c0
+10-30 18:06:09 net FAILED GET blob:https://www.tiktok.com/d9ed4bfd-b297-4589-b34c-9f1a77250f80 net::ERR_ABORTED
+10-30 18:06:18 waiting for upload to finish... Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Profile > Settings Music copyright check W
+10-30 18:06:29 hid tour overlays
+10-30 18:06:31 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+10-30 18:06:58 hashtag #porsche -> picked #porsche (1 of 10)
+10-30 18:07:02 hashtag #gt3 -> picked #gt3 (1 of 10)
+10-30 18:07:07 hashtag #carmeet -> picked #carmeet (1 of 10)
+10-30 18:07:13 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+10-30 18:07:20 hashtag #supercars -> picked #supercars (1 of 10)
+10-30 18:07:22 caption now: still pulled up #porsche #gt3 #carmeet #carsofinstagram #supercars | hashtag chips: 11
+10-30 18:07:22 error box: none
+10-30 18:07:23 audio: running 44100
+10-30 18:07:23 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+10-30 18:07:26 clicked Post (mouse)
+10-30 18:07:28 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"2026103101072628A52C172219E6451A94","now":1793408846000},"log_pb":{"impr_id":"2026103101072628A52C172219E6451A94"},"project_id":"7702632188365476877","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7702632245244300558","status_code":0,"s
+10-30 18:07:32 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"202610310107312C0343AD1E1FF94B7FC2","now":1793408851000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/osSlVTJpqESACADyPC5F6D8E
+10-30 18:07:34 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"202610310107313BB4FBDDC45FF6439B62","now":1793408852000},"has_more":false,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/osSlVTJpqESACADyPC5F6D
+10-30 18:07:36 TikTok accepted the post
+10-30 18:07:37 2026-10-30 18:03 p2-sundays.mp4 posted
+10-30 20:50:08 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+10-30 20:50:16 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-30 20:50:18 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-30 20:50:23 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-30 20:50:23 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-30 20:50:33 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-30 20:50:39 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+10-30 20:50:42 net FAILED GET blob:https://www.tiktok.com/455fdd28-5427-447a-9724-6403f72c50be net::ERR_ABORTED
+10-30 20:50:42 net FAILED GET blob:https://www.tiktok.com/455fdd28-5427-447a-9724-6403f72c50be net::ERR_ABORTED
+10-30 20:50:44 net FAILED GET blob:https://www.tiktok.com/455fdd28-5427-447a-9724-6403f72c50be net::ERR_ABORTED
+10-30 20:50:44 net FAILED GET blob:https://www.tiktok.com/455fdd28-5427-447a-9724-6403f72c50be net::ERR_ABORTED
+10-30 20:50:45 net FAILED GET blob:https://www.tiktok.com/455fdd28-5427-447a-9724-6403f72c50be net::ERR_ABORTED
+10-30 20:50:58 console: [E:AE_GAME_TAG] ## 2026-10-30 20:50:58.189 [threadid:3426228,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+10-30 20:50:59 console: [E:AE_GAME_TAG] ## 2026-10-30 20:50:59.053 [threadid:3426228,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f86c0
+10-30 20:50:59 console: [E:AE_GAME_TAG] ## 2026-10-30 20:50:59.281 [threadid:3426228,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+10-30 20:50:59 console: [E:AE_GAME_TAG] ## 2026-10-30 20:50:59.446 [threadid:3426228,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+10-30 20:50:59 console: [E:WebAudio] ## 2026-10-30 20:50:59.485 [threadid:3426228,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+10-30 20:50:59 console: [E:AE_GAME_TAG] ## 2026-10-30 20:50:59.517 [threadid:3426228,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/dev/long_short/tiktok_effectsdk/AmazingEn
+10-30 20:51:02 console: [E:AE_GAME_TAG] ## 2026-10-30 20:51:02.062 [threadid:3426228,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+10-30 20:51:02 console: [E:AE_GAME_TAG] ## 2026-10-30 20:51:02.111 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-30 20:51:02 console: [E:AE_GAME_TAG] ## 2026-10-30 20:51:02.211 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-30 20:51:02 console: [E:AE_GAME_TAG] ## 2026-10-30 20:51:02.263 [threadid:3426228,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f86c0
+10-30 20:51:09 net FAILED GET blob:https://www.tiktok.com/455fdd28-5427-447a-9724-6403f72c50be net::ERR_ABORTED
+10-30 20:51:19 hid tour overlays
+10-30 20:51:21 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+10-30 20:51:40 hashtag #mercedes -> picked #mercedes (1 of 11)
+10-30 20:51:48 hashtag #astonmartin -> picked #astonmartin (1 of 10)
+10-30 20:51:58 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+10-30 20:52:08 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+10-30 20:52:13 hashtag #supercars -> picked #supercars (1 of 10)
+10-30 20:52:15 caption now: never stopped #mercedes #astonmartin #carsofinstagram #luxurylifestyle #supercars | hashtag chips: 11
+10-30 20:52:16 error box: none
+10-30 20:52:16 audio: running 44100
+10-30 20:52:17 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+10-30 20:52:19 clicked Post (mouse)
+10-30 20:52:20 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"20261031035219404FE97C8F4B6550FE1B","now":1793418739000},"log_pb":{"impr_id":"20261031035219404FE97C8F4B6550FE1B"},"project_id":"7702674772676662285","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7702674738434297101","status_code":0,"s
+10-30 20:52:21 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-30 20:52:23 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261031035223CD1F6CD649E025598AFE","now":1793418743000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/oYZWqDIfXADkgmALEtDCCjrlLSFcV5zE2AWGfA~t
+10-30 20:52:25 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261031035223040FE9A87A4E3D5A9C9E","now":1793418743000},"has_more":false,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/oYZWqDIfXADkgmALEtDCCjrlLSFcV5zE2AWGfA
+10-30 20:52:27 TikTok accepted the post
+10-30 20:52:27 2026-10-30 20:47 p3-therapist.mp4 posted
+10-31 10:20:05 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+10-31 10:20:14 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-31 10:20:14 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-31 10:20:15 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-31 10:20:17 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-31 10:20:19 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-31 10:20:19 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-31 10:20:35 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+10-31 10:20:43 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+10-31 10:20:47 net FAILED GET blob:https://www.tiktok.com/1a1a6686-d9f4-4bb5-a568-ffa980a9d351 net::ERR_ABORTED
+10-31 10:20:47 net FAILED GET blob:https://www.tiktok.com/1a1a6686-d9f4-4bb5-a568-ffa980a9d351 net::ERR_ABORTED
+10-31 10:20:51 net FAILED GET blob:https://www.tiktok.com/1a1a6686-d9f4-4bb5-a568-ffa980a9d351 net::ERR_ABORTED
+10-31 10:20:51 net FAILED GET blob:https://www.tiktok.com/1a1a6686-d9f4-4bb5-a568-ffa980a9d351 net::ERR_ABORTED
+10-31 10:20:51 net FAILED GET blob:https://www.tiktok.com/1a1a6686-d9f4-4bb5-a568-ffa980a9d351 net::ERR_ABORTED
+10-31 10:20:51 net FAILED GET blob:https://www.tiktok.com/1a1a6686-d9f4-4bb5-a568-ffa980a9d351 net::ERR_ABORTED
+10-31 10:21:12 console: [E:AE_GAME_TAG] ## 2026-10-31 10:21:12.538 [threadid:3426228,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+10-31 10:21:13 console: [E:AE_GAME_TAG] ## 2026-10-31 10:21:13.181 [threadid:3426228,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f86c0
+10-31 10:21:13 console: [E:AE_GAME_TAG] ## 2026-10-31 10:21:13.326 [threadid:3426228,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+10-31 10:21:13 console: [E:AE_GAME_TAG] ## 2026-10-31 10:21:13.471 [threadid:3426228,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+10-31 10:21:13 console: [E:WebAudio] ## 2026-10-31 10:21:13.497 [threadid:3426228,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+10-31 10:21:13 console: [E:AE_GAME_TAG] ## 2026-10-31 10:21:13.502 [threadid:3426228,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/dev/long_short/tiktok_effectsdk/AmazingEn
+10-31 10:21:15 console: [E:AE_GAME_TAG] ## 2026-10-31 10:21:15.627 [threadid:3426228,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+10-31 10:21:15 console: [E:AE_GAME_TAG] ## 2026-10-31 10:21:15.675 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-31 10:21:15 console: [E:AE_GAME_TAG] ## 2026-10-31 10:21:15.885 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+10-31 10:21:16 console: [E:AE_GAME_TAG] ## 2026-10-31 10:21:15.984 [threadid:3426228,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f86c0
+10-31 10:21:21 net FAILED GET blob:https://www.tiktok.com/1a1a6686-d9f4-4bb5-a568-ffa980a9d351 net::ERR_ABORTED
+10-31 10:21:27 net FAILED GET blob:https://www.tiktok.com/1a1a6686-d9f4-4bb5-a568-ffa980a9d351 net::ERR_ABORTED
+10-31 10:21:34 hid tour overlays
+10-31 10:21:42 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+10-31 10:22:17 hashtag #urus -> picked #urus (1 of 10)
+10-31 10:22:25 hashtag #lamborghini -> picked #lamborghini (1 of 10)
+10-31 10:22:34 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+10-31 10:22:43 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+10-31 10:22:49 hashtag #supercars -> picked #supercars (1 of 10)
+10-31 10:22:52 caption now: paid while i slept #urus #lamborghini #carsofinstagram #luxurylifestyle #supercars | hashtag chips: 11
+10-31 10:22:52 error box: none
+10-31 10:22:52 console: Connecting to 'https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime' violates the following Content Security Policy directive: "connect-src 'self' 'unsafe-eval' 'unsa
+10-31 10:22:52 console: Fetch API cannot load https://mon-sg.capcutapi.com/monitor_browser/collect/batch/?bid=capcut_pns_web_runtime. Refused to connect because it violates the document's Content Security Policy.
+10-31 10:22:53 audio: running 44100
+10-31 10:22:53 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+10-31 10:22:55 clicked Post (mouse)
+10-31 10:22:57 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202610311722563A1BAB4D889FED90D24F","now":1793467376000},"log_pb":{"impr_id":"202610311722563A1BAB4D889FED90D24F"},"project_id":"7702883572940559373","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7702883648571247885","status_code":0,"s
+10-31 10:23:00 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"2026103117225973A126B6774A10779808","now":1793467379000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/osgPwjApEmBIl4kZuADvoi3xsA7uIiEaAYOAd~tp
+10-31 10:23:02 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"2026103117225901D070D03D3ACE77926B","now":1793467380000},"has_more":false,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/osgPwjApEmBIl4kZuADvoi3xsA7uIiEaAYOAd~
+10-31 10:23:03 TikTok accepted the post
+10-31 10:23:04 2026-10-31 10:20 p4-paid-sleep.mp4 posted
