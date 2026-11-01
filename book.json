@@ -2623,6 +2623,138 @@
      "result": null
     }
    ]
+  },
+  {
+   "date": "2026-11-01",
+   "app": "Kalshi",
+   "type": "1-leg lock: Scottie Barnes under 1.5 threes",
+   "stake": 10.0,
+   "payout_x": 1.41,
+   "win_p": 0.802,
+   "ev_pct": 13.0,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Scottie Barnes",
+     "team": "TOR",
+     "stat": "threes",
+     "side": "under",
+     "line": 1.5,
+     "price": 0.71,
+     "ticker": "KXNBA3PT-26NOV01TORLAL-TORSBARNES4-2",
+     "game": "TOR @ LAL",
+     "start": "2026-11-02T02:00:00Z",
+     "p": 0.802,
+     "edge": 0.078,
+     "news": "Kawhi Leonard is out: Scottie Barnes hit the under in 3/3 games without him vs 2/3 with him; LAL has allowed starting forwards 10% fewer threes than average (likely on him: Jake LaRavia, Ziaire Williams); Bronny James can switch onto him (LAL allowed forwards 22% fewer threes with him playing; he plays tonight).",
+     "ctx_dp": 0.101,
+     "why": "Scottie Barnes under 1.5 threes: 4 books price it 67%; hit 17% of last 12 (avg 1.0); 2/7 over vs LAL, avg 1.3. Fair 80%.",
+     "case": "Last 5 games: 1, 0, 0, 1, 1 (5 of 5 under 1.5).",
+     "result": null
+    }
+   ],
+   "lock": true
+  },
+  {
+   "date": "2026-11-01",
+   "app": "Kalshi",
+   "type": "1-leg lock: Austin Hooper over 0.5 receptions",
+   "stake": 10.0,
+   "payout_x": 1.59,
+   "win_p": 0.69,
+   "ev_pct": 9.5,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Austin Hooper",
+     "team": "ATL",
+     "stat": "receptions",
+     "side": "over",
+     "line": 0.5,
+     "price": 0.63,
+     "ticker": "KXNFLREC-26NOV01ATLTB-ATLAHOOPER81-1",
+     "game": "ATL @ TB",
+     "start": "2026-11-01T18:00:00Z",
+     "p": 0.69,
+     "edge": 0.044,
+     "news": "TB's LB Christian Rozeboom is out, an easier matchup.",
+     "ctx_dp": 0.03,
+     "why": "Austin Hooper over 0.5 receptions: 4 books price it 62%; hit 83% of last 12 (avg 1.4); 0/1 over vs TB, avg 0.0. Fair 69%.",
+     "case": "Last 5 games: 1, 1, 2, 2, 2 (5 of 5 over 0.5).",
+     "result": null
+    }
+   ],
+   "lock": true
+  },
+  {
+   "date": "2026-11-01",
+   "app": "Kalshi",
+   "type": "1-leg lock: Cam Ward over 0.5 pass tds",
+   "stake": 10.0,
+   "payout_x": 1.54,
+   "win_p": 0.677,
+   "ev_pct": 4.2,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Cam Ward",
+     "team": "TEN",
+     "stat": "pass_tds",
+     "side": "over",
+     "line": 0.5,
+     "price": 0.65,
+     "ticker": "KXNFLPASSTDS-26NOV01TENCIN-TENCWARD1-1",
+     "game": "TEN @ CIN",
+     "start": "2026-11-01T18:00:00Z",
+     "p": 0.677,
+     "edge": 0.011,
+     "news": "CIN's S Kyle Dugger is out, an easier matchup.",
+     "ctx_dp": 0.03,
+     "why": "Cam Ward over 0.5 pass tds: 8 books price it 64%; hit 67% of last 12 (avg 1.0). Fair 68%.",
+     "case": "Last 5 games: 1, 0, 1, 1, 0 (3 of 5 over 0.5).",
+     "result": null
+    }
+   ],
+   "lock": true
+  },
+  {
+   "date": "2026-11-01",
+   "app": "Kalshi",
+   "type": "1-leg lock: Keon Coleman over 29.5 rec yds",
+   "stake": 10.0,
+   "payout_x": 1.96,
+   "win_p": 0.648,
+   "ev_pct": 27.1,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nfl",
+     "player": "Keon Coleman",
+     "team": "BUF",
+     "stat": "rec_yds",
+     "side": "over",
+     "line": 29.5,
+     "price": 0.51,
+     "ticker": "KXNFLRECYDS-26NOV01BALBUF-BUFKCOLEMAN0-30",
+     "game": "BAL @ BUF",
+     "start": "2026-11-01T18:00:00Z",
+     "p": 0.648,
+     "edge": 0.121,
+     "news": "Tyrell Shavers is out: Keon Coleman hit the over in 8/15 games without him vs 3/10 with him; BAL's S Jaylinn Hawkins is out, an easier matchup.",
+     "ctx_dp": 0.12,
+     "why": "Keon Coleman over 29.5 rec yds: 6 books price it 50%; hit 58% of last 12 (avg 37.4); 2/3 over vs BAL, avg 56.0. In games vs BAL: 56 avg over 3 games, 52% of that rotation is still there, so the matchup counts as 71% over 29.5. Fair 65%.",
+     "case": "Last 5 games: 59, 7, 116, 37, 63 (4 of 5 over 29.5). In games vs BAL: 56 avg over 3 games, 52% of that rotation is still there, so the matchup counts as 71% over 29.5.",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
@@ -2632,18 +2764,34 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-10-31 23:00 PT",
-  "props_today": 0,
-  "kalshi_props_today": 0,
-  "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {},
+  "props_at": "2026-11-01 00:00 PT",
+  "props_today": 2970,
+  "kalshi_props_today": 669,
+  "kalshi_priced_today": 84,
+  "books_on_kalshi_props": {
+   "AN Consensus": 663,
+   "AN Open": 667,
+   "BetMGM": 416,
+   "BetRivers": 263,
+   "Caesars": 599,
+   "DraftKings": 648,
+   "FanDuel": 649,
+   "Fanatics": 512,
+   "Hard Rock Bet": 303,
+   "Parx": 431,
+   "Pinnacle": 533,
+   "Sleeper": 649,
+   "Underdog": 669,
+   "Unibet": 120,
+   "bet365": 628
+  },
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 0
+  "kalshi_legs_today": 244
  },
  "shadow": [
   {
@@ -42181,8 +42329,8 @@
    "line": 1.5,
    "start": "2026-11-01T22:00:00Z",
    "p": 0.492,
-   "price": 0.56,
-   "edge": -0.085,
+   "price": 0.55,
+   "edge": -0.075,
    "news": "Tyler Bilodeau (F) is out, so Julius Randle's role likely grows; IND has allowed starting forwards 0% more threes than average (likely on him: Pascal Siakam, Jarace Walker); Andrew Nembhard can switch onto him (IND allowed forwards 22% fewer threes with him playing; he plays tonight); Aaron Nesmith can switch onto him (IND allowed forwards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -42241,8 +42389,8 @@
    "line": 2.5,
    "start": "2026-11-01T22:00:00Z",
    "p": 0.614,
-   "price": 0.64,
-   "edge": -0.042,
+   "price": 0.63,
+   "edge": -0.032,
    "news": "T.J. McConnell is out: Andrew Nembhard hit the under in 5/8 games without him vs 22/32 with him; Johnny Furphy is out: Andrew Nembhard hit the under in 16/24 games without him vs 9/13 with him; Ben Sheppard is out: Andrew Nembhard hit the under in 10/16 games without him vs 17/24 with him; BKN has allowed starting guards 9% fewer threes than average (likely on him: Keon Ellis, Nolan Traore); Danny Wolf can switch onto him (BKN allowed guards 19% fewer threes with him playing; he plays tonight); Chaney Johnson can switch onto him (BKN allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -42256,8 +42404,8 @@
    "line": 1.5,
    "start": "2026-11-01T22:00:00Z",
    "p": 0.436,
-   "price": 0.56,
-   "edge": -0.141,
+   "price": 0.57,
+   "edge": -0.151,
    "news": "Injury report: Probable: Injury/Illness - Left Hamstring Strain (official NBA report) Johnny Furphy is out: Aaron Nesmith hit the over in 10/18 games without him vs 8/12 with him; BKN has allowed starting guards 9% fewer threes than average (likely on him: Keon Ellis, Nolan Traore); Danny Wolf can switch onto him (BKN allowed guards 19% fewer threes with him playing; he plays tonight); Chaney Johnson can switch onto him (BKN allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -42346,8 +42494,8 @@
    "line": 2.5,
    "start": "2026-11-01T20:30:00Z",
    "p": 0.498,
-   "price": 0.54,
-   "edge": -0.059,
+   "price": 0.56,
+   "edge": -0.079,
    "news": "ORL has allowed starting forwards 30% fewer threes than average (likely on him: Franz Wagner); Noah Penda can switch onto him (ORL allowed forwards 25% fewer threes with him playing; he is out tonight); Goga Bitadze can switch onto him (ORL allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -42361,8 +42509,8 @@
    "line": 2.5,
    "start": "2026-11-01T20:30:00Z",
    "p": 0.502,
-   "price": 0.49,
-   "edge": -0.005,
+   "price": 0.51,
+   "edge": -0.025,
    "news": "ORL has allowed starting forwards 30% fewer threes than average (likely on him: Franz Wagner); Noah Penda can switch onto him (ORL allowed forwards 25% fewer threes with him playing; he is out tonight); Goga Bitadze can switch onto him (ORL allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -42451,8 +42599,8 @@
    "line": 1.5,
    "start": "2026-11-01T20:30:00Z",
    "p": 0.438,
-   "price": 0.51,
-   "edge": -0.089,
+   "price": 0.49,
+   "edge": -0.069,
    "news": "Jalen Suggs is out: Anthony Black hit the under in 9/26 games without him vs 7/14 with him; BOS has allowed starting guards 6% more threes than average (likely on him: Derrick White, Jordan Walsh); Hugo Gonzalez can switch onto him (BOS allowed guards 15% fewer threes with him playing; he plays tonight); Ron Harper Jr. can switch onto him (BOS allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -43141,8 +43289,8 @@
    "line": 5.5,
    "start": "2026-11-02T02:00:00Z",
    "p": 0.541,
-   "price": 0.53,
-   "edge": -0.006,
+   "price": 0.52,
+   "edge": 0.004,
    "news": "LAL has allowed starting forwards 13% fewer assists than average (likely on him: Jake LaRavia, Ziaire Williams); Austin Reaves can switch onto him (LAL allowed forwards 13% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -43201,8 +43349,8 @@
    "line": 29.5,
    "start": "2026-11-02T02:00:00Z",
    "p": 0.552,
-   "price": 0.5,
-   "edge": 0.035,
+   "price": 0.49,
+   "edge": 0.045,
    "news": "Kawhi Leonard is out: RJ Barrett hit the under in 2/3 games without him vs 2/4 with him; LAL has allowed starting forwards 11% fewer pra than average (likely on him: Jake LaRavia, Ziaire Williams); minutes trending down (we project 33, his last 5 avg 32 vs 35 over 15).",
    "result": null
   },
@@ -52531,8 +52679,8 @@
    "line": 29.5,
    "start": "2026-11-01T21:25:00Z",
    "p": 0.501,
-   "price": 0.49,
-   "edge": -0.006,
+   "price": 0.5,
+   "edge": -0.017,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -52546,8 +52694,8 @@
    "line": 29.5,
    "start": "2026-11-01T21:25:00Z",
    "p": 0.499,
-   "price": 0.52,
-   "edge": -0.038,
+   "price": 0.51,
+   "edge": -0.028,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
