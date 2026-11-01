@@ -270,6 +270,8 @@ def check_prices(st, new):
             m = get(f"https://api.elections.kalshi.com/trade-api/v2/markets/{tk}")["market"]
         except Exception:
             continue
+        if m.get("status") not in (None, "active", "open"):
+            continue   # settled markets show a 1.00 ask with nobody selling: not a price (Watson Nov 1 "cashed" at 0 TDs)
         def px(side):
             v = m.get(f"{side}_ask_dollars") or m.get(f"{side}_ask")
             v = float(v) if v not in (None, "") else None
