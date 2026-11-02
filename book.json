@@ -2854,6 +2854,39 @@
     }
    ],
    "lock": true
+  },
+  {
+   "date": "2026-11-01",
+   "app": "Kalshi",
+   "type": "1-leg lock: Cade Cunningham over 1.5 threes",
+   "stake": 10.0,
+   "payout_x": 1.56,
+   "win_p": 0.634,
+   "ev_pct": -0.9,
+   "status": "open",
+   "pnl": 0,
+   "legs": [
+    {
+     "league": "nba",
+     "player": "Cade Cunningham",
+     "team": "DET",
+     "stat": "threes",
+     "side": "over",
+     "line": 1.5,
+     "price": 0.64,
+     "ticker": "KXNBA3PT-26NOV02DETCHA-DETCCUNNINGHAM2-2",
+     "game": "DET @ CHA",
+     "start": "2026-11-03T00:30:00Z",
+     "p": 0.634,
+     "edge": -0.022,
+     "news": "Isaiah Joe (G) is out, so Cade Cunningham's role likely grows; CHA has allowed starting guards 14% fewer threes than average (likely on him: Dennis Schroder, Sion James).",
+     "ctx_dp": -0.001,
+     "why": "Cade Cunningham over 1.5 threes: 4 books price it 61%; hit 75% of last 12 (avg 2.5); 5/11 over vs CHA, avg 1.6. In games vs CHA: 1.7 avg over 13 games, 21% of that rotation is still there, so the matchup counts as 59% over 1.5. Fair 63%.",
+     "case": "Last 5 games: 1, 4, 2, 3, 2 (4 of 5 over 1.5). In games vs CHA: 1.7 avg over 13 games, 21% of that rotation is still there, so the matchup counts as 59% over 1.5.",
+     "result": null
+    }
+   ],
+   "lock": true
   }
  ],
  "no_games_left": "2026-10-14",
@@ -58374,7 +58407,7 @@
    "p": 0.437,
    "price": 0.5,
    "edge": -0.081,
-   "news": "Injury report: Probable: Injury/Illness - Left Finger Sprain (official NBA report) PHI has allowed starting forwards 0% more threes than average (likely on him: LeBron James, Dean Wade); Joel Embiid can switch onto him (PHI allowed forwards 34% fewer threes with him playing; he plays tonight); Tyrese Maxey can switch onto him (PHI allowed forwards 17% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Day-To-Day: Smith (finger) is listed as probable for Monday's game against Philadelphia. PHI has allowed starting forwards 0% more threes than average (likely on him: LeBron James, Dean Wade); Joel Embiid can switch onto him (PHI allowed forwards 34% fewer threes with him playing; he plays tonight); Tyrese Maxey can switch onto him (PHI allowed forwards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -58389,7 +58422,7 @@
    "p": 0.483,
    "price": 0.53,
    "edge": -0.064,
-   "news": "Injury report: Probable: Injury/Illness - Left Finger Sprain (official NBA report) PHI has allowed starting forwards 0% more threes than average (likely on him: LeBron James, Dean Wade); Joel Embiid can switch onto him (PHI allowed forwards 34% fewer threes with him playing; he plays tonight); Tyrese Maxey can switch onto him (PHI allowed forwards 17% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Day-To-Day: Smith (finger) is listed as probable for Monday's game against Philadelphia. PHI has allowed starting forwards 0% more threes than average (likely on him: LeBron James, Dean Wade); Joel Embiid can switch onto him (PHI allowed forwards 34% fewer threes with him playing; he plays tonight); Tyrese Maxey can switch onto him (PHI allowed forwards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -58461,9 +58494,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-03T00:30:00Z",
-   "p": 0.434,
+   "p": 0.435,
    "price": 0.49,
-   "edge": -0.073,
+   "edge": -0.072,
    "news": "Grant Williams is out: Brandon Miller hit the over in 10/22 games without him vs 9/18 with him; DET has allowed starting forwards 2% more threes than average (likely on him: Duncan Robinson, Paul Reed); Kevin Huerter can switch onto him (DET allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -58476,9 +58509,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-03T00:30:00Z",
-   "p": 0.566,
+   "p": 0.565,
    "price": 0.53,
-   "edge": 0.019,
+   "edge": 0.018,
    "news": "Grant Williams is out: Brandon Miller hit the under in 12/22 games without him vs 9/18 with him; DET has allowed starting forwards 2% more threes than average (likely on him: Duncan Robinson, Paul Reed); Kevin Huerter can switch onto him (DET allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -58551,10 +58584,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-03T00:30:00Z",
-   "p": 0.614,
+   "p": 0.634,
    "price": 0.64,
-   "edge": -0.042,
-   "news": "CHA has allowed starting guards 14% fewer threes than average (likely on him: Dennis Schroder, Sion James).",
+   "edge": -0.022,
+   "news": "Isaiah Joe (G) is out, so Cade Cunningham's role likely grows; CHA has allowed starting guards 14% fewer threes than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
   {
@@ -58566,10 +58599,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-03T00:30:00Z",
-   "p": 0.386,
+   "p": 0.336,
    "price": 0.39,
-   "edge": -0.021,
-   "news": "CHA has allowed starting guards 14% fewer threes than average (likely on him: Dennis Schroder, Sion James).",
+   "edge": -0.071,
+   "news": "Isaiah Joe (G) is out, so Cade Cunningham's role likely grows; CHA has allowed starting guards 14% fewer threes than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
   {
@@ -58581,10 +58614,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-03T00:30:00Z",
-   "p": 0.331,
+   "p": 0.431,
    "price": 0.39,
-   "edge": -0.076,
-   "news": "CHA has allowed bench guards 11% fewer threes than average (likely on him: Grayson Allen, Christian Anderson).",
+   "edge": 0.024,
+   "news": "Isaiah Joe is out: Daniss Jenkins hit the over in 2/4 games without him vs 0/4 with him; CHA has allowed bench guards 11% fewer threes than average (likely on him: Grayson Allen, Christian Anderson).",
    "result": null
   },
   {
@@ -58596,10 +58629,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-03T00:30:00Z",
-   "p": 0.669,
+   "p": 0.569,
    "price": 0.66,
-   "edge": -0.007,
-   "news": "CHA has allowed bench guards 11% fewer threes than average (likely on him: Grayson Allen, Christian Anderson).",
+   "edge": -0.107,
+   "news": "Isaiah Joe is out: Daniss Jenkins hit the under in 2/4 games without him vs 4/4 with him; CHA has allowed bench guards 11% fewer threes than average (likely on him: Grayson Allen, Christian Anderson).",
    "result": null
   },
   {
@@ -58807,8 +58840,8 @@
    "line": 1.5,
    "start": "2026-11-03T01:00:00Z",
    "p": 0.464,
-   "price": 0.51,
-   "edge": -0.063,
+   "price": 0.52,
+   "edge": -0.073,
    "news": "Anthony Edwards is out: Ayo Dosunmu hit the under in 1/3 games without him vs 16/23 with him; Donte DiVincenzo is out: Ayo Dosunmu hit the under in 5/8 games without him vs 12/18 with him; MIL has allowed bench guards 14% more threes than average (likely on him: Kasparas Jakucionis, AJ Green); Pete Nance can switch onto him (MIL allowed guards 10% fewer threes with him playing; he plays tonight); Cormac Ryan can switch onto him (MIL allowed guards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -58912,8 +58945,8 @@
    "line": 1.5,
    "start": "2026-11-03T01:00:00Z",
    "p": 0.603,
-   "price": 0.61,
-   "edge": -0.024,
+   "price": 0.6,
+   "edge": -0.014,
    "news": "NOP has allowed starting forwards 10% fewer threes than average.",
    "result": null
   },
@@ -58971,9 +59004,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.452,
+   "p": 0.451,
    "price": 0.48,
-   "edge": -0.045,
+   "edge": -0.046,
    "news": "NOP has allowed bench forwards 10% more threes than average.",
    "result": null
   },
@@ -58986,9 +59019,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.548,
-   "price": 0.55,
-   "edge": -0.019,
+   "p": 0.549,
+   "price": 0.56,
+   "edge": -0.028,
    "news": "NOP has allowed bench forwards 10% more threes than average.",
    "result": null
   },
@@ -59061,10 +59094,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.34,
-   "price": 0.38,
-   "edge": -0.056,
-   "news": "News: New Orleans Pelicans Giving Dejounte Murray Extra Day Of Rest Vs. Atlanta Hawks - Yahoo Sports MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 20% fewer threes with him playing; he is out tonight); Javon Small can switch onto him (MEM allowed guards 16% fewer threes with him playing; he plays tonight).",
+   "p": 0.306,
+   "price": 0.39,
+   "edge": -0.101,
+   "news": "News: New Orleans Pelicans Giving Dejounte Murray Extra Day Of Rest Vs. Atlanta Hawks - Yahoo Sports MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 20% fewer threes with him playing; he plays tonight); Javon Small can switch onto him (MEM allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59076,10 +59109,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.61,
-   "price": 0.65,
-   "edge": -0.056,
-   "news": "News: New Orleans Pelicans Giving Dejounte Murray Extra Day Of Rest Vs. Atlanta Hawks - Yahoo Sports MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 20% fewer threes with him playing; he is out tonight); Javon Small can switch onto him (MEM allowed guards 16% fewer threes with him playing; he plays tonight).",
+   "p": 0.644,
+   "price": 0.66,
+   "edge": -0.032,
+   "news": "News: New Orleans Pelicans Giving Dejounte Murray Extra Day Of Rest Vs. Atlanta Hawks - Yahoo Sports MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 20% fewer threes with him playing; he plays tonight); Javon Small can switch onto him (MEM allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59091,10 +59124,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.404,
+   "p": 0.369,
    "price": 0.39,
-   "edge": -0.003,
-   "news": "MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 20% fewer threes with him playing; he is out tonight); Javon Small can switch onto him (MEM allowed guards 16% fewer threes with him playing; he plays tonight).",
+   "edge": -0.038,
+   "news": "MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 20% fewer threes with him playing; he plays tonight); Javon Small can switch onto him (MEM allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59106,10 +59139,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.596,
+   "p": 0.631,
    "price": 0.63,
-   "edge": -0.05,
-   "news": "MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 20% fewer threes with him playing; he is out tonight); Javon Small can switch onto him (MEM allowed guards 16% fewer threes with him playing; he plays tonight).",
+   "edge": -0.015,
+   "news": "MEM has allowed starting guards 20% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 20% fewer threes with him playing; he plays tonight); Javon Small can switch onto him (MEM allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59154,7 +59187,7 @@
    "p": 0.288,
    "price": 0.42,
    "edge": -0.149,
-   "news": "Injury report: Probable:  (official NBA report) MEM has allowed starting forwards 23% fewer threes than average (likely on him: Cameron Boozer, Cedric Coward); Jaylen Wells can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight); Ty Jerome can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Day-To-Day: Murphy (knee) is listed as probable for Monday's game against the Grizzlies. MEM has allowed starting forwards 23% fewer threes than average (likely on him: Cameron Boozer, Cedric Coward); Jaylen Wells can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight); Ty Jerome can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59169,7 +59202,7 @@
    "p": 0.632,
    "price": 0.61,
    "edge": 0.005,
-   "news": "Injury report: Probable:  (official NBA report) MEM has allowed starting forwards 23% fewer threes than average (likely on him: Cameron Boozer, Cedric Coward); Jaylen Wells can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight); Ty Jerome can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Day-To-Day: Murphy (knee) is listed as probable for Monday's game against the Grizzlies. MEM has allowed starting forwards 23% fewer threes than average (likely on him: Cameron Boozer, Cedric Coward); Jaylen Wells can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight); Ty Jerome can switch onto him (MEM allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59274,7 +59307,7 @@
    "p": 0.304,
    "price": 0.44,
    "edge": -0.153,
-   "news": "Injury report: Questionable:  (official NBA report) Jaylon Tyson (G) is out, so Peyton Watson's role likely grows; OKC has allowed starting guards 8% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 12% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Day-To-Day: Watson (hamstring) is questionable to play in Monday's game against Oklahoma City. Jaylon Tyson (G) is out, so Peyton Watson's role likely grows; OKC has allowed starting guards 8% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59289,7 +59322,7 @@
    "p": 0.586,
    "price": 0.58,
    "edge": -0.011,
-   "news": "Injury report: Questionable:  (official NBA report) Jaylon Tyson (G) is out, so Peyton Watson's role likely grows; OKC has allowed starting guards 8% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 12% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Day-To-Day: Watson (hamstring) is questionable to play in Monday's game against Oklahoma City. Jaylon Tyson (G) is out, so Peyton Watson's role likely grows; OKC has allowed starting guards 8% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59662,8 +59695,8 @@
    "line": 2.5,
    "start": "2026-11-03T01:30:00Z",
    "p": 0.43,
-   "price": 0.45,
-   "edge": -0.037,
+   "price": 0.43,
+   "edge": -0.017,
    "news": "SAS has allowed starting guards 11% fewer threes than average (likely on him: Dylan Harper, Devin Vassell); Carter Bryant can switch onto him (SAS allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -59722,8 +59755,8 @@
    "line": 7.5,
    "start": "2026-11-03T00:30:00Z",
    "p": 0.487,
-   "price": 0.44,
-   "edge": 0.03,
+   "price": 0.43,
+   "edge": 0.04,
    "news": "PHI has allowed starting guards 1% fewer assists than average (likely on him: Tyrese Maxey, Jaylen Brown).",
    "result": null
   },
@@ -59751,10 +59784,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-03T00:30:00Z",
-   "p": 0.445,
-   "price": 0.54,
-   "edge": -0.112,
-   "news": "CHA has allowed bench guards 16% fewer assists than average (likely on him: Grayson Allen, Christian Anderson).",
+   "p": 0.382,
+   "price": 0.53,
+   "edge": -0.165,
+   "news": "Isaiah Joe is out: Daniss Jenkins hit the over in 2/4 games without him vs 3/4 with him; CHA has allowed bench guards 16% fewer assists than average (likely on him: Grayson Allen, Christian Anderson).",
    "result": null
   },
   {
@@ -59766,10 +59799,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-03T00:30:00Z",
-   "p": 0.555,
-   "price": 0.52,
-   "edge": 0.018,
-   "news": "CHA has allowed bench guards 16% fewer assists than average (likely on him: Grayson Allen, Christian Anderson).",
+   "p": 0.618,
+   "price": 0.51,
+   "edge": 0.091,
+   "news": "Isaiah Joe is out: Daniss Jenkins hit the under in 2/4 games without him vs 1/4 with him; CHA has allowed bench guards 16% fewer assists than average (likely on him: Grayson Allen, Christian Anderson).",
    "result": null
   },
   {
@@ -59841,10 +59874,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.526,
+   "p": 0.5,
    "price": 0.49,
-   "edge": 0.019,
-   "news": "MEM has allowed starting guards 7% more assists than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 16% fewer assists with him playing; he is out tonight).",
+   "edge": -0.007,
+   "news": "MEM has allowed starting guards 7% more assists than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 16% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59856,10 +59889,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.474,
+   "p": 0.5,
    "price": 0.53,
-   "edge": -0.073,
-   "news": "MEM has allowed starting guards 7% more assists than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 16% fewer assists with him playing; he is out tonight).",
+   "edge": -0.047,
+   "news": "MEM has allowed starting guards 7% more assists than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 16% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59904,7 +59937,7 @@
    "p": 0.52,
    "price": 0.56,
    "edge": -0.057,
-   "news": "Injury report: Questionable:  (official NBA report) Jaylon Tyson (G) is out, so Peyton Watson's role likely grows; OKC has allowed starting guards 1% fewer assists than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Jaylin Williams can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
+   "news": "Injury report: Day-To-Day: Watson (hamstring) is questionable to play in Monday's game against Oklahoma City. Jaylon Tyson (G) is out, so Peyton Watson's role likely grows; OKC has allowed starting guards 1% fewer assists than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Jaylin Williams can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -59919,7 +59952,7 @@
    "p": 0.37,
    "price": 0.47,
    "edge": -0.117,
-   "news": "Injury report: Questionable:  (official NBA report) Jaylon Tyson (G) is out, so Peyton Watson's role likely grows; OKC has allowed starting guards 1% fewer assists than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Jaylin Williams can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
+   "news": "Injury report: Day-To-Day: Watson (hamstring) is questionable to play in Monday's game against Oklahoma City. Jaylon Tyson (G) is out, so Peyton Watson's role likely grows; OKC has allowed starting guards 1% fewer assists than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Jaylin Williams can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -60082,8 +60115,8 @@
    "line": 5.5,
    "start": "2026-11-03T01:30:00Z",
    "p": 0.459,
-   "price": 0.58,
-   "edge": -0.138,
+   "price": 0.59,
+   "edge": -0.148,
    "news": "News: Did Stephon Castle Get Hurt? Why Spurs\u2019 Star Scored 0 Points vs. Timberwolves - Yahoo Sports UTA has allowed starting guards 19% more assists than average.",
    "result": null
   },
@@ -60142,8 +60175,8 @@
    "line": 5.5,
    "start": "2026-11-03T01:30:00Z",
    "p": 0.502,
-   "price": 0.59,
-   "edge": -0.105,
+   "price": 0.57,
+   "edge": -0.085,
    "news": "SAS has allowed starting guards 14% fewer assists than average (likely on him: Dylan Harper, Devin Vassell).",
    "result": null
   },
@@ -60157,8 +60190,8 @@
    "line": 5.5,
    "start": "2026-11-03T01:30:00Z",
    "p": 0.498,
-   "price": 0.48,
-   "edge": 0.001,
+   "price": 0.46,
+   "edge": 0.021,
    "news": "SAS has allowed starting guards 14% fewer assists than average (likely on him: Dylan Harper, Devin Vassell).",
    "result": null
   },
@@ -60412,8 +60445,8 @@
    "line": 9.5,
    "start": "2026-11-03T01:00:00Z",
    "p": 0.456,
-   "price": 0.53,
-   "edge": -0.091,
+   "price": 0.52,
+   "edge": -0.081,
    "news": "MEM has allowed bench centers 11% more points than average (likely on him: Isaiah Stewart, Quinten Post); Jaylen Wells can switch onto him (MEM allowed centers 17% fewer points with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed centers 16% fewer points with him playing; he plays tonight); those defenders hold shooters 5.3% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -60637,8 +60670,8 @@
    "line": 5.5,
    "start": "2026-11-03T00:30:00Z",
    "p": 0.519,
-   "price": 0.51,
-   "edge": -0.008,
+   "price": 0.49,
+   "edge": 0.012,
    "news": "PHI has allowed starting forwards 7% more rebounds than average (likely on him: LeBron James, Dean Wade); VJ Edgecombe can switch onto him (PHI allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -60654,7 +60687,7 @@
    "p": 0.434,
    "price": 0.58,
    "edge": -0.163,
-   "news": "Injury report: Probable: Injury/Illness - Left Finger Sprain (official NBA report) PHI has allowed starting forwards 7% more rebounds than average (likely on him: LeBron James, Dean Wade); VJ Edgecombe can switch onto him (PHI allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
+   "news": "Injury report: Day-To-Day: Smith (finger) is listed as probable for Monday's game against Philadelphia. PHI has allowed starting forwards 7% more rebounds than average (likely on him: LeBron James, Dean Wade); VJ Edgecombe can switch onto him (PHI allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -60669,7 +60702,7 @@
    "p": 0.486,
    "price": 0.46,
    "edge": 0.009,
-   "news": "Injury report: Probable: Injury/Illness - Left Finger Sprain (official NBA report) PHI has allowed starting forwards 7% more rebounds than average (likely on him: LeBron James, Dean Wade); VJ Edgecombe can switch onto him (PHI allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
+   "news": "Injury report: Day-To-Day: Smith (finger) is listed as probable for Monday's game against Philadelphia. PHI has allowed starting forwards 7% more rebounds than average (likely on him: LeBron James, Dean Wade); VJ Edgecombe can switch onto him (PHI allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -60711,10 +60744,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-03T00:30:00Z",
-   "p": 0.445,
+   "p": 0.465,
    "price": 0.46,
-   "edge": -0.032,
-   "news": "CHA has allowed starting guards 5% more rebounds than average (likely on him: Dennis Schroder, Sion James).",
+   "edge": -0.012,
+   "news": "Isaiah Joe (G) is out, so Cade Cunningham's role likely grows; CHA has allowed starting guards 5% more rebounds than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
   {
@@ -60726,10 +60759,10 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-11-03T00:30:00Z",
-   "p": 0.555,
+   "p": 0.505,
    "price": 0.57,
-   "edge": -0.032,
-   "news": "CHA has allowed starting guards 5% more rebounds than average (likely on him: Dennis Schroder, Sion James).",
+   "edge": -0.082,
+   "news": "Isaiah Joe (G) is out, so Cade Cunningham's role likely grows; CHA has allowed starting guards 5% more rebounds than average (likely on him: Dennis Schroder, Sion James).",
    "result": null
   },
   {
@@ -60921,10 +60954,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.323,
+   "p": 0.348,
    "price": 0.46,
-   "edge": -0.154,
-   "news": "News: Breakthrough guard Ty Jerome to miss first game of the season with back soreness - Yahoo Sports Scotty Pippen Jr. is out: Ty Jerome hit the over in 2/7 games without him vs 4/11 with him.",
+   "edge": -0.129,
+   "news": "News: Breakthrough guard Ty Jerome to miss first game of the season with back soreness - Yahoo Sports",
    "result": null
   },
   {
@@ -60936,10 +60969,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.627,
+   "p": 0.602,
    "price": 0.61,
-   "edge": 0.0,
-   "news": "News: Breakthrough guard Ty Jerome to miss first game of the season with back soreness - Yahoo Sports Scotty Pippen Jr. is out: Ty Jerome hit the under in 5/7 games without him vs 7/11 with him.",
+   "edge": -0.025,
+   "news": "News: Breakthrough guard Ty Jerome to miss first game of the season with back soreness - Yahoo Sports",
    "result": null
   },
   {
@@ -60981,10 +61014,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.396,
+   "p": 0.362,
    "price": 0.38,
-   "edge": -0.0,
-   "news": "MEM has allowed bench guards 18% more rebounds than average (likely on him: Javon Small, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 21% fewer rebounds with him playing; he is out tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.034,
+   "news": "MEM has allowed bench guards 18% more rebounds than average (likely on him: Javon Small, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 21% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -60996,10 +61029,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.604,
+   "p": 0.638,
    "price": 0.64,
-   "edge": -0.052,
-   "news": "MEM has allowed bench guards 18% more rebounds than average (likely on him: Javon Small, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 21% fewer rebounds with him playing; he is out tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.018,
+   "news": "MEM has allowed bench guards 18% more rebounds than average (likely on him: Javon Small, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 21% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -61011,10 +61044,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.571,
+   "p": 0.534,
    "price": 0.57,
-   "edge": -0.016,
-   "news": "MEM has allowed starting guards 11% more rebounds than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 21% fewer rebounds with him playing; he is out tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.053,
+   "news": "MEM has allowed starting guards 11% more rebounds than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 21% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -61026,10 +61059,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-03T01:00:00Z",
-   "p": 0.429,
+   "p": 0.466,
    "price": 0.47,
-   "edge": -0.058,
-   "news": "MEM has allowed starting guards 11% more rebounds than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 21% fewer rebounds with him playing; he is out tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.021,
+   "news": "MEM has allowed starting guards 11% more rebounds than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 21% fewer rebounds with him playing; he plays tonight); GG Jackson can switch onto him (MEM allowed guards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -61087,8 +61120,8 @@
    "line": 5.5,
    "start": "2026-11-03T00:00:00Z",
    "p": 0.473,
-   "price": 0.6,
-   "edge": -0.144,
+   "price": 0.59,
+   "edge": -0.134,
    "news": "News: Aday Mara Set To Take On Bigger Role With Chet Holmgren Injury - Sports Illustrated Chet Holmgren (C) is out, so Aday Mara's role likely grows; CLE has allowed bench centers 8% more rebounds than average (likely on him: Thomas Bryant).",
    "result": null
   },
@@ -61102,8 +61135,8 @@
    "line": 3.5,
    "start": "2026-11-03T00:00:00Z",
    "p": 0.375,
-   "price": 0.49,
-   "edge": -0.132,
+   "price": 0.5,
+   "edge": -0.143,
    "news": "Cason Wallace is out: Ajay Mitchell hit the over in 5/14 games without him vs 6/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 10/21 games without him vs 2/5 with him; Alex Caruso is out: Ajay Mitchell hit the over in 3/9 games without him vs 7/15 with him; Nikola Topic (G) is out, so Ajay Mitchell's role likely grows; CLE has allowed starting guards 1% fewer rebounds than average (likely on him: James Harden, Donovan Mitchell); Craig Porter Jr. can switch onto him (CLE allowed guards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -61371,9 +61404,9 @@
    "side": "over",
    "line": 20.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.466,
+   "p": 0.463,
    "price": 0.48,
-   "edge": -0.031,
+   "edge": -0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61386,9 +61419,9 @@
    "side": "under",
    "line": 20.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.534,
+   "p": 0.537,
    "price": 0.54,
-   "edge": -0.023,
+   "edge": -0.02,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61461,9 +61494,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.498,
+   "p": 0.497,
    "price": 0.5,
-   "edge": -0.02,
+   "edge": -0.021,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61476,9 +61509,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.502,
+   "p": 0.503,
    "price": 0.52,
-   "edge": -0.035,
+   "edge": -0.034,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61491,9 +61524,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.474,
+   "p": 0.473,
    "price": 0.42,
-   "edge": 0.037,
+   "edge": 0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61506,9 +61539,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.526,
+   "p": 0.527,
    "price": 0.59,
-   "edge": -0.081,
+   "edge": -0.08,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61551,9 +61584,9 @@
    "side": "over",
    "line": 4.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.434,
+   "p": 0.435,
    "price": 0.44,
-   "edge": -0.023,
+   "edge": -0.022,
    "news": "News: Bears practice report: Tight end Colston Loveland limited by neck injury - Chicago Sun-Times Cole Kmet (TE) is out, so Colston Loveland's role likely grows; SEA's LB Uchenna Nwosu is out, an easier matchup.",
    "result": null
   },
@@ -61566,9 +61599,9 @@
    "side": "under",
    "line": 4.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.476,
+   "p": 0.475,
    "price": 0.57,
-   "edge": -0.111,
+   "edge": -0.112,
    "news": "News: Bears practice report: Tight end Colston Loveland limited by neck injury - Chicago Sun-Times Cole Kmet (TE) is out, so Colston Loveland's role likely grows; SEA's LB Uchenna Nwosu is out, an easier matchup.",
    "result": null
   },
@@ -61671,9 +61704,9 @@
    "side": "over",
    "line": 4.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.438,
+   "p": 0.437,
    "price": 0.44,
-   "edge": -0.019,
+   "edge": -0.02,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61686,9 +61719,9 @@
    "side": "under",
    "line": 4.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.562,
+   "p": 0.563,
    "price": 0.57,
-   "edge": -0.025,
+   "edge": -0.024,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61701,9 +61734,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.362,
+   "p": 0.363,
    "price": 0.41,
-   "edge": -0.065,
+   "edge": -0.064,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61716,9 +61749,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.638,
+   "p": 0.637,
    "price": 0.6,
-   "edge": 0.021,
+   "edge": 0.02,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61761,9 +61794,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.46,
+   "p": 0.456,
    "price": 0.42,
-   "edge": 0.023,
+   "edge": 0.019,
    "news": "Cole Kmet (TE) is out, so Sam Roush's role likely grows; SEA's LB Uchenna Nwosu is out, an easier matchup.",
    "result": null
   },
@@ -61776,9 +61809,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.5,
+   "p": 0.504,
    "price": 0.6,
-   "edge": -0.117,
+   "edge": -0.113,
    "news": "Cole Kmet (TE) is out, so Sam Roush's role likely grows; SEA's LB Uchenna Nwosu is out, an easier matchup.",
    "result": null
   },
@@ -61792,8 +61825,8 @@
    "line": 3.5,
    "start": "2026-11-03T01:15:00Z",
    "p": 0.384,
-   "price": 0.42,
-   "edge": -0.053,
+   "price": 0.41,
+   "edge": -0.043,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61807,8 +61840,8 @@
    "line": 3.5,
    "start": "2026-11-03T01:15:00Z",
    "p": 0.616,
-   "price": 0.59,
-   "edge": 0.009,
+   "price": 0.6,
+   "edge": -0.001,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -61837,8 +61870,8 @@
    "line": 2.5,
    "start": "2026-11-03T01:15:00Z",
    "p": 0.405,
-   "price": 0.45,
-   "edge": -0.062,
+   "price": 0.44,
+   "edge": -0.052,
    "news": "Rashid Shaheed (WR) is out, so Cooper Kupp's role likely grows.",
    "result": null
   },
@@ -61851,9 +61884,9 @@
    "side": "over",
    "line": 7.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.508,
+   "p": 0.506,
    "price": 0.46,
-   "edge": 0.031,
+   "edge": 0.029,
    "news": "Rashid Shaheed (WR) is out, so Jaxon Smith-Njigba's role likely grows.",
    "result": null
   },
@@ -61866,9 +61899,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.462,
+   "p": 0.464,
    "price": 0.55,
-   "edge": -0.105,
+   "edge": -0.103,
    "news": "Rashid Shaheed (WR) is out, so Jaxon Smith-Njigba's role likely grows.",
    "result": null
   },
@@ -61911,9 +61944,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.389,
+   "p": 0.384,
    "price": 0.4,
-   "edge": -0.028,
+   "edge": -0.033,
    "news": "News: Will Jadarian Price, Zach Charbonnet play in Week 8? Injury updates, fantasy advice - The Big Lead Velus Jones Jr. (RB) is out, so Zach Charbonnet's role likely grows.",
    "result": null
   },
@@ -61926,9 +61959,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.531,
+   "p": 0.536,
    "price": 0.61,
-   "edge": -0.096,
+   "edge": -0.091,
    "news": "News: Will Jadarian Price, Zach Charbonnet play in Week 8? Injury updates, fantasy advice - The Big Lead Velus Jones Jr. (RB) is out, so Zach Charbonnet's role likely grows.",
    "result": null
   },
@@ -62001,9 +62034,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.538,
+   "p": 0.536,
    "price": 0.5,
-   "edge": 0.021,
+   "edge": 0.019,
    "news": "Rashid Shaheed (WR) is out, so Cooper Kupp's role likely grows.",
    "result": null
   },
@@ -62016,9 +62049,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-11-03T01:15:00Z",
-   "p": 0.432,
+   "p": 0.434,
    "price": 0.52,
-   "edge": -0.105,
+   "edge": -0.103,
    "news": "Rashid Shaheed (WR) is out, so Cooper Kupp's role likely grows.",
    "result": null
   },
@@ -62167,8 +62200,8 @@
    "line": 59.5,
    "start": "2026-11-03T01:15:00Z",
    "p": 0.583,
-   "price": 0.53,
-   "edge": 0.036,
+   "price": 0.52,
+   "edge": 0.046,
    "news": "Kyle Monangai is out: D'Andre Swift hit the under in 2/2 games without him vs 11/22 with him; SEA's LB Uchenna Nwosu is out, an easier matchup.",
    "result": null
   },
