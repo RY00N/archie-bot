@@ -2764,8 +2764,8 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-01 16:00 PT",
-  "props_today": 407,
+  "props_at": "2026-11-01 17:00 PT",
+  "props_today": 409,
   "kalshi_props_today": 112,
   "kalshi_priced_today": 11,
   "books_on_kalshi_props": {
@@ -42929,8 +42929,8 @@
    "line": 2.5,
    "start": "2026-11-02T01:30:00Z",
    "p": 0.485,
-   "price": 0.59,
-   "edge": -0.122,
+   "price": 0.6,
+   "edge": -0.132,
    "news": "Stephen Curry is out: Brandin Podziemski hit the under in 16/28 games without him vs 6/12 with him; Moses Moody is out: Brandin Podziemski hit the under in 13/28 games without him vs 9/12 with him; LAC has allowed starting guards 2% fewer threes than average (likely on him: Darius Garland, Kris Dunn); Isaiah Jackson can switch onto him (LAC allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -43439,8 +43439,8 @@
    "line": 0.5,
    "start": "2026-11-02T02:00:00Z",
    "p": 0.51,
-   "price": 0.42,
-   "edge": 0.073,
+   "price": 0.41,
+   "edge": 0.083,
    "news": "Kawhi Leonard is out: Scottie Barnes hit the under in 2/3 games without him vs 0/3 with him; LAL has allowed starting forwards 11% fewer threes than average (likely on him: Jake LaRavia); Bronny James can switch onto him (LAL allowed forwards 23% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -45059,8 +45059,8 @@
    "line": 3.5,
    "start": "2026-11-02T02:00:00Z",
    "p": 0.491,
-   "price": 0.58,
-   "edge": -0.106,
+   "price": 0.57,
+   "edge": -0.096,
    "news": "News: Austin Reaves took the blame for the struggles of the second unit vs. Warriors - Yahoo Sports TOR has allowed starting guards 13% fewer rebounds than average (likely on him: Ja'Kobe Walter, Immanuel Quickley).",
    "result": null
   },
@@ -45074,8 +45074,8 @@
    "line": 3.5,
    "start": "2026-11-02T02:00:00Z",
    "p": 0.459,
-   "price": 0.45,
-   "edge": -0.008,
+   "price": 0.44,
+   "edge": 0.002,
    "news": "News: Austin Reaves took the blame for the struggles of the second unit vs. Warriors - Yahoo Sports TOR has allowed starting guards 13% fewer rebounds than average (likely on him: Ja'Kobe Walter, Immanuel Quickley).",
    "result": null
   },
@@ -46094,8 +46094,8 @@
    "line": 29.5,
    "start": "2026-11-02T01:20:00Z",
    "p": 0.501,
-   "price": 0.51,
-   "edge": -0.026,
+   "price": 0.52,
+   "edge": -0.036,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -52888,10 +52888,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-02T01:20:00Z",
-   "p": 0.513,
+   "p": 0.493,
    "price": 0.41,
-   "edge": 0.086,
-   "news": "Terry McLaurin is out: Dyami Brown hit the over in 8/12 games without him vs 13/28 with him; Jaylin Lane (WR) is out, so Dyami Brown's role likely grows.",
+   "edge": 0.066,
+   "news": "Terry McLaurin is out: Dyami Brown hit the over in 8/12 games without him vs 13/28 with him.",
    "result": null
   },
   {
@@ -52903,10 +52903,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-02T01:20:00Z",
-   "p": 0.463,
+   "p": 0.507,
    "price": 0.61,
-   "edge": -0.164,
-   "news": "Terry McLaurin is out: Dyami Brown hit the under in 4/12 games without him vs 15/28 with him; Jaylin Lane (WR) is out, so Dyami Brown's role likely grows.",
+   "edge": -0.12,
+   "news": "Terry McLaurin is out: Dyami Brown hit the under in 4/12 games without him vs 15/28 with him.",
    "result": null
   },
   {
