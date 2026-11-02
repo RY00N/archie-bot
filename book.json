@@ -2929,13 +2929,13 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-02 12:00 PT",
-  "props_today": 1840,
-  "kalshi_props_today": 865,
+  "props_at": "2026-11-02 13:00 PT",
+  "props_today": 1841,
+  "kalshi_props_today": 866,
   "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
-   "Sleeper": 815,
-   "Underdog": 865
+   "Sleeper": 820,
+   "Underdog": 866
   },
   "data_files": [
    "mlb.sqlite",
