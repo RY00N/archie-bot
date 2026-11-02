@@ -321,6 +321,7 @@ def winners_filter(d):
     except Exception as e:
         print("WINNERS delete failed:", e, flush=True)
 OG_ROLE, OG_MAX = os.environ.get("BP_OG_ROLE_ID", "1563068490162642974"), 15
+OG_GIVEAWAY_OFF = True   # Ryan 2026-11-02: stop giving out OG Premium now
 OG_GIVEN = os.path.join(WORK, "og_given.json")
 # Ryan 2026-10-26 07:11Z: "5 more then stop the giveaway". The cap is fixed the first time this code runs:
 # whatever was given by then + 5, saved so restarts don't move it.
@@ -337,7 +338,10 @@ def og_max():
 
 def og_on_join(d):
     """Ryan 2026-10-23: the next 15 people who join get the OG Premium role (free access), then no more.
+    OFF since Ryan 2026-11-02 02:48Z: "i need betterpicks to stop giving out OG premium now".
     Counted by people given it, so someone leaving doesn't open a new spot."""
+    if OG_GIVEAWAY_OFF:
+        return
     u = d.get("user") or {}
     if u.get("bot") or not d.get("guild_id"):
         return
@@ -358,7 +362,9 @@ def og_on_join(d):
 
 # Ryan 2026-10-26: people joining through a special invite link get a role (old-server members -> OG Premium, free).
 # Discord doesn't say which invite someone used, so we keep each invite's use count and see which one went up.
-INVITE_ROLES = {"857TCcDMj": OG_ROLE}   # invite code -> role id ("BetterPicks (old)" members, free OG Premium)
+# Ryan 2026-11-02 02:48Z: no more OG Premium from any path, so the old-server invite no longer grants it
+# (was {"857TCcDMj": OG_ROLE}). The invite itself stays; people who already have OG Premium keep it.
+INVITE_ROLES = {}   # invite code -> role id
 INVITE_USES, invite_lock = {}, threading.Lock()
 
 
