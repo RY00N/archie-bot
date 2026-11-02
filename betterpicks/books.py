@@ -1109,6 +1109,8 @@ def group_props(rows):
             g["start"] = r["start"]
         src = r["source"]
         if src == "Kalshi":
+            if "yes_bid" not in r:
+                continue   # a Kalshi line relayed by another feed (no order book); seen on EPL Nov 2, crashed every props run
             g["sources"].setdefault("Kalshi", {"ladder": []})["ladder"].append(
                 {k2: r[k2] for k2 in ("line", "yes_bid", "yes_ask", "no_bid", "no_ask", "last",
                                       "ticker")})
