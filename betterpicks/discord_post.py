@@ -12,6 +12,7 @@ Already-posted items are remembered in discord_posted.json so nothing is posted 
 """
 import json, math, os, re, sys, urllib.request
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BOOK = os.path.join(HERE, "book.json")
@@ -216,13 +217,30 @@ FREE_CH = os.environ.get("BP_FREE_CHANNEL_ID", "1563073629799981076")
 RESULTS_CH = os.environ.get("BP_RESULTS_CHANNEL_ID", "1564169511291068546")   # WINS/LOSSES, above WINNERS
 PURCHASE_CH = os.environ.get("BP_PURCHASE_CHANNEL_ID", "1509754956666634382")
 FREE_EVERY, FREE_MIN_P = 3, 0.65
+LA = ZoneInfo("America/Los_Angeles")   # real PT (DST-aware); free picks are counted per PT game day
 
 
-def free_due(sent, day):
+def free_day(e):
+    """The PT game day of a pick (first leg's start), which is the day its free pick counts for."""
+    st = (e.get("legs") or [{}])[0].get("start")
+    return datetime.fromisoformat(st.replace("Z", "+00:00")).astimezone(LA).date().isoformat() if st else e["date"]
+
+
+def free_done(sent):
+    """Game days that already have a free pick. Old keys (free:parlay:<posting date>:...) count by posting date."""
+    return {k.split(":")[1] for k in sent if k.startswith("freeday:")} | \
+           {k.split(":")[2] for k in sent if k.startswith("free:parlay:")}
+
+
+def free_due(sent, gday):
     # Ryan 2026-10-23 20:03Z: a free pick EVERY day from Oct 24 until membership grows (rules.json free_every_days)
+    # Ryan 2026-11-02: counted per BETTING day (the day the game is played), not per posting day
     every = load(os.path.join(HERE, "rules.json"), {}).get("free_every_days", FREE_EVERY)
-    last = max((k.split(":")[2] for k in sent if k.startswith("free:parlay:")), default=None)
-    return last is None or (datetime.fromisoformat(day) - datetime.fromisoformat(last)).days >= every
+    done = free_done(sent)
+    if gday in done:
+        return False
+    last = max((d for d in done if d < gday), default=None)
+    return last is None or (datetime.fromisoformat(gday) - datetime.fromisoformat(last)).days >= every
 
 
 def free_ok(e):
@@ -236,35 +254,46 @@ FREE_FILE = os.path.join(HERE, "free_pick_today.json")   # BetterBot pushes it t
 
 def free_record(e, **extra):
     l = e["legs"][0]
-    start = datetime.fromisoformat(l["start"].replace("Z", "+00:00")).astimezone(timezone(timedelta(hours=-7)))
+    start = datetime.fromisoformat(l["start"].replace("Z", "+00:00")).astimezone(LA)
     return {"date": e["date"], "key": key_parlay(e), "player": l.get("player"), "pick": leg_label(l).split(" on ", 1)[-1],
             "side": "YES" if l.get("side") == "over" else "NO", "sport": l.get("league"), "game": l.get("game"),
             "start_pt": start.strftime("%-I:%M %p PT"), "win_chance": l.get("p"), "edge": l.get("edge"), **extra}
 
 
 def free_pick(book, sent, day, dry):
-    """Copy today's first qualifying lock that already went to PICKS (and hasn't started) to the free channel."""
-    pt = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=-7)))
+    """Copy one qualifying lock that already went to PICKS (and hasn't started) to the free channel, once per GAME day.
+    Ryan 2026-11-02: "a post for each betting day ... preferably on November 2nd in the morning. If you find it early,
+    like the night before, you can choose one of those to be the free pick for November 2nd." So today's game day
+    goes out as soon as a lock qualifies; tomorrow's may go out the night before (from 6pm PT) using a lock already in PICKS."""
+    pt = datetime.now(LA)
+    today_pt = pt.date().isoformat()
+    tomorrow_pt = (pt + timedelta(days=1)).date().isoformat()
+    targets = [today_pt] + ([tomorrow_pt] if pt.hour >= 18 else [])
     cur = load(FREE_FILE, {})
-    if not dry and cur.get("date") != day and (pt.hour, pt.minute) >= (8, 15) and free_due(sent, day):
-        json.dump({"date": day, "none": True}, open(FREE_FILE, "w"), indent=1)   # nothing qualified by 8:15am PT
-    if not free_due(sent, day):
-        return
+    if not dry and cur.get("date") != today_pt and (pt.hour, pt.minute) >= (8, 15) and free_due(sent, today_pt):
+        json.dump({"date": today_pt, "none": True}, open(FREE_FILE, "w"), indent=1)   # nothing qualified by 8:15am PT
     now = datetime.now(timezone.utc).isoformat()
     gone = {r["key"] for r in feed_doc().get("retract", [])}
-    for e in book.get("parlays", []):
-        k = key_parlay(e)
-        if (e["date"] != day or k not in sent or k in gone or e.get("status") != "open" or not free_ok(e)
-                or any((l.get("start") or "") <= now for l in e["legs"])):
+    for gday in targets:
+        if not free_due(sent, gday):
             continue
+        cands = [e for e in book.get("parlays", [])
+                 if free_day(e) == gday and key_parlay(e) in sent and key_parlay(e) not in gone
+                 and e.get("status") == "open" and free_ok(e)
+                 and not any((l.get("start") or "") <= now for l in e["legs"])]
+        if not cands:
+            continue
+        e = max(cands, key=lambda x: min(l.get("p") or 0 for l in x["legs"]))   # the surest one is the sales pitch
+        k = key_parlay(e)
         head = f"\U0001F381 **Free BetterPicks lock**\nMembers get every pick like this live. Get VIP in <#{PURCHASE_CH}>."
         if dry:
-            print("FREE:", head, k); return
+            print("FREE:", gday, head, k); return
         send(head, [embed_parlay(e)], channel=FREE_CH)
-        sent.add(f"free:{k}")
-        json.dump(free_record(e, posted_at=datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")), open(FREE_FILE, "w"), indent=1)
+        sent.add(f"free:{k}"); sent.add(f"freeday:{gday}")
+        json.dump(free_record(e, game_day=gday, posted_at=datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")),
+                  open(FREE_FILE, "w"), indent=1)
         json.dump(sorted(sent), open(SENT, "w"), indent=1)
-        print("posted free pick", k)
+        print("posted free pick", gday, k)
         return
 
 
