@@ -1,1 +1,12 @@
-{"date": "2026-11-02", "skip": {}, "blocks": [[590, 615, "ISM manufacturing 10:00 ET"]], "notes": "QQQ pre-market ~696.1 (+0.8% vs Fri close 690.49); NQ +0.8%. Relief bounce after Friday -3.5% (range 2.2%, so the options play should range-skip). ISM manufacturing 10:00 ET. AAPL and PLTR report after close. Midterms Tue."}
+{
+ "date": "2026-11-03",
+ "skip": {},
+ "blocks": [
+  [
+   590,
+   615,
+   "JOLTS Sep 10:00 ET (factory orders possibly same time)"
+  ]
+ ],
+ "notes": "Election Day (midterms). Options play expected to skip by prior-range rule (Mon 2.75%). AAPL ~-2.5% pre-market after margin warning; NVDA tightening China access for cloud partners. QQQ ~682 pre-market (+0.1%). AMD after close, SHOP before open."
+}
