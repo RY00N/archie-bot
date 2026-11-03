@@ -38,8 +38,18 @@ def load(path, default):
         return default
 
 
+def load_book():
+    # Never start a fresh book over an existing one: a half-written read made grade() save an empty book (Nov 3)
+    if os.path.exists(BOOK):
+        b = json.load(open(BOOK))
+        if "parlays" not in b:
+            raise SystemExit("book.json has no parlays; refusing to touch it")
+        return b
+    return new_book()
+
+
 def save(path, data):
-    tmp = path + ".tmp"
+    tmp = f"{path}.{os.getpid()}.tmp"
     json.dump(data, open(tmp, "w"), indent=1)
     os.replace(tmp, path)
 
@@ -136,7 +146,7 @@ def pick(reason_overrides=None):
     # sports lines. ESPN's win model is no longer used to pick (it went 3-6-1). ESPN is only used for
     # the schedule (game ids) and final scores.
     r = rules()
-    book = load(BOOK, None) or new_book()
+    book = load_book()
     games = load(SLATE, {}).get("games") or slate()
     lines = load(LINES, {}).get("games", [])
     today = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=-7))).date().isoformat()
@@ -188,7 +198,7 @@ def pick(reason_overrides=None):
 
 
 def grade():
-    book = load(BOOK, None) or new_book()
+    book = load_book()
     changed = 0
     for p in book["picks"]:
         if p["status"] != "open":
@@ -270,7 +280,7 @@ def apps_view(book):
 
 
 def report():
-    book = load(BOOK, None) or new_book()
+    book = load_book()
     ps = book["picks"]
     done = [p for p in ps if p["status"] in ("won", "lost", "push")]
     w = sum(p["status"] == "won" for p in done); l = sum(p["status"] == "lost" for p in done)

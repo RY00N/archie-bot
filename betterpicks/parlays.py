@@ -57,8 +57,9 @@ def load(path, default):
 
 
 def save(path, data):
-    json.dump(data, open(path + ".tmp", "w"), indent=1)
-    os.replace(path + ".tmp", path)
+    tmp = f"{path}.{os.getpid()}.tmp"   # one tmp per process: a shared .tmp let two writers collide and wipe the book (Nov 3)
+    json.dump(data, open(tmp, "w"), indent=1)
+    os.replace(tmp, path)
 
 
 def prob(o):

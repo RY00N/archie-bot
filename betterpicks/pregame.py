@@ -165,7 +165,9 @@ def main(dry=False):
     except Exception:
         pass
     if changed:
-        json.dump(book, open(BOOK, "w"), indent=1)
+        tmp = f"{BOOK}.{os.getpid()}.tmp"
+        json.dump(book, open(tmp, "w"), indent=1)
+        os.replace(tmp, BOOK)
 
 
 if __name__ == "__main__":

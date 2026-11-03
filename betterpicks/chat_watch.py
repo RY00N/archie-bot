@@ -45,8 +45,9 @@ def load(p, d):
 
 
 def save(p, o):
-    json.dump(o, open(p + ".tmp", "w"), indent=1)
-    os.replace(p + ".tmp", p)
+    tmp = f"{p}.{os.getpid()}.tmp"
+    json.dump(o, open(tmp, "w"), indent=1)
+    os.replace(tmp, p)
 
 
 def check():
