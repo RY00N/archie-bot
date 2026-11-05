@@ -3194,25 +3194,25 @@
    "secs": 0.0
   },
   "props_at": "2026-11-05 11:00 PT",
-  "props_today": 420,
-  "kalshi_props_today": 170,
+  "props_today": 423,
+  "kalshi_props_today": 175,
   "kalshi_priced_today": 16,
   "books_on_kalshi_props": {
-   "AN Consensus": 168,
-   "AN Open": 168,
+   "AN Consensus": 173,
+   "AN Open": 173,
    "BetMGM": 126,
    "BetRivers": 134,
    "Caesars": 151,
-   "DraftKings": 164,
-   "FanDuel": 158,
+   "DraftKings": 169,
+   "FanDuel": 159,
    "Fanatics": 124,
    "Hard Rock Bet": 23,
    "Parx": 149,
    "Pinnacle": 139,
-   "Sleeper": 169,
-   "Underdog": 170,
+   "Sleeper": 174,
+   "Underdog": 175,
    "Unibet": 22,
-   "bet365": 167
+   "bet365": 172
   },
   "data_files": [
    "mlb.sqlite",
@@ -92243,8 +92243,8 @@
    "line": 1.5,
    "start": "2026-11-06T03:00:00Z",
    "p": 0.456,
-   "price": 0.51,
-   "edge": -0.071,
+   "price": 0.5,
+   "edge": -0.061,
    "news": "News: Davion Mitchell 'Not Surprised' About the Miami Heat's Defensive Struggles - roundtable.io GSW has allowed starting guards 3% fewer threes than average (likely on him: Brandin Podziemski, Will Richard).",
    "result": null
   },
@@ -92332,10 +92332,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.502,
+   "p": 0.552,
    "price": 0.53,
-   "edge": -0.045,
-   "news": "News: Anthony Black (right ankle injury management) will be \u2026 - HoopsHype Jalen Suggs is out: Anthony Black hit the over in 16/26 games without him vs 7/14 with him; PHX has allowed starting guards 8% more threes than average (likely on him: Devin Booker, Jalen Green); Ryan Dunn can switch onto him (PHX allowed guards 12% fewer threes with him playing; he plays tonight); Jamaree Bouyea can switch onto him (PHX allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "edge": 0.005,
+   "news": "Jalen Suggs is out: Anthony Black hit the over in 16/26 games without him vs 7/14 with him; PHX has allowed starting guards 8% more threes than average (likely on him: Devin Booker, Jalen Green); Ryan Dunn can switch onto him (PHX allowed guards 12% fewer threes with him playing; he plays tonight); Jamaree Bouyea can switch onto him (PHX allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -92350,7 +92350,7 @@
    "p": 0.448,
    "price": 0.49,
    "edge": -0.059,
-   "news": "News: Anthony Black (right ankle injury management) will be \u2026 - HoopsHype Jalen Suggs is out: Anthony Black hit the under in 10/26 games without him vs 7/14 with him; PHX has allowed starting guards 8% more threes than average (likely on him: Devin Booker, Jalen Green); Ryan Dunn can switch onto him (PHX allowed guards 12% fewer threes with him playing; he plays tonight); Jamaree Bouyea can switch onto him (PHX allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "news": "Jalen Suggs is out: Anthony Black hit the under in 10/26 games without him vs 7/14 with him; PHX has allowed starting guards 8% more threes than average (likely on him: Devin Booker, Jalen Green); Ryan Dunn can switch onto him (PHX allowed guards 12% fewer threes with him playing; he plays tonight); Jamaree Bouyea can switch onto him (PHX allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -93008,8 +93008,8 @@
    "line": 34.5,
    "start": "2026-11-06T03:00:00Z",
    "p": 0.529,
-   "price": 0.49,
-   "edge": 0.022,
+   "price": 0.5,
+   "edge": 0.012,
    "news": "GSW has allowed starting centers 5% fewer pra than average (likely on him: Charles Bassey); Yaxel Lendeborg can switch onto him (GSW allowed centers 12% fewer pra with him playing; he plays tonight); Georges Niang can switch onto him (GSW allowed centers 12% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -93022,10 +93022,10 @@
    "side": "over",
    "line": 24.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.545,
+   "p": 0.595,
    "price": 0.51,
-   "edge": 0.018,
-   "news": "News: Anthony Black (right ankle injury management) will be \u2026 - HoopsHype Jalen Suggs is out: Anthony Black hit the over in 17/26 games without him vs 6/14 with him; PHX has allowed starting guards 6% more pra than average (likely on him: Devin Booker, Jalen Green); Jamaree Bouyea can switch onto him (PHX allowed guards 9% fewer pra with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 9% fewer pra with him playing; he plays tonight); minutes trending up (we project 27, his last 5 avg 29 vs 25 over 15).",
+   "edge": 0.068,
+   "news": "Jalen Suggs is out: Anthony Black hit the over in 17/26 games without him vs 6/14 with him; PHX has allowed starting guards 6% more pra than average (likely on him: Devin Booker, Jalen Green); Jamaree Bouyea can switch onto him (PHX allowed guards 9% fewer pra with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 9% fewer pra with him playing; he plays tonight); minutes trending up (we project 27, his last 5 avg 29 vs 25 over 15).",
    "result": null
   },
   {
@@ -93040,7 +93040,7 @@
    "p": 0.405,
    "price": 0.51,
    "edge": -0.122,
-   "news": "News: Anthony Black (right ankle injury management) will be \u2026 - HoopsHype Jalen Suggs is out: Anthony Black hit the under in 9/26 games without him vs 8/14 with him; PHX has allowed starting guards 6% more pra than average (likely on him: Devin Booker, Jalen Green); Jamaree Bouyea can switch onto him (PHX allowed guards 9% fewer pra with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 9% fewer pra with him playing; he plays tonight); minutes trending up (we project 27, his last 5 avg 29 vs 25 over 15).",
+   "news": "Jalen Suggs is out: Anthony Black hit the under in 9/26 games without him vs 8/14 with him; PHX has allowed starting guards 6% more pra than average (likely on him: Devin Booker, Jalen Green); Jamaree Bouyea can switch onto him (PHX allowed guards 9% fewer pra with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 9% fewer pra with him playing; he plays tonight); minutes trending up (we project 27, his last 5 avg 29 vs 25 over 15).",
    "result": null
   },
   {
@@ -93202,10 +93202,10 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.539,
+   "p": 0.589,
    "price": 0.54,
-   "edge": -0.018,
-   "news": "News: Anthony Black (right ankle injury management) will be \u2026 - HoopsHype Jalen Suggs is out: Anthony Black hit the over in 17/26 games without him vs 7/14 with him; PHX has allowed starting guards 10% more points than average (likely on him: Devin Booker, Jalen Green); Jamaree Bouyea can switch onto him (PHX allowed guards 12% fewer points with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer points with him playing; he plays tonight); minutes trending up (we project 27, his last 5 avg 29 vs 25 over 15).",
+   "edge": 0.032,
+   "news": "Jalen Suggs is out: Anthony Black hit the over in 17/26 games without him vs 7/14 with him; PHX has allowed starting guards 10% more points than average (likely on him: Devin Booker, Jalen Green); Jamaree Bouyea can switch onto him (PHX allowed guards 12% fewer points with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer points with him playing; he plays tonight); minutes trending up (we project 27, his last 5 avg 29 vs 25 over 15).",
    "result": null
   },
   {
@@ -93220,7 +93220,7 @@
    "p": 0.411,
    "price": 0.47,
    "edge": -0.076,
-   "news": "News: Anthony Black (right ankle injury management) will be \u2026 - HoopsHype Jalen Suggs is out: Anthony Black hit the under in 9/26 games without him vs 7/14 with him; PHX has allowed starting guards 10% more points than average (likely on him: Devin Booker, Jalen Green); Jamaree Bouyea can switch onto him (PHX allowed guards 12% fewer points with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer points with him playing; he plays tonight); minutes trending up (we project 27, his last 5 avg 29 vs 25 over 15).",
+   "news": "Jalen Suggs is out: Anthony Black hit the under in 9/26 games without him vs 7/14 with him; PHX has allowed starting guards 10% more points than average (likely on him: Devin Booker, Jalen Green); Jamaree Bouyea can switch onto him (PHX allowed guards 12% fewer points with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer points with him playing; he plays tonight); minutes trending up (we project 27, his last 5 avg 29 vs 25 over 15).",
    "result": null
   },
   {
@@ -93578,8 +93578,8 @@
    "line": 11.5,
    "start": "2026-11-06T03:00:00Z",
    "p": 0.492,
-   "price": 0.6,
-   "edge": -0.125,
+   "price": 0.61,
+   "edge": -0.135,
    "news": "News: Is Giannis Antetokounmpo Playing Tonight? (Injury Update Betting Impact for Heat vs. Warriors) - Sports Illustrated GSW has allowed starting forwards 5% more rebounds than average (likely on him: Yaxel Lendeborg, Draymond Green); Gary Payton II can switch onto him (GSW allowed forwards 10% fewer rebounds with him playing; he plays tonight); Gui Santos can switch onto him (GSW allowed forwards 10% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -93638,8 +93638,8 @@
    "line": 5.5,
    "start": "2026-11-06T02:00:00Z",
    "p": 0.424,
-   "price": 0.59,
-   "edge": -0.183,
+   "price": 0.58,
+   "edge": -0.173,
    "news": "News: Franz Wagner shows why Magic have bright future despite injuries - DAZN Jonathan Isaac is out: Franz Wagner hit the over in 15/28 games without him vs 7/12 with him; Paolo Banchero is out: Franz Wagner hit the over in 10/17 games without him vs 12/23 with him; Noah Penda is out: Franz Wagner hit the over in 16/29 games without him vs 4/6 with him; PHX has allowed starting forwards 8% fewer rebounds than average (likely on him: Miles Bridges, Dillon Brooks); Jamaree Bouyea can switch onto him (PHX allowed forwards 14% fewer rebounds with him playing; he plays tonight); Khaman Maluach can switch onto him (PHX allowed forwards 8% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -93862,10 +93862,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.29,
+   "p": 0.34,
    "price": 0.4,
-   "edge": -0.127,
-   "news": "News: Anthony Black (right ankle injury management) will be \u2026 - HoopsHype Jalen Suggs is out: Anthony Black hit the over in 10/26 games without him vs 8/14 with him; PHX has allowed starting guards 2% more steals than average (likely on him: Devin Booker, Jalen Green); Rasheer Fleming can switch onto him (PHX allowed guards 17% fewer steals with him playing; he plays tonight).",
+   "edge": -0.077,
+   "news": "Jalen Suggs is out: Anthony Black hit the over in 10/26 games without him vs 8/14 with him; PHX has allowed starting guards 2% more steals than average (likely on him: Devin Booker, Jalen Green); Rasheer Fleming can switch onto him (PHX allowed guards 17% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -93880,7 +93880,7 @@
    "p": 0.66,
    "price": 0.62,
    "edge": 0.024,
-   "news": "News: Anthony Black (right ankle injury management) will be \u2026 - HoopsHype Jalen Suggs is out: Anthony Black hit the under in 16/26 games without him vs 6/14 with him; PHX has allowed starting guards 2% more steals than average (likely on him: Devin Booker, Jalen Green); Rasheer Fleming can switch onto him (PHX allowed guards 17% fewer steals with him playing; he plays tonight).",
+   "news": "Jalen Suggs is out: Anthony Black hit the under in 16/26 games without him vs 6/14 with him; PHX has allowed starting guards 2% more steals than average (likely on him: Devin Booker, Jalen Green); Rasheer Fleming can switch onto him (PHX allowed guards 17% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -93983,8 +93983,8 @@
    "line": 19.5,
    "start": "2026-11-06T01:15:00Z",
    "p": 0.502,
-   "price": 0.46,
-   "edge": 0.025,
+   "price": 0.45,
+   "edge": 0.035,
    "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
@@ -93998,8 +93998,8 @@
    "line": 19.5,
    "start": "2026-11-06T01:15:00Z",
    "p": 0.488,
-   "price": 0.55,
-   "edge": -0.079,
+   "price": 0.56,
+   "edge": -0.089,
    "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
