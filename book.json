@@ -3113,7 +3113,7 @@
    "Sleeper": 83,
    "Underdog": 83,
    "Unibet": 7,
-   "bet365": 80
+   "bet365": 82
   },
   "data_files": [
    "mlb.sqlite",
@@ -91873,9 +91873,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.578,
+   "p": 0.577,
    "price": 0.41,
-   "edge": 0.151,
+   "edge": 0.15,
    "news": "Moses Moody is out: Brandin Podziemski hit the over in 16/30 games without him vs 2/10 with him; MIA has allowed starting guards 23% more threes than average (likely on him: Davion Mitchell, Klay Thompson).",
    "result": null
   },
@@ -91888,9 +91888,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.422,
+   "p": 0.423,
    "price": 0.63,
-   "edge": -0.224,
+   "edge": -0.223,
    "news": "Moses Moody is out: Brandin Podziemski hit the under in 14/30 games without him vs 8/10 with him; MIA has allowed starting guards 23% more threes than average (likely on him: Davion Mitchell, Klay Thompson).",
    "result": null
   },
