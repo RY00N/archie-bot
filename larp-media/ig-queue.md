@@ -95,7 +95,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | n16-car-meet.mp4 | pulled up off Kalshi #ferrari #bmwm4 #carmeet #nightlife #latenight | POSTED 11/5 11:40am PST trial https://www.instagram.com/reel/DfXzQQuiiUI/ |
 | hourly | n19-sushi.mp4 | sushi on Kalshi tonight #sushi #omakase #nightlife #luxurylifestyle #latenight | POSTED 11/5 12:40pm PST trial https://www.instagram.com/reel/DfX6HKhjewO/ |
 | hourly | n20-vegas.mp4 | Vegas off Kalshi #vegas #lasvegas #nightlife #luxurylifestyle #latenight | POSTED 11/5 2:24pm PST REGULAR (no trial: default IG conn changed) https://www.instagram.com/reel/DfYGO_Vj3TK/ |
-| hourly | n21-collection.mp4 | the Kalshi collection #classiccars #carcollection #garage #carsofinstagram #latenight | queued (v10 one-take, sem_ DeK7wpXxmtl sound) |
+| hourly | n21-collection.mp4 | the Kalshi collection #classiccars #carcollection #garage #carsofinstagram #latenight | POSTED 11/5 2:38pm PST trial https://www.instagram.com/reel/DfYHzcwD1yD/ |
 | hourly | n22-amg.mp4 | AMG on Kalshi money #amg #mercedesamg #amggt #carsofinstagram #latenight | queued (v10 one-take, crossroad De5xhogDaBk sound) |
 | hourly | n23-ferrari-night.mp4 | where the Kalshi money goes #ferrari #carspotting #nightlife #luxurylifestyle #latenight | queued (v10 one-take, usdt DePici8v9Qt sound) |
 | hourly | n24-1am-run.mp4 | 1am Kalshi run #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | queued (v10 one-take, sem_ DfBtdxhRAJH sound) |
