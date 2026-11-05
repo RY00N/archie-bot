@@ -84,9 +84,15 @@ def signal(bot, c, today, now_m):
         # 10/18: read the 9:30-9:34 bars directly so a late 9:34 bar on IEX retries at 9:36 instead of missing the day
         c5 = f5[-1][5]
         _last["skip_why"] = None  # 10/23 Ryan: with skip_trade_mult set, skip days trade small instead of sitting out
+        _last["fade"] = False; _last["spy_agree"] = None
         small = c.get("skip_trade_mult")
         pd = [b for b in prev if b[0] == prev[-1][0]] if prev else []
-        if pd and (max(b[3] for b in pd) - min(b[4] for b in pd)) / pd[-1][5] * 100 > c.get("max_prev_range_pct", 99):  # high - low (10/18 fix: was low - close)
+        rng = (max(b[3] for b in pd) - min(b[4] for b in pd)) / pd[-1][5] * 100 if pd else 0
+        if pd and rng > c.get("max_prev_range_pct", 99):  # high - low (10/18 fix: was low - close)
+            fz = c.get("fade_range")  # 11/05 Ryan "no skipping trading days": wide-range days fade the first 5 min instead
+            if fz and fz["min"] < rng <= fz["max"]:
+                _last["fade"] = True; side = -1 if c5 > day[0][2] else 1
+                return side, f"fade on a wide-range day (yesterday {rng:.1f}%)", c5, 574
             if not small:
                 return "skip", "yesterday's range too wide", c5, 574  # 10/17: wild prior days lost in 2024-25 and 2026
             _last["skip_why"] = "yesterday's range too wide"
@@ -255,7 +261,7 @@ def step(bot, log):
     if not osym:
         log(f"OPT {why}: no contract found"); save(st); return
     bid, ask = _quote(bot, osym)
-    if not _shares(c) and ask > 0 and (bid + ask) / 2 / px * 100 > c.get("max_opt_pct", 99):  # option too expensive = market too jumpy
+    if not _shares(c) and not _last.get("fade") and ask > 0 and (bid + ask) / 2 / px * 100 > c.get("max_opt_pct", 99):  # option too expensive = market too jumpy
         if not c.get("skip_trade_mult"):
             st["done"], st["why_done"] = True, f"skipped: option too expensive ({(bid + ask) / 2:.2f})"
             log(f"OPT {st['why_done']}"); save(st); return
@@ -273,6 +279,8 @@ def step(bot, log):
     elif c.get("book_frac") and ask > 0:  # 10/23 Ryan "$1000 to $4000 in 3 months": a set share of the book per trade, compounding, 1 contract minimum
         cash = c["budget_start"] + st.get("realized", 0)
         frac = c.get("disagree_frac", c["book_frac"]) if agree is False else c["book_frac"]  # 10/23: half size when SPY disagrees
+        if _last.get("fade"):
+            frac = c["fade_range"]["frac"]
         qty = int(cash * frac // (ask * 100))
         if qty < 1 and cash >= ask * 100:
             qty = 1
