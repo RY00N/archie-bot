@@ -3139,8 +3139,8 @@
    "Caesars": 117,
    "DraftKings": 121,
    "FanDuel": 120,
-   "Fanatics": 79,
-   "Hard Rock Bet": 22,
+   "Fanatics": 81,
+   "Hard Rock Bet": 23,
    "Parx": 80,
    "Pinnacle": 74,
    "Sleeper": 128,
@@ -3154,7 +3154,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 27
+  "kalshi_legs_today": 28
  },
  "shadow": [
   {
@@ -91952,8 +91952,8 @@
    "line": 3.5,
    "start": "2026-11-06T03:00:00Z",
    "p": 0.433,
-   "price": 0.45,
-   "edge": -0.034,
+   "price": 0.42,
+   "edge": -0.004,
    "news": "Moses Moody is out: Stephen Curry hit the under in 8/18 games without him vs 8/22 with him; MIA has allowed starting guards 23% more threes than average (likely on him: Davion Mitchell, Klay Thompson).",
    "result": null
   },
@@ -91966,9 +91966,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.595,
+   "p": 0.596,
    "price": 0.61,
-   "edge": -0.032,
+   "edge": -0.031,
    "news": "News: Why Warriors rookie Yaxel Lendeborg was benched after being 'peer pressured' into chasing 40 against Clippers - CBS Sports Gui Santos is out: Yaxel Lendeborg hit the over in 4/6 games without him vs 2/6 with him; MIA has allowed starting forwards 5% more threes than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 30% fewer threes with him playing; he plays tonight); Dru Smith can switch onto him (MIA allowed forwards 25% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -91981,9 +91981,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.355,
+   "p": 0.354,
    "price": 0.44,
-   "edge": -0.102,
+   "edge": -0.103,
    "news": "News: Why Warriors rookie Yaxel Lendeborg was benched after being 'peer pressured' into chasing 40 against Clippers - CBS Sports Gui Santos is out: Yaxel Lendeborg hit the under in 2/6 games without him vs 4/6 with him; MIA has allowed starting forwards 5% more threes than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 30% fewer threes with him playing; he plays tonight); Dru Smith can switch onto him (MIA allowed forwards 25% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -92116,9 +92116,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.487,
+   "p": 0.488,
    "price": 0.47,
-   "edge": -0.0,
+   "edge": 0.001,
    "news": "News: Tristan da Silva struggles from three in loss - FantasyPros Jonathan Isaac is out: Tristan da Silva hit the over in 8/31 games without him vs 2/9 with him; Paolo Banchero is out: Tristan da Silva hit the over in 4/6 games without him vs 6/34 with him; PHX has allowed bench forwards 31% fewer threes than average (likely on him: Oso Ighodaro, Ryan Dunn); Ryan Dunn can switch onto him (PHX allowed forwards 17% fewer threes with him playing; he plays tonight); Rasheer Fleming can switch onto him (PHX allowed forwards 13% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -92131,9 +92131,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.463,
+   "p": 0.462,
    "price": 0.56,
-   "edge": -0.114,
+   "edge": -0.115,
    "news": "News: Tristan da Silva struggles from three in loss - FantasyPros Jonathan Isaac is out: Tristan da Silva hit the under in 23/31 games without him vs 7/9 with him; Paolo Banchero is out: Tristan da Silva hit the under in 2/6 games without him vs 28/34 with him; PHX has allowed bench forwards 31% fewer threes than average (likely on him: Oso Ighodaro, Ryan Dunn); Ryan Dunn can switch onto him (PHX allowed forwards 17% fewer threes with him playing; he plays tonight); Rasheer Fleming can switch onto him (PHX allowed forwards 13% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -92146,9 +92146,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.518,
+   "p": 0.516,
    "price": 0.55,
-   "edge": -0.049,
+   "edge": -0.051,
    "news": "News: Suns\u2019 Devin Booker exits Blazers game with injury scare - Yahoo Sports Jordan Goodwin is out: Devin Booker hit the over in 13/20 games without him vs 10/20 with him; ORL has allowed starting guards 15% more threes than average (likely on him: Desmond Bane, Anthony Black); Jase Richardson can switch onto him (ORL allowed guards 18% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -92161,9 +92161,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.432,
+   "p": 0.433,
    "price": 0.5,
-   "edge": -0.086,
+   "edge": -0.085,
    "news": "News: Suns\u2019 Devin Booker exits Blazers game with injury scare - Yahoo Sports Jordan Goodwin is out: Devin Booker hit the under in 7/20 games without him vs 10/20 with him; ORL has allowed starting guards 15% more threes than average (likely on him: Desmond Bane, Anthony Black); Jase Richardson can switch onto him (ORL allowed guards 18% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -92206,9 +92206,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.516,
+   "p": 0.517,
    "price": 0.53,
-   "edge": -0.031,
+   "edge": -0.03,
    "news": "Jordan Goodwin is out: Jalen Green hit the over in 13/22 games without him vs 10/15 with him; ORL has allowed starting guards 15% more threes than average (likely on him: Desmond Bane, Anthony Black); Jase Richardson can switch onto him (ORL allowed guards 18% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -92221,9 +92221,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.484,
+   "p": 0.483,
    "price": 0.48,
-   "edge": -0.013,
+   "edge": -0.014,
    "news": "Jordan Goodwin is out: Jalen Green hit the under in 9/22 games without him vs 5/15 with him; ORL has allowed starting guards 15% more threes than average (likely on him: Desmond Bane, Anthony Black); Jase Richardson can switch onto him (ORL allowed guards 18% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -92296,9 +92296,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.479,
+   "p": 0.481,
    "price": 0.57,
-   "edge": -0.108,
+   "edge": -0.106,
    "news": "News: Why Warriors rookie Yaxel Lendeborg was benched after being 'peer pressured' into chasing 40 against Clippers - CBS Sports MIA has allowed starting forwards 4% more assists than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Myron Gardner can switch onto him (MIA allowed forwards 15% fewer assists with him playing; he plays tonight); Simone Fontecchio can switch onto him (MIA allowed forwards 11% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -92311,9 +92311,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.471,
+   "p": 0.469,
    "price": 0.5,
-   "edge": -0.047,
+   "edge": -0.049,
    "news": "News: Why Warriors rookie Yaxel Lendeborg was benched after being 'peer pressured' into chasing 40 against Clippers - CBS Sports MIA has allowed starting forwards 4% more assists than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Myron Gardner can switch onto him (MIA allowed forwards 15% fewer assists with him playing; he plays tonight); Simone Fontecchio can switch onto him (MIA allowed forwards 11% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -92327,8 +92327,8 @@
    "line": 3.5,
    "start": "2026-11-06T03:00:00Z",
    "p": 0.525,
-   "price": 0.58,
-   "edge": -0.072,
+   "price": 0.59,
+   "edge": -0.082,
    "news": "GSW has allowed starting centers 2% more assists than average (likely on him: Charles Bassey); Malevy Leons can switch onto him (GSW allowed centers 28% fewer assists with him playing; he plays tonight); Charles Bassey can switch onto him (GSW allowed centers 18% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -92342,8 +92342,8 @@
    "line": 3.5,
    "start": "2026-11-06T03:00:00Z",
    "p": 0.475,
-   "price": 0.49,
-   "edge": -0.032,
+   "price": 0.45,
+   "edge": 0.008,
    "news": "GSW has allowed starting centers 2% more assists than average (likely on him: Charles Bassey); Malevy Leons can switch onto him (GSW allowed centers 28% fewer assists with him playing; he plays tonight); Charles Bassey can switch onto him (GSW allowed centers 18% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -92386,9 +92386,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.39,
+   "p": 0.392,
    "price": 0.49,
-   "edge": -0.117,
+   "edge": -0.115,
    "news": "Jalen Suggs is out: Desmond Bane hit the over in 4/8 games without him vs 15/32 with him; PHX has allowed starting guards 8% fewer assists than average (likely on him: Devin Booker, Jalen Green).",
    "result": null
   },
@@ -92401,10 +92401,40 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-06T02:00:00Z",
-   "p": 0.61,
+   "p": 0.608,
    "price": 0.53,
-   "edge": 0.063,
+   "edge": 0.061,
    "news": "Jalen Suggs is out: Desmond Bane hit the under in 4/8 games without him vs 17/32 with him; PHX has allowed starting guards 8% fewer assists than average (likely on him: Devin Booker, Jalen Green).",
+   "result": null
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "KXNBAAST-26NOV05ORLPHX-PHXJGREEN4-4",
+   "league": "nba",
+   "player": "Jalen Green",
+   "stat": "assists",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-11-06T02:00:00Z",
+   "p": 0.393,
+   "price": 0.43,
+   "edge": -0.054,
+   "news": "Jordan Goodwin is out: Jalen Green hit the over in 9/22 games without him vs 7/15 with him; ORL has allowed starting guards 6% fewer assists than average (likely on him: Desmond Bane, Anthony Black); Noah Penda can switch onto him (ORL allowed guards 10% fewer assists with him playing; he is out tonight); Jalen Suggs can switch onto him (ORL allowed guards 10% fewer assists with him playing; he is out tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-05",
+   "ticker": "KXNBAAST-26NOV05ORLPHX-PHXJGREEN4-4",
+   "league": "nba",
+   "player": "Jalen Green",
+   "stat": "assists",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-11-06T02:00:00Z",
+   "p": 0.607,
+   "price": 0.63,
+   "edge": -0.039,
+   "news": "Jordan Goodwin is out: Jalen Green hit the under in 13/22 games without him vs 8/15 with him; ORL has allowed starting guards 6% fewer assists than average (likely on him: Desmond Bane, Anthony Black); Noah Penda can switch onto him (ORL allowed guards 10% fewer assists with him playing; he is out tonight); Jalen Suggs can switch onto him (ORL allowed guards 10% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -92476,9 +92506,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.414,
-   "price": 0.51,
-   "edge": -0.113,
+   "p": 0.416,
+   "price": 0.5,
+   "edge": -0.102,
    "news": "News: Is Giannis Antetokounmpo playing tonight? Heat vs. Clippers injury report - Yahoo Sports GSW has allowed starting forwards 1% fewer points than average (likely on him: Yaxel Lendeborg, Draymond Green); Stephen Curry can switch onto him (GSW allowed forwards 11% fewer points with him playing; he plays tonight); Al Horford can switch onto him (GSW allowed forwards 10% fewer points with him playing; he plays tonight); those defenders hold shooters 4.8% below their normal FG%, among the league's stingiest; minutes trending up (we project 31, his last 5 avg 32 vs 30 over 15).",
    "result": null
   },
@@ -92491,9 +92521,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.536,
-   "price": 0.52,
-   "edge": -0.001,
+   "p": 0.534,
+   "price": 0.51,
+   "edge": 0.007,
    "news": "News: Is Giannis Antetokounmpo playing tonight? Heat vs. Clippers injury report - Yahoo Sports GSW has allowed starting forwards 1% fewer points than average (likely on him: Yaxel Lendeborg, Draymond Green); Stephen Curry can switch onto him (GSW allowed forwards 11% fewer points with him playing; he plays tonight); Al Horford can switch onto him (GSW allowed forwards 10% fewer points with him playing; he plays tonight); those defenders hold shooters 4.8% below their normal FG%, among the league's stingiest; minutes trending up (we project 31, his last 5 avg 32 vs 30 over 15).",
    "result": null
   },
@@ -92642,8 +92672,8 @@
    "line": 5.5,
    "start": "2026-11-06T03:00:00Z",
    "p": 0.545,
-   "price": 0.59,
-   "edge": -0.062,
+   "price": 0.61,
+   "edge": -0.082,
    "news": "News: Warriors' Draymond Green Reportedly Won't Be Suspended by NBA After Fight With Suns' Dillon Brooks - Bleacher Report MIA has allowed starting forwards 9% more rebounds than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -92686,9 +92716,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.531,
+   "p": 0.532,
    "price": 0.49,
-   "edge": 0.024,
+   "edge": 0.025,
    "news": "Gui Santos is out: Georges Niang hit the over in 2/3 games without him vs 1/6 with him; MIA has allowed bench forwards 4% more rebounds than average (likely on him: Bobby Portis, Nikola Jovic); Simone Fontecchio can switch onto him (MIA allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -92701,9 +92731,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.469,
+   "p": 0.468,
    "price": 0.56,
-   "edge": -0.108,
+   "edge": -0.109,
    "news": "Gui Santos is out: Georges Niang hit the under in 1/3 games without him vs 5/6 with him; MIA has allowed bench forwards 4% more rebounds than average (likely on him: Bobby Portis, Nikola Jovic); Simone Fontecchio can switch onto him (MIA allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -92776,9 +92806,9 @@
    "side": "over",
    "line": 11.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.528,
+   "p": 0.529,
    "price": 0.56,
-   "edge": -0.049,
+   "edge": -0.048,
    "news": "News: Is Giannis Antetokounmpo playing tonight? Heat vs. Clippers injury report - Yahoo Sports GSW has allowed starting forwards 5% more rebounds than average (likely on him: Yaxel Lendeborg, Draymond Green); Gary Payton II can switch onto him (GSW allowed forwards 10% fewer rebounds with him playing; he plays tonight); Gui Santos can switch onto him (GSW allowed forwards 10% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -92791,9 +92821,9 @@
    "side": "under",
    "line": 11.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.422,
+   "p": 0.421,
    "price": 0.49,
-   "edge": -0.085,
+   "edge": -0.086,
    "news": "News: Is Giannis Antetokounmpo playing tonight? Heat vs. Clippers injury report - Yahoo Sports GSW has allowed starting forwards 5% more rebounds than average (likely on him: Yaxel Lendeborg, Draymond Green); Gary Payton II can switch onto him (GSW allowed forwards 10% fewer rebounds with him playing; he plays tonight); Gui Santos can switch onto him (GSW allowed forwards 10% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -92836,9 +92866,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.69,
+   "p": 0.692,
    "price": 0.68,
-   "edge": -0.005,
+   "edge": -0.003,
    "news": "Moses Moody is out: Brandin Podziemski hit the over in 22/30 games without him vs 6/10 with him; MIA has allowed starting guards 8% fewer steals than average (likely on him: Davion Mitchell, Klay Thompson); Pelle Larsson can switch onto him (MIA allowed guards 11% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -92911,10 +92941,10 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-11-06T01:15:00Z",
-   "p": 0.448,
+   "p": 0.498,
    "price": 0.45,
-   "edge": -0.019,
-   "news": "News: Five Jaguars not named Trevor Lawrence who could hurt the Ravens - Ravens Wire BAL's S Jaylinn Hawkins is out, an easier matchup.",
+   "edge": 0.031,
+   "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
   {
@@ -92929,7 +92959,7 @@
    "p": 0.492,
    "price": 0.56,
    "edge": -0.085,
-   "news": "News: Five Jaguars not named Trevor Lawrence who could hurt the Ravens - Ravens Wire BAL's S Jaylinn Hawkins is out, an easier matchup.",
+   "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
   {
@@ -92971,10 +93001,10 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-06T01:15:00Z",
-   "p": 0.459,
+   "p": 0.509,
    "price": 0.47,
-   "edge": -0.028,
-   "news": "News: Five Jaguars not named Trevor Lawrence who could hurt the Ravens - Ravens Wire BAL's S Jaylinn Hawkins is out, an easier matchup.",
+   "edge": 0.022,
+   "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
   {
@@ -92989,7 +93019,7 @@
    "p": 0.481,
    "price": 0.54,
    "edge": -0.076,
-   "news": "News: Five Jaguars not named Trevor Lawrence who could hurt the Ravens - Ravens Wire BAL's S Jaylinn Hawkins is out, an easier matchup.",
+   "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
   {
@@ -93031,10 +93061,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-06T01:15:00Z",
-   "p": 0.566,
+   "p": 0.616,
    "price": 0.56,
-   "edge": -0.011,
-   "news": "News: Five Jaguars not named Trevor Lawrence who could hurt the Ravens - Ravens Wire BAL's S Jaylinn Hawkins is out, an easier matchup.",
+   "edge": 0.039,
+   "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
   {
@@ -93049,7 +93079,7 @@
    "p": 0.374,
    "price": 0.45,
    "edge": -0.093,
-   "news": "News: Five Jaguars not named Trevor Lawrence who could hurt the Ravens - Ravens Wire BAL's S Jaylinn Hawkins is out, an easier matchup.",
+   "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
   {
@@ -93121,10 +93151,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-06T01:15:00Z",
-   "p": 0.464,
+   "p": 0.414,
    "price": 0.51,
-   "edge": -0.063,
-   "news": "JAX's DT DaVon Hamilton is out, an easier matchup.",
+   "edge": -0.113,
+   "news": "News: Source: Baltimore Ravens lose RB Justice Hill to season-ending injury - ABC News - Breaking News, Latest News and Videos JAX's DT DaVon Hamilton is out, an easier matchup.",
    "result": null
   },
   {
@@ -93139,7 +93169,7 @@
    "p": 0.526,
    "price": 0.5,
    "edge": 0.009,
-   "news": "JAX's DT DaVon Hamilton is out, an easier matchup.",
+   "news": "News: Source: Baltimore Ravens lose RB Justice Hill to season-ending injury - ABC News - Breaking News, Latest News and Videos JAX's DT DaVon Hamilton is out, an easier matchup.",
    "result": null
   },
   {
@@ -93481,10 +93511,10 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-11-06T01:15:00Z",
-   "p": 0.468,
+   "p": 0.418,
    "price": 0.51,
-   "edge": -0.059,
-   "news": "JAX's DT DaVon Hamilton is out, an easier matchup.",
+   "edge": -0.109,
+   "news": "News: Source: Baltimore Ravens lose RB Justice Hill to season-ending injury - ABC News - Breaking News, Latest News and Videos JAX's DT DaVon Hamilton is out, an easier matchup.",
    "result": null
   },
   {
@@ -93499,7 +93529,7 @@
    "p": 0.522,
    "price": 0.5,
    "edge": 0.005,
-   "news": "JAX's DT DaVon Hamilton is out, an easier matchup.",
+   "news": "News: Source: Baltimore Ravens lose RB Justice Hill to season-ending injury - ABC News - Breaking News, Latest News and Videos JAX's DT DaVon Hamilton is out, an easier matchup.",
    "result": null
   },
   {
@@ -93691,10 +93721,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-06T01:15:00Z",
-   "p": 0.447,
+   "p": 0.497,
    "price": 0.48,
-   "edge": -0.05,
-   "news": "News: Five Jaguars not named Trevor Lawrence who could hurt the Ravens - Ravens Wire BAL's S Jaylinn Hawkins is out, an easier matchup.",
+   "edge": -0.0,
+   "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
   {
@@ -93709,7 +93739,7 @@
    "p": 0.493,
    "price": 0.55,
    "edge": -0.074,
-   "news": "News: Five Jaguars not named Trevor Lawrence who could hurt the Ravens - Ravens Wire BAL's S Jaylinn Hawkins is out, an easier matchup.",
+   "news": "BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
   {
@@ -93751,10 +93781,10 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-11-06T01:15:00Z",
-   "p": 0.495,
+   "p": 0.445,
    "price": 0.48,
-   "edge": -0.002,
-   "news": "JAX's DT DaVon Hamilton is out, an easier matchup.",
+   "edge": -0.052,
+   "news": "News: Source: Baltimore Ravens lose RB Justice Hill to season-ending injury - ABC News - Breaking News, Latest News and Videos JAX's DT DaVon Hamilton is out, an easier matchup.",
    "result": null
   },
   {
@@ -93769,7 +93799,7 @@
    "p": 0.495,
    "price": 0.53,
    "edge": -0.052,
-   "news": "JAX's DT DaVon Hamilton is out, an easier matchup.",
+   "news": "News: Source: Baltimore Ravens lose RB Justice Hill to season-ending injury - ABC News - Breaking News, Latest News and Videos JAX's DT DaVon Hamilton is out, an easier matchup.",
    "result": null
   }
  ]
