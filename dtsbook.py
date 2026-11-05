@@ -20,7 +20,8 @@ STATE = os.path.join(HERE, "dtsbook-state.json")
 SYM = "QQQ"
 DEFAULTS = {"enabled": True, "budget": 60000, "risk_per_trade": 125, "day_goal": 750, "day_brake": 250,
             "max_trades": 10, "first_min": 575, "last_min": 930, "flat_min": 955, "level_stop": "pct:0.4",
-            "go": ["Leans toward the target", "Strongly toward the target"]}
+            "go": ["Leans toward the target", "Strongly toward the target"],
+            "symbols": ["QQQ"]}  # add "PSQ" (inverse QQQ) to rate down-day breakouts too
 SETUPS = [("orb15", ["--setup", "orb"]), ("orb5", ["--setup", "orb", "--or-minutes", "5"]),
           ("orb30", ["--setup", "orb", "--or-minutes", "30"]), ("pdh", ["--setup", "level"])]
 _last = globals().get("_last") or {"min": None, "paper": None}
@@ -57,9 +58,9 @@ def _wj(path, obj):
     json.dump(obj, open(path, "w"), indent=1)
 
 
-def evaluate(name, args, c, room, cash, placed, today, now_s=None, log=print):
+def evaluate(name, args, c, room, cash, placed, today, now_s=None, log=print, sym=SYM):
     """Runs one setup through the whole pack. Returns (decision dict, bracket order or None)."""
-    d = os.path.join(WORK, name); t = os.path.join(d, "trader"); os.makedirs(os.path.join(t, "state"), exist_ok=True)
+    d = os.path.join(WORK, name if sym == SYM else f"{sym}-{name}"); t = os.path.join(d, "trader"); os.makedirs(os.path.join(t, "state"), exist_ok=True)
     now = ["--now", now_s] if now_s else []
     risk = round(min(c["risk_per_trade"], room), 2)
     _wj(f"{t}/config.json", {"budget": cash, "cash_buffer_pct": 0, "max_position_pct": 100, "max_order_usd": cash,
@@ -69,9 +70,9 @@ def evaluate(name, args, c, room, cash, placed, today, now_s=None, log=print):
                              "no_entries_after": "15:30", "flat_by": "15:55", "fractional": False, "broker": "alpaca",
                              "paper": True, "allow_options": False, "allow_margin": False, "allow_short": False})
     _wj(f"{t}/portfolio.json", {"cash": cash, "positions": []})
-    _wj(f"{t}/state/broker.json", {"orders": [{"status": "placed", "date": today, "symbol": SYM, "side": "buy",
+    _wj(f"{t}/state/broker.json", {"orders": [{"status": "placed", "date": today, "symbol": sym, "side": "buy",
                                                "kind": "entry"} for _ in range(placed)]})
-    rc, out, err = run("trader-entry/entry.py", ["check", SYM] + args + now + ["--write", "trader/entry.json", "--json"], d)
+    rc, out, err = run("trader-entry/entry.py", ["check", sym] + args + now + ["--write", "trader/entry.json", "--json"], d)
     e = json.loads(out)
     if e.get("status") != "triggered":
         return {"setup": name, "step": "entry", "status": e.get("status"), "why": e.get("reason")}, None
@@ -105,15 +106,16 @@ def _alpaca_bracket(o):
             "stop_loss": {"stop_price": str(o["stop_loss_stop_price"])}}
 
 
-def _unreal(bot):
+def _unreal(bot, sym=SYM):
     try:
-        return float(bot.trade("GET", f"/v2/positions/{SYM}").get("unrealized_pl", 0))
+        return float(bot.trade("GET", f"/v2/positions/{sym}").get("unrealized_pl", 0))
     except Exception:
         return 0.0
 
 
 def _flatten(bot, st, why, log):
-    for od in bot.trade("GET", "/v2/orders", {"status": "open", "symbols": SYM}) or []:
+    sym = (st.get("open") or {}).get("sym", SYM)
+    for od in bot.trade("GET", "/v2/orders", {"status": "open", "symbols": sym}) or []:
         try:
             bot.trade("DELETE", f"/v2/orders/{od['id']}")
         except Exception:
@@ -122,7 +124,7 @@ def _flatten(bot, st, why, log):
     if o and o.get("entry"):
         time.sleep(1)
         try:
-            cl = bot.trade("DELETE", f"/v2/positions/{SYM}")
+            cl = bot.trade("DELETE", f"/v2/positions/{sym}")
             o["close_id"] = (cl or {}).get("id")
         except Exception as e:
             log(f"DTSBOOK flatten error: {e}")
@@ -146,7 +148,7 @@ def _manage(bot, st, log):
     if od.get("status") in ("canceled", "expired", "rejected") and not o.get("entry"):
         log(f"DTSBOOK entry {od.get('status')}"); st["open"] = None; return
     if od.get("filled_avg_price") and not o.get("entry"):
-        o["entry"] = float(od["filled_avg_price"]); log(f"DTSBOOK filled {o['qty']} {SYM} @ {o['entry']}")
+        o["entry"] = float(od["filled_avg_price"]); log(f"DTSBOOK filled {o['qty']} {o.get('sym', SYM)} @ {o['entry']}")
     for leg in od.get("legs") or []:
         if leg.get("status") == "filled":
             _book(st, o, float(leg["filled_avg_price"]), "target" if leg.get("type") == "limit" else "stop", log)
@@ -156,7 +158,7 @@ def _manage(bot, st, log):
 def _book(st, o, px, why, log):
     pnl = round((px - o["entry"]) * int(o["qty"]), 2)
     st["day_pnl"] = round(st.get("day_pnl", 0) + pnl, 2); st["realized_total"] = round(st.get("realized_total", 0) + pnl, 2)
-    st["history"].append({**{k: o.get(k) for k in ("setup", "qty", "entry", "stop", "target", "at", "verdict")},
+    st["history"].append({**{k: o.get(k) for k in ("sym", "setup", "qty", "entry", "stop", "target", "at", "verdict")},
                           "exit": px, "why_out": why, "pnl": pnl, "out_at": datetime.now(timezone.utc).astimezone(ET).isoformat()[:16]})
     st["history"] = st["history"][-200:]; st["open"] = None
     log(f"DTSBOOK out ({why}) @ {px}: {pnl:+.2f}, day {st['day_pnl']:+.2f}")
@@ -173,7 +175,7 @@ def tick(bot, log):
     st = load()
     if st.get("date") != today:
         st.update({"date": today, "day_pnl": 0.0, "placed": 0, "done": False, "why_done": "", "setups": {}, "open": None,
-                   "pdh": None, "decisions": []})
+                   "pdh": {}, "decisions": []})
     if _last["paper"] != today:
         if not bot.trade("GET", "/v2/account")["account_number"].startswith("PA"):
             return
@@ -181,7 +183,7 @@ def tick(bot, log):
     _manage(bot, st, log)
     if st.get("open") and st["open"].get("close_id"):
         save(st); return
-    total = st["day_pnl"] + (_unreal(bot) if st.get("open") else 0)
+    total = st["day_pnl"] + (_unreal(bot, st["open"].get("sym", SYM)) if st.get("open") else 0)
     if not st["done"]:
         why = (f"day goal +${c['day_goal']} hit" if total >= c["day_goal"] else
                f"day brake -${c['day_brake']} hit" if total <= -c["day_brake"] else
@@ -196,42 +198,46 @@ def tick(bot, log):
     _last["min"] = m
     if st["placed"] >= c["max_trades"]:
         save(st); return
-    if st.get("pdh") is None:
-        try:
-            b = bot.api("GET", bot.DATA_API, f"/v2/stocks/{SYM}/bars", {"timeframe": "1Day", "limit": 5, "feed": "iex",
-                                                                       "end": now.date().isoformat()})["bars"]
-            st["pdh"] = [x for x in b if x["t"][:10] < today][-1]["h"]
-        except Exception as e:
-            log(f"DTSBOOK prior-day high: {e}")
+    if not isinstance(st.get("pdh"), dict):
+        st["pdh"] = {SYM: st["pdh"]} if st.get("pdh") else {}
+    for sym in c["symbols"]:
+        if st["pdh"].get(sym) is None:
+            try:
+                b = bot.api("GET", bot.DATA_API, f"/v2/stocks/{sym}/bars", {"timeframe": "1Day", "limit": 5, "feed": "iex",
+                                                                           "end": now.date().isoformat()})["bars"]
+                st["pdh"][sym] = [x for x in b if x["t"][:10] < today][-1]["h"]
+            except Exception as e:
+                log(f"DTSBOOK {sym} prior-day high: {e}")
     room = c["day_brake"] + st["day_pnl"]
     try:
         cash = min(c["budget"], float(bot.trade("GET", "/v2/account")["cash"]))
     except Exception:
         cash = c["budget"]
-    for name, args in SETUPS:
-        if st["setups"].get(name):
+    for sym, name, args in [(y, n, a) for y in c["symbols"] for n, a in SETUPS]:
+        key = name if sym == SYM else f"{sym}:{name}"
+        if st["setups"].get(key):
             continue
         if name == "pdh":
-            if not st.get("pdh"):
+            if not st["pdh"].get(sym):
                 continue
-            args = args + ["--level", str(st["pdh"])]
+            args = args + ["--level", str(st["pdh"][sym])]
         try:
-            dec, order = evaluate(name, args, c, room, cash, st["placed"], today, log=log)
+            dec, order = evaluate(name, args, c, room, cash, st["placed"], today, log=log, sym=sym)
         except Exception as e:
-            log(f"DTSBOOK {name} error: {e}"); continue
+            log(f"DTSBOOK {key} error: {e}"); continue
         if dec.get("step") == "entry":
             if dec.get("status") in ("expired", "stale"):
-                st["setups"][name] = dec["status"]
+                st["setups"][key] = dec["status"]
             continue
-        st["setups"][name] = "go" if dec.get("go") else "no"
-        dec["at"] = now.isoformat()[11:16]; st["decisions"].append(dec)
-        log(f"DTSBOOK {name}: {dec.get('verdict', '')[:60]} -> {'TAKE' if dec.get('go') else 'pass'}")
+        st["setups"][key] = "go" if dec.get("go") else "no"
+        dec["setup"] = key; dec["at"] = now.isoformat()[11:16]; st["decisions"].append(dec)
+        log(f"DTSBOOK {key}: {dec.get('verdict', '')[:60]} -> {'TAKE' if dec.get('go') else 'pass'}")
         if dec.get("go") and order:
             od = bot.trade("POST", "/v2/orders", body=_alpaca_bracket(order))
-            st["open"] = {"order_id": od["id"], "setup": name, "qty": order["qty"], "stop": order["stop_loss_stop_price"],
+            st["open"] = {"order_id": od["id"], "sym": sym, "setup": key, "qty": order["qty"], "stop": order["stop_loss_stop_price"],
                           "target": order["take_profit_limit_price"], "at": now.isoformat()[:16], "verdict": dec["verdict"][:80]}
             st["placed"] += 1
-            log(f"DTSBOOK TAKE {name}: buy {order['qty']} {SYM}, stop {order['stop_loss_stop_price']}, target {order['take_profit_limit_price']}")
+            log(f"DTSBOOK TAKE {key}: buy {order['qty']} {sym}, stop {order['stop_loss_stop_price']}, target {order['take_profit_limit_price']}")
             break
     save(st)
 
