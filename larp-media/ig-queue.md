@@ -100,3 +100,5 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | n23-ferrari-night.mp4 | where the Kalshi money goes #ferrari #carspotting #nightlife #luxurylifestyle #latenight | queued (v10 one-take, usdt DePici8v9Qt sound) |
 | hourly | n24-1am-run.mp4 | 1am Kalshi run #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | queued (v10 one-take, sem_ DfBtdxhRAJH sound) |
 | hourly | n25-vette.mp4 | Kalshi vette #corvette #c8 #nightdrive #carsofinstagram #latenight | queued (v10 one-take, sem_ DfOEECYiDSi sound) |
+| hourly | n26-late-dinner.mp4 | late night dinner on Kalshi #finedining #caviar #nightlife #luxurylifestyle #latenight | queued (v10 collage, night drive + caviar, sem_ DfMi8dQNBrY sound) |
+| hourly | n27-ap-m4.mp4 | AP and the M4 off Kalshi #audemarspiguet #royaloak #bmwm4 #watchesofinstagram #luxurylifestyle | queued (v10 collage, AP + M4 interior, DfLdrXDyZXi sound) |
