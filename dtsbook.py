@@ -87,6 +87,10 @@ def evaluate(name, args, c, room, cash, placed, today, now_s=None, log=print, sy
     dec = {"setup": name, "trigger": f"{tr['time']} close {tr['price']}", "verdict": v,
            "odds": {k: tm["mc"].get(k) for k in ("p_target", "p_stop", "p_neither")} if tm.get("mc") else None,
            "history": {k: (tm.get("history") or {}).get(k) for k in ("sessions", "triggered", "target", "stop", "close", "avg_R")}}
+    try:  # the plan's levels, so the nightly grader can check what each rated setup would have done
+        pl = json.load(open(f"{t}/plan.json")); dec["plan"] = {k: pl.get(k) for k in ("entry", "stop", "target", "entry_time")}
+    except Exception:
+        pass
     if not any(v.startswith(g) for g in c["go"]):
         dec.update(step="timemachine", go=False); return dec, None
     run("trader-budget/size.py", now + ["--write"], d)
