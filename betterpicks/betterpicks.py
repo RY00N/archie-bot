@@ -50,7 +50,10 @@ def load_book():
 
 def save(path, data):
     tmp = f"{path}.{os.getpid()}.tmp"
-    json.dump(data, open(tmp, "w"), indent=1)
+    with open(tmp, "w") as f:   # closed + fsynced before the rename (Nov 5 0-byte book)
+        json.dump(data, f, indent=1); f.flush(); os.fsync(f.fileno())
+    if os.path.getsize(tmp) == 0:
+        raise SystemExit(f"refusing to save an empty {path}")
     os.replace(tmp, path)
 
 

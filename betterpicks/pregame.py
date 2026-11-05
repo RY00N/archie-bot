@@ -166,7 +166,10 @@ def main(dry=False):
         pass
     if changed:
         tmp = f"{BOOK}.{os.getpid()}.tmp"
-        json.dump(book, open(tmp, "w"), indent=1)
+        with open(tmp, "w") as f:   # closed + fsynced before the rename (Nov 5 0-byte book)
+            json.dump(book, f, indent=1); f.flush(); os.fsync(f.fileno())
+        if os.path.getsize(tmp) == 0:
+            raise SystemExit("refusing to save an empty book")
         os.replace(tmp, BOOK)
 
 

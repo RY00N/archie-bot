@@ -58,7 +58,10 @@ def load(path, default):
 
 def save(path, data):
     tmp = f"{path}.{os.getpid()}.tmp"   # one tmp per process: a shared .tmp let two writers collide and wipe the book (Nov 3)
-    json.dump(data, open(tmp, "w"), indent=1)
+    with open(tmp, "w") as f:   # closed + fsynced before the rename: an unflushed tmp left book.json 0 bytes (Nov 5)
+        json.dump(data, f, indent=1); f.flush(); os.fsync(f.fileno())
+    if os.path.getsize(tmp) == 0:
+        raise SystemExit(f"refusing to save an empty {path}")
     os.replace(tmp, path)
 
 
