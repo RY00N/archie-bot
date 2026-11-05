@@ -3194,7 +3194,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-05 15:00 PT",
-  "props_today": 458,
+  "props_today": 457,
   "kalshi_props_today": 184,
   "kalshi_priced_today": 18,
   "books_on_kalshi_props": {
@@ -92168,8 +92168,8 @@
    "line": 1.5,
    "start": "2026-11-06T03:00:00Z",
    "p": 0.764,
-   "price": 0.69,
-   "edge": 0.059,
+   "price": 0.7,
+   "edge": 0.049,
    "news": "Moses Moody is out: Will Richard hit the under in 19/20 games without him vs 14/20 with him; MIA has allowed bench guards 22% more threes than average (likely on him: Pelle Larsson, Tim Hardaway Jr.).",
    "result": null
   },
@@ -93502,10 +93502,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-06T03:00:00Z",
-   "p": 0.428,
+   "p": 0.378,
    "price": 0.43,
-   "edge": -0.019,
-   "news": "MIA has allowed starting forwards 9% more rebounds than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.069,
+   "news": "News: Warriors' Draymond Green Reportedly Won't Be Suspended by NBA After Fight With Suns' Dillon Brooks - Bleacher Report MIA has allowed starting forwards 9% more rebounds than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -93520,7 +93520,7 @@
    "p": 0.572,
    "price": 0.58,
    "edge": -0.025,
-   "news": "MIA has allowed starting forwards 9% more rebounds than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
+   "news": "News: Warriors' Draymond Green Reportedly Won't Be Suspended by NBA After Fight With Suns' Dillon Brooks - Bleacher Report MIA has allowed starting forwards 9% more rebounds than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -93593,8 +93593,8 @@
    "line": 3.5,
    "start": "2026-11-06T03:00:00Z",
    "p": 0.557,
-   "price": 0.54,
-   "edge": -0.0,
+   "price": 0.53,
+   "edge": 0.01,
    "news": "Moses Moody is out: Stephen Curry hit the over in 9/18 games without him vs 8/22 with him; MIA has allowed starting guards 3% fewer rebounds than average (likely on him: Davion Mitchell, Klay Thompson).",
    "result": null
   },
