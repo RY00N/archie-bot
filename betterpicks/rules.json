@@ -111,6 +111,12 @@
    "player": "Cade Cunningham",
    "stat": "threes",
    "p": 0.639
+  },
+  {
+   "date": "2026-11-05",
+   "player": "Desmond Bane",
+   "stat": "steals",
+   "p": 0.718
   }
  ],
  "manual_posts_note": "2026-10-28: droplet build was crashing, project posted these 5 by hand; droplet skips them. Ryan: try not to do 5 a day, but post if good enough.",
