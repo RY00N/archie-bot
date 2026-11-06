@@ -268,9 +268,9 @@
   },
   "tsbook": {
     "enabled": true,
-    "micros": 1,
+    "micros": 2,
     "stop_pct": 0.5,
     "tp_pct": 2.0,
-    "note": "11/06 Reza: paper Topstep 50K Combine on micro NQ (tsbook.py), must pass eval"
+    "note": "11/06 Reza: paper Topstep 50K Combine on micro NQ (tsbook.py), must pass eval; 11/06 Reza 'pass it and be profitable on 50K funding': funded stage + payouts, 2 micros"
   }
 }
