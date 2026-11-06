@@ -108,4 +108,4 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | n31-tennis-coach.mp4 | Gotchu #bmwm4 #nightdrive #carsofinstagram #latenight #m4 | POSTED 11/6 9:39am PST trial https://www.instagram.com/reel/DfaKXGdlM1Z/ |
 | hourly | n32-profitable.mp4 | I believe in you #nightdrive #latenight #carsofinstagram #luxurylifestyle #porsche | POSTED 11/6 10:39am PST trial https://www.instagram.com/reel/DfaRNz3jIwa/ |
 | hourly | n33-night-cruise.mp4 | Kalshi cruise #porsche #nightdrive #carsofinstagram #latenight #luxurylifestyle | POSTED 11/6 11:38am PST trial https://www.instagram.com/reel/DfaYDcbk2JO/ |
-| hourly | n34-after-hours.mp4 | Kalshi M4 after hours #bmwm4 #m4 #carsofinstagram #nightlife #latenight | queued (v10 one-take walkaround, sem_ Dd4uslHCfzD sound) |
+| hourly | n34-after-hours.mp4 | Kalshi M4 after hours #bmwm4 #m4 #carsofinstagram #nightlife #latenight | POSTED 11/6 12:38pm PST trial https://www.instagram.com/reel/Dfae55GnL0T/ |
