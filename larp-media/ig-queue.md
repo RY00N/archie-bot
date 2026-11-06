@@ -98,9 +98,10 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | n21-collection.mp4 | the Kalshi collection #classiccars #carcollection #garage #carsofinstagram #latenight | POSTED 11/5 2:38pm PST trial https://www.instagram.com/reel/DfYHzcwD1yD/ |
 | hourly | n22-amg.mp4 | AMG on Kalshi money #amg #mercedesamg #amggt #carsofinstagram #latenight | POSTED 11/5 3:37pm PST trial https://www.instagram.com/reel/DfYOoJ-GdEP/ |
 | hourly | n23-ferrari-night.mp4 | where the Kalshi money goes #ferrari #carspotting #nightlife #luxurylifestyle #latenight | POSTED 11/5 4:38pm PST trial https://www.instagram.com/reel/DfYVgO0D2Fk/ |
-| hourly | n24-1am-run.mp4 | 1am Kalshi run #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | queued (v10 one-take, sem_ DfBtdxhRAJH sound) |
+| hourly | n24-1am-run.mp4 | 1am Kalshi run #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | POSTED 11/5 5:38pm PST trial https://www.instagram.com/reel/DfYcdCxCYZ4/ |
 | hourly | n25-vette.mp4 | Kalshi vette #corvette #c8 #nightdrive #carsofinstagram #latenight | queued (v10 one-take, sem_ DfOEECYiDSi sound) |
 | hourly | n26-late-dinner.mp4 | late night dinner on Kalshi #finedining #caviar #nightlife #luxurylifestyle #latenight | queued (v10 collage, night drive + caviar, sem_ DfMi8dQNBrY sound) |
 | hourly | n27-ap-m4.mp4 | AP and the M4 off Kalshi #audemarspiguet #royaloak #bmwm4 #watchesofinstagram #luxurylifestyle | queued (v10 collage, AP + M4 interior, DfLdrXDyZXi sound) |
 | hourly | n28-weekend-cars.mp4 | weekend cars off Kalshi #bmwm4 #corvette #carspotting #carsofinstagram #luxurylifestyle | queued (v10 collage, M4 + vette, DfKpypyS1Rw sound; dusk/day, night clips used up) |
 | hourly | n29-amg-tax.mp4 | Kalshi paid the AMG tax #amg #amggt #mercedesamg #watchesofinstagram #luxurylifestyle | queued (v10 one-take, AMG TAX plate + watches, DfOVWa2y29S sound; day) |
+| hourly | n30-matte.mp4 | matte black off Kalshi #mercedesamg #amggt #mattewrap #carsofinstagram #luxurylifestyle | queued (v10 one-scene, matte AMG GT, DfFfZX0JLXm sound; day) |
