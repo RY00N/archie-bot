@@ -165,6 +165,11 @@ def run(dry=False):
         day_syms.add((json.load(open(os.path.join(here, "optbot-state.json"))).get("open") or {}).get("symbol"))
     except Exception:
         pass
+    try:  # the $1,500 first-5 book's legs (11/06: swing-off sold its MSFT/GOOGL at 9:41)
+        here = os.path.dirname(os.path.abspath(__file__))
+        day_syms |= {p.get("symbol") for p in (json.load(open(os.path.join(here, "f5book-state.json"))).get("open") or {}).values()}
+    except Exception:
+        pass
     opt = lambda sym: len(sym) > 10  # option symbols (QQQ261030P00712000) belong to optbot
     positions = {p["symbol"]: p for p in all_positions if p["symbol"] not in day_syms and not opt(p["symbol"])}
     open_orders = [o for o in trade("GET", "/v2/orders", {"status": "open", "limit": 500})

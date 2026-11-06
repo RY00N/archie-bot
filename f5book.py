@@ -69,6 +69,24 @@ def _book(st, leg, px, why, log):
     log(f"F5BOOK {leg}: sold {p['qty']} {p['symbol']} @ {px} ({why}) {pnl:+.2f}, day {st['day_pnl']:+.2f}")
 
 
+def _gone(bot, st, leg, p, log):
+    """True (and booked) when the leg's shares are no longer held, using the account's last filled sell."""
+    try:
+        held = float(bot.trade("GET", f"/v2/positions/{p['symbol']}").get("qty", 0))
+    except Exception as e:
+        if "404" not in str(e) and "not found" not in str(e).lower():
+            return False
+        held = 0.0
+    if held >= p["qty"] * 0.999:
+        return False
+    sells = [o for o in bot.trade("GET", "/v2/orders", {"status": "closed", "symbols": p["symbol"], "limit": 50,
+                                                        "after": st["date"] + "T13:00:00Z"}) or []
+             if o["side"] == "sell" and o["status"] == "filled"]
+    px = float(sells[0]["filled_avg_price"]) if sells else p.get("price", p["entry"])
+    _book(st, leg, px, "sold by another bot", log)
+    return True
+
+
 def tick(bot, log):
     c = cfg()
     if not c["enabled"]:
@@ -101,6 +119,8 @@ def tick(bot, log):
                 _book(st, leg, float(od["filled_avg_price"]), p["why"], log)
             elif od["status"] in ("canceled", "expired", "rejected"):
                 p["state"] = "open"
+            continue
+        if _gone(bot, st, leg, p, log):  # another bot sold it (11/06: swing-off sold MSFT/GOOGL): book its real fill
             continue
         px = _px(bot, p["symbol"]); p["price"] = px; p["peak"] = max(p["peak"], px)
         p["stop"] = round(max(p["stop"], p["peak"] * (1 - p["trail_pct"] / 100)), 2)
