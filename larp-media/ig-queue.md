@@ -105,7 +105,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | n28-weekend-cars.mp4 | weekend cars off Kalshi #bmwm4 #corvette #carspotting #carsofinstagram #luxurylifestyle | POSTED 11/5 9:38pm PST trial https://www.instagram.com/reel/DfY34zfDjlf/ |
 | hourly | n29-amg-tax.mp4 | Kalshi paid the AMG tax #amg #amggt #mercedesamg #watchesofinstagram #luxurylifestyle | POSTED 11/5 10:38pm PST trial https://www.instagram.com/reel/DfY-wzxEzIk/ |
 | hourly | n30-matte.mp4 | matte black off Kalshi #mercedesamg #amggt #mattewrap #carsofinstagram #luxurylifestyle | POSTED 11/6 8:38am PST trial https://www.instagram.com/reel/DfaDeTzD5_D/ |
-| hourly | n31-tennis-coach.mp4 | Gotchu #bmwm4 #nightdrive #carsofinstagram #latenight #m4 | queued (v10 clone 8bal DeHsbtjyA4y (tennis coach), same sound, M4 garage night) |
+| hourly | n31-tennis-coach.mp4 | Gotchu #bmwm4 #nightdrive #carsofinstagram #latenight #m4 | POSTED 11/6 9:39am PST trial https://www.instagram.com/reel/DfaKXGdlM1Z/ |
 | hourly | n32-profitable.mp4 | I believe in you #nightdrive #latenight #carsofinstagram #luxurylifestyle #porsche | queued (v10 clone pbblake DfIx4e3JeBF (you will be profitable bro), same sound, night drive) |
 | hourly | n33-night-cruise.mp4 | Kalshi cruise #porsche #nightdrive #carsofinstagram #latenight #luxurylifestyle | queued (v10 one-take, sem_ DfBV90nR-sJ sound, night interior) |
 | hourly | n34-after-hours.mp4 | Kalshi M4 after hours #bmwm4 #m4 #carsofinstagram #nightlife #latenight | queued (v10 one-take walkaround, sem_ Dd4uslHCfzD sound) |
