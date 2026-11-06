@@ -3193,8 +3193,8 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-05 19:00 PT",
-  "props_today": 117,
+  "props_at": "2026-11-05 20:00 PT",
+  "props_today": 119,
   "kalshi_props_today": 64,
   "kalshi_priced_today": 4,
   "books_on_kalshi_props": {
@@ -3219,7 +3219,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 16
+  "kalshi_legs_today": 0
  },
  "shadow": [
   {
