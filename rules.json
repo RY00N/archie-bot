@@ -221,8 +221,8 @@
     "size": 600,
     "stop_pct": 50,
     "lock_pct": 0,
-    "keep_pct": -1.5,
-    "trail_pct": 2.1,
+    "keep_pct": -2.1,
+    "trail_pct": 3.0,
     "max_hold_min": 380,
     "daily_goal": 100000,
     "daily_brake": 100000,
@@ -237,7 +237,7 @@
     "instrument": "shares",
     "bull": "TQQQ",
     "bear": "SQQQ",
-    "share_stop_pct": 1.5,
+    "share_stop_pct": 2.1,
     "book_frac": 1.0
   },
   "dtsbook": {
