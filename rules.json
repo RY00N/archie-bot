@@ -215,7 +215,7 @@
     }
   },
   "options": {
-    "enabled": true,
+    "enabled": false,
     "symbol": "QQQ",
     "budget_start": 1000,
     "size": 600,
@@ -260,5 +260,10 @@
       "QQQ",
       "PSQ"
     ]
+  },
+  "f5book": {
+    "enabled": true,
+    "book_start": 1500,
+    "note": "Reza 11/06: $1,500 book, his first-5 method; options book off so QQQ isn't traded twice"
   }
 }

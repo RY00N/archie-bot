@@ -179,6 +179,14 @@ def _dtsbook():
         return {"error": str(e)[:200]}
 
 
+def _f5book():
+    try:  # 11/06: $1,500 first-5-minute book (Reza)
+        import f5book
+        return f5book.summary()
+    except Exception as e:
+        return {"error": str(e)[:200]}
+
+
 def _options():
     try:
         import importlib, optbot
@@ -237,7 +245,7 @@ def snapshot(bot, market_open):
     return {"book": "paper", "note": "Practice money. Never counts toward real totals.",
             "updated": datetime.now(timezone.utc).isoformat()[:19] + "Z", "market_open": market_open,
             "swing_enabled": bot.RULES.get("swing_enabled", True),  # off = city hides the swing P&L
-            **combined, "swing": swing, "day": day, "futures": _futures(), "prop": _prop(), "gapfill": _gapfill(), "droplong": _droplong(), "options": _options(), "dtsbook": _dtsbook(), "meme": _meme(), "xfeed": _xfeed(), "intel": _intel(), **_live()}
+            **combined, "swing": swing, "day": day, "futures": _futures(), "prop": _prop(), "gapfill": _gapfill(), "droplong": _droplong(), "options": _options(), "dtsbook": _dtsbook(), "f5book": _f5book(), "meme": _meme(), "xfeed": _xfeed(), "intel": _intel(), **_live()}
 
 
 def _intel():

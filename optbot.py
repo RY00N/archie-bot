@@ -185,6 +185,13 @@ def step(bot, log):
         dtsbook.ensure_thread(bot, log)
     except Exception as e:
         log(f"dtsbook hook error: {e}")
+    try:  # 11/06 Reza: $1,500 first-5-minute book (f5book.py), its own thread, newest code after each pull
+        import importlib, f5book
+        if time.time() - _last.get("f5book_reload", 0) > 300:
+            importlib.reload(f5book); _last["f5book_reload"] = time.time()
+        f5book.ensure_thread(bot, log)
+    except Exception as e:
+        log(f"f5book hook error: {e}")
     o = st.get("open")
     if o:  # manage the open option: stop, profit lock + trail, time stop
         if o.get("state") == "pending":
