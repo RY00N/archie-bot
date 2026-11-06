@@ -104,4 +104,4 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | n27-ap-m4.mp4 | AP and the M4 off Kalshi #audemarspiguet #royaloak #bmwm4 #watchesofinstagram #luxurylifestyle | POSTED 11/5 8:39pm PST trial https://www.instagram.com/reel/DfYxFWFgaDy/ |
 | hourly | n28-weekend-cars.mp4 | weekend cars off Kalshi #bmwm4 #corvette #carspotting #carsofinstagram #luxurylifestyle | POSTED 11/5 9:38pm PST trial https://www.instagram.com/reel/DfY34zfDjlf/ |
 | hourly | n29-amg-tax.mp4 | Kalshi paid the AMG tax #amg #amggt #mercedesamg #watchesofinstagram #luxurylifestyle | POSTED 11/5 10:38pm PST trial https://www.instagram.com/reel/DfY-wzxEzIk/ |
-| hourly | n30-matte.mp4 | matte black off Kalshi #mercedesamg #amggt #mattewrap #carsofinstagram #luxurylifestyle | queued (v10 one-scene, matte AMG GT, DfFfZX0JLXm sound; day) |
+| hourly | n30-matte.mp4 | matte black off Kalshi #mercedesamg #amggt #mattewrap #carsofinstagram #luxurylifestyle | POSTED 11/6 8:38am PST trial https://www.instagram.com/reel/DfaDeTzD5_D/ |
