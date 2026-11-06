@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 HERE = os.path.dirname(os.path.abspath(__file__)); ET = ZoneInfo("America/New_York")
 STATE = os.path.join(HERE, "f5book-state.json")
 DEFAULTS = {"enabled": True, "book_start": 1500, "entry_min": 575, "flat_min": 955,
-            "legs": [{"sym": "QQQ", "up": "TQQQ", "down": "SQQQ", "frac": 0.7, "stop": 2.1, "trail": 3.0},
+            "legs": [{"sym": "QQQ", "up": "TQQQ", "down": "SQQQ", "frac": 0.7, "stop": 2.1, "trail": 3.6},
                      {"sym": "MSFT", "up": "MSFT", "down": None, "frac": 0.1, "stop": 1.0, "trail": 99},
                      {"sym": "GOOGL", "up": "GOOGL", "down": None, "frac": 0.1, "stop": 1.0, "trail": 1.5},
                      {"sym": "NFLX", "up": "NFLX", "down": None, "frac": 0.1, "stop": 1.0, "trail": 1.5}]}
