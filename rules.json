@@ -265,5 +265,12 @@
     "enabled": true,
     "book_start": 1500,
     "note": "Reza 11/06: $1,500 book, his first-5 method; options book off so QQQ isn't traded twice"
+  },
+  "tsbook": {
+    "enabled": true,
+    "micros": 1,
+    "stop_pct": 0.5,
+    "tp_pct": 2.0,
+    "note": "11/06 Reza: paper Topstep 50K Combine on micro NQ (tsbook.py), must pass eval"
   }
 }

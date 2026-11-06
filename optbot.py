@@ -192,6 +192,13 @@ def step(bot, log):
         f5book.ensure_thread(bot, log)
     except Exception as e:
         log(f"f5book hook error: {e}")
+    try:  # 11/06 Reza: paper Topstep 50K Combine on micro NQ (tsbook.py)
+        import importlib, tsbook
+        if time.time() - _last.get("tsbook_reload", 0) > 300:
+            importlib.reload(tsbook); _last["tsbook_reload"] = time.time()
+        tsbook.ensure_thread(bot, log)
+    except Exception as e:
+        log(f"tsbook hook error: {e}")
     o = st.get("open")
     if o:  # manage the open option: stop, profit lock + trail, time stop
         if o.get("state") == "pending":
