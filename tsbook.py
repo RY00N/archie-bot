@@ -16,7 +16,7 @@ from zoneinfo import ZoneInfo
 
 HERE = os.path.dirname(os.path.abspath(__file__)); ET = ZoneInfo("America/New_York")
 STATE = os.path.join(HERE, "tsbook-state.json")
-DEFAULTS = {"enabled": True, "start": 50000, "target": 3000, "mll": 2000, "cons": 0.5, "micros": 2, "fee": 109, "activation": 149, "stop_pct": 0.5,
+DEFAULTS = {"enabled": True, "start": 50000, "target": 3000, "mll": 2000, "cons": 0.5, "micros": 2, "micros_paid": 3, "fee": 109, "activation": 149, "stop_pct": 0.5,
             "tp_pct": 2.0, "k": 82.0, "cost": 2.0, "entry_min": 575, "flat_min": 955}
 _last = globals().get("_last") or {}
 
@@ -108,12 +108,15 @@ def tick(bot, log):
         f5 = _first5(bot, today)
         if f5:
             side = 1 if f5[1] > f5[0] else -1; e = _px(bot)
-            st["pos"] = {"side": side, "entry": e, "micros": c["micros"], "at": now.isoformat()[:16], "first5": f"{f5[0]} -> {f5[1]}"}
+            n = c["micros"]  # 11/06 study: 3 micros on a funded account once it has paid out and has $1,000+ profit
+            if cb["kind"] == "funded" and cb.get("paid") and cb["balance"] - c["start"] > 1000:
+                n = c.get("micros_paid", 3)
+            st["pos"] = {"side": side, "entry": e, "micros": n, "at": now.isoformat()[:16], "first5": f"{f5[0]} -> {f5[1]}"}
             st["entered"] = True; cb["days"] += 1
             if cb["kind"] == "combine" and cb["days"] % 20 == 0:
                 st["fees"] = st.get("fees", 0) + c["fee"]
             log(f"TSBOOK {cb['kind']} {cb['n']}: first 5 min {'up' if side > 0 else 'down'} ({f5[0]} -> {f5[1]}): "
-                f"{'buy' if side > 0 else 'sell'} {c['micros']} MNQ ~{round(e * 41)}")
+                f"{'buy' if side > 0 else 'sell'} {n} MNQ ~{round(e * 41)}")
         elif m >= c["entry_min"] + 2:
             st["entered"] = True; log("TSBOOK: no 9:30/9:34 bar today")
     if not st.get("pos") and st["entered"] and not st["closed_day"] and (m >= c["flat_min"] or st.get("history") and
