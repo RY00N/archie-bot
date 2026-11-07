@@ -106231,8 +106231,8 @@
    "line": 2.5,
    "start": "2026-11-07T22:00:00Z",
    "p": 0.361,
-   "price": 0.41,
-   "edge": -0.066,
+   "price": 0.4,
+   "edge": -0.056,
    "news": "Julian Strawther is out: Jamal Murray hit the under in 10/22 games without him vs 10/18 with him; IND has allowed starting guards 14% more threes than average (likely on him: Quenton Jackson, Andrew Nembhard).",
    "result": null
   },
@@ -107236,8 +107236,8 @@
    "line": 18.5,
    "start": "2026-11-08T21:05:00Z",
    "p": 0.544,
-   "price": 0.52,
-   "edge": 0.007,
+   "price": 0.51,
+   "edge": 0.017,
    "news": "HOU's S Reed Blankenship is out, an easier matchup.",
    "result": null
   },
@@ -108811,8 +108811,8 @@
    "line": 1.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.48,
-   "price": 0.5,
-   "edge": -0.038,
+   "price": 0.51,
+   "edge": -0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -109936,8 +109936,8 @@
    "line": 1.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.514,
-   "price": 0.46,
-   "edge": 0.037,
+   "price": 0.45,
+   "edge": 0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -109983,6 +109983,21 @@
    "p": 0.551,
    "price": 0.53,
    "edge": 0.004,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-11-08",
+   "ticker": "KXNFLREC-26NOV08CLENO-CLEQJUDKINS10-2",
+   "league": "nfl",
+   "player": "Quinshon Judkins",
+   "stat": "receptions",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-08T18:00:00Z",
+   "p": 0.635,
+   "price": 0.67,
+   "edge": -0.05,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -110073,6 +110088,21 @@
    "p": 0.52,
    "price": 0.64,
    "edge": -0.136,
+   "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-11-08",
+   "ticker": "KXNFLREC-26NOV08CLENO-NOKMILLER5-2",
+   "league": "nfl",
+   "player": "Kendre Miller",
+   "stat": "receptions",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-08T18:00:00Z",
+   "p": 0.365,
+   "price": 0.41,
+   "edge": -0.062,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -111196,8 +111226,8 @@
    "line": 3.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.493,
-   "price": 0.51,
-   "edge": -0.034,
+   "price": 0.52,
+   "edge": -0.044,
    "news": "A.J. Brown (WR) is out, so DeMario Douglas's role likely grows.",
    "result": null
   },
@@ -111736,8 +111766,8 @@
    "line": 7.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.51,
-   "price": 0.57,
-   "edge": -0.077,
+   "price": 0.56,
+   "edge": -0.067,
    "news": "News: Puka Nacua Can Hurt the Commanders Before Matthew Stafford Even Throws - Sports Illustrated",
    "result": null
   },
@@ -112368,7 +112398,7 @@
    "p": 0.467,
    "price": 0.5,
    "edge": -0.05,
-   "news": "News: Giants Get Important Malik Nabers Injury News Before Week 9 - Heavy.com PHI's CB Michael Carter II is out, an easier matchup.",
+   "news": "News: Malik Nabers not on Week 9 injury report - Yahoo Sports PHI's CB Michael Carter II is out, an easier matchup.",
    "result": null
   },
   {
@@ -112383,7 +112413,7 @@
    "p": 0.473,
    "price": 0.52,
    "edge": -0.064,
-   "news": "News: Giants Get Important Malik Nabers Injury News Before Week 9 - Heavy.com PHI's CB Michael Carter II is out, an easier matchup.",
+   "news": "News: Malik Nabers not on Week 9 injury report - Yahoo Sports PHI's CB Michael Carter II is out, an easier matchup.",
    "result": null
   },
   {
@@ -112846,8 +112876,8 @@
    "line": 2.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.359,
-   "price": 0.39,
-   "edge": -0.048,
+   "price": 0.4,
+   "edge": -0.058,
    "news": "KC's DT Peter Woods is out, an easier matchup.",
    "result": null
   },
