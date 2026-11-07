@@ -3459,23 +3459,23 @@
   },
   "props_at": "2026-11-06 19:00 PT",
   "props_today": 246,
-  "kalshi_props_today": 128,
-  "kalshi_priced_today": 8,
+  "kalshi_props_today": 132,
+  "kalshi_priced_today": 9,
   "books_on_kalshi_props": {
-   "AN Consensus": 128,
-   "AN Open": 128,
-   "BetMGM": 77,
+   "AN Consensus": 132,
+   "AN Open": 132,
+   "BetMGM": 80,
    "BetRivers": 106,
    "Caesars": 106,
-   "DraftKings": 119,
+   "DraftKings": 123,
    "FanDuel": 111,
    "Fanatics": 95,
    "Parx": 106,
    "Pinnacle": 94,
-   "Sleeper": 127,
-   "Underdog": 128,
+   "Sleeper": 131,
+   "Underdog": 132,
    "Unibet": 35,
-   "bet365": 127
+   "bet365": 131
   },
   "data_files": [
    "mlb.sqlite",
@@ -3483,7 +3483,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 33
+  "kalshi_legs_today": 34
  },
  "shadow": [
   {
@@ -96901,8 +96901,8 @@
    "line": 2.5,
    "start": "2026-11-07T03:00:00Z",
    "p": 0.381,
-   "price": 0.38,
-   "edge": -0.015,
+   "price": 0.4,
+   "edge": -0.036,
    "news": "POR has allowed starting guards 17% fewer threes than average (likely on him: Damian Lillard, Scoot Henderson); Deni Avdija can switch onto him (POR allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -96916,9 +96916,39 @@
    "line": 2.5,
    "start": "2026-11-07T03:00:00Z",
    "p": 0.619,
-   "price": 0.64,
-   "edge": -0.037,
+   "price": 0.63,
+   "edge": -0.027,
    "news": "POR has allowed starting guards 17% fewer threes than average (likely on him: Damian Lillard, Scoot Henderson); Deni Avdija can switch onto him (POR allowed guards 16% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "KXNBA3PT-26NOV06PORLAL-LALCSEXTON10-1",
+   "league": "nba",
+   "player": "Collin Sexton",
+   "stat": "threes",
+   "side": "over",
+   "line": 0.5,
+   "start": "2026-11-07T03:00:00Z",
+   "p": 0.589,
+   "price": 0.65,
+   "edge": -0.077,
+   "news": "POR has allowed bench guards 35% fewer threes than average (likely on him: Jrue Holiday, Sidy Cissoko); Deni Avdija can switch onto him (POR allowed guards 16% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "KXNBA3PT-26NOV06PORLAL-LALCSEXTON10-1",
+   "league": "nba",
+   "player": "Collin Sexton",
+   "stat": "threes",
+   "side": "under",
+   "line": 0.5,
+   "start": "2026-11-07T03:00:00Z",
+   "p": 0.411,
+   "price": 0.42,
+   "edge": -0.026,
+   "news": "POR has allowed bench guards 35% fewer threes than average (likely on him: Jrue Holiday, Sidy Cissoko); Deni Avdija can switch onto him (POR allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -97126,8 +97156,8 @@
    "line": 2.5,
    "start": "2026-11-07T03:00:00Z",
    "p": 0.484,
-   "price": 0.43,
-   "edge": 0.037,
+   "price": 0.42,
+   "edge": 0.047,
    "news": "Vit Krejci is out: Damian Lillard hit the under in 3/4 games without him vs 2/3 with him; Ja Morant is out: Damian Lillard hit the under in 2/3 games without him vs 3/4 with him; LAL has allowed starting guards 13% fewer threes than average (likely on him: Quentin Grimes, Austin Reaves); Bronny James can switch onto him (LAL allowed guards 16% fewer threes with him playing; he is out tonight); Jarred Vanderbilt can switch onto him (LAL allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -105796,8 +105826,8 @@
    "line": 0.5,
    "start": "2026-11-07T03:00:00Z",
    "p": 0.316,
-   "price": 0.37,
-   "edge": -0.07,
+   "price": 0.38,
+   "edge": -0.08,
    "news": "POR has allowed starting centers 28% more steals than average (likely on him: Donovan Clingan).",
    "result": null
   },
@@ -106846,8 +106876,8 @@
    "line": 20.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.466,
-   "price": 0.53,
-   "edge": -0.081,
+   "price": 0.52,
+   "edge": -0.071,
    "news": "KC's CB Mansoor Delane is out, an easier matchup; KC's DT Peter Woods is out, an easier matchup.",
    "result": null
   },
@@ -107146,8 +107176,8 @@
    "line": 0.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.491,
-   "price": 0.49,
-   "edge": -0.016,
+   "price": 0.48,
+   "edge": -0.006,
    "news": "News: Have injuries slowed Dolphins QB Malik Willis this season? - Sun Sentinel DET's CB D.J. Reed is out, an easier matchup.",
    "result": null
   },
@@ -107896,8 +107926,8 @@
    "line": 0.5,
    "start": "2026-11-08T14:30:00Z",
    "p": 0.284,
-   "price": 0.36,
-   "edge": -0.092,
+   "price": 0.37,
+   "edge": -0.102,
    "news": "CIN's S Kyle Dugger is out, an easier matchup.",
    "result": null
   },
@@ -108376,8 +108406,8 @@
    "line": 2.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.495,
-   "price": 0.44,
-   "edge": 0.038,
+   "price": 0.45,
+   "edge": 0.028,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -108946,8 +108976,8 @@
    "line": 1.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.639,
-   "price": 0.69,
-   "edge": -0.066,
+   "price": 0.68,
+   "edge": -0.056,
    "news": "DEN's S Brandon Jones is out, an easier matchup.",
    "result": null
   },
@@ -109006,8 +109036,8 @@
    "line": 2.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.554,
-   "price": 0.62,
-   "edge": -0.082,
+   "price": 0.63,
+   "edge": -0.092,
    "news": "DEN's S Brandon Jones is out, an easier matchup.",
    "result": null
   },
@@ -109053,7 +109083,7 @@
    "p": 0.437,
    "price": 0.39,
    "edge": 0.03,
-   "news": "CAR's LB Bobby Okereke is out, an easier matchup; CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "news": "CAR's LB Jaelan Phillips is out, an easier matchup; CAR's LB Bobby Okereke is out, an easier matchup.",
    "result": null
   },
   {
@@ -109068,7 +109098,7 @@
    "p": 0.543,
    "price": 0.62,
    "edge": -0.093,
-   "news": "CAR's LB Bobby Okereke is out, an easier matchup; CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "news": "CAR's LB Jaelan Phillips is out, an easier matchup; CAR's LB Bobby Okereke is out, an easier matchup.",
    "result": null
   },
   {
@@ -109083,7 +109113,7 @@
    "p": 0.549,
    "price": 0.47,
    "edge": 0.062,
-   "news": "CAR's LB Bobby Okereke is out, an easier matchup; CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "news": "CAR's LB Jaelan Phillips is out, an easier matchup; CAR's LB Bobby Okereke is out, an easier matchup.",
    "result": null
   },
   {
@@ -109098,7 +109128,7 @@
    "p": 0.431,
    "price": 0.54,
    "edge": -0.126,
-   "news": "CAR's LB Bobby Okereke is out, an easier matchup; CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "news": "CAR's LB Jaelan Phillips is out, an easier matchup; CAR's LB Bobby Okereke is out, an easier matchup.",
    "result": null
   },
   {
@@ -110116,8 +110146,8 @@
    "line": 2.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.576,
-   "price": 0.65,
-   "edge": -0.09,
+   "price": 0.64,
+   "edge": -0.08,
    "news": "News: Vikings' running back struggles make passing on Emmett Johnson sting even more - The Viking Age NYJ's DT T'Vondre Sweat is out, an easier matchup.",
    "result": null
   },
@@ -110161,8 +110191,8 @@
    "line": 1.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.463,
-   "price": 0.48,
-   "edge": -0.034,
+   "price": 0.47,
+   "edge": -0.024,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -110266,8 +110296,8 @@
    "line": 3.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.594,
-   "price": 0.63,
-   "edge": -0.052,
+   "price": 0.61,
+   "edge": -0.033,
    "news": "News: Xavier Worthy's expanded role is only making his struggles more obvious - Arrowhead Addict",
    "result": null
   },
@@ -110566,8 +110596,8 @@
    "line": 14.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.397,
-   "price": 0.51,
-   "edge": -0.13,
+   "price": 0.52,
+   "edge": -0.14,
    "news": "Alec Pierce is out: Laquon Treadwell hit the under in 0/4 games without him vs 7/8 with him; DAL's S Jalen Thompson is out, an easier matchup.",
    "result": null
   },
@@ -110613,7 +110643,7 @@
    "p": 0.563,
    "price": 0.5,
    "edge": 0.045,
-   "news": "CAR's LB Bobby Okereke is out, an easier matchup; CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "news": "CAR's LB Jaelan Phillips is out, an easier matchup; CAR's LB Bobby Okereke is out, an easier matchup.",
    "result": null
   },
   {
@@ -110628,7 +110658,7 @@
    "p": 0.417,
    "price": 0.53,
    "edge": -0.13,
-   "news": "CAR's LB Bobby Okereke is out, an easier matchup; CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "news": "CAR's LB Jaelan Phillips is out, an easier matchup; CAR's LB Bobby Okereke is out, an easier matchup.",
    "result": null
   },
   {
@@ -110926,8 +110956,8 @@
    "line": 14.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.499,
-   "price": 0.51,
-   "edge": -0.028,
+   "price": 0.5,
+   "edge": -0.019,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -111316,8 +111346,8 @@
    "line": 4.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.562,
-   "price": 0.58,
-   "edge": -0.035,
+   "price": 0.57,
+   "edge": -0.025,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -111393,7 +111423,7 @@
    "p": 0.527,
    "price": 0.47,
    "edge": 0.04,
-   "news": "CAR's LB Bobby Okereke is out, an easier matchup; CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "news": "CAR's LB Jaelan Phillips is out, an easier matchup; CAR's LB Bobby Okereke is out, an easier matchup.",
    "result": null
   },
   {
@@ -111408,7 +111438,7 @@
    "p": 0.453,
    "price": 0.56,
    "edge": -0.124,
-   "news": "CAR's LB Bobby Okereke is out, an easier matchup; CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "news": "CAR's LB Jaelan Phillips is out, an easier matchup; CAR's LB Bobby Okereke is out, an easier matchup.",
    "result": null
   },
   {
@@ -111423,7 +111453,7 @@
    "p": 0.636,
    "price": 0.48,
    "edge": 0.139,
-   "news": "CAR's LB Bobby Okereke is out, an easier matchup; CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "news": "CAR's LB Jaelan Phillips is out, an easier matchup; CAR's LB Bobby Okereke is out, an easier matchup.",
    "result": null
   },
   {
@@ -111438,7 +111468,7 @@
    "p": 0.344,
    "price": 0.54,
    "edge": -0.213,
-   "news": "CAR's LB Bobby Okereke is out, an easier matchup; CAR's LB Jaelan Phillips is out, an easier matchup.",
+   "news": "CAR's LB Jaelan Phillips is out, an easier matchup; CAR's LB Bobby Okereke is out, an easier matchup.",
    "result": null
   },
   {
