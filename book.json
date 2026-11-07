@@ -3547,7 +3547,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 16
+  "kalshi_legs_today": 15
  },
  "shadow": [
   {
@@ -104795,9 +104795,24 @@
    "line": 1.5,
    "start": "2026-11-07T22:00:00Z",
    "p": 0.706,
-   "price": 0.68,
-   "edge": 0.011,
+   "price": 0.67,
+   "edge": 0.021,
    "news": "Johnny Furphy is out: Andrew Nembhard hit the over in 17/26 games without him vs 7/13 with him; Tyrese Haliburton is out: Andrew Nembhard hit the over in 24/37 games without him vs 1/3 with him; DEN has allowed starting guards 7% more threes than average (likely on him: Jamal Murray, Christian Braun); Tyus Jones can switch onto him (DEN allowed guards 21% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-07",
+   "ticker": "KXNBA3PT-26NOV07DENIND-INDANEMBHARD2-2",
+   "league": "nba",
+   "player": "Andrew Nembhard",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-11-07T22:00:00Z",
+   "p": 0.294,
+   "price": 0.64,
+   "edge": -0.362,
+   "news": "Johnny Furphy is out: Andrew Nembhard hit the under in 9/26 games without him vs 6/13 with him; Tyrese Haliburton is out: Andrew Nembhard hit the under in 13/37 games without him vs 2/3 with him; DEN has allowed starting guards 7% more threes than average (likely on him: Jamal Murray, Christian Braun); Tyus Jones can switch onto him (DEN allowed guards 21% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -104900,8 +104915,8 @@
    "line": 1.5,
    "start": "2026-11-07T22:00:00Z",
    "p": 0.45,
-   "price": 0.5,
-   "edge": -0.067,
+   "price": 0.49,
+   "edge": -0.057,
    "news": "DEN has allowed starting forwards 16% more threes than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 18% fewer threes with him playing; he plays tonight); Spencer Jones can switch onto him (DEN allowed forwards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -104915,8 +104930,8 @@
    "line": 1.5,
    "start": "2026-11-07T22:00:00Z",
    "p": 0.55,
-   "price": 0.55,
-   "edge": -0.017,
+   "price": 0.54,
+   "edge": -0.007,
    "news": "DEN has allowed starting forwards 16% more threes than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 18% fewer threes with him playing; he plays tonight); Spencer Jones can switch onto him (DEN allowed forwards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -104945,8 +104960,8 @@
    "line": 2.5,
    "start": "2026-11-08T02:00:00Z",
    "p": 0.522,
-   "price": 0.57,
-   "edge": -0.065,
+   "price": 0.58,
+   "edge": -0.075,
    "news": "PHX has allowed starting guards 7% more threes than average (likely on him: Devin Booker, Jalen Green); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer threes with him playing; he plays tonight); Jamaree Bouyea can switch onto him (PHX allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -105275,8 +105290,8 @@
    "line": 1.5,
    "start": "2026-11-08T02:00:00Z",
    "p": 0.344,
-   "price": 0.4,
-   "edge": -0.073,
+   "price": 0.41,
+   "edge": -0.083,
    "news": "HOU has allowed starting forwards 8% fewer threes than average (likely on him: Jabari Smith Jr., Kevin Durant); Clint Capela can switch onto him (HOU allowed forwards 21% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -105350,8 +105365,8 @@
    "line": 9.5,
    "start": "2026-11-07T22:00:00Z",
    "p": 0.469,
-   "price": 0.59,
-   "edge": -0.138,
+   "price": 0.58,
+   "edge": -0.128,
    "news": "News: Pacers\u2019 Ivica Zubac upgraded on injury report for Grizzlies game - Yahoo Sports DEN has allowed starting centers 5% fewer points than average (likely on him: Nikola Jokic); Cameron Johnson can switch onto him (DEN allowed centers 16% fewer points with him playing; he plays tonight); Aaron Gordon can switch onto him (DEN allowed centers 9% fewer points with him playing; he plays tonight); minutes trending down (we project 23, his last 5 avg 21 vs 25 over 15).",
    "result": null
   },
@@ -105380,8 +105395,8 @@
    "line": 9.5,
    "start": "2026-11-07T22:00:00Z",
    "p": 0.452,
-   "price": 0.54,
-   "edge": -0.105,
+   "price": 0.53,
+   "edge": -0.095,
    "news": "News: Kelly Oubre Injury: Iffy for Saturday - RotoWire",
    "result": null
   },
@@ -105410,8 +105425,8 @@
    "line": 14.5,
    "start": "2026-11-08T02:00:00Z",
    "p": 0.537,
-   "price": 0.52,
-   "edge": -0.0,
+   "price": 0.51,
+   "edge": 0.01,
    "news": "PHX has allowed starting guards 11% more points than average (likely on him: Devin Booker, Jalen Green); Jamaree Bouyea can switch onto him (PHX allowed guards 12% fewer points with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer points with him playing; he plays tonight); minutes trending down (we project 34, his last 5 avg 31 vs 37 over 15).",
    "result": null
   },
@@ -108575,8 +108590,8 @@
    "line": 6.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.39,
-   "price": 0.45,
-   "edge": -0.077,
+   "price": 0.44,
+   "edge": -0.067,
    "news": "News: Jaxon Smith-Njigba not on Week 9 injury report - Yahoo Sports Rashid Shaheed (WR) is out, so Jaxon Smith-Njigba's role likely grows.",
    "result": null
   },
@@ -110840,8 +110855,8 @@
    "line": 1.5,
    "start": "2026-11-08T21:05:00Z",
    "p": 0.735,
-   "price": 0.62,
-   "edge": 0.099,
+   "price": 0.65,
+   "edge": 0.069,
    "news": "Jaylin Noel (WR) is out, so Xavier Hutchinson's role likely grows; LAC's S Kendall Williamson is out, an easier matchup; LAC's CB Deane Leonard is out, an easier matchup.",
    "result": null
   },
@@ -110855,8 +110870,8 @@
    "line": 1.5,
    "start": "2026-11-08T21:05:00Z",
    "p": 0.225,
-   "price": 0.39,
-   "edge": -0.182,
+   "price": 0.38,
+   "edge": -0.171,
    "news": "Jaylin Noel (WR) is out, so Xavier Hutchinson's role likely grows; LAC's S Kendall Williamson is out, an easier matchup; LAC's CB Deane Leonard is out, an easier matchup.",
    "result": null
   },
@@ -111575,8 +111590,8 @@
    "line": 1.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.323,
-   "price": 0.44,
-   "edge": -0.134,
+   "price": 0.43,
+   "edge": -0.124,
    "news": "Mike Evans (WR) is out, so Jordan Watkins's role likely grows; Deebo Samuel Sr. (WR) is out, so Jordan Watkins's role likely grows.",
    "result": null
   },
