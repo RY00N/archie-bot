@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 HERE = os.path.dirname(os.path.abspath(__file__)); ET = ZoneInfo("America/New_York")
 STATE = os.path.join(HERE, "f5book-state.json")
 DEFAULTS = {"enabled": True, "book_start": 1500, "entry_min": 575, "flat_min": 955,
-            "legs": [{"sym": "QQQ", "up": "TQQQ", "down": "SQQQ", "frac": 0.7, "stop": 2.1, "trail": 3.6},
+            "legs": [{"sym": "QQQ", "up": "TQQQ", "down": "SQQQ", "frac": 0.7, "stop": 2.1, "trail": 3.6, "exit": 870},
                      {"sym": "MSFT", "up": "MSFT", "down": None, "frac": 0.1, "stop": 1.0, "trail": 99},
                      {"sym": "GOOGL", "up": "GOOGL", "down": None, "frac": 0.1, "stop": 1.0, "trail": 1.5},
                      {"sym": "NFLX", "up": "NFLX", "down": None, "frac": 0.1, "stop": 1.0, "trail": 1.5}]}
@@ -124,7 +124,8 @@ def tick(bot, log):
             continue
         px = _px(bot, p["symbol"]); p["price"] = px; p["peak"] = max(p["peak"], px)
         p["stop"] = round(max(p["stop"], p["peak"] * (1 - p["trail_pct"] / 100)), 2)
-        why = "stop" if px <= p["stop"] else "3:55 close" if m >= c["flat_min"] else None
+        xm = min(p.get("exit_min", c["flat_min"]), c["flat_min"])
+        why = "stop" if px <= p["stop"] else (f"{xm // 60 - 12}:{xm % 60:02} time exit" if xm < c["flat_min"] else "3:55 close") if m >= xm else None
         if why:
             od = bot.trade("POST", "/v2/orders", body={"symbol": p["symbol"], "qty": str(p["qty"]), "side": "sell",
                                                         "type": "market", "time_in_force": "day"})
@@ -147,7 +148,7 @@ def tick(bot, log):
                                                         "time_in_force": "day"})
             qty = usd
             st["open"][lg["sym"]] = {"state": "pending", "order_id": od["id"], "symbol": sym, "side": "up" if up else "down",
-                                    "usd": usd, "qty": 0, "stop_pct": lg["stop"], "trail_pct": lg["trail"], "at": now.isoformat()[:16],
+                                    "usd": usd, "qty": 0, "stop_pct": lg["stop"], "trail_pct": lg["trail"], "exit_min": lg.get("exit", c["flat_min"]), "at": now.isoformat()[:16],
                                     "first5": f"{f5[0]} -> {f5[1]}"}
             log(f"F5BOOK {lg['sym']} first 5 min {'up' if up else 'down'} ({f5[0]} -> {f5[1]}): buy ${usd:.2f} of {sym}")
         st["entered"] = True
