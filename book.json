@@ -3458,12 +3458,12 @@
    "secs": 0.0
   },
   "props_at": "2026-11-06 20:00 PT",
-  "props_today": 246,
-  "kalshi_props_today": 132,
+  "props_today": 119,
+  "kalshi_props_today": 63,
   "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
-   "Sleeper": 130,
-   "Underdog": 132
+   "Sleeper": 61,
+   "Underdog": 63
   },
   "data_files": [
    "mlb.sqlite",
@@ -106684,8 +106684,8 @@
    "line": 21.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.456,
-   "price": 0.51,
-   "edge": -0.071,
+   "price": 0.52,
+   "edge": -0.081,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -107914,8 +107914,8 @@
    "line": 0.5,
    "start": "2026-11-08T14:30:00Z",
    "p": 0.284,
-   "price": 0.37,
-   "edge": -0.102,
+   "price": 0.36,
+   "edge": -0.092,
    "news": "CIN's S Kyle Dugger is out, an easier matchup.",
    "result": null
   },
@@ -108694,8 +108694,8 @@
    "line": 4.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.617,
-   "price": 0.62,
-   "edge": -0.019,
+   "price": 0.61,
+   "edge": -0.01,
    "news": "Alec Pierce is out: Josh Downs hit the under in 5/7 games without him vs 20/33 with him; DAL's S Jalen Thompson is out, an easier matchup.",
    "result": null
   },
@@ -108964,8 +108964,8 @@
    "line": 1.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.639,
-   "price": 0.69,
-   "edge": -0.066,
+   "price": 0.68,
+   "edge": -0.056,
    "news": "DEN's S Brandon Jones is out, an easier matchup.",
    "result": null
   },
@@ -109414,8 +109414,8 @@
    "line": 3.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.522,
-   "price": 0.59,
-   "edge": -0.085,
+   "price": 0.6,
+   "edge": -0.095,
    "news": "DET's CB D.J. Reed is out, an easier matchup.",
    "result": null
   },
@@ -110074,8 +110074,8 @@
    "line": 1.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.564,
-   "price": 0.57,
-   "edge": -0.023,
+   "price": 0.56,
+   "edge": -0.013,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -110134,8 +110134,8 @@
    "line": 2.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.576,
-   "price": 0.64,
-   "edge": -0.08,
+   "price": 0.65,
+   "edge": -0.09,
    "news": "News: Vikings' running back struggles make passing on Emmett Johnson sting even more - The Viking Age NYJ's DT T'Vondre Sweat is out, an easier matchup.",
    "result": null
   },
@@ -110284,8 +110284,8 @@
    "line": 3.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.594,
-   "price": 0.61,
-   "edge": -0.033,
+   "price": 0.63,
+   "edge": -0.052,
    "news": "News: Xavier Worthy's expanded role is only making his struggles more obvious - Arrowhead Addict",
    "result": null
   },
@@ -110314,8 +110314,8 @@
    "line": 3.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.415,
-   "price": 0.49,
-   "edge": -0.092,
+   "price": 0.48,
+   "edge": -0.082,
    "news": "Garrett Wilson (WR) is out, so Adonai Mitchell's role likely grows; KC's CB Mansoor Delane is out, an easier matchup; KC's CB L'Jarius Sneed is out, an easier matchup.",
    "result": null
   },
@@ -110524,8 +110524,8 @@
    "line": 19.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.55,
-   "price": 0.52,
-   "edge": 0.013,
+   "price": 0.51,
+   "edge": 0.023,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -110689,8 +110689,8 @@
    "line": 14.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.538,
-   "price": 0.55,
-   "edge": -0.029,
+   "price": 0.53,
+   "edge": -0.009,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -110884,8 +110884,8 @@
    "line": 39.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.446,
-   "price": 0.52,
-   "edge": -0.091,
+   "price": 0.51,
+   "edge": -0.081,
    "news": "DeVonta Smith is out: Makai Lemon hit the under in 1/2 games without him vs 4/4 with him; Dontayvion Wicks (WR) is out, so Makai Lemon's role likely grows.",
    "result": null
   },
@@ -110944,8 +110944,8 @@
    "line": 14.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.499,
-   "price": 0.51,
-   "edge": -0.028,
+   "price": 0.5,
+   "edge": -0.019,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -111334,8 +111334,8 @@
    "line": 4.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.562,
-   "price": 0.59,
-   "edge": -0.045,
+   "price": 0.57,
+   "edge": -0.025,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -111469,8 +111469,8 @@
    "line": 20.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.375,
-   "price": 0.5,
-   "edge": -0.143,
+   "price": 0.51,
+   "edge": -0.152,
    "news": "News: Lions RB Jahmyr Gibbs reacts to Jack Campbell injury - Detroit Free Press",
    "result": null
   },
@@ -111694,8 +111694,8 @@
    "line": 12.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.442,
-   "price": 0.49,
-   "edge": -0.065,
+   "price": 0.48,
+   "edge": -0.055,
    "news": "News: Eagles Announce Major Saquon Barkley Injury News Before Week 9 - Yahoo Sports",
    "result": null
   },
