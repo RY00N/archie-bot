@@ -109,3 +109,14 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | n32-profitable.mp4 | I believe in you #nightdrive #latenight #carsofinstagram #luxurylifestyle #porsche | POSTED 11/6 10:39am PST trial https://www.instagram.com/reel/DfaRNz3jIwa/ |
 | hourly | n33-night-cruise.mp4 | Kalshi cruise #porsche #nightdrive #carsofinstagram #latenight #luxurylifestyle | POSTED 11/6 11:38am PST trial https://www.instagram.com/reel/DfaYDcbk2JO/ |
 | hourly | n34-after-hours.mp4 | Kalshi M4 after hours #bmwm4 #m4 #carsofinstagram #nightlife #latenight | POSTED 11/6 12:38pm PST trial https://www.instagram.com/reel/Dfae55GnL0T/ |
+
+| hourly | r1-one-single.mp4 | one is all it takes #nightdrive #latenight #carsofinstagram #luxurylifestyle #porsche | queued (v11 reused clips) |
+| hourly | r2-what-i-do.mp4 | Kalshi #bmwm4 #m4 #nightlife #carsofinstagram #latenight | queued (v11 reused clips) |
+| hourly | r3-undefeated.mp4 | undefeated #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r4-gas.mp4 | Kalshi paid for the gas #nightdrive #latenight #carsofinstagram #porsche #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r5-real-job.mp4 | best career move #finedining #dinnerdate #nightlife #luxurylifestyle #latenight | queued (v11 reused clips) |
+| hourly | r6-40-times.mp4 | only 40 #nightdrive #latenight #carsofinstagram #luxurylifestyle #porsche | queued (v11 reused clips) |
+| hourly | r7-accountant.mp4 | ask Kalshi #porsche #nightdrive #carsofinstagram #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r8-night-shift.mp4 | night shift on Kalshi #nightdrive #latenight #carsofinstagram #porsche #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r9-how-bro.mp4 | courtside anyway #lakers #nba #courtside #nightlife #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r10-dinner.mp4 | on me tonight #finedining #dinnerdate #nightlife #luxurylifestyle #latenight | queued (v11 reused clips) |
