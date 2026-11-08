@@ -3622,7 +3622,7 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-07 17:00 PT",
+  "props_at": "2026-11-07 18:00 PT",
   "props_today": 557,
   "kalshi_props_today": 331,
   "kalshi_priced_today": 12,
@@ -3648,7 +3648,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 79
+  "kalshi_legs_today": 47
  },
  "shadow": [
   {
@@ -106726,8 +106726,8 @@
    "line": 1.5,
    "start": "2026-11-08T03:00:00Z",
    "p": 0.338,
-   "price": 0.35,
-   "edge": -0.028,
+   "price": 0.34,
+   "edge": -0.018,
    "news": "SAS has allowed starting centers 13% more threes than average; Harrison Barnes can switch onto him (SAS allowed centers 16% fewer threes with him playing; he plays tonight); Victor Wembanyama can switch onto him (SAS allowed centers 15% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -106951,8 +106951,8 @@
    "line": 1.5,
    "start": "2026-11-08T03:00:00Z",
    "p": 0.63,
-   "price": 0.64,
-   "edge": -0.026,
+   "price": 0.63,
+   "edge": -0.016,
    "news": "POR has allowed starting guards 19% fewer threes than average (likely on him: Damian Lillard, Scoot Henderson); Deni Avdija can switch onto him (POR allowed guards 12% fewer threes with him playing; he plays tonight); Damian Lillard can switch onto him (POR allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -108661,8 +108661,8 @@
    "line": 1.5,
    "start": "2026-11-08T03:00:00Z",
    "p": 0.543,
-   "price": 0.47,
-   "edge": 0.056,
+   "price": 0.48,
+   "edge": 0.046,
    "news": "Robert Williams III is out: Donovan Clingan hit the under in 5/10 games without him vs 12/30 with him; SAS has allowed starting centers 9% fewer blocks than average; Carter Bryant can switch onto him (SAS allowed centers 12% fewer blocks with him playing; he plays tonight).",
    "result": null
   },
@@ -111391,8 +111391,8 @@
    "line": 3.5,
    "start": "2026-11-08T03:00:00Z",
    "p": 0.407,
-   "price": 0.53,
-   "edge": -0.14,
+   "price": 0.52,
+   "edge": -0.13,
    "news": "Vit Krejci is out: Damian Lillard hit the under in 2/5 games without him vs 2/3 with him; SAS has allowed starting guards 5% more rebounds than average (likely on him: Dylan Harper, Devin Vassell); Carter Bryant can switch onto him (SAS allowed guards 15% fewer rebounds with him playing; he plays tonight); Harrison Barnes can switch onto him (SAS allowed guards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -111556,8 +111556,8 @@
    "line": 3.5,
    "start": "2026-11-08T03:00:00Z",
    "p": 0.583,
-   "price": 0.59,
-   "edge": -0.024,
+   "price": 0.58,
+   "edge": -0.014,
    "news": "POR has allowed bench forwards 6% fewer rebounds than average; Sidy Cissoko can switch onto him (POR allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -114646,8 +114646,8 @@
    "line": 1.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.496,
-   "price": 0.47,
-   "edge": 0.009,
+   "price": 0.46,
+   "edge": 0.019,
    "news": "News: Bryce Young Contract Chatter Hits $50 Million Mark Despite Struggles - Yahoo Sports DEN's CB Kris Abrams-Draine is out, an easier matchup; DEN's DE Eyioma Uwazurike is out, an easier matchup.",
    "result": null
   },
@@ -114661,8 +114661,8 @@
    "line": 1.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.434,
-   "price": 0.54,
-   "edge": -0.123,
+   "price": 0.55,
+   "edge": -0.133,
    "news": "News: Bryce Young Contract Chatter Hits $50 Million Mark Despite Struggles - Yahoo Sports DEN's CB Kris Abrams-Draine is out, an easier matchup; DEN's DE Eyioma Uwazurike is out, an easier matchup.",
    "result": null
   },
@@ -116791,8 +116791,8 @@
    "line": 2.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.443,
-   "price": 0.45,
-   "edge": -0.024,
+   "price": 0.44,
+   "edge": -0.014,
    "news": "DEN's DE Eyioma Uwazurike is out, an easier matchup.",
    "result": null
   },
@@ -118591,8 +118591,8 @@
    "line": 1.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.525,
-   "price": 0.56,
-   "edge": -0.052,
+   "price": 0.55,
+   "edge": -0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -118621,8 +118621,8 @@
    "line": 2.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.609,
-   "price": 0.62,
-   "edge": -0.027,
+   "price": 0.61,
+   "edge": -0.018,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -119641,8 +119641,8 @@
    "line": 1.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.42,
-   "price": 0.61,
-   "edge": -0.207,
+   "price": 0.6,
+   "edge": -0.197,
    "news": "Garrett Wilson is out: Isaiah Williams hit the under in 4/10 games without him vs 9/11 with him; KC's CB Mansoor Delane is out, an easier matchup; KC's CB L'Jarius Sneed is out, an easier matchup.",
    "result": null
   },
@@ -121321,8 +121321,8 @@
    "line": 14.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.453,
-   "price": 0.53,
-   "edge": -0.094,
+   "price": 0.52,
+   "edge": -0.084,
    "news": "Cam Skattebo is out: Devin Singletary hit the under in 6/10 games without him vs 8/10 with him; Tyrone Tracy Jr. is out: Devin Singletary hit the under in 2/2 games without him vs 24/33 with him; PHI's LB Jihaad Campbell is out, an easier matchup.",
    "result": null
   },
