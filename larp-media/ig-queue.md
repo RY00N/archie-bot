@@ -112,7 +112,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 
 | hourly | r1-one-single.mp4 | one is all it takes #nightdrive #latenight #carsofinstagram #luxurylifestyle #porsche | POSTED 11/7 6:56pm PST trial https://www.instagram.com/reel/Dfdu7H6gRF5/ |
 | hourly | r2-what-i-do.mp4 | Kalshi #bmwm4 #m4 #nightlife #carsofinstagram #latenight | POSTED 11/7 7:38pm PST trial https://www.instagram.com/reel/DfdztXAkWfJ/ |
-| hourly | r3-undefeated.mp4 | undefeated #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r3-undefeated.mp4 | undefeated #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | POSTED 11/7 8:38pm PST trial https://www.instagram.com/reel/Dfd6lkvnGC_/ |
 | hourly | r4-gas.mp4 | Kalshi paid for the gas #nightdrive #latenight #carsofinstagram #porsche #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r5-real-job.mp4 | best career move #finedining #dinnerdate #nightlife #luxurylifestyle #latenight | queued (v11 reused clips) |
 | hourly | r6-40-times.mp4 | only 40 #nightdrive #latenight #carsofinstagram #luxurylifestyle #porsche | queued (v11 reused clips) |
