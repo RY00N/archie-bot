@@ -132,4 +132,4 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r20-parlays.mp4 | singles only #porsche #nightdrive #finedining #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r21-elections.mp4 | it's not just elections #porsche #nightdrive #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r22-monday.mp4 | Sunday night #lakers #nba #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
-| hourly | r23-shawty.mp4 | Lol #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | queued (clone of 8bal DfVJxLNTFXC sent by Reza 11/8) |
+| hourly | r23-shawty.mp4 | Lol #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | POSTED 11/8 3:14pm PST trial https://www.instagram.com/reel/Dff6SqQDaSg/ |
