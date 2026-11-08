@@ -126,3 +126,9 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r14-finance.mp4 | technically finance #monaco #nightlife #luxurylifestyle #finedining #supercars | queued (v11 reused clips) |
 | hourly | r15-1am.mp4 | 1am Kalshi alerts #bmwm4 #m4 #nightdrive #latenight #carsofinstagram | queued (v11 reused clips) |
 | hourly | r16-sunday.mp4 | Sunday plans #lakers #porsche #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r17-4th-quarter.mp4 | early cashout #mercedesamg #nightdrive #carsofinstagram #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r18-barber.mp4 | he still doesn't get it #bmwm4 #ferrari #carsofinstagram #carmeet #nightlife | queued (v11 reused clips) |
+| hourly | r19-recap.mp4 | weekend recap #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | queued (v11 reused clips) |
+| hourly | r20-parlays.mp4 | singles only #porsche #nightdrive #finedining #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r21-elections.mp4 | it's not just elections #porsche #nightdrive #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r22-monday.mp4 | Sunday night #lakers #nba #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
