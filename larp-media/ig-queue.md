@@ -122,7 +122,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r10-dinner.mp4 | on me tonight #finedining #dinnerdate #nightlife #luxurylifestyle #latenight | POSTED 11/8 12:38pm PST trial https://www.instagram.com/reel/DffofWwjtIP/ |
 | hourly | r11-red-light.mp4 | every single one #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | POSTED 11/8 1:39pm PST trial https://www.instagram.com/reel/DffvbiYiWZz/ |
 | hourly | r12-one-more.mp4 | just one more #nightdrive #latenight #carsofinstagram #porsche #bmwm4 | POSTED 11/8 2:39pm PST trial https://www.instagram.com/reel/Dff2TQCEfj9/ |
-| hourly | r13-late-one.mp4 | late one off Kalshi #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r13-late-one.mp4 | late one off Kalshi #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | POSTED 11/8 3:39pm PST trial https://www.instagram.com/reel/Dff9JltDYiW/ |
 | hourly | r14-finance.mp4 | technically finance #monaco #nightlife #luxurylifestyle #finedining #supercars | queued (v11 reused clips) |
 | hourly | r15-1am.mp4 | 1am Kalshi alerts #bmwm4 #m4 #nightdrive #latenight #carsofinstagram | queued (v11 reused clips) |
 | hourly | r16-sunday.mp4 | Sunday plans #lakers #porsche #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
