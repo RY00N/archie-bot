@@ -3623,7 +3623,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-08 01:00 PT",
-  "props_today": 3519,
+  "props_today": 3520,
   "kalshi_props_today": 828,
   "kalshi_priced_today": 112,
   "books_on_kalshi_props": {
@@ -111632,8 +111632,8 @@
    "line": 3.5,
    "start": "2026-11-09T00:30:00Z",
    "p": 0.44,
-   "price": 0.4,
-   "edge": 0.023,
+   "price": 0.41,
+   "edge": 0.013,
    "news": "DAL has allowed starting forwards 5% more threes than average (likely on him: P.J. Washington, Cooper Flagg); Max Christie can switch onto him (DAL allowed forwards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -111842,8 +111842,8 @@
    "line": 1.5,
    "start": "2026-11-09T01:00:00Z",
    "p": 0.304,
-   "price": 0.4,
-   "edge": -0.113,
+   "price": 0.39,
+   "edge": -0.103,
    "news": "BOS has allowed bench guards 11% fewer threes than average (likely on him: Payton Pritchard, Baylor Scheierman); Ron Harper Jr. can switch onto him (BOS allowed guards 16% fewer threes with him playing; he plays tonight); Hugo Gonzalez can switch onto him (BOS allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -111962,8 +111962,8 @@
    "line": 1.5,
    "start": "2026-11-09T01:00:00Z",
    "p": 0.347,
-   "price": 0.37,
-   "edge": -0.039,
+   "price": 0.38,
+   "edge": -0.049,
    "news": "News: Remarkable Ryan Rollins stat lends credence to Bucks guard's impact despite shooting slump - Dairyland Express BOS has allowed starting guards 2% more threes than average (likely on him: Derrick White, Baylor Scheierman); Ron Harper Jr. can switch onto him (BOS allowed guards 16% fewer threes with him playing; he plays tonight); Hugo Gonzalez can switch onto him (BOS allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -112142,8 +112142,8 @@
    "line": 2.5,
    "start": "2026-11-08T23:00:00Z",
    "p": 0.395,
-   "price": 0.4,
-   "edge": -0.022,
+   "price": 0.41,
+   "edge": -0.032,
    "news": "DET has allowed starting guards 1% fewer threes than average (likely on him: Daniss Jenkins, Cade Cunningham); Ronald Holland II can switch onto him (DET allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -112667,8 +112667,8 @@
    "line": 2.5,
    "start": "2026-11-09T02:00:00Z",
    "p": 0.608,
-   "price": 0.65,
-   "edge": -0.058,
+   "price": 0.64,
+   "edge": -0.048,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -112832,8 +112832,8 @@
    "line": 1.5,
    "start": "2026-11-08T20:30:00Z",
    "p": 0.361,
-   "price": 0.44,
-   "edge": -0.096,
+   "price": 0.45,
+   "edge": -0.106,
    "news": "PHI has allowed starting guards 19% fewer threes than average (likely on him: Tyrese Maxey, Jaylen Brown); LeBron James can switch onto him (PHI allowed guards 24% fewer threes with him playing; he plays tonight); Jaylen Brown can switch onto him (PHI allowed guards 19% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -113117,8 +113117,8 @@
    "line": 3.5,
    "start": "2026-11-09T00:00:00Z",
    "p": 0.467,
-   "price": 0.57,
-   "edge": -0.12,
+   "price": 0.5,
+   "edge": -0.05,
    "news": "Anthony Edwards is out: LaMelo Ball hit the under in 3/6 games without him vs 2/3 with him.",
    "result": null
   },
@@ -113762,8 +113762,8 @@
    "line": 34.5,
    "start": "2026-11-08T20:30:00Z",
    "p": 0.342,
-   "price": 0.54,
-   "edge": -0.215,
+   "price": 0.53,
+   "edge": -0.205,
    "news": "Injury report: Probable:  (official NBA report) CHI has allowed starting centers 5% more pra than average; Caleb Wilson can switch onto him (CHI allowed centers 28% fewer pra with him playing; he plays tonight); Isaac Okoro can switch onto him (CHI allowed centers 17% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -113957,8 +113957,8 @@
    "line": 14.5,
    "start": "2026-11-08T23:00:00Z",
    "p": 0.496,
-   "price": 0.48,
-   "edge": -0.001,
+   "price": 0.47,
+   "edge": 0.009,
    "news": "LAL has allowed starting forwards 7% fewer points than average (likely on him: Ziaire Williams, Jake LaRavia); Bronny James can switch onto him (LAL allowed forwards 12% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -117934,7 +117934,7 @@
    "p": 0.448,
    "price": 0.48,
    "edge": -0.049,
-   "news": "News: Cardinals-Seahawks injury report: Michael Wilson limited, Quenton Nelson did not practice - Arizona Sports Kendrick Bourne (WR) is out, so Michael Wilson's role likely grows.",
+   "news": "News: Cardinals-Seahawks injury report: Michael Wilson limited, Quenton Nelson out - Arizona Sports Kendrick Bourne (WR) is out, so Michael Wilson's role likely grows.",
    "result": null
   },
   {
@@ -117949,7 +117949,7 @@
    "p": 0.472,
    "price": 0.53,
    "edge": -0.075,
-   "news": "News: Cardinals-Seahawks injury report: Michael Wilson limited, Quenton Nelson did not practice - Arizona Sports Kendrick Bourne (WR) is out, so Michael Wilson's role likely grows.",
+   "news": "News: Cardinals-Seahawks injury report: Michael Wilson limited, Quenton Nelson out - Arizona Sports Kendrick Bourne (WR) is out, so Michael Wilson's role likely grows.",
    "result": null
   },
   {
@@ -117977,8 +117977,8 @@
    "line": 1.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.51,
-   "price": 0.58,
-   "edge": -0.087,
+   "price": 0.59,
+   "edge": -0.097,
    "news": "Kendrick Bourne (WR) is out, so Reggie Virgil's role likely grows.",
    "result": null
   },
@@ -118172,8 +118172,8 @@
    "line": 6.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.528,
-   "price": 0.57,
-   "edge": -0.059,
+   "price": 0.56,
+   "edge": -0.049,
    "news": "News: Jaxon Smith-Njigba not on Week 9 injury report - Yahoo Sports Rashid Shaheed (WR) is out, so Jaxon Smith-Njigba's role likely grows.",
    "result": null
   },
@@ -119882,8 +119882,8 @@
    "line": 1.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.442,
-   "price": 0.32,
-   "edge": 0.107,
+   "price": 0.31,
+   "edge": 0.117,
    "news": "CAR's CB Will Lee III is out, an easier matchup; CAR's CB Akayleb Evans is out, an easier matchup.",
    "result": null
   },
@@ -119897,8 +119897,8 @@
    "line": 1.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.538,
-   "price": 0.69,
-   "edge": -0.167,
+   "price": 0.7,
+   "edge": -0.177,
    "news": "CAR's CB Will Lee III is out, an easier matchup; CAR's CB Akayleb Evans is out, an easier matchup.",
    "result": null
   },
@@ -121594,7 +121594,7 @@
    "p": 0.36,
    "price": 0.46,
    "edge": -0.117,
-   "news": "News: Christian McCaffrey Injury Update: 49ers RB\u2019s Week 9 Status Revealed - Yahoo Sports",
+   "news": "News: 49ers get encouraging Christian McCaffrey injury update ahead of Raiders game - 49ers Webzone",
    "result": null
   },
   {
@@ -121609,7 +121609,7 @@
    "p": 0.59,
    "price": 0.55,
    "edge": 0.023,
-   "news": "News: Christian McCaffrey Injury Update: 49ers RB\u2019s Week 9 Status Revealed - Yahoo Sports",
+   "news": "News: 49ers get encouraging Christian McCaffrey injury update ahead of Raiders game - 49ers Webzone",
    "result": null
   },
   {
@@ -121651,10 +121651,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-08T21:25:00Z",
-   "p": 0.528,
+   "p": 0.478,
    "price": 0.56,
-   "edge": -0.049,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.099,
+   "news": "News: 49ers\u2019 Kyle Juszczyk shares encouraging George Kittle injury recovery update - 49ers Webzone",
    "result": null
   },
   {
@@ -121669,7 +121669,7 @@
    "p": 0.472,
    "price": 0.45,
    "edge": 0.005,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: 49ers\u2019 Kyle Juszczyk shares encouraging George Kittle injury recovery update - 49ers Webzone",
    "result": null
   },
   {
@@ -123094,7 +123094,7 @@
    "p": 0.498,
    "price": 0.49,
    "edge": -0.009,
-   "news": "News: Cardinals-Seahawks injury report: Michael Wilson limited, Quenton Nelson did not practice - Arizona Sports Kendrick Bourne (WR) is out, so Michael Wilson's role likely grows.",
+   "news": "News: Cardinals-Seahawks injury report: Michael Wilson limited, Quenton Nelson out - Arizona Sports Kendrick Bourne (WR) is out, so Michael Wilson's role likely grows.",
    "result": null
   },
   {
@@ -123109,7 +123109,7 @@
    "p": 0.422,
    "price": 0.52,
    "edge": -0.115,
-   "news": "News: Cardinals-Seahawks injury report: Michael Wilson limited, Quenton Nelson did not practice - Arizona Sports Kendrick Bourne (WR) is out, so Michael Wilson's role likely grows.",
+   "news": "News: Cardinals-Seahawks injury report: Michael Wilson limited, Quenton Nelson out - Arizona Sports Kendrick Bourne (WR) is out, so Michael Wilson's role likely grows.",
    "result": null
   },
   {
@@ -124264,7 +124264,7 @@
    "p": 0.409,
    "price": 0.5,
    "edge": -0.109,
-   "news": "News: Christian McCaffrey Injury Update: 49ers RB\u2019s Week 9 Status Revealed - Yahoo Sports",
+   "news": "News: 49ers get encouraging Christian McCaffrey injury update ahead of Raiders game - 49ers Webzone",
    "result": null
   },
   {
@@ -124279,7 +124279,7 @@
    "p": 0.541,
    "price": 0.51,
    "edge": 0.014,
-   "news": "News: Christian McCaffrey Injury Update: 49ers RB\u2019s Week 9 Status Revealed - Yahoo Sports",
+   "news": "News: 49ers get encouraging Christian McCaffrey injury update ahead of Raiders game - 49ers Webzone",
    "result": null
   },
   {
@@ -124292,8 +124292,8 @@
    "line": 34.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.394,
-   "price": 0.5,
-   "edge": -0.123,
+   "price": 0.51,
+   "edge": -0.133,
    "news": "Injury report: Questionable: Ankle; Limited Participation in Practice (official NFL report) Mike Evans (WR) is out, so Demarcus Robinson's role likely grows; Deebo Samuel Sr. (WR) is out, so Demarcus Robinson's role likely grows.",
    "result": null
   },
@@ -124307,8 +124307,8 @@
    "line": 34.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.466,
-   "price": 0.53,
-   "edge": -0.081,
+   "price": 0.52,
+   "edge": -0.071,
    "news": "Injury report: Questionable: Ankle; Limited Participation in Practice (official NFL report) Mike Evans (WR) is out, so Demarcus Robinson's role likely grows; Deebo Samuel Sr. (WR) is out, so Demarcus Robinson's role likely grows.",
    "result": null
   },
@@ -124321,10 +124321,10 @@
    "side": "over",
    "line": 69.5,
    "start": "2026-11-08T21:25:00Z",
-   "p": 0.499,
+   "p": 0.449,
    "price": 0.51,
-   "edge": -0.028,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "edge": -0.078,
+   "news": "News: 49ers\u2019 Kyle Juszczyk shares encouraging George Kittle injury recovery update - 49ers Webzone",
    "result": null
   },
   {
@@ -124339,7 +124339,7 @@
    "p": 0.501,
    "price": 0.5,
    "edge": -0.017,
-   "news": "No injury or off-field red flags in the last 3 days.",
+   "news": "News: 49ers\u2019 Kyle Juszczyk shares encouraging George Kittle injury recovery update - 49ers Webzone",
    "result": null
   },
   {
@@ -124502,8 +124502,8 @@
    "line": 9.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.422,
-   "price": 0.48,
-   "edge": -0.075,
+   "price": 0.49,
+   "edge": -0.085,
    "news": "News: New York Giants not underestimating injured Eagles RB Saquon Barkley - Giants Wire",
    "result": null
   },
@@ -124517,8 +124517,8 @@
    "line": 9.5,
    "start": "2026-11-08T18:00:00Z",
    "p": 0.528,
-   "price": 0.53,
-   "edge": -0.019,
+   "price": 0.52,
+   "edge": -0.009,
    "news": "News: New York Giants not underestimating injured Eagles RB Saquon Barkley - Giants Wire",
    "result": null
   },
@@ -125222,8 +125222,8 @@
    "line": 19.5,
    "start": "2026-11-08T14:30:00Z",
    "p": 0.457,
-   "price": 0.49,
-   "edge": -0.05,
+   "price": 0.48,
+   "edge": -0.04,
    "news": "News: Brian Robinson hits IR with hamstring injury - NBC Sports CIN's DE Cashius Howell is out, an easier matchup.",
    "result": null
   },
@@ -125702,8 +125702,8 @@
    "line": 5.5,
    "start": "2026-11-08T21:25:00Z",
    "p": 0.436,
-   "price": 0.43,
-   "edge": -0.011,
+   "price": 0.44,
+   "edge": -0.021,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -126004,7 +126004,7 @@
    "p": 0.483,
    "price": 0.51,
    "edge": -0.044,
-   "news": "News: Christian McCaffrey Injury Update: 49ers RB\u2019s Week 9 Status Revealed - Yahoo Sports",
+   "news": "News: 49ers get encouraging Christian McCaffrey injury update ahead of Raiders game - 49ers Webzone",
    "result": null
   },
   {
@@ -126019,7 +126019,7 @@
    "p": 0.467,
    "price": 0.5,
    "edge": -0.05,
-   "news": "News: Christian McCaffrey Injury Update: 49ers RB\u2019s Week 9 Status Revealed - Yahoo Sports",
+   "news": "News: 49ers get encouraging Christian McCaffrey injury update ahead of Raiders game - 49ers Webzone",
    "result": null
   },
   {
