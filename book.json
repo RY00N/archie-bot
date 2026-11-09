@@ -3656,25 +3656,25 @@
    "secs": 0.0
   },
   "props_at": "2026-11-09 00:00 PT",
-  "props_today": 481,
-  "kalshi_props_today": 186,
-  "kalshi_priced_today": 15,
+  "props_today": 482,
+  "kalshi_props_today": 187,
+  "kalshi_priced_today": 16,
   "books_on_kalshi_props": {
-   "AN Consensus": 186,
-   "AN Open": 186,
+   "AN Consensus": 187,
+   "AN Open": 187,
    "BetMGM": 39,
-   "BetRivers": 77,
-   "Caesars": 172,
-   "DraftKings": 177,
-   "FanDuel": 172,
-   "Fanatics": 142,
+   "BetRivers": 78,
+   "Caesars": 173,
+   "DraftKings": 178,
+   "FanDuel": 173,
+   "Fanatics": 143,
    "Hard Rock Bet": 25,
-   "Parx": 96,
+   "Parx": 97,
    "Pinnacle": 64,
-   "Sleeper": 174,
-   "Underdog": 186,
+   "Sleeper": 176,
+   "Underdog": 187,
    "Unibet": 13,
-   "bet365": 185
+   "bet365": 186
   },
   "data_files": [
    "mlb.sqlite",
@@ -3682,7 +3682,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 53
+  "kalshi_legs_today": 54
  },
  "shadow": [
   {
@@ -131720,8 +131720,8 @@
    "line": 0.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.369,
-   "price": 0.44,
-   "edge": -0.088,
+   "price": 0.45,
+   "edge": -0.098,
    "news": "MEM has allowed bench forwards 1% more threes than average (likely on him: Jerami Grant, GG Jackson); Cameron Boozer can switch onto him (MEM allowed forwards 16% fewer threes with him playing; he plays tonight); Jerami Grant can switch onto him (MEM allowed forwards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -131915,8 +131915,8 @@
    "line": 2.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.666,
-   "price": 0.71,
-   "edge": -0.058,
+   "price": 0.73,
+   "edge": -0.078,
    "news": "SAS has allowed bench guards 4% fewer threes than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -131975,8 +131975,8 @@
    "line": 1.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.506,
-   "price": 0.54,
-   "edge": -0.051,
+   "price": 0.55,
+   "edge": -0.061,
    "news": "SAS has allowed starting forwards 2% fewer threes than average (likely on him: Victor Wembanyama); Jordan McLaughlin can switch onto him (SAS allowed forwards 22% fewer threes with him playing; he plays tonight); Carter Bryant can switch onto him (SAS allowed forwards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -132095,8 +132095,8 @@
    "line": 1.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.34,
-   "price": 0.33,
-   "edge": -0.005,
+   "price": 0.32,
+   "edge": 0.005,
    "news": "PHX has allowed starting guards 5% more threes than average (likely on him: Devin Booker, Jalen Green); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer threes with him playing; he plays tonight); Rasheer Fleming can switch onto him (PHX allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -132125,8 +132125,8 @@
    "line": 1.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.428,
-   "price": 0.55,
-   "edge": -0.139,
+   "price": 0.56,
+   "edge": -0.149,
    "news": "Injury report: Questionable:  (official NBA report) PHX has allowed starting guards 5% more threes than average (likely on him: Devin Booker, Jalen Green); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer threes with him playing; he plays tonight); Rasheer Fleming can switch onto him (PHX allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -132338,6 +132338,36 @@
    "price": 0.58,
    "edge": -0.034,
    "news": "SAS has allowed bench guards 6% more assists than average (likely on him: Jordan McLaughlin).",
+   "result": null
+  },
+  {
+   "date": "2026-11-09",
+   "ticker": "KXNBAAST-26NOV09SASPHX-PHXDBROOKS3-2",
+   "league": "nba",
+   "player": "Dillon Brooks",
+   "stat": "assists",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-10T02:00:00Z",
+   "p": 0.559,
+   "price": 0.6,
+   "edge": -0.058,
+   "news": "SAS has allowed starting forwards 8% fewer assists than average (likely on him: Victor Wembanyama); Stephon Castle can switch onto him (SAS allowed forwards 20% fewer assists with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed forwards 16% fewer assists with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-09",
+   "ticker": "KXNBAAST-26NOV09SASPHX-PHXDBROOKS3-2",
+   "league": "nba",
+   "player": "Dillon Brooks",
+   "stat": "assists",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-11-10T02:00:00Z",
+   "p": 0.441,
+   "price": 0.41,
+   "edge": 0.014,
+   "news": "SAS has allowed starting forwards 8% fewer assists than average (likely on him: Victor Wembanyama); Stephon Castle can switch onto him (SAS allowed forwards 20% fewer assists with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed forwards 16% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -132695,8 +132725,8 @@
    "line": 24.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.589,
-   "price": 0.52,
-   "edge": 0.052,
+   "price": 0.54,
+   "edge": 0.032,
    "news": "SAS has allowed starting guards 6% fewer points than average (likely on him: Dylan Harper, Devin Vassell); Carter Bryant can switch onto him (SAS allowed guards 11% fewer points with him playing; he plays tonight); those defenders hold shooters 3.4% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -132950,8 +132980,8 @@
    "line": 7.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.541,
-   "price": 0.54,
-   "edge": -0.016,
+   "price": 0.53,
+   "edge": -0.006,
    "news": "Isaiah Stewart is out: Zach Edey hit the over in 1/2 games without him vs 2/5 with him; TOR has allowed starting centers 1% more rebounds than average (likely on him: Jakob Poeltl); Jakob Poeltl can switch onto him (TOR allowed centers 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -133295,8 +133325,8 @@
    "line": 3.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.406,
-   "price": 0.44,
-   "edge": -0.051,
+   "price": 0.45,
+   "edge": -0.061,
    "news": "Injury report: Questionable:  (official NBA report) PHX has allowed starting guards 0% more rebounds than average (likely on him: Devin Booker, Jalen Green).",
    "result": null
   },
