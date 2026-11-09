@@ -82,7 +82,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | n4-chevy-trax.mp4 | Kalshi bought it #porsche #porsche911 #nightdrive #carsofinstagram #luxurylifestyle | POSTED 11/4 2:40pm PST trial https://www.instagram.com/reel/DfVjGIhFTu0/ |
 | hourly | n13-work-hard.mp4 | work hard, let Kalshi do the rest #bmw #nightdrive #ambientlighting #carsofinstagram #latenight | POSTED 11/4 3:40pm PST trial https://www.instagram.com/reel/DfVp8WMGZIq/ |
 | hourly | n6-m4-lot.mp4 | Kalshi paid the M4 off #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | POSTED 11/4 4:40pm PST trial https://www.instagram.com/reel/DfVw17qCRDG/ |
-| hourly | n9-peak-sunday.mp4 | Kalshi singles hitting is the cherry on top 🤌 #porsche #nightdrive #carsofinstagram #luxurylifestyle #latenight | HOLD post at 7:37pm tick Sun 11/8 (night text) |
+| hourly | n9-peak-sunday.mp4 | Kalshi singles hitting is the cherry on top 🤌 #porsche #nightdrive #carsofinstagram #luxurylifestyle #latenight | POSTED 11/8 7:40pm PST trial https://www.instagram.com/reel/DfgY0NZkeoN/ |
 | hourly | n10-step-outside.mp4 | 💔 #bmwm4 #ferrari #carmeet #nightlife #latenight | POSTED 11/4 5:40pm PST trial https://www.instagram.com/reel/DfV3trGEkrh/ |
 | hourly | n8-going-hard.mp4 | going hard on Kalshi tonight #porsche #porsche911 #nightdrive #carsofinstagram #luxurylifestyle | POSTED 11/4 6:40pm PST trial https://www.instagram.com/reel/DfV-j4oj9k9/ |
 | hourly | n14-m4-midnight.mp4 | the M4 runs on Kalshi #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | POSTED 11/4 7:40pm PST trial https://www.instagram.com/reel/DfWFcMvgdYe/ |
