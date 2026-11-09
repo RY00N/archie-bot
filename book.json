@@ -3756,22 +3756,22 @@
   },
   "props_at": "2026-11-09 16:00 PT",
   "props_today": 1029,
-  "kalshi_props_today": 492,
+  "kalshi_props_today": 493,
   "kalshi_priced_today": 28,
   "books_on_kalshi_props": {
-   "AN Consensus": 490,
-   "AN Open": 491,
+   "AN Consensus": 491,
+   "AN Open": 492,
    "BetMGM": 317,
    "BetRivers": 383,
    "Caesars": 404,
-   "DraftKings": 453,
+   "DraftKings": 454,
    "FanDuel": 425,
    "Fanatics": 378,
    "Hard Rock Bet": 31,
    "Parx": 395,
    "Pinnacle": 293,
-   "Sleeper": 465,
-   "Underdog": 492,
+   "Sleeper": 467,
+   "Underdog": 493,
    "Unibet": 124,
    "bet365": 487
   },
@@ -131714,8 +131714,8 @@
    "line": 1.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.623,
-   "price": 0.65,
-   "edge": -0.043,
+   "price": 0.64,
+   "edge": -0.033,
    "news": "News: Cavs forward Evan Mobley on Peyton Watson's return from injury. Video - Akron Beacon Journal CHA has allowed starting centers 13% fewer threes than average (likely on him: Naz Reid, Ryan Kalkbrenner).",
    "result": null
   },
@@ -131759,8 +131759,8 @@
    "line": 1.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.216,
-   "price": 0.37,
-   "edge": -0.17,
+   "price": 0.39,
+   "edge": -0.191,
    "news": "News: Cavaliers Get Peyton Watson Injury Update Ahead of LeBron James Return - Yahoo Sports Sam Merrill is out: Peyton Watson hit the over in 0/3 games without him vs 1/7 with him; Jaylon Tyson is out: Peyton Watson hit the over in 0/3 games without him vs 1/7 with him; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 16% fewer threes than average (likely on him: Sion James, Grayson Allen).",
    "result": null
   },
@@ -131864,8 +131864,8 @@
    "line": 0.5,
    "start": "2026-11-10T01:30:00Z",
    "p": 0.628,
-   "price": 0.67,
-   "edge": -0.057,
+   "price": 0.66,
+   "edge": -0.048,
    "news": "Injury report: Probable: Injury/Illness - Low Back Spasms (official NBA report) HOU has allowed bench guards 9% more threes than average (likely on him: Marcus Smart, Reed Sheppard).",
    "result": null
   },
@@ -131894,8 +131894,8 @@
    "line": 2.5,
    "start": "2026-11-10T01:30:00Z",
    "p": 0.433,
-   "price": 0.49,
-   "edge": -0.074,
+   "price": 0.52,
+   "edge": -0.104,
    "news": "Injury report: Probable:  (official NBA report) Julian Strawther is out: Jamal Murray hit the under in 11/23 games without him vs 10/17 with him; HOU has allowed starting guards 1% fewer threes than average (likely on him: Marcus Smart, Amen Thompson).",
    "result": null
   },
@@ -131984,8 +131984,8 @@
    "line": 2.5,
    "start": "2026-11-10T01:30:00Z",
    "p": 0.567,
-   "price": 0.57,
-   "edge": -0.02,
+   "price": 0.58,
+   "edge": -0.03,
    "news": "DEN has allowed starting forwards 16% more threes than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 15% fewer threes with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -132524,8 +132524,8 @@
    "line": 1.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.502,
-   "price": 0.56,
-   "edge": -0.075,
+   "price": 0.55,
+   "edge": -0.065,
    "news": "Austin Reaves (G) is out, so Collin Sexton's role likely grows; Quentin Grimes is out: Collin Sexton hit the under in 1/2 games without him vs 7/7 with him; ATL has allowed bench guards 16% more threes than average (likely on him: Aaron Wiggins, Luguentz Dort); Kingston Flemings can switch onto him (ATL allowed guards 17% fewer threes with him playing; he plays tonight); Luguentz Dort can switch onto him (ATL allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -132661,7 +132661,7 @@
    "p": 0.632,
    "price": 0.57,
    "edge": 0.045,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
    "result": null
   },
   {
@@ -132676,7 +132676,7 @@
    "p": 0.348,
    "price": 0.45,
    "edge": -0.119,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
    "result": null
   },
   {
@@ -132691,7 +132691,7 @@
    "p": 0.652,
    "price": 0.55,
    "edge": 0.085,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
    "result": null
   },
   {
@@ -132706,7 +132706,7 @@
    "p": 0.328,
    "price": 0.46,
    "edge": -0.149,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
    "result": null
   },
   {
@@ -132751,7 +132751,7 @@
    "p": 0.467,
    "price": 0.43,
    "edge": 0.02,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed bench forwards 34% fewer threes than average (likely on him: Jamison Battle, Allen Graves).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed bench forwards 34% fewer threes than average (likely on him: Jamison Battle, Allen Graves).",
    "result": null
   },
   {
@@ -132766,7 +132766,7 @@
    "p": 0.513,
    "price": 0.59,
    "edge": -0.094,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed bench forwards 34% fewer threes than average (likely on him: Jamison Battle, Allen Graves).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed bench forwards 34% fewer threes than average (likely on him: Jamison Battle, Allen Graves).",
    "result": null
   },
   {
@@ -132781,7 +132781,7 @@
    "p": 0.548,
    "price": 0.51,
    "edge": 0.021,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
    "result": null
   },
   {
@@ -132796,7 +132796,7 @@
    "p": 0.432,
    "price": 0.51,
    "edge": -0.095,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 12% fewer threes than average (likely on him: RJ Barrett, Trayce Jackson-Davis).",
    "result": null
   },
   {
@@ -132824,8 +132824,8 @@
    "line": 2.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.55,
-   "price": 0.56,
-   "edge": -0.027,
+   "price": 0.55,
+   "edge": -0.017,
    "news": "Scotty Pippen Jr. is out: Ty Jerome hit the under in 5/10 games without him vs 5/11 with him; TOR's G Immanuel Quickley is out, an easier matchup; TOR has allowed starting guards 9% fewer threes than average (likely on him: Jamal Shead, Ja'Kobe Walter).",
    "result": null
   },
@@ -132929,8 +132929,8 @@
    "line": 2.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.477,
-   "price": 0.46,
-   "edge": -0.0,
+   "price": 0.47,
+   "edge": -0.01,
    "news": "News: Raptors need Ja\u2019Kobe Walter to snap out of 3-point slump for brutal four-game test - Raptors Rapture Immanuel Quickley is out: Ja'Kobe Walter hit the over in 9/17 games without him vs 10/18 with him; MEM's G Scotty Pippen Jr. is out, an easier matchup; MEM has allowed starting guards 16% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 18% fewer threes with him playing; he is out tonight); Cedric Coward can switch onto him (MEM allowed guards 15% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -132944,8 +132944,8 @@
    "line": 2.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.463,
-   "price": 0.55,
-   "edge": -0.104,
+   "price": 0.54,
+   "edge": -0.094,
    "news": "News: Raptors need Ja\u2019Kobe Walter to snap out of 3-point slump for brutal four-game test - Raptors Rapture Immanuel Quickley is out: Ja'Kobe Walter hit the under in 8/17 games without him vs 8/18 with him; MEM's G Scotty Pippen Jr. is out, an easier matchup; MEM has allowed starting guards 16% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 18% fewer threes with him playing; he is out tonight); Cedric Coward can switch onto him (MEM allowed guards 15% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -132974,8 +132974,8 @@
    "line": 1.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.346,
-   "price": 0.4,
-   "edge": -0.071,
+   "price": 0.39,
+   "edge": -0.061,
    "news": "Kawhi Leonard is out: RJ Barrett hit the under in 3/7 games without him vs 3/4 with him; MEM has allowed starting forwards 16% fewer threes than average (likely on him: Cameron Boozer, Cedric Coward); Cameron Boozer can switch onto him (MEM allowed forwards 16% fewer threes with him playing; he plays tonight); Jerami Grant can switch onto him (MEM allowed forwards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -133514,8 +133514,8 @@
    "line": 1.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.524,
-   "price": 0.53,
-   "edge": -0.023,
+   "price": 0.54,
+   "edge": -0.033,
    "news": "SAS's G Devin Vassell is out, an easier matchup; SAS has allowed starting guards 7% fewer threes than average (likely on him: Dylan Harper, De'Aaron Fox); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -133949,8 +133949,8 @@
    "line": 0.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.741,
-   "price": 0.7,
-   "edge": 0.026,
+   "price": 0.68,
+   "edge": 0.046,
    "news": "Justin Champagnie is out: AJ Dybantsa hit the over in 5/6 games without him vs 1/3 with him; DET has allowed starting forwards 6% fewer threes than average (likely on him: Duncan Robinson, Paul Reed); Kevin Huerter can switch onto him (DET allowed forwards 20% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -134024,8 +134024,8 @@
    "line": 0.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.419,
-   "price": 0.38,
-   "edge": 0.023,
+   "price": 0.37,
+   "edge": 0.033,
    "news": "DET has allowed starting centers 9% fewer threes than average; John Collins can switch onto him (DET allowed centers 39% fewer threes with him playing; he plays tonight); Paul Reed can switch onto him (DET allowed centers 28% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -134249,8 +134249,8 @@
    "line": 5.5,
    "start": "2026-11-10T01:30:00Z",
    "p": 0.433,
-   "price": 0.49,
-   "edge": -0.074,
+   "price": 0.48,
+   "edge": -0.064,
    "news": "Injury report: Probable:  (official NBA report) HOU has allowed starting guards 7% fewer assists than average (likely on him: Marcus Smart, Amen Thompson).",
    "result": null
   },
@@ -134594,8 +134594,8 @@
    "line": 9.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.551,
-   "price": 0.55,
-   "edge": -0.016,
+   "price": 0.56,
+   "edge": -0.026,
    "news": "News: Jamal Shead's career-high 16 assists help Raptors maul struggling Bucks - Yardbarker Immanuel Quickley is out: Jamal Shead hit the under in 9/11 games without him vs 29/29 with him; MEM's G Scotty Pippen Jr. is out, an easier matchup; MEM has allowed bench guards 4% more assists than average (likely on him: Javon Small, Cam Spencer); Cameron Boozer can switch onto him (MEM allowed guards 26% fewer assists with him playing; he plays tonight); Jerami Grant can switch onto him (MEM allowed guards 26% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -134611,7 +134611,7 @@
    "p": 0.279,
    "price": 0.41,
    "edge": -0.148,
-   "news": "Scottie Barnes is out: RJ Barrett hit the over in 0/4 games without him vs 4/36 with him; Collin Murray-Boyles is out: RJ Barrett hit the over in 0/16 games without him vs 4/24 with him; Kawhi Leonard is out: RJ Barrett hit the over in 1/7 games without him vs 0/4 with him; MEM has allowed starting forwards 1% fewer assists than average (likely on him: Cameron Boozer, Cedric Coward); Ty Jerome can switch onto him (MEM allowed forwards 22% fewer assists with him playing; he plays tonight); Jaylen Wells can switch onto him (MEM allowed forwards 21% fewer assists with him playing; he plays tonight).",
+   "news": "Collin Murray-Boyles is out: RJ Barrett hit the over in 0/16 games without him vs 4/24 with him; Scottie Barnes is out: RJ Barrett hit the over in 0/4 games without him vs 4/36 with him; Kawhi Leonard is out: RJ Barrett hit the over in 1/7 games without him vs 0/4 with him; MEM has allowed starting forwards 1% fewer assists than average (likely on him: Cameron Boozer, Cedric Coward); Ty Jerome can switch onto him (MEM allowed forwards 22% fewer assists with him playing; he plays tonight); Jaylen Wells can switch onto him (MEM allowed forwards 21% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -134626,7 +134626,7 @@
    "p": 0.721,
    "price": 0.6,
    "edge": 0.104,
-   "news": "Scottie Barnes is out: RJ Barrett hit the under in 4/4 games without him vs 32/36 with him; Collin Murray-Boyles is out: RJ Barrett hit the under in 16/16 games without him vs 20/24 with him; Kawhi Leonard is out: RJ Barrett hit the under in 6/7 games without him vs 4/4 with him; MEM has allowed starting forwards 1% fewer assists than average (likely on him: Cameron Boozer, Cedric Coward); Ty Jerome can switch onto him (MEM allowed forwards 22% fewer assists with him playing; he plays tonight); Jaylen Wells can switch onto him (MEM allowed forwards 21% fewer assists with him playing; he plays tonight).",
+   "news": "Collin Murray-Boyles is out: RJ Barrett hit the under in 16/16 games without him vs 20/24 with him; Scottie Barnes is out: RJ Barrett hit the under in 4/4 games without him vs 32/36 with him; Kawhi Leonard is out: RJ Barrett hit the under in 6/7 games without him vs 4/4 with him; MEM has allowed starting forwards 1% fewer assists than average (likely on him: Cameron Boozer, Cedric Coward); Ty Jerome can switch onto him (MEM allowed forwards 22% fewer assists with him playing; he plays tonight); Jaylen Wells can switch onto him (MEM allowed forwards 21% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -134999,8 +134999,8 @@
    "line": 5.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.353,
-   "price": 0.55,
-   "edge": -0.214,
+   "price": 0.56,
+   "edge": -0.224,
    "news": "Devin Vassell is out: Stephon Castle hit the over in 0/4 games without him vs 18/36 with him; PHX has allowed starting guards 12% fewer assists than average (likely on him: Devin Booker, Jalen Green); Miles Bridges can switch onto him (PHX allowed guards 19% fewer assists with him playing; he plays tonight); Dillon Brooks can switch onto him (PHX allowed guards 11% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -135179,8 +135179,8 @@
    "line": 1.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.334,
-   "price": 0.38,
-   "edge": -0.062,
+   "price": 0.37,
+   "edge": -0.052,
    "news": "News: Cavs forward Evan Mobley on Peyton Watson's return from injury. Video - Akron Beacon Journal CHA has allowed starting centers 1% fewer blocks than average (likely on him: Naz Reid, Ryan Kalkbrenner); Tidjane Salaun can switch onto him (CHA allowed centers 12% fewer blocks with him playing; he plays tonight).",
    "result": null
   },
@@ -135434,8 +135434,8 @@
    "line": 14.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.476,
-   "price": 0.54,
-   "edge": -0.081,
+   "price": 0.55,
+   "edge": -0.091,
    "news": "Kon Knueppel is out: Sion James hit the under in 7/9 games without him vs 13/18 with him; Dennis Schroder is out: Sion James hit the under in 1/2 games without him vs 5/6 with him; CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 6% more pra than average (likely on him: Donovan Mitchell, James Harden).",
    "result": null
   },
@@ -135464,8 +135464,8 @@
    "line": 29.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.599,
-   "price": 0.59,
-   "edge": -0.008,
+   "price": 0.57,
+   "edge": 0.012,
    "news": "News: Cavs forward Evan Mobley on Peyton Watson's return from injury. Video - Akron Beacon Journal CHA has allowed starting centers 12% fewer pra than average (likely on him: Naz Reid, Ryan Kalkbrenner); Naz Reid can switch onto him (CHA allowed centers 9% fewer pra with him playing; he plays tonight); those defenders hold shooters 3.9% below their normal FG%, among the league's stingiest; minutes trending down (we project 33, his last 5 avg 31 vs 34 over 15).",
    "result": null
   },
@@ -135494,8 +135494,8 @@
    "line": 19.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.408,
-   "price": 0.6,
-   "edge": -0.209,
+   "price": 0.59,
+   "edge": -0.199,
    "news": "News: Cavaliers Get Peyton Watson Injury Update Ahead of LeBron James Return - Yahoo Sports Sam Merrill is out: Peyton Watson hit the under in 1/3 games without him vs 5/7 with him; Jaylon Tyson is out: Peyton Watson hit the under in 1/3 games without him vs 5/7 with him; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 0% more pra than average (likely on him: Sion James, Grayson Allen).",
    "result": null
   },
@@ -135509,8 +135509,8 @@
    "line": 19.5,
    "start": "2026-11-10T01:30:00Z",
    "p": 0.389,
-   "price": 0.5,
-   "edge": -0.129,
+   "price": 0.51,
+   "edge": -0.138,
    "news": "Injury report: Probable:  (official NBA report) HOU has allowed starting forwards 3% more pra than average (likely on him: Jabari Smith Jr., Kevin Durant); Clint Capela can switch onto him (HOU allowed forwards 11% fewer pra with him playing; he is out tonight); those defenders hold shooters 3.1% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -135524,8 +135524,8 @@
    "line": 19.5,
    "start": "2026-11-10T01:30:00Z",
    "p": 0.531,
-   "price": 0.53,
-   "edge": -0.016,
+   "price": 0.54,
+   "edge": -0.026,
    "news": "Injury report: Probable:  (official NBA report) HOU has allowed starting forwards 3% more pra than average (likely on him: Jabari Smith Jr., Kevin Durant); Clint Capela can switch onto him (HOU allowed forwards 11% fewer pra with him playing; he is out tonight); those defenders hold shooters 3.1% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -135644,8 +135644,8 @@
    "line": 39.5,
    "start": "2026-11-10T01:00:00Z",
    "p": 0.47,
-   "price": 0.59,
-   "edge": -0.137,
+   "price": 0.56,
+   "edge": -0.107,
    "news": "News: Cooper Flagg ends shooting slump with dominant performance in Mavericks\u2019 rout of Nets - DLLS Sports Sergio de Larrea (F) is out, so Cooper Flagg's role likely grows; IND has allowed starting forwards 3% more pra than average (likely on him: Jalen Slawson, Pascal Siakam); Kelly Oubre Jr. can switch onto him (IND allowed forwards 8% fewer pra with him playing; he plays tonight); minutes trending up (we project 34, his last 5 avg 36 vs 32 over 15).",
    "result": null
   },
@@ -135659,8 +135659,8 @@
    "line": 29.5,
    "start": "2026-11-10T01:00:00Z",
    "p": 0.478,
-   "price": 0.52,
-   "edge": -0.059,
+   "price": 0.51,
+   "edge": -0.049,
    "news": "News: Kyrie Irving's Injury Status for Second Night of Back-to-Back Against Indiana Pacers - Sports Illustrated IND has allowed starting guards 10% more pra than average (likely on him: Quenton Jackson, Andrew Nembhard); Kelly Oubre Jr. can switch onto him (IND allowed guards 14% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -135794,8 +135794,8 @@
    "line": 24.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.525,
-   "price": 0.59,
-   "edge": -0.082,
+   "price": 0.58,
+   "edge": -0.072,
    "news": "News: Onyeka Okongwu Injury: Headed to locker room - RotoWire Asa Newell is out: Onyeka Okongwu hit the under in 18/32 games without him vs 6/8 with him; Mouhamed Gueye is out: Onyeka Okongwu hit the under in 14/22 games without him vs 10/18 with him; LAL has allowed starting forwards 10% fewer pra than average (likely on him: Ziaire Williams, Jake LaRavia).",
    "result": null
   },
@@ -135871,7 +135871,7 @@
    "p": 0.532,
    "price": 0.48,
    "edge": 0.035,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 13% fewer pra than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Immanuel Quickley can switch onto him (TOR allowed forwards 11% fewer pra with him playing; he is out tonight).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 13% fewer pra than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Immanuel Quickley can switch onto him (TOR allowed forwards 11% fewer pra with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -135886,7 +135886,7 @@
    "p": 0.448,
    "price": 0.53,
    "edge": -0.099,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 13% fewer pra than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Immanuel Quickley can switch onto him (TOR allowed forwards 11% fewer pra with him playing; he is out tonight).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 13% fewer pra than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Immanuel Quickley can switch onto him (TOR allowed forwards 11% fewer pra with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -136259,8 +136259,8 @@
    "line": 24.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.527,
-   "price": 0.45,
-   "edge": 0.06,
+   "price": 0.46,
+   "edge": 0.05,
    "news": "Justin Champagnie is out: AJ Dybantsa hit the over in 3/6 games without him vs 0/3 with him; DET has allowed starting forwards 1% more pra than average (likely on him: Duncan Robinson, Paul Reed); those defenders hold shooters 3.0% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -136289,8 +136289,8 @@
    "line": 19.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.468,
-   "price": 0.46,
-   "edge": -0.009,
+   "price": 0.45,
+   "edge": 0.001,
    "news": "DET has allowed starting centers 18% fewer pra than average; Jalen Duren can switch onto him (DET allowed centers 11% fewer pra with him playing; he is out tonight); minutes trending up (we project 26, his last 5 avg 27 vs 24 over 15).",
    "result": null
   },
@@ -136304,8 +136304,8 @@
    "line": 19.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.532,
-   "price": 0.55,
-   "edge": -0.035,
+   "price": 0.56,
+   "edge": -0.045,
    "news": "DET has allowed starting centers 18% fewer pra than average; Jalen Duren can switch onto him (DET allowed centers 11% fewer pra with him playing; he is out tonight); minutes trending up (we project 26, his last 5 avg 27 vs 24 over 15).",
    "result": null
   },
@@ -136319,8 +136319,8 @@
    "line": 24.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.659,
-   "price": 0.5,
-   "edge": 0.142,
+   "price": 0.49,
+   "edge": 0.152,
    "news": "Tristan Vukcevic is out: Kyshawn George hit the over in 20/33 games without him vs 2/7 with him; Justin Champagnie is out: Kyshawn George hit the over in 9/15 games without him vs 13/25 with him; DET has allowed starting forwards 1% more pra than average (likely on him: Duncan Robinson, Paul Reed); those defenders hold shooters 3.0% below their normal FG%, among the league's stingiest; minutes trending up (we project 32, his last 5 avg 35 vs 28 over 15).",
    "result": null
   },
@@ -136334,8 +136334,8 @@
    "line": 24.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.341,
-   "price": 0.52,
-   "edge": -0.196,
+   "price": 0.53,
+   "edge": -0.206,
    "news": "Tristan Vukcevic is out: Kyshawn George hit the under in 13/33 games without him vs 5/7 with him; Justin Champagnie is out: Kyshawn George hit the under in 6/15 games without him vs 12/25 with him; DET has allowed starting forwards 1% more pra than average (likely on him: Duncan Robinson, Paul Reed); those defenders hold shooters 3.0% below their normal FG%, among the league's stingiest; minutes trending up (we project 32, his last 5 avg 35 vs 28 over 15).",
    "result": null
   },
@@ -136364,8 +136364,8 @@
    "line": 29.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.481,
-   "price": 0.54,
-   "edge": -0.076,
+   "price": 0.53,
+   "edge": -0.066,
    "news": "Bilal Coulibaly is out: Trae Young hit the under in 6/8 games without him vs 4/8 with him; Jamir Watkins is out: Trae Young hit the under in 7/13 games without him vs 3/3 with him; DET has allowed starting guards 8% fewer pra than average (likely on him: Daniss Jenkins, Cade Cunningham); minutes trending up (we project 32, his last 5 avg 34 vs 30 over 15).",
    "result": null
   },
@@ -136709,8 +136709,8 @@
    "line": 14.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.539,
-   "price": 0.54,
-   "edge": -0.018,
+   "price": 0.52,
+   "edge": 0.002,
    "news": "Austin Reaves (G) is out, so Collin Sexton's role likely grows; Quentin Grimes is out: Collin Sexton hit the over in 2/2 games without him vs 0/7 with him; ATL has allowed bench guards 3% fewer points than average (likely on him: Aaron Wiggins, Luguentz Dort); Kingston Flemings can switch onto him (ATL allowed guards 14% fewer points with him playing; he plays tonight); minutes trending down (we project 19, his last 5 avg 17 vs 22 over 15).",
    "result": null
   },
@@ -136724,8 +136724,8 @@
    "line": 14.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.461,
-   "price": 0.5,
-   "edge": -0.056,
+   "price": 0.51,
+   "edge": -0.066,
    "news": "Austin Reaves (G) is out, so Collin Sexton's role likely grows; Quentin Grimes is out: Collin Sexton hit the under in 0/2 games without him vs 7/7 with him; ATL has allowed bench guards 3% fewer points than average (likely on him: Aaron Wiggins, Luguentz Dort); Kingston Flemings can switch onto him (ATL allowed guards 14% fewer points with him playing; he plays tonight); minutes trending down (we project 19, his last 5 avg 17 vs 22 over 15).",
    "result": null
   },
@@ -136769,8 +136769,8 @@
    "line": 14.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.453,
-   "price": 0.49,
-   "edge": -0.054,
+   "price": 0.5,
+   "edge": -0.064,
    "news": "News: Lakers\u2019 Walker Kessler Makes Concerning Admission About Hand Injury - Sports Illustrated ATL has allowed starting centers 6% more points than average; Mouhamed Gueye can switch onto him (ATL allowed centers 13% fewer points with him playing; he is out tonight); Corey Kispert can switch onto him (ATL allowed centers 12% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -136784,8 +136784,8 @@
    "line": 14.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.497,
-   "price": 0.52,
-   "edge": -0.04,
+   "price": 0.51,
+   "edge": -0.03,
    "news": "News: Lakers\u2019 Walker Kessler Makes Concerning Admission About Hand Injury - Sports Illustrated ATL has allowed starting centers 6% more points than average; Mouhamed Gueye can switch onto him (ATL allowed centers 13% fewer points with him playing; he is out tonight); Corey Kispert can switch onto him (ATL allowed centers 12% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -136799,8 +136799,8 @@
    "line": 9.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.518,
-   "price": 0.55,
-   "edge": -0.049,
+   "price": 0.56,
+   "edge": -0.059,
    "news": "ATL's F Asa Newell is out, an easier matchup; ATL has allowed starting forwards 4% fewer points than average (likely on him: Jalen Johnson, Onyeka Okongwu); Mouhamed Gueye can switch onto him (ATL allowed forwards 17% fewer points with him playing; he is out tonight); Corey Kispert can switch onto him (ATL allowed forwards 9% fewer points with him playing; he plays tonight); minutes trending down (we project 23, his last 5 avg 22 vs 24 over 15).",
    "result": null
   },
@@ -136814,8 +136814,8 @@
    "line": 9.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.472,
-   "price": 0.46,
-   "edge": -0.005,
+   "price": 0.45,
+   "edge": 0.005,
    "news": "ATL's F Asa Newell is out, an easier matchup; ATL has allowed starting forwards 4% fewer points than average (likely on him: Jalen Johnson, Onyeka Okongwu); Mouhamed Gueye can switch onto him (ATL allowed forwards 17% fewer points with him playing; he is out tonight); Corey Kispert can switch onto him (ATL allowed forwards 9% fewer points with him playing; he plays tonight); minutes trending down (we project 23, his last 5 avg 22 vs 24 over 15).",
    "result": null
   },
@@ -136831,7 +136831,7 @@
    "p": 0.57,
    "price": 0.53,
    "edge": 0.023,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 10% fewer points than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Immanuel Quickley can switch onto him (TOR allowed forwards 10% fewer points with him playing; he is out tonight).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 10% fewer points than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Immanuel Quickley can switch onto him (TOR allowed forwards 10% fewer points with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -136846,7 +136846,7 @@
    "p": 0.41,
    "price": 0.48,
    "edge": -0.087,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 10% fewer points than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Immanuel Quickley can switch onto him (TOR allowed forwards 10% fewer points with him playing; he is out tonight).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 10% fewer points than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Immanuel Quickley can switch onto him (TOR allowed forwards 10% fewer points with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -137624,8 +137624,8 @@
    "line": 7.5,
    "start": "2026-11-10T01:30:00Z",
    "p": 0.577,
-   "price": 0.6,
-   "edge": -0.04,
+   "price": 0.59,
+   "edge": -0.03,
    "news": "DEN has allowed starting guards 4% fewer rebounds than average (likely on him: Jamal Murray, Christian Braun); Cameron Johnson can switch onto him (DEN allowed guards 8% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -137654,8 +137654,8 @@
    "line": 3.5,
    "start": "2026-11-10T01:30:00Z",
    "p": 0.57,
-   "price": 0.61,
-   "edge": -0.057,
+   "price": 0.6,
+   "edge": -0.047,
    "news": "DEN has allowed starting guards 4% fewer rebounds than average (likely on him: Jamal Murray, Christian Braun); Cameron Johnson can switch onto him (DEN allowed guards 8% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -138091,7 +138091,7 @@
    "p": 0.433,
    "price": 0.39,
    "edge": 0.026,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 13% fewer rebounds than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Jamison Battle can switch onto him (TOR allowed forwards 18% fewer rebounds with him playing; he plays tonight); Immanuel Quickley can switch onto him (TOR allowed forwards 14% fewer rebounds with him playing; he is out tonight).",
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 13% fewer rebounds than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Jamison Battle can switch onto him (TOR allowed forwards 18% fewer rebounds with him playing; he plays tonight); Immanuel Quickley can switch onto him (TOR allowed forwards 14% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -138104,9 +138104,9 @@
    "line": 3.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.547,
-   "price": 0.64,
-   "edge": -0.109,
-   "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR's F Collin Murray-Boyles is out, an easier matchup; TOR has allowed starting forwards 13% fewer rebounds than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Jamison Battle can switch onto him (TOR allowed forwards 18% fewer rebounds with him playing; he plays tonight); Immanuel Quickley can switch onto him (TOR allowed forwards 14% fewer rebounds with him playing; he is out tonight).",
+   "price": 0.62,
+   "edge": -0.089,
+   "news": "TOR's F Collin Murray-Boyles is out, an easier matchup; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 13% fewer rebounds than average (likely on him: RJ Barrett, Trayce Jackson-Davis); Jamison Battle can switch onto him (TOR allowed forwards 18% fewer rebounds with him playing; he plays tonight); Immanuel Quickley can switch onto him (TOR allowed forwards 14% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -138149,8 +138149,8 @@
    "line": 7.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.555,
-   "price": 0.54,
-   "edge": -0.002,
+   "price": 0.55,
+   "edge": -0.012,
    "news": "Isaiah Stewart is out: Zach Edey hit the over in 1/2 games without him vs 2/5 with him; TOR has allowed starting centers 1% more rebounds than average (likely on him: Jakob Poeltl); Jakob Poeltl can switch onto him (TOR allowed centers 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -138209,8 +138209,8 @@
    "line": 7.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.406,
-   "price": 0.53,
-   "edge": -0.141,
+   "price": 0.55,
+   "edge": -0.161,
    "news": "MEM has allowed starting centers 6% more rebounds than average (likely on him: Zach Edey); Cameron Boozer can switch onto him (MEM allowed centers 29% fewer rebounds with him playing; he plays tonight); Zach Edey can switch onto him (MEM allowed centers 29% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -138224,8 +138224,8 @@
    "line": 7.5,
    "start": "2026-11-10T00:30:00Z",
    "p": 0.594,
-   "price": 0.48,
-   "edge": 0.097,
+   "price": 0.47,
+   "edge": 0.107,
    "news": "MEM has allowed starting centers 6% more rebounds than average (likely on him: Zach Edey); Cameron Boozer can switch onto him (MEM allowed centers 29% fewer rebounds with him playing; he plays tonight); Zach Edey can switch onto him (MEM allowed centers 29% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -139049,8 +139049,8 @@
    "line": 11.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.473,
-   "price": 0.55,
-   "edge": -0.094,
+   "price": 0.54,
+   "edge": -0.084,
    "news": "PHX has allowed starting forwards 3% fewer rebounds than average (likely on him: Miles Bridges, Dillon Brooks); Jamaree Bouyea can switch onto him (PHX allowed forwards 16% fewer rebounds with him playing; he plays tonight); Rasheer Fleming can switch onto him (PHX allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -139799,8 +139799,8 @@
    "line": 1.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.335,
-   "price": 0.34,
-   "edge": -0.021,
+   "price": 0.35,
+   "edge": -0.031,
    "news": "PHX has allowed starting forwards 9% fewer steals than average (likely on him: Miles Bridges, Dillon Brooks); Mark Williams can switch onto him (PHX allowed forwards 15% fewer steals with him playing; he is out tonight); Jalen Green can switch onto him (PHX allowed forwards 15% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -139814,8 +139814,8 @@
    "line": 1.5,
    "start": "2026-11-10T02:00:00Z",
    "p": 0.665,
-   "price": 0.68,
-   "edge": -0.03,
+   "price": 0.69,
+   "edge": -0.04,
    "news": "PHX has allowed starting forwards 9% fewer steals than average (likely on him: Miles Bridges, Dillon Brooks); Mark Williams can switch onto him (PHX allowed forwards 15% fewer steals with him playing; he is out tonight); Jalen Green can switch onto him (PHX allowed forwards 15% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -139829,8 +139829,8 @@
    "line": 1.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.516,
-   "price": 0.54,
-   "edge": -0.041,
+   "price": 0.56,
+   "edge": -0.061,
    "news": "Isaiah Joe is out: Ausar Thompson hit the over in 2/7 games without him vs 0/3 with him; WSH has allowed starting guards 13% fewer steals than average (likely on him: Trae Young); Anthony Davis can switch onto him (WSH allowed guards 26% fewer steals with him playing; he plays tonight); Trae Young can switch onto him (WSH allowed guards 19% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -139844,8 +139844,8 @@
    "line": 1.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.484,
-   "price": 0.48,
-   "edge": -0.013,
+   "price": 0.47,
+   "edge": -0.003,
    "news": "Isaiah Joe is out: Ausar Thompson hit the under in 5/7 games without him vs 3/3 with him; WSH has allowed starting guards 13% fewer steals than average (likely on him: Trae Young); Anthony Davis can switch onto him (WSH allowed guards 26% fewer steals with him playing; he plays tonight); Trae Young can switch onto him (WSH allowed guards 19% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -139889,8 +139889,8 @@
    "line": 1.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.411,
-   "price": 0.41,
-   "edge": -0.016,
+   "price": 0.43,
+   "edge": -0.036,
    "news": "WSH has allowed starting forwards 20% more steals than average (likely on him: Anthony Davis, Kyshawn George); Jamir Watkins can switch onto him (WSH allowed forwards 9% fewer steals with him playing; he is out tonight); Justin Champagnie can switch onto him (WSH allowed forwards 9% fewer steals with him playing; he is out tonight).",
    "result": null
   },
@@ -139904,8 +139904,8 @@
    "line": 1.5,
    "start": "2026-11-10T00:00:00Z",
    "p": 0.589,
-   "price": 0.6,
-   "edge": -0.028,
+   "price": 0.59,
+   "edge": -0.018,
    "news": "WSH has allowed starting forwards 20% more steals than average (likely on him: Anthony Davis, Kyshawn George); Jamir Watkins can switch onto him (WSH allowed forwards 9% fewer steals with him playing; he is out tonight); Justin Champagnie can switch onto him (WSH allowed forwards 9% fewer steals with him playing; he is out tonight).",
    "result": null
   },
@@ -140624,8 +140624,8 @@
    "line": 0.5,
    "start": "2026-11-10T01:15:00Z",
    "p": 0.547,
-   "price": 0.62,
-   "edge": -0.089,
+   "price": 0.63,
+   "edge": -0.099,
    "news": "Jauan Jennings (WR) is out, so Tai Felton's role likely grows.",
    "result": null
   },
