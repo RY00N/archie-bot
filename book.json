@@ -3623,7 +3623,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-08 17:00 PT",
-  "props_today": 648,
+  "props_today": 649,
   "kalshi_props_today": 304,
   "kalshi_priced_today": 19,
   "books_on_kalshi_props": {
@@ -3649,7 +3649,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 85
+  "kalshi_legs_today": 74
  },
  "shadow": [
   {
@@ -111917,8 +111917,8 @@
    "line": 2.5,
    "start": "2026-11-09T01:00:00Z",
    "p": 0.468,
-   "price": 0.5,
-   "edge": -0.049,
+   "price": 0.48,
+   "edge": -0.029,
    "news": "MIL has allowed starting forwards 14% more threes than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Gary Trent Jr. can switch onto him (MIL allowed forwards 11% fewer threes with him playing; he is out tonight); Jaime Jaquez Jr. can switch onto him (MIL allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -112847,8 +112847,8 @@
    "line": 0.5,
    "start": "2026-11-09T02:00:00Z",
    "p": 0.376,
-   "price": 0.42,
-   "edge": -0.061,
+   "price": 0.41,
+   "edge": -0.051,
    "news": "SAC has allowed bench guards 33% more threes than average (likely on him: Emanuel Sharp, Malik Monk); Zach LaVine can switch onto him (SAC allowed guards 19% fewer threes with him playing; he plays tonight); De'Andre Hunter can switch onto him (SAC allowed guards 18% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -113327,8 +113327,8 @@
    "line": 2.5,
    "start": "2026-11-09T02:00:00Z",
    "p": 0.609,
-   "price": 0.57,
-   "edge": 0.022,
+   "price": 0.56,
+   "edge": 0.032,
    "news": "LAC has allowed starting forwards 15% fewer threes than average (likely on him: Rui Hachimura, Derrick Jones Jr.); Kobe Sanders can switch onto him (LAC allowed forwards 15% fewer threes with him playing; he plays tonight); Yanic Konan Niederhauser can switch onto him (LAC allowed forwards 10% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -114632,8 +114632,8 @@
    "line": 3.5,
    "start": "2026-11-09T02:00:00Z",
    "p": 0.377,
-   "price": 0.39,
-   "edge": -0.03,
+   "price": 0.4,
+   "edge": -0.04,
    "news": "MIA has allowed starting guards 10% more assists than average (likely on him: Davion Mitchell, Klay Thompson); Giannis Antetokounmpo can switch onto him (MIA allowed guards 8% fewer assists with him playing; he plays tonight); Klay Thompson can switch onto him (MIA allowed guards 8% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -117092,8 +117092,8 @@
    "line": 7.5,
    "start": "2026-11-09T01:00:00Z",
    "p": 0.44,
-   "price": 0.46,
-   "edge": -0.037,
+   "price": 0.47,
+   "edge": -0.047,
    "news": "MIL has allowed starting forwards 2% more rebounds than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Ousmane Dieng can switch onto him (MIL allowed forwards 10% fewer rebounds with him playing; he plays tonight); Jericho Sims can switch onto him (MIL allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -117107,8 +117107,8 @@
    "line": 7.5,
    "start": "2026-11-09T01:00:00Z",
    "p": 0.56,
-   "price": 0.55,
-   "edge": -0.007,
+   "price": 0.54,
+   "edge": 0.003,
    "news": "MIL has allowed starting forwards 2% more rebounds than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Ousmane Dieng can switch onto him (MIL allowed forwards 10% fewer rebounds with him playing; he plays tonight); Jericho Sims can switch onto him (MIL allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -117152,8 +117152,8 @@
    "line": 7.5,
    "start": "2026-11-09T01:00:00Z",
    "p": 0.391,
-   "price": 0.45,
-   "edge": -0.076,
+   "price": 0.46,
+   "edge": -0.086,
    "news": "MIL has allowed bench centers 9% fewer rebounds than average (likely on him: Kel'el Ware, Jericho Sims); Myles Turner can switch onto him (MIL allowed centers 19% fewer rebounds with him playing; he plays tonight); Pete Nance can switch onto him (MIL allowed centers 9% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -117167,8 +117167,8 @@
    "line": 7.5,
    "start": "2026-11-09T01:00:00Z",
    "p": 0.609,
-   "price": 0.56,
-   "edge": 0.032,
+   "price": 0.55,
+   "edge": 0.042,
    "news": "MIL has allowed bench centers 9% fewer rebounds than average (likely on him: Kel'el Ware, Jericho Sims); Myles Turner can switch onto him (MIL allowed centers 19% fewer rebounds with him playing; he plays tonight); Pete Nance can switch onto him (MIL allowed centers 9% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -117692,8 +117692,8 @@
    "line": 3.5,
    "start": "2026-11-09T02:00:00Z",
    "p": 0.436,
-   "price": 0.44,
-   "edge": -0.021,
+   "price": 0.43,
+   "edge": -0.011,
    "news": "MIA has allowed starting guards 4% fewer rebounds than average (likely on him: Davion Mitchell, Klay Thompson).",
    "result": null
   },
@@ -117767,8 +117767,8 @@
    "line": 3.5,
    "start": "2026-11-09T02:00:00Z",
    "p": 0.427,
-   "price": 0.48,
-   "edge": -0.07,
+   "price": 0.49,
+   "edge": -0.08,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -119402,8 +119402,8 @@
    "line": 31.5,
    "start": "2026-11-09T01:20:00Z",
    "p": 0.568,
-   "price": 0.53,
-   "edge": 0.021,
+   "price": 0.54,
+   "edge": 0.011,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -119417,8 +119417,8 @@
    "line": 31.5,
    "start": "2026-11-09T01:20:00Z",
    "p": 0.432,
-   "price": 0.48,
-   "edge": -0.065,
+   "price": 0.47,
+   "edge": -0.055,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -119447,8 +119447,8 @@
    "line": 29.5,
    "start": "2026-11-09T01:20:00Z",
    "p": 0.433,
-   "price": 0.5,
-   "edge": -0.085,
+   "price": 0.51,
+   "edge": -0.094,
    "news": "News: Will Baker Mayfield play against the Chicago Bears today? Latest injury update on the Tampa Bay Buccaneer - The Times of India CHI's DT Kentavius Street is out, an easier matchup.",
    "result": null
   },
@@ -127607,8 +127607,8 @@
    "line": 3.5,
    "start": "2026-11-09T01:20:00Z",
    "p": 0.494,
-   "price": 0.51,
-   "edge": -0.033,
+   "price": 0.5,
+   "edge": -0.024,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
