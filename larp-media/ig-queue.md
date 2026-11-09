@@ -128,7 +128,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r16-sunday.mp4 | Sunday plans #lakers #porsche #nightlife #latenight #luxurylifestyle | POSTED 11/8 6:38pm PST trial https://www.instagram.com/reel/DfgRpadjeN5/ |
 | hourly | r17-4th-quarter.mp4 | early cashout #mercedesamg #nightdrive #carsofinstagram #latenight #luxurylifestyle | POSTED 11/8 8:39pm PST trial https://www.instagram.com/reel/Dfgfd_WoIgt/ |
 | hourly | r18-barber.mp4 | he still doesn't get it #bmwm4 #ferrari #carsofinstagram #carmeet #nightlife | POSTED 11/8 9:38pm PST trial https://www.instagram.com/reel/DfgmT0mCkJK/ |
-| hourly | r19-recap.mp4 | weekend recap #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | queued (v11 reused clips) |
+| hourly | r19-recap.mp4 | weekend recap #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | POSTED 11/8 10:38pm PST trial https://www.instagram.com/reel/DfgtH4hk0JN/ |
 | hourly | r20-parlays.mp4 | singles only #porsche #nightdrive #finedining #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r21-elections.mp4 | it's not just elections #porsche #nightdrive #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r22-monday.mp4 | Sunday night #lakers #nba #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
