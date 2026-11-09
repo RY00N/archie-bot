@@ -3622,7 +3622,7 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-08 21:00 PT",
+  "props_at": "2026-11-08 22:00 PT",
   "props_today": 0,
   "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
@@ -133186,8 +133186,8 @@
    "line": 2.5,
    "start": "2026-11-10T01:15:00Z",
    "p": 0.408,
-   "price": 0.38,
-   "edge": 0.012,
+   "price": 0.39,
+   "edge": 0.001,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -133575,9 +133575,9 @@
    "side": "over",
    "line": 11.5,
    "start": "2026-11-10T01:15:00Z",
-   "p": 0.446,
+   "p": 0.45,
    "price": 0.51,
-   "edge": -0.081,
+   "edge": -0.077,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -133590,9 +133590,9 @@
    "side": "under",
    "line": 11.5,
    "start": "2026-11-10T01:15:00Z",
-   "p": 0.554,
+   "p": 0.55,
    "price": 0.5,
-   "edge": 0.037,
+   "edge": 0.033,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   }
