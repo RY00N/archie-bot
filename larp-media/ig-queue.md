@@ -157,3 +157,10 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r45-loan.mp4 | better than a loan #finedining #porsche #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r46-upgraded.mp4 | upgraded #porsche #monaco #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r47-park.mp4 | before i even parked #porsche #sushi #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r48-wednesday.mp4 | 3 for 3 #porsche #sushi #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r49-texting.mp4 | she thinks it's another girl #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r50-cruise.mp4 | midweek cruise #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r51-calm.mp4 | up 20 in the 3rd #lakers #sushi #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r52-hobby.mp4 | hobbies #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | queued (v11 reused clips) |
+| hourly | r53-rent.mp4 | rent paid #porsche #finedining #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
+
