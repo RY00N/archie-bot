@@ -847,8 +847,9 @@ def an_props(league):
     names = ["core_bet_type_%d_%s" % (t, AN_TYPE_NAMES[t]) for t in types]
     rows, code = [], None
     ids = ",".join(map(str, PROP_BOOK_IDS))
-    for i in range(0, len(names), 5):
-        chunk = ",".join(names[i:i + 5])
+    # 2026-11-10: AN now answers 400 INVALID_DATA when customPickTypes lists more than one type, so ask one at a time
+    for i in range(0, len(names), 1):
+        chunk = names[i]
         base = "%s/web/v2/scoreboard/%s/markets?bookIds=%s&customPickTypes=%s" % (
             AN, AN_SLUG[league], ids, chunk)
         urls = [base]
