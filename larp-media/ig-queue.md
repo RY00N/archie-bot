@@ -145,3 +145,9 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r33-bank-app.mp4 | one good week #monaco #lakers #nightlife #luxurylifestyle #latenight | queued (v11 reused clips) |
 | hourly | r34-luck.mp4 | not luck #bmwm4 #sushi #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r35-singles-now.mp4 | singles only #vegas #porsche #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r36-first-quarter.mp4 | first quarter #bmwm4 #lakers #nba #nightlife #latenight | queued (v11 reused clips) |
+| hourly | r37-job.mp4 | Kalshi history #finedining #porsche #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r38-quiet-night.mp4 | quiet night #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r39-tail.mp4 | tail me #porsche #sushi #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r40-weeknight.mp4 | weeknight plans #monaco #porsche #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r41-green.mp4 | green day #porsche #sushi #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
