@@ -3920,13 +3920,13 @@
    "secs": 0.0
   },
   "props_at": "2026-11-10 12:00 PT",
-  "props_today": 594,
-  "kalshi_props_today": 347,
+  "props_today": 620,
+  "kalshi_props_today": 365,
   "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
-   "Pinnacle": 201,
-   "Sleeper": 344,
-   "Underdog": 347
+   "Pinnacle": 213,
+   "Sleeper": 362,
+   "Underdog": 365
   },
   "data_files": [
    "mlb.sqlite",
