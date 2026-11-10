@@ -142,7 +142,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r30-valet.mp4 | just Kalshi #porsche #finedining #nightdrive #latenight #luxurylifestyle | POSTED 11/9 4:38pm PST trial https://www.instagram.com/reel/DfioxTan1lK/ |
 | hourly | r31-clear-head.mp4 | clear head #porsche #bmwm4 #nightdrive #latenight #carsofinstagram | POSTED 11/9 5:38pm PST trial https://www.instagram.com/reel/DfivkQ3mlLU/ |
 | hourly | r32-kalshi-monday.mp4 | Kalshi Monday #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | POSTED 11/9 6:38pm PST trial https://www.instagram.com/reel/Dfi2cmLibMK/ |
-| hourly | r33-bank-app.mp4 | one good week #monaco #lakers #nightlife #luxurylifestyle #latenight | queued (v11 reused clips) |
+| hourly | r33-bank-app.mp4 | one good week #monaco #lakers #nightlife #luxurylifestyle #latenight | POSTED 11/9 7:38pm PST trial https://www.instagram.com/reel/Dfi9XegEmlE/ |
 | hourly | r34-luck.mp4 | not luck #bmwm4 #sushi #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r35-singles-now.mp4 | singles only #vegas #porsche #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r36-first-quarter.mp4 | first quarter #bmwm4 #lakers #nba #nightlife #latenight | queued (v11 reused clips) |
