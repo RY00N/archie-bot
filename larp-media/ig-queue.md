@@ -181,3 +181,9 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r68-garage.mp4 | garage check #mclaren #nightdrive #carsofinstagram #latenight #luxurylifestyle | queued (steady clips) |
 | hourly | r69-pull-up.mp4 | Kalshi paid for the gas #bmwm4 #m4 #carsofinstagram #nightdrive #latenight | queued (steady clips) |
 | hourly | r70-lakers-up.mp4 | up before tipoff #lakers #amg #nightlife #latenight #luxurylifestyle | queued (steady clips) |
+| hourly | r71-tipoff.mp4 | locked before tipoff #lakers #bmwm4 #nightlife #latenight #luxurylifestyle | queued (steady clips) |
+| hourly | r72-belong.mp4 | we belong here #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | queued (steady clips) |
+| hourly | r73-gas-too.mp4 | and the gas #bmwm4 #finedining #nightdrive #latenight #luxurylifestyle | queued (steady clips) |
+| hourly | r74-night-off.mp4 | night off #bmwm4 #nightdrive #carsofinstagram #latenight #luxurylifestyle | queued (steady clips) |
+| hourly | r75-amg.mp4 | waiting on the single #amg #bmwm4 #carsofinstagram #nightdrive #latenight | queued (steady clips) |
+| hourly | r76-reason.mp4 | no reason at all #corvette #ferrari #carsofinstagram #nightdrive #latenight | queued (steady clips) |
