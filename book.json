@@ -3954,19 +3954,19 @@
   },
   "props_at": "2026-11-11 01:00 PT",
   "props_today": 740,
-  "kalshi_props_today": 91,
-  "kalshi_priced_today": 3,
+  "kalshi_props_today": 92,
+  "kalshi_priced_today": 4,
   "books_on_kalshi_props": {
-   "AN Consensus": 91,
-   "AN Open": 91,
-   "Caesars": 89,
-   "DraftKings": 82,
-   "FanDuel": 89,
-   "Fanatics": 71,
-   "Pinnacle": 56,
-   "Sleeper": 90,
-   "Underdog": 91,
-   "bet365": 90
+   "AN Consensus": 92,
+   "AN Open": 92,
+   "Caesars": 90,
+   "DraftKings": 83,
+   "FanDuel": 90,
+   "Fanatics": 72,
+   "Pinnacle": 57,
+   "Sleeper": 91,
+   "Underdog": 92,
+   "bet365": 91
   },
   "data_files": [
    "mlb.sqlite",
@@ -3974,7 +3974,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 21
+  "kalshi_legs_today": 22
  },
  "shadow": [
   {
@@ -149007,8 +149007,8 @@
    "line": 1.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.423,
-   "price": 0.48,
-   "edge": -0.074,
+   "price": 0.47,
+   "edge": -0.064,
    "news": "DEN has allowed starting forwards 17% more threes than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -149307,8 +149307,8 @@
    "line": 1.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.622,
-   "price": 0.66,
-   "edge": -0.054,
+   "price": 0.67,
+   "edge": -0.063,
    "news": "News: De'Aaron Fox Injury Update - NBA.com CHI has allowed starting guards 6% more threes than average (likely on him: Norman Powell, Josh Giddey); Patrick Williams can switch onto him (CHI allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -149457,8 +149457,8 @@
    "line": 1.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.441,
-   "price": 0.44,
-   "edge": -0.016,
+   "price": 0.43,
+   "edge": -0.006,
    "news": "CHI has allowed starting forwards 2% more threes than average (likely on him: Caleb Wilson, Matas Buzelis); Tre Jones can switch onto him (CHI allowed forwards 17% fewer threes with him playing; he plays tonight); Caleb Wilson can switch onto him (CHI allowed forwards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -149794,6 +149794,36 @@
   },
   {
    "date": "2026-11-11",
+   "ticker": "KXNBAPTS-26NOV11DENMEM-MEMZEDEY14-10",
+   "league": "nba",
+   "player": "Zach Edey",
+   "stat": "points",
+   "side": "over",
+   "line": 9.5,
+   "start": "2026-11-12T01:00:00Z",
+   "p": 0.403,
+   "price": 0.49,
+   "edge": -0.104,
+   "news": "Quinten Post is out: Zach Edey hit the over in 1/4 games without him vs 2/6 with him; DEN has allowed starting centers 3% fewer points than average (likely on him: Nikola Jokic); Cameron Johnson can switch onto him (DEN allowed centers 13% fewer points with him playing; he plays tonight); Marvin Bagley III can switch onto him (DEN allowed centers 10% fewer points with him playing; he plays tonight); minutes trending down (we project 23, his last 5 avg 21 vs 24 over 15).",
+   "result": null
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "KXNBAPTS-26NOV11DENMEM-MEMZEDEY14-10",
+   "league": "nba",
+   "player": "Zach Edey",
+   "stat": "points",
+   "side": "under",
+   "line": 9.5,
+   "start": "2026-11-12T01:00:00Z",
+   "p": 0.597,
+   "price": 0.56,
+   "edge": 0.02,
+   "news": "Quinten Post is out: Zach Edey hit the under in 3/4 games without him vs 4/6 with him; DEN has allowed starting centers 3% fewer points than average (likely on him: Nikola Jokic); Cameron Johnson can switch onto him (DEN allowed centers 13% fewer points with him playing; he plays tonight); Marvin Bagley III can switch onto him (DEN allowed centers 10% fewer points with him playing; he plays tonight); minutes trending down (we project 23, his last 5 avg 21 vs 24 over 15).",
+   "result": null
+  },
+  {
+   "date": "2026-11-11",
    "ticker": "KXNBAPTS-26NOV11SASCHI-CHICWILSON8-20",
    "league": "nba",
    "player": "Caleb Wilson",
@@ -150042,8 +150072,8 @@
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.307,
-   "price": 0.52,
-   "edge": -0.23,
+   "price": 0.53,
+   "edge": -0.24,
    "news": "Johnny Furphy is out: Aaron Nesmith hit the over in 6/22 games without him vs 8/12 with him; WSH has allowed starting guards 2% fewer rebounds than average (likely on him: Trae Young, Bilal Coulibaly); Anthony Davis can switch onto him (WSH allowed guards 13% fewer rebounds with him playing; he plays tonight); Tristan Vukcevic can switch onto him (WSH allowed guards 9% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
