@@ -89,6 +89,10 @@ while [ $SECONDS -lt $end ]; do
   if [ $(( $(date +%s) - $(stat -c %Y $BP/.counters_at 2>/dev/null || echo 0) )) -ge 600 ]; then
     touch $BP/.counters_at; (cd /tmp && timeout 60 python3 -I $BP/counters_check.py >> $BP/counters.log 2>&1) &
   fi
+  # big-money tracker every 10 min (Ryan 2026-11-11 "what top traders have in common"): read only, whale_flow.json
+  if [ $(( $(date +%s) - $(stat -c %Y $BP/.whale_at 2>/dev/null || echo 0) )) -ge 600 ]; then
+    touch $BP/.whale_at; (cd /tmp && flock -n /tmp/bp-whale.lock timeout 540 python3 -I $BP/whale_flow.py > $BP/whale_flow.log 2>&1) &
+  fi
   # cash-out alerts every 60s (Ryan 2026-11-01): posts in PICKS itself, rarely (leg near dead late or player out)
   if [ $(( $(date +%s) - $(stat -c %Y $BP/.cashout_at 2>/dev/null || echo 0) )) -ge 60 ]; then
     touch $BP/.cashout_at; (cd /tmp && timeout 50 python3 -I $BP/cashout.py >> $BP/cashout.log 2>&1) &
