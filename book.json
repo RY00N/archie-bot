@@ -4119,23 +4119,23 @@
   },
   "props_at": "2026-11-11 04:00 PT",
   "props_today": 977,
-  "kalshi_props_today": 445,
+  "kalshi_props_today": 450,
   "kalshi_priced_today": 15,
   "books_on_kalshi_props": {
-   "AN Consensus": 443,
-   "AN Open": 445,
+   "AN Consensus": 448,
+   "AN Open": 450,
    "BetMGM": 114,
    "BetRivers": 98,
-   "Caesars": 406,
-   "DraftKings": 385,
-   "FanDuel": 397,
+   "Caesars": 410,
+   "DraftKings": 389,
+   "FanDuel": 402,
    "Fanatics": 308,
    "Parx": 98,
    "Pinnacle": 163,
-   "Sleeper": 411,
-   "Underdog": 445,
+   "Sleeper": 416,
+   "Underdog": 450,
    "Unibet": 1,
-   "bet365": 443
+   "bet365": 448
   },
   "data_files": [
    "mlb.sqlite",
@@ -4143,7 +4143,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 109
+  "kalshi_legs_today": 110
  },
  "shadow": [
   {
@@ -149401,8 +149401,8 @@
    "line": 2.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.473,
-   "price": 0.49,
-   "edge": -0.034,
+   "price": 0.48,
+   "edge": -0.024,
    "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 15% fewer threes than average (likely on him: RJ Barrett, Collin Murray-Boyles).",
    "result": null
   },
@@ -150241,8 +150241,8 @@
    "line": 4.5,
    "start": "2026-11-12T02:30:00Z",
    "p": 0.476,
-   "price": 0.46,
-   "edge": -0.001,
+   "price": 0.45,
+   "edge": 0.009,
    "news": "Moses Moody is out: Stephen Curry hit the over in 9/20 games without him vs 8/20 with him; HOU has allowed starting guards 0% fewer threes than average (likely on him: Marcus Smart, Amen Thompson).",
    "result": null
   },
@@ -151141,8 +151141,8 @@
    "line": 2.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.308,
-   "price": 0.43,
-   "edge": -0.139,
+   "price": 0.44,
+   "edge": -0.149,
    "news": "Injury report: Questionable: Injury/Illness - Low Back Spasms (official NBA report) SAS has allowed starting guards 8% fewer threes than average (likely on him: Dylan Harper, Devin Vassell); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151426,8 +151426,8 @@
    "line": 0.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.376,
-   "price": 0.36,
-   "edge": -0.0,
+   "price": 0.37,
+   "edge": -0.01,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -151441,8 +151441,8 @@
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.449,
-   "price": 0.5,
-   "edge": -0.068,
+   "price": 0.49,
+   "edge": -0.058,
    "news": "WSH has allowed bench forwards 8% fewer threes than average (likely on him: Khris Middleton, Anthony Gill); Deandre Ayton can switch onto him (WSH allowed forwards 12% fewer threes with him playing; he plays tonight); Kyshawn George can switch onto him (WSH allowed forwards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151756,8 +151756,8 @@
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.514,
-   "price": 0.74,
-   "edge": -0.239,
+   "price": 0.57,
+   "edge": -0.073,
    "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 18% fewer assists than average (likely on him: RJ Barrett, Collin Murray-Boyles); Immanuel Quickley can switch onto him (TOR allowed forwards 8% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -151891,8 +151891,8 @@
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.378,
-   "price": 0.42,
-   "edge": -0.059,
+   "price": 0.43,
+   "edge": -0.069,
    "news": "CLE has allowed starting centers 10% fewer assists than average (likely on him: Evan Mobley, Jarrett Allen); Evan Mobley can switch onto him (CLE allowed centers 25% fewer assists with him playing; he plays tonight); Mario Hezonja can switch onto him (CLE allowed centers 21% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -151906,8 +151906,8 @@
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.622,
-   "price": 0.6,
-   "edge": 0.005,
+   "price": 0.59,
+   "edge": 0.015,
    "news": "CLE has allowed starting centers 10% fewer assists than average (likely on him: Evan Mobley, Jarrett Allen); Evan Mobley can switch onto him (CLE allowed centers 25% fewer assists with him playing; he plays tonight); Mario Hezonja can switch onto him (CLE allowed centers 21% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -152359,6 +152359,21 @@
    "price": 0.57,
    "edge": -0.071,
    "news": "LAL has allowed starting centers 40% fewer blocks than average (likely on him: Walker Kessler).",
+   "result": null
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "KXNBABLK-26NOV11SASCHI-SASVWEMBANYAMA1-4",
+   "league": "nba",
+   "player": "Victor Wembanyama",
+   "stat": "blocks",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-11-12T01:00:00Z",
+   "p": 0.445,
+   "price": 0.94,
+   "edge": -0.499,
+   "news": "CHI has allowed starting forwards 3% fewer blocks than average (likely on him: Caleb Wilson, Matas Buzelis); Noa Essengue can switch onto him (CHI allowed forwards 47% fewer blocks with him playing; he plays tonight); Caleb Wilson can switch onto him (CHI allowed forwards 34% fewer blocks with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -153271,8 +153286,8 @@
    "line": 29.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.489,
-   "price": 0.54,
-   "edge": -0.068,
+   "price": 0.53,
+   "edge": -0.058,
    "news": "CHI has allowed starting forwards 12% more points than average (likely on him: Caleb Wilson, Matas Buzelis); minutes trending down (we project 30, his last 5 avg 27 vs 33 over 15).",
    "result": null
   },
@@ -153286,8 +153301,8 @@
    "line": 29.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.511,
-   "price": 0.48,
-   "edge": 0.014,
+   "price": 0.49,
+   "edge": 0.004,
    "news": "CHI has allowed starting forwards 12% more points than average (likely on him: Caleb Wilson, Matas Buzelis); minutes trending down (we project 30, his last 5 avg 27 vs 33 over 15).",
    "result": null
   },
@@ -153496,8 +153511,8 @@
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.543,
-   "price": 0.67,
-   "edge": -0.142,
+   "price": 0.57,
+   "edge": -0.044,
    "news": "TOR has allowed starting guards 3% fewer rebounds than average (likely on him: Jamal Shead, Immanuel Quickley).",
    "result": null
   },
@@ -153511,8 +153526,8 @@
    "line": 7.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.445,
-   "price": 0.49,
-   "edge": -0.062,
+   "price": 0.48,
+   "edge": -0.052,
    "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 11% fewer rebounds than average (likely on him: RJ Barrett, Collin Murray-Boyles); Jamison Battle can switch onto him (TOR allowed forwards 19% fewer rebounds with him playing; he plays tonight); Immanuel Quickley can switch onto him (TOR allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -153526,8 +153541,8 @@
    "line": 7.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.545,
-   "price": 0.59,
-   "edge": -0.062,
+   "price": 0.56,
+   "edge": -0.032,
    "news": "TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 11% fewer rebounds than average (likely on him: RJ Barrett, Collin Murray-Boyles); Jamison Battle can switch onto him (TOR allowed forwards 19% fewer rebounds with him playing; he plays tonight); Immanuel Quickley can switch onto him (TOR allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
