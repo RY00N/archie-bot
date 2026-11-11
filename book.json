@@ -3945,7 +3945,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 36
+  "kalshi_legs_today": 37
  },
  "shadow": [
   {
@@ -142948,8 +142948,8 @@
    "line": 1.5,
    "start": "2026-11-11T04:00:00Z",
    "p": 0.654,
-   "price": 0.65,
-   "edge": -0.012,
+   "price": 0.64,
+   "edge": -0.002,
    "news": "Cason Wallace is out: Alex Caruso hit the under in 13/23 games without him vs 11/17 with him; Jalen Williams is out: Alex Caruso hit the under in 18/28 games without him vs 6/12 with him; POR has allowed bench guards 39% fewer threes than average (likely on him: Jrue Holiday, Sidy Cissoko).",
    "result": null
   },
@@ -143495,6 +143495,36 @@
   },
   {
    "date": "2026-11-10",
+   "ticker": "KXNBA3PT-26NOV10ORLSAC-ORLJCAIN8-2",
+   "league": "nba",
+   "player": "Jamal Cain",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-11T03:00:00Z",
+   "p": 0.475,
+   "price": 0.42,
+   "edge": 0.038,
+   "news": "Tristan da Silva is out: Jamal Cain hit the over in 4/15 games without him vs 6/20 with him; Jonathan Isaac (F) is out, so Jamal Cain's role likely grows; Paolo Banchero is out: Jamal Cain hit the over in 3/8 games without him vs 7/28 with him; Noah Penda is out: Jamal Cain hit the over in 8/27 games without him vs 2/10 with him; SAC has allowed bench forwards 21% more threes than average (likely on him: Precious Achiuwa, Keegan Murray); De'Andre Hunter can switch onto him (SAC allowed forwards 18% fewer threes with him playing; he plays tonight); Zach LaVine can switch onto him (SAC allowed forwards 15% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-10",
+   "ticker": "KXNBA3PT-26NOV10ORLSAC-ORLJCAIN8-2",
+   "league": "nba",
+   "player": "Jamal Cain",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-11-11T03:00:00Z",
+   "p": 0.495,
+   "price": 0.67,
+   "edge": -0.19,
+   "news": "Tristan da Silva is out: Jamal Cain hit the under in 11/15 games without him vs 14/20 with him; Jonathan Isaac (F) is out, so Jamal Cain's role likely grows; Paolo Banchero is out: Jamal Cain hit the under in 5/8 games without him vs 21/28 with him; Noah Penda is out: Jamal Cain hit the under in 19/27 games without him vs 8/10 with him; SAC has allowed bench forwards 21% more threes than average (likely on him: Precious Achiuwa, Keegan Murray); De'Andre Hunter can switch onto him (SAC allowed forwards 18% fewer threes with him playing; he plays tonight); Zach LaVine can switch onto him (SAC allowed forwards 15% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-10",
    "ticker": "KXNBA3PT-26NOV10ORLSAC-ORLJRICHARDSON11-2",
    "league": "nba",
    "player": "Jase Richardson",
@@ -143622,10 +143652,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-11T03:00:00Z",
-   "p": 0.549,
+   "p": 0.599,
    "price": 0.56,
-   "edge": -0.028,
-   "news": "News: De'Andre Hunter (illness) off injury report Sunday - FantasyPros ORL's F Tristan da Silva is out, an easier matchup; ORL has allowed starting forwards 25% fewer threes than average (likely on him: Franz Wagner, Jamal Cain); Noah Penda can switch onto him (ORL allowed forwards 30% fewer threes with him playing; he is out tonight); Paolo Banchero can switch onto him (ORL allowed forwards 21% fewer threes with him playing; he is out tonight).",
+   "edge": 0.022,
+   "news": "ORL's F Tristan da Silva is out, an easier matchup; ORL has allowed starting forwards 25% fewer threes than average (likely on him: Franz Wagner, Jamal Cain); Noah Penda can switch onto him (ORL allowed forwards 30% fewer threes with him playing; he is out tonight); Paolo Banchero can switch onto him (ORL allowed forwards 21% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -143640,7 +143670,7 @@
    "p": 0.391,
    "price": 0.46,
    "edge": -0.086,
-   "news": "News: De'Andre Hunter (illness) off injury report Sunday - FantasyPros ORL's F Tristan da Silva is out, an easier matchup; ORL has allowed starting forwards 25% fewer threes than average (likely on him: Franz Wagner, Jamal Cain); Noah Penda can switch onto him (ORL allowed forwards 30% fewer threes with him playing; he is out tonight); Paolo Banchero can switch onto him (ORL allowed forwards 21% fewer threes with him playing; he is out tonight).",
+   "news": "ORL's F Tristan da Silva is out, an easier matchup; ORL has allowed starting forwards 25% fewer threes than average (likely on him: Franz Wagner, Jamal Cain); Noah Penda can switch onto him (ORL allowed forwards 30% fewer threes with him playing; he is out tonight); Paolo Banchero can switch onto him (ORL allowed forwards 21% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -145842,10 +145872,10 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-11-11T03:00:00Z",
-   "p": 0.509,
+   "p": 0.559,
    "price": 0.46,
-   "edge": 0.032,
-   "news": "News: De'Andre Hunter (illness) off injury report Sunday - FantasyPros ORL's F Tristan da Silva is out, an easier matchup; ORL has allowed starting forwards 8% more pra than average (likely on him: Franz Wagner, Jamal Cain); Paolo Banchero can switch onto him (ORL allowed forwards 9% fewer pra with him playing; he is out tonight); Noah Penda can switch onto him (ORL allowed forwards 8% fewer pra with him playing; he is out tonight); minutes trending up (we project 31, his last 5 avg 35 vs 27 over 15).",
+   "edge": 0.082,
+   "news": "ORL's F Tristan da Silva is out, an easier matchup; ORL has allowed starting forwards 8% more pra than average (likely on him: Franz Wagner, Jamal Cain); Paolo Banchero can switch onto him (ORL allowed forwards 9% fewer pra with him playing; he is out tonight); Noah Penda can switch onto him (ORL allowed forwards 8% fewer pra with him playing; he is out tonight); minutes trending up (we project 31, his last 5 avg 35 vs 27 over 15).",
    "result": null
   },
   {
@@ -145860,7 +145890,7 @@
    "p": 0.431,
    "price": 0.55,
    "edge": -0.136,
-   "news": "News: De'Andre Hunter (illness) off injury report Sunday - FantasyPros ORL's F Tristan da Silva is out, an easier matchup; ORL has allowed starting forwards 8% more pra than average (likely on him: Franz Wagner, Jamal Cain); Paolo Banchero can switch onto him (ORL allowed forwards 9% fewer pra with him playing; he is out tonight); Noah Penda can switch onto him (ORL allowed forwards 8% fewer pra with him playing; he is out tonight); minutes trending up (we project 31, his last 5 avg 35 vs 27 over 15).",
+   "news": "ORL's F Tristan da Silva is out, an easier matchup; ORL has allowed starting forwards 8% more pra than average (likely on him: Franz Wagner, Jamal Cain); Paolo Banchero can switch onto him (ORL allowed forwards 9% fewer pra with him playing; he is out tonight); Noah Penda can switch onto him (ORL allowed forwards 8% fewer pra with him playing; he is out tonight); minutes trending up (we project 31, his last 5 avg 35 vs 27 over 15).",
    "result": null
   },
   {
@@ -148588,8 +148618,8 @@
    "line": 3.5,
    "start": "2026-11-11T03:00:00Z",
    "p": 0.459,
-   "price": 0.53,
-   "edge": -0.088,
+   "price": 0.52,
+   "edge": -0.078,
    "news": "News: Keegan Murray evaluates performance in first game back from injury in Kings loss - Yahoo Sports ORL's F Tristan da Silva is out, an easier matchup; ORL has allowed starting forwards 5% more rebounds than average (likely on him: Franz Wagner, Jamal Cain); Anthony Black can switch onto him (ORL allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -148618,8 +148648,8 @@
    "line": 5.5,
    "start": "2026-11-11T03:00:00Z",
    "p": 0.382,
-   "price": 0.48,
-   "edge": -0.115,
+   "price": 0.47,
+   "edge": -0.105,
    "news": "ORL's F Tristan da Silva is out, an easier matchup; ORL has allowed starting forwards 5% more rebounds than average (likely on him: Franz Wagner, Jamal Cain); Anthony Black can switch onto him (ORL allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -149143,8 +149173,8 @@
    "line": 1.5,
    "start": "2026-11-11T04:00:00Z",
    "p": 0.371,
-   "price": 0.43,
-   "edge": -0.076,
+   "price": 0.42,
+   "edge": -0.066,
    "news": "Cason Wallace is out: Ajay Mitchell hit the over in 4/18 games without him vs 5/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 9/25 games without him vs 0/5 with him; POR has allowed starting guards 4% more steals than average (likely on him: Damian Lillard, Scoot Henderson); Damian Lillard can switch onto him (POR allowed guards 16% fewer steals with him playing; he plays tonight); Deni Avdija can switch onto him (POR allowed guards 11% fewer steals with him playing; he plays tonight).",
    "result": null
   },
