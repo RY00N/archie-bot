@@ -154,7 +154,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r42-tuesday.mp4 | already up #porsche #lakers #nightdrive #latenight #luxurylifestyle | POSTED 11/10 1:39pm PST trial https://www.instagram.com/reel/Dfk5BloEZGr/ |
 | hourly | r43-group-chat.mp4 | on do not disturb #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | POSTED 11/10 2:38pm PST trial https://www.instagram.com/reel/Dfk_xz_DNJi/ |
 | hourly | r44-late-run.mp4 | late Kalshi run #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | POSTED 11/10 3:39pm PST trial https://www.instagram.com/reel/DflGxd0ADrE/ |
-| hourly | r45-loan.mp4 | better than a loan #finedining #porsche #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
+| hourly | r45-loan.mp4 | better than a loan #finedining #porsche #nightdrive #latenight #luxurylifestyle | POSTED 11/10 4:39pm PST trial https://www.instagram.com/reel/DflNmtaFaT6/ |
 | hourly | r46-upgraded.mp4 | upgraded #porsche #monaco #nightlife #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r47-park.mp4 | before i even parked #porsche #sushi #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
 | hourly | r48-wednesday.mp4 | 3 for 3 #porsche #sushi #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
