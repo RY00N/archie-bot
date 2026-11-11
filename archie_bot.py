@@ -161,7 +161,9 @@ def run(dry=False):
     day_syms = set(daytrader.open_symbols())  # the day-trading sleeve owns these; the swing book leaves them alone
     try:  # so do the options bot and the day-trader-skill book (10/29: swing-off sold optbot's put and left it short)
         here = os.path.dirname(os.path.abspath(__file__))
-        day_syms.add(json.load(open(os.path.join(here, "dtsbook-state.json"))).get("open") and "QQQ")
+        _dts = json.load(open(os.path.join(here, "dtsbook-state.json"))).get("open")  # 11/10: swing-off sold dtsbook's PSQ
+        if _dts:
+            day_syms |= {"QQQ", "PSQ", _dts.get("sym") or "QQQ"}
         day_syms.add((json.load(open(os.path.join(here, "optbot-state.json"))).get("open") or {}).get("symbol"))
     except Exception:
         pass
