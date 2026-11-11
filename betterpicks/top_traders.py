@@ -6,7 +6,7 @@
 with our model's win chance (book.json shadow) or, if we have none, the market's price.
 Writes top_traders.json and prints the list. Read only.
 """
-import json, os, re, sys
+import glob, json, os, re, sys
 from datetime import datetime, timezone, timedelta
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -26,6 +26,11 @@ def norm(s):
     return re.sub(r"[^a-z]", "", (s or "").lower())
 
 
+def newest(pattern):
+    f = sorted(glob.glob(pattern), key=os.path.getmtime)
+    return f[-1] if f else None
+
+
 def sports_author(p, authors):
     """Ryan 2026-11-11: only watch people whose money is in the Sports category: Sports is their top category
     and they are up in it. Unknown authors are left out until their profile is read."""
@@ -37,21 +42,28 @@ def sports_author(p, authors):
 
 def feed_posts(hours=30):
     try:
-        authors = json.load(open(AUTHORS))
-    except (OSError, ValueError):
+        authors = json.load(open(newest("/mnt/project-files/kalshi_feed_authors*.json") or AUTHORS))
+    except (OSError, ValueError, TypeError):
         authors = {}
     cut = (datetime.now(timezone.utc) - timedelta(hours=hours)).isoformat()
-    out = []
-    try:
-        for ln in open(FEED):
+    # the PC can't overwrite an upload, so each upload is a new kalshi_feed_posts-*.jsonl: read them all, dedupe
+    out, seen = [], set()
+    for fn in glob.glob("/mnt/project-files/kalshi_feed_posts*.jsonl"):
+        try:
+            lines = open(fn).read().splitlines()
+        except OSError:
+            continue
+        for ln in lines:
             try:
                 p = json.loads(ln)
             except ValueError:
                 continue
+            k = (p.get("author"), p.get("url"), p.get("market_title"), p.get("line_text"))
+            if k in seen:
+                continue
+            seen.add(k)
             if (p.get("seen_at") or "") >= cut[:19] and p.get("player") and sports_author(p, authors):
                 out.append(p)
-    except OSError:
-        pass
     return out
 
 
