@@ -14,6 +14,7 @@ sys.path.insert(0, HERE)
 import whale_flow  # noqa: E402
 
 FEED = "/mnt/project-files/kalshi_feed_posts.jsonl"
+AUTHORS = "/mnt/project-files/kalshi_feed_authors.json"   # profile P&L by category, cached by the habibi logger
 OUT = os.path.join(HERE, "top_traders.json")
 STAT_WORDS = {"points": "points", "rebounds": "rebounds", "assists": "assists", "threes": "threes",
               "3-pointers": "threes", "three": "threes", "steals": "steals", "blocks": "blocks",
@@ -25,7 +26,20 @@ def norm(s):
     return re.sub(r"[^a-z]", "", (s or "").lower())
 
 
+def sports_author(p, authors):
+    """Ryan 2026-11-11: only watch people whose money is in the Sports category: Sports is their top category
+    and they are up in it. Unknown authors are left out until their profile is read."""
+    a = authors.get(p.get("author")) or {}
+    top = a.get("author_top_category") or p.get("author_top_category")
+    pnl = a.get("author_sports_pnl", p.get("author_sports_pnl"))
+    return (top or "").lower() == "sports" and isinstance(pnl, (int, float)) and pnl > 0
+
+
 def feed_posts(hours=30):
+    try:
+        authors = json.load(open(AUTHORS))
+    except (OSError, ValueError):
+        authors = {}
     cut = (datetime.now(timezone.utc) - timedelta(hours=hours)).isoformat()
     out = []
     try:
@@ -34,7 +48,7 @@ def feed_posts(hours=30):
                 p = json.loads(ln)
             except ValueError:
                 continue
-            if (p.get("seen_at") or "") >= cut[:19] and p.get("player"):
+            if (p.get("seen_at") or "") >= cut[:19] and p.get("player") and sports_author(p, authors):
                 out.append(p)
     except OSError:
         pass
