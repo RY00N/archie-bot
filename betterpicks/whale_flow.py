@@ -114,6 +114,7 @@ def update():
     d.setdefault("meta", {}).update(META)
     seen = set(d.get("seen_ids", []))
     cutoff = (datetime.now(timezone.utc) - timedelta(days=2)).isoformat()
+    old_cut = (datetime.now(timezone.utc) - timedelta(days=10)).isoformat()  # voided markets never grade
     for t in trades:
         if t["trade_id"] in seen:
             continue
@@ -134,7 +135,7 @@ def update():
             s["big"] = s["big"][-20:]
     grade(d, vol)
     d["sides"] = {k: v for k, v in d["sides"].items() if v.get("last", v["first"]) >= cutoff or
-                  (is_flag(v) and v.get("won") is None)}
+                  (is_flag(v) and v.get("won") is None and v.get("last", v["first"]) >= old_cut)}
     d["record"] = record(d)
     live = {v["ticker"] for v in d["sides"].values()}
     d["meta"] = {t: m for t, m in d["meta"].items() if t in live}
