@@ -4118,24 +4118,24 @@
    "secs": 0.0
   },
   "props_at": "2026-11-11 11:00 PT",
-  "props_today": 1000,
-  "kalshi_props_today": 491,
-  "kalshi_priced_today": 28,
+  "props_today": 1036,
+  "kalshi_props_today": 509,
+  "kalshi_priced_today": 29,
   "books_on_kalshi_props": {
-   "AN Consensus": 490,
-   "AN Open": 491,
-   "BetMGM": 282,
-   "BetRivers": 394,
-   "Caesars": 423,
-   "DraftKings": 429,
-   "FanDuel": 432,
-   "Fanatics": 387,
-   "Parx": 394,
-   "Pinnacle": 319,
+   "AN Consensus": 508,
+   "AN Open": 509,
+   "BetMGM": 294,
+   "BetRivers": 409,
+   "Caesars": 438,
+   "DraftKings": 444,
+   "FanDuel": 442,
+   "Fanatics": 402,
+   "Parx": 409,
+   "Pinnacle": 334,
    "Sleeper": 450,
-   "Underdog": 491,
-   "Unibet": 42,
-   "bet365": 491
+   "Underdog": 509,
+   "Unibet": 44,
+   "bet365": 509
   },
   "data_files": [
    "mlb.sqlite",
@@ -4143,7 +4143,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 133
+  "kalshi_legs_today": 138
  },
  "shadow": [
   {
@@ -149311,8 +149311,8 @@
    "line": 1.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.563,
-   "price": 0.6,
-   "edge": -0.054,
+   "price": 0.59,
+   "edge": -0.044,
    "news": "BKN has allowed bench forwards 3% fewer threes than average (likely on him: Noah Clowney, Chaney Johnson); Terance Mann can switch onto him (BKN allowed forwards 34% fewer threes with him playing; he plays tonight); Danny Wolf can switch onto him (BKN allowed forwards 18% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -149386,8 +149386,8 @@
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.417,
-   "price": 0.42,
-   "edge": -0.02,
+   "price": 0.39,
+   "edge": 0.01,
    "news": "TOR has allowed starting guards 5% fewer threes than average (likely on him: Jamal Shead, Immanuel Quickley).",
    "result": null
   },
@@ -149400,10 +149400,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.436,
+   "p": 0.456,
    "price": 0.5,
-   "edge": -0.082,
-   "news": "News: Is Jayson Tatum Playing Tonight? (Injury Update, Betting Impact for Celtics vs. Raptors) - Sports Illustrated TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 15% fewer threes than average (likely on him: RJ Barrett, Collin Murray-Boyles).",
+   "edge": -0.061,
+   "news": "News: Is Jayson Tatum Playing Tonight? (Injury Update, Betting Impact for Celtics vs. Raptors) - Sports Illustrated Paul George (F) is out, so Jayson Tatum's role likely grows; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 15% fewer threes than average (likely on him: RJ Barrett, Collin Murray-Boyles).",
    "result": null
   },
   {
@@ -149415,10 +149415,10 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.504,
+   "p": 0.454,
    "price": 0.51,
-   "edge": -0.023,
-   "news": "News: Is Jayson Tatum Playing Tonight? (Injury Update, Betting Impact for Celtics vs. Raptors) - Sports Illustrated TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 15% fewer threes than average (likely on him: RJ Barrett, Collin Murray-Boyles).",
+   "edge": -0.073,
+   "news": "News: Is Jayson Tatum Playing Tonight? (Injury Update, Betting Impact for Celtics vs. Raptors) - Sports Illustrated Paul George (F) is out, so Jayson Tatum's role likely grows; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 15% fewer threes than average (likely on him: RJ Barrett, Collin Murray-Boyles).",
    "result": null
   },
   {
@@ -149580,10 +149580,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.627,
-   "price": 0.61,
-   "edge": 0.0,
-   "news": "Scottie Barnes is out: RJ Barrett hit the over in 2/5 games without him vs 17/35 with him; Kawhi Leonard is out: RJ Barrett hit the over in 4/8 games without him vs 1/4 with him; BOS has allowed starting forwards 3% more threes than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 9% fewer threes with him playing; he plays tonight).",
+   "p": 0.657,
+   "price": 0.63,
+   "edge": 0.011,
+   "news": "Scottie Barnes is out: RJ Barrett hit the over in 2/5 games without him vs 17/35 with him; Kawhi Leonard is out: RJ Barrett hit the over in 4/8 games without him vs 1/4 with him; BOS's F Paul George is out, an easier matchup; BOS has allowed starting forwards 3% more threes than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -149595,10 +149595,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.373,
-   "price": 0.41,
-   "edge": -0.054,
-   "news": "Scottie Barnes is out: RJ Barrett hit the under in 3/5 games without him vs 18/35 with him; Kawhi Leonard is out: RJ Barrett hit the under in 4/8 games without him vs 3/4 with him; BOS has allowed starting forwards 3% more threes than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 9% fewer threes with him playing; he plays tonight).",
+   "p": 0.333,
+   "price": 0.39,
+   "edge": -0.074,
+   "news": "Scottie Barnes is out: RJ Barrett hit the under in 3/5 games without him vs 18/35 with him; Kawhi Leonard is out: RJ Barrett hit the under in 4/8 games without him vs 3/4 with him; BOS's F Paul George is out, an easier matchup; BOS has allowed starting forwards 3% more threes than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -149613,7 +149613,7 @@
    "p": 0.47,
    "price": 0.38,
    "edge": 0.074,
-   "news": "Scottie Barnes is out: RJ Barrett hit the over in 2/5 games without him vs 10/35 with him; Kawhi Leonard is out: RJ Barrett hit the over in 3/8 games without him vs 0/4 with him; BOS has allowed starting forwards 3% more threes than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 9% fewer threes with him playing; he plays tonight).",
+   "news": "Scottie Barnes is out: RJ Barrett hit the over in 2/5 games without him vs 10/35 with him; Kawhi Leonard is out: RJ Barrett hit the over in 3/8 games without him vs 0/4 with him; BOS's F Paul George is out, an easier matchup; BOS has allowed starting forwards 3% more threes than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -149626,9 +149626,9 @@
    "line": 2.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.53,
-   "price": 0.65,
-   "edge": -0.136,
-   "news": "Scottie Barnes is out: RJ Barrett hit the under in 3/5 games without him vs 25/35 with him; Kawhi Leonard is out: RJ Barrett hit the under in 5/8 games without him vs 4/4 with him; BOS has allowed starting forwards 3% more threes than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 9% fewer threes with him playing; he plays tonight).",
+   "price": 0.64,
+   "edge": -0.126,
+   "news": "Scottie Barnes is out: RJ Barrett hit the under in 3/5 games without him vs 25/35 with him; Kawhi Leonard is out: RJ Barrett hit the under in 5/8 games without him vs 4/4 with him; BOS's F Paul George is out, an easier matchup; BOS has allowed starting forwards 3% more threes than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -149791,8 +149791,8 @@
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.366,
-   "price": 0.44,
-   "edge": -0.091,
+   "price": 0.43,
+   "edge": -0.081,
    "news": "Sam Merrill is out: Peyton Watson hit the over in 1/4 games without him vs 1/7 with him; NYK has allowed starting guards 8% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -149820,9 +149820,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.539,
-   "price": 0.47,
-   "edge": 0.052,
+   "p": 0.544,
+   "price": 0.5,
+   "edge": 0.027,
    "news": "CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 12% more threes than average (likely on him: James Harden, Donovan Mitchell); Sam Merrill can switch onto him (CLE allowed guards 12% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -149835,9 +149835,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.451,
+   "p": 0.446,
    "price": 0.54,
-   "edge": -0.106,
+   "edge": -0.111,
    "news": "CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 12% more threes than average (likely on him: James Harden, Donovan Mitchell); Sam Merrill can switch onto him (CLE allowed guards 12% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -149850,10 +149850,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.494,
+   "p": 0.411,
    "price": 0.47,
-   "edge": 0.007,
-   "news": "CLE has allowed starting centers 15% more threes than average (likely on him: Evan Mobley, Jarrett Allen); Evan Mobley can switch onto him (CLE allowed centers 8% fewer threes with him playing; he plays tonight).",
+   "edge": -0.076,
+   "news": "Injury report: Questionable: Injury/Illness - Left Sore Calf (official NBA report) CLE has allowed starting centers 15% more threes than average (likely on him: Evan Mobley, Jarrett Allen); Evan Mobley can switch onto him (CLE allowed centers 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -149865,10 +149865,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.506,
+   "p": 0.509,
    "price": 0.55,
-   "edge": -0.061,
-   "news": "CLE has allowed starting centers 15% more threes than average (likely on him: Evan Mobley, Jarrett Allen); Evan Mobley can switch onto him (CLE allowed centers 8% fewer threes with him playing; he plays tonight).",
+   "edge": -0.058,
+   "news": "Injury report: Questionable: Injury/Illness - Left Sore Calf (official NBA report) CLE has allowed starting centers 15% more threes than average (likely on him: Evan Mobley, Jarrett Allen); Evan Mobley can switch onto him (CLE allowed centers 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -149910,10 +149910,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.34,
+   "p": 0.413,
    "price": 0.38,
-   "edge": -0.056,
-   "news": "Josh Hart is out: Mikal Bridges hit the over in 1/5 games without him vs 16/35 with him; CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 12% more threes than average (likely on him: James Harden, Donovan Mitchell); Sam Merrill can switch onto him (CLE allowed guards 12% fewer threes with him playing; he is out tonight).",
+   "edge": 0.017,
+   "news": "CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 12% more threes than average (likely on him: James Harden, Donovan Mitchell); Sam Merrill can switch onto him (CLE allowed guards 12% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -149925,10 +149925,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.65,
+   "p": 0.577,
    "price": 0.63,
-   "edge": 0.004,
-   "news": "Josh Hart is out: Mikal Bridges hit the under in 4/5 games without him vs 19/35 with him; CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 12% more threes than average (likely on him: James Harden, Donovan Mitchell); Sam Merrill can switch onto him (CLE allowed guards 12% fewer threes with him playing; he is out tonight).",
+   "edge": -0.069,
+   "news": "CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 12% more threes than average (likely on him: James Harden, Donovan Mitchell); Sam Merrill can switch onto him (CLE allowed guards 12% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -150076,8 +150076,8 @@
    "line": 2.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.343,
-   "price": 0.45,
-   "edge": -0.124,
+   "price": 0.44,
+   "edge": -0.114,
    "news": "Julian Strawther is out: Jamal Murray hit the under in 11/24 games without him vs 9/16 with him; MEM's G Scotty Pippen Jr. is out, an easier matchup; MEM has allowed starting guards 16% more threes than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 16% fewer threes with him playing; he is out tonight); Jaylen Wells can switch onto him (MEM allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -150286,8 +150286,8 @@
    "line": 2.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.527,
-   "price": 0.51,
-   "edge": -0.0,
+   "price": 0.5,
+   "edge": 0.01,
    "news": "DEN has allowed starting guards 5% more threes than average (likely on him: Jamal Murray, Christian Braun); Tyus Jones can switch onto him (DEN allowed guards 22% fewer threes with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -150316,8 +150316,8 @@
    "line": 0.5,
    "start": "2026-11-12T02:30:00Z",
    "p": 0.321,
-   "price": 0.42,
-   "edge": -0.116,
+   "price": 0.35,
+   "edge": -0.045,
    "news": "Kristaps Porzingis (C) is out, so Al Horford's role likely grows; HOU has allowed bench centers 31% fewer threes than average (likely on him: Oscar Tshiebwe).",
    "result": null
   },
@@ -151081,8 +151081,8 @@
    "line": 1.5,
    "start": "2026-11-12T03:00:00Z",
    "p": 0.308,
-   "price": 0.34,
-   "edge": -0.048,
+   "price": 0.35,
+   "edge": -0.058,
    "news": "Cason Wallace is out: Kenrich Williams hit the over in 4/8 games without him vs 2/3 with him; Jalen Williams is out: Kenrich Williams hit the over in 6/13 games without him vs 3/7 with him; POR has allowed starting guards 18% fewer threes than average (likely on him: Damian Lillard, Scoot Henderson).",
    "result": null
   },
@@ -151186,8 +151186,8 @@
    "line": 0.5,
    "start": "2026-11-12T03:00:00Z",
    "p": 0.345,
-   "price": 0.36,
-   "edge": -0.031,
+   "price": 0.35,
+   "edge": -0.021,
    "news": "OKC has allowed starting centers 33% fewer threes than average (likely on him: Aday Mara, Isaiah Hartenstein); Jaylin Williams can switch onto him (OKC allowed centers 44% fewer threes with him playing; he is out tonight); Chet Holmgren can switch onto him (OKC allowed centers 12% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -151261,8 +151261,8 @@
    "line": 2.5,
    "start": "2026-11-12T03:00:00Z",
    "p": 0.494,
-   "price": 0.42,
-   "edge": 0.057,
+   "price": 0.41,
+   "edge": 0.067,
    "news": "News: Jrue Holiday walked away from the rest of his 2020 NBA salary to fight systemic racism; he and wife Lauren pledged up to $5 million to Black-owned businesses and nonprofits - Athlo Ja Morant is out: Jrue Holiday hit the over in 3/6 games without him vs 1/5 with him; Vit Krejci is out: Jrue Holiday hit the over in 3/7 games without him vs 1/4 with him; OKC has allowed bench guards 30% more threes than average (likely on him: Ajay Mitchell, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 16% fewer threes with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151323,7 +151323,7 @@
    "p": 0.567,
    "price": 0.6,
    "edge": -0.05,
-   "news": "News: Desmond Bane (illness) off injury report Tuesday - FantasyPros",
+   "news": "News: Desmond Bane Gives Encouraging Injury Update Amid Orlando Magic's Losing Streak - roundtable.io",
    "result": null
   },
   {
@@ -151338,7 +151338,7 @@
    "p": 0.383,
    "price": 0.42,
    "edge": -0.054,
-   "news": "News: Desmond Bane (illness) off injury report Tuesday - FantasyPros",
+   "news": "News: Desmond Bane Gives Encouraging Injury Update Amid Orlando Magic's Losing Streak - roundtable.io",
    "result": null
   },
   {
@@ -151426,8 +151426,8 @@
    "line": 2.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.635,
-   "price": 0.61,
-   "edge": 0.008,
+   "price": 0.62,
+   "edge": -0.001,
    "news": "SAS has allowed starting forwards 3% fewer threes than average (likely on him: Victor Wembanyama, Julian Champagnie); Jordan McLaughlin can switch onto him (SAS allowed forwards 25% fewer threes with him playing; he plays tonight); Carter Bryant can switch onto him (SAS allowed forwards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151696,8 +151696,8 @@
    "line": 2.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.561,
-   "price": 0.57,
-   "edge": -0.026,
+   "price": 0.58,
+   "edge": -0.036,
    "news": "CHI has allowed bench forwards 13% more threes than average (likely on him: Patrick Williams, Isaac Okoro); Tre Jones can switch onto him (CHI allowed forwards 17% fewer threes with him playing; he plays tonight); Caleb Wilson can switch onto him (CHI allowed forwards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151756,8 +151756,8 @@
    "line": 1.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.442,
-   "price": 0.44,
-   "edge": -0.015,
+   "price": 0.43,
+   "edge": -0.005,
    "news": "CHI has allowed starting forwards 2% more threes than average (likely on him: Caleb Wilson, Matas Buzelis); Tre Jones can switch onto him (CHI allowed forwards 17% fewer threes with him playing; he plays tonight); Caleb Wilson can switch onto him (CHI allowed forwards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151921,8 +151921,8 @@
    "line": 0.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.566,
-   "price": 0.57,
-   "edge": -0.021,
+   "price": 0.58,
+   "edge": -0.031,
    "news": "News: Wizards announce major Anthony Davis final injury status for Wizards vs. Pistons - BasketNews.com Justin Champagnie is out: Anthony Davis hit the over in 4/6 games without him vs 1/3 with him; IND has allowed starting forwards 6% more threes than average (likely on him: Jalen Slawson, Pascal Siakam); Andrew Nembhard can switch onto him (IND allowed forwards 22% fewer threes with him playing; he plays tonight); Kelly Oubre Jr. can switch onto him (IND allowed forwards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151936,8 +151936,8 @@
    "line": 0.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.384,
-   "price": 0.47,
-   "edge": -0.103,
+   "price": 0.45,
+   "edge": -0.083,
    "news": "News: Wizards announce major Anthony Davis final injury status for Wizards vs. Pistons - BasketNews.com Justin Champagnie is out: Anthony Davis hit the under in 2/6 games without him vs 2/3 with him; IND has allowed starting forwards 6% more threes than average (likely on him: Jalen Slawson, Pascal Siakam); Andrew Nembhard can switch onto him (IND allowed forwards 22% fewer threes with him playing; he plays tonight); Kelly Oubre Jr. can switch onto him (IND allowed forwards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151981,8 +151981,8 @@
    "line": 0.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.557,
-   "price": 0.62,
-   "edge": -0.079,
+   "price": 0.61,
+   "edge": -0.07,
    "news": "IND has allowed starting centers 15% fewer threes than average (likely on him: Jay Huff, Ivica Zubac); Jarace Walker can switch onto him (IND allowed centers 39% fewer threes with him playing; he plays tonight); Pascal Siakam can switch onto him (IND allowed centers 21% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -152101,8 +152101,8 @@
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.328,
-   "price": 0.43,
-   "edge": -0.119,
+   "price": 0.44,
+   "edge": -0.129,
    "news": "News: Tre Johnson's Shooting Slump is Already Forcing Major Wizards Rotational Questions - Sports Illustrated Jamir Watkins is out: Tre Johnson hit the over in 9/16 games without him vs 2/3 with him; IND has allowed bench guards 16% fewer threes than average (likely on him: Quenton Jackson, Aaron Nesmith).",
    "result": null
   },
@@ -152116,8 +152116,8 @@
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.622,
-   "price": 0.58,
-   "edge": 0.025,
+   "price": 0.57,
+   "edge": 0.035,
    "news": "News: Tre Johnson's Shooting Slump is Already Forcing Major Wizards Rotational Questions - Sports Illustrated Jamir Watkins is out: Tre Johnson hit the under in 7/16 games without him vs 1/3 with him; IND has allowed bench guards 16% fewer threes than average (likely on him: Quenton Jackson, Aaron Nesmith).",
    "result": null
   },
@@ -152430,10 +152430,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.578,
+   "p": 0.608,
    "price": 0.57,
-   "edge": -0.009,
-   "news": "Scottie Barnes is out: RJ Barrett hit the over in 3/5 games without him vs 15/35 with him; BOS has allowed starting forwards 0% more assists than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 21% fewer assists with him playing; he plays tonight); Luka Garza can switch onto him (BOS allowed forwards 15% fewer assists with him playing; he plays tonight).",
+   "edge": 0.021,
+   "news": "Scottie Barnes is out: RJ Barrett hit the over in 3/5 games without him vs 15/35 with him; BOS's F Paul George is out, an easier matchup; BOS has allowed starting forwards 0% more assists than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 21% fewer assists with him playing; he plays tonight); Luka Garza can switch onto him (BOS allowed forwards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -152445,10 +152445,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.422,
+   "p": 0.382,
    "price": 0.44,
-   "edge": -0.035,
-   "news": "Scottie Barnes is out: RJ Barrett hit the under in 2/5 games without him vs 20/35 with him; BOS has allowed starting forwards 0% more assists than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 21% fewer assists with him playing; he plays tonight); Luka Garza can switch onto him (BOS allowed forwards 15% fewer assists with him playing; he plays tonight).",
+   "edge": -0.075,
+   "news": "Scottie Barnes is out: RJ Barrett hit the under in 2/5 games without him vs 20/35 with him; BOS's F Paul George is out, an easier matchup; BOS has allowed starting forwards 0% more assists than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 21% fewer assists with him playing; he plays tonight); Luka Garza can switch onto him (BOS allowed forwards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -153076,8 +153076,8 @@
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.493,
-   "price": 0.47,
-   "edge": 0.006,
+   "price": 0.48,
+   "edge": -0.004,
    "news": "WSH has allowed starting forwards 6% more assists than average (likely on him: Kyshawn George, Anthony Davis); Anthony Davis can switch onto him (WSH allowed forwards 26% fewer assists with him playing; he plays tonight); Deandre Ayton can switch onto him (WSH allowed forwards 26% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -153241,8 +153241,8 @@
    "line": 1.5,
    "start": "2026-11-12T03:00:00Z",
    "p": 0.501,
-   "price": 0.54,
-   "edge": -0.056,
+   "price": 0.53,
+   "edge": -0.046,
    "news": "OKC has allowed starting centers 32% fewer blocks than average (likely on him: Aday Mara, Isaiah Hartenstein); Chet Holmgren can switch onto him (OKC allowed centers 24% fewer blocks with him playing; he is out tonight); Isaiah Hartenstein can switch onto him (OKC allowed centers 20% fewer blocks with him playing; he plays tonight).",
    "result": null
   },
@@ -153271,8 +153271,8 @@
    "line": 3.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.447,
-   "price": 0.48,
-   "edge": -0.05,
+   "price": 0.49,
+   "edge": -0.06,
    "news": "CHI has allowed starting forwards 3% fewer blocks than average (likely on him: Caleb Wilson, Matas Buzelis); Noa Essengue can switch onto him (CHI allowed forwards 47% fewer blocks with him playing; he plays tonight); Caleb Wilson can switch onto him (CHI allowed forwards 34% fewer blocks with him playing; he plays tonight).",
    "result": null
   },
@@ -153466,8 +153466,8 @@
    "line": 19.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.545,
-   "price": 0.54,
-   "edge": -0.012,
+   "price": 0.53,
+   "edge": -0.002,
    "news": "News: Raptors need Ja\u2019Kobe Walter to snap out of 3-point slump for brutal four-game test - Raptors Rapture BOS has allowed starting guards 9% fewer pra than average (likely on him: Derrick White, Baylor Scheierman); Paul George can switch onto him (BOS allowed guards 10% fewer pra with him playing; he is out tonight).",
    "result": null
   },
@@ -153631,8 +153631,8 @@
    "line": 14.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.562,
-   "price": 0.51,
-   "edge": 0.035,
+   "price": 0.52,
+   "edge": 0.025,
    "news": "Scotty Pippen Jr. is out: Cam Spencer hit the over in 19/28 games without him vs 4/12 with him; DEN has allowed bench guards 5% more pra than average (likely on him: DeMar DeRozan, Tyus Jones); Marvin Bagley III can switch onto him (DEN allowed guards 19% fewer pra with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed guards 17% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -153961,8 +153961,8 @@
    "line": 44.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.468,
-   "price": 0.5,
-   "edge": -0.049,
+   "price": 0.49,
+   "edge": -0.039,
    "news": "CHI has allowed starting forwards 10% more pra than average (likely on him: Caleb Wilson, Matas Buzelis); Patrick Williams can switch onto him (CHI allowed forwards 9% fewer pra with him playing; he plays tonight); minutes trending down (we project 30, his last 5 avg 27 vs 33 over 15).",
    "result": null
   },
@@ -154246,8 +154246,8 @@
    "line": 9.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.505,
-   "price": 0.49,
-   "edge": -0.002,
+   "price": 0.48,
+   "edge": 0.008,
    "news": "BKN has allowed bench centers 11% more points than average (likely on him: Moritz Wagner); Chaney Johnson can switch onto him (BKN allowed centers 17% fewer points with him playing; he plays tonight); Julius Randle can switch onto him (BKN allowed centers 11% fewer points with him playing; he plays tonight); minutes trending down (we project 23, his last 5 avg 21 vs 25 over 15).",
    "result": null
   },
@@ -154463,6 +154463,36 @@
   },
   {
    "date": "2026-11-11",
+   "ticker": "KXNBAPTS-26NOV11CLENYK-NYKKTOWNS32-20",
+   "league": "nba",
+   "player": "Karl-Anthony Towns",
+   "stat": "points",
+   "side": "over",
+   "line": 19.5,
+   "start": "2026-11-12T00:00:00Z",
+   "p": 0.36,
+   "price": 0.55,
+   "edge": -0.207,
+   "news": "Injury report: Questionable: Injury/Illness - Left Sore Calf (official NBA report) CLE has allowed starting centers 2% fewer points than average (likely on him: Evan Mobley, Jarrett Allen); Mario Hezonja can switch onto him (CLE allowed centers 11% fewer points with him playing; he plays tonight); Evan Mobley can switch onto him (CLE allowed centers 9% fewer points with him playing; he plays tonight); those defenders hold shooters 4.0% below their normal FG%, among the league's stingiest.",
+   "result": null
+  },
+  {
+   "date": "2026-11-11",
+   "ticker": "KXNBAPTS-26NOV11CLENYK-NYKKTOWNS32-20",
+   "league": "nba",
+   "player": "Karl-Anthony Towns",
+   "stat": "points",
+   "side": "under",
+   "line": 19.5,
+   "start": "2026-11-12T00:00:00Z",
+   "p": 0.56,
+   "price": 0.47,
+   "edge": 0.073,
+   "news": "Injury report: Questionable: Injury/Illness - Left Sore Calf (official NBA report) CLE has allowed starting centers 2% fewer points than average (likely on him: Evan Mobley, Jarrett Allen); Mario Hezonja can switch onto him (CLE allowed centers 11% fewer points with him playing; he plays tonight); Evan Mobley can switch onto him (CLE allowed centers 9% fewer points with him playing; he plays tonight); those defenders hold shooters 4.0% below their normal FG%, among the league's stingiest.",
+   "result": null
+  },
+  {
+   "date": "2026-11-11",
    "ticker": "KXNBAPTS-26NOV11CLENYK-NYKMBRIDGES25-10",
    "league": "nba",
    "player": "Mikal Bridges",
@@ -154470,10 +154500,10 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.367,
+   "p": 0.451,
    "price": 0.48,
-   "edge": -0.13,
-   "news": "Josh Hart is out: Mikal Bridges hit the over in 2/5 games without him vs 24/35 with him; CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 7% more points than average (likely on him: James Harden, Donovan Mitchell); minutes trending down (we project 26, his last 5 avg 22 vs 29 over 15).",
+   "edge": -0.046,
+   "news": "CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 7% more points than average (likely on him: James Harden, Donovan Mitchell); minutes trending down (we project 26, his last 5 avg 22 vs 29 over 15).",
    "result": null
   },
   {
@@ -154485,10 +154515,10 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.623,
+   "p": 0.539,
    "price": 0.53,
-   "edge": 0.076,
-   "news": "Josh Hart is out: Mikal Bridges hit the under in 3/5 games without him vs 11/35 with him; CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 7% more points than average (likely on him: James Harden, Donovan Mitchell); minutes trending down (we project 26, his last 5 avg 22 vs 29 over 15).",
+   "edge": -0.008,
+   "news": "CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 7% more points than average (likely on him: James Harden, Donovan Mitchell); minutes trending down (we project 26, his last 5 avg 22 vs 29 over 15).",
    "result": null
   },
   {
@@ -154653,7 +154683,7 @@
    "p": 0.355,
    "price": 0.51,
    "edge": -0.172,
-   "news": "News: Desmond Bane (illness) off injury report Tuesday - FantasyPros Jalen Suggs is out: Desmond Bane hit the over in 2/8 games without him vs 15/32 with him; UTA has allowed starting guards 17% more points than average.",
+   "news": "News: Desmond Bane Gives Encouraging Injury Update Amid Orlando Magic's Losing Streak - roundtable.io Jalen Suggs is out: Desmond Bane hit the over in 2/8 games without him vs 15/32 with him; UTA has allowed starting guards 17% more points than average.",
    "result": null
   },
   {
@@ -154668,7 +154698,7 @@
    "p": 0.595,
    "price": 0.5,
    "edge": 0.077,
-   "news": "News: Desmond Bane (illness) off injury report Tuesday - FantasyPros Jalen Suggs is out: Desmond Bane hit the under in 6/8 games without him vs 17/32 with him; UTA has allowed starting guards 17% more points than average.",
+   "news": "News: Desmond Bane Gives Encouraging Injury Update Amid Orlando Magic's Losing Streak - roundtable.io Jalen Suggs is out: Desmond Bane hit the under in 6/8 games without him vs 17/32 with him; UTA has allowed starting guards 17% more points than average.",
    "result": null
   },
   {
@@ -154981,9 +155011,9 @@
    "line": 5.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.433,
-   "price": 0.54,
-   "edge": -0.124,
-   "news": "News: Zion Williamson (rest) ruled out Monday vs. GSW - NBC Sports BKN has allowed starting forwards 3% more rebounds than average (likely on him: Danny Wolf, Julius Randle); Michael Porter Jr. can switch onto him (BKN allowed forwards 18% fewer rebounds with him playing; he plays tonight); Day'Ron Sharpe can switch onto him (BKN allowed forwards 16% fewer rebounds with him playing; he plays tonight).",
+   "price": 0.55,
+   "edge": -0.134,
+   "news": "News: Zion Williamson (rest) removed from injury report - NBC Sports BKN has allowed starting forwards 3% more rebounds than average (likely on him: Danny Wolf, Julius Randle); Michael Porter Jr. can switch onto him (BKN allowed forwards 18% fewer rebounds with him playing; he plays tonight); Day'Ron Sharpe can switch onto him (BKN allowed forwards 16% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154998,7 +155028,7 @@
    "p": 0.517,
    "price": 0.48,
    "edge": 0.02,
-   "news": "News: Zion Williamson (rest) ruled out Monday vs. GSW - NBC Sports BKN has allowed starting forwards 3% more rebounds than average (likely on him: Danny Wolf, Julius Randle); Michael Porter Jr. can switch onto him (BKN allowed forwards 18% fewer rebounds with him playing; he plays tonight); Day'Ron Sharpe can switch onto him (BKN allowed forwards 16% fewer rebounds with him playing; he plays tonight).",
+   "news": "News: Zion Williamson (rest) removed from injury report - NBC Sports BKN has allowed starting forwards 3% more rebounds than average (likely on him: Danny Wolf, Julius Randle); Michael Porter Jr. can switch onto him (BKN allowed forwards 18% fewer rebounds with him playing; he plays tonight); Day'Ron Sharpe can switch onto him (BKN allowed forwards 16% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155040,10 +155070,10 @@
    "side": "over",
    "line": 7.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.397,
+   "p": 0.417,
    "price": 0.46,
-   "edge": -0.08,
-   "news": "News: Is Jayson Tatum Playing Tonight? (Injury Update, Betting Impact for Celtics vs. Raptors) - Sports Illustrated TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 11% fewer rebounds than average (likely on him: RJ Barrett, Collin Murray-Boyles); Jamison Battle can switch onto him (TOR allowed forwards 19% fewer rebounds with him playing; he plays tonight); Immanuel Quickley can switch onto him (TOR allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.06,
+   "news": "News: Is Jayson Tatum Playing Tonight? (Injury Update, Betting Impact for Celtics vs. Raptors) - Sports Illustrated Paul George (F) is out, so Jayson Tatum's role likely grows; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 11% fewer rebounds than average (likely on him: RJ Barrett, Collin Murray-Boyles); Jamison Battle can switch onto him (TOR allowed forwards 19% fewer rebounds with him playing; he plays tonight); Immanuel Quickley can switch onto him (TOR allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155055,10 +155085,10 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.543,
+   "p": 0.493,
    "price": 0.55,
-   "edge": -0.024,
-   "news": "News: Is Jayson Tatum Playing Tonight? (Injury Update, Betting Impact for Celtics vs. Raptors) - Sports Illustrated TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 11% fewer rebounds than average (likely on him: RJ Barrett, Collin Murray-Boyles); Jamison Battle can switch onto him (TOR allowed forwards 19% fewer rebounds with him playing; he plays tonight); Immanuel Quickley can switch onto him (TOR allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.074,
+   "news": "News: Is Jayson Tatum Playing Tonight? (Injury Update, Betting Impact for Celtics vs. Raptors) - Sports Illustrated Paul George (F) is out, so Jayson Tatum's role likely grows; TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 11% fewer rebounds than average (likely on him: RJ Barrett, Collin Murray-Boyles); Jamison Battle can switch onto him (TOR allowed forwards 19% fewer rebounds with him playing; he plays tonight); Immanuel Quickley can switch onto him (TOR allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155116,8 +155146,8 @@
    "line": 5.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.492,
-   "price": 0.48,
-   "edge": -0.005,
+   "price": 0.47,
+   "edge": 0.005,
    "news": "Injury report: Questionable: Injury/Illness - Illness (official NBA report) Trayce Jackson-Davis is out: Collin Murray-Boyles hit the under in 9/17 games without him vs 5/9 with him; Scottie Barnes is out: Collin Murray-Boyles hit the under in 2/5 games without him vs 21/35 with him; Kawhi Leonard is out: Collin Murray-Boyles hit the under in 3/4 games without him vs 2/4 with him; BOS has allowed bench forwards 11% fewer rebounds than average (likely on him: Sam Hauser, Chris Cenac Jr.).",
    "result": null
   },
@@ -155190,10 +155220,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.519,
+   "p": 0.549,
    "price": 0.52,
-   "edge": -0.018,
-   "news": "Trayce Jackson-Davis is out: RJ Barrett hit the over in 16/24 games without him vs 5/16 with him; Scottie Barnes is out: RJ Barrett hit the over in 1/5 games without him vs 20/35 with him; BOS has allowed starting forwards 0% fewer rebounds than average (likely on him: Jayson Tatum, Sam Hauser).",
+   "edge": 0.012,
+   "news": "Trayce Jackson-Davis is out: RJ Barrett hit the over in 16/24 games without him vs 5/16 with him; Scottie Barnes is out: RJ Barrett hit the over in 1/5 games without him vs 20/35 with him; BOS's F Paul George is out, an easier matchup; BOS has allowed starting forwards 0% fewer rebounds than average (likely on him: Jayson Tatum, Sam Hauser).",
    "result": null
   },
   {
@@ -155205,10 +155235,10 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.481,
+   "p": 0.441,
    "price": 0.49,
-   "edge": -0.026,
-   "news": "Trayce Jackson-Davis is out: RJ Barrett hit the under in 8/24 games without him vs 11/16 with him; Scottie Barnes is out: RJ Barrett hit the under in 4/5 games without him vs 15/35 with him; BOS has allowed starting forwards 0% fewer rebounds than average (likely on him: Jayson Tatum, Sam Hauser).",
+   "edge": -0.066,
+   "news": "Trayce Jackson-Davis is out: RJ Barrett hit the under in 8/24 games without him vs 11/16 with him; Scottie Barnes is out: RJ Barrett hit the under in 4/5 games without him vs 15/35 with him; BOS's F Paul George is out, an easier matchup; BOS has allowed starting forwards 0% fewer rebounds than average (likely on him: Jayson Tatum, Sam Hauser).",
    "result": null
   },
   {
@@ -155340,10 +155370,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.499,
-   "price": 0.41,
-   "edge": 0.072,
-   "news": "Josh Hart is out: Jalen Brunson hit the over in 3/5 games without him vs 10/35 with him; CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 5% fewer rebounds than average (likely on him: James Harden, Donovan Mitchell); Craig Porter Jr. can switch onto him (CLE allowed guards 12% fewer rebounds with him playing; he plays tonight); Peyton Watson can switch onto him (CLE allowed guards 8% fewer rebounds with him playing; he plays tonight).",
+   "p": 0.416,
+   "price": 0.46,
+   "edge": -0.061,
+   "news": "CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 5% fewer rebounds than average (likely on him: James Harden, Donovan Mitchell); Craig Porter Jr. can switch onto him (CLE allowed guards 12% fewer rebounds with him playing; he plays tonight); Peyton Watson can switch onto him (CLE allowed guards 8% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155355,10 +155385,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
-   "p": 0.498,
-   "price": 0.6,
-   "edge": -0.119,
-   "news": "Josh Hart is out: Jalen Brunson hit the under in 2/5 games without him vs 25/35 with him; CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 5% fewer rebounds than average (likely on him: James Harden, Donovan Mitchell); Craig Porter Jr. can switch onto him (CLE allowed guards 12% fewer rebounds with him playing; he plays tonight); Peyton Watson can switch onto him (CLE allowed guards 8% fewer rebounds with him playing; he plays tonight).",
+   "p": 0.574,
+   "price": 0.56,
+   "edge": -0.003,
+   "news": "CLE's G Sam Merrill is out, an easier matchup; CLE has allowed starting guards 5% fewer rebounds than average (likely on him: James Harden, Donovan Mitchell); Craig Porter Jr. can switch onto him (CLE allowed guards 12% fewer rebounds with him playing; he plays tonight); Peyton Watson can switch onto him (CLE allowed guards 8% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155416,8 +155446,8 @@
    "line": 5.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.552,
-   "price": 0.59,
-   "edge": -0.055,
+   "price": 0.58,
+   "edge": -0.045,
    "news": "News: Aaron Gordon struggles in loss Monday - FantasyPros MEM has allowed starting forwards 16% more rebounds than average (likely on him: Cameron Boozer, Cedric Coward).",
    "result": null
   },
@@ -155476,8 +155506,8 @@
    "line": 9.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.556,
-   "price": 0.56,
-   "edge": -0.021,
+   "price": 0.57,
+   "edge": -0.031,
    "news": "DEN has allowed starting forwards 3% more rebounds than average (likely on him: Trevon Brazile, Aaron Gordon).",
    "result": null
   },
@@ -155521,8 +155551,8 @@
    "line": 3.5,
    "start": "2026-11-12T02:30:00Z",
    "p": 0.519,
-   "price": 0.47,
-   "edge": 0.032,
+   "price": 0.48,
+   "edge": 0.022,
    "news": "Kristaps Porzingis (C) is out, so Al Horford's role likely grows; HOU has allowed bench centers 8% fewer rebounds than average (likely on him: Oscar Tshiebwe); Clint Capela can switch onto him (HOU allowed centers 17% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -156286,8 +156316,8 @@
    "line": 7.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.558,
-   "price": 0.56,
-   "edge": -0.019,
+   "price": 0.57,
+   "edge": -0.029,
    "news": "SAS has allowed starting forwards 9% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie); Carter Bryant can switch onto him (SAS allowed forwards 12% fewer rebounds with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -156346,8 +156376,8 @@
    "line": 5.5,
    "start": "2026-11-12T01:00:00Z",
    "p": 0.572,
-   "price": 0.57,
-   "edge": -0.015,
+   "price": 0.58,
+   "edge": -0.025,
    "news": "SAS has allowed bench centers 5% fewer rebounds than average (likely on him: Luke Kornet, Tarris Reed Jr.); Victor Wembanyama can switch onto him (SAS allowed centers 17% fewer rebounds with him playing; he plays tonight); Carter Bryant can switch onto him (SAS allowed centers 13% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -156511,8 +156541,8 @@
    "line": 3.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.308,
-   "price": 0.49,
-   "edge": -0.199,
+   "price": 0.48,
+   "edge": -0.189,
    "news": "Johnny Furphy is out: Aaron Nesmith hit the over in 6/22 games without him vs 8/12 with him; WSH has allowed starting guards 2% fewer rebounds than average (likely on him: Trae Young, Bilal Coulibaly); Anthony Davis can switch onto him (WSH allowed guards 13% fewer rebounds with him playing; he plays tonight); Tristan Vukcevic can switch onto him (WSH allowed guards 9% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -156796,8 +156826,8 @@
    "line": 1.5,
    "start": "2026-11-12T00:00:00Z",
    "p": 0.645,
-   "price": 0.63,
-   "edge": -0.001,
+   "price": 0.62,
+   "edge": 0.009,
    "news": "News: Raptors need Ja\u2019Kobe Walter to snap out of 3-point slump for brutal four-game test - Raptors Rapture BOS has allowed starting guards 26% fewer steals than average (likely on him: Derrick White, Baylor Scheierman); Ron Harper Jr. can switch onto him (BOS allowed guards 8% fewer steals with him playing; he plays tonight).",
    "result": null
   },
