@@ -562,7 +562,7 @@ def main():
     slot = due_slot(queue, state)
     if not slot:
         return
-    nxt = next((it for it in queue["items"] if it["file"] not in state["posted"]), None)
+    nxt = next((it for it in queue["items"] if it["file"] not in state["posted"] and not it.get("hold")), None)
     tries = state.setdefault("slot_tries", {})
     tries[slot] = tries.get(slot, 0) + 1
     state["slots_done"].append(slot); save_state(state)  # marked done first, so a crash can never double-post
