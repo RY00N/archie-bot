@@ -161,7 +161,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r50-cruise.mp4 | midweek cruise #porsche #nightdrive #latenight #carsofinstagram #luxurylifestyle | POSTED 11/10 8:38pm PST trial https://www.instagram.com/reel/Dflo-3RgQTU/ |
 | hourly | r51-calm.mp4 | up 20 in the 3rd #lakers #sushi #nightlife #latenight #luxurylifestyle | POSTED 11/10 9:39pm PST trial https://www.instagram.com/reel/Dflv8sSkQuz/ |
 | hourly | r52-hobby.mp4 | hobbies #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | POSTED 11/10 10:39pm PST trial https://www.instagram.com/reel/Dfl226hAKZ0/ |
-| hourly | r48-wednesday.mp4 | 3 for 3 #porsche #sushi #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips; post Wed AM) |
+| hourly | r48-wednesday.mp4 | 3 for 3 #porsche #sushi #nightdrive #latenight #luxurylifestyle | POSTED 11/11 8:39am PST trial https://www.instagram.com/reel/Dfm7fZ8iWmw/ |
 | hourly | r53-rent.mp4 | rent paid #porsche #finedining #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
 
 | hourly | r54-alarm.mp4 | payout alarm #porsche #finedining #nightdrive #latenight #luxurylifestyle | queued (v11 reused clips) |
