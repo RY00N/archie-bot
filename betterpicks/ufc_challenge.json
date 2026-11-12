@@ -1,0 +1,68 @@
+{
+ "events": {
+  "600061400": {
+   "id": "600061400",
+   "name": "UFC 334",
+   "date": "2026-11-14",
+   "start": "2026-11-15T02:00Z",
+   "picks": [
+    {
+     "fight_id": "401913646",
+     "pick": "Ciryl Gane",
+     "pick_espn": "Ciryl Gane",
+     "opp": "Josh Hokit",
+     "p": 0.66,
+     "price": 0.63,
+     "ticker": "KXUFCFIGHT-26NOV14GANHOK-GAN",
+     "weight": "Heavyweight title, 5 rounds",
+     "why": "The cleaner, longer striker (81 in. reach vs 73) with 5-round experience. Hokit throws a ton (10 sig/min) and his path is early takedowns, since Gane only stops 47% of them, but he has never seen championship rounds. Books have Gane -180 to -255; 67% of the public picks him."
+    },
+    {
+     "fight_id": "401922638",
+     "pick": "Kayla Harrison",
+     "pick_espn": "Kayla Harrison",
+     "opp": "Amanda Nunes",
+     "p": 0.63,
+     "price": 0.61,
+     "ticker": "KXUFCFIGHT-26NOV14HARNUN-HAR",
+     "weight": "Women's bantamweight title, 5 rounds",
+     "why": "Harrison has given up 0 takedowns in the UFC and controls fights from top (6-8 min of control a fight). Nunes is 38 and hasn't fought since June 2023. Risk: Harrison's neck surgery and weight cut. Books -156 to -185; 66% of the public picks her."
+    },
+    {
+     "fight_id": "401922639",
+     "pick": "Caio Borralho",
+     "pick_espn": "Caio Borralho",
+     "opp": "Yousri Belgaroui",
+     "p": 0.6,
+     "price": 0.6,
+     "ticker": "KXUFCFIGHT-26NOV14BORBEL-BOR",
+     "weight": "Middleweight",
+     "why": "Borralho's only loss in 9 UFC fights was to Imavov, and he can wrestle; Belgaroui has been taken down 7 of 16 tries. Belgaroui hits hard (3 straight KOs) but is on a quick 2-month turnaround. Books about -155."
+    },
+    {
+     "fight_id": "401922640",
+     "pick": "Uros Medic",
+     "pick_espn": "Uro\u0161 Medi\u0107",
+     "opp": "Kevin Holland",
+     "p": 0.59,
+     "price": 0.6,
+     "ticker": "KXUFCFIGHT-26NOV14MEDHOL-MED",
+     "weight": "Welterweight",
+     "why": "Medi\u0107 has 5 straight first-round KOs, including Daniel Rodriguez in 30 seconds (Rodriguez beat Holland). Holland is 3-4 in his last 7. Risk: Medi\u0107 has been dropped or submitted before, and Holland is slick on the ground. Books about -150; 77% of the public picks Medi\u0107."
+    },
+    {
+     "fight_id": "401922641",
+     "pick": "Bilal Hasan",
+     "pick_espn": "Bilal Hasan",
+     "opp": "Luis Gurule",
+     "p": 0.88,
+     "price": 0.875,
+     "ticker": "KXUFCFIGHT-26NOV14HASGUR-HAS",
+     "weight": "Flyweight, main card opener",
+     "why": "Hasan is 10-0 with 9 finishes. Gurule is 1-4 in the UFC and was finished in 2 of those losses. Books -1000 to -1200; 97% of the public picks Hasan."
+    }
+   ],
+   "posted_at": "2026-11-12T21:26:40"
+  }
+ }
+}
