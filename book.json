@@ -4177,7 +4177,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 54
+  "kalshi_legs_today": 52
  },
  "shadow": [
   {
@@ -150545,8 +150545,8 @@
    "line": 1.5,
    "start": "2026-11-13T00:00:00Z",
    "p": 0.523,
-   "price": 0.57,
-   "edge": -0.064,
+   "price": 0.58,
+   "edge": -0.074,
    "news": "TOR has allowed starting guards 5% fewer threes than average (likely on him: Jamal Shead, Immanuel Quickley).",
    "result": null
   },
@@ -150815,8 +150815,8 @@
    "line": 3.5,
    "start": "2026-11-13T00:00:00Z",
    "p": 0.42,
-   "price": 0.53,
-   "edge": -0.127,
+   "price": 0.94,
+   "edge": -0.524,
    "news": "TOR has allowed starting guards 4% fewer assists than average (likely on him: Jamal Shead, Immanuel Quickley).",
    "result": null
   },
@@ -151505,8 +151505,8 @@
    "line": 3.5,
    "start": "2026-11-13T01:00:00Z",
    "p": 0.529,
-   "price": 0.5,
-   "edge": 0.012,
+   "price": 0.51,
+   "edge": 0.002,
    "news": "MIN has allowed starting guards 9% more rebounds than average (likely on him: Ayo Dosunmu, LaMelo Ball); Anthony Edwards can switch onto him (MIN allowed guards 13% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
