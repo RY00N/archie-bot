@@ -180,7 +180,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r67-phase.mp4 | some phase #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | POSTED 11/11 4:39pm PST trial https://www.instagram.com/reel/DfnyYnrIZWF/ |
 | hourly | r68-garage.mp4 | garage check #mclaren #nightdrive #carsofinstagram #latenight #luxurylifestyle | POSTED 11/11 5:38pm PST trial https://www.instagram.com/reel/Dfn5M0iD3xd/ |
 | hourly | r69-pull-up.mp4 | Kalshi paid for the gas #bmwm4 #m4 #carsofinstagram #nightdrive #latenight | POSTED 11/11 6:38pm PST trial https://www.instagram.com/reel/DfoAFMHgff4/ |
-| hourly | r70-lakers-up.mp4 | up before tipoff #lakers #amg #nightlife #latenight #luxurylifestyle | queued (steady clips) |
+| hourly | r70-lakers-up.mp4 | up before tipoff #lakers #amg #nightlife #latenight #luxurylifestyle | POSTED 11/11 7:38pm PST trial https://www.instagram.com/reel/DfoG6zXCuky/ |
 | hourly | r71-tipoff.mp4 | locked before tipoff #lakers #bmwm4 #nightlife #latenight #luxurylifestyle | queued (steady clips) |
 | hourly | r72-belong.mp4 | we belong here #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | queued (steady clips) |
 | hourly | r73-gas-too.mp4 | and the gas #bmwm4 #finedining #nightdrive #latenight #luxurylifestyle | queued (steady clips) |
