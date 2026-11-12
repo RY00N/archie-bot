@@ -4159,7 +4159,7 @@
    "AN Open": 197,
    "BetMGM": 50,
    "BetRivers": 104,
-   "Caesars": 191,
+   "Caesars": 193,
    "DraftKings": 196,
    "FanDuel": 193,
    "Fanatics": 158,
@@ -150953,6 +150953,21 @@
    "price": 0.52,
    "edge": -0.11,
    "news": "CHA's F Brandon Miller is out, an easier matchup; CHA has allowed starting forwards 8% fewer pra than average (likely on him: Moussa Diabate).",
+   "result": null
+  },
+  {
+   "date": "2026-11-12",
+   "ticker": "KXNBAPRA-26NOV12DALMIN-DALDGAFFORD21-15",
+   "league": "nba",
+   "player": "Daniel Gafford",
+   "stat": "pra",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-11-13T01:00:00Z",
+   "p": 0.519,
+   "price": 0.56,
+   "edge": -0.058,
+   "news": "Sergio de Larrea (F) is out, so Daniel Gafford's role likely grows; MIN has allowed starting forwards 0% fewer pra than average (likely on him: Joan Beringer, Jaden McDaniels); Ayo Dosunmu can switch onto him (MIN allowed forwards 9% fewer pra with him playing; he plays tonight); Joan Beringer can switch onto him (MIN allowed forwards 9% fewer pra with him playing; he plays tonight).",
    "result": null
   },
   {
