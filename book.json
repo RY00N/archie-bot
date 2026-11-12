@@ -4150,24 +4150,13 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-11 19:00 PT",
+  "props_at": "2026-11-11 20:00 PT",
   "props_today": 114,
   "kalshi_props_today": 67,
-  "kalshi_priced_today": 5,
+  "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
-   "AN Consensus": 67,
-   "AN Open": 67,
-   "BetMGM": 45,
-   "BetRivers": 57,
-   "Caesars": 60,
-   "DraftKings": 65,
-   "FanDuel": 61,
-   "Fanatics": 53,
-   "Parx": 57,
-   "Pinnacle": 27,
    "Sleeper": 37,
-   "Underdog": 67,
-   "bet365": 66
+   "Underdog": 67
   },
   "data_files": [
    "mlb.sqlite",
@@ -4175,7 +4164,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 23
+  "kalshi_legs_today": 0
  },
  "shadow": [
   {
@@ -161192,9 +161181,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-13T01:15:00Z",
-   "p": 0.444,
+   "p": 0.442,
    "price": 0.34,
-   "edge": 0.088,
+   "edge": 0.086,
    "news": "NYG's CB Colton Hood is out, an easier matchup.",
    "result": null
   },
@@ -161207,9 +161196,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-13T01:15:00Z",
-   "p": 0.546,
+   "p": 0.548,
    "price": 0.67,
-   "edge": -0.139,
+   "edge": -0.137,
    "news": "NYG's CB Colton Hood is out, an easier matchup.",
    "result": null
   },
