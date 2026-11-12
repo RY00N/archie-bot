@@ -183,7 +183,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r70-lakers-up.mp4 | up before tipoff #lakers #amg #nightlife #latenight #luxurylifestyle | POSTED 11/11 7:38pm PST trial https://www.instagram.com/reel/DfoG6zXCuky/ |
 | hourly | r71-tipoff.mp4 | locked before tipoff #lakers #bmwm4 #nightlife #latenight #luxurylifestyle | POSTED 11/11 8:38pm PST trial https://www.instagram.com/reel/DfoN0QXAC6D/ |
 | hourly | r72-belong.mp4 | we belong here #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | POSTED 11/11 9:38pm PST trial https://www.instagram.com/reel/DfoUqPnCrm_/ |
-| hourly | r73-gas-too.mp4 | and the gas #bmwm4 #finedining #nightdrive #latenight #luxurylifestyle | queued (steady clips) |
+| hourly | r73-gas-too.mp4 | and the gas #bmwm4 #finedining #nightdrive #latenight #luxurylifestyle | POSTED 11/11 10:38pm PST trial https://www.instagram.com/reel/DfoblD4AXsY/ |
 | hourly | r74-night-off.mp4 | night off #bmwm4 #nightdrive #carsofinstagram #latenight #luxurylifestyle | queued (steady clips) |
 | hourly | r75-amg.mp4 | waiting on the single #amg #bmwm4 #carsofinstagram #nightdrive #latenight | queued (steady clips) |
 | hourly | r76-reason.mp4 | no reason at all #corvette #ferrari #carsofinstagram #nightdrive #latenight | queued (steady clips) |
