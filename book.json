@@ -4153,7 +4153,7 @@
   "props_at": "2026-11-12 01:00 PT",
   "props_today": 620,
   "kalshi_props_today": 197,
-  "kalshi_priced_today": 15,
+  "kalshi_priced_today": 14,
   "books_on_kalshi_props": {
    "AN Consensus": 195,
    "AN Open": 197,
@@ -4162,7 +4162,7 @@
    "Caesars": 191,
    "DraftKings": 196,
    "FanDuel": 193,
-   "Fanatics": 157,
+   "Fanatics": 158,
    "Hard Rock Bet": 31,
    "Parx": 124,
    "Pinnacle": 45,
@@ -4177,7 +4177,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 52
+  "kalshi_legs_today": 50
  },
  "shadow": [
   {
@@ -150484,9 +150484,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-13T00:00:00Z",
-   "p": 0.303,
+   "p": 0.304,
    "price": 0.51,
-   "edge": -0.224,
+   "edge": -0.223,
    "news": "Injury report: Questionable:  (official NBA report) TOR's F Scottie Barnes is out, an easier matchup; TOR has allowed starting forwards 15% fewer threes than average (likely on him: RJ Barrett, Collin Murray-Boyles).",
    "result": null
   },
