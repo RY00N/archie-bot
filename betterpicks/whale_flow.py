@@ -48,6 +48,17 @@ def get(q):
     return st, js
 
 
+def start_of(m):
+    """Kalshi sets occurrence_datetime 3h after tip-off / kickoff (checked NBA + NFL 2026-11-11)."""
+    o = m.get("occurrence_datetime")
+    if not o:
+        return None
+    try:
+        return (datetime.fromisoformat(o.replace("Z", "+00:00")) - timedelta(hours=3)).isoformat()[:19]
+    except ValueError:
+        return None
+
+
 def markets():
     """{ticker: volume} for every open player-prop market (all leagues in KALSHI_PROP_SERIES)."""
     vol = {}
@@ -67,7 +78,8 @@ def markets():
                 META[m["ticker"]] = {"player": sub.split(":")[0].strip(), "stat": st, "league": lg,
                                      "line": (float(m["floor_strike"]) if m.get("floor_strike") is not None else 0.5),
                                      "yes_bid": m.get("yes_bid_dollars"), "no_bid": m.get("no_bid_dollars"),
-                                     "oi": m.get("open_interest_fp"), "result": m.get("result")}
+                                     "oi": m.get("open_interest_fp"), "result": m.get("result"),
+                                     "start": start_of(m)}
             cursor = js.get("cursor")
             if not cursor:
                 break
@@ -115,8 +127,14 @@ def update():
     seen = set(d.get("seen_ids", []))
     cutoff = (datetime.now(timezone.utc) - timedelta(days=2)).isoformat()
     old_cut = (datetime.now(timezone.utc) - timedelta(days=10)).isoformat()  # voided markets never grade
+    meta = d.get("meta", {})
     for t in trades:
         if t["trade_id"] in seen:
+            continue
+        # pregame money only: in-game buys of a side that is already all but won (99c) aren't a "read"
+        st0 = (META.get(t["ticker"]) or meta.get(t["ticker"]) or {}).get("start")
+        if not st0 or t["created_time"][:19] >= st0:
+            seen.add(t["trade_id"])
             continue
         seen.add(t["trade_id"])
         side = t.get("taker_side")  # yes = over, no = under
