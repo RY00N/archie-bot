@@ -4150,7 +4150,7 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-11 18:00 PT",
+  "props_at": "2026-11-11 19:00 PT",
   "props_today": 311,
   "kalshi_props_today": 173,
   "kalshi_priced_today": 11,
@@ -4176,7 +4176,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 59
+  "kalshi_legs_today": 44
  },
  "shadow": [
   {
@@ -151474,8 +151474,8 @@
    "line": 1.5,
    "start": "2026-11-12T03:00:00Z",
    "p": 0.461,
-   "price": 0.49,
-   "edge": -0.046,
+   "price": 0.48,
+   "edge": -0.036,
    "news": "POR has allowed bench guards 40% fewer threes than average (likely on him: Jrue Holiday, Sidy Cissoko); Damian Lillard can switch onto him (POR allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -154579,8 +154579,8 @@
    "line": 1.5,
    "start": "2026-11-12T03:00:00Z",
    "p": 0.478,
-   "price": 0.48,
-   "edge": -0.019,
+   "price": 0.49,
+   "edge": -0.029,
    "news": "OKC has allowed starting centers 32% fewer blocks than average (likely on him: Aday Mara, Isaiah Hartenstein); Chet Holmgren can switch onto him (OKC allowed centers 32% fewer blocks with him playing; he is out tonight); Isaiah Hartenstein can switch onto him (OKC allowed centers 25% fewer blocks with him playing; he plays tonight).",
    "result": null
   },
@@ -158704,8 +158704,8 @@
    "line": 3.5,
    "start": "2026-11-12T03:00:00Z",
    "p": 0.354,
-   "price": 0.52,
-   "edge": -0.183,
+   "price": 0.51,
+   "edge": -0.173,
    "news": "Ajay Mitchell is out: Alex Caruso hit the over in 10/27 games without him vs 8/13 with him; Jalen Williams is out: Alex Caruso hit the over in 12/29 games without him vs 6/11 with him; POR has allowed bench guards 23% fewer rebounds than average (likely on him: Jrue Holiday, Sidy Cissoko); Damian Lillard can switch onto him (POR allowed guards 20% fewer rebounds with him playing; he plays tonight); Sidy Cissoko can switch onto him (POR allowed guards 9% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -158974,8 +158974,8 @@
    "line": 5.5,
    "start": "2026-11-12T03:00:00Z",
    "p": 0.408,
-   "price": 0.45,
-   "edge": -0.059,
+   "price": 0.46,
+   "edge": -0.069,
    "news": "News: Robert Williams (rest) removed from injury report - NBC Sports",
    "result": null
   },
@@ -160054,8 +160054,8 @@
    "line": 1.5,
    "start": "2026-11-12T02:30:00Z",
    "p": 0.315,
-   "price": 0.34,
-   "edge": -0.041,
+   "price": 0.33,
+   "edge": -0.03,
    "news": "Gary Payton II is out: Stephen Curry hit the over in 6/18 games without him vs 4/22 with him; Brandon Williams is out: Stephen Curry hit the over in 0/3 games without him vs 2/6 with him; HOU has allowed starting guards 4% more steals than average (likely on him: Marcus Smart, Amen Thompson); Bogdan Bogdanovic can switch onto him (HOU allowed guards 8% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -160069,8 +160069,8 @@
    "line": 1.5,
    "start": "2026-11-12T02:30:00Z",
    "p": 0.685,
-   "price": 0.69,
-   "edge": -0.02,
+   "price": 0.7,
+   "edge": -0.03,
    "news": "Gary Payton II is out: Stephen Curry hit the under in 12/18 games without him vs 18/22 with him; Brandon Williams is out: Stephen Curry hit the under in 3/3 games without him vs 4/6 with him; HOU has allowed starting guards 4% more steals than average (likely on him: Marcus Smart, Amen Thompson); Bogdan Bogdanovic can switch onto him (HOU allowed guards 8% fewer steals with him playing; he plays tonight).",
    "result": null
   },
