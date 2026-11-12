@@ -190,7 +190,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r77-chandelier.mp4 | chandelier dinner #finedining #vegas #nightlife #latenight #luxurylifestyle | POSTED 11/12 11:38am PST trial https://www.instagram.com/reel/Dfp000MFezI/ |
 | hourly | r78-4-0.mp4 | 4-0 #bmwm4 #vegas #nightdrive #latenight #luxurylifestyle | POSTED 11/12 12:38pm PST trial https://www.instagram.com/reel/Dfp7suDDBMR/ |
 | hourly | r79-strategy.mp4 | singles only #ferrari #bmwm4 #carsofinstagram #nightdrive #latenight | POSTED 11/12 1:38pm PST trial https://www.instagram.com/reel/DfqCg4_CiHW/ |
-| hourly | r80-game-dinner.mp4 | one single #lakers #finedining #nightlife #latenight #luxurylifestyle | queued (steady clips) |
+| hourly | r80-game-dinner.mp4 | one single #lakers #finedining #nightlife #latenight #luxurylifestyle | POSTED 11/12 2:39pm PST trial https://www.instagram.com/reel/DfqJgmYnHRW/ |
 | hourly | r81-already-in.mp4 | already in #bmwm4 #nightdrive #carsofinstagram #latenight #luxurylifestyle | queued (steady clips) |
 | hourly | r82-valet.mp4 | thanks Kalshi #corvette #bmwm4 #nightlife #latenight #luxurylifestyle | queued (steady clips) |
 | hourly | r83-meet.mp4 | pulled up #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | queued (steady clips) |
