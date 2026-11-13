@@ -201,7 +201,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r88-not-over.mp4 | not over yet #lakers #finedining #nightlife #latenight #luxurylifestyle | POSTED 11/12 10:38pm PST trial https://www.instagram.com/reel/DfrAS0zjp0U/ |
 | hourly | r89-vette-gas.mp4 | gas money #corvette #ferrari #carsofinstagram #nightdrive #latenight | POSTED 11/13 8:38am PST trial https://www.instagram.com/reel/DfsE-w3j80c/ |
 | hourly | r90-not-mine.mp4 | not mine (yet) #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | POSTED 11/13 9:38am PST trial https://www.instagram.com/reel/DfsL15alWFY/ |
-| hourly | r91-friday.mp4 | keys out #bmwm4 #fridaynight #nightdrive #latenight #luxurylifestyle | queued (steady clips) |
+| hourly | r91-friday.mp4 | keys out #bmwm4 #fridaynight #nightdrive #latenight #luxurylifestyle | POSTED 11/13 10:38am PST trial https://www.instagram.com/reel/DfsSxa3GcFw/ |
 | hourly | r92-waiting.mp4 | one more #bmwm4 #m4 #carsofinstagram #nightdrive #latenight | queued (steady clips) |
 | hourly | r93-just-one.mp4 | just one #finedining #vegas #nightlife #latenight #luxurylifestyle | queued (steady clips) |
 | hourly | r94-flinch.mp4 | didn't flinch #lakers #mclaren #nightlife #latenight #luxurylifestyle | queued (steady clips) |
