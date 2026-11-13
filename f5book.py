@@ -46,7 +46,7 @@ def _px(bot, sym):
 
 def _first5(bot, sym, today):
     """(9:30 open, 9:34 close) from the IEX 1-min bars, or None if either bar is missing."""
-    d = bot.api("GET", bot.DATA_API, "/v2/stocks/bars", {"symbols": sym, "timeframe": "1Min", "feed": "iex", "limit": 20,
+    d = bot.api("GET", bot.DATA_API, "/v2/stocks/bars", {"symbols": sym, "timeframe": "1Min", "feed": "iex", "limit": 1000,
                                                          "start": f"{today}T13:25:00Z"})
     o = c5 = None
     for b in (d.get("bars") or {}).get(sym, []):

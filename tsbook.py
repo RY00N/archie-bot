@@ -51,7 +51,7 @@ def _px(bot):
 
 
 def _first5(bot, today):
-    d = bot.api("GET", bot.DATA_API, "/v2/stocks/bars", {"symbols": "QQQ", "timeframe": "1Min", "feed": "iex", "limit": 20,
+    d = bot.api("GET", bot.DATA_API, "/v2/stocks/bars", {"symbols": "QQQ", "timeframe": "1Min", "feed": "iex", "limit": 1000,
                                                          "start": f"{today}T13:25:00Z"})
     o = c5 = None
     for b in (d.get("bars") or {}).get("QQQ", []):
