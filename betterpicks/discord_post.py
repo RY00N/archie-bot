@@ -408,9 +408,14 @@ def retractions(dry=False):
             head = kalshi_post(r)
             if dry:
                 print("would delete + fade:", head); continue
-            try:   # find our post by its header line among the channel's recent messages
+            # find OUR card: same header AND same card title (every lock shares the header line, so matching the
+            # header alone deleted the newest lock instead -- Ryan 2026-11-13 "the bot is malfunctioning")
+            title = (leg_label(r["legs"][0]) if r.get("lock") or len(r["legs"]) == 1
+                     else f"{len(r['legs'])}-leg combo")[:256]
+            try:
                 for m in discord("GET", f"/channels/{chan}/messages?limit=100") or []:
-                    if m.get("content", "").startswith(head):
+                    if m.get("content", "").startswith(head) and any(
+                            (em.get("title") or "") == title for em in m.get("embeds") or []):
                         discord("DELETE", f"/channels/{chan}/messages/{m['id']}")
                         break
             except Exception as ex:
