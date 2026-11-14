@@ -4363,7 +4363,7 @@
    "Fanatics": 214,
    "Parx": 231,
    "Pinnacle": 185,
-   "Sleeper": 286,
+   "Sleeper": 287,
    "Underdog": 297,
    "Unibet": 23,
    "bet365": 292
@@ -4374,7 +4374,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 86
+  "kalshi_legs_today": 62
  },
  "shadow": [
   {
@@ -152737,8 +152737,8 @@
    "line": 0.5,
    "start": "2026-11-14T02:30:00Z",
    "p": 0.491,
-   "price": 0.47,
-   "edge": 0.004,
+   "price": 0.46,
+   "edge": 0.014,
    "news": "SAS has allowed starting forwards 4% fewer threes than average (likely on him: Julian Champagnie, Victor Wembanyama); Jordan McLaughlin can switch onto him (SAS allowed forwards 26% fewer threes with him playing; he plays tonight); Carter Bryant can switch onto him (SAS allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -154717,8 +154717,8 @@
    "line": 2.5,
    "start": "2026-11-14T03:30:00Z",
    "p": 0.51,
-   "price": 0.62,
-   "edge": -0.126,
+   "price": 0.63,
+   "edge": -0.136,
    "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 25/34 games without him vs 5/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the under in 20/27 games without him vs 10/13 with him; LAC has allowed starting guards 5% more threes than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -156127,8 +156127,8 @@
    "line": 5.5,
    "start": "2026-11-14T02:30:00Z",
    "p": 0.451,
-   "price": 0.53,
-   "edge": -0.096,
+   "price": 0.52,
+   "edge": -0.086,
    "news": "News: \u2018Probably No Chance He\u2019s Back in Two Weeks\u2019 \u2014 Draymond Green Gets Blunt About Stephen Curry Injury - Yahoo Sports SAS has allowed starting forwards 12% fewer assists than average (likely on him: Julian Champagnie, Victor Wembanyama); Stephon Castle can switch onto him (SAS allowed forwards 23% fewer assists with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed forwards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -158287,8 +158287,8 @@
    "line": 24.5,
    "start": "2026-11-14T03:00:00Z",
    "p": 0.433,
-   "price": 0.51,
-   "edge": -0.094,
+   "price": 0.49,
+   "edge": -0.074,
    "news": "SAC has allowed starting centers 4% more pra than average (likely on him: Dylan Cardwell); Domantas Sabonis can switch onto him (SAC allowed centers 10% fewer pra with him playing; he plays tonight); those defenders hold shooters 4.0% below their normal FG%, among the league's stingiest; minutes trending up (we project 26, his last 5 avg 27 vs 24 over 15).",
    "result": null
   },
@@ -162937,8 +162937,8 @@
    "line": 0.5,
    "start": "2026-11-15T14:30:00Z",
    "p": 0.387,
-   "price": 0.5,
-   "edge": -0.131,
+   "price": 0.49,
+   "edge": -0.12,
    "news": "News: Dan Campbell Provides Jared Goff Injury Update From Germany - Yahoo Sports",
    "result": null
   },
