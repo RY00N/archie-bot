@@ -239,7 +239,18 @@
     "bear": "SQQQ",
     "share_stop_pct": 15,
     "max_opt_pct": 0.65,
-    "skip_trade_mult": 0.5
+    "skip_trade_mult": 0.5,
+    "shock_mult": 0.75,
+    "shock_gap_pct": 5,
+    "shock_names": [
+      "AAPL",
+      "MSFT",
+      "NVDA",
+      "AMZN",
+      "META",
+      "GOOGL",
+      "AVGO"
+    ]
   },
   "dtsbook": {
     "enabled": true,

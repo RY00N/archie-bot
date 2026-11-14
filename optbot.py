@@ -59,6 +59,24 @@ def _et(t):
     return x.date().isoformat(), x.hour * 60 + x.minute
 
 
+
+def _shock(bot, today, names, pct):
+    """11/14 lab: a big name gapping >= pct% at the open (vs prior close) = shock day; first-5 options lose on those."""
+    try:
+        start = (datetime.now(timezone.utc) - timedelta(days=8)).strftime("%Y-%m-%dT%H:%M:%SZ")
+        d = bot.api("GET", bot.DATA_API, "/v2/stocks/bars", {"symbols": ",".join(names), "timeframe": "1Day", "feed": "iex",
+                                                             "start": start, "limit": 1000})
+        hit = []
+        for sym, B in (d.get("bars") or {}).items():
+            B = sorted(B, key=lambda b: b["t"])
+            if len(B) >= 2 and B[-1]["t"][:10] == today:
+                g = (B[-1]["o"] / B[-2]["c"] - 1) * 100
+                if abs(g) >= pct: hit.append(f"{sym} {g:+.1f}%")
+        return hit
+    except Exception:
+        return []
+
+
 def signal(bot, c, today, now_m):
     """Check the last CLOSED 1-min bar. Returns (side, why, price) or None."""
     sym = c["symbol"]
@@ -286,6 +304,10 @@ def step(bot, log):
         why += f" (SPY {'agrees' if agree else 'disagrees'}, size x{mult})"
     if _last.get("skip_why") and c.get("skip_trade_mult"):
         mult *= c["skip_trade_mult"]; why += f" (skip day: {_last['skip_why']}, small size x{c['skip_trade_mult']})"
+    if c.get("shock_mult") and not _shares(c):
+        hit = _shock(bot, today, c.get("shock_names", ["AAPL", "MSFT", "NVDA", "AMZN", "META", "GOOGL", "AVGO"]), c.get("shock_gap_pct", 5))
+        if hit:
+            mult *= c["shock_mult"]; why += f" (big-name gap: {', '.join(hit)}, size x{c['shock_mult']})"
     unit = 1 if _shares(c) else 100
     qty = int(c["size"] * mult // (ask * unit)) if ask > 0 else 0
     if _shares(c) and ask > 0:  # 10/23: shares mode puts the whole $1k book in each trade (backtest: +78% in 2024-25, dd 9%)
