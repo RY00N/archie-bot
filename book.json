@@ -4613,23 +4613,23 @@
    "secs": 0.0
   },
   "props_at": "2026-11-14 03:00 PT",
-  "props_today": 490,
-  "kalshi_props_today": 211,
+  "props_today": 491,
+  "kalshi_props_today": 215,
   "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
-   "AN Consensus": 211,
-   "AN Open": 211,
+   "AN Consensus": 215,
+   "AN Open": 215,
    "BetMGM": 28,
    "BetRivers": 33,
    "Caesars": 110,
-   "DraftKings": 174,
-   "FanDuel": 182,
+   "DraftKings": 176,
+   "FanDuel": 185,
    "Fanatics": 148,
    "Parx": 33,
-   "Sleeper": 199,
-   "Underdog": 211,
+   "Sleeper": 203,
+   "Underdog": 215,
    "Unibet": 3,
-   "bet365": 211
+   "bet365": 215
   },
   "data_files": [
    "mlb.sqlite",
@@ -4637,7 +4637,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 46
+  "kalshi_legs_today": 47
  },
  "shadow": [
   {
@@ -153615,8 +153615,8 @@
    "line": 1.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.46,
-   "price": 0.58,
-   "edge": -0.137,
+   "price": 0.55,
+   "edge": -0.107,
    "news": "Injury report: Probable:  (official NBA report) MEM's G Scotty Pippen Jr. is out, an easier matchup; MEM has allowed starting guards 15% more threes than average (likely on him: Ty Jerome, Cam Spencer); Cameron Boozer can switch onto him (MEM allowed guards 16% fewer threes with him playing; he plays tonight); Jerami Grant can switch onto him (MEM allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -154650,8 +154650,8 @@
    "line": 3.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.522,
-   "price": 0.63,
-   "edge": -0.124,
+   "price": 0.62,
+   "edge": -0.114,
    "news": "Injury report: Probable:  (official NBA report) MEM's G Scotty Pippen Jr. is out, an easier matchup; MEM has allowed starting guards 5% more assists than average (likely on him: Ty Jerome, Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 16% fewer assists with him playing; he is out tonight); Cameron Boozer can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -154770,8 +154770,8 @@
    "line": 3.5,
    "start": "2026-11-15T00:00:00Z",
    "p": 0.417,
-   "price": 0.43,
-   "edge": -0.03,
+   "price": 0.44,
+   "edge": -0.04,
    "news": "DEN has allowed starting forwards 25% more assists than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 15% fewer assists with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed forwards 10% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -154785,8 +154785,8 @@
    "line": 3.5,
    "start": "2026-11-15T00:00:00Z",
    "p": 0.583,
-   "price": 0.59,
-   "edge": -0.024,
+   "price": 0.58,
+   "edge": -0.014,
    "news": "DEN has allowed starting forwards 25% more assists than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 15% fewer assists with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed forwards 10% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -154995,8 +154995,8 @@
    "line": 14.5,
    "start": "2026-11-15T00:30:00Z",
    "p": 0.467,
-   "price": 0.5,
-   "edge": -0.05,
+   "price": 0.49,
+   "edge": -0.04,
    "news": "Sergio de Larrea (F) is out, so Naji Marshall's role likely grows; CLE has allowed bench forwards 6% fewer pra than average (likely on him: Mario Hezonja, Riley Minix); Meleek Thomas can switch onto him (CLE allowed forwards 20% fewer pra with him playing; he plays tonight); Craig Porter Jr. can switch onto him (CLE allowed forwards 10% fewer pra with him playing; he plays tonight); minutes trending down (we project 25, his last 5 avg 23 vs 26 over 15).",
    "result": null
   },
@@ -155400,8 +155400,8 @@
    "line": 5.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.633,
-   "price": 0.57,
-   "edge": 0.046,
+   "price": 0.56,
+   "edge": 0.056,
    "news": "News: Chicago Bulls need a struggling Matas Buzelis to step up \u2014 and stand out \u2014 in Caleb Wilson\u2019s absence - Chicago Tribune Tobe Awaka is out: Matas Buzelis hit the under in 7/9 games without him vs 2/3 with him; Caleb Wilson is out: Matas Buzelis hit the under in 2/3 games without him vs 7/9 with him; MIN has allowed starting forwards 8% fewer rebounds than average (likely on him: Joan Beringer, Jaden McDaniels); Terrence Shannon Jr. can switch onto him (MIN allowed forwards 14% fewer rebounds with him playing; he plays tonight); Joan Beringer can switch onto him (MIN allowed forwards 9% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -155763,6 +155763,21 @@
    "price": 0.66,
    "edge": -0.144,
    "news": "Isaiah Joe (G) is out, so Cade Cunningham's role likely grows; MIA's G Klay Thompson is out, an easier matchup; MIA's G Pelle Larsson is out, an easier matchup; MIA has allowed starting guards 7% fewer steals than average (likely on him: Davion Mitchell, Tim Hardaway Jr.); Klay Thompson can switch onto him (MIA allowed guards 19% fewer steals with him playing; he is out tonight); Tim Hardaway Jr. can switch onto him (MIA allowed guards 18% fewer steals with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-14",
+   "ticker": "KXNBASTL-26NOV14DETMIA-MIABADEBAYO13-2",
+   "league": "nba",
+   "player": "Bam Adebayo",
+   "stat": "steals",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-15T01:00:00Z",
+   "p": 0.507,
+   "price": 0.91,
+   "edge": -0.409,
+   "news": "DET has allowed starting centers 13% more steals than average; Jalen Duren can switch onto him (DET allowed centers 15% fewer steals with him playing; he is out tonight); Paul Reed can switch onto him (DET allowed centers 10% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156495,8 +156510,8 @@
    "line": 19.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.516,
-   "price": 0.54,
-   "edge": -0.041,
+   "price": 0.53,
+   "edge": -0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -159645,8 +159660,8 @@
    "line": 2.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.594,
-   "price": 0.58,
-   "edge": -0.003,
+   "price": 0.57,
+   "edge": 0.007,
    "news": "News: Fantasy Football Usage Report: Tank Dell flashes in second game back from injury - NBC Sports",
    "result": null
   },
@@ -159825,8 +159840,8 @@
    "line": 3.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.467,
-   "price": 0.51,
-   "edge": -0.06,
+   "price": 0.5,
+   "edge": -0.05,
    "news": "News: Meyers (ankle) cleared off injury report - NBC Sports",
    "result": null
   },
@@ -163935,8 +163950,8 @@
    "line": 9.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.501,
-   "price": 0.51,
-   "edge": -0.026,
+   "price": 0.5,
+   "edge": -0.017,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
