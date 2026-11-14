@@ -4613,12 +4613,12 @@
    "secs": 0.0
   },
   "props_at": "2026-11-14 16:00 PT",
-  "props_today": 514,
-  "kalshi_props_today": 252,
+  "props_today": 517,
+  "kalshi_props_today": 253,
   "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
-   "AN Consensus": 249,
-   "AN Open": 251,
+   "AN Consensus": 250,
+   "AN Open": 252,
    "BetMGM": 149,
    "BetRivers": 181,
    "Caesars": 207,
@@ -4627,10 +4627,10 @@
    "Fanatics": 190,
    "Parx": 180,
    "Pinnacle": 130,
-   "Sleeper": 241,
-   "Underdog": 252,
+   "Sleeper": 243,
+   "Underdog": 253,
    "Unibet": 59,
-   "bet365": 248
+   "bet365": 249
   },
   "data_files": [
    "mlb.sqlite",
@@ -153766,8 +153766,8 @@
    "line": 2.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.658,
-   "price": 0.64,
-   "edge": 0.002,
+   "price": 0.63,
+   "edge": 0.012,
    "news": "Ty Jerome is out: Cam Spencer hit the under in 8/10 games without him vs 17/25 with him; BKN has allowed bench guards 11% more threes than average (likely on him: Mikel Brown Jr., Keon Ellis); Danny Wolf can switch onto him (BKN allowed guards 20% fewer threes with him playing; he plays tonight); Chaney Johnson can switch onto him (BKN allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -154111,8 +154111,8 @@
    "line": 3.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.581,
-   "price": 0.52,
-   "edge": 0.044,
+   "price": 0.53,
+   "edge": 0.034,
    "news": "Anthony Edwards is out: LaMelo Ball hit the over in 5/8 games without him vs 1/3 with him; CHI has allowed starting guards 4% fewer threes than average (likely on him: Norman Powell, Josh Giddey); Patrick Williams can switch onto him (CHI allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -154126,8 +154126,8 @@
    "line": 3.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.419,
-   "price": 0.49,
-   "edge": -0.088,
+   "price": 0.48,
+   "edge": -0.078,
    "news": "Anthony Edwards is out: LaMelo Ball hit the under in 3/8 games without him vs 2/3 with him; CHI has allowed starting guards 4% fewer threes than average (likely on him: Norman Powell, Josh Giddey); Patrick Williams can switch onto him (CHI allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -154696,8 +154696,8 @@
    "line": 1.5,
    "start": "2026-11-15T00:00:00Z",
    "p": 0.547,
-   "price": 0.49,
-   "edge": 0.04,
+   "price": 0.48,
+   "edge": 0.05,
    "news": "DEN has allowed bench guards 5% more threes than average (likely on him: DeMar DeRozan, Tyus Jones); Tyus Jones can switch onto him (DEN allowed guards 20% fewer threes with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155101,8 +155101,8 @@
    "line": 3.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.429,
-   "price": 0.4,
-   "edge": 0.012,
+   "price": 0.41,
+   "edge": 0.002,
    "news": "Injury report: Probable:  (official NBA report) MEM's G Ty Jerome is out, an easier matchup; MEM's G Scotty Pippen Jr. is out, an easier matchup; MEM has allowed starting guards 5% more assists than average (likely on him: Cam Spencer); Scotty Pippen Jr. can switch onto him (MEM allowed guards 16% fewer assists with him playing; he is out tonight); Cameron Boozer can switch onto him (MEM allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -157126,8 +157126,8 @@
    "line": 5.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.428,
-   "price": 0.52,
-   "edge": -0.109,
+   "price": 0.51,
+   "edge": -0.099,
    "news": "CHI's F Caleb Wilson is out, an easier matchup; CHI has allowed starting forwards 6% more rebounds than average (likely on him: Isaac Okoro, Matas Buzelis); Noa Essengue can switch onto him (CHI allowed forwards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -157201,8 +157201,8 @@
    "line": 3.5,
    "start": "2026-11-15T00:30:00Z",
    "p": 0.426,
-   "price": 0.44,
-   "edge": -0.031,
+   "price": 0.51,
+   "edge": -0.101,
    "news": "Peyton Watson (G) is out, so Meleek Thomas's role likely grows; Donovan Mitchell (G) is out, so Meleek Thomas's role likely grows; James Harden (G) is out, so Meleek Thomas's role likely grows; Sam Merrill is out: Meleek Thomas hit the over in 1/4 games without him vs 1/5 with him; DAL has allowed bench guards 3% more rebounds than average (likely on him: Walter Clayton Jr., Marcus Sasser); Kyrie Irving can switch onto him (DAL allowed guards 21% fewer rebounds with him playing; he plays tonight); Zaccharie Risacher can switch onto him (DAL allowed guards 19% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -157216,8 +157216,8 @@
    "line": 3.5,
    "start": "2026-11-15T00:30:00Z",
    "p": 0.526,
-   "price": 0.57,
-   "edge": -0.061,
+   "price": 0.54,
+   "edge": -0.031,
    "news": "Peyton Watson (G) is out, so Meleek Thomas's role likely grows; Donovan Mitchell (G) is out, so Meleek Thomas's role likely grows; James Harden (G) is out, so Meleek Thomas's role likely grows; Sam Merrill is out: Meleek Thomas hit the under in 3/4 games without him vs 4/5 with him; DAL has allowed bench guards 3% more rebounds than average (likely on him: Walter Clayton Jr., Marcus Sasser); Kyrie Irving can switch onto him (DAL allowed guards 21% fewer rebounds with him playing; he plays tonight); Zaccharie Risacher can switch onto him (DAL allowed guards 19% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -157351,8 +157351,8 @@
    "line": 3.5,
    "start": "2026-11-15T00:30:00Z",
    "p": 0.467,
-   "price": 0.48,
-   "edge": -0.03,
+   "price": 0.46,
+   "edge": -0.01,
    "news": "CLE has allowed bench forwards 13% fewer rebounds than average (likely on him: Mario Hezonja, Riley Minix); Thomas Bryant can switch onto him (CLE allowed forwards 13% fewer rebounds with him playing; he plays tonight); Craig Porter Jr. can switch onto him (CLE allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -160831,8 +160831,8 @@
    "line": 1.5,
    "start": "2026-11-15T21:25:00Z",
    "p": 0.662,
-   "price": 0.67,
-   "edge": -0.023,
+   "price": 0.66,
+   "edge": -0.014,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -160846,8 +160846,8 @@
    "line": 1.5,
    "start": "2026-11-15T21:25:00Z",
    "p": 0.338,
-   "price": 0.35,
-   "edge": -0.028,
+   "price": 0.36,
+   "edge": -0.038,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -161161,8 +161161,8 @@
    "line": 2.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.423,
-   "price": 0.49,
-   "edge": -0.084,
+   "price": 0.5,
+   "edge": -0.095,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -162136,8 +162136,8 @@
    "line": 1.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.445,
-   "price": 0.45,
-   "edge": -0.022,
+   "price": 0.46,
+   "edge": -0.032,
    "news": "News: Texans' Injury Report Raises Concerns on Woody Marks, Marvin Harrison Jr. - Sports Illustrated",
    "result": null
   },
@@ -162243,7 +162243,7 @@
    "p": 0.547,
    "price": 0.58,
    "edge": -0.05,
-   "news": "News: Tuten (ankle/foot) cleared off injury report - NBC Sports TEN's LB Cody Barton is out, an easier matchup; TEN's LB Anthony Hill Jr. is out, an easier matchup.",
+   "news": "News: Jaguars\u2019 Bhayshul Tuten News Overshadows Injury Uncertainty - Yahoo Sports TEN's LB Cody Barton is out, an easier matchup; TEN's LB Anthony Hill Jr. is out, an easier matchup.",
    "result": null
   },
   {
@@ -162258,7 +162258,7 @@
    "p": 0.383,
    "price": 0.43,
    "edge": -0.064,
-   "news": "News: Tuten (ankle/foot) cleared off injury report - NBC Sports TEN's LB Cody Barton is out, an easier matchup; TEN's LB Anthony Hill Jr. is out, an easier matchup.",
+   "news": "News: Jaguars\u2019 Bhayshul Tuten News Overshadows Injury Uncertainty - Yahoo Sports TEN's LB Cody Barton is out, an easier matchup; TEN's LB Anthony Hill Jr. is out, an easier matchup.",
    "result": null
   },
   {
@@ -162721,8 +162721,8 @@
    "line": 2.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.365,
-   "price": 0.34,
-   "edge": 0.009,
+   "price": 0.35,
+   "edge": -0.001,
    "news": "Zachariah Branch (WR) is out, so Jahan Dotson's role likely grows.",
    "result": null
   },
@@ -162736,8 +162736,8 @@
    "line": 2.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.605,
-   "price": 0.67,
-   "edge": -0.08,
+   "price": 0.66,
+   "edge": -0.071,
    "news": "Zachariah Branch (WR) is out, so Jahan Dotson's role likely grows.",
    "result": null
   },
@@ -162856,8 +162856,8 @@
    "line": 3.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.479,
-   "price": 0.55,
-   "edge": -0.088,
+   "price": 0.56,
+   "edge": -0.098,
    "news": "ATL's LB Divine Deablo is out, an easier matchup; ATL's DE Samson Ebukam is out, an easier matchup.",
    "result": null
   },
@@ -162871,8 +162871,8 @@
    "line": 2.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.482,
-   "price": 0.42,
-   "edge": 0.045,
+   "price": 0.41,
+   "edge": 0.055,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -163411,8 +163411,8 @@
    "line": 2.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.611,
-   "price": 0.59,
-   "edge": 0.004,
+   "price": 0.6,
+   "edge": -0.006,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -164220,10 +164220,10 @@
    "side": "over",
    "line": 4.5,
    "start": "2026-11-15T14:30:00Z",
-   "p": 0.423,
+   "p": 0.473,
    "price": 0.43,
-   "edge": -0.024,
-   "news": "News: Jahmyr Gibbs stays the fantasy RB1 despite road struggles - Yahoo Sports",
+   "edge": 0.026,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -164238,7 +164238,7 @@
    "p": 0.527,
    "price": 0.58,
    "edge": -0.07,
-   "news": "News: Jahmyr Gibbs stays the fantasy RB1 despite road struggles - Yahoo Sports",
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -164731,8 +164731,8 @@
    "line": 3.5,
    "start": "2026-11-16T01:20:00Z",
    "p": 0.399,
-   "price": 0.39,
-   "edge": -0.008,
+   "price": 0.38,
+   "edge": 0.003,
    "news": "CIN's DE Cashius Howell is out, an easier matchup.",
    "result": null
   },
@@ -167553,7 +167553,7 @@
    "p": 0.429,
    "price": 0.47,
    "edge": -0.058,
-   "news": "News: Tuten (ankle/foot) cleared off injury report - NBC Sports TEN's LB Cody Barton is out, an easier matchup; TEN's LB Anthony Hill Jr. is out, an easier matchup.",
+   "news": "News: Jaguars\u2019 Bhayshul Tuten News Overshadows Injury Uncertainty - Yahoo Sports TEN's LB Cody Barton is out, an easier matchup; TEN's LB Anthony Hill Jr. is out, an easier matchup.",
    "result": null
   },
   {
@@ -167568,7 +167568,7 @@
    "p": 0.501,
    "price": 0.54,
    "edge": -0.056,
-   "news": "News: Tuten (ankle/foot) cleared off injury report - NBC Sports TEN's LB Cody Barton is out, an easier matchup; TEN's LB Anthony Hill Jr. is out, an easier matchup.",
+   "news": "News: Jaguars\u2019 Bhayshul Tuten News Overshadows Injury Uncertainty - Yahoo Sports TEN's LB Cody Barton is out, an easier matchup; TEN's LB Anthony Hill Jr. is out, an easier matchup.",
    "result": null
   },
   {
@@ -167970,10 +167970,10 @@
    "side": "over",
    "line": 20.5,
    "start": "2026-11-15T14:30:00Z",
-   "p": 0.368,
+   "p": 0.418,
    "price": 0.48,
-   "edge": -0.129,
-   "news": "News: Jahmyr Gibbs stays the fantasy RB1 despite road struggles - Yahoo Sports",
+   "edge": -0.079,
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
@@ -167988,7 +167988,7 @@
    "p": 0.582,
    "price": 0.53,
    "edge": 0.035,
-   "news": "News: Jahmyr Gibbs stays the fantasy RB1 despite road struggles - Yahoo Sports",
+   "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
   {
