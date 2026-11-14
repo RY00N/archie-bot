@@ -4580,20 +4580,20 @@
    "secs": 0.0
   },
   "props_at": "2026-11-14 01:00 PT",
-  "props_today": 413,
-  "kalshi_props_today": 55,
+  "props_today": 431,
+  "kalshi_props_today": 59,
   "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
-   "AN Consensus": 55,
-   "AN Open": 55,
+   "AN Consensus": 59,
+   "AN Open": 59,
    "BetRivers": 13,
-   "Caesars": 29,
-   "DraftKings": 53,
-   "FanDuel": 55,
-   "Fanatics": 54,
+   "Caesars": 33,
+   "DraftKings": 56,
+   "FanDuel": 59,
+   "Fanatics": 56,
    "Parx": 13,
-   "Sleeper": 55,
-   "Underdog": 55,
+   "Sleeper": 59,
+   "Underdog": 59,
    "bet365": 55
   },
   "data_files": [
@@ -4602,7 +4602,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 22
+  "kalshi_legs_today": 23
  },
  "shadow": [
   {
@@ -153655,8 +153655,8 @@
    "line": 2.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.379,
-   "price": 0.45,
-   "edge": -0.088,
+   "price": 0.46,
+   "edge": -0.098,
    "news": "Scotty Pippen Jr. is out: Ty Jerome hit the over in 6/12 games without him vs 6/11 with him; BKN has allowed starting guards 12% fewer threes than average (likely on him: Keon Ellis, Nolan Traore); Danny Wolf can switch onto him (BKN allowed guards 20% fewer threes with him playing; he plays tonight); Chaney Johnson can switch onto him (BKN allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -153895,8 +153895,8 @@
    "line": 1.5,
    "start": "2026-11-15T00:30:00Z",
    "p": 0.47,
-   "price": 0.58,
-   "edge": -0.127,
+   "price": 0.59,
+   "edge": -0.137,
    "news": "Sam Merrill is out: Jaylon Tyson hit the over in 8/19 games without him vs 8/21 with him; DAL has allowed bench guards 5% more threes than average (likely on him: Walter Clayton Jr., Marcus Sasser); Kyrie Irving can switch onto him (DAL allowed guards 24% fewer threes with him playing; he plays tonight); Max Christie can switch onto him (DAL allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -153943,6 +153943,36 @@
    "price": 0.59,
    "edge": -0.051,
    "news": "Sam Merrill is out: Peyton Watson hit the under in 3/5 games without him vs 6/7 with him; DAL has allowed starting guards 1% more threes than average (likely on him: Kyrie Irving, Max Christie); Kyrie Irving can switch onto him (DAL allowed guards 24% fewer threes with him playing; he plays tonight); Max Christie can switch onto him (DAL allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-14",
+   "ticker": "KXNBA3PT-26NOV14DALCLE-CLETPROCTOR24-2",
+   "league": "nba",
+   "player": "Tyrese Proctor",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-15T00:30:00Z",
+   "p": 0.322,
+   "price": 0.46,
+   "edge": -0.155,
+   "news": "News: Tyrese Proctor is making it impossible for the Cavaliers to keep him in a limited role - King James Gospel Sam Merrill is out: Tyrese Proctor hit the over in 13/31 games without him vs 4/9 with him; DAL has allowed bench guards 5% more threes than average (likely on him: Walter Clayton Jr., Marcus Sasser); Kyrie Irving can switch onto him (DAL allowed guards 24% fewer threes with him playing; he plays tonight); Max Christie can switch onto him (DAL allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-14",
+   "ticker": "KXNBA3PT-26NOV14DALCLE-CLETPROCTOR24-2",
+   "league": "nba",
+   "player": "Tyrese Proctor",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-11-15T00:30:00Z",
+   "p": 0.628,
+   "price": 0.6,
+   "edge": 0.011,
+   "news": "News: Tyrese Proctor is making it impossible for the Cavaliers to keep him in a limited role - King James Gospel Sam Merrill is out: Tyrese Proctor hit the under in 18/31 games without him vs 5/9 with him; DAL has allowed bench guards 5% more threes than average (likely on him: Walter Clayton Jr., Marcus Sasser); Kyrie Irving can switch onto him (DAL allowed guards 24% fewer threes with him playing; he plays tonight); Max Christie can switch onto him (DAL allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -157885,8 +157915,8 @@
    "line": 0.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.624,
-   "price": 0.55,
-   "edge": 0.057,
+   "price": 0.56,
+   "edge": 0.047,
    "news": "Brevin Jordan (TE) is out, so Foster Moreau's role likely grows.",
    "result": null
   },
