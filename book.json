@@ -4612,23 +4612,23 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-14 02:00 PT",
+  "props_at": "2026-11-14 03:00 PT",
   "props_today": 459,
-  "kalshi_props_today": 176,
+  "kalshi_props_today": 187,
   "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
-   "AN Consensus": 176,
-   "AN Open": 176,
+   "AN Consensus": 187,
+   "AN Open": 187,
    "BetRivers": 33,
-   "Caesars": 94,
-   "DraftKings": 149,
-   "FanDuel": 155,
-   "Fanatics": 130,
+   "Caesars": 98,
+   "DraftKings": 158,
+   "FanDuel": 165,
+   "Fanatics": 136,
    "Parx": 33,
-   "Sleeper": 170,
-   "Underdog": 176,
+   "Sleeper": 181,
+   "Underdog": 187,
    "Unibet": 3,
-   "bet365": 176
+   "bet365": 187
   },
   "data_files": [
    "mlb.sqlite",
@@ -4636,7 +4636,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 40
+  "kalshi_legs_today": 41
  },
  "shadow": [
   {
@@ -153741,6 +153741,51 @@
   },
   {
    "date": "2026-11-14",
+   "ticker": "KXNBA3PT-26NOV14CHIMIN-CHIJGIDDEY3-2",
+   "league": "nba",
+   "player": "Josh Giddey",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-15T01:00:00Z",
+   "p": 0.336,
+   "price": 0.94,
+   "edge": -0.608,
+   "news": "MIN has allowed starting guards 23% fewer threes than average (likely on him: Ayo Dosunmu, LaMelo Ball); Jaylen Clark can switch onto him (MIN allowed guards 19% fewer threes with him playing; he plays tonight); Jonathan Kuminga can switch onto him (MIN allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-14",
+   "ticker": "KXNBA3PT-26NOV14CHIMIN-CHIMBUZELIS14-2",
+   "league": "nba",
+   "player": "Matas Buzelis",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-15T01:00:00Z",
+   "p": 0.651,
+   "price": 0.94,
+   "edge": -0.293,
+   "news": "News: Chicago Bulls need a struggling Matas Buzelis to step up \u2014 and stand out \u2014 in Caleb Wilson\u2019s absence - Chicago Tribune Tobe Awaka is out: Matas Buzelis hit the over in 7/9 games without him vs 1/3 with him; MIN has allowed starting forwards 14% fewer threes than average (likely on him: Joan Beringer, Jaden McDaniels); Anthony Edwards can switch onto him (MIN allowed forwards 24% fewer threes with him playing; he is out tonight); Joan Beringer can switch onto him (MIN allowed forwards 18% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-14",
+   "ticker": "KXNBA3PT-26NOV14CHIMIN-CHINPOWELL24-3",
+   "league": "nba",
+   "player": "Norman Powell",
+   "stat": "threes",
+   "side": "over",
+   "line": 2.5,
+   "start": "2026-11-15T01:00:00Z",
+   "p": 0.467,
+   "price": 0.94,
+   "edge": -0.477,
+   "news": "Dailyn Swain (G) is out, so Norman Powell's role likely grows; MIN has allowed starting guards 23% fewer threes than average (likely on him: Ayo Dosunmu, LaMelo Ball); Jaylen Clark can switch onto him (MIN allowed guards 19% fewer threes with him playing; he plays tonight); Jonathan Kuminga can switch onto him (MIN allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-14",
    "ticker": "KXNBA3PT-26NOV14CHIMIN-MINADOSUNMU13-2",
    "league": "nba",
    "player": "Ayo Dosunmu",
@@ -153809,8 +153854,8 @@
    "line": 1.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.485,
-   "price": 0.48,
-   "edge": -0.012,
+   "price": 0.47,
+   "edge": -0.002,
    "news": "CHI's F Caleb Wilson is out, an easier matchup; CHI has allowed starting forwards 2% more threes than average (likely on him: Isaac Okoro, Matas Buzelis); Norman Powell can switch onto him (CHI allowed forwards 12% fewer threes with him playing; he plays tonight); Caleb Wilson can switch onto him (CHI allowed forwards 10% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -154469,8 +154514,8 @@
    "line": 1.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.572,
-   "price": 0.63,
-   "edge": -0.074,
+   "price": 0.62,
+   "edge": -0.064,
    "news": "Pelle Larsson is out: Davion Mitchell hit the over in 15/28 games without him vs 8/12 with him; DET has allowed starting guards 3% more threes than average (likely on him: Daniss Jenkins, Cade Cunningham).",
    "result": null
   },
@@ -154739,8 +154784,8 @@
    "line": 1.5,
    "start": "2026-11-15T00:30:00Z",
    "p": 0.332,
-   "price": 0.36,
-   "edge": -0.044,
+   "price": 0.35,
+   "edge": -0.034,
    "news": "Evan Mobley is out: Jarrett Allen hit the over in 2/5 games without him vs 18/35 with him; DAL has allowed starting centers 25% more blocks than average; Zaccharie Risacher can switch onto him (DAL allowed centers 25% fewer blocks with him playing; he plays tonight); Daniel Gafford can switch onto him (DAL allowed centers 25% fewer blocks with him playing; he plays tonight).",
    "result": null
   },
@@ -154889,8 +154934,8 @@
    "line": 9.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.512,
-   "price": 0.57,
-   "edge": -0.075,
+   "price": 0.55,
+   "edge": -0.055,
    "news": "MEM's C Quinten Post is out, an easier matchup; MEM's C Zach Edey is out, an easier matchup; MEM has allowed starting centers 8% fewer points than average (likely on him: Isaiah Stewart); Jaylen Wells can switch onto him (MEM allowed centers 13% fewer points with him playing; he plays tonight); Cameron Boozer can switch onto him (MEM allowed centers 9% fewer points with him playing; he plays tonight); those defenders hold shooters 7.8% below their normal FG%, among the league's stingiest; minutes trending up (we project 23, his last 5 avg 24 vs 22 over 15).",
    "result": null
   },
@@ -154904,8 +154949,8 @@
    "line": 14.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.523,
-   "price": 0.54,
-   "edge": -0.034,
+   "price": 0.53,
+   "edge": -0.024,
    "news": "CHI's F Caleb Wilson is out, an easier matchup; CHI has allowed starting forwards 15% more points than average (likely on him: Isaac Okoro, Matas Buzelis).",
    "result": null
   },
@@ -155076,6 +155121,21 @@
   },
   {
    "date": "2026-11-14",
+   "ticker": "KXNBAREB-26NOV14BKNMEM-BKNDSHARPE20-8",
+   "league": "nba",
+   "player": "Day'Ron Sharpe",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 7.5,
+   "start": "2026-11-15T01:00:00Z",
+   "p": 0.517,
+   "price": 0.94,
+   "edge": -0.427,
+   "news": "MEM's C Quinten Post is out, an easier matchup; MEM's C Zach Edey is out, an easier matchup; MEM has allowed starting centers 4% more rebounds than average (likely on him: Isaiah Stewart); Jaylen Wells can switch onto him (MEM allowed centers 22% fewer rebounds with him playing; he plays tonight); Zach Edey can switch onto him (MEM allowed centers 20% fewer rebounds with him playing; he is out tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-14",
    "ticker": "KXNBAREB-26NOV14BKNMEM-MEMCBOOZER27-10",
    "league": "nba",
    "player": "Cameron Boozer",
@@ -155159,8 +155219,8 @@
    "line": 5.5,
    "start": "2026-11-15T00:30:00Z",
    "p": 0.445,
-   "price": 0.46,
-   "edge": -0.032,
+   "price": 0.45,
+   "edge": -0.022,
    "news": "Sergio de Larrea (F) is out, so Daniel Gafford's role likely grows; CLE has allowed starting forwards 4% fewer rebounds than average; Thomas Bryant can switch onto him (CLE allowed forwards 13% fewer rebounds with him playing; he plays tonight); Craig Porter Jr. can switch onto him (CLE allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
