@@ -4613,24 +4613,24 @@
    "secs": 0.0
   },
   "props_at": "2026-11-14 14:00 PT",
-  "props_today": 523,
-  "kalshi_props_today": 261,
+  "props_today": 522,
+  "kalshi_props_today": 260,
   "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
-   "AN Consensus": 260,
-   "AN Open": 260,
+   "AN Consensus": 259,
+   "AN Open": 259,
    "BetMGM": 155,
    "BetRivers": 191,
    "Caesars": 211,
-   "DraftKings": 226,
+   "DraftKings": 225,
    "FanDuel": 200,
    "Fanatics": 199,
    "Parx": 191,
-   "Pinnacle": 149,
+   "Pinnacle": 148,
    "Sleeper": 238,
-   "Underdog": 261,
-   "Unibet": 67,
-   "bet365": 258
+   "Underdog": 260,
+   "Unibet": 66,
+   "bet365": 257
   },
   "data_files": [
    "mlb.sqlite",
@@ -154111,8 +154111,8 @@
    "line": 1.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.337,
-   "price": 0.36,
-   "edge": -0.039,
+   "price": 0.35,
+   "edge": -0.029,
    "news": "Anthony Edwards is out: Terrence Shannon Jr. hit the over in 5/20 games without him vs 10/20 with him; Donte DiVincenzo is out: Terrence Shannon Jr. hit the over in 9/20 games without him vs 6/20 with him; CHI has allowed bench guards 8% more threes than average (likely on him: Tre Jones, Buddy Hield); Patrick Williams can switch onto him (CHI allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -154126,8 +154126,8 @@
    "line": 1.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.664,
-   "price": 0.65,
-   "edge": -0.002,
+   "price": 0.66,
+   "edge": -0.012,
    "news": "Anthony Edwards is out: Terrence Shannon Jr. hit the under in 15/20 games without him vs 10/20 with him; Donte DiVincenzo is out: Terrence Shannon Jr. hit the under in 11/20 games without him vs 14/20 with him; CHI has allowed bench guards 8% more threes than average (likely on him: Tre Jones, Buddy Hield); Patrick Williams can switch onto him (CHI allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -156121,8 +156121,8 @@
    "line": 29.5,
    "start": "2026-11-15T00:00:00Z",
    "p": 0.504,
-   "price": 0.53,
-   "edge": -0.043,
+   "price": 0.52,
+   "edge": -0.033,
    "news": "DEN has allowed starting forwards 16% more pra than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 11% fewer pra with him playing; he plays tonight); those defenders hold shooters 4.8% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -156136,8 +156136,8 @@
    "line": 29.5,
    "start": "2026-11-15T00:00:00Z",
    "p": 0.496,
-   "price": 0.48,
-   "edge": -0.001,
+   "price": 0.49,
+   "edge": -0.011,
    "news": "DEN has allowed starting forwards 16% more pra than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 11% fewer pra with him playing; he plays tonight); those defenders hold shooters 4.8% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -156766,8 +156766,8 @@
    "line": 9.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.55,
-   "price": 0.58,
-   "edge": -0.047,
+   "price": 0.59,
+   "edge": -0.057,
    "news": "BKN has allowed starting forwards 1% more rebounds than average (likely on him: Julius Randle, Michael Porter Jr.); Michael Porter Jr. can switch onto him (BKN allowed forwards 20% fewer rebounds with him playing; he plays tonight); Day'Ron Sharpe can switch onto him (BKN allowed forwards 18% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -156826,8 +156826,8 @@
    "line": 3.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.669,
-   "price": 0.52,
-   "edge": 0.132,
+   "price": 0.51,
+   "edge": 0.142,
    "news": "Ty Jerome is out: Cam Spencer hit the under in 9/10 games without him vs 20/25 with him; Scotty Pippen Jr. is out: Cam Spencer hit the under in 25/28 games without him vs 9/12 with him; BKN has allowed bench guards 6% fewer rebounds than average (likely on him: Mikel Brown Jr., Keon Ellis); Keon Ellis can switch onto him (BKN allowed guards 17% fewer rebounds with him playing; he plays tonight); Michael Porter Jr. can switch onto him (BKN allowed guards 16% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -157096,8 +157096,8 @@
    "line": 5.5,
    "start": "2026-11-15T00:30:00Z",
    "p": 0.436,
-   "price": 0.48,
-   "edge": -0.061,
+   "price": 0.47,
+   "edge": -0.051,
    "news": "Sergio de Larrea (F) is out, so Daniel Gafford's role likely grows; CLE has allowed starting forwards 4% fewer rebounds than average; Thomas Bryant can switch onto him (CLE allowed forwards 13% fewer rebounds with him playing; he plays tonight); Craig Porter Jr. can switch onto him (CLE allowed forwards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -157291,8 +157291,8 @@
    "line": 3.5,
    "start": "2026-11-15T00:00:00Z",
    "p": 0.579,
-   "price": 0.49,
-   "edge": 0.072,
+   "price": 0.5,
+   "edge": 0.061,
    "news": "NOP's F Trendon Watford is out, an easier matchup; NOP's F Trey Murphy III is out, an easier matchup; NOP has allowed bench forwards 7% more rebounds than average.",
    "result": null
   },
@@ -157381,8 +157381,8 @@
    "line": 5.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.431,
-   "price": 0.45,
-   "edge": -0.036,
+   "price": 0.44,
+   "edge": -0.026,
    "news": "Isaiah Joe (G) is out, so Cade Cunningham's role likely grows; MIA's G Pelle Larsson is out, an easier matchup; MIA has allowed starting guards 1% fewer rebounds than average (likely on him: Davion Mitchell, Klay Thompson); Dru Smith can switch onto him (MIA allowed guards 8% fewer rebounds with him playing; he plays tonight); Giannis Antetokounmpo can switch onto him (MIA allowed guards 8% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -158791,8 +158791,8 @@
    "line": 20.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.499,
-   "price": 0.48,
-   "edge": 0.002,
+   "price": 0.49,
+   "edge": -0.008,
    "news": "News: Rams get crucial injury upgrade sure to put a smile on Matthew Stafford\u2019s face - Yahoo Sports",
    "result": null
   },
@@ -159001,8 +159001,8 @@
    "line": 21.5,
    "start": "2026-11-16T01:20:00Z",
    "p": 0.575,
-   "price": 0.52,
-   "edge": 0.038,
+   "price": 0.53,
+   "edge": 0.028,
    "news": "CIN's DE Cashius Howell is out, an easier matchup.",
    "result": null
   },
@@ -159811,8 +159811,8 @@
    "line": 0.5,
    "start": "2026-11-15T21:25:00Z",
    "p": 0.529,
-   "price": 0.55,
-   "edge": -0.038,
+   "price": 0.54,
+   "edge": -0.028,
    "news": "SF's DT Gracen Halton is out, an easier matchup.",
    "result": null
   },
@@ -164386,8 +164386,8 @@
    "line": 2.5,
    "start": "2026-11-16T01:20:00Z",
    "p": 0.514,
-   "price": 0.51,
-   "edge": -0.013,
+   "price": 0.52,
+   "edge": -0.023,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -164731,8 +164731,8 @@
    "line": 2.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.522,
-   "price": 0.53,
-   "edge": -0.025,
+   "price": 0.54,
+   "edge": -0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -165093,7 +165093,7 @@
    "p": 0.417,
    "price": 0.44,
    "edge": -0.04,
-   "news": "News: Christian McCaffrey off the injury report - Yahoo Sports DAL's LB Donovan Ezeiruaku is out, an easier matchup.",
+   "news": "News: 49ers\u2019 Christian McCaffrey Details Harsh Reality of Mike Evans\u2019 Achilles Injury - Sports Illustrated DAL's LB Donovan Ezeiruaku is out, an easier matchup.",
    "result": null
   },
   {
@@ -165108,7 +165108,7 @@
    "p": 0.523,
    "price": 0.57,
    "edge": -0.064,
-   "news": "News: Christian McCaffrey off the injury report - Yahoo Sports DAL's LB Donovan Ezeiruaku is out, an easier matchup.",
+   "news": "News: 49ers\u2019 Christian McCaffrey Details Harsh Reality of Mike Evans\u2019 Achilles Injury - Sports Illustrated DAL's LB Donovan Ezeiruaku is out, an easier matchup.",
    "result": null
   },
   {
@@ -165886,8 +165886,8 @@
    "line": 14.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.554,
-   "price": 0.52,
-   "edge": 0.017,
+   "price": 0.53,
+   "edge": 0.007,
    "news": "Michael Wilson (WR) is out, so Simi Fehoko's role likely grows.",
    "result": null
   },
@@ -168003,7 +168003,7 @@
    "p": 0.476,
    "price": 0.47,
    "edge": -0.011,
-   "news": "News: Christian McCaffrey off the injury report - Yahoo Sports DAL's LB Donovan Ezeiruaku is out, an easier matchup.",
+   "news": "News: 49ers\u2019 Christian McCaffrey Details Harsh Reality of Mike Evans\u2019 Achilles Injury - Sports Illustrated DAL's LB Donovan Ezeiruaku is out, an easier matchup.",
    "result": null
   },
   {
@@ -168018,7 +168018,7 @@
    "p": 0.464,
    "price": 0.56,
    "edge": -0.113,
-   "news": "News: Christian McCaffrey off the injury report - Yahoo Sports DAL's LB Donovan Ezeiruaku is out, an easier matchup.",
+   "news": "News: 49ers\u2019 Christian McCaffrey Details Harsh Reality of Mike Evans\u2019 Achilles Injury - Sports Illustrated DAL's LB Donovan Ezeiruaku is out, an easier matchup.",
    "result": null
   },
   {
