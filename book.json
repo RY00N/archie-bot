@@ -4481,24 +4481,24 @@
    "secs": 0.0
   },
   "props_at": "2026-11-13 19:00 PT",
-  "props_today": 347,
-  "kalshi_props_today": 221,
-  "kalshi_priced_today": 12,
+  "props_today": 344,
+  "kalshi_props_today": 217,
+  "kalshi_priced_today": 4,
   "books_on_kalshi_props": {
-   "AN Consensus": 220,
-   "AN Open": 221,
-   "BetMGM": 145,
-   "BetRivers": 175,
-   "Caesars": 187,
-   "DraftKings": 206,
-   "FanDuel": 192,
-   "Fanatics": 161,
-   "Parx": 175,
-   "Pinnacle": 139,
-   "Sleeper": 217,
-   "Underdog": 221,
-   "Unibet": 17,
-   "bet365": 221
+   "AN Consensus": 139,
+   "AN Open": 140,
+   "BetMGM": 89,
+   "BetRivers": 111,
+   "Caesars": 121,
+   "DraftKings": 128,
+   "FanDuel": 119,
+   "Fanatics": 109,
+   "Parx": 111,
+   "Pinnacle": 89,
+   "Sleeper": 183,
+   "Underdog": 217,
+   "Unibet": 8,
+   "bet365": 140
   },
   "data_files": [
    "mlb.sqlite",
@@ -4506,7 +4506,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 40
+  "kalshi_legs_today": 38
  },
  "shadow": [
   {
@@ -154489,8 +154489,8 @@
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
    "p": 0.539,
-   "price": 0.6,
-   "edge": -0.078,
+   "price": 0.59,
+   "edge": -0.068,
    "news": "OKC has allowed bench centers 68% more threes than average (likely on him: Aday Mara); Jaylin Williams can switch onto him (OKC allowed centers 42% fewer threes with him playing; he is out tonight); Chet Holmgren can switch onto him (OKC allowed centers 9% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -154503,10 +154503,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.454,
+   "p": 0.51,
    "price": 0.49,
-   "edge": -0.053,
-   "news": "OKC has allowed starting guards 15% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": 0.003,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 15% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154518,10 +154518,10 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.546,
+   "p": 0.48,
    "price": 0.52,
-   "edge": 0.009,
-   "news": "OKC has allowed starting guards 15% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": -0.057,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 15% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154563,10 +154563,10 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.681,
+   "p": 0.737,
    "price": 0.6,
-   "edge": 0.064,
-   "news": "Jordan Miller is out: Kris Dunn hit the over in 9/13 games without him vs 15/27 with him; OKC has allowed starting guards 15% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": 0.12,
+   "news": "Jordan Miller is out: Kris Dunn hit the over in 9/13 games without him vs 15/27 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 15% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154578,10 +154578,10 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.319,
+   "p": 0.253,
    "price": 0.41,
-   "edge": -0.108,
-   "news": "Jordan Miller is out: Kris Dunn hit the under in 4/13 games without him vs 12/27 with him; OKC has allowed starting guards 15% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": -0.174,
+   "news": "Jordan Miller is out: Kris Dunn hit the under in 4/13 games without him vs 12/27 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 15% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154593,10 +154593,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.434,
+   "p": 0.464,
    "price": 0.44,
-   "edge": -0.023,
-   "news": "Jordan Miller is out: Kobe Sanders hit the over in 7/21 games without him vs 8/19 with him; OKC has allowed bench guards 35% more threes than average (likely on him: Ajay Mitchell, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": 0.007,
+   "news": "Jordan Miller is out: Kobe Sanders hit the over in 7/21 games without him vs 8/19 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 35% more threes than average (likely on him: Jared McCain, Bennett Stirtz); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154608,10 +154608,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.566,
+   "p": 0.526,
    "price": 0.57,
-   "edge": -0.021,
-   "news": "Jordan Miller is out: Kobe Sanders hit the under in 14/21 games without him vs 11/19 with him; OKC has allowed bench guards 35% more threes than average (likely on him: Ajay Mitchell, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": -0.061,
+   "news": "Jordan Miller is out: Kobe Sanders hit the under in 14/21 games without him vs 11/19 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 35% more threes than average (likely on him: Jared McCain, Bennett Stirtz); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154623,10 +154623,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.451,
+   "p": 0.481,
    "price": 0.4,
-   "edge": 0.034,
-   "news": "OKC has allowed bench guards 35% more threes than average (likely on him: Ajay Mitchell, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": 0.064,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 35% more threes than average (likely on him: Jared McCain, Bennett Stirtz); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154638,10 +154638,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.549,
+   "p": 0.509,
    "price": 0.61,
-   "edge": -0.078,
-   "news": "OKC has allowed bench guards 35% more threes than average (likely on him: Ajay Mitchell, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": -0.118,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 35% more threes than average (likely on him: Jared McCain, Bennett Stirtz); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154653,10 +154653,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.447,
+   "p": 0.477,
    "price": 0.42,
-   "edge": 0.01,
-   "news": "OKC has allowed bench guards 35% more threes than average (likely on him: Ajay Mitchell, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": 0.04,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 35% more threes than average (likely on him: Jared McCain, Bennett Stirtz); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154668,10 +154668,10 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.553,
-   "price": 0.6,
-   "edge": -0.064,
-   "news": "OKC has allowed bench guards 35% more threes than average (likely on him: Ajay Mitchell, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "p": 0.513,
+   "price": 0.59,
+   "edge": -0.094,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 35% more threes than average (likely on him: Jared McCain, Bennett Stirtz); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154774,8 +154774,8 @@
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
    "p": 0.51,
-   "price": 0.49,
-   "edge": 0.003,
+   "price": 0.51,
+   "edge": -0.017,
    "news": "LAC has allowed bench guards 9% more threes than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -154789,8 +154789,8 @@
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
    "p": 0.49,
-   "price": 0.53,
-   "edge": -0.057,
+   "price": 0.51,
+   "edge": -0.037,
    "news": "LAC has allowed bench guards 9% more threes than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -154803,10 +154803,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.397,
-   "price": 0.46,
-   "edge": -0.08,
-   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions LAC has allowed starting guards 5% more threes than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
+   "p": 0.417,
+   "price": 0.49,
+   "edge": -0.09,
+   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions Ajay Mitchell (G) is out, so Jared McCain's role likely grows; LAC has allowed starting guards 5% more threes than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154818,10 +154818,10 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.553,
-   "price": 0.56,
-   "edge": -0.024,
-   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions LAC has allowed starting guards 5% more threes than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
+   "p": 0.503,
+   "price": 0.54,
+   "edge": -0.054,
+   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions Ajay Mitchell (G) is out, so Jared McCain's role likely grows; LAC has allowed starting guards 5% more threes than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154863,10 +154863,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.44,
+   "p": 0.346,
    "price": 0.39,
-   "edge": 0.033,
-   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 9/34 games without him vs 1/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the over in 7/27 games without him vs 3/13 with him; LAC has allowed starting guards 5% more threes than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
+   "edge": -0.061,
+   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Ajay Mitchell is out: Shai Gilgeous-Alexander hit the over in 3/21 games without him vs 7/19 with him; Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 9/34 games without him vs 1/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the over in 7/27 games without him vs 3/13 with him; LAC has allowed starting guards 5% more threes than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154878,10 +154878,10 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.51,
+   "p": 0.604,
    "price": 0.62,
-   "edge": -0.126,
-   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 25/34 games without him vs 5/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the under in 20/27 games without him vs 10/13 with him; LAC has allowed starting guards 5% more threes than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
+   "edge": -0.032,
+   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Ajay Mitchell is out: Shai Gilgeous-Alexander hit the under in 18/21 games without him vs 12/19 with him; Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 25/34 games without him vs 5/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the under in 20/27 games without him vs 10/13 with him; LAC has allowed starting guards 5% more threes than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 10% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -154909,8 +154909,8 @@
    "line": 1.5,
    "start": "2026-11-14T03:00:00Z",
    "p": 0.411,
-   "price": 0.43,
-   "edge": -0.036,
+   "price": 0.44,
+   "edge": -0.046,
    "news": "SAC's F Precious Achiuwa is out, an easier matchup; SAC has allowed starting forwards 1% more threes than average (likely on him: Leaky Black, Domantas Sabonis); De'Andre Hunter can switch onto him (SAC allowed forwards 16% fewer threes with him playing; he plays tonight); Zach LaVine can switch onto him (SAC allowed forwards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155074,8 +155074,8 @@
    "line": 1.5,
    "start": "2026-11-14T03:00:00Z",
    "p": 0.337,
-   "price": 0.42,
-   "edge": -0.1,
+   "price": 0.41,
+   "edge": -0.09,
    "news": "Chris Youngblood is out: Scoot Henderson hit the over in 1/8 games without him vs 2/3 with him; Vit Krejci is out: Scoot Henderson hit the over in 4/12 games without him vs 8/16 with him; Ja Morant is out: Scoot Henderson hit the over in 1/2 games without him vs 0/6 with him; Shaedon Sharpe is out: Scoot Henderson hit the over in 12/28 games without him vs 4/12 with him; SAC has allowed starting guards 29% more threes than average (likely on him: Darius Acuff Jr., Zach LaVine); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Zach LaVine can switch onto him (SAC allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155194,8 +155194,8 @@
    "line": 0.5,
    "start": "2026-11-14T03:00:00Z",
    "p": 0.233,
-   "price": 0.28,
-   "edge": -0.061,
+   "price": 0.26,
+   "edge": -0.04,
    "news": "Precious Achiuwa is out: Domantas Sabonis hit the over in 2/9 games without him vs 3/11 with him; POR has allowed starting forwards 15% fewer threes than average (likely on him: Deni Avdija, Toumani Camara); Robert Williams III can switch onto him (POR allowed forwards 21% fewer threes with him playing; he plays tonight); Damian Lillard can switch onto him (POR allowed forwards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155209,8 +155209,8 @@
    "line": 0.5,
    "start": "2026-11-14T03:00:00Z",
    "p": 0.767,
-   "price": 0.73,
-   "edge": 0.023,
+   "price": 0.75,
+   "edge": 0.004,
    "news": "Precious Achiuwa is out: Domantas Sabonis hit the under in 7/9 games without him vs 8/11 with him; POR has allowed starting forwards 15% fewer threes than average (likely on him: Deni Avdija, Toumani Camara); Robert Williams III can switch onto him (POR allowed forwards 21% fewer threes with him playing; he plays tonight); Damian Lillard can switch onto him (POR allowed forwards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -156873,10 +156873,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.517,
+   "p": 0.547,
    "price": 0.54,
-   "edge": -0.04,
-   "news": "OKC has allowed starting guards 3% fewer assists than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
+   "edge": -0.01,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 3% fewer assists than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156888,10 +156888,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.483,
+   "p": 0.443,
    "price": 0.47,
-   "edge": -0.004,
-   "news": "OKC has allowed starting guards 3% fewer assists than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
+   "edge": -0.044,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 3% fewer assists than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156903,10 +156903,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.397,
+   "p": 0.427,
    "price": 0.36,
-   "edge": 0.021,
-   "news": "OKC has allowed bench guards 23% fewer assists than average (likely on him: Ajay Mitchell, Jared McCain); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
+   "edge": 0.051,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 23% fewer assists than average (likely on him: Jared McCain, Bennett Stirtz); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156918,10 +156918,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.603,
+   "p": 0.563,
    "price": 0.65,
-   "edge": -0.063,
-   "news": "OKC has allowed bench guards 23% fewer assists than average (likely on him: Ajay Mitchell, Jared McCain); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
+   "edge": -0.103,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 23% fewer assists than average (likely on him: Jared McCain, Bennett Stirtz); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 15% fewer assists with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 13% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -157023,10 +157023,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.484,
+   "p": 0.523,
    "price": 0.52,
-   "edge": -0.053,
-   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 20/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the over in 16/27 games without him vs 7/13 with him; LAC has allowed starting guards 3% more assists than average (likely on him: Darius Garland, Kobe Sanders).",
+   "edge": -0.014,
+   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Ajay Mitchell is out: Shai Gilgeous-Alexander hit the over in 13/21 games without him vs 10/19 with him; Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 20/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the over in 16/27 games without him vs 7/13 with him; LAC has allowed starting guards 3% more assists than average (likely on him: Darius Garland, Kobe Sanders).",
    "result": null
   },
   {
@@ -157038,10 +157038,10 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.466,
-   "price": 0.5,
-   "edge": -0.051,
-   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 14/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the under in 11/27 games without him vs 6/13 with him; LAC has allowed starting guards 3% more assists than average (likely on him: Darius Garland, Kobe Sanders).",
+   "p": 0.427,
+   "price": 0.49,
+   "edge": -0.08,
+   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Ajay Mitchell is out: Shai Gilgeous-Alexander hit the under in 8/21 games without him vs 9/19 with him; Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 14/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the under in 11/27 games without him vs 6/13 with him; LAC has allowed starting guards 3% more assists than average (likely on him: Darius Garland, Kobe Sanders).",
    "result": null
   },
   {
@@ -157099,8 +157099,8 @@
    "line": 5.5,
    "start": "2026-11-14T03:00:00Z",
    "p": 0.441,
-   "price": 0.47,
-   "edge": -0.046,
+   "price": 0.48,
+   "edge": -0.056,
    "news": "Precious Achiuwa is out: Domantas Sabonis hit the under in 5/9 games without him vs 8/11 with him; POR has allowed starting forwards 6% fewer assists than average (likely on him: Deni Avdija, Toumani Camara); Sidy Cissoko can switch onto him (POR allowed forwards 15% fewer assists with him playing; he plays tonight); Damian Lillard can switch onto him (POR allowed forwards 12% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -158358,10 +158358,10 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.563,
+   "p": 0.609,
    "price": 0.47,
-   "edge": 0.076,
-   "news": "Jordan Miller is out: Darius Garland hit the over in 9/15 games without him vs 5/13 with him; OKC has allowed starting guards 1% fewer pra than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 16% fewer pra with him playing; he plays tonight); Ajay Mitchell can switch onto him (OKC allowed guards 12% fewer pra with him playing; he plays tonight).",
+   "edge": 0.122,
+   "news": "Jordan Miller is out: Darius Garland hit the over in 9/15 games without him vs 5/13 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 1% fewer pra than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 16% fewer pra with him playing; he plays tonight); Ajay Mitchell can switch onto him (OKC allowed guards 12% fewer pra with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -158373,10 +158373,10 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.437,
+   "p": 0.386,
    "price": 0.55,
-   "edge": -0.13,
-   "news": "Jordan Miller is out: Darius Garland hit the under in 6/15 games without him vs 8/13 with him; OKC has allowed starting guards 1% fewer pra than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 16% fewer pra with him playing; he plays tonight); Ajay Mitchell can switch onto him (OKC allowed guards 12% fewer pra with him playing; he plays tonight).",
+   "edge": -0.181,
+   "news": "Jordan Miller is out: Darius Garland hit the under in 6/15 games without him vs 8/13 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 1% fewer pra than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 16% fewer pra with him playing; he plays tonight); Ajay Mitchell can switch onto him (OKC allowed guards 12% fewer pra with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -158434,8 +158434,8 @@
    "line": 24.5,
    "start": "2026-11-14T03:30:00Z",
    "p": 0.532,
-   "price": 0.55,
-   "edge": -0.035,
+   "price": 0.53,
+   "edge": -0.015,
    "news": "Chet Holmgren is out: Isaiah Hartenstein hit the under in 8/12 games without him vs 22/28 with him; LAC has allowed starting centers 3% fewer pra than average (likely on him: Brook Lopez); those defenders hold shooters 2.6% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -159708,10 +159708,10 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.479,
+   "p": 0.53,
    "price": 0.48,
-   "edge": -0.018,
-   "news": "Jordan Miller is out: Darius Garland hit the over in 9/15 games without him vs 7/13 with him; OKC has allowed starting guards 3% fewer points than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 15% fewer points with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 14% fewer points with him playing; he plays tonight).",
+   "edge": 0.033,
+   "news": "Jordan Miller is out: Darius Garland hit the over in 9/15 games without him vs 7/13 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 3% fewer points than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 15% fewer points with him playing; he is out tonight); Bennett Stirtz can switch onto him (OKC allowed guards 14% fewer points with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159723,10 +159723,10 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.521,
+   "p": 0.46,
    "price": 0.53,
-   "edge": -0.026,
-   "news": "Jordan Miller is out: Darius Garland hit the under in 6/15 games without him vs 6/13 with him; OKC has allowed starting guards 3% fewer points than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 15% fewer points with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 14% fewer points with him playing; he plays tonight).",
+   "edge": -0.087,
+   "news": "Jordan Miller is out: Darius Garland hit the under in 6/15 games without him vs 6/13 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 3% fewer points than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 15% fewer points with him playing; he is out tonight); Bennett Stirtz can switch onto him (OKC allowed guards 14% fewer points with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159768,10 +159768,10 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.455,
+   "p": 0.507,
    "price": 0.46,
-   "edge": -0.022,
-   "news": "OKC has allowed bench guards 4% more points than average (likely on him: Ajay Mitchell, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 15% fewer points with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 14% fewer points with him playing; he plays tonight); minutes trending down (we project 24, his last 5 avg 22 vs 26 over 15).",
+   "edge": 0.03,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 4% more points than average (likely on him: Jared McCain, Bennett Stirtz); Ajay Mitchell can switch onto him (OKC allowed guards 15% fewer points with him playing; he is out tonight); Bennett Stirtz can switch onto him (OKC allowed guards 14% fewer points with him playing; he plays tonight); minutes trending down (we project 24, his last 5 avg 22 vs 26 over 15).",
    "result": null
   },
   {
@@ -159783,10 +159783,10 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.545,
+   "p": 0.483,
    "price": 0.55,
-   "edge": -0.022,
-   "news": "OKC has allowed bench guards 4% more points than average (likely on him: Ajay Mitchell, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 15% fewer points with him playing; he plays tonight); Bennett Stirtz can switch onto him (OKC allowed guards 14% fewer points with him playing; he plays tonight); minutes trending down (we project 24, his last 5 avg 22 vs 26 over 15).",
+   "edge": -0.084,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 4% more points than average (likely on him: Jared McCain, Bennett Stirtz); Ajay Mitchell can switch onto him (OKC allowed guards 15% fewer points with him playing; he is out tonight); Bennett Stirtz can switch onto him (OKC allowed guards 14% fewer points with him playing; he plays tonight); minutes trending down (we project 24, his last 5 avg 22 vs 26 over 15).",
    "result": null
   },
   {
@@ -159888,10 +159888,10 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.452,
-   "price": 0.52,
-   "edge": -0.085,
-   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions LAC has allowed starting guards 11% more points than average (likely on him: Darius Garland, Kobe Sanders).",
+   "p": 0.472,
+   "price": 0.56,
+   "edge": -0.105,
+   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions Ajay Mitchell (G) is out, so Jared McCain's role likely grows; LAC has allowed starting guards 11% more points than average (likely on him: Darius Garland, Kobe Sanders).",
    "result": null
   },
   {
@@ -159903,10 +159903,10 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.498,
-   "price": 0.49,
-   "edge": -0.009,
-   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions LAC has allowed starting guards 11% more points than average (likely on him: Darius Garland, Kobe Sanders).",
+   "p": 0.448,
+   "price": 0.47,
+   "edge": -0.039,
+   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions Ajay Mitchell (G) is out, so Jared McCain's role likely grows; LAC has allowed starting guards 11% more points than average (likely on him: Darius Garland, Kobe Sanders).",
    "result": null
   },
   {
@@ -161718,10 +161718,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.621,
+   "p": 0.641,
    "price": 0.53,
-   "edge": 0.074,
-   "news": "Jordan Miller is out: Kris Dunn hit the over in 10/13 games without him vs 13/27 with him; OKC has allowed starting guards 6% more rebounds than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 21% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 19% fewer rebounds with him playing; he plays tonight).",
+   "edge": 0.094,
+   "news": "Jordan Miller is out: Kris Dunn hit the over in 10/13 games without him vs 13/27 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 6% more rebounds than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 21% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 19% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161733,10 +161733,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.379,
-   "price": 0.49,
-   "edge": -0.128,
-   "news": "Jordan Miller is out: Kris Dunn hit the under in 3/13 games without him vs 14/27 with him; OKC has allowed starting guards 6% more rebounds than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 21% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 19% fewer rebounds with him playing; he plays tonight).",
+   "p": 0.359,
+   "price": 0.48,
+   "edge": -0.138,
+   "news": "Jordan Miller is out: Kris Dunn hit the under in 3/13 games without him vs 14/27 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 6% more rebounds than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 21% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 19% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161748,10 +161748,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.498,
+   "p": 0.528,
    "price": 0.55,
-   "edge": -0.069,
-   "news": "OKC has allowed bench guards 2% fewer rebounds than average (likely on him: Ajay Mitchell, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 21% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 19% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.039,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 2% fewer rebounds than average (likely on him: Jared McCain, Bennett Stirtz); Bennett Stirtz can switch onto him (OKC allowed guards 21% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 19% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161763,10 +161763,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.502,
+   "p": 0.462,
    "price": 0.47,
-   "edge": 0.015,
-   "news": "OKC has allowed bench guards 2% fewer rebounds than average (likely on him: Ajay Mitchell, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 21% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 19% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.025,
+   "news": "OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed bench guards 2% fewer rebounds than average (likely on him: Jared McCain, Bennett Stirtz); Bennett Stirtz can switch onto him (OKC allowed guards 21% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 19% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161778,10 +161778,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.397,
+   "p": 0.335,
    "price": 0.5,
-   "edge": -0.12,
-   "news": "Jalen Williams is out: Alex Caruso hit the over in 12/29 games without him vs 6/11 with him; LAC has allowed bench guards 19% fewer rebounds than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.182,
+   "news": "Ajay Mitchell is out: Alex Caruso hit the over in 10/27 games without him vs 8/13 with him; Jalen Williams is out: Alex Caruso hit the over in 12/29 games without him vs 6/11 with him; LAC has allowed bench guards 19% fewer rebounds than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161793,10 +161793,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.603,
-   "price": 0.53,
-   "edge": 0.056,
-   "news": "Jalen Williams is out: Alex Caruso hit the under in 17/29 games without him vs 5/11 with him; LAC has allowed bench guards 19% fewer rebounds than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer rebounds with him playing; he plays tonight).",
+   "p": 0.665,
+   "price": 0.51,
+   "edge": 0.138,
+   "news": "Ajay Mitchell is out: Alex Caruso hit the under in 17/27 games without him vs 5/13 with him; Jalen Williams is out: Alex Caruso hit the under in 17/29 games without him vs 5/11 with him; LAC has allowed bench guards 19% fewer rebounds than average (likely on him: Keaton Wagler, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161809,8 +161809,8 @@
    "line": 7.5,
    "start": "2026-11-14T03:30:00Z",
    "p": 0.451,
-   "price": 0.51,
-   "edge": -0.076,
+   "price": 0.52,
+   "edge": -0.086,
    "news": "News: Aday Mara\u2019s Strong Development Defends Against OKC Injuries - Yahoo Sports LAC has allowed bench centers 2% fewer rebounds than average (likely on him: Brook Lopez); Isaiah Jackson can switch onto him (LAC allowed centers 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -161824,8 +161824,8 @@
    "line": 7.5,
    "start": "2026-11-14T03:30:00Z",
    "p": 0.499,
-   "price": 0.52,
-   "edge": -0.038,
+   "price": 0.5,
+   "edge": -0.019,
    "news": "News: Aday Mara\u2019s Strong Development Defends Against OKC Injuries - Yahoo Sports LAC has allowed bench centers 2% fewer rebounds than average (likely on him: Brook Lopez); Isaiah Jackson can switch onto him (LAC allowed centers 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -161868,10 +161868,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.413,
+   "p": 0.433,
    "price": 0.47,
-   "edge": -0.074,
-   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions LAC has allowed starting guards 1% more rebounds than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.054,
+   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions Ajay Mitchell (G) is out, so Jared McCain's role likely grows; LAC has allowed starting guards 1% more rebounds than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161883,10 +161883,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.537,
+   "p": 0.487,
    "price": 0.54,
-   "edge": -0.02,
-   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions LAC has allowed starting guards 1% more rebounds than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.07,
+   "news": "News: Jared McCain snapping out of slump is coming at perfect time with Ajay Mitchell news - Thunderous Intentions Ajay Mitchell (G) is out, so Jared McCain's role likely grows; LAC has allowed starting guards 1% more rebounds than average (likely on him: Darius Garland, Kobe Sanders); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -162049,8 +162049,8 @@
    "line": 3.5,
    "start": "2026-11-14T03:00:00Z",
    "p": 0.434,
-   "price": 0.42,
-   "edge": -0.003,
+   "price": 0.44,
+   "edge": -0.023,
    "news": "POR has allowed starting guards 1% more rebounds than average (likely on him: Sidy Cissoko, Damian Lillard); Damian Lillard can switch onto him (POR allowed guards 18% fewer rebounds with him playing; he plays tonight); Sidy Cissoko can switch onto him (POR allowed guards 9% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -162064,8 +162064,8 @@
    "line": 3.5,
    "start": "2026-11-14T03:00:00Z",
    "p": 0.566,
-   "price": 0.59,
-   "edge": -0.041,
+   "price": 0.57,
+   "edge": -0.021,
    "news": "POR has allowed starting guards 1% more rebounds than average (likely on him: Sidy Cissoko, Damian Lillard); Damian Lillard can switch onto him (POR allowed guards 18% fewer rebounds with him playing; he plays tonight); Sidy Cissoko can switch onto him (POR allowed guards 9% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -163008,10 +163008,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.133,
+   "p": 0.163,
    "price": 0.29,
-   "edge": -0.171,
-   "news": "Jordan Miller is out: Darius Garland hit the over in 0/15 games without him vs 6/13 with him; OKC has allowed starting guards 24% fewer steals than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 14% fewer steals with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 12% fewer steals with him playing; he plays tonight).",
+   "edge": -0.141,
+   "news": "Jordan Miller is out: Darius Garland hit the over in 0/15 games without him vs 6/13 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 24% fewer steals than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 14% fewer steals with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 12% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163023,10 +163023,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.867,
+   "p": 0.827,
    "price": 0.72,
-   "edge": 0.133,
-   "news": "Jordan Miller is out: Darius Garland hit the under in 15/15 games without him vs 7/13 with him; OKC has allowed starting guards 24% fewer steals than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 14% fewer steals with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 12% fewer steals with him playing; he plays tonight).",
+   "edge": 0.093,
+   "news": "Jordan Miller is out: Darius Garland hit the under in 15/15 games without him vs 7/13 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 24% fewer steals than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 14% fewer steals with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 12% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163038,10 +163038,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.596,
-   "price": 0.49,
-   "edge": 0.089,
-   "news": "Jordan Miller is out: Kris Dunn hit the over in 10/13 games without him vs 12/27 with him; OKC has allowed starting guards 24% fewer steals than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 14% fewer steals with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 12% fewer steals with him playing; he plays tonight).",
+   "p": 0.616,
+   "price": 0.48,
+   "edge": 0.119,
+   "news": "Jordan Miller is out: Kris Dunn hit the over in 10/13 games without him vs 12/27 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 24% fewer steals than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 14% fewer steals with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 12% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163053,10 +163053,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.404,
-   "price": 0.53,
-   "edge": -0.143,
-   "news": "Jordan Miller is out: Kris Dunn hit the under in 3/13 games without him vs 15/27 with him; OKC has allowed starting guards 24% fewer steals than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 14% fewer steals with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 12% fewer steals with him playing; he plays tonight).",
+   "p": 0.384,
+   "price": 0.54,
+   "edge": -0.173,
+   "news": "Jordan Miller is out: Kris Dunn hit the under in 3/13 games without him vs 15/27 with him; OKC's G Ajay Mitchell is out, an easier matchup; OKC has allowed starting guards 24% fewer steals than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 14% fewer steals with him playing; he is out tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 12% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163098,10 +163098,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.245,
+   "p": 0.274,
    "price": 0.41,
-   "edge": -0.182,
-   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 8/34 games without him vs 4/6 with him; LAC has allowed starting guards 9% more steals than average (likely on him: Darius Garland, Kobe Sanders); Jordan Miller can switch onto him (LAC allowed guards 11% fewer steals with him playing; he is out tonight); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer steals with him playing; he plays tonight).",
+   "edge": -0.153,
+   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Ajay Mitchell is out: Shai Gilgeous-Alexander hit the over in 7/21 games without him vs 5/19 with him; Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 8/34 games without him vs 4/6 with him; LAC has allowed starting guards 9% more steals than average (likely on him: Darius Garland, Kobe Sanders); Jordan Miller can switch onto him (LAC allowed guards 11% fewer steals with him playing; he is out tonight); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163113,10 +163113,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-14T03:30:00Z",
-   "p": 0.705,
-   "price": 0.61,
-   "edge": 0.078,
-   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 26/34 games without him vs 2/6 with him; LAC has allowed starting guards 9% more steals than average (likely on him: Darius Garland, Kobe Sanders); Jordan Miller can switch onto him (LAC allowed guards 11% fewer steals with him playing; he is out tonight); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer steals with him playing; he plays tonight).",
+   "p": 0.676,
+   "price": 0.6,
+   "edge": 0.059,
+   "news": "News: Shai Gilgeous-Alexander reflects on shooting struggles after Thunder's 118\u2013108 loss to Portland - News 9 Ajay Mitchell is out: Shai Gilgeous-Alexander hit the under in 14/21 games without him vs 14/19 with him; Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 26/34 games without him vs 2/6 with him; LAC has allowed starting guards 9% more steals than average (likely on him: Darius Garland, Kobe Sanders); Jordan Miller can switch onto him (LAC allowed guards 11% fewer steals with him playing; he is out tonight); Isaiah Jackson can switch onto him (LAC allowed guards 11% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163354,8 +163354,8 @@
    "line": 34.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.545,
-   "price": 0.53,
-   "edge": -0.002,
+   "price": 0.54,
+   "edge": -0.012,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -164119,8 +164119,8 @@
    "line": 0.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.481,
-   "price": 0.52,
-   "edge": -0.056,
+   "price": 0.53,
+   "edge": -0.066,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -165918,9 +165918,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-15T18:00:00Z",
-   "p": 0.537,
+   "p": 0.539,
    "price": 0.44,
-   "edge": 0.08,
+   "edge": 0.082,
    "news": "Brevin Jordan is out: Dalton Schultz hit the over in 20/37 games without him vs 1/3 with him.",
    "result": null
   },
@@ -165933,9 +165933,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-15T18:00:00Z",
-   "p": 0.463,
+   "p": 0.461,
    "price": 0.59,
-   "edge": -0.144,
+   "edge": -0.146,
    "news": "Brevin Jordan is out: Dalton Schultz hit the under in 17/37 games without him vs 2/3 with him.",
    "result": null
   },
@@ -166114,8 +166114,8 @@
    "line": 1.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.382,
-   "price": 0.44,
-   "edge": -0.075,
+   "price": 0.45,
+   "edge": -0.085,
    "news": "News: Tuten (ankle/foot) cleared off injury report - NBC Sports TEN's LB Cody Barton is out, an easier matchup; TEN's LB Anthony Hill Jr. is out, an easier matchup.",
    "result": null
   },
@@ -166144,8 +166144,8 @@
    "line": 0.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.356,
-   "price": 0.37,
-   "edge": -0.03,
+   "price": 0.38,
+   "edge": -0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -166714,8 +166714,8 @@
    "line": 2.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.369,
-   "price": 0.45,
-   "edge": -0.098,
+   "price": 0.46,
+   "edge": -0.108,
    "news": "Injury report: Questionable: Groin; Did Not Participate In Practice (official NFL report) ATL's LB Divine Deablo is out, an easier matchup; ATL's DE Samson Ebukam is out, an easier matchup.",
    "result": null
   },
@@ -167149,8 +167149,8 @@
    "line": 3.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.48,
-   "price": 0.5,
-   "edge": -0.038,
+   "price": 0.49,
+   "edge": -0.027,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -167344,8 +167344,8 @@
    "line": 1.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.369,
-   "price": 0.42,
-   "edge": -0.068,
+   "price": 0.41,
+   "edge": -0.058,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -167479,8 +167479,8 @@
    "line": 0.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.57,
-   "price": 0.62,
-   "edge": -0.066,
+   "price": 0.63,
+   "edge": -0.076,
    "news": "GB's LB Zaire Franklin is out, an easier matchup.",
    "result": null
   },
@@ -167494,8 +167494,8 @@
    "line": 0.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.42,
-   "price": 0.39,
-   "edge": 0.013,
+   "price": 0.38,
+   "edge": 0.024,
    "news": "GB's LB Zaire Franklin is out, an easier matchup.",
    "result": null
   },
@@ -167509,8 +167509,8 @@
    "line": 1.5,
    "start": "2026-11-15T14:30:00Z",
    "p": 0.457,
-   "price": 0.43,
-   "edge": 0.01,
+   "price": 0.42,
+   "edge": 0.02,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -167599,8 +167599,8 @@
    "line": 4.5,
    "start": "2026-11-15T14:30:00Z",
    "p": 0.466,
-   "price": 0.43,
-   "edge": 0.019,
+   "price": 0.42,
+   "edge": 0.029,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -167674,8 +167674,8 @@
    "line": 3.5,
    "start": "2026-11-15T14:30:00Z",
    "p": 0.514,
-   "price": 0.58,
-   "edge": -0.083,
+   "price": 0.57,
+   "edge": -0.073,
    "news": "News: Hunter Henry (foot) off injury report Sunday - FantasyPros DET's LB Jack Campbell is out, an easier matchup; DET's LB Jimmy Rolder is out, an easier matchup.",
    "result": null
   },
@@ -167988,9 +167988,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-11-15T18:00:00Z",
-   "p": 0.448,
+   "p": 0.445,
    "price": 0.5,
-   "edge": -0.069,
+   "edge": -0.072,
    "news": "T.J. Hockenson (TE) is out, so Ben Yurosek's role likely grows; GB's LB Zaire Franklin is out, an easier matchup.",
    "result": null
   },
@@ -168003,9 +168003,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-11-15T18:00:00Z",
-   "p": 0.512,
+   "p": 0.515,
    "price": 0.53,
-   "edge": -0.035,
+   "edge": -0.032,
    "news": "T.J. Hockenson (TE) is out, so Ben Yurosek's role likely grows; GB's LB Zaire Franklin is out, an easier matchup.",
    "result": null
   },
@@ -168258,9 +168258,9 @@
    "side": "over",
    "line": 6.5,
    "start": "2026-11-15T18:00:00Z",
-   "p": 0.512,
+   "p": 0.513,
    "price": 0.49,
-   "edge": 0.005,
+   "edge": 0.006,
    "news": "HOU's DE Danielle Hunter is out, an easier matchup.",
    "result": null
   },
@@ -168273,9 +168273,9 @@
    "side": "under",
    "line": 6.5,
    "start": "2026-11-15T18:00:00Z",
-   "p": 0.478,
+   "p": 0.477,
    "price": 0.52,
-   "edge": -0.059,
+   "edge": -0.06,
    "news": "HOU's DE Danielle Hunter is out, an easier matchup.",
    "result": null
   },
