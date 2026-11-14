@@ -4613,7 +4613,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-14 16:00 PT",
-  "props_today": 514,
+  "props_today": 515,
   "kalshi_props_today": 252,
   "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
@@ -4627,7 +4627,7 @@
    "Fanatics": 190,
    "Parx": 180,
    "Pinnacle": 130,
-   "Sleeper": 237,
+   "Sleeper": 238,
    "Underdog": 252,
    "Unibet": 59,
    "bet365": 247
@@ -153676,8 +153676,8 @@
    "line": 1.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.467,
-   "price": 0.45,
-   "edge": -0.0,
+   "price": 0.44,
+   "edge": 0.01,
    "news": "BKN has allowed starting forwards 17% fewer threes than average (likely on him: Julius Randle, Michael Porter Jr.); Terance Mann can switch onto him (BKN allowed forwards 36% fewer threes with him playing; he plays tonight); Danny Wolf can switch onto him (BKN allowed forwards 20% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -154666,8 +154666,8 @@
    "line": 1.5,
    "start": "2026-11-15T00:00:00Z",
    "p": 0.609,
-   "price": 0.52,
-   "edge": 0.072,
+   "price": 0.51,
+   "edge": 0.082,
    "news": "DEN has allowed starting guards 6% more threes than average (likely on him: Jamal Murray, Christian Braun); Tyus Jones can switch onto him (DEN allowed guards 20% fewer threes with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155566,8 +155566,8 @@
    "line": 3.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.572,
-   "price": 0.57,
-   "edge": -0.015,
+   "price": 0.58,
+   "edge": -0.025,
    "news": "DET has allowed starting centers 18% fewer assists than average; John Collins can switch onto him (DET allowed centers 23% fewer assists with him playing; he plays tonight); Paul Reed can switch onto him (DET allowed centers 16% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -155776,8 +155776,8 @@
    "line": 34.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.555,
-   "price": 0.53,
-   "edge": 0.008,
+   "price": 0.52,
+   "edge": 0.018,
    "news": "BKN has allowed starting forwards 3% more pra than average (likely on him: Julius Randle, Michael Porter Jr.); Terance Mann can switch onto him (BKN allowed forwards 13% fewer pra with him playing; he plays tonight); Danny Wolf can switch onto him (BKN allowed forwards 13% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -155791,8 +155791,8 @@
    "line": 24.5,
    "start": "2026-11-15T01:00:00Z",
    "p": 0.505,
-   "price": 0.54,
-   "edge": -0.052,
+   "price": 0.55,
+   "edge": -0.062,
    "news": "BKN has allowed starting forwards 3% more pra than average (likely on him: Julius Randle, Michael Porter Jr.); Terance Mann can switch onto him (BKN allowed forwards 13% fewer pra with him playing; he plays tonight); Danny Wolf can switch onto him (BKN allowed forwards 13% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -164476,8 +164476,8 @@
    "line": 1.5,
    "start": "2026-11-16T01:20:00Z",
    "p": 0.66,
-   "price": 0.71,
-   "edge": -0.064,
+   "price": 0.7,
+   "edge": -0.055,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -164566,8 +164566,8 @@
    "line": 1.5,
    "start": "2026-11-16T01:20:00Z",
    "p": 0.609,
-   "price": 0.69,
-   "edge": -0.096,
+   "price": 0.68,
+   "edge": -0.086,
    "news": "PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
@@ -164656,8 +164656,8 @@
    "line": 2.5,
    "start": "2026-11-16T01:20:00Z",
    "p": 0.514,
-   "price": 0.54,
-   "edge": -0.043,
+   "price": 0.51,
+   "edge": -0.013,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -166756,8 +166756,8 @@
    "line": 29.5,
    "start": "2026-11-16T01:20:00Z",
    "p": 0.543,
-   "price": 0.52,
-   "edge": 0.006,
+   "price": 0.51,
+   "edge": 0.016,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -167161,8 +167161,8 @@
    "line": 89.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.478,
-   "price": 0.51,
-   "edge": -0.049,
+   "price": 0.5,
+   "edge": -0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
