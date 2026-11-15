@@ -235,3 +235,9 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r122-out-front.mp4 | out front #amg #mercedes #vegas #nightlife #latenight | queued (steady clips) |
 | hourly | r123-drive-slow.mp4 | driving slow #lakers #bmwm4 #nightdrive #nightlife #latenight | queued (steady clips) |
 | hourly | r124-sunday.mp4 | sunday reset #bmwm4 #m4 #sundaydrive #nightdrive #latenight | queued (steady clips) |
+| hourly | r125-receipt.mp4 | don't worry #finedining #vegas #nightlife #latenight #luxurylifestyle | queued (steady clips) |
+| hourly | r126-vette-out.mp4 | vette comes out #corvette #ferrari #carsofinstagram #nightdrive #latenight | queued (steady clips) |
+| hourly | r127-fuller.mp4 | getting fuller #mclaren #amg #carsofinstagram #garage #latenight | queued (steady clips) |
+| hourly | r128-refreshing.mp4 | refreshing #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | queued (steady clips) |
+| hourly | r129-no-complaints.mp4 | no complaints #vegas #lasvegas #nightlife #latenight #luxurylifestyle | queued (steady clips) |
+| hourly | r130-both-paid.mp4 | paid for both #lakers #ferrari #carmeet #nightlife #latenight | queued (steady clips) |
