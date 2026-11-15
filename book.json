@@ -4645,7 +4645,7 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-15 15:00 PT",
+  "props_at": "2026-11-15 16:00 PT",
   "props_today": 755,
   "kalshi_props_today": 353,
   "kalshi_priced_today": 16,
@@ -4672,7 +4672,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 113
+  "kalshi_legs_today": 81
  },
  "shadow": [
   {
@@ -152645,8 +152645,8 @@
    "line": 0.5,
    "start": "2026-11-16T01:00:00Z",
    "p": 0.662,
-   "price": 0.65,
-   "edge": -0.004,
+   "price": 0.64,
+   "edge": 0.006,
    "news": "Ousmane Dieng is out: Nate Ament hit the over in 3/4 games without him vs 3/3 with him; ATL's F Asa Newell is out, an easier matchup; ATL has allowed bench forwards 7% more threes than average (likely on him: Zuby Ejiofor, Corey Kispert); Mouhamed Gueye can switch onto him (ATL allowed forwards 26% fewer threes with him playing; he is out tonight); Corey Kispert can switch onto him (ATL allowed forwards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -152660,8 +152660,8 @@
    "line": 0.5,
    "start": "2026-11-16T01:00:00Z",
    "p": 0.329,
-   "price": 0.37,
-   "edge": -0.057,
+   "price": 0.4,
+   "edge": -0.088,
    "news": "Ousmane Dieng is out: Nate Ament hit the under in 1/4 games without him vs 0/3 with him; ATL's F Asa Newell is out, an easier matchup; ATL has allowed bench forwards 7% more threes than average (likely on him: Zuby Ejiofor, Corey Kispert); Mouhamed Gueye can switch onto him (ATL allowed forwards 26% fewer threes with him playing; he is out tonight); Corey Kispert can switch onto him (ATL allowed forwards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -153590,8 +153590,8 @@
    "line": 0.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.422,
-   "price": 0.54,
-   "edge": -0.135,
+   "price": 0.55,
+   "edge": -0.145,
    "news": "WSH has allowed starting centers 41% more threes than average (likely on him: Alex Sarr, Deandre Ayton); Tristan Vukcevic can switch onto him (WSH allowed centers 44% fewer threes with him playing; he is out tonight); Kyshawn George can switch onto him (WSH allowed centers 43% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -153620,8 +153620,8 @@
    "line": 2.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.606,
-   "price": 0.62,
-   "edge": -0.03,
+   "price": 0.61,
+   "edge": -0.021,
    "news": "WSH has allowed starting forwards 12% more threes than average (likely on him: Anthony Davis, AJ Dybantsa); Deandre Ayton can switch onto him (WSH allowed forwards 12% fewer threes with him playing; he plays tonight); Alex Sarr can switch onto him (WSH allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -153635,8 +153635,8 @@
    "line": 1.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.489,
-   "price": 0.55,
-   "edge": -0.078,
+   "price": 0.54,
+   "edge": -0.068,
    "news": "WSH has allowed starting forwards 12% more threes than average (likely on him: Anthony Davis, AJ Dybantsa); Deandre Ayton can switch onto him (WSH allowed forwards 12% fewer threes with him playing; he plays tonight); Alex Sarr can switch onto him (WSH allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -153650,8 +153650,8 @@
    "line": 1.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.511,
-   "price": 0.46,
-   "edge": 0.034,
+   "price": 0.47,
+   "edge": 0.024,
    "news": "WSH has allowed starting forwards 12% more threes than average (likely on him: Anthony Davis, AJ Dybantsa); Deandre Ayton can switch onto him (WSH allowed forwards 12% fewer threes with him playing; he plays tonight); Alex Sarr can switch onto him (WSH allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -153695,8 +153695,8 @@
    "line": 1.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.345,
-   "price": 0.4,
-   "edge": -0.072,
+   "price": 0.42,
+   "edge": -0.092,
    "news": "News: Marcus Smart Suspension Concerns Draw Tari Eason\u2019s Mom\u2019s Attention After New Video Emerges - AOL.com WSH has allowed bench forwards 5% fewer threes than average (likely on him: Khris Middleton, Anthony Gill); Deandre Ayton can switch onto him (WSH allowed forwards 12% fewer threes with him playing; he plays tonight); Alex Sarr can switch onto him (WSH allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -153710,8 +153710,8 @@
    "line": 1.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.605,
-   "price": 0.61,
-   "edge": -0.022,
+   "price": 0.62,
+   "edge": -0.031,
    "news": "News: Marcus Smart Suspension Concerns Draw Tari Eason\u2019s Mom\u2019s Attention After New Video Emerges - AOL.com WSH has allowed bench forwards 5% fewer threes than average (likely on him: Khris Middleton, Anthony Gill); Deandre Ayton can switch onto him (WSH allowed forwards 12% fewer threes with him playing; he plays tonight); Alex Sarr can switch onto him (WSH allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -153770,8 +153770,8 @@
    "line": 1.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.745,
-   "price": 0.69,
-   "edge": 0.04,
+   "price": 0.67,
+   "edge": 0.06,
    "news": "HOU has allowed starting forwards 15% fewer threes than average (likely on him: Kevin Durant, Jabari Smith Jr.); Bogdan Bogdanovic can switch onto him (HOU allowed forwards 29% fewer threes with him playing; he plays tonight); Marcus Smart can switch onto him (HOU allowed forwards 27% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -153785,8 +153785,8 @@
    "line": 0.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.59,
-   "price": 0.67,
-   "edge": -0.095,
+   "price": 0.68,
+   "edge": -0.105,
    "news": "News: Alex Sarr (illness) upgraded to available Sunday - NBC Sports HOU has allowed starting centers 4% more threes than average (likely on him: Alperen Sengun); Clint Capela can switch onto him (HOU allowed centers 10% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -153845,8 +153845,8 @@
    "line": 2.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.367,
-   "price": 0.37,
-   "edge": -0.019,
+   "price": 0.38,
+   "edge": -0.029,
    "news": "Tristan Vukcevic is out: Kyshawn George hit the over in 13/36 games without him vs 3/4 with him; Justin Champagnie is out: Kyshawn George hit the over in 9/17 games without him vs 7/23 with him; HOU has allowed starting forwards 15% fewer threes than average (likely on him: Kevin Durant, Jabari Smith Jr.); Bogdan Bogdanovic can switch onto him (HOU allowed forwards 29% fewer threes with him playing; he plays tonight); Marcus Smart can switch onto him (HOU allowed forwards 27% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -156904,10 +156904,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.424,
+   "p": 0.474,
    "price": 0.43,
-   "edge": -0.023,
-   "news": "News: Kings\u2019 Domantas Sabonis says he\u2019s \u2018100%\u2019 despite recent knee injury concern - Yahoo Sports OKC has allowed starting forwards 5% fewer assists than average; Cason Wallace can switch onto him (OKC allowed forwards 20% fewer assists with him playing; he is out tonight); Chet Holmgren can switch onto him (OKC allowed forwards 16% fewer assists with him playing; he is out tonight).",
+   "edge": 0.027,
+   "news": "OKC has allowed starting forwards 5% fewer assists than average; Cason Wallace can switch onto him (OKC allowed forwards 20% fewer assists with him playing; he is out tonight); Chet Holmgren can switch onto him (OKC allowed forwards 16% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -156922,7 +156922,7 @@
    "p": 0.526,
    "price": 0.58,
    "edge": -0.071,
-   "news": "News: Kings\u2019 Domantas Sabonis says he\u2019s \u2018100%\u2019 despite recent knee injury concern - Yahoo Sports OKC has allowed starting forwards 5% fewer assists than average; Cason Wallace can switch onto him (OKC allowed forwards 20% fewer assists with him playing; he is out tonight); Chet Holmgren can switch onto him (OKC allowed forwards 16% fewer assists with him playing; he is out tonight).",
+   "news": "OKC has allowed starting forwards 5% fewer assists than average; Cason Wallace can switch onto him (OKC allowed forwards 20% fewer assists with him playing; he is out tonight); Chet Holmgren can switch onto him (OKC allowed forwards 16% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -159305,8 +159305,8 @@
    "line": 9.5,
    "start": "2026-11-16T01:00:00Z",
    "p": 0.415,
-   "price": 0.52,
-   "edge": -0.122,
+   "price": 0.51,
+   "edge": -0.112,
    "news": "Mouhamed Gueye is out: Jalen Johnson hit the over in 6/20 games without him vs 13/20 with him; MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 4% more rebounds than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Ousmane Dieng can switch onto him (MIL allowed forwards 12% fewer rebounds with him playing; he is out tonight); Cormac Ryan can switch onto him (MIL allowed forwards 10% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -159320,8 +159320,8 @@
    "line": 9.5,
    "start": "2026-11-16T01:00:00Z",
    "p": 0.575,
-   "price": 0.49,
-   "edge": 0.068,
+   "price": 0.5,
+   "edge": 0.057,
    "news": "Mouhamed Gueye is out: Jalen Johnson hit the under in 14/20 games without him vs 7/20 with him; MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 4% more rebounds than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Ousmane Dieng can switch onto him (MIL allowed forwards 12% fewer rebounds with him playing; he is out tonight); Cormac Ryan can switch onto him (MIL allowed forwards 10% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -160235,8 +160235,8 @@
    "line": 3.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.425,
-   "price": 0.35,
-   "edge": 0.059,
+   "price": 0.37,
+   "edge": 0.039,
    "news": "News: Marcus Smart\u2019s Suspension Opens the Door for More Reed Sheppard Minutes - TWSN Fred VanVleet is out: Reed Sheppard hit the over in 7/33 games without him vs 0/7 with him; Marcus Smart (G) is out, so Reed Sheppard's role likely grows; WSH's G Tre Johnson is out, an easier matchup; WSH has allowed bench guards 9% more rebounds than average (likely on him: Bilal Coulibaly, Bub Carrington); Anthony Davis can switch onto him (WSH allowed guards 12% fewer rebounds with him playing; he plays tonight); Tristan Vukcevic can switch onto him (WSH allowed guards 10% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -160250,8 +160250,8 @@
    "line": 3.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.525,
-   "price": 0.66,
-   "edge": -0.151,
+   "price": 0.67,
+   "edge": -0.16,
    "news": "News: Marcus Smart\u2019s Suspension Opens the Door for More Reed Sheppard Minutes - TWSN Fred VanVleet is out: Reed Sheppard hit the under in 26/33 games without him vs 7/7 with him; Marcus Smart (G) is out, so Reed Sheppard's role likely grows; WSH's G Tre Johnson is out, an easier matchup; WSH has allowed bench guards 9% more rebounds than average (likely on him: Bilal Coulibaly, Bub Carrington); Anthony Davis can switch onto him (WSH allowed guards 12% fewer rebounds with him playing; he plays tonight); Tristan Vukcevic can switch onto him (WSH allowed guards 10% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -160370,8 +160370,8 @@
    "line": 3.5,
    "start": "2026-11-16T00:00:00Z",
    "p": 0.51,
-   "price": 0.54,
-   "edge": -0.047,
+   "price": 0.55,
+   "edge": -0.057,
    "news": "News: Bilal Coulibaly's Offensive Struggles with Wizards Remain Glaring - roundtable.io Tre Johnson is out: Bilal Coulibaly hit the under in 2/3 games without him vs 2/7 with him; HOU's G Fred VanVleet is out, an easier matchup; HOU's G Marcus Smart is out, an easier matchup; HOU has allowed bench guards 26% fewer rebounds than average (likely on him: Reed Sheppard, Bogdan Bogdanovic); Fred VanVleet can switch onto him (HOU allowed guards 9% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -161224,10 +161224,10 @@
    "side": "over",
    "line": 11.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.556,
+   "p": 0.606,
    "price": 0.56,
-   "edge": -0.021,
-   "news": "News: Kings\u2019 Domantas Sabonis says he\u2019s \u2018100%\u2019 despite recent knee injury concern - Yahoo Sports OKC has allowed starting forwards 6% more rebounds than average; Chet Holmgren can switch onto him (OKC allowed forwards 9% fewer rebounds with him playing; he is out tonight).",
+   "edge": 0.029,
+   "news": "OKC has allowed starting forwards 6% more rebounds than average; Chet Holmgren can switch onto him (OKC allowed forwards 9% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -161242,7 +161242,7 @@
    "p": 0.394,
    "price": 0.45,
    "edge": -0.073,
-   "news": "News: Kings\u2019 Domantas Sabonis says he\u2019s \u2018100%\u2019 despite recent knee injury concern - Yahoo Sports OKC has allowed starting forwards 6% more rebounds than average; Chet Holmgren can switch onto him (OKC allowed forwards 9% fewer rebounds with him playing; he is out tonight).",
+   "news": "OKC has allowed starting forwards 6% more rebounds than average; Chet Holmgren can switch onto him (OKC allowed forwards 9% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -173240,8 +173240,8 @@
    "line": 11.5,
    "start": "2026-11-16T01:20:00Z",
    "p": 0.367,
-   "price": 0.49,
-   "edge": -0.14,
+   "price": 0.48,
+   "edge": -0.13,
    "news": "PIT's DT Sebastian Joseph-Day is out, an easier matchup.",
    "result": null
   },
@@ -173300,8 +173300,8 @@
    "line": 13.5,
    "start": "2026-11-16T01:20:00Z",
    "p": 0.456,
-   "price": 0.49,
-   "edge": -0.051,
+   "price": 0.48,
+   "edge": -0.041,
    "news": "CIN's DE Cashius Howell is out, an easier matchup.",
    "result": null
   },
@@ -174245,8 +174245,8 @@
    "line": 30.5,
    "start": "2026-11-17T01:15:00Z",
    "p": 0.564,
-   "price": 0.49,
-   "edge": 0.057,
+   "price": 0.48,
+   "edge": 0.067,
    "news": "LAC's S Kendall Williamson is out, an easier matchup.",
    "result": null
   },
@@ -174275,8 +174275,8 @@
    "line": 30.5,
    "start": "2026-11-17T01:15:00Z",
    "p": 0.465,
-   "price": 0.5,
-   "edge": -0.052,
+   "price": 0.49,
+   "edge": -0.042,
    "news": "News: Justin Herbert is not on Chargers\u2019 injury report as they begin prep for Ravens - NBC Sports BAL's S Jaylinn Hawkins is out, an easier matchup.",
    "result": null
   },
@@ -174620,8 +174620,8 @@
    "line": 2.5,
    "start": "2026-11-17T01:15:00Z",
    "p": 0.407,
-   "price": 0.47,
-   "edge": -0.08,
+   "price": 0.46,
+   "edge": -0.07,
    "news": "News: Mark Andrews talks about the Ravens\u2019 struggles and his relationship with Lamar Jackson - Shoreline Media Group LAC's S Kendall Williamson is out, an easier matchup.",
    "result": null
   },
