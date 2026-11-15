@@ -4612,7 +4612,7 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-14 17:00 PT",
+  "props_at": "2026-11-14 18:00 PT",
   "props_today": 339,
   "kalshi_props_today": 183,
   "kalshi_priced_today": 5,
@@ -4627,7 +4627,7 @@
    "Fanatics": 135,
    "Parx": 136,
    "Pinnacle": 83,
-   "Sleeper": 180,
+   "Sleeper": 181,
    "Underdog": 183,
    "Unibet": 52,
    "bet365": 183
@@ -4638,7 +4638,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 55
+  "kalshi_legs_today": 0
  },
  "shadow": [
   {
@@ -159706,8 +159706,8 @@
    "line": 20.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.549,
-   "price": 0.53,
-   "edge": 0.002,
+   "price": 0.54,
+   "edge": -0.008,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -160951,8 +160951,8 @@
    "line": 0.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.608,
-   "price": 0.59,
-   "edge": 0.001,
+   "price": 0.6,
+   "edge": -0.009,
    "news": "SEA's DT Leonard Williams is out, an easier matchup.",
    "result": null
   },
@@ -160966,8 +160966,8 @@
    "line": 0.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.382,
-   "price": 0.43,
-   "edge": -0.065,
+   "price": 0.42,
+   "edge": -0.055,
    "news": "SEA's DT Leonard Williams is out, an easier matchup.",
    "result": null
   },
@@ -164101,8 +164101,8 @@
    "line": 2.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.469,
-   "price": 0.48,
-   "edge": -0.028,
+   "price": 0.47,
+   "edge": -0.018,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -164116,8 +164116,8 @@
    "line": 2.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.531,
-   "price": 0.53,
-   "edge": -0.016,
+   "price": 0.54,
+   "edge": -0.026,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -164371,8 +164371,8 @@
    "line": 3.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.446,
-   "price": 0.51,
-   "edge": -0.081,
+   "price": 0.5,
+   "edge": -0.071,
    "news": "News: Colby Parkinson Remains limited in practice - Fantasy Footballers Podcast Terrance Ferguson is out: Colby Parkinson hit the over in 2/5 games without him vs 5/15 with him.",
    "result": null
   },
@@ -164386,8 +164386,8 @@
    "line": 3.5,
    "start": "2026-11-15T21:05:00Z",
    "p": 0.504,
-   "price": 0.5,
-   "edge": -0.013,
+   "price": 0.52,
+   "edge": -0.033,
    "news": "News: Colby Parkinson Remains limited in practice - Fantasy Footballers Podcast Terrance Ferguson is out: Colby Parkinson hit the under in 3/5 games without him vs 10/15 with him.",
    "result": null
   },
@@ -165061,8 +165061,8 @@
    "line": 1.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.389,
-   "price": 0.41,
-   "edge": -0.038,
+   "price": 0.4,
+   "edge": -0.028,
    "news": "T.J. Hockenson (TE) is out, so Ben Yurosek's role likely grows; GB's LB Zaire Franklin is out, an easier matchup.",
    "result": null
   },
@@ -165076,8 +165076,8 @@
    "line": 1.5,
    "start": "2026-11-15T18:00:00Z",
    "p": 0.571,
-   "price": 0.6,
-   "edge": -0.046,
+   "price": 0.61,
+   "edge": -0.056,
    "news": "T.J. Hockenson (TE) is out, so Ben Yurosek's role likely grows; GB's LB Zaire Franklin is out, an easier matchup.",
    "result": null
   },
