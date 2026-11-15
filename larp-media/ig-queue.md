@@ -223,7 +223,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r110-midnight.mp4 | still green #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | POSTED 11/14 2:38pm PST trial https://www.instagram.com/reel/DfvTA0bDCjX/ |
 | hourly | r111-lobby.mp4 | 11pm lobby #vegas #hotel #nightlife #latenight #luxurylifestyle | POSTED 11/14 3:39pm PST trial https://www.instagram.com/reel/DfvZ-lICvsq/ |
 | hourly | r112-omakase.mp4 | omakase #sushi #ferrari #nightlife #latenight #luxurylifestyle | POSTED 11/14 4:38pm PST trial https://www.instagram.com/reel/Dfvgty8jWgL/ |
-| hourly | r113-saturday.mp4 | saturday plan #bmwm4 #m4 #saturdaynight #nightdrive #latenight | queued (steady clips) |
+| hourly | r113-saturday.mp4 | saturday plan #bmwm4 #m4 #saturdaynight #nightdrive #latenight | POSTED 11/14 5:39pm PST trial https://www.instagram.com/reel/DfvnuaPjRR7/ |
 | hourly | r114-idle.mp4 | idling #corvette #ferrari #carsofinstagram #nightlife #latenight | queued (steady clips) |
 | hourly | r115-what-i-do.mp4 | what i do #ferrari #bmwm4 #carmeet #carsofinstagram #latenight | queued (steady clips) |
 | hourly | r116-dessert.mp4 | from earlier #finedining #sushi #nightlife #latenight #luxurylifestyle | queued (steady clips) |
