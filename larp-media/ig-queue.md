@@ -249,7 +249,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r136-same-night.mp4 | same night #mclaren #finedining #carsofinstagram #nightlife #latenight | POSTED 11/16 11:38am PST trial https://www.instagram.com/reel/Df0IAtumfB4/ |
 | hourly | r137-valet-tip.mp4 | valet #bmwm4 #ferrari #hotel #nightlife #latenight | POSTED 11/16 12:40pm PST trial https://www.instagram.com/reel/Df0O_GGCk10/ |
 | hourly | r138-premium.mp4 | premium only #bmwm4 #m4 #ferrari #carsofinstagram #latenight | POSTED 11/16 1:38pm PST trial https://www.instagram.com/reel/Df0VxHWkTCM/ |
-| hourly | r139-budget.mp4 | courtside energy #lakers #sushi #nba #nightlife #latenight | queued (steady clips) |
+| hourly | r139-budget.mp4 | courtside energy #lakers #sushi #nba #nightlife #latenight | POSTED 11/16 2:38pm PST trial https://www.instagram.com/reel/Df0cluYk1MB/ |
 | hourly | r140-hood.mp4 | staring #amg #ferrari #carsofinstagram #nightlife #latenight | queued (steady clips) |
 | hourly | r141-in-park.mp4 | in park #corvette #vegas #nightlife #latenight #luxurylifestyle | queued (steady clips) |
 | hourly | r142-tunnel.mp4 | late night #bmwm4 #ferrari #nightdrive #carmeet #latenight | queued (steady clips) |
