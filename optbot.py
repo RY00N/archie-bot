@@ -218,6 +218,11 @@ def step(bot, log):
         tsbook.ensure_thread(bot, log)
     except Exception as e:
         log(f"tsbook hook error: {e}")
+    try:  # 11/16 real-money mirror (optlive.py): off unless rules options.live.enabled + live keys on the server
+        import optlive
+        optlive.tick(lambda sym: _quote(bot, sym), log)
+    except Exception as e:
+        log(f"LIVE hook error: {e}")
     o = st.get("open")
     if o:  # manage the open option: stop, profit lock + trail, time stop
         if o.get("state") == "pending":
@@ -264,6 +269,12 @@ def step(bot, log):
         elif m - o["entry_min"] >= o.get("hold", c["max_hold_min"]) or m >= 955:
             how = "time"
         if how:
+            if not _shares(c):
+                try:
+                    import optlive
+                    optlive.exit(o["symbol"], bid, how, log)
+                except Exception as e:
+                    log(f"LIVE hook error: {e}")
             try:  # sell only what is really held: never go short if something else already closed it (10/29)
                 held = int(float(bot.trade("GET", f"/v2/positions/{o['symbol']}").get("qty", 0)))
             except Exception as e:  # only "position does not exist" means it's gone; any other error: sell as planned
@@ -345,6 +356,12 @@ def step(bot, log):
                   "hold": c.get("disagree_hold_min", c["max_hold_min"]) if agree is False else c["max_hold_min"]}
     st["trades"] += 1
     log(f"OPT {why}: buy {qty} {osym} limit {ask:.2f} (QQQ {px})")
+    if not _shares(c):
+        try:
+            import optlive
+            optlive.enter(osym, ask, why, log)
+        except Exception as e:
+            log(f"LIVE hook error: {e}")
     save(st)
 
 
@@ -355,7 +372,15 @@ def summary():
             "equity": round(eq, 2), "day_pnl": st.get("day_pnl", 0), "realized": st.get("realized", 0),
             "positions": [o] if o else [], "trades": st.get("history", [])[-50:],
             "status": ("off" if not c["enabled"] else st.get("why_done") or ("in a trade" if o else "watching")), "date": st.get("date"),
-            "dts": _dts_summary()}
+            "dts": _dts_summary(), "live": _live_summary()}
+
+
+def _live_summary():
+    try:
+        import optlive
+        return optlive.summary()
+    except Exception as e:
+        return {"error": str(e)[:200]}
 
 
 def _dts_summary():

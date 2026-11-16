@@ -252,7 +252,13 @@
       "AVGO"
     ],
     "calm_mult": 1.15,
-    "calm_range_pct": 1.0
+    "calm_range_pct": 1.0,
+    "live": {
+      "enabled": false,
+      "size_usd": 800,
+      "max_contracts": 1,
+      "daily_loss_cap": 400
+    }
   },
   "dtsbook": {
     "enabled": true,
