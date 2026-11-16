@@ -4646,23 +4646,23 @@
    "secs": 0.0
   },
   "props_at": "2026-11-15 18:00 PT",
-  "props_today": 291,
-  "kalshi_props_today": 93,
+  "props_today": 87,
+  "kalshi_props_today": 44,
   "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
-   "AN Consensus": 43,
-   "AN Open": 43,
+   "AN Consensus": 44,
+   "AN Open": 44,
    "BetMGM": 28,
    "BetRivers": 34,
    "Caesars": 33,
    "DraftKings": 37,
-   "FanDuel": 39,
-   "Fanatics": 31,
+   "FanDuel": 40,
+   "Fanatics": 32,
    "Parx": 35,
    "Pinnacle": 31,
    "Sleeper": 39,
-   "Underdog": 93,
-   "bet365": 39
+   "Underdog": 44,
+   "bet365": 40
   },
   "data_files": [
    "mlb.sqlite",
@@ -155102,10 +155102,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.21,
+   "p": 0.24,
    "price": 0.36,
-   "edge": -0.166,
-   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the over in 5/19 games without him vs 5/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 8/26 games without him vs 2/5 with him; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "edge": -0.136,
+   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the over in 5/19 games without him vs 5/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 8/26 games without him vs 2/5 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155117,10 +155117,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.74,
+   "p": 0.7,
    "price": 0.65,
-   "edge": 0.074,
-   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the under in 14/19 games without him vs 6/11 with him; Jalen Williams is out: Ajay Mitchell hit the under in 18/26 games without him vs 3/5 with him; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "edge": 0.034,
+   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the under in 14/19 games without him vs 6/11 with him; Jalen Williams is out: Ajay Mitchell hit the under in 18/26 games without him vs 3/5 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155132,10 +155132,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.482,
+   "p": 0.512,
    "price": 0.46,
-   "edge": 0.005,
-   "news": "SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "edge": 0.035,
+   "news": "SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155147,10 +155147,10 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.518,
+   "p": 0.478,
    "price": 0.55,
-   "edge": -0.049,
-   "news": "SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "edge": -0.089,
+   "news": "SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155162,10 +155162,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.431,
-   "price": 0.46,
-   "edge": -0.046,
-   "news": "Cason Wallace is out: Kenrich Williams hit the over in 4/9 games without him vs 2/3 with him; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "p": 0.461,
+   "price": 0.45,
+   "edge": -0.006,
+   "news": "Cason Wallace is out: Kenrich Williams hit the over in 4/9 games without him vs 2/3 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155177,10 +155177,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.569,
-   "price": 0.56,
-   "edge": -0.008,
-   "news": "Cason Wallace is out: Kenrich Williams hit the under in 5/9 games without him vs 1/3 with him; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "p": 0.529,
+   "price": 0.58,
+   "edge": -0.068,
+   "news": "Cason Wallace is out: Kenrich Williams hit the under in 5/9 games without him vs 1/3 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155192,10 +155192,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.566,
-   "price": 0.62,
-   "edge": -0.07,
-   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 18/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the over in 13/27 games without him vs 8/13 with him; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "p": 0.596,
+   "price": 0.61,
+   "edge": -0.031,
+   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 18/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the over in 13/27 games without him vs 8/13 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155207,10 +155207,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.434,
-   "price": 0.39,
-   "edge": 0.027,
-   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 16/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the under in 14/27 games without him vs 5/13 with him; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
+   "p": 0.394,
+   "price": 0.4,
+   "edge": -0.023,
+   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 16/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the under in 14/27 games without him vs 5/13 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 33% more threes than average (likely on him: Darius Acuff Jr.); Domantas Sabonis can switch onto him (SAC allowed guards 16% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155282,10 +155282,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.357,
-   "price": 0.38,
-   "edge": -0.039,
-   "news": "OKC has allowed starting guards 13% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 13% fewer threes with him playing; he plays tonight).",
+   "p": 0.377,
+   "price": 0.39,
+   "edge": -0.03,
+   "news": "Zach LaVine (G) is out, so Darius Acuff Jr.'s role likely grows; OKC has allowed starting guards 13% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155297,10 +155297,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.643,
+   "p": 0.593,
    "price": 0.63,
-   "edge": -0.003,
-   "news": "OKC has allowed starting guards 13% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 13% fewer threes with him playing; he plays tonight).",
+   "edge": -0.053,
+   "news": "Zach LaVine (G) is out, so Darius Acuff Jr.'s role likely grows; OKC has allowed starting guards 13% more threes than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Ajay Mitchell can switch onto him (OKC allowed guards 19% fewer threes with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156902,10 +156902,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.474,
-   "price": 0.5,
-   "edge": -0.044,
-   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the over in 10/19 games without him vs 4/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 12/26 games without him vs 3/5 with him; SAC has allowed starting guards 17% more assists than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 14% fewer assists with him playing; he plays tonight).",
+   "p": 0.504,
+   "price": 0.49,
+   "edge": -0.003,
+   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the over in 10/19 games without him vs 4/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 12/26 games without him vs 3/5 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 17% more assists than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156917,10 +156917,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.476,
-   "price": 0.51,
-   "edge": -0.051,
-   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the under in 9/19 games without him vs 7/11 with him; Jalen Williams is out: Ajay Mitchell hit the under in 14/26 games without him vs 2/5 with him; SAC has allowed starting guards 17% more assists than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 14% fewer assists with him playing; he plays tonight).",
+   "p": 0.436,
+   "price": 0.52,
+   "edge": -0.101,
+   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the under in 9/19 games without him vs 7/11 with him; Jalen Williams is out: Ajay Mitchell hit the under in 14/26 games without him vs 2/5 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 17% more assists than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156932,10 +156932,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.468,
-   "price": 0.43,
-   "edge": 0.021,
-   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 20/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the over in 16/27 games without him vs 7/13 with him; SAC has allowed starting guards 17% more assists than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 14% fewer assists with him playing; he plays tonight).",
+   "p": 0.498,
+   "price": 0.42,
+   "edge": 0.061,
+   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 20/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the over in 16/27 games without him vs 7/13 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 17% more assists than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156947,10 +156947,10 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.532,
+   "p": 0.492,
    "price": 0.59,
-   "edge": -0.075,
-   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 14/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the under in 11/27 games without him vs 6/13 with him; SAC has allowed starting guards 17% more assists than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 14% fewer assists with him playing; he plays tonight).",
+   "edge": -0.115,
+   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 14/34 games without him vs 3/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the under in 11/27 games without him vs 6/13 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 17% more assists than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 14% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156965,7 +156965,7 @@
    "p": 0.494,
    "price": 0.41,
    "edge": 0.067,
-   "news": "Precious Achiuwa is out: Domantas Sabonis hit the over in 4/10 games without him vs 3/11 with him; De'Andre Hunter is out: Domantas Sabonis hit the over in 1/3 games without him vs 4/10 with him; OKC has allowed starting forwards 5% fewer assists than average; Cason Wallace can switch onto him (OKC allowed forwards 20% fewer assists with him playing; he is out tonight); Chet Holmgren can switch onto him (OKC allowed forwards 16% fewer assists with him playing; he is out tonight).",
+   "news": "De'Andre Hunter is out: Domantas Sabonis hit the over in 1/3 games without him vs 4/10 with him; Precious Achiuwa is out: Domantas Sabonis hit the over in 4/10 games without him vs 3/11 with him; OKC has allowed starting forwards 5% fewer assists than average; Cason Wallace can switch onto him (OKC allowed forwards 20% fewer assists with him playing; he is out tonight); Chet Holmgren can switch onto him (OKC allowed forwards 16% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -156980,7 +156980,7 @@
    "p": 0.506,
    "price": 0.6,
    "edge": -0.111,
-   "news": "Precious Achiuwa is out: Domantas Sabonis hit the under in 6/10 games without him vs 8/11 with him; De'Andre Hunter is out: Domantas Sabonis hit the under in 2/3 games without him vs 6/10 with him; OKC has allowed starting forwards 5% fewer assists than average; Cason Wallace can switch onto him (OKC allowed forwards 20% fewer assists with him playing; he is out tonight); Chet Holmgren can switch onto him (OKC allowed forwards 16% fewer assists with him playing; he is out tonight).",
+   "news": "De'Andre Hunter is out: Domantas Sabonis hit the under in 2/3 games without him vs 6/10 with him; Precious Achiuwa is out: Domantas Sabonis hit the under in 6/10 games without him vs 8/11 with him; OKC has allowed starting forwards 5% fewer assists than average; Cason Wallace can switch onto him (OKC allowed forwards 20% fewer assists with him playing; he is out tonight); Chet Holmgren can switch onto him (OKC allowed forwards 16% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -158015,7 +158015,7 @@
    "p": 0.617,
    "price": 0.52,
    "edge": 0.08,
-   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the over in 10/19 games without him vs 4/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 13/26 games without him vs 1/5 with him; SAC has allowed starting guards 8% more pra than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 10% fewer pra with him playing; he plays tonight).",
+   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the over in 10/19 games without him vs 4/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 13/26 games without him vs 1/5 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 8% more pra than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 10% fewer pra with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -158030,7 +158030,7 @@
    "p": 0.333,
    "price": 0.49,
    "edge": -0.174,
-   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the under in 9/19 games without him vs 7/11 with him; Jalen Williams is out: Ajay Mitchell hit the under in 13/26 games without him vs 4/5 with him; SAC has allowed starting guards 8% more pra than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 10% fewer pra with him playing; he plays tonight).",
+   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the under in 9/19 games without him vs 7/11 with him; Jalen Williams is out: Ajay Mitchell hit the under in 13/26 games without him vs 4/5 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 8% more pra than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 10% fewer pra with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -158072,10 +158072,10 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.528,
+   "p": 0.558,
    "price": 0.5,
-   "edge": 0.011,
-   "news": "SAC has allowed starting guards 8% more pra than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 10% fewer pra with him playing; he plays tonight); minutes trending up (we project 28, his last 5 avg 29 vs 26 over 15).",
+   "edge": 0.041,
+   "news": "SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 8% more pra than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 10% fewer pra with him playing; he plays tonight); minutes trending up (we project 28, his last 5 avg 29 vs 26 over 15).",
    "result": null
   },
   {
@@ -158087,10 +158087,10 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.472,
+   "p": 0.432,
    "price": 0.51,
-   "edge": -0.055,
-   "news": "SAC has allowed starting guards 8% more pra than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 10% fewer pra with him playing; he plays tonight); minutes trending up (we project 28, his last 5 avg 29 vs 26 over 15).",
+   "edge": -0.095,
+   "news": "SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 8% more pra than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 10% fewer pra with him playing; he plays tonight); minutes trending up (we project 28, his last 5 avg 29 vs 26 over 15).",
    "result": null
   },
   {
@@ -159212,10 +159212,10 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.515,
+   "p": 0.545,
    "price": 0.47,
-   "edge": 0.028,
-   "news": "SAC has allowed starting guards 10% more points than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 12% fewer points with him playing; he plays tonight); De'Andre Hunter can switch onto him (SAC allowed guards 10% fewer points with him playing; he is out tonight); minutes trending up (we project 28, his last 5 avg 29 vs 26 over 15).",
+   "edge": 0.058,
+   "news": "SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 10% more points than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 12% fewer points with him playing; he plays tonight); De'Andre Hunter can switch onto him (SAC allowed guards 10% fewer points with him playing; he is out tonight); minutes trending up (we project 28, his last 5 avg 29 vs 26 over 15).",
    "result": null
   },
   {
@@ -159227,10 +159227,10 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.485,
+   "p": 0.445,
    "price": 0.55,
-   "edge": -0.082,
-   "news": "SAC has allowed starting guards 10% more points than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 12% fewer points with him playing; he plays tonight); De'Andre Hunter can switch onto him (SAC allowed guards 10% fewer points with him playing; he is out tonight); minutes trending up (we project 28, his last 5 avg 29 vs 26 over 15).",
+   "edge": -0.122,
+   "news": "SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 10% more points than average (likely on him: Darius Acuff Jr.); Keegan Murray can switch onto him (SAC allowed guards 12% fewer points with him playing; he plays tonight); De'Andre Hunter can switch onto him (SAC allowed guards 10% fewer points with him playing; he is out tonight); minutes trending up (we project 28, his last 5 avg 29 vs 26 over 15).",
    "result": null
   },
   {
@@ -159275,7 +159275,7 @@
    "p": 0.463,
    "price": 0.44,
    "edge": 0.006,
-   "news": "Precious Achiuwa is out: Domantas Sabonis hit the over in 6/10 games without him vs 5/11 with him; De'Andre Hunter is out: Domantas Sabonis hit the over in 1/3 games without him vs 6/10 with him; OKC has allowed starting forwards 9% fewer points than average; Nikola Topic can switch onto him (OKC allowed forwards 16% fewer points with him playing; he plays tonight); Chet Holmgren can switch onto him (OKC allowed forwards 13% fewer points with him playing; he is out tonight).",
+   "news": "De'Andre Hunter is out: Domantas Sabonis hit the over in 1/3 games without him vs 6/10 with him; Precious Achiuwa is out: Domantas Sabonis hit the over in 6/10 games without him vs 5/11 with him; OKC has allowed starting forwards 9% fewer points than average; Nikola Topic can switch onto him (OKC allowed forwards 16% fewer points with him playing; he plays tonight); Chet Holmgren can switch onto him (OKC allowed forwards 13% fewer points with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -159290,7 +159290,7 @@
    "p": 0.537,
    "price": 0.57,
    "edge": -0.05,
-   "news": "Precious Achiuwa is out: Domantas Sabonis hit the under in 4/10 games without him vs 6/11 with him; De'Andre Hunter is out: Domantas Sabonis hit the under in 2/3 games without him vs 4/10 with him; OKC has allowed starting forwards 9% fewer points than average; Nikola Topic can switch onto him (OKC allowed forwards 16% fewer points with him playing; he plays tonight); Chet Holmgren can switch onto him (OKC allowed forwards 13% fewer points with him playing; he is out tonight).",
+   "news": "De'Andre Hunter is out: Domantas Sabonis hit the under in 2/3 games without him vs 4/10 with him; Precious Achiuwa is out: Domantas Sabonis hit the under in 4/10 games without him vs 6/11 with him; OKC has allowed starting forwards 9% fewer points than average; Nikola Topic can switch onto him (OKC allowed forwards 16% fewer points with him playing; he plays tonight); Chet Holmgren can switch onto him (OKC allowed forwards 13% fewer points with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -161432,10 +161432,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.367,
+   "p": 0.397,
    "price": 0.45,
-   "edge": -0.1,
-   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the over in 8/19 games without him vs 6/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 13/26 games without him vs 2/5 with him; SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
+   "edge": -0.07,
+   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the over in 8/19 games without him vs 6/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 13/26 games without him vs 2/5 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
    "result": null
   },
   {
@@ -161447,10 +161447,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.583,
+   "p": 0.543,
    "price": 0.56,
-   "edge": 0.006,
-   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the under in 11/19 games without him vs 5/11 with him; Jalen Williams is out: Ajay Mitchell hit the under in 13/26 games without him vs 3/5 with him; SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
+   "edge": -0.034,
+   "news": "News: OKC Thunder Announce Crucial Ajay Mitchell Injury News Before Kings Game - Yahoo Sports Cason Wallace is out: Ajay Mitchell hit the under in 11/19 games without him vs 5/11 with him; Jalen Williams is out: Ajay Mitchell hit the under in 13/26 games without him vs 3/5 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
    "result": null
   },
   {
@@ -161462,10 +161462,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.442,
+   "p": 0.472,
    "price": 0.44,
-   "edge": -0.015,
-   "news": "SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
+   "edge": 0.015,
+   "news": "SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
    "result": null
   },
   {
@@ -161477,10 +161477,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.558,
+   "p": 0.518,
    "price": 0.57,
-   "edge": -0.029,
-   "news": "SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
+   "edge": -0.069,
+   "news": "SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
    "result": null
   },
   {
@@ -161492,10 +161492,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.554,
+   "p": 0.584,
    "price": 0.59,
-   "edge": -0.053,
-   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 16/34 games without him vs 3/6 with him; SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
+   "edge": -0.023,
+   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 16/34 games without him vs 3/6 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
    "result": null
   },
   {
@@ -161507,10 +161507,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.446,
-   "price": 0.42,
-   "edge": 0.009,
-   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 18/34 games without him vs 3/6 with him; SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
+   "p": 0.406,
+   "price": 0.43,
+   "edge": -0.041,
+   "news": "Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 18/34 games without him vs 3/6 with him; SAC's G Zach LaVine is out, an easier matchup; SAC has allowed starting guards 9% fewer rebounds than average (likely on him: Darius Acuff Jr.).",
    "result": null
   },
   {
@@ -161522,10 +161522,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.488,
+   "p": 0.508,
    "price": 0.51,
-   "edge": -0.039,
-   "news": "OKC has allowed starting guards 4% more rebounds than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 22% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 20% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.019,
+   "news": "Zach LaVine (G) is out, so Darius Acuff Jr.'s role likely grows; OKC has allowed starting guards 4% more rebounds than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 22% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 20% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161537,10 +161537,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-16T02:00:00Z",
-   "p": 0.512,
+   "p": 0.462,
    "price": 0.5,
-   "edge": -0.005,
-   "news": "OKC has allowed starting guards 4% more rebounds than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 22% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 20% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.055,
+   "news": "Zach LaVine (G) is out, so Darius Acuff Jr.'s role likely grows; OKC has allowed starting guards 4% more rebounds than average (likely on him: Shai Gilgeous-Alexander, Jared McCain); Bennett Stirtz can switch onto him (OKC allowed guards 22% fewer rebounds with him playing; he plays tonight); Kenrich Williams can switch onto him (OKC allowed guards 20% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161555,7 +161555,7 @@
    "p": 0.628,
    "price": 0.56,
    "edge": 0.051,
-   "news": "Precious Achiuwa is out: Domantas Sabonis hit the over in 7/10 games without him vs 6/11 with him; De'Andre Hunter is out: Domantas Sabonis hit the over in 2/3 games without him vs 8/10 with him; OKC has allowed starting forwards 6% more rebounds than average; Chet Holmgren can switch onto him (OKC allowed forwards 9% fewer rebounds with him playing; he is out tonight).",
+   "news": "De'Andre Hunter is out: Domantas Sabonis hit the over in 2/3 games without him vs 8/10 with him; Precious Achiuwa is out: Domantas Sabonis hit the over in 7/10 games without him vs 6/11 with him; OKC has allowed starting forwards 6% more rebounds than average; Chet Holmgren can switch onto him (OKC allowed forwards 9% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -161570,7 +161570,7 @@
    "p": 0.372,
    "price": 0.45,
    "edge": -0.095,
-   "news": "Precious Achiuwa is out: Domantas Sabonis hit the under in 3/10 games without him vs 5/11 with him; De'Andre Hunter is out: Domantas Sabonis hit the under in 1/3 games without him vs 2/10 with him; OKC has allowed starting forwards 6% more rebounds than average; Chet Holmgren can switch onto him (OKC allowed forwards 9% fewer rebounds with him playing; he is out tonight).",
+   "news": "De'Andre Hunter is out: Domantas Sabonis hit the under in 1/3 games without him vs 2/10 with him; Precious Achiuwa is out: Domantas Sabonis hit the under in 3/10 games without him vs 5/11 with him; OKC has allowed starting forwards 6% more rebounds than average; Chet Holmgren can switch onto him (OKC allowed forwards 9% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
