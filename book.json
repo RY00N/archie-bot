@@ -4746,24 +4746,24 @@
   },
   "props_at": "2026-11-16 03:00 PT",
   "props_today": 1045,
-  "kalshi_props_today": 489,
+  "kalshi_props_today": 498,
   "kalshi_priced_today": 18,
   "books_on_kalshi_props": {
-   "AN Consensus": 484,
-   "AN Open": 487,
+   "AN Consensus": 493,
+   "AN Open": 496,
    "BetMGM": 42,
    "BetRivers": 277,
    "Caesars": 434,
-   "DraftKings": 447,
-   "FanDuel": 447,
+   "DraftKings": 449,
+   "FanDuel": 451,
    "Fanatics": 328,
    "Hard Rock Bet": 30,
    "Parx": 290,
    "Pinnacle": 41,
-   "Sleeper": 410,
-   "Underdog": 489,
+   "Sleeper": 472,
+   "Underdog": 498,
    "Unibet": 14,
-   "bet365": 487
+   "bet365": 496
   },
   "data_files": [
    "mlb.sqlite",
@@ -159239,8 +159239,8 @@
    "line": 1.5,
    "start": "2026-11-17T00:00:00Z",
    "p": 0.361,
-   "price": 0.46,
-   "edge": -0.116,
+   "price": 0.45,
+   "edge": -0.106,
    "news": "Injury report: Questionable:  (official NBA report) Sam Merrill is out: Peyton Watson hit the over in 2/6 games without him vs 1/7 with him; CHI has allowed starting guards 4% fewer threes than average (likely on him: Norman Powell, Josh Giddey); Patrick Williams can switch onto him (CHI allowed guards 15% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159628,10 +159628,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-17T00:30:00Z",
-   "p": 0.499,
+   "p": 0.449,
    "price": 0.59,
-   "edge": -0.108,
-   "news": "MIA has allowed starting forwards 5% more threes than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 30% fewer threes with him playing; he plays tonight); Myron Gardner can switch onto him (MIA allowed forwards 25% fewer threes with him playing; he plays tonight).",
+   "edge": -0.158,
+   "news": "News: Kevin Durant's injury an unfortunate illustration of risk vs. reward - NBA.com MIA has allowed starting forwards 5% more threes than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 30% fewer threes with him playing; he plays tonight); Myron Gardner can switch onto him (MIA allowed forwards 25% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159646,7 +159646,7 @@
    "p": 0.501,
    "price": 0.45,
    "edge": 0.034,
-   "news": "MIA has allowed starting forwards 5% more threes than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 30% fewer threes with him playing; he plays tonight); Myron Gardner can switch onto him (MIA allowed forwards 25% fewer threes with him playing; he plays tonight).",
+   "news": "News: Kevin Durant's injury an unfortunate illustration of risk vs. reward - NBA.com MIA has allowed starting forwards 5% more threes than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Simone Fontecchio can switch onto him (MIA allowed forwards 30% fewer threes with him playing; he plays tonight); Myron Gardner can switch onto him (MIA allowed forwards 25% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -160094,8 +160094,8 @@
    "line": 0.5,
    "start": "2026-11-17T00:00:00Z",
    "p": 0.196,
-   "price": 0.34,
-   "edge": -0.16,
+   "price": 0.35,
+   "edge": -0.17,
    "news": "Justin Champagnie is out: AJ Dybantsa hit the under in 2/9 games without him vs 2/3 with him; MEM's F GG Jackson is out, an easier matchup; MEM has allowed starting forwards 1% more threes than average (likely on him: Cameron Boozer, Cedric Coward); Scotty Pippen Jr. can switch onto him (MEM allowed forwards 27% fewer threes with him playing; he is out tonight); Ty Jerome can switch onto him (MEM allowed forwards 21% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -160364,8 +160364,8 @@
    "line": 2.5,
    "start": "2026-11-17T00:00:00Z",
    "p": 0.576,
-   "price": 0.56,
-   "edge": -0.001,
+   "price": 0.54,
+   "edge": 0.019,
    "news": "ORL has allowed bench guards 7% fewer threes than average (likely on him: Anthony Black, Jalen Suggs); Jase Richardson can switch onto him (ORL allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -161564,8 +161564,8 @@
    "line": 3.5,
    "start": "2026-11-17T00:30:00Z",
    "p": 0.521,
-   "price": 0.51,
-   "edge": -0.006,
+   "price": 0.52,
+   "edge": -0.016,
    "news": "Fred VanVleet is out: Amen Thompson hit the under in 4/30 games without him vs 6/10 with him; Marcus Smart is out: Amen Thompson hit the under in 4/5 games without him vs 3/7 with him; MIA has allowed starting guards 7% more assists than average (likely on him: Davion Mitchell, Pelle Larsson); Klay Thompson can switch onto him (MIA allowed guards 9% fewer assists with him playing; he plays tonight); Giannis Antetokounmpo can switch onto him (MIA allowed guards 9% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -161578,10 +161578,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-17T00:30:00Z",
-   "p": 0.525,
+   "p": 0.475,
    "price": 0.6,
-   "edge": -0.092,
-   "news": "MIA has allowed starting forwards 9% more assists than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Myron Gardner can switch onto him (MIA allowed forwards 19% fewer assists with him playing; he plays tonight); Simone Fontecchio can switch onto him (MIA allowed forwards 12% fewer assists with him playing; he plays tonight).",
+   "edge": -0.142,
+   "news": "News: Kevin Durant's injury an unfortunate illustration of risk vs. reward - NBA.com MIA has allowed starting forwards 9% more assists than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Myron Gardner can switch onto him (MIA allowed forwards 19% fewer assists with him playing; he plays tonight); Simone Fontecchio can switch onto him (MIA allowed forwards 12% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161596,7 +161596,7 @@
    "p": 0.475,
    "price": 0.43,
    "edge": 0.028,
-   "news": "MIA has allowed starting forwards 9% more assists than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Myron Gardner can switch onto him (MIA allowed forwards 19% fewer assists with him playing; he plays tonight); Simone Fontecchio can switch onto him (MIA allowed forwards 12% fewer assists with him playing; he plays tonight).",
+   "news": "News: Kevin Durant's injury an unfortunate illustration of risk vs. reward - NBA.com MIA has allowed starting forwards 9% more assists than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Myron Gardner can switch onto him (MIA allowed forwards 19% fewer assists with him playing; he plays tonight); Simone Fontecchio can switch onto him (MIA allowed forwards 12% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161804,8 +161804,8 @@
    "line": 7.5,
    "start": "2026-11-17T00:00:00Z",
    "p": 0.529,
-   "price": 0.51,
-   "edge": 0.002,
+   "price": 0.52,
+   "edge": -0.008,
    "news": "Ty Jerome is out: Cam Spencer hit the under in 8/10 games without him vs 22/25 with him; Scotty Pippen Jr. is out: Cam Spencer hit the under in 25/28 games without him vs 10/12 with him; WSH's G Tre Johnson is out, an easier matchup; WSH has allowed bench guards 12% more assists than average (likely on him: Bilal Coulibaly, Bub Carrington); Trae Young can switch onto him (WSH allowed guards 10% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -162359,8 +162359,8 @@
    "line": 1.5,
    "start": "2026-11-17T00:00:00Z",
    "p": 0.358,
-   "price": 0.39,
-   "edge": -0.049,
+   "price": 0.38,
+   "edge": -0.038,
    "news": "ORL has allowed starting centers 9% fewer blocks than average (likely on him: Wendell Carter Jr.); Goga Bitadze can switch onto him (ORL allowed centers 28% fewer blocks with him playing; he plays tonight); Jamal Cain can switch onto him (ORL allowed centers 27% fewer blocks with him playing; he plays tonight).",
    "result": null
   },
@@ -162524,8 +162524,8 @@
    "line": 19.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.519,
-   "price": 0.53,
-   "edge": -0.028,
+   "price": 0.52,
+   "edge": -0.018,
    "news": "GSW has allowed bench centers 0% fewer pra than average (likely on him: Al Horford, Charles Bassey); those defenders hold shooters 4.6% below their normal FG%, among the league's stingiest; minutes trending down (we project 22, his last 5 avg 21 vs 23 over 15).",
    "result": null
   },
@@ -162584,8 +162584,8 @@
    "line": 39.5,
    "start": "2026-11-17T00:00:00Z",
    "p": 0.514,
-   "price": 0.51,
-   "edge": -0.013,
+   "price": 0.52,
+   "edge": -0.023,
    "news": "News: Jayson Tatum gives massive Achilles injury update Celtics cannot fully ignore - BasketNews.com ORL has allowed starting forwards 6% more pra than average (likely on him: Franz Wagner, Tristan da Silva); minutes trending down (we project 33, his last 5 avg 32 vs 35 over 15).",
    "result": null
   },
@@ -163438,10 +163438,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-17T00:30:00Z",
-   "p": 0.456,
+   "p": 0.406,
    "price": 0.48,
-   "edge": -0.041,
-   "news": "MIA has allowed starting forwards 15% more rebounds than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins).",
+   "edge": -0.091,
+   "news": "News: Kevin Durant's injury an unfortunate illustration of risk vs. reward - NBA.com MIA has allowed starting forwards 15% more rebounds than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins).",
    "result": null
   },
   {
@@ -163456,7 +163456,7 @@
    "p": 0.544,
    "price": 0.55,
    "edge": -0.023,
-   "news": "MIA has allowed starting forwards 15% more rebounds than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins).",
+   "news": "News: Kevin Durant's injury an unfortunate illustration of risk vs. reward - NBA.com MIA has allowed starting forwards 15% more rebounds than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins).",
    "result": null
   },
   {
@@ -164661,6 +164661,21 @@
   },
   {
    "date": "2026-11-16",
+   "ticker": "KXNBASTL-26NOV16GSWNOP-GSWDMELTON8-2",
+   "league": "nba",
+   "player": "De'Anthony Melton",
+   "stat": "steals",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-17T01:00:00Z",
+   "p": 0.422,
+   "price": 0.94,
+   "edge": -0.522,
+   "news": "Stephen Curry is out: De'Anthony Melton hit the over in 1/7 games without him vs 16/33 with him; Brandon Williams is out: De'Anthony Melton hit the over in 3/6 games without him vs 3/9 with him; Moses Moody is out: De'Anthony Melton hit the over in 10/25 games without him vs 7/15 with him; NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup.",
+   "result": null
+  },
+  {
+   "date": "2026-11-16",
    "ticker": "KXNBASTL-26NOV16HOUMIA-HOUASENGUN28-1",
    "league": "nba",
    "player": "Alperen Sengun",
@@ -165194,8 +165209,8 @@
    "line": 1.5,
    "start": "2026-11-17T01:15:00Z",
    "p": 0.618,
-   "price": 0.68,
-   "edge": -0.077,
+   "price": 0.7,
+   "edge": -0.097,
    "news": "LAC's S Kendall Williamson is out, an easier matchup.",
    "result": null
   },
