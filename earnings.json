@@ -1,39 +1,39 @@
 {
- "updated": "2026-11-12T03:07:42+00:00",
+ "updated": "2026-11-15T18:07:47+00:00",
  "window": [
-  "2026-11-11",
-  "2026-12-02"
+  "2026-11-15",
+  "2026-12-06"
  ],
  "symbols": {
   "CRM": {
    "date": "2026-12-02",
    "hour": "amc",
    "eps_est": 3.4724,
-   "trading_days": 15
+   "trading_days": 13
   },
   "DIS": {
    "date": "2026-11-17",
    "hour": "bmo",
-   "eps_est": 1.6933,
-   "trading_days": 4
+   "eps_est": 1.693,
+   "trading_days": 2
   },
   "HD": {
    "date": "2026-11-17",
    "hour": "bmo",
-   "eps_est": 3.9538,
-   "trading_days": 4
+   "eps_est": 3.9568,
+   "trading_days": 2
   },
   "NVDA": {
    "date": "2026-11-17",
    "hour": "amc",
-   "eps_est": 2.5263,
-   "trading_days": 4
+   "eps_est": 2.5225,
+   "trading_days": 2
   },
   "WMT": {
    "date": "2026-11-19",
-   "hour": "",
-   "eps_est": 0.6427,
-   "trading_days": 6
+   "hour": "bmo",
+   "eps_est": 0.6421,
+   "trading_days": 4
   }
  }
 }
