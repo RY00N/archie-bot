@@ -254,8 +254,10 @@
     "calm_mult": 1.15,
     "calm_range_pct": 1.0,
     "live": {
-      "enabled": false,
+      "enabled": true,
+      "budget_start": 1000,
       "size_usd": 800,
+      "max_frac": 0.8,
       "max_contracts": 1,
       "daily_loss_cap": 400
     }

@@ -76,9 +76,11 @@ def enter(osym, ask, why, log):
             return
         if st.get("day_pnl", 0) <= -abs(c.get("daily_loss_cap", 0)):
             log(f"LIVE no entry: day loss cap hit ({st['day_pnl']:+.0f})"); return
-        qty = min(int(c.get("max_contracts", 1)), int(c.get("size_usd", 0) // (ask * 100))) if ask > 0 else 0
+        bal = c.get("budget_start", 1000) + st.get("realized", 0)  # 11/16 Reza: $1,000 starting balance
+        cap = min(c.get("size_usd", 0), bal * c.get("max_frac", 0.8))
+        qty = min(int(c.get("max_contracts", 1)), int(cap // (ask * 100))) if ask > 0 else 0
         if qty < 1:
-            log(f"LIVE no entry: {osym} at {ask:.2f} is over the ${c.get('size_usd', 0)} per-trade cap"); return
+            log(f"LIVE no entry: {osym} at {ask:.2f} is over the ${cap:.0f} per-trade cap (balance ${bal:.0f})"); return
         od = _api("POST", "/v2/orders", {"symbol": osym, "qty": str(qty), "side": "buy", "type": "limit",
                                           "limit_price": f"{ask:.2f}", "time_in_force": "day"})
         st["open"] = {"state": "pending", "order_id": od["id"], "symbol": osym, "qty": qty, "limit": ask,
@@ -155,6 +157,6 @@ def tick(quote, log):
 
 def summary():
     c = cfg(); st = load()
-    return {"armed": armed(), "keys": _keys() is not None, "size_usd": c.get("size_usd"), "max_contracts": c.get("max_contracts"),
+    return {"armed": armed(), "budget_start": c.get("budget_start"), "balance": round(c.get("budget_start", 0) + st.get("realized", 0), 2), "keys": _keys() is not None, "size_usd": c.get("size_usd"), "max_contracts": c.get("max_contracts"),
             "daily_loss_cap": c.get("daily_loss_cap"), "day_pnl": st.get("day_pnl", 0), "realized": st.get("realized", 0),
             "open": st.get("open"), "trades": st.get("history", [])[-20:]}
