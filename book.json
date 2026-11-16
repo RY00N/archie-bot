@@ -4771,7 +4771,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 98
+  "kalshi_legs_today": 99
  },
  "shadow": [
   {
@@ -159629,8 +159629,8 @@
    "line": 2.5,
    "start": "2026-11-17T00:30:00Z",
    "p": 0.56,
-   "price": 0.43,
-   "edge": 0.113,
+   "price": 0.42,
+   "edge": 0.123,
    "news": "Fred VanVleet is out: Reed Sheppard hit the over in 17/33 games without him vs 2/7 with him; Marcus Smart (G) is out, so Reed Sheppard's role likely grows; MIA has allowed bench guards 35% more threes than average (likely on him: Pelle Larsson, Ryan Conwell); Dru Smith can switch onto him (MIA allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159838,9 +159838,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-17T00:00:00Z",
-   "p": 0.468,
+   "p": 0.467,
    "price": 0.56,
-   "edge": -0.109,
+   "edge": -0.11,
    "news": "BOS has allowed starting guards 4% more threes than average (likely on him: Derrick White, Baylor Scheierman); Hugo Gonzalez can switch onto him (BOS allowed guards 18% fewer threes with him playing; he plays tonight); Paul George can switch onto him (BOS allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159853,9 +159853,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-17T00:00:00Z",
-   "p": 0.532,
+   "p": 0.533,
    "price": 0.49,
-   "edge": 0.025,
+   "edge": 0.026,
    "news": "BOS has allowed starting guards 4% more threes than average (likely on him: Derrick White, Baylor Scheierman); Hugo Gonzalez can switch onto him (BOS allowed guards 18% fewer threes with him playing; he plays tonight); Paul George can switch onto him (BOS allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159868,9 +159868,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-17T00:00:00Z",
-   "p": 0.427,
-   "price": 0.42,
-   "edge": -0.01,
+   "p": 0.426,
+   "price": 0.43,
+   "edge": -0.021,
    "news": "BOS has allowed starting guards 4% more threes than average (likely on him: Derrick White, Baylor Scheierman); Hugo Gonzalez can switch onto him (BOS allowed guards 18% fewer threes with him playing; he plays tonight); Paul George can switch onto him (BOS allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159883,9 +159883,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-17T00:00:00Z",
-   "p": 0.573,
+   "p": 0.574,
    "price": 0.61,
-   "edge": -0.054,
+   "edge": -0.053,
    "news": "BOS has allowed starting guards 4% more threes than average (likely on him: Derrick White, Baylor Scheierman); Hugo Gonzalez can switch onto him (BOS allowed guards 18% fewer threes with him playing; he plays tonight); Paul George can switch onto him (BOS allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160394,8 +160394,8 @@
    "line": 1.5,
    "start": "2026-11-17T02:00:00Z",
    "p": 0.505,
-   "price": 0.47,
-   "edge": 0.018,
+   "price": 0.46,
+   "edge": 0.028,
    "news": "DEN has allowed bench guards 7% more threes than average (likely on him: DeMar DeRozan, Tyus Jones); Tyus Jones can switch onto him (DEN allowed guards 20% fewer threes with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed guards 16% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -161039,8 +161039,8 @@
    "line": 3.5,
    "start": "2026-11-17T00:30:00Z",
    "p": 0.483,
-   "price": 0.5,
-   "edge": -0.035,
+   "price": 0.48,
+   "edge": -0.014,
    "news": "HOU has allowed starting centers 2% more assists than average (likely on him: Alperen Sengun).",
    "result": null
   },
@@ -161084,8 +161084,8 @@
    "line": 7.5,
    "start": "2026-11-17T00:30:00Z",
    "p": 0.416,
-   "price": 0.53,
-   "edge": -0.131,
+   "price": 0.52,
+   "edge": -0.121,
    "news": "HOU's G Fred VanVleet is out, an easier matchup; HOU's G Marcus Smart is out, an easier matchup; HOU has allowed starting guards 11% fewer assists than average (likely on him: Amen Thompson, Reed Sheppard); Bogdan Bogdanovic can switch onto him (HOU allowed guards 12% fewer assists with him playing; he plays tonight); Fred VanVleet can switch onto him (HOU allowed guards 8% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -161099,8 +161099,8 @@
    "line": 5.5,
    "start": "2026-11-17T00:30:00Z",
    "p": 0.452,
-   "price": 0.47,
-   "edge": -0.035,
+   "price": 0.45,
+   "edge": -0.015,
    "news": "HOU has allowed starting forwards 5% more assists than average (likely on him: Kevin Durant, Jabari Smith Jr.); Fred VanVleet can switch onto him (HOU allowed forwards 15% fewer assists with him playing; he is out tonight); Clint Capela can switch onto him (HOU allowed forwards 12% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -161249,8 +161249,8 @@
    "line": 3.5,
    "start": "2026-11-17T00:30:00Z",
    "p": 0.402,
-   "price": 0.57,
-   "edge": -0.185,
+   "price": 0.59,
+   "edge": -0.205,
    "news": "Injury report: Day-To-Day: Embiid (right foot injury management) has been ruled out for Sunday's game against the Pacers. BKN has allowed starting centers 15% fewer assists than average (likely on him: Day'Ron Sharpe); Chaney Johnson can switch onto him (BKN allowed centers 37% fewer assists with him playing; he plays tonight); Josh Minott can switch onto him (BKN allowed centers 35% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -161627,6 +161627,36 @@
    "price": 0.52,
    "edge": -0.02,
    "news": "GSW has allowed bench centers 0% fewer pra than average (likely on him: Al Horford, Charles Bassey); those defenders hold shooters 4.6% below their normal FG%, among the league's stingiest; minutes trending down (we project 22, his last 5 avg 21 vs 23 over 15).",
+   "result": null
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "KXNBAPRA-26NOV16ORLBOS-ORLFWAGNER22-35",
+   "league": "nba",
+   "player": "Franz Wagner",
+   "stat": "pra",
+   "side": "over",
+   "line": 34.5,
+   "start": "2026-11-17T00:00:00Z",
+   "p": 0.599,
+   "price": 0.53,
+   "edge": 0.052,
+   "news": "Jonathan Isaac is out: Franz Wagner hit the over in 9/29 games without him vs 6/11 with him; Noah Penda is out: Franz Wagner hit the over in 15/34 games without him vs 0/6 with him; Paolo Banchero is out: Franz Wagner hit the over in 13/22 games without him vs 2/18 with him; BOS has allowed starting forwards 9% fewer pra than average (likely on him: Jayson Tatum, Paul George); Ron Harper Jr. can switch onto him (BOS allowed forwards 13% fewer pra with him playing; he plays tonight); Hugo Gonzalez can switch onto him (BOS allowed forwards 10% fewer pra with him playing; he plays tonight); Franz Wagner is on a scoring run (35, 38, 33 vs his 18 average), so expect more double teams, though in our data stars on runs like this kept scoring at their usual rate; minutes trending up (we project 37, his last 5 avg 38 vs 35 over 15).",
+   "result": null
+  },
+  {
+   "date": "2026-11-16",
+   "ticker": "KXNBAPRA-26NOV16ORLBOS-ORLFWAGNER22-35",
+   "league": "nba",
+   "player": "Franz Wagner",
+   "stat": "pra",
+   "side": "under",
+   "line": 34.5,
+   "start": "2026-11-17T00:00:00Z",
+   "p": 0.401,
+   "price": 0.54,
+   "edge": -0.156,
+   "news": "Jonathan Isaac is out: Franz Wagner hit the under in 20/29 games without him vs 5/11 with him; Noah Penda is out: Franz Wagner hit the under in 19/34 games without him vs 6/6 with him; Paolo Banchero is out: Franz Wagner hit the under in 9/22 games without him vs 16/18 with him; BOS has allowed starting forwards 9% fewer pra than average (likely on him: Jayson Tatum, Paul George); Ron Harper Jr. can switch onto him (BOS allowed forwards 13% fewer pra with him playing; he plays tonight); Hugo Gonzalez can switch onto him (BOS allowed forwards 10% fewer pra with him playing; he plays tonight); Franz Wagner is on a scoring run (35, 38, 33 vs his 18 average), so expect more double teams, though in our data stars on runs like this kept scoring at their usual rate; minutes trending up (we project 37, his last 5 avg 38 vs 35 over 15).",
    "result": null
   },
   {
@@ -162584,8 +162614,8 @@
    "line": 7.5,
    "start": "2026-11-17T00:30:00Z",
    "p": 0.476,
-   "price": 0.51,
-   "edge": -0.051,
+   "price": 0.52,
+   "edge": -0.061,
    "news": "Injury report: Day-To-Day: Embiid (right foot injury management) has been ruled out for Sunday's game against the Pacers. Adem Bona is out: Joel Embiid hit the under in 10/22 games without him vs 9/18 with him; BKN has allowed starting centers 5% fewer rebounds than average (likely on him: Day'Ron Sharpe); Julius Randle can switch onto him (BKN allowed centers 23% fewer rebounds with him playing; he plays tonight); Moritz Wagner can switch onto him (BKN allowed centers 23% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -163199,8 +163229,8 @@
    "line": 1.5,
    "start": "2026-11-17T00:00:00Z",
    "p": 0.369,
-   "price": 0.81,
-   "edge": -0.452,
+   "price": 0.79,
+   "edge": -0.433,
    "news": "News: Donovan Mitchell (knee) off injury report Monday - FantasyPros Sam Merrill is out: Donovan Mitchell hit the over in 5/14 games without him vs 7/26 with him; CHI has allowed starting guards 18% more steals than average (likely on him: Norman Powell, Josh Giddey); Isaac Okoro can switch onto him (CHI allowed guards 9% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -164068,9 +164098,9 @@
    "side": "over",
    "line": 10.5,
    "start": "2026-11-17T01:15:00Z",
-   "p": 0.56,
+   "p": 0.561,
    "price": 0.52,
-   "edge": 0.023,
+   "edge": 0.024,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -164083,9 +164113,9 @@
    "side": "under",
    "line": 10.5,
    "start": "2026-11-17T01:15:00Z",
-   "p": 0.44,
+   "p": 0.439,
    "price": 0.49,
-   "edge": -0.067,
+   "edge": -0.068,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
