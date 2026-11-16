@@ -250,7 +250,9 @@
       "META",
       "GOOGL",
       "AVGO"
-    ]
+    ],
+    "calm_mult": 1.15,
+    "calm_range_pct": 1.0
   },
   "dtsbook": {
     "enabled": true,
