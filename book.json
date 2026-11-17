@@ -4876,13 +4876,13 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-17 06:00 PT",
+  "props_at": "2026-11-17 07:00 PT",
   "props_today": 528,
-  "kalshi_props_today": 296,
+  "kalshi_props_today": 300,
   "kalshi_priced_today": 7,
   "books_on_kalshi_props": {
-   "AN Consensus": 295,
-   "AN Open": 296,
+   "AN Consensus": 299,
+   "AN Open": 300,
    "BetMGM": 67,
    "BetRivers": 248,
    "Caesars": 253,
@@ -4891,9 +4891,9 @@
    "Fanatics": 222,
    "Parx": 248,
    "Sleeper": 284,
-   "Underdog": 296,
+   "Underdog": 300,
    "Unibet": 27,
-   "bet365": 296
+   "bet365": 300
   },
   "data_files": [
    "mlb.sqlite",
@@ -150984,8 +150984,8 @@
    "line": 2.5,
    "start": "2026-11-18T04:00:00Z",
    "p": 0.427,
-   "price": 0.43,
-   "edge": -0.02,
+   "price": 0.42,
+   "edge": -0.01,
    "news": "News: Hornets CHOKE in LA | Questionable Charles Lee EJECTION | Brandon Miller STRUGGLES - ABC10 LAL has allowed starting forwards 16% fewer threes than average (likely on him: Ziaire Williams, Jake LaRavia); Jarred Vanderbilt can switch onto him (LAL allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151884,8 +151884,8 @@
    "line": 2.5,
    "start": "2026-11-18T00:30:00Z",
    "p": 0.507,
-   "price": 0.52,
-   "edge": -0.03,
+   "price": 0.53,
+   "edge": -0.04,
    "news": "NYK has allowed starting guards 3% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 24% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -152334,8 +152334,8 @@
    "line": 2.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.58,
-   "price": 0.61,
-   "edge": -0.047,
+   "price": 0.62,
+   "edge": -0.056,
    "news": "MIN has allowed starting forwards 18% fewer threes than average (likely on him: Joan Beringer, Jaden McDaniels); Anthony Edwards can switch onto him (MIN allowed forwards 23% fewer threes with him playing; he is out tonight); Joan Beringer can switch onto him (MIN allowed forwards 19% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -152604,8 +152604,8 @@
    "line": 1.5,
    "start": "2026-11-18T03:30:00Z",
    "p": 0.48,
-   "price": 0.46,
-   "edge": 0.003,
+   "price": 0.45,
+   "edge": 0.013,
    "news": "LAC has allowed bench forwards 11% fewer threes than average (likely on him: Isaiah Jackson, Baba Miller); Gradey Dick can switch onto him (LAC allowed forwards 22% fewer threes with him playing; he plays tonight); Kobe Sanders can switch onto him (LAC allowed forwards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -152618,10 +152618,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-18T03:30:00Z",
-   "p": 0.56,
+   "p": 0.51,
    "price": 0.55,
-   "edge": -0.007,
-   "news": "LAC has allowed starting guards 9% more threes than average (likely on him: Darius Garland, Kobe Sanders); Kobe Sanders can switch onto him (LAC allowed guards 9% fewer threes with him playing; he plays tonight); Isaiah Jackson can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
+   "edge": -0.057,
+   "news": "News: Jazz\u2019s Darryn Peterson Injury Concern Surfaces After Kansas Issues - Yahoo Sports LAC has allowed starting guards 9% more threes than average (likely on him: Darius Garland, Kobe Sanders); Kobe Sanders can switch onto him (LAC allowed guards 9% fewer threes with him playing; he plays tonight); Isaiah Jackson can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -152636,7 +152636,7 @@
    "p": 0.44,
    "price": 0.49,
    "edge": -0.067,
-   "news": "LAC has allowed starting guards 9% more threes than average (likely on him: Darius Garland, Kobe Sanders); Kobe Sanders can switch onto him (LAC allowed guards 9% fewer threes with him playing; he plays tonight); Isaiah Jackson can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
+   "news": "News: Jazz\u2019s Darryn Peterson Injury Concern Surfaces After Kansas Issues - Yahoo Sports LAC has allowed starting guards 9% more threes than average (likely on him: Darius Garland, Kobe Sanders); Kobe Sanders can switch onto him (LAC allowed guards 9% fewer threes with him playing; he plays tonight); Isaiah Jackson can switch onto him (LAC allowed guards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -153369,8 +153369,8 @@
    "line": 19.5,
    "start": "2026-11-18T04:00:00Z",
    "p": 0.43,
-   "price": 0.56,
-   "edge": -0.147,
+   "price": 0.54,
+   "edge": -0.127,
    "news": "News: Lakers Get Major Collin Sexton Injury News Before Suns Game - Yahoo Sports CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed bench guards 7% fewer pra than average (likely on him: Grayson Allen, Sion James); Christian Anderson can switch onto him (CHA allowed guards 12% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -153698,10 +153698,10 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-11-18T03:30:00Z",
-   "p": 0.489,
+   "p": 0.439,
    "price": 0.47,
-   "edge": 0.002,
-   "news": "LAC has allowed starting guards 8% more pra than average (likely on him: Darius Garland, Kobe Sanders); minutes trending up (we project 32, his last 5 avg 33 vs 31 over 15).",
+   "edge": -0.048,
+   "news": "News: Jazz\u2019s Darryn Peterson Injury Concern Surfaces After Kansas Issues - Yahoo Sports LAC has allowed starting guards 8% more pra than average (likely on him: Darius Garland, Kobe Sanders); minutes trending up (we project 32, his last 5 avg 33 vs 31 over 15).",
    "result": null
   },
   {
@@ -153716,7 +153716,7 @@
    "p": 0.511,
    "price": 0.54,
    "edge": -0.046,
-   "news": "LAC has allowed starting guards 8% more pra than average (likely on him: Darius Garland, Kobe Sanders); minutes trending up (we project 32, his last 5 avg 33 vs 31 over 15).",
+   "news": "News: Jazz\u2019s Darryn Peterson Injury Concern Surfaces After Kansas Issues - Yahoo Sports LAC has allowed starting guards 8% more pra than average (likely on him: Darius Garland, Kobe Sanders); minutes trending up (we project 32, his last 5 avg 33 vs 31 over 15).",
    "result": null
   },
   {
@@ -153849,8 +153849,8 @@
    "line": 14.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.393,
-   "price": 0.5,
-   "edge": -0.124,
+   "price": 0.51,
+   "edge": -0.134,
    "news": "Isaiah Joe is out: Daniss Jenkins hit the over in 1/7 games without him vs 1/4 with him; SAS has allowed bench guards 8% fewer points than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 11% fewer points with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 8% fewer points with him playing; he plays tonight); minutes trending up (we project 31, his last 5 avg 33 vs 29 over 15).",
    "result": null
   },
@@ -154224,8 +154224,8 @@
    "line": 7.5,
    "start": "2026-11-18T04:00:00Z",
    "p": 0.652,
-   "price": 0.62,
-   "edge": 0.016,
+   "price": 0.63,
+   "edge": 0.006,
    "news": "CHA has allowed bench forwards 26% fewer rebounds than average (likely on him: Royce O'Neale, Grant Williams); Grant Williams can switch onto him (CHA allowed forwards 15% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -154239,8 +154239,8 @@
    "line": 7.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.484,
-   "price": 0.44,
-   "edge": 0.027,
+   "price": 0.45,
+   "edge": 0.017,
    "news": "Isaiah Joe is out: Ausar Thompson hit the over in 5/9 games without him vs 1/3 with him; SAS has allowed starting guards 1% more rebounds than average (likely on him: Dylan Harper, Devin Vassell); Carter Bryant can switch onto him (SAS allowed guards 16% fewer rebounds with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -154254,8 +154254,8 @@
    "line": 7.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.516,
-   "price": 0.57,
-   "edge": -0.071,
+   "price": 0.56,
+   "edge": -0.061,
    "news": "Isaiah Joe is out: Ausar Thompson hit the under in 4/9 games without him vs 2/3 with him; SAS has allowed starting guards 1% more rebounds than average (likely on him: Dylan Harper, Devin Vassell); Carter Bryant can switch onto him (SAS allowed guards 16% fewer rebounds with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -154299,8 +154299,8 @@
    "line": 3.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.375,
-   "price": 0.5,
-   "edge": -0.143,
+   "price": 0.51,
+   "edge": -0.152,
    "news": "Isaiah Joe is out: Daniss Jenkins hit the over in 1/7 games without him vs 1/4 with him; SAS has allowed bench guards 5% more rebounds than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 16% fewer rebounds with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -155124,8 +155124,8 @@
    "line": 5.5,
    "start": "2026-11-18T03:30:00Z",
    "p": 0.457,
-   "price": 0.52,
-   "edge": -0.08,
+   "price": 0.51,
+   "edge": -0.07,
    "news": "LAC has allowed starting guards 4% more rebounds than average (likely on him: Darius Garland, Kobe Sanders).",
    "result": null
   },
