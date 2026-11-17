@@ -4745,25 +4745,25 @@
    "secs": 0.0
   },
   "props_at": "2026-11-16 17:00 PT",
-  "props_today": 793,
-  "kalshi_props_today": 376,
-  "kalshi_priced_today": 16,
+  "props_today": 780,
+  "kalshi_props_today": 374,
+  "kalshi_priced_today": 15,
   "books_on_kalshi_props": {
-   "AN Consensus": 259,
-   "AN Open": 259,
+   "AN Consensus": 257,
+   "AN Open": 257,
    "BetMGM": 173,
-   "BetRivers": 194,
-   "Caesars": 215,
-   "DraftKings": 242,
-   "FanDuel": 220,
-   "Fanatics": 188,
+   "BetRivers": 193,
+   "Caesars": 214,
+   "DraftKings": 240,
+   "FanDuel": 218,
+   "Fanatics": 187,
    "Hard Rock Bet": 36,
-   "Parx": 216,
+   "Parx": 215,
    "Pinnacle": 163,
-   "Sleeper": 362,
-   "Underdog": 376,
+   "Sleeper": 359,
+   "Underdog": 374,
    "Unibet": 33,
-   "bet365": 255
+   "bet365": 253
   },
   "data_files": [
    "mlb.sqlite",
@@ -4771,7 +4771,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 74
+  "kalshi_legs_today": 73
  },
  "shadow": [
   {
@@ -159494,8 +159494,8 @@
    "line": 0.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.446,
-   "price": 0.52,
-   "edge": -0.091,
+   "price": 0.53,
+   "edge": -0.101,
    "news": "NOP's F Trey Murphy III is out, an easier matchup; NOP's F Trendon Watford is out, an easier matchup.",
    "result": null
   },
@@ -159524,8 +159524,8 @@
    "line": 1.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.286,
-   "price": 0.39,
-   "edge": -0.121,
+   "price": 0.4,
+   "edge": -0.131,
    "news": "Stephen Curry is out: De'Anthony Melton hit the under in 4/7 games without him vs 21/33 with him; Brandon Williams is out: De'Anthony Melton hit the under in 2/6 games without him vs 7/9 with him; Moses Moody is out: De'Anthony Melton hit the under in 17/25 games without him vs 8/15 with him; NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup.",
    "result": null
   },
@@ -159659,8 +159659,8 @@
    "line": 2.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.437,
-   "price": 0.41,
-   "edge": 0.01,
+   "price": 0.4,
+   "edge": 0.02,
    "news": "NOP's F Trey Murphy III is out, an easier matchup; NOP's F Trendon Watford is out, an easier matchup.",
    "result": null
   },
@@ -159674,8 +159674,8 @@
    "line": 2.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.543,
-   "price": 0.6,
-   "edge": -0.074,
+   "price": 0.61,
+   "edge": -0.084,
    "news": "NOP's F Trey Murphy III is out, an easier matchup; NOP's F Trendon Watford is out, an easier matchup.",
    "result": null
   },
@@ -159734,8 +159734,8 @@
    "line": 1.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.538,
-   "price": 0.5,
-   "edge": 0.021,
+   "price": 0.52,
+   "edge": 0.001,
    "news": "GSW has allowed bench guards 13% more threes than average (likely on him: De'Anthony Melton, Will Richard); Malevy Leons can switch onto him (GSW allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -161534,8 +161534,8 @@
    "line": 2.5,
    "start": "2026-11-17T02:00:00Z",
    "p": 0.415,
-   "price": 0.42,
-   "edge": -0.022,
+   "price": 0.43,
+   "edge": -0.032,
    "news": "Julian Strawther is out: Jamal Murray hit the under in 12/26 games without him vs 7/14 with him; PHX has allowed starting guards 8% more threes than average (likely on him: Devin Booker, Jalen Green); Jamaree Bouyea can switch onto him (PHX allowed guards 15% fewer threes with him playing; he plays tonight); Rasheer Fleming can switch onto him (PHX allowed guards 14% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -162104,8 +162104,8 @@
    "line": 1.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.259,
-   "price": 0.39,
-   "edge": -0.148,
+   "price": 0.4,
+   "edge": -0.158,
    "news": "Chris Youngblood is out: Jrue Holiday hit the under in 2/9 games without him vs 2/5 with him; Vit Krejci is out: Jrue Holiday hit the under in 2/10 games without him vs 2/4 with him; Ja Morant is out: Jrue Holiday hit the under in 2/9 games without him vs 2/5 with him; MIN's G Jaylen Clark is out, an easier matchup; MIN has allowed bench guards 14% fewer threes than average (likely on him: Ayo Dosunmu, Terrence Shannon Jr.); Jaylen Clark can switch onto him (MIN allowed guards 16% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -162419,8 +162419,8 @@
    "line": 3.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.504,
-   "price": 0.41,
-   "edge": 0.077,
+   "price": 0.4,
+   "edge": 0.087,
    "news": "Stephen Curry is out: De'Anthony Melton hit the over in 3/7 games without him vs 3/33 with him; Brandon Williams is out: De'Anthony Melton hit the over in 2/6 games without him vs 0/9 with him; Moses Moody is out: De'Anthony Melton hit the over in 4/25 games without him vs 2/15 with him; NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed bench guards 8% more assists than average.",
    "result": null
   },
@@ -162434,8 +162434,8 @@
    "line": 3.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.496,
-   "price": 0.6,
-   "edge": -0.121,
+   "price": 0.64,
+   "edge": -0.16,
    "news": "Stephen Curry is out: De'Anthony Melton hit the under in 4/7 games without him vs 30/33 with him; Brandon Williams is out: De'Anthony Melton hit the under in 4/6 games without him vs 9/9 with him; Moses Moody is out: De'Anthony Melton hit the under in 21/25 games without him vs 13/15 with him; NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed bench guards 8% more assists than average.",
    "result": null
   },
@@ -165359,8 +165359,8 @@
    "line": 9.5,
    "start": "2026-11-17T02:00:00Z",
    "p": 0.467,
-   "price": 0.54,
-   "edge": -0.09,
+   "price": 0.53,
+   "edge": -0.08,
    "news": "PHX has allowed bench guards 15% fewer points than average (likely on him: Collin Gillespie, Jordan Goodwin); Jamaree Bouyea can switch onto him (PHX allowed guards 14% fewer points with him playing; he plays tonight); Rasheer Fleming can switch onto him (PHX allowed guards 11% fewer points with him playing; he plays tonight); minutes trending down (we project 23, his last 5 avg 21 vs 25 over 15).",
    "result": null
   },
@@ -165779,8 +165779,8 @@
    "line": 3.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.703,
-   "price": 0.57,
-   "edge": 0.116,
+   "price": 0.55,
+   "edge": 0.136,
    "news": "Stephen Curry is out: De'Anthony Melton hit the over in 4/7 games without him vs 13/33 with him; Brandon Williams is out: De'Anthony Melton hit the over in 4/6 games without him vs 4/9 with him; Moses Moody is out: De'Anthony Melton hit the over in 13/25 games without him vs 4/15 with him; NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed bench guards 8% fewer rebounds than average.",
    "result": null
   },
@@ -165794,8 +165794,8 @@
    "line": 3.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.297,
-   "price": 0.44,
-   "edge": -0.16,
+   "price": 0.46,
+   "edge": -0.18,
    "news": "Stephen Curry is out: De'Anthony Melton hit the under in 3/7 games without him vs 20/33 with him; Brandon Williams is out: De'Anthony Melton hit the under in 2/6 games without him vs 5/9 with him; Moses Moody is out: De'Anthony Melton hit the under in 12/25 games without him vs 11/15 with him; NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed bench guards 8% fewer rebounds than average.",
    "result": null
   },
@@ -165884,8 +165884,8 @@
    "line": 5.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.438,
-   "price": 0.45,
-   "edge": -0.029,
+   "price": 0.46,
+   "edge": -0.039,
    "news": "GSW has allowed bench centers 4% more rebounds than average (likely on him: Al Horford, Charles Bassey); Malevy Leons can switch onto him (GSW allowed centers 11% fewer rebounds with him playing; he plays tonight); Draymond Green can switch onto him (GSW allowed centers 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -167474,8 +167474,8 @@
    "line": 3.5,
    "start": "2026-11-17T01:00:00Z",
    "p": 0.334,
-   "price": 0.41,
-   "edge": -0.093,
+   "price": 0.42,
+   "edge": -0.103,
    "news": "Jaylen Clark is out: LaMelo Ball hit the under in 2/5 games without him vs 5/9 with him; Anthony Edwards is out: LaMelo Ball hit the under in 4/9 games without him vs 2/3 with him; POR has allowed starting guards 0% more rebounds than average (likely on him: Damian Lillard, Sidy Cissoko); Damian Lillard can switch onto him (POR allowed guards 16% fewer rebounds with him playing; he plays tonight); Sidy Cissoko can switch onto him (POR allowed guards 9% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
