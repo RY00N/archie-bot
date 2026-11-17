@@ -259,7 +259,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r146-lakers.mp4 | both on Kalshi #lakers #nba #dinner #nightlife #latenight | POSTED 11/16 9:38pm PST trial https://www.instagram.com/reel/Df1MrztjvAK/ |
 | hourly | r147-garage.mp4 | out the garage #mclaren #supercar #nightdrive #carsofinstagram #latenight | POSTED 11/16 10:38pm PST trial https://www.instagram.com/reel/Df1TiAoGfo9/ |
 | hourly | r148-gas.mp4 | keep driving #bmwm4 #ferrari #nightdrive #carsofinstagram #latenight | POSTED 11/17 8:39am PST trial https://www.instagram.com/reel/Df2YPeOAaL4/ |
-| hourly | r149-sushi.mp4 | one single #vegas #sushi #ferrari #nightlife #latenight | queued (steady clips) |
+| hourly | r149-sushi.mp4 | one single #vegas #sushi #ferrari #nightlife #latenight | POSTED 11/17 9:39am PST trial https://www.instagram.com/reel/Df2fHSsmehn/ |
 | hourly | r150-wheel.mp4 | just cruise #ferrari #bmwm4 #nightdrive #carsofinstagram #latenight | queued (steady clips) |
 | hourly | r151-amg.mp4 | long way home #amg #mercedes #nightdrive #carsofinstagram #latenight | queued (steady clips) |
 | hourly | r152-lakers-won.mp4 | good night #lakers #nba #ferrari #nightlife #latenight | queued (steady clips) |
