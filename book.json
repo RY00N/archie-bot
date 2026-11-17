@@ -4900,7 +4900,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 55
+  "kalshi_legs_today": 57
  },
  "shadow": [
   {
@@ -150983,8 +150983,8 @@
    "line": 2.5,
    "start": "2026-11-18T04:00:00Z",
    "p": 0.432,
-   "price": 0.42,
-   "edge": -0.005,
+   "price": 0.44,
+   "edge": -0.025,
    "news": "News: Hornets CHOKE in LA | Questionable Charles Lee EJECTION | Brandon Miller STRUGGLES - ABC10 LAL has allowed starting forwards 16% fewer threes than average (likely on him: Ziaire Williams, Jake LaRavia); Jarred Vanderbilt can switch onto him (LAL allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151118,9 +151118,24 @@
    "line": 1.5,
    "start": "2026-11-18T04:00:00Z",
    "p": 0.402,
-   "price": 0.85,
-   "edge": -0.457,
+   "price": 0.43,
+   "edge": -0.045,
    "news": "Kon Knueppel is out: Sion James hit the over in 2/12 games without him vs 6/18 with him; Dennis Schroder is out: Sion James hit the over in 2/5 games without him vs 0/6 with him; LAL's G Austin Reaves is out, an easier matchup; LAL has allowed starting guards 9% fewer threes than average (likely on him: Luka Doncic, Quentin Grimes).",
+   "result": null
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "KXNBA3PT-26NOV17CHALAL-CHASJAMES4-2",
+   "league": "nba",
+   "player": "Sion James",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-11-18T04:00:00Z",
+   "p": 0.588,
+   "price": 0.65,
+   "edge": -0.078,
+   "news": "Kon Knueppel is out: Sion James hit the under in 10/12 games without him vs 12/18 with him; Dennis Schroder is out: Sion James hit the under in 3/5 games without him vs 6/6 with him; LAL's G Austin Reaves is out, an easier matchup; LAL has allowed starting guards 9% fewer threes than average (likely on him: Luka Doncic, Quentin Grimes).",
    "result": null
   },
   {
@@ -151133,9 +151148,24 @@
    "line": 1.5,
    "start": "2026-11-18T04:00:00Z",
    "p": 0.456,
-   "price": 0.45,
-   "edge": -0.011,
+   "price": 0.43,
+   "edge": 0.009,
    "news": "News: Lakers Get Major Collin Sexton Injury News Before Suns Game - Yahoo Sports Austin Reaves is out: Collin Sexton hit the over in 2/3 games without him vs 1/9 with him; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed bench guards 6% more threes than average (likely on him: Grayson Allen, Sion James).",
+   "result": null
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "KXNBA3PT-26NOV17CHALAL-LALCSEXTON10-2",
+   "league": "nba",
+   "player": "Collin Sexton",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-11-18T04:00:00Z",
+   "p": 0.494,
+   "price": 0.69,
+   "edge": -0.211,
+   "news": "News: Lakers Get Major Collin Sexton Injury News Before Suns Game - Yahoo Sports Austin Reaves is out: Collin Sexton hit the under in 1/3 games without him vs 8/9 with him; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed bench guards 6% more threes than average (likely on him: Grayson Allen, Sion James).",
    "result": null
   },
   {
@@ -151178,9 +151208,24 @@
    "line": 1.5,
    "start": "2026-11-18T04:00:00Z",
    "p": 0.583,
-   "price": 0.87,
-   "edge": -0.295,
+   "price": 0.6,
+   "edge": -0.034,
    "news": "Austin Reaves is out: Matisse Thybulle hit the over in 3/3 games without him vs 5/12 with him; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 11% fewer threes than average (likely on him: Grayson Allen, Sion James).",
+   "result": null
+  },
+  {
+   "date": "2026-11-17",
+   "ticker": "KXNBA3PT-26NOV17CHALAL-LALMTHYBULLE26-2",
+   "league": "nba",
+   "player": "Matisse Thybulle",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-11-18T04:00:00Z",
+   "p": 0.417,
+   "price": 0.69,
+   "edge": -0.288,
+   "news": "Austin Reaves is out: Matisse Thybulle hit the under in 0/3 games without him vs 7/12 with him; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 11% fewer threes than average (likely on him: Grayson Allen, Sion James).",
    "result": null
   },
   {
@@ -151328,8 +151373,8 @@
    "line": 1.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.528,
-   "price": 0.64,
-   "edge": -0.128,
+   "price": 0.65,
+   "edge": -0.138,
    "news": "Taurean Prince is out: John Collins hit the under in 5/9 games without him vs 2/3 with him; Ronald Holland II (F) is out, so John Collins's role likely grows; Duncan Robinson (F) is out, so John Collins's role likely grows; SAS has allowed starting forwards 6% fewer threes than average (likely on him: Victor Wembanyama, Julian Champagnie); Jordan McLaughlin can switch onto him (SAS allowed forwards 33% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -151373,8 +151418,8 @@
    "line": 1.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.373,
-   "price": 0.4,
-   "edge": -0.044,
+   "price": 0.41,
+   "edge": -0.054,
    "news": "News: De\u2019Aaron Fox (hip) removed from injury report - NBC Sports DET has allowed starting guards 9% more threes than average (likely on him: Daniss Jenkins, Cade Cunningham).",
    "result": null
   },
@@ -151388,8 +151433,8 @@
    "line": 1.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.577,
-   "price": 0.64,
-   "edge": -0.079,
+   "price": 0.65,
+   "edge": -0.089,
    "news": "News: De\u2019Aaron Fox (hip) removed from injury report - NBC Sports DET has allowed starting guards 9% more threes than average (likely on him: Daniss Jenkins, Cade Cunningham).",
    "result": null
   },
@@ -152018,8 +152063,8 @@
    "line": 1.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.579,
-   "price": 0.54,
-   "edge": 0.022,
+   "price": 0.53,
+   "edge": 0.032,
    "news": "Jaylen Clark is out: Terrence Shannon Jr. hit the under in 10/17 games without him vs 15/23 with him; Anthony Edwards is out: Terrence Shannon Jr. hit the under in 16/21 games without him vs 9/19 with him; Donte DiVincenzo is out: Terrence Shannon Jr. hit the under in 11/20 games without him vs 14/20 with him; POR has allowed bench guards 39% fewer threes than average (likely on him: Jrue Holiday, Sidy Cissoko).",
    "result": null
   },
@@ -152138,8 +152183,8 @@
    "line": 1.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.277,
-   "price": 0.45,
-   "edge": -0.19,
+   "price": 0.42,
+   "edge": -0.16,
    "news": "Chris Youngblood is out: Jrue Holiday hit the under in 2/9 games without him vs 2/5 with him; Vit Krejci is out: Jrue Holiday hit the under in 2/10 games without him vs 2/4 with him; Ja Morant is out: Jrue Holiday hit the under in 2/9 games without him vs 2/5 with him; MIN's G Jaylen Clark is out, an easier matchup; MIN has allowed bench guards 14% fewer threes than average (likely on him: Ayo Dosunmu, Terrence Shannon Jr.); Jaylen Clark can switch onto him (MIN allowed guards 16% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -152168,8 +152213,8 @@
    "line": 1.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.597,
-   "price": 0.63,
-   "edge": -0.049,
+   "price": 0.61,
+   "edge": -0.03,
    "news": "Chris Youngblood is out: Scoot Henderson hit the under in 7/9 games without him vs 1/3 with him; Vit Krejci is out: Scoot Henderson hit the under in 8/13 games without him vs 8/16 with him; Ja Morant is out: Scoot Henderson hit the under in 1/3 games without him vs 6/6 with him; Shaedon Sharpe is out: Scoot Henderson hit the under in 16/29 games without him vs 7/11 with him; MIN's G Jaylen Clark is out, an easier matchup; MIN has allowed starting guards 20% fewer threes than average (likely on him: Ayo Dosunmu, LaMelo Ball); Jaylen Clark can switch onto him (MIN allowed guards 16% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -152183,8 +152228,8 @@
    "line": 2.5,
    "start": "2026-11-18T01:00:00Z",
    "p": 0.421,
-   "price": 0.43,
-   "edge": -0.026,
+   "price": 0.44,
+   "edge": -0.036,
    "news": "MIN has allowed starting forwards 18% fewer threes than average (likely on him: Joan Beringer, Jaden McDaniels); Anthony Edwards can switch onto him (MIN allowed forwards 23% fewer threes with him playing; he is out tonight); Joan Beringer can switch onto him (MIN allowed forwards 19% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -152228,8 +152273,8 @@
    "line": 1.5,
    "start": "2026-11-18T03:30:00Z",
    "p": 0.512,
-   "price": 0.65,
-   "edge": -0.154,
+   "price": 0.57,
+   "edge": -0.075,
    "news": "UTA's C Jaxson Hayes is out, an easier matchup.",
    "result": null
   },
@@ -152258,8 +152303,8 @@
    "line": 2.5,
    "start": "2026-11-18T03:30:00Z",
    "p": 0.461,
-   "price": 0.59,
-   "edge": -0.146,
+   "price": 0.51,
+   "edge": -0.066,
    "news": "UTA has allowed starting guards 6% more threes than average.",
    "result": null
   },
@@ -152273,8 +152318,8 @@
    "line": 1.5,
    "start": "2026-11-18T03:30:00Z",
    "p": 0.47,
-   "price": 0.39,
-   "edge": 0.063,
+   "price": 0.43,
+   "edge": 0.023,
    "news": "UTA's F Lauri Markkanen is out, an easier matchup.",
    "result": null
   },
@@ -152348,8 +152393,8 @@
    "line": 2.5,
    "start": "2026-11-18T03:30:00Z",
    "p": 0.568,
-   "price": 0.68,
-   "edge": -0.127,
+   "price": 0.67,
+   "edge": -0.117,
    "news": "UTA has allowed bench guards 15% more threes than average.",
    "result": null
   },
@@ -153218,8 +153263,8 @@
    "line": 9.5,
    "start": "2026-11-18T03:30:00Z",
    "p": 0.526,
-   "price": 0.57,
-   "edge": -0.061,
+   "price": 0.51,
+   "edge": -0.001,
    "news": "minutes trending down (we project 24, his last 5 avg 22 vs 26 over 15).",
    "result": null
   },
@@ -153803,8 +153848,8 @@
    "line": 1.5,
    "start": "2026-11-18T00:30:00Z",
    "p": 0.322,
-   "price": 0.36,
-   "edge": -0.054,
+   "price": 0.37,
+   "edge": -0.064,
    "news": "TOR has allowed starting forwards 11% fewer steals than average (likely on him: RJ Barrett, Scottie Barnes); Alijah Martin can switch onto him (TOR allowed forwards 18% fewer steals with him playing; he plays tonight).",
    "result": null
   },
