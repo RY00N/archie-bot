@@ -4744,7 +4744,7 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-16 18:00 PT",
+  "props_at": "2026-11-16 19:00 PT",
   "props_today": 105,
   "kalshi_props_today": 58,
   "kalshi_priced_today": 0,
@@ -4761,7 +4761,7 @@
    "Pinnacle": 32,
    "Sleeper": 58,
    "Underdog": 58,
-   "Unibet": 6,
+   "Unibet": 7,
    "bet365": 58
   },
   "data_files": [
@@ -4770,7 +4770,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 16
+  "kalshi_legs_today": 0
  },
  "shadow": [
   {
