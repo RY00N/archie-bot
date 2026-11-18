@@ -5140,7 +5140,7 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-18 10:00 PT",
+  "props_at": "2026-11-18 11:00 PT",
   "props_today": 1239,
   "kalshi_props_today": 658,
   "kalshi_priced_today": 14,
@@ -5155,7 +5155,7 @@
    "Fanatics": 529,
    "Parx": 526,
    "Pinnacle": 401,
-   "Sleeper": 645,
+   "Sleeper": 649,
    "Underdog": 658,
    "Unibet": 47,
    "bet365": 656
@@ -158419,8 +158419,8 @@
    "line": 2.5,
    "start": "2026-11-19T01:00:00Z",
    "p": 0.369,
-   "price": 0.41,
-   "edge": -0.058,
+   "price": 0.38,
+   "edge": -0.027,
    "news": "News: Kyrie Irving (knee) removed from injury report - NBC Sports GSW's G Brandon Williams is out, an easier matchup; GSW's G Stephen Curry is out, an easier matchup; GSW has allowed starting guards 4% fewer threes than average (likely on him: Brandin Podziemski, Will Richard); Malevy Leons can switch onto him (GSW allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -158569,8 +158569,8 @@
    "line": 0.5,
    "start": "2026-11-19T01:00:00Z",
    "p": 0.522,
-   "price": 0.53,
-   "edge": -0.025,
+   "price": 0.51,
+   "edge": -0.005,
    "news": "Injury report: Questionable:  (official NBA report) DAL has allowed starting forwards 9% more threes than average (likely on him: Cooper Flagg, P.J. Washington); Max Christie can switch onto him (DAL allowed forwards 18% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -158989,8 +158989,8 @@
    "line": 1.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.386,
-   "price": 0.41,
-   "edge": -0.041,
+   "price": 0.39,
+   "edge": -0.021,
    "news": "GG Jackson is out: Cameron Boozer hit the under in 2/7 games without him vs 4/9 with him; CLE has allowed starting forwards 12% more threes than average (likely on him: Mario Hezonja); Meleek Thomas can switch onto him (CLE allowed forwards 32% fewer threes with him playing; he plays tonight); Mario Hezonja can switch onto him (CLE allowed forwards 23% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159049,8 +159049,8 @@
    "line": 1.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.378,
-   "price": 0.41,
-   "edge": -0.049,
+   "price": 0.4,
+   "edge": -0.039,
    "news": "GG Jackson is out: Cedric Coward hit the under in 8/19 games without him vs 10/21 with him; CLE has allowed starting forwards 12% more threes than average (likely on him: Mario Hezonja); Meleek Thomas can switch onto him (CLE allowed forwards 32% fewer threes with him playing; he plays tonight); Mario Hezonja can switch onto him (CLE allowed forwards 23% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159109,8 +159109,8 @@
    "line": 1.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.288,
-   "price": 0.4,
-   "edge": -0.129,
+   "price": 0.39,
+   "edge": -0.119,
    "news": "Ty Jerome is out: Cam Spencer hit the under in 4/10 games without him vs 12/25 with him; Scotty Pippen Jr. is out: Cam Spencer hit the under in 11/28 games without him vs 8/12 with him; CLE's G Jaylon Tyson is out, an easier matchup; CLE has allowed bench guards 1% fewer threes than average (likely on him: Sam Merrill, Meleek Thomas); Sam Merrill can switch onto him (CLE allowed guards 14% fewer threes with him playing; he plays tonight); James Harden can switch onto him (CLE allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159214,8 +159214,8 @@
    "line": 0.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.524,
-   "price": 0.67,
-   "edge": -0.161,
+   "price": 0.66,
+   "edge": -0.152,
    "news": "Injury report: Probable:  (official NBA report) MIL has allowed starting centers 22% fewer threes than average (likely on him: Myles Turner, Kel'el Ware); Kyle Kuzma can switch onto him (MIL allowed centers 43% fewer threes with him playing; he plays tonight); Jaime Jaquez Jr. can switch onto him (MIL allowed centers 33% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159829,8 +159829,8 @@
    "line": 2.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.537,
-   "price": 0.64,
-   "edge": -0.119,
+   "price": 0.63,
+   "edge": -0.109,
    "news": "Jaylen Brown (G) is out, so Anfernee Simons's role likely grows; ORL has allowed bench guards 3% fewer threes than average (likely on him: Anthony Black, Jalen Suggs); Jase Richardson can switch onto him (ORL allowed guards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159873,10 +159873,10 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-19T00:00:00Z",
-   "p": 0.502,
+   "p": 0.552,
    "price": 0.64,
-   "edge": -0.154,
-   "news": "News: Joel Embiid Reveals Simple Fix For Shooting Slump - Yahoo Sports ORL has allowed starting centers 26% fewer threes than average (likely on him: Wendell Carter Jr.); Jamal Cain can switch onto him (ORL allowed centers 19% fewer threes with him playing; he plays tonight).",
+   "edge": -0.104,
+   "news": "ORL has allowed starting centers 26% fewer threes than average (likely on him: Wendell Carter Jr.); Jamal Cain can switch onto him (ORL allowed centers 19% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159891,7 +159891,7 @@
    "p": 0.448,
    "price": 0.37,
    "edge": 0.062,
-   "news": "News: Joel Embiid Reveals Simple Fix For Shooting Slump - Yahoo Sports ORL has allowed starting centers 26% fewer threes than average (likely on him: Wendell Carter Jr.); Jamal Cain can switch onto him (ORL allowed centers 19% fewer threes with him playing; he plays tonight).",
+   "news": "ORL has allowed starting centers 26% fewer threes than average (likely on him: Wendell Carter Jr.); Jamal Cain can switch onto him (ORL allowed centers 19% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -160264,8 +160264,8 @@
    "line": 3.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.354,
-   "price": 0.39,
-   "edge": -0.053,
+   "price": 0.4,
+   "edge": -0.063,
    "news": "PHX has allowed starting guards 4% more threes than average (likely on him: Devin Booker, Jalen Green); Rasheer Fleming can switch onto him (PHX allowed guards 13% fewer threes with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160399,8 +160399,8 @@
    "line": 2.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.529,
-   "price": 0.56,
-   "edge": -0.048,
+   "price": 0.55,
+   "edge": -0.038,
    "news": "LAL has allowed starting guards 11% fewer threes than average (likely on him: Quentin Grimes, Luka Doncic).",
    "result": null
   },
@@ -160459,8 +160459,8 @@
    "line": 2.5,
    "start": "2026-11-19T00:30:00Z",
    "p": 0.497,
-   "price": 0.51,
-   "edge": -0.03,
+   "price": 0.5,
+   "edge": -0.021,
    "news": "WSH has allowed starting guards 17% fewer threes than average (likely on him: Trae Young, Bilal Coulibaly).",
    "result": null
   },
@@ -160504,8 +160504,8 @@
    "line": 1.5,
    "start": "2026-11-19T00:30:00Z",
    "p": 0.59,
-   "price": 0.61,
-   "edge": -0.037,
+   "price": 0.6,
+   "edge": -0.027,
    "news": "Injury report: Questionable:  (official NBA report) Kawhi Leonard is out: RJ Barrett hit the over in 6/12 games without him vs 1/4 with him; WSH has allowed starting forwards 21% more threes than average (likely on him: Anthony Davis, AJ Dybantsa); Tre Johnson can switch onto him (WSH allowed forwards 10% fewer threes with him playing; he plays tonight); Kyshawn George can switch onto him (WSH allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -161074,8 +161074,8 @@
    "line": 3.5,
    "start": "2026-11-19T00:30:00Z",
    "p": 0.536,
-   "price": 0.55,
-   "edge": -0.031,
+   "price": 0.54,
+   "edge": -0.021,
    "news": "News: GIDDEY BENCHED AGAIN?! Tre Jones CLOSES + Matas FINED $25K + Noa\u2019s Defense Rising - WLTX BKN has allowed bench guards 16% more assists than average (likely on him: Mikel Brown Jr., Keon Ellis); Keon Ellis can switch onto him (BKN allowed guards 10% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -161089,8 +161089,8 @@
    "line": 3.5,
    "start": "2026-11-19T00:30:00Z",
    "p": 0.414,
-   "price": 0.48,
-   "edge": -0.083,
+   "price": 0.49,
+   "edge": -0.093,
    "news": "News: GIDDEY BENCHED AGAIN?! Tre Jones CLOSES + Matas FINED $25K + Noa\u2019s Defense Rising - WLTX BKN has allowed bench guards 16% more assists than average (likely on him: Mikel Brown Jr., Keon Ellis); Keon Ellis can switch onto him (BKN allowed guards 10% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -161853,10 +161853,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-19T00:00:00Z",
-   "p": 0.381,
+   "p": 0.431,
    "price": 0.43,
-   "edge": -0.066,
-   "news": "News: Joel Embiid Reveals Simple Fix For Shooting Slump - Yahoo Sports ORL has allowed starting centers 12% more assists than average (likely on him: Wendell Carter Jr.); Noah Penda can switch onto him (ORL allowed centers 41% fewer assists with him playing; he is out tonight); Paolo Banchero can switch onto him (ORL allowed centers 17% fewer assists with him playing; he is out tonight).",
+   "edge": -0.016,
+   "news": "ORL has allowed starting centers 12% more assists than average (likely on him: Wendell Carter Jr.); Noah Penda can switch onto him (ORL allowed centers 41% fewer assists with him playing; he is out tonight); Paolo Banchero can switch onto him (ORL allowed centers 17% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -161871,7 +161871,7 @@
    "p": 0.569,
    "price": 0.58,
    "edge": -0.028,
-   "news": "News: Joel Embiid Reveals Simple Fix For Shooting Slump - Yahoo Sports ORL has allowed starting centers 12% more assists than average (likely on him: Wendell Carter Jr.); Noah Penda can switch onto him (ORL allowed centers 41% fewer assists with him playing; he is out tonight); Paolo Banchero can switch onto him (ORL allowed centers 17% fewer assists with him playing; he is out tonight).",
+   "news": "ORL has allowed starting centers 12% more assists than average (likely on him: Wendell Carter Jr.); Noah Penda can switch onto him (ORL allowed centers 41% fewer assists with him playing; he is out tonight); Paolo Banchero can switch onto him (ORL allowed centers 17% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -162994,8 +162994,8 @@
    "line": 14.5,
    "start": "2026-11-19T01:00:00Z",
    "p": 0.502,
-   "price": 0.57,
-   "edge": -0.085,
+   "price": 0.56,
+   "edge": -0.075,
    "news": "News: Kyrie Irving, Daniel Gafford Among 8 Mavericks on Injury Report Against Celtics - Sports Illustrated Sergio de Larrea (F) is out, so Daniel Gafford's role likely grows; Tobi Lawal (F) is out, so Daniel Gafford's role likely grows; GSW has allowed starting forwards 1% more pra than average (likely on him: Yaxel Lendeborg, Draymond Green); minutes trending down (we project 20, his last 5 avg 18 vs 21 over 15).",
    "result": null
   },
@@ -163204,8 +163204,8 @@
    "line": 29.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.384,
-   "price": 0.51,
-   "edge": -0.143,
+   "price": 0.5,
+   "edge": -0.134,
    "news": "Injury report: Probable:  (official NBA report) MIL has allowed starting centers 3% fewer pra than average (likely on him: Myles Turner, Kel'el Ware); Myles Turner can switch onto him (MIL allowed centers 15% fewer pra with him playing; he plays tonight); Pete Nance can switch onto him (MIL allowed centers 14% fewer pra with him playing; he is out tonight); those defenders hold shooters 4.7% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -163264,8 +163264,8 @@
    "line": 19.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.5,
-   "price": 0.54,
-   "edge": -0.057,
+   "price": 0.53,
+   "edge": -0.047,
    "news": "News: Ryan Rollins (illness) removed from injury report - NBC Sports MIA has allowed bench guards 19% more pra than average (likely on him: Pelle Larsson, Ryan Conwell); minutes trending down (we project 24, his last 5 avg 22 vs 25 over 15).",
    "result": null
   },
@@ -163383,10 +163383,10 @@
    "side": "over",
    "line": 34.5,
    "start": "2026-11-19T00:00:00Z",
-   "p": 0.381,
+   "p": 0.431,
    "price": 0.49,
-   "edge": -0.126,
-   "news": "News: Joel Embiid Reveals Simple Fix For Shooting Slump - Yahoo Sports ORL has allowed starting centers 1% more pra than average (likely on him: Wendell Carter Jr.); minutes trending down (we project 30, his last 5 avg 29 vs 31 over 15).",
+   "edge": -0.076,
+   "news": "ORL has allowed starting centers 1% more pra than average (likely on him: Wendell Carter Jr.); minutes trending down (we project 30, his last 5 avg 29 vs 31 over 15).",
    "result": null
   },
   {
@@ -163401,7 +163401,7 @@
    "p": 0.569,
    "price": 0.52,
    "edge": 0.032,
-   "news": "News: Joel Embiid Reveals Simple Fix For Shooting Slump - Yahoo Sports ORL has allowed starting centers 1% more pra than average (likely on him: Wendell Carter Jr.); minutes trending down (we project 30, his last 5 avg 29 vs 31 over 15).",
+   "news": "ORL has allowed starting centers 1% more pra than average (likely on him: Wendell Carter Jr.); minutes trending down (we project 30, his last 5 avg 29 vs 31 over 15).",
    "result": null
   },
   {
@@ -164134,8 +164134,8 @@
    "line": 19.5,
    "start": "2026-11-19T01:00:00Z",
    "p": 0.418,
-   "price": 0.48,
-   "edge": -0.079,
+   "price": 0.47,
+   "edge": -0.069,
    "news": "DET has allowed bench forwards 7% fewer points than average (likely on him: Paul Reed, Ronald Holland II); those defenders hold shooters 4.4% below their normal FG%, among the league's stingiest; minutes trending up (we project 31, his last 5 avg 32 vs 29 over 15).",
    "result": null
   },
@@ -164494,8 +164494,8 @@
    "line": 14.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.44,
-   "price": 0.52,
-   "edge": -0.097,
+   "price": 0.51,
+   "edge": -0.087,
    "news": "Ousmane Dieng is out: Jaime Jaquez Jr. hit the over in 3/7 games without him vs 4/7 with him; MIA has allowed starting forwards 3% fewer points than average (likely on him: Giannis Antetokounmpo, Andrew Wiggins); Myron Gardner can switch onto him (MIA allowed forwards 20% fewer points with him playing; he plays tonight); Simone Fontecchio can switch onto him (MIA allowed forwards 17% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -165064,8 +165064,8 @@
    "line": 3.5,
    "start": "2026-11-19T01:00:00Z",
    "p": 0.48,
-   "price": 0.53,
-   "edge": -0.067,
+   "price": 0.54,
+   "edge": -0.077,
    "news": "News: Ajay Mitchell calls return from ankle injury for Thunder-Kings 'a no-brainer' - The Oklahoman Cason Wallace is out: Ajay Mitchell hit the over in 8/20 games without him vs 6/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 13/27 games without him vs 2/5 with him; ATL's G Kingston Flemings is out, an easier matchup; ATL's G CJ McCollum is out, an easier matchup; ATL has allowed starting guards 4% fewer rebounds than average (likely on him: Nickeil Alexander-Walker, Luguentz Dort).",
    "result": null
   },
@@ -165139,8 +165139,8 @@
    "line": 3.5,
    "start": "2026-11-19T02:30:00Z",
    "p": 0.616,
-   "price": 0.61,
-   "edge": -0.011,
+   "price": 0.62,
+   "edge": -0.02,
    "news": "DEN has allowed starting guards 4% fewer rebounds than average (likely on him: Jamal Murray, Christian Braun); Marvin Bagley III can switch onto him (DEN allowed guards 14% fewer rebounds with him playing; he plays tonight); Cameron Johnson can switch onto him (DEN allowed guards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -165199,8 +165199,8 @@
    "line": 5.5,
    "start": "2026-11-19T02:30:00Z",
    "p": 0.55,
-   "price": 0.58,
-   "edge": -0.047,
+   "price": 0.59,
+   "edge": -0.057,
    "news": "News: How Memphis Is DIFFERENT From Rest Of NBA + Wolves Winning Without Ant & Paul George\u2019s Renaissance - BVM Sports DEN has allowed starting forwards 3% more rebounds than average (likely on him: Trevon Brazile, Aaron Gordon).",
    "result": null
   },
@@ -166504,8 +166504,8 @@
    "line": 3.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.528,
-   "price": 0.58,
-   "edge": -0.069,
+   "price": 0.59,
+   "edge": -0.079,
    "news": "News: Ryan Rollins (illness) removed from injury report - NBC Sports MIA has allowed bench guards 13% more rebounds than average (likely on him: Pelle Larsson, Ryan Conwell); Dru Smith can switch onto him (MIA allowed guards 14% fewer rebounds with him playing; he plays tonight); Giannis Antetokounmpo can switch onto him (MIA allowed guards 9% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -166549,8 +166549,8 @@
    "line": 3.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.404,
-   "price": 0.5,
-   "edge": -0.113,
+   "price": 0.51,
+   "edge": -0.123,
    "news": "PHI's G Jaylen Brown is out, an easier matchup; PHI has allowed starting guards 16% more rebounds than average (likely on him: Tyrese Maxey, VJ Edgecombe); Jabari Walker can switch onto him (PHI allowed guards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -166683,10 +166683,10 @@
    "side": "over",
    "line": 7.5,
    "start": "2026-11-19T00:00:00Z",
-   "p": 0.449,
+   "p": 0.499,
    "price": 0.5,
-   "edge": -0.068,
-   "news": "News: Joel Embiid Reveals Simple Fix For Shooting Slump - Yahoo Sports ORL has allowed starting centers 3% more rebounds than average (likely on him: Wendell Carter Jr.); Goga Bitadze can switch onto him (ORL allowed centers 11% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.019,
+   "news": "ORL has allowed starting centers 3% more rebounds than average (likely on him: Wendell Carter Jr.); Goga Bitadze can switch onto him (ORL allowed centers 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -166699,9 +166699,9 @@
    "line": 7.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.501,
-   "price": 0.51,
-   "edge": -0.026,
-   "news": "News: Joel Embiid Reveals Simple Fix For Shooting Slump - Yahoo Sports ORL has allowed starting centers 3% more rebounds than average (likely on him: Wendell Carter Jr.); Goga Bitadze can switch onto him (ORL allowed centers 11% fewer rebounds with him playing; he plays tonight).",
+   "price": 0.52,
+   "edge": -0.036,
+   "news": "ORL has allowed starting centers 3% more rebounds than average (likely on him: Wendell Carter Jr.); Goga Bitadze can switch onto him (ORL allowed centers 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -167164,8 +167164,8 @@
    "line": 3.5,
    "start": "2026-11-19T00:30:00Z",
    "p": 0.56,
-   "price": 0.6,
-   "edge": -0.057,
+   "price": 0.61,
+   "edge": -0.067,
    "news": "WSH has allowed starting guards 2% more rebounds than average (likely on him: Trae Young, Bilal Coulibaly); Tristan Vukcevic can switch onto him (WSH allowed guards 11% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -167179,8 +167179,8 @@
    "line": 3.5,
    "start": "2026-11-19T00:30:00Z",
    "p": 0.44,
-   "price": 0.44,
-   "edge": -0.017,
+   "price": 0.41,
+   "edge": 0.013,
    "news": "WSH has allowed starting guards 2% more rebounds than average (likely on him: Trae Young, Bilal Coulibaly); Tristan Vukcevic can switch onto him (WSH allowed guards 11% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
@@ -167479,8 +167479,8 @@
    "line": 1.5,
    "start": "2026-11-19T02:30:00Z",
    "p": 0.539,
-   "price": 0.57,
-   "edge": -0.048,
+   "price": 0.58,
+   "edge": -0.058,
    "news": "News: How Memphis Is DIFFERENT From Rest Of NBA + Wolves Winning Without Ant & Paul George\u2019s Renaissance - BVM Sports DEN has allowed starting forwards 27% fewer steals than average (likely on him: Trevon Brazile, Aaron Gordon); Cameron Johnson can switch onto him (DEN allowed forwards 31% fewer steals with him playing; he plays tonight); Marvin Bagley III can switch onto him (DEN allowed forwards 31% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -167614,8 +167614,8 @@
    "line": 1.5,
    "start": "2026-11-19T01:00:00Z",
    "p": 0.402,
-   "price": 0.36,
-   "edge": 0.026,
+   "price": 0.37,
+   "edge": 0.016,
    "news": "News: Kyrie Irving (knee) removed from injury report - NBC Sports GSW's G Brandon Williams is out, an easier matchup; GSW's G Stephen Curry is out, an easier matchup; GSW has allowed starting guards 17% more steals than average (likely on him: Brandin Podziemski, Will Richard); Gui Santos can switch onto him (GSW allowed guards 21% fewer steals with him playing; he plays tonight); Malevy Leons can switch onto him (GSW allowed guards 9% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -167914,8 +167914,8 @@
    "line": 1.5,
    "start": "2026-11-19T00:00:00Z",
    "p": 0.446,
-   "price": 0.44,
-   "edge": -0.011,
+   "price": 0.43,
+   "edge": -0.001,
    "news": "Jaylen Brown (G) is out, so VJ Edgecombe's role likely grows; ORL has allowed starting guards 25% more steals than average (likely on him: Desmond Bane, Anthony Black); Noah Penda can switch onto him (ORL allowed guards 13% fewer steals with him playing; he is out tonight); Jevon Carter can switch onto him (ORL allowed guards 11% fewer steals with him playing; he plays tonight).",
    "result": null
   },
