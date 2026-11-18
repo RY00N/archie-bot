@@ -240,6 +240,7 @@
     "share_stop_pct": 15,
     "max_opt_pct": 0.65,
     "skip_trade_mult": 0.5,
+    "min_qty": 1,
     "shock_mult": 0.75,
     "shock_gap_pct": 5,
     "shock_names": [
