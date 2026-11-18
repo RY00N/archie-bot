@@ -272,7 +272,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r159-on-e.mp4 | Kalshi on full #nightdrive #ferrari #bmwm4 #carsofinstagram #latenight | POSTED 11/17 7:39pm PST trial https://www.instagram.com/reel/Df3jxHQiPOQ/ |
 | hourly | r160-amg-dinner.mp4 | dinner's on Kalshi #amg #mercedes #dinner #nightlife #latenight | POSTED 11/17 8:38pm PST trial https://www.instagram.com/reel/Df3qiD-mToT/ |
 | hourly | r161-outside-inside.mp4 | paid for the night #lakers #ferrari #bmwm4 #nightlife #latenight | POSTED 11/17 9:38pm PST trial https://www.instagram.com/reel/Df3xbTFCWCl/ |
-| hourly | r162-vegas-drive.mp4 | Vegas run #vegas #bmwm4 #roadtrip #nightlife #latenight | queued (steady clips) |
+| hourly | r162-vegas-drive.mp4 | Vegas run #vegas #bmwm4 #roadtrip #nightlife #latenight | POSTED 11/17 10:38pm PST trial https://www.instagram.com/reel/Df34UNjk-mP/ |
 | hourly | r163-treat.mp4 | treat yourself #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | queued (steady clips) |
 | hourly | r164-windows-down.mp4 | windows down #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | queued (steady clips) |
 | hourly | r165-sushi-amg.mp4 | regular night #amg #sushi #mercedes #nightlife #latenight | queued (steady clips) |
