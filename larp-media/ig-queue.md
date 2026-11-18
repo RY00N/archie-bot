@@ -280,7 +280,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r167-vegas-dinner.mp4 | underdog dinner #vegas #ferrari #dinner #nightlife #latenight | POSTED 11/18 12:39pm PST trial https://www.instagram.com/reel/Df5YfA5iKsK/ |
 | hourly | r168-left-early.mp4 | already cashed #lakers #nba #nightdrive #nightlife #latenight | POSTED 11/18 1:39pm PST trial https://www.instagram.com/reel/Df5fYdlEW_9/ |
 | hourly | r169-valet-front.mp4 | up front #amg #hotel #valet #luxurylifestyle #latenight | POSTED 11/18 2:39pm PST trial https://www.instagram.com/reel/Df5mSFbEvbc/ |
-| hourly | r170-tanks.mp4 | both tanks #ferrari #corvette #carsofinstagram #nightlife #latenight | queued (steady clips) |
+| hourly | r170-tanks.mp4 | both tanks #ferrari #corvette #carsofinstagram #nightlife #latenight | POSTED 11/18 3:39pm PST trial https://www.instagram.com/reel/Df5tFsujF57/ |
 | hourly | r171-omakase.mp4 | omakase night #sushi #ferrari #carsofinstagram #nightlife #latenight | queued (steady clips) |
 | hourly | r172-still-up.mp4 | still up #bmwm4 #ferrari #carsofinstagram #nightdrive #latenight | queued (steady clips) |
 | hourly | r173-strip.mp4 | Kalshi weekend #vegas #mclaren #ferrari #nightlife #latenight | queued (steady clips) |
