@@ -5175,23 +5175,23 @@
   },
   "props_at": "2026-11-18 18:00 PT",
   "props_today": 302,
-  "kalshi_props_today": 169,
+  "kalshi_props_today": 175,
   "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
-   "AN Consensus": 169,
-   "AN Open": 169,
+   "AN Consensus": 175,
+   "AN Open": 175,
    "BetMGM": 94,
    "BetRivers": 138,
-   "Caesars": 145,
-   "DraftKings": 153,
-   "FanDuel": 146,
-   "Fanatics": 121,
+   "Caesars": 150,
+   "DraftKings": 156,
+   "FanDuel": 152,
+   "Fanatics": 123,
    "Parx": 138,
    "Pinnacle": 88,
-   "Sleeper": 169,
-   "Underdog": 169,
+   "Sleeper": 175,
+   "Underdog": 175,
    "Unibet": 26,
-   "bet365": 169
+   "bet365": 175
   },
   "data_files": [
    "mlb.sqlite",
@@ -5199,7 +5199,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 47
+  "kalshi_legs_today": 50
  },
  "shadow": [
   {
@@ -157626,10 +157626,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-19T02:30:00Z",
-   "p": 0.559,
+   "p": 0.609,
    "price": 0.6,
-   "edge": -0.058,
-   "news": "News: How Memphis Is DIFFERENT From Rest Of NBA + Wolves Winning Without Ant & Paul George\u2019s Renaissance - BVM Sports DEN has allowed starting forwards 20% more threes than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 9% fewer threes with him playing; he plays tonight).",
+   "edge": -0.008,
+   "news": "DEN has allowed starting forwards 20% more threes than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -157644,7 +157644,7 @@
    "p": 0.391,
    "price": 0.41,
    "edge": -0.036,
-   "news": "News: How Memphis Is DIFFERENT From Rest Of NBA + Wolves Winning Without Ant & Paul George\u2019s Renaissance - BVM Sports DEN has allowed starting forwards 20% more threes than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 9% fewer threes with him playing; he plays tonight).",
+   "news": "DEN has allowed starting forwards 20% more threes than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161039,6 +161039,36 @@
   },
   {
    "date": "2026-11-18",
+   "ticker": "KXNBA3PT-26NOV18PHXSAC-SACKMURRAY13-2",
+   "league": "nba",
+   "player": "Keegan Murray",
+   "stat": "threes",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-19T03:00:00Z",
+   "p": 0.337,
+   "price": 0.41,
+   "edge": -0.09,
+   "news": "News: Doug Christie reveals Keegan Murray was sick in Kings\u2019 loss | NBC Sports California - BVM Sports PHX has allowed starting forwards 2% fewer threes than average (likely on him: Miles Bridges, Dillon Brooks); Ryan Dunn can switch onto him (PHX allowed forwards 12% fewer threes with him playing; he plays tonight); Khaman Maluach can switch onto him (PHX allowed forwards 9% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "KXNBA3PT-26NOV18PHXSAC-SACKMURRAY13-2",
+   "league": "nba",
+   "player": "Keegan Murray",
+   "stat": "threes",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-11-19T03:00:00Z",
+   "p": 0.613,
+   "price": 0.67,
+   "edge": -0.072,
+   "news": "News: Doug Christie reveals Keegan Murray was sick in Kings\u2019 loss | NBC Sports California - BVM Sports PHX has allowed starting forwards 2% fewer threes than average (likely on him: Miles Bridges, Dillon Brooks); Ryan Dunn can switch onto him (PHX allowed forwards 12% fewer threes with him playing; he plays tonight); Khaman Maluach can switch onto him (PHX allowed forwards 9% fewer threes with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-18",
    "ticker": "KXNBA3PT-26NOV18PHXSAC-SACZLAVINE8-3",
    "league": "nba",
    "player": "Zach LaVine",
@@ -161886,10 +161916,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-19T02:30:00Z",
-   "p": 0.422,
+   "p": 0.472,
    "price": 0.51,
-   "edge": -0.105,
-   "news": "News: How Memphis Is DIFFERENT From Rest Of NBA + Wolves Winning Without Ant & Paul George\u2019s Renaissance - BVM Sports DEN has allowed starting forwards 20% more assists than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 20% fewer assists with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed forwards 15% fewer assists with him playing; he plays tonight).",
+   "edge": -0.055,
+   "news": "DEN has allowed starting forwards 20% more assists than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 20% fewer assists with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed forwards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161904,7 +161934,7 @@
    "p": 0.528,
    "price": 0.5,
    "edge": 0.011,
-   "news": "News: How Memphis Is DIFFERENT From Rest Of NBA + Wolves Winning Without Ant & Paul George\u2019s Renaissance - BVM Sports DEN has allowed starting forwards 20% more assists than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 20% fewer assists with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed forwards 15% fewer assists with him playing; he plays tonight).",
+   "news": "DEN has allowed starting forwards 20% more assists than average (likely on him: Trevon Brazile, Aaron Gordon); Tyus Jones can switch onto him (DEN allowed forwards 20% fewer assists with him playing; he plays tonight); Trevon Brazile can switch onto him (DEN allowed forwards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163462,8 +163492,8 @@
    "line": 7.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.539,
-   "price": 0.6,
-   "edge": -0.078,
+   "price": 0.61,
+   "edge": -0.088,
    "news": "News: Utah Jazz's Keyonte George Dealing With Hidden Injury Concerns - Sports Illustrated LAL has allowed starting guards 2% fewer assists than average (likely on him: Quentin Grimes, Luka Doncic).",
    "result": null
   },
@@ -165622,8 +165652,8 @@
    "line": 19.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.488,
-   "price": 0.54,
-   "edge": -0.069,
+   "price": 0.55,
+   "edge": -0.079,
    "news": "News: De'Andre Hunter Injury: Questionable for Wednesday - RotoWire PHX has allowed starting forwards 2% fewer pra than average (likely on him: Miles Bridges, Dillon Brooks); Khaman Maluach can switch onto him (PHX allowed forwards 12% fewer pra with him playing; he plays tonight); Luke Kennard can switch onto him (PHX allowed forwards 10% fewer pra with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 36 vs 30 over 15).",
    "result": null
   },
@@ -167309,6 +167339,36 @@
   },
   {
    "date": "2026-11-18",
+   "ticker": "KXNBAPTS-26NOV18PHXSAC-SACKMURRAY13-10",
+   "league": "nba",
+   "player": "Keegan Murray",
+   "stat": "points",
+   "side": "over",
+   "line": 9.5,
+   "start": "2026-11-19T03:00:00Z",
+   "p": 0.464,
+   "price": 0.49,
+   "edge": -0.043,
+   "news": "News: Doug Christie reveals Keegan Murray was sick in Kings\u2019 loss | NBC Sports California - BVM Sports PHX has allowed starting forwards 1% fewer points than average (likely on him: Miles Bridges, Dillon Brooks); Luke Kennard can switch onto him (PHX allowed forwards 15% fewer points with him playing; he plays tonight); Khaman Maluach can switch onto him (PHX allowed forwards 13% fewer points with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "KXNBAPTS-26NOV18PHXSAC-SACKMURRAY13-10",
+   "league": "nba",
+   "player": "Keegan Murray",
+   "stat": "points",
+   "side": "under",
+   "line": 9.5,
+   "start": "2026-11-19T03:00:00Z",
+   "p": 0.486,
+   "price": 0.54,
+   "edge": -0.071,
+   "news": "News: Doug Christie reveals Keegan Murray was sick in Kings\u2019 loss | NBC Sports California - BVM Sports PHX has allowed starting forwards 1% fewer points than average (likely on him: Miles Bridges, Dillon Brooks); Luke Kennard can switch onto him (PHX allowed forwards 15% fewer points with him playing; he plays tonight); Khaman Maluach can switch onto him (PHX allowed forwards 13% fewer points with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-18",
    "ticker": "KXNBAPTS-26NOV18UTALAL-LALSMAMUKELASHVILI54-10",
    "league": "nba",
    "player": "Sandro Mamukelashvili",
@@ -168096,10 +168156,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-19T02:30:00Z",
-   "p": 0.398,
+   "p": 0.448,
    "price": 0.43,
-   "edge": -0.049,
-   "news": "News: How Memphis Is DIFFERENT From Rest Of NBA + Wolves Winning Without Ant & Paul George\u2019s Renaissance - BVM Sports DEN has allowed starting forwards 3% more rebounds than average (likely on him: Trevon Brazile, Aaron Gordon).",
+   "edge": 0.001,
+   "news": "DEN has allowed starting forwards 3% more rebounds than average (likely on him: Trevon Brazile, Aaron Gordon).",
    "result": null
   },
   {
@@ -168114,7 +168174,7 @@
    "p": 0.552,
    "price": 0.58,
    "edge": -0.045,
-   "news": "News: How Memphis Is DIFFERENT From Rest Of NBA + Wolves Winning Without Ant & Paul George\u2019s Renaissance - BVM Sports DEN has allowed starting forwards 3% more rebounds than average (likely on him: Trevon Brazile, Aaron Gordon).",
+   "news": "DEN has allowed starting forwards 3% more rebounds than average (likely on him: Trevon Brazile, Aaron Gordon).",
    "result": null
   },
   {
@@ -170279,6 +170339,36 @@
   },
   {
    "date": "2026-11-18",
+   "ticker": "KXNBAREB-26NOV18PHXSAC-SACDCARDWELL32-6",
+   "league": "nba",
+   "player": "Dylan Cardwell",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 5.5,
+   "start": "2026-11-19T03:00:00Z",
+   "p": 0.499,
+   "price": 0.57,
+   "edge": -0.088,
+   "news": "Maxime Raynaud is out: Dylan Cardwell hit the over in 4/6 games without him vs 29/33 with him; PHX has allowed bench centers 2% more rebounds than average (likely on him: Khaman Maluach, Duop Reath); Rasheer Fleming can switch onto him (PHX allowed centers 14% fewer rebounds with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "KXNBAREB-26NOV18PHXSAC-SACDCARDWELL32-6",
+   "league": "nba",
+   "player": "Dylan Cardwell",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 5.5,
+   "start": "2026-11-19T03:00:00Z",
+   "p": 0.501,
+   "price": 0.48,
+   "edge": 0.004,
+   "news": "Maxime Raynaud is out: Dylan Cardwell hit the under in 2/6 games without him vs 4/33 with him; PHX has allowed bench centers 2% more rebounds than average (likely on him: Khaman Maluach, Duop Reath); Rasheer Fleming can switch onto him (PHX allowed centers 14% fewer rebounds with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-18",
    "ticker": "KXNBAREB-26NOV18PHXSAC-SACDHUNTER15-4",
    "league": "nba",
    "player": "De'Andre Hunter",
@@ -170305,6 +170395,36 @@
    "price": 0.42,
    "edge": 0.011,
    "news": "News: De'Andre Hunter Injury: Questionable for Wednesday - RotoWire PHX has allowed starting forwards 7% fewer rebounds than average (likely on him: Miles Bridges, Dillon Brooks); Khaman Maluach can switch onto him (PHX allowed forwards 13% fewer rebounds with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "KXNBAREB-26NOV18PHXSAC-SACKMURRAY13-4",
+   "league": "nba",
+   "player": "Keegan Murray",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-11-19T03:00:00Z",
+   "p": 0.451,
+   "price": 0.5,
+   "edge": -0.066,
+   "news": "News: Doug Christie reveals Keegan Murray was sick in Kings\u2019 loss | NBC Sports California - BVM Sports PHX has allowed starting forwards 7% fewer rebounds than average (likely on him: Miles Bridges, Dillon Brooks); Khaman Maluach can switch onto him (PHX allowed forwards 13% fewer rebounds with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "KXNBAREB-26NOV18PHXSAC-SACKMURRAY13-4",
+   "league": "nba",
+   "player": "Keegan Murray",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-11-19T03:00:00Z",
+   "p": 0.499,
+   "price": 0.56,
+   "edge": -0.078,
+   "news": "News: Doug Christie reveals Keegan Murray was sick in Kings\u2019 loss | NBC Sports California - BVM Sports PHX has allowed starting forwards 7% fewer rebounds than average (likely on him: Miles Bridges, Dillon Brooks); Khaman Maluach can switch onto him (PHX allowed forwards 13% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -170362,8 +170482,8 @@
    "line": 3.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.587,
-   "price": 0.62,
-   "edge": -0.049,
+   "price": 0.63,
+   "edge": -0.059,
    "news": "News: Zach LaVine (illness) removed from injury report - NBC Sports PHX has allowed starting guards 6% more rebounds than average (likely on him: Devin Booker, Jalen Green); Rasheer Fleming can switch onto him (PHX allowed guards 9% fewer rebounds with him playing; he plays tonight); Jordan Goodwin can switch onto him (PHX allowed guards 8% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -170916,10 +171036,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-19T02:30:00Z",
-   "p": 0.417,
+   "p": 0.467,
    "price": 0.46,
-   "edge": -0.06,
-   "news": "News: How Memphis Is DIFFERENT From Rest Of NBA + Wolves Winning Without Ant & Paul George\u2019s Renaissance - BVM Sports DEN has allowed starting forwards 27% fewer steals than average (likely on him: Trevon Brazile, Aaron Gordon); Cameron Johnson can switch onto him (DEN allowed forwards 31% fewer steals with him playing; he plays tonight); Marvin Bagley III can switch onto him (DEN allowed forwards 31% fewer steals with him playing; he plays tonight).",
+   "edge": -0.01,
+   "news": "DEN has allowed starting forwards 27% fewer steals than average (likely on him: Trevon Brazile, Aaron Gordon); Cameron Johnson can switch onto him (DEN allowed forwards 31% fewer steals with him playing; he plays tonight); Marvin Bagley III can switch onto him (DEN allowed forwards 31% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -170934,7 +171054,7 @@
    "p": 0.533,
    "price": 0.55,
    "edge": -0.034,
-   "news": "News: How Memphis Is DIFFERENT From Rest Of NBA + Wolves Winning Without Ant & Paul George\u2019s Renaissance - BVM Sports DEN has allowed starting forwards 27% fewer steals than average (likely on him: Trevon Brazile, Aaron Gordon); Cameron Johnson can switch onto him (DEN allowed forwards 31% fewer steals with him playing; he plays tonight); Marvin Bagley III can switch onto him (DEN allowed forwards 31% fewer steals with him playing; he plays tonight).",
+   "news": "DEN has allowed starting forwards 27% fewer steals than average (likely on him: Trevon Brazile, Aaron Gordon); Cameron Johnson can switch onto him (DEN allowed forwards 31% fewer steals with him playing; he plays tonight); Marvin Bagley III can switch onto him (DEN allowed forwards 31% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -171445,6 +171565,36 @@
    "price": 0.64,
    "edge": -0.067,
    "news": "SAC has allowed bench guards 19% more steals than average (likely on him: Emanuel Sharp, Malik Monk); Zach LaVine can switch onto him (SAC allowed guards 26% fewer steals with him playing; he plays tonight); De'Andre Hunter can switch onto him (SAC allowed guards 23% fewer steals with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "KXNBASTL-26NOV18UTALAL-LALMTHYBULLE26-2",
+   "league": "nba",
+   "player": "Matisse Thybulle",
+   "stat": "steals",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-19T03:00:00Z",
+   "p": 0.739,
+   "price": 0.6,
+   "edge": 0.122,
+   "news": "Austin Reaves is out: Matisse Thybulle hit the over in 4/4 games without him vs 8/12 with him; UTA has allowed starting guards 25% more steals than average.",
+   "result": null
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "KXNBASTL-26NOV18UTALAL-LALMTHYBULLE26-2",
+   "league": "nba",
+   "player": "Matisse Thybulle",
+   "stat": "steals",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-11-19T03:00:00Z",
+   "p": 0.261,
+   "price": 0.46,
+   "edge": -0.216,
+   "news": "Austin Reaves is out: Matisse Thybulle hit the under in 0/4 games without him vs 4/12 with him; UTA has allowed starting guards 25% more steals than average.",
    "result": null
   },
   {
