@@ -5183,7 +5183,7 @@
    "BetMGM": 82,
    "BetRivers": 78,
    "Caesars": 236,
-   "DraftKings": 242,
+   "DraftKings": 243,
    "FanDuel": 239,
    "Fanatics": 192,
    "Hard Rock Bet": 26,
@@ -5200,7 +5200,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 41
+  "kalshi_legs_today": 43
  },
  "shadow": [
   {
@@ -155197,9 +155197,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.67,
+   "p": 0.672,
    "price": 0.64,
-   "edge": 0.014,
+   "edge": 0.016,
    "news": "GG Jackson is out: Cedric Coward hit the over in 12/20 games without him vs 11/20 with him; GSW has allowed starting forwards 9% more threes than average (likely on him: Yaxel Lendeborg, Draymond Green); Stephen Curry can switch onto him (GSW allowed forwards 22% fewer threes with him playing; he is out tonight); Malevy Leons can switch onto him (GSW allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155212,9 +155212,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.33,
+   "p": 0.328,
    "price": 0.39,
-   "edge": -0.077,
+   "edge": -0.079,
    "news": "GG Jackson is out: Cedric Coward hit the under in 8/20 games without him vs 9/20 with him; GSW has allowed starting forwards 9% more threes than average (likely on him: Yaxel Lendeborg, Draymond Green); Stephen Curry can switch onto him (GSW allowed forwards 22% fewer threes with him playing; he is out tonight); Malevy Leons can switch onto him (GSW allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155258,8 +155258,8 @@
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.499,
-   "price": 0.47,
-   "edge": 0.012,
+   "price": 0.46,
+   "edge": 0.022,
    "news": "SAS has allowed starting centers 26% more threes than average; Victor Wembanyama can switch onto him (SAS allowed centers 11% fewer threes with him playing; he plays tonight); Harrison Barnes can switch onto him (SAS allowed centers 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155380,7 +155380,7 @@
    "p": 0.346,
    "price": 0.38,
    "edge": -0.05,
-   "news": "SAS has allowed bench guards 8% fewer threes than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "news": "SAS has allowed bench guards 8% fewer threes than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155395,7 +155395,7 @@
    "p": 0.654,
    "price": 0.64,
    "edge": -0.002,
-   "news": "SAS has allowed bench guards 8% fewer threes than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "news": "SAS has allowed bench guards 8% fewer threes than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155410,7 +155410,7 @@
    "p": 0.527,
    "price": 0.58,
    "edge": -0.07,
-   "news": "SAS has allowed bench guards 8% fewer threes than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "news": "SAS has allowed bench guards 8% fewer threes than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155425,7 +155425,7 @@
    "p": 0.473,
    "price": 0.45,
    "edge": 0.006,
-   "news": "SAS has allowed bench guards 8% fewer threes than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "news": "SAS has allowed bench guards 8% fewer threes than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 21% fewer threes with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155497,9 +155497,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.621,
+   "p": 0.623,
    "price": 0.54,
-   "edge": 0.064,
+   "edge": 0.066,
    "news": "Dylan Harper is out: Devin Vassell hit the over in 17/24 games without him vs 7/16 with him.",
    "result": null
   },
@@ -155512,9 +155512,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.379,
-   "price": 0.48,
-   "edge": -0.118,
+   "p": 0.377,
+   "price": 0.47,
+   "edge": -0.11,
    "news": "Dylan Harper is out: Devin Vassell hit the under in 7/24 games without him vs 9/16 with him.",
    "result": null
   },
@@ -155648,8 +155648,8 @@
    "line": 2.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.386,
-   "price": 0.4,
-   "edge": -0.031,
+   "price": 0.39,
+   "edge": -0.021,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -155663,8 +155663,8 @@
    "line": 2.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.614,
-   "price": 0.64,
-   "edge": -0.042,
+   "price": 0.65,
+   "edge": -0.052,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -155678,8 +155678,8 @@
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.668,
-   "price": 0.59,
-   "edge": 0.061,
+   "price": 0.6,
+   "edge": 0.051,
    "news": "Jaylen Clark is out: Ayo Dosunmu hit the over in 6/10 games without him vs 8/12 with him; Anthony Edwards is out: Ayo Dosunmu hit the over in 9/14 games without him vs 1/3 with him; Donte DiVincenzo is out: Ayo Dosunmu hit the over in 9/14 games without him vs 5/9 with him; NYK has allowed starting guards 2% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 26% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155693,8 +155693,8 @@
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.332,
-   "price": 0.43,
-   "edge": -0.115,
+   "price": 0.44,
+   "edge": -0.125,
    "news": "Jaylen Clark is out: Ayo Dosunmu hit the under in 4/10 games without him vs 4/12 with him; Anthony Edwards is out: Ayo Dosunmu hit the under in 5/14 games without him vs 2/3 with him; Donte DiVincenzo is out: Ayo Dosunmu hit the under in 5/14 games without him vs 4/9 with him; NYK has allowed starting guards 2% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 26% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155710,7 +155710,7 @@
    "p": 0.291,
    "price": 0.42,
    "edge": -0.146,
-   "news": "Injury report: Day-To-Day: Kuminga (shoulder) is questionable for Thursday's game against the Knicks, Charlie Walton of ZoneCoverage.com reports. NYK has allowed starting forwards 4% more threes than average (likely on him: OG Anunoby); Andre Drummond can switch onto him (NYK allowed forwards 40% fewer threes with him playing; he plays tonight); Tyler Kolek can switch onto him (NYK allowed forwards 24% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Questionable:  (official NBA report) NYK has allowed starting forwards 4% more threes than average (likely on him: OG Anunoby); Andre Drummond can switch onto him (NYK allowed forwards 40% fewer threes with him playing; he plays tonight); Tyler Kolek can switch onto him (NYK allowed forwards 24% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155725,7 +155725,7 @@
    "p": 0.629,
    "price": 0.59,
    "edge": 0.022,
-   "news": "Injury report: Day-To-Day: Kuminga (shoulder) is questionable for Thursday's game against the Knicks, Charlie Walton of ZoneCoverage.com reports. NYK has allowed starting forwards 4% more threes than average (likely on him: OG Anunoby); Andre Drummond can switch onto him (NYK allowed forwards 40% fewer threes with him playing; he plays tonight); Tyler Kolek can switch onto him (NYK allowed forwards 24% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Questionable:  (official NBA report) NYK has allowed starting forwards 4% more threes than average (likely on him: OG Anunoby); Andre Drummond can switch onto him (NYK allowed forwards 40% fewer threes with him playing; he plays tonight); Tyler Kolek can switch onto him (NYK allowed forwards 24% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -155768,8 +155768,8 @@
    "line": 3.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.576,
-   "price": 0.53,
-   "edge": 0.029,
+   "price": 0.54,
+   "edge": 0.019,
    "news": "Anthony Edwards is out: LaMelo Ball hit the over in 6/11 games without him vs 1/3 with him; NYK has allowed starting guards 2% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 26% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -155783,8 +155783,8 @@
    "line": 3.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.424,
-   "price": 0.48,
-   "edge": -0.073,
+   "price": 0.51,
+   "edge": -0.103,
    "news": "Anthony Edwards is out: LaMelo Ball hit the under in 5/11 games without him vs 2/3 with him; NYK has allowed starting guards 2% fewer threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 26% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -156023,8 +156023,8 @@
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.419,
-   "price": 0.4,
-   "edge": 0.002,
+   "price": 0.39,
+   "edge": 0.012,
    "news": "MIN has allowed starting forwards 15% fewer threes than average (likely on him: Joan Beringer, Jaden McDaniels); Anthony Edwards can switch onto him (MIN allowed forwards 24% fewer threes with him playing; he is out tonight); Joan Beringer can switch onto him (MIN allowed forwards 15% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -156190,7 +156190,7 @@
    "p": 0.523,
    "price": 0.62,
    "edge": -0.113,
-   "news": "Injury report: Day-To-Day: Avdija (foot) is listed as questionable ahead of Thursday's game against Milwaukee. MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 14% more threes than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Gary Trent Jr. can switch onto him (MIL allowed forwards 16% fewer threes with him playing; he plays tonight); Kasparas Jakucionis can switch onto him (MIL allowed forwards 13% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Questionable:  (official NBA report) MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 14% more threes than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Gary Trent Jr. can switch onto him (MIL allowed forwards 16% fewer threes with him playing; he plays tonight); Kasparas Jakucionis can switch onto him (MIL allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156205,7 +156205,7 @@
    "p": 0.387,
    "price": 0.44,
    "edge": -0.07,
-   "news": "Injury report: Day-To-Day: Avdija (foot) is listed as questionable ahead of Thursday's game against Milwaukee. MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 14% more threes than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Gary Trent Jr. can switch onto him (MIL allowed forwards 16% fewer threes with him playing; he plays tonight); Kasparas Jakucionis can switch onto him (MIL allowed forwards 13% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Questionable:  (official NBA report) MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 14% more threes than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Gary Trent Jr. can switch onto him (MIL allowed forwards 16% fewer threes with him playing; he plays tonight); Kasparas Jakucionis can switch onto him (MIL allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156323,8 +156323,8 @@
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.609,
-   "price": 0.53,
-   "edge": 0.062,
+   "price": 0.54,
+   "edge": 0.052,
    "news": "Chris Youngblood is out: Scoot Henderson hit the under in 9/11 games without him vs 1/3 with him; Vit Krejci is out: Scoot Henderson hit the under in 10/15 games without him vs 8/16 with him; Ja Morant is out: Scoot Henderson hit the under in 3/5 games without him vs 6/6 with him; Shaedon Sharpe is out: Scoot Henderson hit the under in 18/31 games without him vs 6/9 with him; MIL has allowed starting guards 8% more threes than average (likely on him: Tyler Herro, Brayden Burries); Jaime Jaquez Jr. can switch onto him (MIL allowed guards 12% fewer threes with him playing; he plays tonight); Kasparas Jakucionis can switch onto him (MIL allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -156340,7 +156340,7 @@
    "p": 0.398,
    "price": 0.49,
    "edge": -0.109,
-   "news": "Injury report: Day-To-Day: Camara is questionable to play Thursday against the Bucks due to general soreness. MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 14% more threes than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Gary Trent Jr. can switch onto him (MIL allowed forwards 16% fewer threes with him playing; he plays tonight); Kasparas Jakucionis can switch onto him (MIL allowed forwards 13% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Questionable: Injury/Illness - Abdominal Soreness (official NBA report) MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 14% more threes than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Gary Trent Jr. can switch onto him (MIL allowed forwards 16% fewer threes with him playing; he plays tonight); Kasparas Jakucionis can switch onto him (MIL allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156355,7 +156355,7 @@
    "p": 0.512,
    "price": 0.55,
    "edge": -0.055,
-   "news": "Injury report: Day-To-Day: Camara is questionable to play Thursday against the Bucks due to general soreness. MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 14% more threes than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Gary Trent Jr. can switch onto him (MIL allowed forwards 16% fewer threes with him playing; he plays tonight); Kasparas Jakucionis can switch onto him (MIL allowed forwards 13% fewer threes with him playing; he plays tonight).",
+   "news": "Injury report: Questionable: Injury/Illness - Abdominal Soreness (official NBA report) MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 14% more threes than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Gary Trent Jr. can switch onto him (MIL allowed forwards 16% fewer threes with him playing; he plays tonight); Kasparas Jakucionis can switch onto him (MIL allowed forwards 13% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156487,9 +156487,9 @@
    "side": "over",
    "line": 7.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.395,
+   "p": 0.398,
    "price": 0.48,
-   "edge": -0.102,
+   "edge": -0.099,
    "news": "Dylan Harper is out: Stephon Castle hit the over in 3/21 games without him vs 5/19 with him.",
    "result": null
   },
@@ -156502,9 +156502,9 @@
    "side": "under",
    "line": 7.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.605,
+   "p": 0.602,
    "price": 0.53,
-   "edge": 0.058,
+   "edge": 0.055,
    "news": "Dylan Harper is out: Stephon Castle hit the under in 18/21 games without him vs 14/19 with him.",
    "result": null
   },
@@ -156563,8 +156563,8 @@
    "line": 3.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.399,
-   "price": 0.44,
-   "edge": -0.058,
+   "price": 0.43,
+   "edge": -0.048,
    "news": "Jaylen Clark is out: Ayo Dosunmu hit the under in 4/10 games without him vs 6/12 with him; Anthony Edwards is out: Ayo Dosunmu hit the under in 8/14 games without him vs 2/3 with him; Donte DiVincenzo is out: Ayo Dosunmu hit the under in 7/14 games without him vs 4/9 with him; NYK has allowed starting guards 6% fewer assists than average (likely on him: Jalen Brunson, Josh Hart); Landry Shamet can switch onto him (NYK allowed guards 13% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -156593,8 +156593,8 @@
    "line": 5.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.496,
-   "price": 0.43,
-   "edge": 0.049,
+   "price": 0.45,
+   "edge": 0.029,
    "news": "Anthony Edwards is out: LaMelo Ball hit the under in 5/11 games without him vs 1/3 with him; NYK has allowed starting guards 6% fewer assists than average (likely on him: Jalen Brunson, Josh Hart); Landry Shamet can switch onto him (NYK allowed guards 13% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -156623,8 +156623,8 @@
    "line": 5.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.434,
-   "price": 0.48,
-   "edge": -0.063,
+   "price": 0.47,
+   "edge": -0.053,
    "news": "News: Jalen Brunson\u2019s late-game Knicks heroics came with an all-too-familiar injury scare - New York Post MIN's G Jaylen Clark is out, an easier matchup; MIN has allowed starting guards 3% fewer assists than average (likely on him: Ayo Dosunmu, LaMelo Ball); Ayo Dosunmu can switch onto him (MIN allowed guards 9% fewer assists with him playing; he plays tonight); LaMelo Ball can switch onto him (MIN allowed guards 9% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -156683,8 +156683,8 @@
    "line": 3.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.515,
-   "price": 0.47,
-   "edge": 0.028,
+   "price": 0.48,
+   "edge": 0.018,
    "news": "MIN has allowed starting centers 14% more assists than average (likely on him: Rudy Gobert); Jonathan Kuminga can switch onto him (MIN allowed centers 28% fewer assists with him playing; he plays tonight); Trey Lyles can switch onto him (MIN allowed centers 26% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -156760,7 +156760,7 @@
    "p": 0.463,
    "price": 0.5,
    "edge": -0.054,
-   "news": "Injury report: Day-To-Day: Avdija (foot) is listed as questionable ahead of Thursday's game against Milwaukee. MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 13% more assists than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Kasparas Jakucionis can switch onto him (MIL allowed forwards 22% fewer assists with him playing; he plays tonight); Ryan Rollins can switch onto him (MIL allowed forwards 12% fewer assists with him playing; he is out tonight).",
+   "news": "Injury report: Questionable:  (official NBA report) MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 13% more assists than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Kasparas Jakucionis can switch onto him (MIL allowed forwards 22% fewer assists with him playing; he plays tonight); Ryan Rollins can switch onto him (MIL allowed forwards 12% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -156775,7 +156775,7 @@
    "p": 0.447,
    "price": 0.52,
    "edge": -0.09,
-   "news": "Injury report: Day-To-Day: Avdija (foot) is listed as questionable ahead of Thursday's game against Milwaukee. MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 13% more assists than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Kasparas Jakucionis can switch onto him (MIL allowed forwards 22% fewer assists with him playing; he plays tonight); Ryan Rollins can switch onto him (MIL allowed forwards 12% fewer assists with him playing; he is out tonight).",
+   "news": "Injury report: Questionable:  (official NBA report) MIL's F Ousmane Dieng is out, an easier matchup; MIL has allowed starting forwards 13% more assists than average (likely on him: Jaime Jaquez Jr., Kyle Kuzma); Kasparas Jakucionis can switch onto him (MIL allowed forwards 22% fewer assists with him playing; he plays tonight); Ryan Rollins can switch onto him (MIL allowed forwards 12% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -156863,8 +156863,8 @@
    "line": 14.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.459,
-   "price": 0.54,
-   "edge": -0.098,
+   "price": 0.52,
+   "edge": -0.078,
    "news": "MEM's F GG Jackson is out, an easier matchup; MEM has allowed starting forwards 3% more pra than average (likely on him: Cameron Boozer, Cedric Coward); Ty Jerome can switch onto him (MEM allowed forwards 11% fewer pra with him playing; he is out tonight).",
    "result": null
   },
@@ -156877,9 +156877,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.476,
+   "p": 0.477,
    "price": 0.54,
-   "edge": -0.081,
+   "edge": -0.08,
    "news": "SAS has allowed starting guards 8% fewer pra than average (likely on him: Devin Vassell, Stephon Castle); Carter Bryant can switch onto him (SAS allowed guards 13% fewer pra with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 10% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -156892,9 +156892,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.524,
+   "p": 0.523,
    "price": 0.5,
-   "edge": 0.007,
+   "edge": 0.006,
    "news": "SAS has allowed starting guards 8% fewer pra than average (likely on him: Devin Vassell, Stephon Castle); Carter Bryant can switch onto him (SAS allowed guards 13% fewer pra with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 10% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -156910,7 +156910,7 @@
    "p": 0.44,
    "price": 0.49,
    "edge": -0.067,
-   "news": "SAS has allowed bench guards 4% fewer pra than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie); Carter Bryant can switch onto him (SAS allowed guards 13% fewer pra with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 10% fewer pra with him playing; he plays tonight); minutes trending down (we project 24, his last 5 avg 22 vs 25 over 15).",
+   "news": "SAS has allowed bench guards 4% fewer pra than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 13% fewer pra with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 10% fewer pra with him playing; he plays tonight); minutes trending down (we project 24, his last 5 avg 22 vs 25 over 15).",
    "result": null
   },
   {
@@ -156925,7 +156925,7 @@
    "p": 0.56,
    "price": 0.55,
    "edge": -0.007,
-   "news": "SAS has allowed bench guards 4% fewer pra than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie); Carter Bryant can switch onto him (SAS allowed guards 13% fewer pra with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 10% fewer pra with him playing; he plays tonight); minutes trending down (we project 24, his last 5 avg 22 vs 25 over 15).",
+   "news": "SAS has allowed bench guards 4% fewer pra than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 13% fewer pra with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 10% fewer pra with him playing; he plays tonight); minutes trending down (we project 24, his last 5 avg 22 vs 25 over 15).",
    "result": null
   },
   {
@@ -156983,8 +156983,8 @@
    "line": 24.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.506,
-   "price": 0.51,
-   "edge": -0.021,
+   "price": 0.5,
+   "edge": -0.011,
    "news": "NYK has allowed starting forwards 0% more pra than average (likely on him: OG Anunoby); Mohamed Diawara can switch onto him (NYK allowed forwards 13% fewer pra with him playing; he plays tonight); Andre Drummond can switch onto him (NYK allowed forwards 13% fewer pra with him playing; he plays tonight); those defenders hold shooters 3.6% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -157013,8 +157013,8 @@
    "line": 29.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.511,
-   "price": 0.52,
-   "edge": -0.026,
+   "price": 0.53,
+   "edge": -0.036,
    "news": "Jaylen Clark is out: LaMelo Ball hit the under in 6/7 games without him vs 4/9 with him; Anthony Edwards is out: LaMelo Ball hit the under in 5/11 games without him vs 3/3 with him; NYK has allowed starting guards 8% fewer pra than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 14% fewer pra with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -157118,8 +157118,8 @@
    "line": 9.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.58,
-   "price": 0.5,
-   "edge": 0.062,
+   "price": 0.48,
+   "edge": 0.083,
    "news": "Isaiah Stewart is out: Zach Edey hit the over in 4/5 games without him vs 1/6 with him; GSW's C Al Horford is out, an easier matchup; GSW has allowed starting centers 9% fewer points than average (likely on him: Charles Bassey).",
    "result": null
   },
@@ -157133,8 +157133,8 @@
    "line": 9.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.42,
-   "price": 0.59,
-   "edge": -0.187,
+   "price": 0.57,
+   "edge": -0.167,
    "news": "Isaiah Stewart is out: Zach Edey hit the under in 1/5 games without him vs 5/6 with him; GSW's C Al Horford is out, an easier matchup; GSW has allowed starting centers 9% fewer points than average (likely on him: Charles Bassey).",
    "result": null
   },
@@ -157207,9 +157207,9 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.466,
+   "p": 0.469,
    "price": 0.55,
-   "edge": -0.101,
+   "edge": -0.098,
    "news": "News: Spurs make critical De'Aaron Fox injury status update vs. Pistons - BasketNews.com Dylan Harper is out: De'Aaron Fox hit the over in 16/27 games without him vs 7/13 with him; minutes trending down (we project 28, his last 5 avg 27 vs 30 over 15).",
    "result": null
   },
@@ -157222,9 +157222,9 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.484,
+   "p": 0.481,
    "price": 0.47,
-   "edge": -0.003,
+   "edge": -0.006,
    "news": "News: Spurs make critical De'Aaron Fox injury status update vs. Pistons - BasketNews.com Dylan Harper is out: De'Aaron Fox hit the under in 11/27 games without him vs 6/13 with him; minutes trending down (we project 28, his last 5 avg 27 vs 30 over 15).",
    "result": null
   },
@@ -157237,9 +157237,9 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.498,
+   "p": 0.499,
    "price": 0.51,
-   "edge": -0.029,
+   "edge": -0.028,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -157252,9 +157252,9 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.502,
+   "p": 0.501,
    "price": 0.5,
-   "edge": -0.015,
+   "edge": -0.017,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -157358,8 +157358,8 @@
    "line": 19.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.592,
-   "price": 0.57,
-   "edge": 0.005,
+   "price": 0.55,
+   "edge": 0.025,
    "news": "Ryan Rollins is out: Tyler Herro hit the over in 6/9 games without him vs 3/6 with him; POR has allowed starting guards 0% more points than average (likely on him: Sidy Cissoko, Damian Lillard).",
    "result": null
   },
@@ -157373,8 +157373,8 @@
    "line": 19.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.408,
-   "price": 0.49,
-   "edge": -0.099,
+   "price": 0.48,
+   "edge": -0.089,
    "news": "Ryan Rollins is out: Tyler Herro hit the under in 3/9 games without him vs 3/6 with him; POR has allowed starting guards 0% more points than average (likely on him: Sidy Cissoko, Damian Lillard).",
    "result": null
   },
@@ -157478,8 +157478,8 @@
    "line": 7.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.607,
-   "price": 0.53,
-   "edge": 0.06,
+   "price": 0.51,
+   "edge": 0.08,
    "news": "Isaiah Stewart is out: Zach Edey hit the over in 3/5 games without him vs 2/6 with him; GSW's C Al Horford is out, an easier matchup; GSW has allowed starting centers 2% more rebounds than average (likely on him: Charles Bassey); Malevy Leons can switch onto him (GSW allowed centers 8% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -157597,10 +157597,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.443,
+   "p": 0.442,
    "price": 0.47,
-   "edge": -0.044,
-   "news": "SAS has allowed bench guards 8% more rebounds than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie); Carter Bryant can switch onto him (SAS allowed guards 18% fewer rebounds with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 14% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.045,
+   "news": "SAS has allowed bench guards 8% more rebounds than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 18% fewer rebounds with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -157612,10 +157612,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.557,
+   "p": 0.558,
    "price": 0.54,
-   "edge": -0.0,
-   "news": "SAS has allowed bench guards 8% more rebounds than average (likely on him: Jordan McLaughlin, Ja'Kobi Gillespie); Carter Bryant can switch onto him (SAS allowed guards 18% fewer rebounds with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 14% fewer rebounds with him playing; he plays tonight).",
+   "edge": 0.001,
+   "news": "SAS has allowed bench guards 8% more rebounds than average (likely on him: Jordan McLaughlin); Carter Bryant can switch onto him (SAS allowed guards 18% fewer rebounds with him playing; he plays tonight); Jordan McLaughlin can switch onto him (SAS allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -157657,9 +157657,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.593,
-   "price": 0.6,
-   "edge": -0.024,
+   "p": 0.594,
+   "price": 0.61,
+   "edge": -0.033,
    "news": "Dylan Harper is out: Devin Vassell hit the over in 19/24 games without him vs 12/16 with him.",
    "result": null
   },
@@ -157672,9 +157672,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.407,
+   "p": 0.406,
    "price": 0.42,
-   "edge": -0.03,
+   "edge": -0.031,
    "news": "Dylan Harper is out: Devin Vassell hit the under in 5/24 games without him vs 4/16 with him.",
    "result": null
   },
@@ -157793,8 +157793,8 @@
    "line": 11.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.462,
-   "price": 0.46,
-   "edge": -0.015,
+   "price": 0.48,
+   "edge": -0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -157810,7 +157810,7 @@
    "p": 0.356,
    "price": 0.48,
    "edge": -0.141,
-   "news": "Injury report: Day-To-Day: Kuminga (shoulder) is questionable for Thursday's game against the Knicks, Charlie Walton of ZoneCoverage.com reports. NYK has allowed starting forwards 2% fewer rebounds than average (likely on him: OG Anunoby); Tyler Kolek can switch onto him (NYK allowed forwards 13% fewer rebounds with him playing; he plays tonight); Mohamed Diawara can switch onto him (NYK allowed forwards 13% fewer rebounds with him playing; he plays tonight).",
+   "news": "Injury report: Questionable:  (official NBA report) NYK has allowed starting forwards 2% fewer rebounds than average (likely on him: OG Anunoby); Tyler Kolek can switch onto him (NYK allowed forwards 13% fewer rebounds with him playing; he plays tonight); Mohamed Diawara can switch onto him (NYK allowed forwards 13% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -157823,9 +157823,9 @@
    "line": 5.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.564,
-   "price": 0.55,
-   "edge": -0.003,
-   "news": "Injury report: Day-To-Day: Kuminga (shoulder) is questionable for Thursday's game against the Knicks, Charlie Walton of ZoneCoverage.com reports. NYK has allowed starting forwards 2% fewer rebounds than average (likely on him: OG Anunoby); Tyler Kolek can switch onto him (NYK allowed forwards 13% fewer rebounds with him playing; he plays tonight); Mohamed Diawara can switch onto him (NYK allowed forwards 13% fewer rebounds with him playing; he plays tonight).",
+   "price": 0.53,
+   "edge": 0.017,
+   "news": "Injury report: Questionable:  (official NBA report) NYK has allowed starting forwards 2% fewer rebounds than average (likely on him: OG Anunoby); Tyler Kolek can switch onto him (NYK allowed forwards 13% fewer rebounds with him playing; he plays tonight); Mohamed Diawara can switch onto him (NYK allowed forwards 13% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -158096,6 +158096,36 @@
    "price": 0.51,
    "edge": -0.076,
    "news": "Chris Youngblood is out: Sidy Cissoko hit the under in 4/8 games without him vs 4/4 with him; Ja Morant is out: Sidy Cissoko hit the under in 5/6 games without him vs 3/6 with him; Shaedon Sharpe is out: Sidy Cissoko hit the under in 17/27 games without him vs 11/13 with him; MIL has allowed starting guards 4% more rebounds than average (likely on him: Tyler Herro, Brayden Burries); Jaime Jaquez Jr. can switch onto him (MIL allowed guards 15% fewer rebounds with him playing; he plays tonight); Brayden Burries can switch onto him (MIL allowed guards 14% fewer rebounds with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "KXNBASTL-26NOV19GSWMEM-MEMCCOWARD23-2",
+   "league": "nba",
+   "player": "Cedric Coward",
+   "stat": "steals",
+   "side": "over",
+   "line": 1.5,
+   "start": "2026-11-20T01:00:00Z",
+   "p": 0.507,
+   "price": 0.39,
+   "edge": 0.1,
+   "news": "GG Jackson is out: Cedric Coward hit the over in 7/20 games without him vs 4/20 with him; GSW has allowed starting forwards 0% fewer steals than average (likely on him: Yaxel Lendeborg, Draymond Green); Brandon Williams can switch onto him (GSW allowed forwards 28% fewer steals with him playing; he is out tonight); Stephen Curry can switch onto him (GSW allowed forwards 23% fewer steals with him playing; he is out tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "KXNBASTL-26NOV19GSWMEM-MEMCCOWARD23-2",
+   "league": "nba",
+   "player": "Cedric Coward",
+   "stat": "steals",
+   "side": "under",
+   "line": 1.5,
+   "start": "2026-11-20T01:00:00Z",
+   "p": 0.492,
+   "price": 0.69,
+   "edge": -0.213,
+   "news": "GG Jackson is out: Cedric Coward hit the under in 13/20 games without him vs 16/20 with him; GSW has allowed starting forwards 0% fewer steals than average (likely on him: Yaxel Lendeborg, Draymond Green); Brandon Williams can switch onto him (GSW allowed forwards 28% fewer steals with him playing; he is out tonight); Stephen Curry can switch onto him (GSW allowed forwards 23% fewer steals with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -158377,9 +158407,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-20T01:15:00Z",
-   "p": 0.374,
+   "p": 0.378,
    "price": 0.36,
-   "edge": -0.002,
+   "edge": 0.002,
    "news": "IND's DT Jerry Tillery is out, an easier matchup; IND's CB Charvarius Ward is out, an easier matchup.",
    "result": null
   },
@@ -158392,9 +158422,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-20T01:15:00Z",
-   "p": 0.606,
+   "p": 0.602,
    "price": 0.65,
-   "edge": -0.06,
+   "edge": -0.064,
    "news": "IND's DT Jerry Tillery is out, an easier matchup; IND's CB Charvarius Ward is out, an easier matchup.",
    "result": null
   },
