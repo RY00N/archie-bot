@@ -1,10 +1,28 @@
 {
- "updated": "2026-11-18T12:07:55+00:00",
+ "updated": "2026-11-19T03:07:50+00:00",
  "window": [
   "2026-11-18",
-  "2026-11-20"
+  "2026-12-09"
  ],
  "symbols": {
+  "ADBE": {
+   "date": "2026-12-09",
+   "hour": "amc",
+   "eps_est": 6.4551,
+   "trading_days": 15
+  },
+  "AVGO": {
+   "date": "2026-12-09",
+   "hour": "amc",
+   "eps_est": 3.8912,
+   "trading_days": 15
+  },
+  "CRM": {
+   "date": "2026-12-02",
+   "hour": "amc",
+   "eps_est": 3.4724,
+   "trading_days": 10
+  },
   "WMT": {
    "date": "2026-11-19",
    "hour": "bmo",
