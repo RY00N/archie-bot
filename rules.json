@@ -241,6 +241,8 @@
     "max_opt_pct": 0.65,
     "skip_trade_mult": 0.5,
     "min_qty": 1,
+    "big_gap_mult": 0.5,
+    "big_gap_pct": 1.5,
     "entry_retries": 3,
     "entry_wait_min": 1,
     "entry_chase_pad_pct": 2,

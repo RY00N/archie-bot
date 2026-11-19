@@ -107,6 +107,8 @@ def signal(bot, c, today, now_m):
         pd = [b for b in prev if b[0] == prev[-1][0]] if prev else []
         rng = (max(b[3] for b in pd) - min(b[4] for b in pd)) / pd[-1][5] * 100 if pd else 0
         _last["prev_rng"] = rng if pd else None
+        pdr = [b for b in pd if 570 <= b[1] < 960]  # 11/19 lab: gap = 9:30 open vs prior regular-session close
+        _last["gap"] = (day[0][2] / pdr[-1][5] - 1) * 100 if pdr and day[0][1] == 570 else None
         if pd and rng > c.get("max_prev_range_pct", 99):  # high - low (10/18 fix: was low - close)
             fz = c.get("fade_range")  # 11/05 Ryan "no skipping trading days": wide-range days fade the first 5 min instead
             if fz and fz["min"] < rng <= fz["max"]:
@@ -346,6 +348,9 @@ def step(bot, log):
     pr = _last.get("prev_rng")
     if c.get("calm_mult") and not _shares(c) and pr is not None and pr < c.get("calm_range_pct", 1.0):
         mult *= c["calm_mult"]; why += f" (calm yesterday: {pr:.2f}% range, size x{c['calm_mult']})"  # 11/16 lab
+    g = _last.get("gap")
+    if c.get("big_gap_mult") and not _shares(c) and g is not None and abs(g) >= c.get("big_gap_pct", 1.5):
+        mult *= c["big_gap_mult"]; why += f" (big gap {g:+.1f}%, size x{c['big_gap_mult']})"  # 11/19 lab
     unit = 1 if _shares(c) else 100
     qty = int(c["size"] * mult // (ask * unit)) if ask > 0 else 0
     if _shares(c) and ask > 0:  # 10/23: shares mode puts the whole $1k book in each trade (backtest: +78% in 2024-25, dd 9%)
