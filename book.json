@@ -5174,7 +5174,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-18 18:00 PT",
-  "props_today": 299,
+  "props_today": 301,
   "kalshi_props_today": 168,
   "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
@@ -160882,8 +160882,8 @@
    "line": 1.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.615,
-   "price": 0.6,
-   "edge": -0.002,
+   "price": 0.59,
+   "edge": 0.008,
    "news": "SAC has allowed starting guards 26% more threes than average (likely on him: Darius Acuff Jr., Zach LaVine); Domantas Sabonis can switch onto him (SAC allowed guards 18% fewer threes with him playing; he plays tonight); Keegan Murray can switch onto him (SAC allowed guards 15% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -161002,8 +161002,8 @@
    "line": 3.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.644,
-   "price": 0.63,
-   "edge": -0.002,
+   "price": 0.62,
+   "edge": 0.008,
    "news": "PHX has allowed starting guards 4% more threes than average (likely on him: Devin Booker, Jalen Green); Rasheer Fleming can switch onto him (PHX allowed guards 13% fewer threes with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -161362,8 +161362,8 @@
    "line": 2.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.597,
-   "price": 0.58,
-   "edge": -0.0,
+   "price": 0.59,
+   "edge": -0.01,
    "news": "News: Utah Jazz's Keyonte George Dealing With Hidden Injury Concerns - Sports Illustrated LAL has allowed starting guards 11% fewer threes than average (likely on him: Quentin Grimes, Luka Doncic).",
    "result": null
   },
@@ -163897,8 +163897,8 @@
    "line": 1.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.526,
-   "price": 0.58,
-   "edge": -0.071,
+   "price": 0.57,
+   "edge": -0.061,
    "news": "News: Lakers Injury Report: Austin Reaves, Walker Kessler Injury and Status vs. Jazz - Sports Illustrated UTA has allowed starting centers 25% more blocks than average.",
    "result": null
   },
@@ -165487,8 +165487,8 @@
    "line": 19.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.484,
-   "price": 0.47,
-   "edge": -0.003,
+   "price": 0.48,
+   "edge": -0.013,
    "news": "SAC has allowed starting forwards 4% more pra than average (likely on him: Leaky Black, Domantas Sabonis); minutes trending down (we project 28, his last 5 avg 25 vs 30 over 15).",
    "result": null
   },
@@ -165622,8 +165622,8 @@
    "line": 19.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.488,
-   "price": 0.54,
-   "edge": -0.069,
+   "price": 0.55,
+   "edge": -0.079,
    "news": "News: De'Andre Hunter Injury: Questionable for Wednesday - RotoWire PHX has allowed starting forwards 2% fewer pra than average (likely on him: Miles Bridges, Dillon Brooks); Khaman Maluach can switch onto him (PHX allowed forwards 12% fewer pra with him playing; he plays tonight); Luke Kennard can switch onto him (PHX allowed forwards 10% fewer pra with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 36 vs 30 over 15).",
    "result": null
   },
@@ -170407,8 +170407,8 @@
    "line": 3.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.431,
-   "price": 0.43,
-   "edge": -0.016,
+   "price": 0.44,
+   "edge": -0.026,
    "news": "LAL has allowed bench guards 5% more rebounds than average (likely on him: Quentin Grimes, Collin Sexton).",
    "result": null
   },
