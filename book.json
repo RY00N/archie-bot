@@ -5176,7 +5176,7 @@
   "props_at": "2026-11-19 02:00 PT",
   "props_today": 606,
   "kalshi_props_today": 157,
-  "kalshi_priced_today": 11,
+  "kalshi_priced_today": 10,
   "books_on_kalshi_props": {
    "AN Consensus": 156,
    "AN Open": 157,
@@ -5186,7 +5186,7 @@
    "DraftKings": 157,
    "FanDuel": 151,
    "Fanatics": 121,
-   "Hard Rock Bet": 26,
+   "Hard Rock Bet": 25,
    "Parx": 92,
    "Pinnacle": 43,
    "Sleeper": 157,
@@ -5200,7 +5200,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 25
+  "kalshi_legs_today": 24
  },
  "shadow": [
   {
@@ -155917,9 +155917,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.502,
+   "p": 0.503,
    "price": 0.5,
-   "edge": -0.015,
+   "edge": -0.014,
    "news": "POR's C Robert Williams III is out, an easier matchup; POR has allowed starting centers 12% more threes than average (likely on him: Donovan Clingan).",
    "result": null
   },
@@ -155932,9 +155932,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-20T01:00:00Z",
-   "p": 0.488,
+   "p": 0.487,
    "price": 0.59,
-   "edge": -0.119,
+   "edge": -0.12,
    "news": "POR's C Robert Williams III is out, an easier matchup; POR has allowed starting centers 12% more threes than average (likely on him: Donovan Clingan).",
    "result": null
   },
@@ -156623,8 +156623,8 @@
    "line": 5.5,
    "start": "2026-11-20T01:00:00Z",
    "p": 0.58,
-   "price": 0.67,
-   "edge": -0.105,
+   "price": 0.79,
+   "edge": -0.222,
    "news": "SAS has allowed starting centers 3% fewer rebounds than average; Victor Wembanyama can switch onto him (SAS allowed centers 21% fewer rebounds with him playing; he plays tonight); Carter Bryant can switch onto him (SAS allowed centers 13% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -157387,9 +157387,9 @@
    "side": "over",
    "line": 4.5,
    "start": "2026-11-20T01:15:00Z",
-   "p": 0.582,
+   "p": 0.581,
    "price": 0.57,
-   "edge": -0.005,
+   "edge": -0.006,
    "news": "Marvin Harrison Jr. (WR) is out, so Nico Collins's role likely grows; IND's CB Charvarius Ward is out, an easier matchup.",
    "result": null
   },
@@ -157402,9 +157402,9 @@
    "side": "under",
    "line": 4.5,
    "start": "2026-11-20T01:15:00Z",
-   "p": 0.378,
+   "p": 0.379,
    "price": 0.45,
-   "edge": -0.089,
+   "edge": -0.088,
    "news": "Marvin Harrison Jr. (WR) is out, so Nico Collins's role likely grows; IND's CB Charvarius Ward is out, an easier matchup.",
    "result": null
   },
