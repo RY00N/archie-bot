@@ -231,11 +231,34 @@ def step(bot, log):
                 o.update({"state": "open", "entry": float(od["filled_avg_price"]), "qty": int(float(od["filled_qty"]))})
                 o["stop"] = round(o["entry"] * (1 - (c.get("share_stop_pct", 15) if o.get("mult") == 1 else c["stop_pct"]) / 100), 2); o["peak"] = o["entry"]
                 log(f"OPT filled {o['qty']} {o['symbol']} @ {o['entry']}")
-            elif od["status"] in ("canceled", "expired", "rejected") or m - o["sent_min"] >= 2:
+            elif od["status"] in ("canceled", "expired", "rejected") or m - o["sent_min"] >= c.get("entry_wait_min", 2):
                 if od["status"] not in ("canceled", "expired", "rejected"):
                     bot.trade("DELETE", f"/v2/orders/{o['order_id']}")
-                log(f"OPT entry not filled ({od['status']}), skipped")
-                st["open"] = None
+                    time.sleep(1)
+                    try:
+                        od = bot.trade("GET", f"/v2/orders/{o['order_id']}")
+                    except Exception:
+                        pass
+                fq = int(float(od.get("filled_qty") or 0))
+                if fq > 0:  # partial fill: keep what filled
+                    o.update({"state": "open", "entry": float(od["filled_avg_price"]), "qty": fq})
+                    o["stop"] = round(o["entry"] * (1 - (c.get("share_stop_pct", 15) if o.get("mult") == 1 else c["stop_pct"]) / 100), 2); o["peak"] = o["entry"]
+                    log(f"OPT part-filled {fq} {o['symbol']} @ {o['entry']}")
+                elif o.get("tries", 0) < c.get("entry_retries", 0) and od["status"] == "canceled":
+                    # 11/19: a 27-lot at the 9:35 ask went unfilled on a 2% gap day; chase the fresh ask a few times
+                    _, a2 = _quote(bot, o["symbol"])
+                    first = o.get("first_ask") or o.get("limit") or a2
+                    if 0 < a2 <= first * (1 + c.get("entry_chase_max_pct", 15) / 100):
+                        lim = round(a2 * (1 + c.get("entry_chase_pad_pct", 2) / 100), 2)
+                        od2 = bot.trade("POST", "/v2/orders", body={"symbol": o["symbol"], "qty": str(o["qty"]), "side": "buy", "type": "limit",
+                                                                    "limit_price": f"{lim:.2f}", "time_in_force": "day"})
+                        o.update({"order_id": od2["id"], "sent_min": m, "tries": o.get("tries", 0) + 1, "first_ask": first, "limit": lim})
+                        log(f"OPT entry re-sent {o['qty']} {o['symbol']} limit {lim:.2f} (try {o['tries']})")
+                    else:
+                        log(f"OPT entry not filled, ask ran to {a2:.2f} from {first:.2f}, skipped"); st["open"] = None
+                else:
+                    log(f"OPT entry not filled ({od['status']}), skipped")
+                    st["open"] = None
             save(st)
             return
         if o.get("state") == "closing":
@@ -351,7 +374,7 @@ def step(bot, log):
         log(f"OPT {st['why_done']}"); save(st); return
     od = bot.trade("POST", "/v2/orders", body={"symbol": osym, "qty": str(qty), "side": "buy", "type": "limit",
                                                 "limit_price": f"{ask:.2f}", "time_in_force": "day"})
-    st["open"] = {"state": "pending", "order_id": od["id"], "symbol": osym, "side": ("up" if side > 0 else "down") if _shares(c) else "call" if side > 0 else "put", "mult": unit,
+    st["open"] = {"state": "pending", "order_id": od["id"], "symbol": osym, "first_ask": ask, "limit": ask, "side": ("up" if side > 0 else "down") if _shares(c) else "call" if side > 0 else "put", "mult": unit,
                   "why": why, "qty": qty, "sent_min": m, "entry_min": m, "entry_time": now.isoformat()[:16],
                   "hold": c.get("disagree_hold_min", c["max_hold_min"]) if agree is False else c["max_hold_min"]}
     st["trades"] += 1

@@ -111,7 +111,7 @@ def exit(osym, bid, how, log):
         log(f"LIVE exit error: {e}")
 
 
-def _sync_entry(st, log):
+def _sync_entry(st, log, quote=None):
     o = st["open"]; od = _api("GET", f"/v2/orders/{o['order_id']}")
     fq = int(float(od.get("filled_qty") or 0))
     if od["status"] == "filled" or (fq > 0 and time.time() - o["sent"] > 120):
@@ -122,7 +122,30 @@ def _sync_entry(st, log):
     elif od["status"] in ("canceled", "expired", "rejected") or time.time() - o["sent"] > 120:
         if od["status"] not in ("canceled", "expired", "rejected"):
             _api("DELETE", f"/v2/orders/{o['order_id']}")
-        log(f"LIVE entry not filled ({od['status']}), no live trade today"); st["open"] = None
+            time.sleep(1)
+            od = _api("GET", f"/v2/orders/{o['order_id']}")  # never chase until the old order is confirmed dead with nothing filled
+            fq = int(float(od.get("filled_qty") or 0))
+            if fq > 0:
+                o.update({"state": "open", "qty": fq, "entry": float(od["filled_avg_price"])})
+                log(f"LIVE filled {fq} {o['symbol']} @ {o['entry']}"); save(st); return
+        c = cfg(); a2 = 0
+        if quote and od["status"] == "canceled" and o.get("tries", 0) < c.get("entry_retries", 0) and od["status"] != "rejected":
+            try:
+                _, a2 = quote(o["symbol"])
+            except Exception:
+                a2 = 0
+        first = o.get("first_ask") or o.get("limit") or 0
+        bal = c.get("budget_start", 1000) + st.get("realized", 0)
+        cap = min(c.get("size_usd", 0), bal * c.get("max_frac", 0.8))
+        lim = round(a2 * (1 + c.get("entry_chase_pad_pct", 2) / 100), 2) if a2 else 0
+        if a2 and a2 <= first * (1 + c.get("entry_chase_max_pct", 15) / 100) and o["qty"] * lim * 100 <= cap:
+            # 11/19: chase the fresh ask like the paper book, still inside the live per-trade cap
+            od2 = _api("POST", "/v2/orders", {"symbol": o["symbol"], "qty": str(o["qty"]), "side": "buy", "type": "limit",
+                                               "limit_price": f"{lim:.2f}", "time_in_force": "day"})
+            o.update({"order_id": od2["id"], "sent": time.time(), "tries": o.get("tries", 0) + 1, "first_ask": first, "limit": lim})
+            log(f"LIVE entry re-sent {o['qty']} {o['symbol']} limit {lim:.2f} (try {o['tries']})")
+        else:
+            log(f"LIVE entry not filled ({od['status']}), no live trade today"); st["open"] = None
     save(st)
 
 
@@ -135,7 +158,7 @@ def tick(quote, log):
         if not o:
             return
         if o["state"] == "pending":
-            _sync_entry(st, log); return
+            _sync_entry(st, log, quote); return
         now = datetime.now(ET); late = now.hour * 60 + now.minute >= 955
         if o["state"] == "open" and late:
             bid, _ = quote(o["symbol"]); exit(o["symbol"], bid, "3:55 safety", log); return
