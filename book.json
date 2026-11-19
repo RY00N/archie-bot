@@ -5199,7 +5199,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 54
+  "kalshi_legs_today": 40
  },
  "shadow": [
   {
@@ -161002,8 +161002,8 @@
    "line": 3.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.654,
-   "price": 0.64,
-   "edge": -0.002,
+   "price": 0.62,
+   "edge": 0.018,
    "news": "PHX has allowed starting guards 4% more threes than average (likely on him: Devin Booker, Jalen Green); Rasheer Fleming can switch onto him (PHX allowed guards 13% fewer threes with him playing; he plays tonight); Ryan Dunn can switch onto him (PHX allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -161152,8 +161152,8 @@
    "line": 0.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.339,
-   "price": 0.41,
-   "edge": -0.088,
+   "price": 0.43,
+   "edge": -0.108,
    "news": "News: Jake LaRavia has reason for Lakers' struggles with big leads - Lakers Nation UTA's F Lauri Markkanen is out, an easier matchup.",
    "result": null
   },
@@ -161167,8 +161167,8 @@
    "line": 1.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.576,
-   "price": 0.46,
-   "edge": 0.099,
+   "price": 0.44,
+   "edge": 0.119,
    "news": "Austin Reaves is out: Matisse Thybulle hit the over in 4/4 games without him vs 5/12 with him.",
    "result": null
   },
@@ -161182,8 +161182,8 @@
    "line": 1.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.424,
-   "price": 0.56,
-   "edge": -0.153,
+   "price": 0.57,
+   "edge": -0.163,
    "news": "Austin Reaves is out: Matisse Thybulle hit the under in 0/4 games without him vs 7/12 with him.",
    "result": null
   },
@@ -161317,8 +161317,8 @@
    "line": 2.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.399,
-   "price": 0.38,
-   "edge": 0.003,
+   "price": 0.37,
+   "edge": 0.013,
    "news": "LAL has allowed bench forwards 5% more threes than average (likely on him: Sandro Mamukelashvili, Ziaire Williams); Jarred Vanderbilt can switch onto him (LAL allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -163357,8 +163357,8 @@
    "line": 5.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.459,
-   "price": 0.45,
-   "edge": -0.008,
+   "price": 0.47,
+   "edge": -0.028,
    "news": "SAC has allowed starting guards 13% more assists than average (likely on him: Darius Acuff Jr., Zach LaVine); Keegan Murray can switch onto him (SAC allowed guards 18% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -163372,8 +163372,8 @@
    "line": 5.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.541,
-   "price": 0.56,
-   "edge": -0.036,
+   "price": 0.54,
+   "edge": -0.016,
    "news": "SAC has allowed starting guards 13% more assists than average (likely on him: Darius Acuff Jr., Zach LaVine); Keegan Murray can switch onto him (SAC allowed guards 18% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -165532,8 +165532,8 @@
    "line": 19.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.522,
-   "price": 0.54,
-   "edge": -0.035,
+   "price": 0.55,
+   "edge": -0.045,
    "news": "SAC has allowed starting forwards 4% more pra than average (likely on him: Leaky Black, Domantas Sabonis); minutes trending down (we project 28, his last 5 avg 25 vs 30 over 15).",
    "result": null
   },
@@ -165562,8 +165562,8 @@
    "line": 19.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.524,
-   "price": 0.5,
-   "edge": 0.007,
+   "price": 0.51,
+   "edge": -0.003,
    "news": "SAC has allowed starting guards 4% more pra than average (likely on him: Darius Acuff Jr., Zach LaVine); Keegan Murray can switch onto him (SAC allowed guards 13% fewer pra with him playing; he plays tonight); minutes trending down (we project 26, his last 5 avg 23 vs 28 over 15).",
    "result": null
   },
@@ -165592,8 +165592,8 @@
    "line": 14.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.451,
-   "price": 0.49,
-   "edge": -0.056,
+   "price": 0.5,
+   "edge": -0.066,
    "news": "SAC has allowed starting forwards 4% more pra than average (likely on him: Leaky Black, Domantas Sabonis).",
    "result": null
   },
@@ -165652,8 +165652,8 @@
    "line": 19.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.488,
-   "price": 0.53,
-   "edge": -0.059,
+   "price": 0.55,
+   "edge": -0.079,
    "news": "News: De'Andre Hunter Injury: Questionable for Wednesday - RotoWire PHX has allowed starting forwards 2% fewer pra than average (likely on him: Miles Bridges, Dillon Brooks); Khaman Maluach can switch onto him (PHX allowed forwards 12% fewer pra with him playing; he plays tonight); Luke Kennard can switch onto him (PHX allowed forwards 10% fewer pra with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 36 vs 30 over 15).",
    "result": null
   },
@@ -165682,8 +165682,8 @@
    "line": 14.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.455,
-   "price": 0.53,
-   "edge": -0.092,
+   "price": 0.54,
+   "edge": -0.102,
    "news": "PHX has allowed starting forwards 2% fewer pra than average (likely on him: Miles Bridges, Dillon Brooks); Khaman Maluach can switch onto him (PHX allowed forwards 12% fewer pra with him playing; he plays tonight); Luke Kennard can switch onto him (PHX allowed forwards 10% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -165712,8 +165712,8 @@
    "line": 24.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.475,
-   "price": 0.54,
-   "edge": -0.082,
+   "price": 0.55,
+   "edge": -0.092,
    "news": "News: Zach LaVine (illness) removed from injury report - NBC Sports PHX has allowed starting guards 1% more pra than average (likely on him: Devin Booker, Jalen Green); Ryan Dunn can switch onto him (PHX allowed guards 8% fewer pra with him playing; he plays tonight); Rasheer Fleming can switch onto him (PHX allowed guards 8% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -167392,8 +167392,8 @@
    "line": 9.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.487,
-   "price": 0.55,
-   "edge": -0.08,
+   "price": 0.54,
+   "edge": -0.07,
    "news": "PHX has allowed starting forwards 1% fewer points than average (likely on him: Miles Bridges, Dillon Brooks); Luke Kennard can switch onto him (PHX allowed forwards 15% fewer points with him playing; he plays tonight); Khaman Maluach can switch onto him (PHX allowed forwards 13% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -167422,8 +167422,8 @@
    "line": 9.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.432,
-   "price": 0.49,
-   "edge": -0.075,
+   "price": 0.48,
+   "edge": -0.065,
    "news": "UTA's F Lauri Markkanen is out, an easier matchup; UTA has allowed bench forwards 6% more points than average.",
    "result": null
   },
@@ -171607,8 +171607,8 @@
    "line": 1.5,
    "start": "2026-11-19T03:00:00Z",
    "p": 0.743,
-   "price": 0.6,
-   "edge": 0.126,
+   "price": 0.59,
+   "edge": 0.136,
    "news": "Austin Reaves is out: Matisse Thybulle hit the over in 4/4 games without him vs 8/12 with him; UTA has allowed starting guards 25% more steals than average.",
    "result": null
   },
