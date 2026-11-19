@@ -301,3 +301,9 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r188-arena.mp4 | had the tickets #lakers #nba #hotel #nightlife #latenight | queued (steady clips) |
 | hourly | r189-kept-going.mp4 | kept it going #nightdrive #mclaren #carsofinstagram #nightlife #latenight | queued (steady clips) |
 | hourly | r190-order-everything.mp4 | order everything #ferrari #bmwm4 #dinner #nightlife #latenight | queued (steady clips) |
+| hourly | r191-game-hotel.mp4 | covered the hotel #lakers #nba #bmwm4 #hotel #latenight | queued (steady clips) |
+| hourly | r192-or-both.mp4 | why pick one #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | queued (steady clips) |
+| hourly | r193-sushi-ordered.mp4 | sushi ordered #bmwm4 #sushi #carsofinstagram #nightlife #latenight | queued (steady clips) |
+| hourly | r194-valet.mp4 | paid the valet #vegas #amg #mercedes #nightlife #latenight | queued (steady clips) |
+| hourly | r195-stay-late.mp4 | stay late #carmeet #ferrari #bmwm4 #nightdrive #latenight | queued (steady clips) |
+| hourly | r196-vette-dinner.mp4 | dinner tonight #corvette #c8 #dinner #nightlife #latenight | queued (steady clips) |
