@@ -1,6 +1,6 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "skip": {},
- "blocks": [],
- "notes": "Gap up ~2.2% (QQQ ~673.8 pre vs 659.51 close) on Anthropic IPO debut hopes; WMT and jobless claims/Philly Fed before the open; no 9:30-10:30 release."
+ "blocks": [[575, 600, "S&P flash PMI 9:45 (time from past years)"], [590, 615, "UMich final sentiment 10:00"]],
+ "notes": "Gap down ~1.7% (QQQ ~633.9 pre vs 645.10 close; NQ 26,207 -1.5%) as Anthropic's post-IPO stumble weighs on AI names; monthly opex. Big-gap half size applies."
 }
