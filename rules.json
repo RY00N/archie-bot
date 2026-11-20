@@ -263,8 +263,8 @@
     "live": {
       "enabled": true,
       "budget_start": 1000,
-      "size_usd": 800,
-      "max_frac": 0.8,
+      "size_usd": 1000,
+      "max_frac": 1.0,
       "max_contracts": 1,
       "daily_loss_cap": 400,
       "entry_retries": 3,
