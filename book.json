@@ -5340,11 +5340,11 @@
   },
   "props_at": "2026-11-20 02:00 PT",
   "props_today": 854,
-  "kalshi_props_today": 383,
+  "kalshi_props_today": 395,
   "kalshi_priced_today": 10,
   "books_on_kalshi_props": {
-   "AN Consensus": 382,
-   "AN Open": 383,
+   "AN Consensus": 394,
+   "AN Open": 395,
    "BetRivers": 197,
    "Caesars": 365,
    "DraftKings": 360,
@@ -5353,8 +5353,8 @@
    "Parx": 197,
    "Pinnacle": 59,
    "Sleeper": 372,
-   "Underdog": 383,
-   "bet365": 383
+   "Underdog": 395,
+   "bet365": 395
   },
   "data_files": [
    "mlb.sqlite",
@@ -158615,8 +158615,8 @@
    "line": 2.5,
    "start": "2026-11-21T00:00:00Z",
    "p": 0.568,
-   "price": 0.65,
-   "edge": -0.098,
+   "price": 0.66,
+   "edge": -0.108,
    "news": "Asa Newell is out: Onyeka Okongwu hit the under in 24/32 games without him vs 8/8 with him; CHA has allowed starting forwards 4% more threes than average (likely on him: Brandon Miller, Moussa Diabate); Tidjane Salaun can switch onto him (CHA allowed forwards 14% fewer threes with him playing; he plays tonight); Royce O'Neale can switch onto him (CHA allowed forwards 12% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159050,8 +159050,8 @@
    "line": 2.5,
    "start": "2026-11-21T00:30:00Z",
    "p": 0.548,
-   "price": 0.47,
-   "edge": 0.061,
+   "price": 0.48,
+   "edge": 0.051,
    "news": "Jaylon Tyson is out: James Harden hit the over in 13/22 games without him vs 9/18 with him; IND has allowed starting guards 14% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson).",
    "result": null
   },
@@ -159500,8 +159500,8 @@
    "line": 1.5,
    "start": "2026-11-21T00:30:00Z",
    "p": 0.511,
-   "price": 0.5,
-   "edge": -0.006,
+   "price": 0.49,
+   "edge": 0.004,
    "news": "ORL has allowed bench guards 2% fewer threes than average (likely on him: Anthony Black, Jalen Suggs); Jase Richardson can switch onto him (ORL allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159890,8 +159890,8 @@
    "line": 1.5,
    "start": "2026-11-21T02:30:00Z",
    "p": 0.559,
-   "price": 0.53,
-   "edge": 0.012,
+   "price": 0.52,
+   "edge": 0.022,
    "news": "UTA's F Lauri Markkanen is out, an easier matchup.",
    "result": null
   },
@@ -160355,8 +160355,8 @@
    "line": 2.5,
    "start": "2026-11-21T00:30:00Z",
    "p": 0.638,
-   "price": 0.65,
-   "edge": -0.028,
+   "price": 0.64,
+   "edge": -0.018,
    "news": "Injury report: Probable: Injury/Illness - Right Knee Soreness (official NBA report) TOR has allowed starting guards 14% fewer threes than average (likely on him: Jamal Shead, Ja'Kobe Walter).",
    "result": null
   },
@@ -161090,8 +161090,8 @@
    "line": 3.5,
    "start": "2026-11-21T00:00:00Z",
    "p": 0.573,
-   "price": 0.64,
-   "edge": -0.083,
+   "price": 0.63,
+   "edge": -0.073,
    "news": "Grayson Allen (G) is out, so Coby White's role likely grows; ATL's G CJ McCollum is out, an easier matchup; ATL has allowed starting guards 2% more assists than average (likely on him: Nickeil Alexander-Walker, Luguentz Dort); Mouhamed Gueye can switch onto him (ATL allowed guards 10% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -161420,8 +161420,8 @@
    "line": 3.5,
    "start": "2026-11-21T00:30:00Z",
    "p": 0.51,
-   "price": 0.47,
-   "edge": 0.023,
+   "price": 0.48,
+   "edge": 0.013,
    "news": "ORL has allowed starting centers 14% more assists than average (likely on him: Wendell Carter Jr.); Noah Penda can switch onto him (ORL allowed centers 45% fewer assists with him playing; he is out tonight); Paolo Banchero can switch onto him (ORL allowed centers 23% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -162170,8 +162170,8 @@
    "line": 24.5,
    "start": "2026-11-21T00:30:00Z",
    "p": 0.532,
-   "price": 0.53,
-   "edge": -0.015,
+   "price": 0.55,
+   "edge": -0.035,
    "news": "News: When Jalen Duren returns, it shouldn't be Daniss Jenkins who gets benched - PistonPowered Ebuka Okorie is out: Daniss Jenkins hit the over in 2/7 games without him vs 0/4 with him; TOR has allowed starting guards 5% fewer pra than average (likely on him: Jamal Shead, Ja'Kobe Walter); minutes trending up (we project 34, his last 5 avg 37 vs 30 over 15).",
    "result": null
   },
@@ -162470,8 +162470,8 @@
    "line": 9.5,
    "start": "2026-11-21T03:00:00Z",
    "p": 0.508,
-   "price": 0.58,
-   "edge": -0.089,
+   "price": 0.51,
+   "edge": -0.019,
    "news": "HOU has allowed bench guards 9% more points than average (likely on him: Reed Sheppard, Marcus Smart); minutes trending down (we project 22, his last 5 avg 20 vs 23 over 15).",
    "result": null
   },
@@ -163580,8 +163580,8 @@
    "line": 3.5,
    "start": "2026-11-21T00:30:00Z",
    "p": 0.574,
-   "price": 0.56,
-   "edge": -0.003,
+   "price": 0.57,
+   "edge": -0.013,
    "news": "Jonathan Isaac is out: Tristan da Silva hit the over in 13/34 games without him vs 2/6 with him; Noah Penda is out: Tristan da Silva hit the over in 12/30 games without him vs 3/10 with him; Paolo Banchero is out: Tristan da Silva hit the over in 4/9 games without him vs 11/31 with him; BKN has allowed bench forwards 6% fewer rebounds than average (likely on him: Noah Clowney, Danny Wolf); Michael Porter Jr. can switch onto him (BKN allowed forwards 19% fewer rebounds with him playing; he plays tonight); Day'Ron Sharpe can switch onto him (BKN allowed forwards 17% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -164300,8 +164300,8 @@
    "line": 3.5,
    "start": "2026-11-21T01:00:00Z",
    "p": 0.532,
-   "price": 0.64,
-   "edge": -0.124,
+   "price": 0.58,
+   "edge": -0.065,
    "news": "CHI has allowed bench guards 8% more rebounds than average (likely on him: Tre Jones, Buddy Hield); Norman Powell can switch onto him (CHI allowed guards 10% fewer rebounds with him playing; he plays tonight); Noa Essengue can switch onto him (CHI allowed guards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -164315,8 +164315,8 @@
    "line": 3.5,
    "start": "2026-11-21T01:00:00Z",
    "p": 0.468,
-   "price": 0.56,
-   "edge": -0.109,
+   "price": 0.52,
+   "edge": -0.069,
    "news": "CHI has allowed bench guards 8% more rebounds than average (likely on him: Tre Jones, Buddy Hield); Norman Powell can switch onto him (CHI allowed guards 10% fewer rebounds with him playing; he plays tonight); Noa Essengue can switch onto him (CHI allowed guards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   }
