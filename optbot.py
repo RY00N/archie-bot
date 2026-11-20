@@ -109,6 +109,8 @@ def signal(bot, c, today, now_m):
         _last["prev_rng"] = rng if pd else None
         pdr = [b for b in pd if 570 <= b[1] < 960]  # 11/19 lab: gap = 9:30 open vs prior regular-session close
         _last["gap"] = (day[0][2] / pdr[-1][5] - 1) * 100 if pdr and day[0][1] == 570 else None
+        ph, pl_ = (max(b[3] for b in pdr), min(b[4] for b in pdr)) if pdr else (0, 0)
+        _last["ploc"] = (pdr[-1][5] - pl_) / (ph - pl_) if pdr and ph > pl_ else None  # 11/20 lab: where yesterday closed in its range
         if pd and rng > c.get("max_prev_range_pct", 99):  # high - low (10/18 fix: was low - close)
             fz = c.get("fade_range")  # 11/05 Ryan "no skipping trading days": wide-range days fade the first 5 min instead
             if fz and fz["min"] < rng <= fz["max"]:
@@ -351,6 +353,9 @@ def step(bot, log):
     g = _last.get("gap")
     if c.get("big_gap_mult") and not _shares(c) and g is not None and abs(g) >= c.get("big_gap_pct", 1.5):
         mult *= c["big_gap_mult"]; why += f" (big gap {g:+.1f}%, size x{c['big_gap_mult']})"  # 11/19 lab
+    pl = _last.get("ploc"); x = c.get("close_extreme_pct", .15)
+    if c.get("close_extreme_mult") and not _shares(c) and pl is not None and ((pl < x and side < 0) or (pl > 1 - x and side > 0)):
+        mult *= c["close_extreme_mult"]; why += f" (yesterday closed at {pl:.0%} of its range, same way, size x{c['close_extreme_mult']})"  # 11/20 lab
     unit = 1 if _shares(c) else 100
     qty = int(c["size"] * mult // (ask * unit)) if ask > 0 else 0
     if _shares(c) and ask > 0:  # 10/23: shares mode puts the whole $1k book in each trade (backtest: +78% in 2024-25, dd 9%)

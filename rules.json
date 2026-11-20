@@ -270,7 +270,9 @@
       "entry_retries": 3,
       "entry_chase_pad_pct": 2,
       "entry_chase_max_pct": 15
-    }
+    },
+    "close_extreme_mult": 1.1,
+    "close_extreme_pct": 0.15
   },
   "dtsbook": {
     "enabled": true,
