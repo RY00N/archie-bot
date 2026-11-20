@@ -305,7 +305,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r192-or-both.mp4 | why pick one #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | POSTED 11/19 10:39pm PST trial https://www.instagram.com/reel/Df9B-KHE9Wt/ |
 | hourly | r193-sushi-ordered.mp4 | sushi ordered #bmwm4 #sushi #carsofinstagram #nightlife #latenight | POSTED 11/20 8:38am PST trial https://www.instagram.com/reel/Df-GlSglEbO/ |
 | hourly | r194-valet.mp4 | paid the valet #vegas #amg #mercedes #nightlife #latenight | POSTED 11/20 9:38am PST trial https://www.instagram.com/reel/Df-NdYJkUIe/ |
-| hourly | r195-stay-late.mp4 | stay late #carmeet #ferrari #bmwm4 #nightdrive #latenight | queued (steady clips) |
+| hourly | r195-stay-late.mp4 | stay late #carmeet #ferrari #bmwm4 #nightdrive #latenight | POSTED 11/20 10:38am PST trial https://www.instagram.com/reel/Df-UWrqIQhW/ |
 | hourly | r196-vette-dinner.mp4 | dinner tonight #corvette #c8 #dinner #nightlife #latenight | queued (steady clips) |
 | hourly | r197-cashed-early.mp4 | left early #nightdrive #ferrari #carsofinstagram #nightlife #latenight | queued (steady clips) |
 | hourly | r198-room-upstairs.mp4 | all on Kalshi #hotel #dinner #bmwm4 #nightlife #latenight | queued (steady clips) |
