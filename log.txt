@@ -1,0 +1,400 @@
+11-17 19:42:34 error box: none
+11-17 19:42:34 audio: running 44100
+11-17 19:42:35 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+11-17 19:42:37 clicked Post (mouse)
+11-17 19:42:38 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202611180342378418507B49D7FA00F595","now":1794973358000},"log_pb":{"impr_id":"202611180342378418507B49D7FA00F595"},"project_id":"7709351779858781197","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7709351760363523341","status_code":0,"s
+11-17 19:42:41 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"2026111803424037E5505EB06D8A012813","now":1794973360000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/oo1reAGdIOJIAHeKeJAAQcAL
+11-17 19:42:43 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261118034240ECD8D3429B37E600B99E","now":1794973361000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/oo1reAGdIOJIAHeKeJAAQcA
+11-17 19:42:44 TikTok accepted the post
+11-17 19:42:45 2026-11-17 19:37 n30-matte.mp4 posted
+11-18 09:25:08 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+11-18 09:25:20 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-18 09:25:42 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-18 09:25:49 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+11-18 09:25:52 net FAILED GET blob:https://www.tiktok.com/893316a9-5d2f-4ace-b584-cc76b0e95eee net::ERR_ABORTED
+11-18 09:25:52 net FAILED GET blob:https://www.tiktok.com/893316a9-5d2f-4ace-b584-cc76b0e95eee net::ERR_ABORTED
+11-18 09:25:55 net FAILED GET blob:https://www.tiktok.com/893316a9-5d2f-4ace-b584-cc76b0e95eee net::ERR_ABORTED
+11-18 09:26:11 console: [E:AE_GAME_TAG] ## 2026-11-18 09:26:11.089 [threadid:3426228,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+11-18 09:26:11 console: [E:AE_GAME_TAG] ## 2026-11-18 09:26:11.724 [threadid:3426228,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f86c0
+11-18 09:26:11 console: [E:AE_GAME_TAG] ## 2026-11-18 09:26:11.850 [threadid:3426228,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+11-18 09:26:11 console: [E:AE_GAME_TAG] ## 2026-11-18 09:26:11.939 [threadid:3426228,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+11-18 09:26:11 console: [E:WebAudio] ## 2026-11-18 09:26:11.957 [threadid:3426228,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+11-18 09:26:12 console: [E:AE_GAME_TAG] ## 2026-11-18 09:26:11.978 [threadid:3426228,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/dev/long_short/tiktok_effectsdk/AmazingEn
+11-18 09:26:13 console: [E:AE_GAME_TAG] ## 2026-11-18 09:26:13.847 [threadid:3426228,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+11-18 09:26:13 console: [E:AE_GAME_TAG] ## 2026-11-18 09:26:13.904 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-18 09:26:14 console: [E:AE_GAME_TAG] ## 2026-11-18 09:26:14.025 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-18 09:26:14 console: [E:AE_GAME_TAG] ## 2026-11-18 09:26:14.069 [threadid:3426228,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f86c0
+11-18 09:26:31 net FAILED GET blob:https://www.tiktok.com/893316a9-5d2f-4ace-b584-cc76b0e95eee net::ERR_ABORTED
+11-18 09:26:47 waiting for upload to finish... Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Profile > Settings Music copyright check W
+11-18 09:27:13 console: Error: Error when fetch effects 3379517775,3379518023,3379517439,3382263014,3380773560,3380773555,3380773556,3380773557,3380773558,3380773559: 200  from https://www.tiktok.com/effect/api/v3/effect/lis
+11-18 09:27:17 hid tour overlays
+11-18 09:27:19 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+11-18 09:28:07 hashtag #bmwm4 -> picked #bmwm4 (1 of 10)
+11-18 09:28:25 hashtag #nightdrive -> no suggestion list, left as text
+11-18 09:28:34 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+11-18 09:28:42 hashtag #latenight -> picked #latenight (1 of 10)
+11-18 09:28:45 hashtag #m4 -> picked #m4 (1 of 10)
+11-18 09:28:48 caption now: Gotchu #bmwm4 #nightdrive #carsofinstagram #latenight #m4 | hashtag chips: 10
+11-18 09:28:49 error box: none
+11-18 09:28:49 audio: running 44100
+11-18 09:28:50 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+11-18 09:28:54 clicked Post (mouse)
+11-18 09:28:56 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202611181728533F03FF1C8B97B500595D","now":1795022933000},"log_pb":{"impr_id":"202611181728533F03FF1C8B97B500595D"},"project_id":"7709564675159233550","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7709564665914756365","status_code":0,"s
+11-18 09:29:06 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"202611181729037AB39CC47141ED1CBBAC","now":1795022944000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/oIZ9ArfJEiieAFaDyAIEAAO4xYAeJdDrJIBfWN~t
+11-18 09:29:06 TikTok accepted the post
+11-18 09:29:07 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261118172904534BA576C8F4E3031744","now":1795022944000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/oIZ9ArfJEiieAFaDyAIEAAO4xYAeJdDrJIBfWN~
+11-18 09:29:12 2026-11-18 09:25 n31-tennis-coach.mp4 posted
+11-18 12:35:02 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+11-18 12:35:18 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-18 12:35:20 console: Access to XMLHttpRequest at 'https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings?bid=pns_cookie_banner_slardar&store=1' from origin 'https://www.tiktok.com' has been blocked 
+11-18 12:35:20 net FAILED GET https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings net::ERR_FAILED
+11-18 12:35:20 console: Failed to load resource: net::ERR_FAILED
+11-18 12:35:33 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-18 12:35:44 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+11-18 12:35:47 net FAILED GET blob:https://www.tiktok.com/dbd1fa02-25a1-4e4b-a0b1-3263befb748f net::ERR_ABORTED
+11-18 12:35:48 net FAILED GET blob:https://www.tiktok.com/dbd1fa02-25a1-4e4b-a0b1-3263befb748f net::ERR_ABORTED
+11-18 12:35:52 net FAILED GET blob:https://www.tiktok.com/dbd1fa02-25a1-4e4b-a0b1-3263befb748f net::ERR_ABORTED
+11-18 12:36:10 console: [E:AE_GAME_TAG] ## 2026-11-18 12:36:10.624 [threadid:3426228,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+11-18 12:36:11 console: [E:AE_GAME_TAG] ## 2026-11-18 12:36:11.136 [threadid:3426228,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f86c0
+11-18 12:36:11 console: [E:AE_GAME_TAG] ## 2026-11-18 12:36:11.241 [threadid:3426228,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+11-18 12:36:11 console: [E:AE_GAME_TAG] ## 2026-11-18 12:36:11.358 [threadid:3426228,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+11-18 12:36:11 console: [E:WebAudio] ## 2026-11-18 12:36:11.367 [threadid:3426228,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+11-18 12:36:11 console: [E:AE_GAME_TAG] ## 2026-11-18 12:36:11.383 [threadid:3426228,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/dev/long_short/tiktok_effectsdk/AmazingEn
+11-18 12:36:13 console: [E:AE_GAME_TAG] ## 2026-11-18 12:36:13.675 [threadid:3426228,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+11-18 12:36:13 console: [E:AE_GAME_TAG] ## 2026-11-18 12:36:13.734 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-18 12:36:13 console: [E:AE_GAME_TAG] ## 2026-11-18 12:36:13.843 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-18 12:36:13 console: [E:AE_GAME_TAG] ## 2026-11-18 12:36:13.876 [threadid:3426228,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f86c0
+11-18 12:36:25 net FAILED GET blob:https://www.tiktok.com/dbd1fa02-25a1-4e4b-a0b1-3263befb748f net::ERR_ABORTED
+11-18 12:36:25 waiting for upload to finish... Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Profile > Settings Music copyright check W
+11-18 12:36:38 hid tour overlays
+11-18 12:36:40 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+11-18 12:37:06 hashtag #nightdrive -> picked #nightdrive (1 of 10)
+11-18 12:37:13 hashtag #latenight -> picked #latenight (1 of 10)
+11-18 12:37:24 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+11-18 12:37:35 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+11-18 12:37:42 hashtag #porsche -> picked #porsche (1 of 10)
+11-18 12:37:44 caption now: I believe in you #nightdrive #latenight #carsofinstagram #luxurylifestyle #porsche | hashtag chips: 11
+11-18 12:37:44 error box: none
+11-18 12:37:45 audio: running 44100
+11-18 12:37:45 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+11-18 12:37:49 clicked Post (mouse)
+11-18 12:37:55 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202611182037509820D1988DA259232C49","now":1795034270000},"log_pb":{"impr_id":"202611182037509820D1988DA259232C49"},"project_id":"7709613410073367565","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7709613332826803469","status_code":0,"s
+11-18 12:38:05 TikTok accepted the post
+11-18 12:38:09 2026-11-18 12:32 n32-profitable.mp4 posted
+11-18 16:25:03 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+11-18 16:25:26 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-18 16:25:30 console: Access to XMLHttpRequest at 'https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings?bid=pns_consent_system&store=1' from origin 'https://www.tiktok.com' has been blocked by CORS
+11-18 16:25:30 net FAILED GET https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings net::ERR_FAILED
+11-18 16:25:30 console: Failed to load resource: net::ERR_FAILED
+11-18 16:25:56 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-18 16:26:04 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+11-18 16:26:06 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:06 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:09 console: Access to XMLHttpRequest at 'https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings?bid=oec_seller_add_product&store=1' from origin 'https://www.tiktok.com' has been blocked by 
+11-18 16:26:09 net FAILED GET https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings net::ERR_FAILED
+11-18 16:26:09 console: Failed to load resource: net::ERR_FAILED
+11-18 16:26:09 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:09 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:09 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:09 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:09 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:11 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:11 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:14 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:15 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:15 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:16 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:25 console: [E:AE_GAME_TAG] ## 2026-11-18 16:26:25.212 [threadid:3426228,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+11-18 16:26:25 console: [E:AE_GAME_TAG] ## 2026-11-18 16:26:25.490 [threadid:3426228,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f86c0
+11-18 16:26:25 console: [E:AE_GAME_TAG] ## 2026-11-18 16:26:25.582 [threadid:3426228,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+11-18 16:26:25 console: [E:AE_GAME_TAG] ## 2026-11-18 16:26:25.647 [threadid:3426228,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+11-18 16:26:25 console: [E:WebAudio] ## 2026-11-18 16:26:25.659 [threadid:3426228,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+11-18 16:26:25 console: [E:AE_GAME_TAG] ## 2026-11-18 16:26:25.673 [threadid:3426228,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/dev/long_short/tiktok_effectsdk/AmazingEn
+11-18 16:26:26 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:26 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:26 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:27 console: [E:AE_GAME_TAG] ## 2026-11-18 16:26:27.418 [threadid:3426228,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+11-18 16:26:27 console: [E:AE_GAME_TAG] ## 2026-11-18 16:26:27.453 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-18 16:26:27 console: [E:AE_GAME_TAG] ## 2026-11-18 16:26:27.526 [threadid:3426228,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-18 16:26:27 console: [E:AE_GAME_TAG] ## 2026-11-18 16:26:27.568 [threadid:3426228,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f86c0
+11-18 16:26:43 net FAILED GET blob:https://www.tiktok.com/eb4a2c6f-3c8d-4c4f-8cf5-ab1770dec403 net::ERR_ABORTED
+11-18 16:26:43 waiting for upload to finish... Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Profile > Settings Music copyright check W
+11-18 16:26:50 hid tour overlays
+11-18 16:26:51 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+11-18 16:27:12 hashtag #porsche -> picked #porsche (1 of 10)
+11-18 16:27:18 hashtag #nightdrive -> picked #nightdrive (1 of 10)
+11-18 16:27:26 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+11-18 16:27:33 hashtag #latenight -> picked #latenight (1 of 10)
+11-18 16:27:42 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+11-18 16:27:45 caption now: Kalshi cruise #porsche #nightdrive #carsofinstagram #latenight #luxurylifestyle | hashtag chips: 11
+11-18 16:27:46 error box: none
+11-18 16:27:47 audio: running 44100
+11-18 16:27:47 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+11-18 16:27:52 clicked Post (mouse)
+11-18 16:27:57 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"20261119002752937FE8F2B8C9FD17D4F3","now":1795048073000},"log_pb":{"impr_id":"20261119002752937FE8F2B8C9FD17D4F3"},"project_id":"7709672699940901901","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7709672662276132109","status_code":0,"s
+11-18 16:28:05 TikTok accepted the post
+11-18 16:28:09 2026-11-18 16:22 n33-night-cruise.mp4 posted
+11-19 13:05:03 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+11-19 13:05:16 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-19 13:05:31 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-19 13:05:35 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+11-19 13:05:40 net FAILED GET blob:https://www.tiktok.com/4b41567b-ee0c-46fe-acb5-ea42e18685b4 net::ERR_ABORTED
+11-19 13:05:41 net FAILED GET blob:https://www.tiktok.com/4b41567b-ee0c-46fe-acb5-ea42e18685b4 net::ERR_ABORTED
+11-19 13:05:42 net FAILED GET blob:https://www.tiktok.com/4b41567b-ee0c-46fe-acb5-ea42e18685b4 net::ERR_ABORTED
+11-19 13:05:43 net FAILED GET blob:https://www.tiktok.com/4b41567b-ee0c-46fe-acb5-ea42e18685b4 net::ERR_ABORTED
+11-19 13:05:46 net FAILED GET blob:https://www.tiktok.com/4b41567b-ee0c-46fe-acb5-ea42e18685b4 net::ERR_ABORTED
+11-19 13:05:50 net FAILED GET blob:https://www.tiktok.com/4b41567b-ee0c-46fe-acb5-ea42e18685b4 net::ERR_ABORTED
+11-19 13:05:57 console: [E:AE_GAME_TAG] ## 2026-11-19 13:05:57.151 [threadid:3416196,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+11-19 13:05:57 console: [E:AE_GAME_TAG] ## 2026-11-19 13:05:57.607 [threadid:3416196,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f6038
+11-19 13:05:57 console: [E:AE_GAME_TAG] ## 2026-11-19 13:05:57.715 [threadid:3416196,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+11-19 13:05:57 console: [E:AE_GAME_TAG] ## 2026-11-19 13:05:57.823 [threadid:3416196,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+11-19 13:05:57 console: [E:WebAudio] ## 2026-11-19 13:05:57.837 [threadid:3416196,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+11-19 13:05:57 console: [E:AE_GAME_TAG] ## 2026-11-19 13:05:57.855 [threadid:3416196,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/work/tiktok_effectsdk/AmazingEngine/Featu
+11-19 13:05:59 console: [E:AE_GAME_TAG] ## 2026-11-19 13:05:59.254 [threadid:3416196,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+11-19 13:05:59 console: [E:AE_GAME_TAG] ## 2026-11-19 13:05:59.294 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-19 13:05:59 console: [E:AE_GAME_TAG] ## 2026-11-19 13:05:59.367 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-19 13:05:59 console: [E:AE_GAME_TAG] ## 2026-11-19 13:05:59.399 [threadid:3416196,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f6038
+11-19 13:06:05 net FAILED GET blob:https://www.tiktok.com/4b41567b-ee0c-46fe-acb5-ea42e18685b4 net::ERR_ABORTED
+11-19 13:06:20 hid tour overlays
+11-19 13:06:23 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+11-19 13:06:48 hashtag #bmwm4 -> picked #bmwm4 (1 of 10)
+11-19 13:06:53 hashtag #m4 -> picked #m4 (1 of 10)
+11-19 13:07:02 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+11-19 13:07:10 hashtag #nightlife -> picked #nightlife (1 of 11)
+11-19 13:07:18 hashtag #latenight -> picked #latenight (1 of 10)
+11-19 13:07:21 caption now: Kalshi M4 after hours #bmwm4 #m4 #carsofinstagram #nightlife #latenight | hashtag chips: 11
+11-19 13:07:22 error box: none
+11-19 13:07:22 audio: running 44100
+11-19 13:07:23 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+11-19 13:07:25 clicked Post (mouse)
+11-19 13:07:31 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202611192107295748578FD6CF57264122","now":1795122450000},"log_pb":{"impr_id":"202611192107295748578FD6CF57264122"},"project_id":"7709992128218354702","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7709992161403571469","status_code":0,"s
+11-19 13:07:35 TikTok accepted the post
+11-19 13:07:38 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261119210737A9D471218BD462261677","now":1795122457000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/o4IJfFr6sJA5O9D9QfiGAIAA
+11-19 13:07:40 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261119210737781978ED9B06A426D20A","now":1795122458000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/o4IJfFr6sJA5O9D9QfiGAIA
+11-19 13:07:43 2026-11-19 13:02 n34-after-hours.mp4 posted
+11-19 15:35:12 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+11-19 15:35:33 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-19 15:35:58 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-19 15:36:03 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+11-19 15:36:06 net FAILED GET blob:https://www.tiktok.com/5009bf8f-9800-46ab-b925-908f1395bc1d net::ERR_ABORTED
+11-19 15:36:06 net FAILED GET blob:https://www.tiktok.com/5009bf8f-9800-46ab-b925-908f1395bc1d net::ERR_ABORTED
+11-19 15:36:07 net FAILED GET blob:https://www.tiktok.com/5009bf8f-9800-46ab-b925-908f1395bc1d net::ERR_ABORTED
+11-19 15:36:17 console: [E:AE_GAME_TAG] ## 2026-11-19 15:36:17.606 [threadid:3416196,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+11-19 15:36:17 console: [E:AE_GAME_TAG] ## 2026-11-19 15:36:17.959 [threadid:3416196,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f6038
+11-19 15:36:18 console: [E:AE_GAME_TAG] ## 2026-11-19 15:36:18.111 [threadid:3416196,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+11-19 15:36:18 console: [E:AE_GAME_TAG] ## 2026-11-19 15:36:18.213 [threadid:3416196,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+11-19 15:36:18 console: [E:WebAudio] ## 2026-11-19 15:36:18.242 [threadid:3416196,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+11-19 15:36:18 console: [E:AE_GAME_TAG] ## 2026-11-19 15:36:18.253 [threadid:3416196,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/work/tiktok_effectsdk/AmazingEngine/Featu
+11-19 15:36:19 console: [E:AE_GAME_TAG] ## 2026-11-19 15:36:19.479 [threadid:3416196,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+11-19 15:36:19 console: [E:AE_GAME_TAG] ## 2026-11-19 15:36:19.537 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-19 15:36:19 console: [E:AE_GAME_TAG] ## 2026-11-19 15:36:19.622 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-19 15:36:19 console: [E:AE_GAME_TAG] ## 2026-11-19 15:36:19.667 [threadid:3416196,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f6038
+11-19 15:36:26 net FAILED GET blob:https://www.tiktok.com/5009bf8f-9800-46ab-b925-908f1395bc1d net::ERR_ABORTED
+11-19 15:36:39 hid tour overlays
+11-19 15:36:41 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+11-19 15:37:20 hashtag #finedining -> picked #finedining (1 of 10)
+11-19 15:37:30 hashtag #dinnerdate -> picked #dinnerdate (1 of 10)
+11-19 15:37:38 hashtag #nightlife -> picked #nightlife (1 of 11)
+11-19 15:37:50 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+11-19 15:37:56 hashtag #latenight -> picked #latenight (1 of 10)
+11-19 15:37:59 caption now: on me tonight #finedining #dinnerdate #nightlife #luxurylifestyle #latenight | hashtag chips: 11
+11-19 15:37:59 error box: none
+11-19 15:38:00 audio: running 44100
+11-19 15:38:00 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+11-19 15:38:03 clicked Post (mouse)
+11-19 15:38:04 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"20261119233803FA2C09F44F2FDD317A38","now":1795131484000},"log_pb":{"impr_id":"20261119233803FA2C09F44F2FDD317A38"},"project_id":"7710030925324784654","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7710030963891309837","status_code":0,"s
+11-19 15:38:07 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"202611192338065F16C482D587D12D0CAB","now":1795131486000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/ogAA4QAlflVAgrUi5FEoEFfErHCDPAgkcIfHH2~t
+11-19 15:38:09 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"202611192338064BF422C9CA43A731ED0A","now":1795131487000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/ogAA4QAlflVAgrUi5FEoEFfErHCDPAgkcIfHH2~
+11-19 15:38:10 TikTok accepted the post
+11-19 15:38:11 2026-11-19 15:34 r10-dinner.mp4 posted
+11-19 20:15:04 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+11-19 20:15:15 console: Access to XMLHttpRequest at 'https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings?bid=tiktok_creator_center&store=1' from origin 'https://www.tiktok.com' has been blocked by C
+11-19 20:15:15 net FAILED GET https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings net::ERR_FAILED
+11-19 20:15:15 console: Failed to load resource: net::ERR_FAILED
+11-19 20:15:15 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-19 20:15:31 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-19 20:15:36 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+11-19 20:15:39 net FAILED GET blob:https://www.tiktok.com/91ccd3ed-4e72-4d32-9f78-221ffd0a654f net::ERR_ABORTED
+11-19 20:15:39 net FAILED GET blob:https://www.tiktok.com/91ccd3ed-4e72-4d32-9f78-221ffd0a654f net::ERR_ABORTED
+11-19 20:15:41 net FAILED GET blob:https://www.tiktok.com/91ccd3ed-4e72-4d32-9f78-221ffd0a654f net::ERR_ABORTED
+11-19 20:15:42 console: Access to XMLHttpRequest at 'https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings?bid=oec_seller_add_product&store=1' from origin 'https://www.tiktok.com' has been blocked by 
+11-19 20:15:42 net FAILED GET https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings net::ERR_FAILED
+11-19 20:15:42 console: Failed to load resource: net::ERR_FAILED
+11-19 20:15:53 console: [E:AE_GAME_TAG] ## 2026-11-19 20:15:53.379 [threadid:3416196,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+11-19 20:15:53 console: [E:AE_GAME_TAG] ## 2026-11-19 20:15:53.902 [threadid:3416196,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f6038
+11-19 20:15:54 console: [E:AE_GAME_TAG] ## 2026-11-19 20:15:54.033 [threadid:3416196,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+11-19 20:15:54 console: [E:AE_GAME_TAG] ## 2026-11-19 20:15:54.131 [threadid:3416196,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+11-19 20:15:54 console: [E:WebAudio] ## 2026-11-19 20:15:54.155 [threadid:3416196,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+11-19 20:15:54 console: [E:AE_GAME_TAG] ## 2026-11-19 20:15:54.168 [threadid:3416196,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/work/tiktok_effectsdk/AmazingEngine/Featu
+11-19 20:15:55 console: [E:AE_GAME_TAG] ## 2026-11-19 20:15:55.603 [threadid:3416196,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+11-19 20:15:55 console: [E:AE_GAME_TAG] ## 2026-11-19 20:15:55.658 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-19 20:15:55 console: [E:AE_GAME_TAG] ## 2026-11-19 20:15:55.887 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-19 20:15:56 console: [E:AE_GAME_TAG] ## 2026-11-19 20:15:55.994 [threadid:3416196,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f6038
+11-19 20:15:58 net FAILED GET blob:https://www.tiktok.com/91ccd3ed-4e72-4d32-9f78-221ffd0a654f net::ERR_ABORTED
+11-19 20:16:27 hid tour overlays
+11-19 20:16:32 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+11-19 20:16:56 hashtag #bmwm4 -> picked #bmwm4 (1 of 10)
+11-19 20:17:00 hashtag #m4 -> picked #m4 (1 of 10)
+11-19 20:17:06 hashtag #nightdrive -> picked #nightdrive (1 of 10)
+11-19 20:17:14 hashtag #carsofinstagram -> picked #carsofinstagram (1 of 10)
+11-19 20:17:19 hashtag #latenight -> picked #latenight (1 of 10)
+11-19 20:17:22 caption now: weekend recap #bmwm4 #m4 #nightdrive #carsofinstagram #latenight | hashtag chips: 11
+11-19 20:17:22 error box: none
+11-19 20:17:23 audio: running 44100
+11-19 20:17:23 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+11-19 20:17:25 clicked Post (mouse)
+11-19 20:17:26 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"202611200417252ADDC7B775F16A4B15A7","now":1795148246000},"log_pb":{"impr_id":"202611200417252ADDC7B775F16A4B15A7"},"project_id":"7710102921664353294","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7710102868119817486","status_code":0,"s
+11-19 20:17:30 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"202611200417293FE46E013C2CE14A3A1B","now":1795148249000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/oUerTPWHJqGfAfxIDyLNhIAb
+11-19 20:17:31 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261120041729CA8EF4749A487F4AD643","now":1795148249000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/oUerTPWHJqGfAfxIDyLNhIA
+11-19 20:17:32 TikTok accepted the post
+11-19 20:17:33 2026-11-19 20:13 r19-recap.mp4 posted
+11-20 11:55:05 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+11-20 11:55:30 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-20 11:55:33 console: Access to XMLHttpRequest at 'https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings?bid=pns_cookie_banner_slardar&store=1' from origin 'https://www.tiktok.com' has been blocked 
+11-20 11:55:33 net FAILED GET https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings net::ERR_FAILED
+11-20 11:55:33 console: Failed to load resource: net::ERR_FAILED
+11-20 11:58:04 upload failed: RuntimeError('upload box never appeared (user audemarai)')
+11-20 11:58:05 2026-11-20 11:53 r33-bank-app.mp4 FAILED before Post (try 1/3), retrying in 5 min
+11-20 12:00:13 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+11-20 12:00:25 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-20 12:00:42 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-20 12:00:49 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+11-20 12:00:51 net FAILED GET blob:https://www.tiktok.com/a5a37d99-b606-44fd-87a9-0fb183b819a9 net::ERR_ABORTED
+11-20 12:00:52 net FAILED GET blob:https://www.tiktok.com/a5a37d99-b606-44fd-87a9-0fb183b819a9 net::ERR_ABORTED
+11-20 12:00:54 net FAILED GET blob:https://www.tiktok.com/a5a37d99-b606-44fd-87a9-0fb183b819a9 net::ERR_ABORTED
+11-20 12:00:54 net FAILED GET blob:https://www.tiktok.com/a5a37d99-b606-44fd-87a9-0fb183b819a9 net::ERR_ABORTED
+11-20 12:00:54 net FAILED GET blob:https://www.tiktok.com/a5a37d99-b606-44fd-87a9-0fb183b819a9 net::ERR_ABORTED
+11-20 12:01:11 console: [E:AE_GAME_TAG] ## 2026-11-20 12:01:11.582 [threadid:3416196,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+11-20 12:01:13 console: [E:AE_GAME_TAG] ## 2026-11-20 12:01:13.326 [threadid:3416196,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f6038
+11-20 12:01:13 console: [E:AE_GAME_TAG] ## 2026-11-20 12:01:13.720 [threadid:3416196,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+11-20 12:01:14 console: [E:AE_GAME_TAG] ## 2026-11-20 12:01:14.117 [threadid:3416196,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+11-20 12:01:14 console: [E:WebAudio] ## 2026-11-20 12:01:14.160 [threadid:3416196,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+11-20 12:01:14 console: [E:AE_GAME_TAG] ## 2026-11-20 12:01:14.209 [threadid:3416196,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/work/tiktok_effectsdk/AmazingEngine/Featu
+11-20 12:01:18 console: [E:AE_GAME_TAG] ## 2026-11-20 12:01:18.302 [threadid:3416196,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+11-20 12:01:18 console: [E:AE_GAME_TAG] ## 2026-11-20 12:01:18.441 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-20 12:01:18 console: [E:AE_GAME_TAG] ## 2026-11-20 12:01:18.759 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-20 12:01:18 console: [E:AE_GAME_TAG] ## 2026-11-20 12:01:18.839 [threadid:3416196,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f6038
+11-20 12:01:29 net FAILED GET blob:https://www.tiktok.com/a5a37d99-b606-44fd-87a9-0fb183b819a9 net::ERR_ABORTED
+11-20 12:02:13 hid tour overlays
+11-20 12:02:13 console: Capture source project last save frame error Error: [legacyCaptureFrames] timeout
+    at https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/1238.e60eca04.js:2:4938
+11-20 12:02:21 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+11-20 12:02:45 console: Build cover project failed Error: [captureProjectFrameBlob] total capture timeout
+    at https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/async/7646.cf2346d6.js:
+11-20 12:02:58 hashtag #monaco -> no suggestion list, left as text
+11-20 12:03:04 hashtag #lakers -> picked #lakers (1 of 10)
+11-20 12:03:11 hashtag #nightlife -> picked #nightlife (1 of 11)
+11-20 12:03:20 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+11-20 12:03:26 hashtag #latenight -> picked #latenight (1 of 10)
+11-20 12:03:28 caption now: one good week #monaco #lakers #nightlife #luxurylifestyle #latenight | hashtag chips: 10
+11-20 12:03:28 error box: none
+11-20 12:03:29 audio: running 44100
+11-20 12:03:29 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+11-20 12:03:32 clicked Post (mouse)
+11-20 12:03:34 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"20261120200333D6A114EECBFB3E268609","now":1795205014000},"log_pb":{"impr_id":"20261120200333D6A114EECBFB3E268609"},"project_id":"7710346746425840670","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7710346767572765983","status_code":0,"s
+11-20 12:03:40 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261120200338F8C2BA66B6B89B2654FF","now":1795205018000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/o8g5n0wAU5AABISs2SPAapAu
+11-20 12:03:41 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"20261120200338FF43FDC338EE07264BE1","now":1795205019000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://p0-pu-private-useast8.us.tiktok.com/tos-useast5-p-0068-tx/o8g5n0wAU5AABISs2SPAapA
+11-20 12:03:42 TikTok accepted the post
+11-20 12:03:44 2026-11-20 11:53 r33-bank-app.mp4 posted
+11-20 14:50:14 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+11-20 14:50:23 console: Access to XMLHttpRequest at 'https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings?bid=tiktok_creator_center&store=1' from origin 'https://www.tiktok.com' has been blocked by C
+11-20 14:50:23 net FAILED GET https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings net::ERR_FAILED
+11-20 14:50:23 console: Failed to load resource: net::ERR_FAILED
+11-20 14:50:23 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-20 14:50:27 console: Access to XMLHttpRequest at 'https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings?bid=pns_consent_system&store=1' from origin 'https://www.tiktok.com' has been blocked by CORS
+11-20 14:50:27 net FAILED GET https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings net::ERR_FAILED
+11-20 14:50:27 console: Failed to load resource: net::ERR_FAILED
+11-20 14:50:38 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-20 14:50:47 net FAILED GET blob:https://www.tiktok.com/aaae50b1-4373-49c2-a8be-d783c94f8215 net::ERR_ABORTED
+11-20 14:50:47 net FAILED GET blob:https://www.tiktok.com/aaae50b1-4373-49c2-a8be-d783c94f8215 net::ERR_ABORTED
+11-20 14:50:48 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+11-20 14:50:48 net FAILED GET blob:https://www.tiktok.com/aaae50b1-4373-49c2-a8be-d783c94f8215 net::ERR_ABORTED
+11-20 14:51:04 console: [E:AE_GAME_TAG] ## 2026-11-20 14:51:04.236 [threadid:3416196,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+11-20 14:51:04 console: [E:AE_GAME_TAG] ## 2026-11-20 14:51:04.684 [threadid:3416196,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f6038
+11-20 14:51:04 console: [E:AE_GAME_TAG] ## 2026-11-20 14:51:04.783 [threadid:3416196,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+11-20 14:51:04 console: [E:AE_GAME_TAG] ## 2026-11-20 14:51:04.874 [threadid:3416196,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+11-20 14:51:04 console: [E:WebAudio] ## 2026-11-20 14:51:04.893 [threadid:3416196,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+11-20 14:51:04 console: [E:AE_GAME_TAG] ## 2026-11-20 14:51:04.909 [threadid:3416196,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/work/tiktok_effectsdk/AmazingEngine/Featu
+11-20 14:51:06 console: [E:AE_GAME_TAG] ## 2026-11-20 14:51:06.276 [threadid:3416196,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+11-20 14:51:06 console: [E:AE_GAME_TAG] ## 2026-11-20 14:51:06.418 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-20 14:51:06 console: [E:AE_GAME_TAG] ## 2026-11-20 14:51:06.757 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-20 14:51:06 console: [E:AE_GAME_TAG] ## 2026-11-20 14:51:06.826 [threadid:3416196,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f6038
+11-20 14:51:12 net FAILED GET blob:https://www.tiktok.com/aaae50b1-4373-49c2-a8be-d783c94f8215 net::ERR_ABORTED
+11-20 14:51:28 hid tour overlays
+11-20 14:51:31 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+11-20 14:51:52 hashtag #bmwm4 -> picked #bmwm4 (1 of 10)
+11-20 14:51:58 hashtag #finedining -> picked #finedining (1 of 10)
+11-20 14:52:05 hashtag #nightlife -> picked #nightlife (1 of 11)
+11-20 14:52:12 hashtag #latenight -> picked #latenight (1 of 10)
+11-20 14:52:23 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+11-20 14:52:25 caption now: real dinner tonight #bmwm4 #finedining #nightlife #latenight #luxurylifestyle | hashtag chips: 11
+11-20 14:52:26 error box: none
+11-20 14:52:27 audio: running 44100
+11-20 14:52:27 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+11-20 14:52:31 clicked Post (mouse)
+11-20 14:52:35 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"20261120225232374F8F58D87EA62F8F1E","now":1795215153000},"log_pb":{"impr_id":"20261120225232374F8F58D87EA62F8F1E"},"project_id":"7710390231539553293","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7710390325423951117","status_code":0,"s
+11-20 14:52:45 TikTok accepted the post
+11-20 14:52:49 2026-11-20 14:48 r60-real-dinner.mp4 posted
+11-20 19:15:04 pulse: Server String: /tmp/pulse-PKdhtXMmr18n/native | Library Protocol Version: 35 | Server Protocol Version: 35 | 0	auto_null	module-null-sink.c	s16le 2ch 44100Hz	IDLE | 
+11-20 19:15:15 console: Access to XMLHttpRequest at 'https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings?bid=tiktok_creator_center&store=1' from origin 'https://www.tiktok.com' has been blocked by C
+11-20 19:15:15 net FAILED GET https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings net::ERR_FAILED
+11-20 19:15:15 console: Failed to load resource: net::ERR_FAILED
+11-20 19:15:15 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/Create%20WebSocket' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-20 19:15:17 console: Access to XMLHttpRequest at 'https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings?bid=pns_consent_system&store=1' from origin 'https://www.tiktok.com' has been blocked by CORS
+11-20 19:15:17 net FAILED GET https://mon16-normal-useast5.tiktokv.us/monitor_web/settings/browser-settings net::ERR_FAILED
+11-20 19:15:17 console: Failed to load resource: net::ERR_FAILED
+11-20 19:15:30 console: WebSocket connection to 'wss://www.tiktok.com/tiktokstudio/itsgonnafail' failed: Error during WebSocket handshake: Unexpected response code: 200
+11-20 19:15:37 console: [IMPORTANT NOTICE] There are more than 2 WEBMSSDKs integrated in this page, please check the issue carefully!! 
+11-20 19:15:41 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:41 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:41 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:42 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:42 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:42 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:42 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:42 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:42 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:46 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:46 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:52 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:15:57 console: [E:AE_GAME_TAG] ## 2026-11-20 19:15:57.522 [threadid:3416196,AMGNameManager.cpp,96] ERROR ## [AE_GAME_TAG]Hash Collision occurred, str1: V5, str2: UV
+11-20 19:15:57 console: [E:AE_GAME_TAG] ## 2026-11-20 19:15:57.987 [threadid:3416196,AMGAmazer.cpp,1397] ERROR ## [AE_GAME_TAG]KEY TRACE: init amazer, 0x7f6038
+11-20 19:15:58 console: [E:AE_GAME_TAG] ## 2026-11-20 19:15:58.114 [threadid:3416196,DFDocument.cpp,83] ERROR ## [AE_GAME_TAG]init Doc: buildin/doc#0
+11-20 19:15:58 console: [E:AE_GAME_TAG] ## 2026-11-20 19:15:58.217 [threadid:3416196,AMGUniformBuiltinName.h,663] ERROR ## [AE_GAME_TAG]ENABLE_NAME_OPTIMIZE: false
+11-20 19:15:58 console: [E:WebAudio] ## 2026-11-20 19:15:58.235 [threadid:3416196,AMGWebAudioEngine.cpp,29] ERROR ## [WebAudio]WebAudioPlayer create internal failed!
+11-20 19:15:58 console: [E:AE_GAME_TAG] ## 2026-11-20 19:15:58.244 [threadid:3416196,AMGAssert.cpp,57] ERROR ## [AE_GAME_TAG]AMGAssert failed: internal != nullptr at /Users/bytedance/work/tiktok_effectsdk/AmazingEngine/Featu
+11-20 19:15:59 console: [E:AE_GAME_TAG] ## 2026-11-20 19:15:59.828 [threadid:3416196,AMGAmazer.cpp,2346] ERROR ## [AE_GAME_TAG]initVECodecContext: vecodec_callback is nullptr.
+11-20 19:15:59 console: [E:AE_GAME_TAG] ## 2026-11-20 19:15:59.871 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-20 19:15:59 console: [E:AE_GAME_TAG] ## 2026-11-20 19:15:59.980 [threadid:3416196,AMGJSScriptSystem.cpp,118] ERROR ## [AE_GAME_TAG]JSScriptSystem Optimize Restart JSModule Is True!!
+11-20 19:16:00 console: [E:AE_GAME_TAG] ## 2026-11-20 19:16:00.026 [threadid:3416196,AMGAmazer.cpp,1463] ERROR ## [AE_GAME_TAG]KEY TRACE: onLoad amazer, 0x7f6038
+11-20 19:16:01 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:16:03 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:16:07 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:16:09 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:16:12 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:16:13 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:16:19 net FAILED GET blob:https://www.tiktok.com/6e5341ab-a338-4378-a887-3e5dc67633ec net::ERR_ABORTED
+11-20 19:16:34 hid tour overlays
+11-20 19:16:37 popup: Turn on automatic content checks? We'll automatically check your video for copyright and other potential violations. You can adjust these settings anytime in Pr
+11-20 19:16:38 console: Error: Failed to fetch panel effects. Status code: 200
+    at l.retries (https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/js/1238.e60eca04.js:2:3012724)
+    at asyn
+11-20 19:16:38 console: Failed to update Edward screen canvas: TypeError: Cannot read properties of undefined (reading 'panel')
+    at K (https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/j
+11-20 19:16:38 console: Failed to update Edward screen canvas: TypeError: Cannot read properties of undefined (reading 'panel')
+    at K (https://lf16-tiktok-web.tiktokcdn-us.com/obj/tiktok-web-tx/ies/creator_center/static/j
+11-20 19:16:52 hashtag #lakers -> picked #lakers (1 of 10)
+11-20 19:16:56 hashtag #nba -> picked #nba (1 of 10)
+11-20 19:17:03 hashtag #nightdrive -> picked #nightdrive (1 of 10)
+11-20 19:17:08 hashtag #latenight -> picked #latenight (1 of 10)
+11-20 19:17:17 hashtag #luxurylifestyle -> picked #luxurylifestyle (1 of 10)
+11-20 19:17:19 caption now: totally calm #lakers #nba #nightdrive #latenight #luxurylifestyle | hashtag chips: 11
+11-20 19:17:20 error box: none
+11-20 19:17:20 audio: running 44100
+11-20 19:17:21 before Post: BUTTONS: Replace / Hashtags / Mention / Everyone / Edit / Sounds / Text / Post / Save draft / Discard
+11-20 19:17:23 clicked Post (mouse)
+11-20 19:17:25 net 200 https://www.tiktok.com/tiktok/web/project/post/v1/ {"extra":{"fatal_item_ids":[],"logid":"20261121031724D526C45EB45F9E4D8498","now":1795231044000},"log_pb":{"impr_id":"20261121031724D526C45EB45F9E4D8498"},"project_id":"7710458461225767950","project_status":1,"single_post_resp_list":[{"batch_index":0,"item_id":"7710458527856200973","status_code":0,"s
+11-20 19:17:28 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":1,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"202611210317276C9DB6940659CF4CE2F8","now":1795231047000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/owpgckDaAr0CQfSrVPJCD98YREIUEAFBAAAAfD~t
+11-20 19:17:31 net 200 https://www.tiktok.com/tiktok/creator/manage/item_list/v1/ {"cursor":50,"enable_query":true,"extra":{"fatal_item_ids":[],"logid":"202611210317271974BFB63657C24E1FC7","now":1795231048000},"has_more":true,"is_limited":false,"item_list":[{"comment_count":"0","cover_url":["https://image.us.tiktok.com/tos-useast5-p-0068-tx/owpgckDaAr0CQfSrVPJCD98YREIUEAFBAAAAfD~
+11-20 19:17:32 TikTok accepted the post
+11-20 19:17:34 2026-11-20 19:13 r61-lakers.mp4 posted
