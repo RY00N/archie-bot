@@ -319,3 +319,9 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r206-gas-covered.mp4 | fill up and go #bmwm4 #ferrari #carsofinstagram #nightlife #latenight | queued (steady clips) |
 | hourly | r207-garage-lights.mp4 | still on #mclaren #amg #mercedes #nightlife #latenight | queued (steady clips) |
 | hourly | r208-whole-night.mp4 | had the whole night #ferrari #bmwm4 #vegas #nightlife #latenight | queued (steady clips) |
+| hourly | r209-autopilot.mp4 | on autopilot #bmwm4 #nightdrive #carsofinstagram #nightlife #latenight | queued (steady clips) |
+| hourly | r210-picked-the-place.mp4 | picked the place #dinner #sushi #omakase #nightlife #latenight | queued (steady clips) |
+| hourly | r211-halftime.mp4 | already done #lakers #nba #ferrari #nightlife #latenight | queued (steady clips) |
+| hourly | r212-late-checkin.mp4 | late check-in #hotel #vegas #bmwm4 #nightlife #latenight | queued (steady clips) |
+| hourly | r213-next-month.mp4 | next month #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | queued (steady clips) |
+| hourly | r214-warmed-up.mp4 | warmed up #corvette #c8 #ferrari #nightlife #latenight | queued (steady clips) |
