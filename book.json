@@ -5669,24 +5669,24 @@
    "secs": 0.0
   },
   "props_at": "2026-11-21 15:00 PT",
-  "props_today": 499,
-  "kalshi_props_today": 286,
+  "props_today": 500,
+  "kalshi_props_today": 291,
   "kalshi_priced_today": 3,
   "books_on_kalshi_props": {
-   "AN Consensus": 285,
-   "AN Open": 286,
+   "AN Consensus": 290,
+   "AN Open": 291,
    "BetMGM": 181,
-   "BetRivers": 229,
-   "Caesars": 241,
-   "DraftKings": 260,
-   "FanDuel": 247,
-   "Fanatics": 219,
-   "Parx": 228,
+   "BetRivers": 231,
+   "Caesars": 244,
+   "DraftKings": 265,
+   "FanDuel": 250,
+   "Fanatics": 221,
+   "Parx": 230,
    "Pinnacle": 168,
-   "Sleeper": 282,
-   "Underdog": 286,
+   "Sleeper": 287,
+   "Underdog": 291,
    "Unibet": 52,
-   "bet365": 286
+   "bet365": 291
   },
   "data_files": [
    "mlb.sqlite",
@@ -5694,7 +5694,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 41
+  "kalshi_legs_today": 42
  },
  "shadow": [
   {
@@ -159667,8 +159667,8 @@
    "line": 2.5,
    "start": "2026-11-22T01:00:00Z",
    "p": 0.595,
-   "price": 0.59,
-   "edge": -0.012,
+   "price": 0.6,
+   "edge": -0.022,
    "news": "SAS has allowed starting forwards 10% fewer threes than average (likely on him: Victor Wembanyama, Julian Champagnie); Jordan McLaughlin can switch onto him (SAS allowed forwards 33% fewer threes with him playing; he plays tonight); Carter Bryant can switch onto him (SAS allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159757,8 +159757,8 @@
    "line": 1.5,
    "start": "2026-11-22T01:00:00Z",
    "p": 0.541,
-   "price": 0.65,
-   "edge": -0.125,
+   "price": 0.66,
+   "edge": -0.135,
    "news": "NOP's F Trey Murphy III is out, an easier matchup; NOP's F Trendon Watford is out, an easier matchup.",
    "result": null
   },
@@ -160177,8 +160177,8 @@
    "line": 2.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.345,
-   "price": 0.41,
-   "edge": -0.082,
+   "price": 0.4,
+   "edge": -0.072,
    "news": "News: Damian Lillard scores season-high 33 points in first game vs. Bucks post-injury, leads Trail Blazers to win - Yahoo Sports Chris Youngblood (G) is out, so Damian Lillard's role likely grows; Vit Krejci is out: Damian Lillard hit the under in 4/9 games without him vs 2/3 with him; Ja Morant is out: Damian Lillard hit the under in 3/8 games without him vs 3/4 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 1% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 26% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160192,8 +160192,8 @@
    "line": 3.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.456,
-   "price": 0.4,
-   "edge": 0.039,
+   "price": 0.39,
+   "edge": 0.049,
    "news": "News: Damian Lillard scores season-high 33 points in first game vs. Bucks post-injury, leads Trail Blazers to win - Yahoo Sports Chris Youngblood (G) is out, so Damian Lillard's role likely grows; Vit Krejci is out: Damian Lillard hit the over in 5/9 games without him vs 0/3 with him; Ja Morant is out: Damian Lillard hit the over in 4/8 games without him vs 1/4 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 1% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 26% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160297,8 +160297,8 @@
    "line": 1.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.547,
-   "price": 0.59,
-   "edge": -0.06,
+   "price": 0.58,
+   "edge": -0.05,
    "news": "Chris Youngblood is out: Scoot Henderson hit the under in 9/12 games without him vs 1/3 with him; Vit Krejci is out: Scoot Henderson hit the under in 10/16 games without him vs 8/16 with him; Ja Morant is out: Scoot Henderson hit the under in 3/6 games without him vs 6/6 with him; Shaedon Sharpe is out: Scoot Henderson hit the under in 18/32 games without him vs 5/8 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed bench guards 26% more threes than average (likely on him: Landry Shamet, Miles McBride); Jose Alvarado can switch onto him (NYK allowed guards 26% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -161422,8 +161422,8 @@
    "line": 3.5,
    "start": "2026-11-22T01:00:00Z",
    "p": 0.534,
-   "price": 0.47,
-   "edge": 0.047,
+   "price": 0.46,
+   "edge": 0.057,
    "news": "NOP's F Trey Murphy III is out, an easier matchup; NOP's F Trendon Watford is out, an easier matchup; NOP has allowed starting forwards 5% more blocks than average.",
    "result": null
   },
@@ -161437,8 +161437,8 @@
    "line": 3.5,
    "start": "2026-11-22T01:00:00Z",
    "p": 0.446,
-   "price": 0.56,
-   "edge": -0.131,
+   "price": 0.55,
+   "edge": -0.121,
    "news": "NOP's F Trey Murphy III is out, an easier matchup; NOP's F Trendon Watford is out, an easier matchup; NOP has allowed starting forwards 5% more blocks than average.",
    "result": null
   },
@@ -161512,8 +161512,8 @@
    "line": 19.5,
    "start": "2026-11-22T03:00:00Z",
    "p": 0.525,
-   "price": 0.54,
-   "edge": -0.032,
+   "price": 0.55,
+   "edge": -0.042,
    "news": "BOS's F Jayson Tatum is out, an easier matchup; BOS has allowed starting forwards 9% fewer pra than average (likely on him: Sam Hauser, Paul George); Ron Harper Jr. can switch onto him (BOS allowed forwards 10% fewer pra with him playing; he plays tonight); Hugo Gonzalez can switch onto him (BOS allowed forwards 10% fewer pra with him playing; he plays tonight); minutes trending up (we project 34, his last 5 avg 36 vs 32 over 15).",
    "result": null
   },
@@ -162160,6 +162160,36 @@
    "price": 0.53,
    "edge": -0.171,
    "news": "Chris Youngblood is out: Jrue Holiday hit the under in 6/12 games without him vs 3/5 with him; Vit Krejci is out: Jrue Holiday hit the under in 6/13 games without him vs 3/4 with him; Ja Morant is out: Jrue Holiday hit the under in 6/12 games without him vs 3/5 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed bench guards 4% more pra than average (likely on him: Landry Shamet, Miles McBride); Jose Alvarado can switch onto him (NYK allowed guards 15% fewer pra with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer pra with him playing; he plays tonight); minutes trending up (we project 28, his last 5 avg 29 vs 27 over 15).",
+   "result": null
+  },
+  {
+   "date": "2026-11-21",
+   "ticker": "KXNBAPRA-26NOV21PORNYK-PORSHENDERSON00-15",
+   "league": "nba",
+   "player": "Scoot Henderson",
+   "stat": "pra",
+   "side": "over",
+   "line": 14.5,
+   "start": "2026-11-22T00:30:00Z",
+   "p": 0.351,
+   "price": 0.51,
+   "edge": -0.176,
+   "news": "Chris Youngblood is out: Scoot Henderson hit the over in 4/12 games without him vs 3/3 with him; Vit Krejci is out: Scoot Henderson hit the over in 8/16 games without him vs 16/16 with him; Ja Morant is out: Scoot Henderson hit the over in 2/6 games without him vs 3/6 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed bench guards 4% more pra than average (likely on him: Landry Shamet, Miles McBride); Jose Alvarado can switch onto him (NYK allowed guards 15% fewer pra with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer pra with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-21",
+   "ticker": "KXNBAPRA-26NOV21PORNYK-PORSHENDERSON00-15",
+   "league": "nba",
+   "player": "Scoot Henderson",
+   "stat": "pra",
+   "side": "under",
+   "line": 14.5,
+   "start": "2026-11-22T00:30:00Z",
+   "p": 0.649,
+   "price": 0.52,
+   "edge": 0.112,
+   "news": "Chris Youngblood is out: Scoot Henderson hit the under in 8/12 games without him vs 0/3 with him; Vit Krejci is out: Scoot Henderson hit the under in 8/16 games without him vs 0/16 with him; Ja Morant is out: Scoot Henderson hit the under in 4/6 games without him vs 3/6 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed bench guards 4% more pra than average (likely on him: Landry Shamet, Miles McBride); Jose Alvarado can switch onto him (NYK allowed guards 15% fewer pra with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer pra with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -162892,8 +162922,8 @@
    "line": 29.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.465,
-   "price": 0.5,
-   "edge": -0.052,
+   "price": 0.49,
+   "edge": -0.042,
    "news": "Jordan Clarkson is out: Jalen Brunson hit the over in 4/12 games without him vs 11/28 with him; POR has allowed starting guards 2% more points than average (likely on him: Sidy Cissoko, Damian Lillard); Deni Avdija can switch onto him (POR allowed guards 9% fewer points with him playing; he plays tonight).",
    "result": null
   },
@@ -164512,8 +164542,8 @@
    "line": 3.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.479,
-   "price": 0.5,
-   "edge": -0.039,
+   "price": 0.49,
+   "edge": -0.028,
    "news": "POR has allowed starting guards 3% more rebounds than average (likely on him: Sidy Cissoko, Damian Lillard); Damian Lillard can switch onto him (POR allowed guards 11% fewer rebounds with him playing; he plays tonight); Sidy Cissoko can switch onto him (POR allowed guards 10% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -164647,8 +164677,8 @@
    "line": 3.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.585,
-   "price": 0.56,
-   "edge": 0.008,
+   "price": 0.57,
+   "edge": -0.002,
    "news": "Chris Youngblood is out: Jrue Holiday hit the under in 3/12 games without him vs 3/5 with him; Vit Krejci is out: Jrue Holiday hit the under in 6/13 games without him vs 0/4 with him; Ja Morant is out: Jrue Holiday hit the under in 5/12 games without him vs 1/5 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed bench guards 11% fewer rebounds than average (likely on him: Landry Shamet, Miles McBride); Jose Alvarado can switch onto him (NYK allowed guards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -164707,8 +164737,8 @@
    "line": 3.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.411,
-   "price": 0.42,
-   "edge": -0.026,
+   "price": 0.43,
+   "edge": -0.036,
    "news": "News: Toumani Camara (soreness) available Thursday vs. MIL - NBC Sports NYK's F OG Anunoby is out, an easier matchup; NYK has allowed starting forwards 2% fewer rebounds than average; Tyler Kolek can switch onto him (NYK allowed forwards 13% fewer rebounds with him playing; he plays tonight); Mohamed Diawara can switch onto him (NYK allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -169777,8 +169807,8 @@
    "line": 4.5,
    "start": "2026-11-22T18:00:00Z",
    "p": 0.512,
-   "price": 0.52,
-   "edge": -0.025,
+   "price": 0.53,
+   "edge": -0.035,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -170872,8 +170902,8 @@
    "line": 3.5,
    "start": "2026-11-22T18:00:00Z",
    "p": 0.556,
-   "price": 0.57,
-   "edge": -0.031,
+   "price": 0.59,
+   "edge": -0.051,
    "news": "News: NFL rushing leader Jahmyr Gibbs releases limited-edition Kool-Aid drink - Yahoo Sports",
    "result": null
   },
@@ -171127,8 +171157,8 @@
    "line": 1.5,
    "start": "2026-11-22T18:00:00Z",
    "p": 0.467,
-   "price": 0.51,
-   "edge": -0.06,
+   "price": 0.5,
+   "edge": -0.05,
    "news": "Jalen McMillan is out: Tez Johnson hit the under in 3/5 games without him vs 4/5 with him.",
    "result": null
   },
