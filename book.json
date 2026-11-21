@@ -5570,7 +5570,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-21 00:00 PT",
-  "props_today": 966,
+  "props_today": 967,
   "kalshi_props_today": 62,
   "kalshi_priced_today": 1,
   "books_on_kalshi_props": {
@@ -158365,8 +158365,8 @@
    "line": 2.5,
    "start": "2026-11-21T18:00:00Z",
    "p": 0.488,
-   "price": 0.54,
-   "edge": -0.069,
+   "price": 0.53,
+   "edge": -0.059,
    "news": "PHI's G Jaylen Brown is out, an easier matchup; PHI has allowed starting guards 19% fewer threes than average (likely on him: Anfernee Simons, Tyrese Maxey); Jaylen Brown can switch onto him (PHI allowed guards 21% fewer threes with him playing; he is out tonight); Dean Wade can switch onto him (PHI allowed guards 18% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -158635,8 +158635,8 @@
    "line": 1.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.401,
-   "price": 0.48,
-   "edge": -0.096,
+   "price": 0.47,
+   "edge": -0.086,
    "news": "POR has allowed starting centers 17% more threes than average (likely on him: Donovan Clingan).",
    "result": null
   },
@@ -158995,8 +158995,8 @@
    "line": 19.5,
    "start": "2026-11-21T18:00:00Z",
    "p": 0.427,
-   "price": 0.54,
-   "edge": -0.13,
+   "price": 0.53,
+   "edge": -0.12,
    "news": "News: Kyle Kuzma (shoulder) off injury report vs. 76ers - NBC Sports PHI's F Dean Wade is out, an easier matchup; PHI has allowed starting forwards 4% more pra than average (likely on him: LeBron James, Jabari Walker).",
    "result": null
   },
@@ -159219,9 +159219,9 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-21T18:00:00Z",
-   "p": 0.5,
+   "p": 0.502,
    "price": 0.47,
-   "edge": 0.013,
+   "edge": 0.015,
    "news": "PHI's G Jaylen Brown is out, an easier matchup; PHI has allowed starting guards 13% more rebounds than average (likely on him: Anfernee Simons, Tyrese Maxey); Jabari Walker can switch onto him (PHI allowed guards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -159234,9 +159234,9 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-11-21T18:00:00Z",
-   "p": 0.49,
+   "p": 0.488,
    "price": 0.56,
-   "edge": -0.087,
+   "edge": -0.089,
    "news": "PHI's G Jaylen Brown is out, an easier matchup; PHI has allowed starting guards 13% more rebounds than average (likely on him: Anfernee Simons, Tyrese Maxey); Jabari Walker can switch onto him (PHI allowed guards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -160585,8 +160585,8 @@
    "line": 0.5,
    "start": "2026-11-22T18:00:00Z",
    "p": 0.536,
-   "price": 0.55,
-   "edge": -0.031,
+   "price": 0.54,
+   "edge": -0.021,
    "news": "News: Five Steelers beyond Aaron Rodgers who could hurt the Eagles - Yahoo Sports",
    "result": null
   },
