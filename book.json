@@ -5669,23 +5669,23 @@
    "secs": 0.0
   },
   "props_at": "2026-11-21 07:00 PT",
-  "props_today": 1098,
-  "kalshi_props_today": 423,
+  "props_today": 1100,
+  "kalshi_props_today": 422,
   "kalshi_priced_today": 3,
   "books_on_kalshi_props": {
-   "AN Consensus": 325,
-   "AN Open": 325,
+   "AN Consensus": 326,
+   "AN Open": 326,
    "BetMGM": 170,
-   "BetRivers": 262,
-   "Caesars": 275,
-   "DraftKings": 294,
-   "FanDuel": 282,
-   "Fanatics": 255,
-   "Parx": 262,
-   "Sleeper": 313,
-   "Underdog": 423,
+   "BetRivers": 263,
+   "Caesars": 276,
+   "DraftKings": 295,
+   "FanDuel": 283,
+   "Fanatics": 256,
+   "Parx": 263,
+   "Sleeper": 314,
+   "Underdog": 422,
    "Unibet": 16,
-   "bet365": 324
+   "bet365": 325
   },
   "data_files": [
    "mlb.sqlite",
@@ -5693,7 +5693,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 58
+  "kalshi_legs_today": 59
  },
  "shadow": [
   {
@@ -158886,8 +158886,8 @@
    "line": 2.5,
    "start": "2026-11-22T01:00:00Z",
    "p": 0.544,
-   "price": 0.52,
-   "edge": 0.007,
+   "price": 0.53,
+   "edge": -0.003,
    "news": "Injury report: Probable:  (official NBA report) Scotty Pippen Jr. is out: Ty Jerome hit the under in 7/13 games without him vs 5/11 with him; MIN's G Jaylen Clark is out, an easier matchup; MIN has allowed starting guards 16% fewer threes than average (likely on him: Ayo Dosunmu, LaMelo Ball); Jaylen Clark can switch onto him (MIN allowed guards 12% fewer threes with him playing; he is out tonight); Donte DiVincenzo can switch onto him (MIN allowed guards 10% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -158961,8 +158961,8 @@
    "line": 1.5,
    "start": "2026-11-22T01:00:00Z",
    "p": 0.451,
-   "price": 0.41,
-   "edge": 0.024,
+   "price": 0.42,
+   "edge": 0.014,
    "news": "MEM's F Jerami Grant is out, an easier matchup; MEM's F Cameron Boozer is out, an easier matchup; MEM has allowed starting forwards 5% fewer threes than average (likely on him: Cedric Coward, Jaylen Wells); Ty Jerome can switch onto him (MEM allowed forwards 24% fewer threes with him playing; he plays tonight); Scotty Pippen Jr. can switch onto him (MEM allowed forwards 15% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -159726,8 +159726,8 @@
    "line": 1.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.46,
-   "price": 0.53,
-   "edge": -0.087,
+   "price": 0.55,
+   "edge": -0.107,
    "news": "Jordan Clarkson is out: Josh Hart hit the under in 4/11 games without him vs 20/29 with him; POR has allowed starting guards 4% fewer threes than average (likely on him: Sidy Cissoko, Damian Lillard); Deni Avdija can switch onto him (POR allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160101,8 +160101,8 @@
    "line": 1.5,
    "start": "2026-11-22T01:00:00Z",
    "p": 0.607,
-   "price": 0.62,
-   "edge": -0.029,
+   "price": 0.61,
+   "edge": -0.02,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -160506,8 +160506,8 @@
    "line": 5.5,
    "start": "2026-11-21T18:00:00Z",
    "p": 0.493,
-   "price": 0.53,
-   "edge": -0.054,
+   "price": 0.52,
+   "edge": -0.044,
    "news": "Injury report: Questionable: Injury/Illness - Right Foot Sprain (official NBA report) Jaylen Brown (G) is out, so Tyrese Maxey's role likely grows; MIL has allowed starting guards 1% more assists than average (likely on him: Tyler Herro, Brayden Burries); Nate Ament can switch onto him (MIL allowed guards 16% fewer assists with him playing; he plays tonight); Brayden Burries can switch onto him (MIL allowed guards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -160671,8 +160671,8 @@
    "line": 3.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.442,
-   "price": 0.49,
-   "edge": -0.065,
+   "price": 0.48,
+   "edge": -0.055,
    "news": "POR has allowed starting guards 16% fewer assists than average (likely on him: Sidy Cissoko, Damian Lillard); Damian Lillard can switch onto him (POR allowed guards 12% fewer assists with him playing; he plays tonight); Deni Avdija can switch onto him (POR allowed guards 12% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -160881,8 +160881,8 @@
    "line": 29.5,
    "start": "2026-11-22T03:00:00Z",
    "p": 0.398,
-   "price": 0.48,
-   "edge": -0.099,
+   "price": 0.47,
+   "edge": -0.089,
    "news": "Precious Achiuwa is out: Domantas Sabonis hit the over in 7/12 games without him vs 8/11 with him; BOS has allowed starting forwards 9% fewer pra than average (likely on him: Jayson Tatum, Sam Hauser); Ron Harper Jr. can switch onto him (BOS allowed forwards 10% fewer pra with him playing; he plays tonight); Hugo Gonzalez can switch onto him (BOS allowed forwards 10% fewer pra with him playing; he plays tonight); those defenders hold shooters 2.5% below their normal FG%, among the league's stingiest; minutes trending down (we project 30, his last 5 avg 29 vs 32 over 15).",
    "result": null
   },
@@ -160956,8 +160956,8 @@
    "line": 19.5,
    "start": "2026-11-22T01:00:00Z",
    "p": 0.527,
-   "price": 0.51,
-   "edge": -0.0,
+   "price": 0.52,
+   "edge": -0.01,
    "news": "News: Max Strus Struggles as Clippers Fall 132-107 to Jazz - cwibc.co.id DAL has allowed bench guards 2% more pra than average (likely on him: Walter Clayton Jr., Marcus Sasser); Kyrie Irving can switch onto him (DAL allowed guards 15% fewer pra with him playing; he plays tonight); Morez Johnson Jr. can switch onto him (DAL allowed guards 12% fewer pra with him playing; he plays tonight).",
    "result": null
   },
@@ -161241,8 +161241,8 @@
    "line": 19.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.472,
-   "price": 0.47,
-   "edge": -0.015,
+   "price": 0.46,
+   "edge": -0.005,
    "news": "POR has allowed starting guards 1% fewer pra than average (likely on him: Sidy Cissoko, Damian Lillard); minutes trending down (we project 29, his last 5 avg 27 vs 31 over 15).",
    "result": null
   },
@@ -163281,8 +163281,8 @@
    "line": 1.5,
    "start": "2026-11-22T03:00:00Z",
    "p": 0.494,
-   "price": 0.49,
-   "edge": -0.013,
+   "price": 0.5,
+   "edge": -0.024,
    "news": "News: Mitchell Robinson\u2019s Path to Fixing Celtics Struggles Runs Through Paul George, Not Jayson Tatum - Sports Illustrated SAC's F Precious Achiuwa is out, an easier matchup; SAC has allowed starting forwards 3% more steals than average (likely on him: Leaky Black, Domantas Sabonis); Malik Monk can switch onto him (SAC allowed forwards 27% fewer steals with him playing; he plays tonight); Maxime Raynaud can switch onto him (SAC allowed forwards 15% fewer steals with him playing; he is out tonight).",
    "result": null
   },
@@ -163521,8 +163521,8 @@
    "line": 1.5,
    "start": "2026-11-22T01:00:00Z",
    "p": 0.321,
-   "price": 0.35,
-   "edge": -0.045,
+   "price": 0.34,
+   "edge": -0.035,
    "news": "SAS has allowed starting guards 20% fewer steals than average (likely on him: Devin Vassell, Stephon Castle); Carter Bryant can switch onto him (SAS allowed guards 10% fewer steals with him playing; he plays tonight); Victor Wembanyama can switch onto him (SAS allowed guards 10% fewer steals with him playing; he plays tonight).",
    "result": null
   },
@@ -170196,8 +170196,8 @@
    "line": 59.5,
    "start": "2026-11-22T18:00:00Z",
    "p": 0.507,
-   "price": 0.52,
-   "edge": -0.03,
+   "price": 0.51,
+   "edge": -0.02,
    "news": "News: Will Luther Burden play for the Bears against the Saints? What we know about the WR\u2019s injury - Diario AS",
    "result": null
   },
