@@ -95,6 +95,7 @@ def tick(bot, log):
     today, m = now.date().isoformat(), now.hour * 60 + now.minute
     if now.weekday() > 4 or not (570 <= m < 960):
         return
+    c["flat_min"] = c.get("half_days", {}).get(today, c["flat_min"])  # 11/21: early-close days (e.g. day after Thanksgiving)
     st = load()
     if st.get("date") != today:
         st.update({"date": today, "day_pnl": 0.0, "entered": False, "skipped": {}})

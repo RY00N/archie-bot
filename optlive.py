@@ -159,7 +159,7 @@ def tick(quote, log):
             return
         if o["state"] == "pending":
             _sync_entry(st, log, quote); return
-        now = datetime.now(ET); late = now.hour * 60 + now.minute >= 955
+        now = datetime.now(ET); late = now.hour * 60 + now.minute >= cfg().get("half_days", {}).get(now.date().isoformat(), 955)  # 11/21: early-close days
         if o["state"] == "open" and late:
             bid, _ = quote(o["symbol"]); exit(o["symbol"], bid, "3:55 safety", log); return
         if o["state"] == "closing":
