@@ -5669,24 +5669,24 @@
    "secs": 0.0
   },
   "props_at": "2026-11-21 13:00 PT",
-  "props_today": 460,
-  "kalshi_props_today": 253,
+  "props_today": 470,
+  "kalshi_props_today": 259,
   "kalshi_priced_today": 2,
   "books_on_kalshi_props": {
-   "AN Consensus": 253,
-   "AN Open": 253,
+   "AN Consensus": 259,
+   "AN Open": 259,
    "BetMGM": 166,
-   "BetRivers": 207,
-   "Caesars": 217,
-   "DraftKings": 232,
-   "FanDuel": 222,
-   "Fanatics": 201,
-   "Parx": 207,
-   "Pinnacle": 152,
+   "BetRivers": 212,
+   "Caesars": 222,
+   "DraftKings": 238,
+   "FanDuel": 228,
+   "Fanatics": 206,
+   "Parx": 212,
+   "Pinnacle": 157,
    "Sleeper": 234,
-   "Underdog": 253,
-   "Unibet": 49,
-   "bet365": 253
+   "Underdog": 259,
+   "Unibet": 50,
+   "bet365": 259
   },
   "data_files": [
    "mlb.sqlite",
@@ -5694,7 +5694,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 34
+  "kalshi_legs_today": 36
  },
  "shadow": [
   {
@@ -158452,8 +158452,8 @@
    "line": 1.5,
    "start": "2026-11-22T03:00:00Z",
    "p": 0.502,
-   "price": 0.49,
-   "edge": -0.005,
+   "price": 0.5,
+   "edge": -0.015,
    "news": "BOS's F Jayson Tatum is out, an easier matchup; BOS has allowed starting forwards 3% fewer threes than average (likely on him: Sam Hauser, Paul George); Hugo Gonzalez can switch onto him (BOS allowed forwards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159817,8 +159817,8 @@
    "line": 1.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.452,
-   "price": 0.54,
-   "edge": -0.105,
+   "price": 0.55,
+   "edge": -0.115,
    "news": "Jordan Clarkson is out: Josh Hart hit the under in 4/11 games without him vs 20/29 with him; POR has allowed starting guards 4% fewer threes than average (likely on him: Sidy Cissoko, Damian Lillard); Deni Avdija can switch onto him (POR allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159997,8 +159997,8 @@
    "line": 1.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.407,
-   "price": 0.43,
-   "edge": -0.04,
+   "price": 0.44,
+   "edge": -0.05,
    "news": "Injury report: Questionable: Injury/Illness - Left Foot Contusion (official NBA report) NYK's F OG Anunoby is out, an easier matchup; NYK has allowed starting forwards 2% more threes than average; Andre Drummond can switch onto him (NYK allowed forwards 35% fewer threes with him playing; he plays tonight); Tyler Kolek can switch onto him (NYK allowed forwards 21% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160012,8 +160012,8 @@
    "line": 0.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.577,
-   "price": 0.61,
-   "edge": -0.05,
+   "price": 0.62,
+   "edge": -0.059,
    "news": "NYK has allowed starting centers 2% more threes than average (likely on him: Karl-Anthony Towns); Andre Drummond can switch onto him (NYK allowed centers 30% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160057,8 +160057,8 @@
    "line": 3.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.498,
-   "price": 0.61,
-   "edge": -0.129,
+   "price": 0.62,
+   "edge": -0.138,
    "news": "News: Damian Lillard scores season-high 33 points in first game vs. Bucks post-injury, leads Trail Blazers to win - Yahoo Sports Chris Youngblood (G) is out, so Damian Lillard's role likely grows; Vit Krejci is out: Damian Lillard hit the under in 4/9 games without him vs 3/3 with him; Ja Morant is out: Damian Lillard hit the under in 4/8 games without him vs 3/4 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 1% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 26% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160072,8 +160072,8 @@
    "line": 1.5,
    "start": "2026-11-22T00:30:00Z",
    "p": 0.762,
-   "price": 0.61,
-   "edge": 0.135,
+   "price": 0.6,
+   "edge": 0.145,
    "news": "Chris Youngblood is out: Jrue Holiday hit the over in 10/12 games without him vs 3/5 with him; Vit Krejci is out: Jrue Holiday hit the over in 11/13 games without him vs 2/4 with him; Ja Morant is out: Jrue Holiday hit the over in 10/12 games without him vs 3/5 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed bench guards 26% more threes than average (likely on him: Landry Shamet, Miles McBride); Jose Alvarado can switch onto him (NYK allowed guards 26% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160237,8 +160237,8 @@
    "line": 5.5,
    "start": "2026-11-22T03:00:00Z",
    "p": 0.375,
-   "price": 0.41,
-   "edge": -0.052,
+   "price": 0.43,
+   "edge": -0.072,
    "news": "BOS's G Derrick White is out, an easier matchup; BOS has allowed starting guards 8% fewer assists than average (likely on him: Baylor Scheierman, Jordan Walsh); Ron Harper Jr. can switch onto him (BOS allowed guards 20% fewer assists with him playing; he plays tonight); Paul George can switch onto him (BOS allowed guards 11% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -161572,8 +161572,8 @@
    "line": 24.5,
    "start": "2026-11-22T01:00:00Z",
    "p": 0.496,
-   "price": 0.5,
-   "edge": -0.022,
+   "price": 0.51,
+   "edge": -0.031,
    "news": "SAS has allowed starting forwards 14% fewer pra than average (likely on him: Victor Wembanyama, Julian Champagnie); Jordan McLaughlin can switch onto him (SAS allowed forwards 11% fewer pra with him playing; he plays tonight); Stephon Castle can switch onto him (SAS allowed forwards 10% fewer pra with him playing; he plays tonight); those defenders hold shooters 5.4% below their normal FG%, among the league's stingiest; minutes trending up (we project 33, his last 5 avg 36 vs 30 over 15).",
    "result": null
   },
@@ -162652,8 +162652,8 @@
    "line": 5.5,
    "start": "2026-11-22T03:00:00Z",
    "p": 0.463,
-   "price": 0.48,
-   "edge": -0.034,
+   "price": 0.52,
+   "edge": -0.074,
    "news": "News: Mitchell Robinson\u2019s Path to Fixing Celtics Struggles Runs Through Paul George, Not Jayson Tatum - Sports Illustrated Jayson Tatum (F) is out, so Paul George's role likely grows; SAC has allowed starting forwards 5% fewer rebounds than average (likely on him: Leaky Black, Domantas Sabonis).",
    "result": null
   },
@@ -162667,8 +162667,8 @@
    "line": 5.5,
    "start": "2026-11-22T03:00:00Z",
    "p": 0.457,
-   "price": 0.53,
-   "edge": -0.09,
+   "price": 0.49,
+   "edge": -0.05,
    "news": "News: Mitchell Robinson\u2019s Path to Fixing Celtics Struggles Runs Through Paul George, Not Jayson Tatum - Sports Illustrated Jayson Tatum (F) is out, so Paul George's role likely grows; SAC has allowed starting forwards 5% fewer rebounds than average (likely on him: Leaky Black, Domantas Sabonis).",
    "result": null
   },
@@ -164137,8 +164137,8 @@
    "line": 1.5,
    "start": "2026-11-22T03:00:00Z",
    "p": 0.436,
-   "price": 0.54,
-   "edge": -0.121,
+   "price": 0.53,
+   "edge": -0.111,
    "news": "News: Mitchell Robinson\u2019s Path to Fixing Celtics Struggles Runs Through Paul George, Not Jayson Tatum - Sports Illustrated Jayson Tatum (F) is out, so Paul George's role likely grows; SAC has allowed starting forwards 3% more steals than average (likely on him: Leaky Black, Domantas Sabonis); Malik Monk can switch onto him (SAC allowed forwards 27% fewer steals with him playing; he plays tonight); Maxime Raynaud can switch onto him (SAC allowed forwards 15% fewer steals with him playing; he is out tonight).",
    "result": null
   },
@@ -165022,8 +165022,8 @@
    "line": 19.5,
    "start": "2026-11-22T21:25:00Z",
    "p": 0.493,
-   "price": 0.5,
-   "edge": -0.025,
+   "price": 0.49,
+   "edge": -0.014,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -171757,8 +171757,8 @@
    "line": 14.5,
    "start": "2026-11-22T18:00:00Z",
    "p": 0.462,
-   "price": 0.53,
-   "edge": -0.085,
+   "price": 0.51,
+   "edge": -0.065,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
