@@ -5702,25 +5702,25 @@
    "secs": 0.0
   },
   "props_at": "2026-11-22 15:00 PT",
-  "props_today": 827,
-  "kalshi_props_today": 377,
+  "props_today": 848,
+  "kalshi_props_today": 384,
   "kalshi_priced_today": 15,
   "books_on_kalshi_props": {
-   "AN Consensus": 376,
-   "AN Open": 377,
-   "BetMGM": 254,
-   "BetRivers": 301,
-   "Caesars": 318,
-   "DraftKings": 338,
-   "FanDuel": 333,
-   "Fanatics": 283,
+   "AN Consensus": 383,
+   "AN Open": 384,
+   "BetMGM": 257,
+   "BetRivers": 305,
+   "Caesars": 320,
+   "DraftKings": 344,
+   "FanDuel": 339,
+   "Fanatics": 287,
    "Hard Rock Bet": 27,
-   "Parx": 316,
-   "Pinnacle": 236,
-   "Sleeper": 370,
-   "Underdog": 377,
+   "Parx": 320,
+   "Pinnacle": 239,
+   "Sleeper": 375,
+   "Underdog": 384,
    "Unibet": 81,
-   "bet365": 372
+   "bet365": 378
   },
   "data_files": [
    "mlb.sqlite",
@@ -5728,7 +5728,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 98
+  "kalshi_legs_today": 100
  },
  "shadow": [
   {
@@ -158321,8 +158321,8 @@
    "line": 3.5,
    "start": "2026-11-23T01:30:00Z",
    "p": 0.666,
-   "price": 0.63,
-   "edge": 0.02,
+   "price": 0.64,
+   "edge": 0.01,
    "news": "News: Jayson Tatum (rest) off injury report vs. GSW - NBC Sports Paul George is out: Jayson Tatum hit the under in 2/2 games without him vs 10/14 with him; GSW has allowed starting forwards 13% more threes than average (likely on him: Yaxel Lendeborg, Draymond Green); Stephen Curry can switch onto him (GSW allowed forwards 24% fewer threes with him playing; he is out tonight); Malevy Leons can switch onto him (GSW allowed forwards 15% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -158411,8 +158411,8 @@
    "line": 0.5,
    "start": "2026-11-23T01:30:00Z",
    "p": 0.365,
-   "price": 0.42,
-   "edge": -0.072,
+   "price": 0.4,
+   "edge": -0.052,
    "news": "News: Al Horford (rest) removed from injury report - NBC Sports BOS's C Mitchell Robinson is out, an easier matchup; BOS has allowed bench centers 27% fewer threes than average (likely on him: Neemias Queta, Luka Garza).",
    "result": null
   },
@@ -158996,8 +158996,8 @@
    "line": 1.5,
    "start": "2026-11-23T00:00:00Z",
    "p": 0.352,
-   "price": 0.41,
-   "edge": -0.075,
+   "price": 0.4,
+   "edge": -0.065,
    "news": "News: Patrick Williams DTD For Nov. 22 Against Nuggets Due To Thumb Injury - FanDuel Caleb Wilson (F) is out, so Patrick Williams's role likely grows; DEN has allowed bench forwards 17% more threes than average (likely on him: Spencer Jones, Trevon Brazile); Tyus Jones can switch onto him (DEN allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159011,8 +159011,8 @@
    "line": 1.5,
    "start": "2026-11-23T00:00:00Z",
    "p": 0.568,
-   "price": 0.63,
-   "edge": -0.078,
+   "price": 0.62,
+   "edge": -0.068,
    "news": "News: Patrick Williams DTD For Nov. 22 Against Nuggets Due To Thumb Injury - FanDuel Caleb Wilson (F) is out, so Patrick Williams's role likely grows; DEN has allowed bench forwards 17% more threes than average (likely on him: Spencer Jones, Trevon Brazile); Tyus Jones can switch onto him (DEN allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159626,8 +159626,8 @@
    "line": 2.5,
    "start": "2026-11-23T01:00:00Z",
    "p": 0.513,
-   "price": 0.55,
-   "edge": -0.054,
+   "price": 0.54,
+   "edge": -0.044,
    "news": "Jordan Clarkson is out: Jalen Brunson hit the over in 6/13 games without him vs 16/27 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159835,10 +159835,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.304,
+   "p": 0.334,
    "price": 0.38,
-   "edge": -0.092,
-   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC has allowed starting centers 26% fewer threes than average (likely on him: Isaiah Hartenstein); Jaylin Williams can switch onto him (OKC allowed centers 38% fewer threes with him playing; he is out tonight).",
+   "edge": -0.062,
+   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC's C Aday Mara is out, an easier matchup; OKC has allowed starting centers 26% fewer threes than average (likely on him: Isaiah Hartenstein); Jaylin Williams can switch onto him (OKC allowed centers 38% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -159850,10 +159850,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.646,
+   "p": 0.606,
    "price": 0.63,
-   "edge": -0.0,
-   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC has allowed starting centers 26% fewer threes than average (likely on him: Isaiah Hartenstein); Jaylin Williams can switch onto him (OKC allowed centers 38% fewer threes with him playing; he is out tonight).",
+   "edge": -0.04,
+   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC's C Aday Mara is out, an easier matchup; OKC has allowed starting centers 26% fewer threes than average (likely on him: Isaiah Hartenstein); Jaylin Williams can switch onto him (OKC allowed centers 38% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -159866,8 +159866,8 @@
    "line": 1.5,
    "start": "2026-11-22T23:00:00Z",
    "p": 0.521,
-   "price": 0.56,
-   "edge": -0.056,
+   "price": 0.55,
+   "edge": -0.046,
    "news": "Giannis Antetokounmpo (F) is out, so Bobby Portis's role likely grows; OKC has allowed bench forwards 17% more threes than average (likely on him: Brooks Barnhizer); Chet Holmgren can switch onto him (OKC allowed forwards 21% fewer threes with him playing; he is out tonight); Cason Wallace can switch onto him (OKC allowed forwards 19% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -159881,8 +159881,8 @@
    "line": 1.5,
    "start": "2026-11-22T23:00:00Z",
    "p": 0.449,
-   "price": 0.45,
-   "edge": -0.018,
+   "price": 0.46,
+   "edge": -0.028,
    "news": "Giannis Antetokounmpo (F) is out, so Bobby Portis's role likely grows; OKC has allowed bench forwards 17% more threes than average (likely on him: Brooks Barnhizer); Chet Holmgren can switch onto him (OKC allowed forwards 21% fewer threes with him playing; he is out tonight); Cason Wallace can switch onto him (OKC allowed forwards 19% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -160046,8 +160046,8 @@
    "line": 1.5,
    "start": "2026-11-22T23:00:00Z",
    "p": 0.232,
-   "price": 0.38,
-   "edge": -0.164,
+   "price": 0.39,
+   "edge": -0.175,
    "news": "Shai Gilgeous-Alexander is out: Ajay Mitchell hit the over in 1/2 games without him vs 9/32 with him; Alex Caruso is out: Ajay Mitchell hit the over in 3/13 games without him vs 7/19 with him; Cason Wallace is out: Ajay Mitchell hit the over in 5/22 games without him vs 5/11 with him; Jalen Williams is out: Ajay Mitchell hit the over in 8/29 games without him vs 2/5 with him; MIA has allowed starting guards 14% more threes than average (likely on him: Davion Mitchell, Klay Thompson); Ryan Conwell can switch onto him (MIA allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160121,8 +160121,8 @@
    "line": 2.5,
    "start": "2026-11-22T23:00:00Z",
    "p": 0.401,
-   "price": 0.42,
-   "edge": -0.036,
+   "price": 0.43,
+   "edge": -0.046,
    "news": "Shai Gilgeous-Alexander (G) is out, so Jared McCain's role likely grows; Alex Caruso is out: Jared McCain hit the under in 3/6 games without him vs 2/6 with him; MIA has allowed starting guards 14% more threes than average (likely on him: Davion Mitchell, Klay Thompson); Ryan Conwell can switch onto him (MIA allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -160181,8 +160181,8 @@
    "line": 1.5,
    "start": "2026-11-22T23:00:00Z",
    "p": 0.566,
-   "price": 0.46,
-   "edge": 0.089,
+   "price": 0.48,
+   "edge": 0.069,
    "news": "News: Jaylin Williams Injury: Won't play Sunday - RotoWire Shai Gilgeous-Alexander is out: Kenrich Williams hit the under in 10/18 games without him vs 10/16 with him; Alex Caruso is out: Kenrich Williams hit the under in 4/7 games without him vs 3/6 with him; Cason Wallace is out: Kenrich Williams hit the under in 5/9 games without him vs 1/3 with him; MIA has allowed starting guards 14% more threes than average (likely on him: Davion Mitchell, Klay Thompson); Ryan Conwell can switch onto him (MIA allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -161035,10 +161035,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.514,
+   "p": 0.544,
    "price": 0.55,
-   "edge": -0.053,
-   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC has allowed starting centers 4% more assists than average (likely on him: Isaiah Hartenstein); Chet Holmgren can switch onto him (OKC allowed centers 16% fewer assists with him playing; he is out tonight); Aday Mara can switch onto him (OKC allowed centers 12% fewer assists with him playing; he is out tonight).",
+   "edge": -0.023,
+   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC's C Aday Mara is out, an easier matchup; OKC has allowed starting centers 4% more assists than average (likely on him: Isaiah Hartenstein); Chet Holmgren can switch onto him (OKC allowed centers 16% fewer assists with him playing; he is out tonight); Aday Mara can switch onto him (OKC allowed centers 12% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -161050,10 +161050,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.436,
+   "p": 0.396,
    "price": 0.46,
-   "edge": -0.041,
-   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC has allowed starting centers 4% more assists than average (likely on him: Isaiah Hartenstein); Chet Holmgren can switch onto him (OKC allowed centers 16% fewer assists with him playing; he is out tonight); Aday Mara can switch onto him (OKC allowed centers 12% fewer assists with him playing; he is out tonight).",
+   "edge": -0.081,
+   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC's C Aday Mara is out, an easier matchup; OKC has allowed starting centers 4% more assists than average (likely on him: Isaiah Hartenstein); Chet Holmgren can switch onto him (OKC allowed centers 16% fewer assists with him playing; he is out tonight); Aday Mara can switch onto him (OKC allowed centers 12% fewer assists with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -161066,8 +161066,8 @@
    "line": 9.5,
    "start": "2026-11-22T23:00:00Z",
    "p": 0.535,
-   "price": 0.46,
-   "edge": 0.058,
+   "price": 0.45,
+   "edge": 0.068,
    "news": "OKC's G Shai Gilgeous-Alexander is out, an easier matchup; OKC's G Alex Caruso is out, an easier matchup; OKC has allowed starting guards 1% more assists than average (likely on him: Jared McCain, Ajay Mitchell); Micah Peavy can switch onto him (OKC allowed guards 17% fewer assists with him playing; he plays tonight); Shai Gilgeous-Alexander can switch onto him (OKC allowed guards 16% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -161245,10 +161245,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.506,
-   "price": 0.41,
-   "edge": 0.079,
-   "news": "Chet Holmgren is out: Isaiah Hartenstein hit the over in 5/16 games without him vs 1/24 with him; MIA has allowed starting centers 20% fewer assists than average (likely on him: Bam Adebayo); Giannis Antetokounmpo can switch onto him (MIA allowed centers 17% fewer assists with him playing; he is out tonight); Bobby Portis can switch onto him (MIA allowed centers 17% fewer assists with him playing; he plays tonight).",
+   "p": 0.528,
+   "price": 0.42,
+   "edge": 0.091,
+   "news": "Aday Mara is out: Isaiah Hartenstein hit the over in 4/8 games without him vs 1/9 with him; Chet Holmgren is out: Isaiah Hartenstein hit the over in 5/16 games without him vs 1/24 with him; MIA has allowed starting centers 20% fewer assists than average (likely on him: Bam Adebayo); Giannis Antetokounmpo can switch onto him (MIA allowed centers 17% fewer assists with him playing; he is out tonight); Bobby Portis can switch onto him (MIA allowed centers 17% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161260,10 +161260,10 @@
    "side": "under",
    "line": 5.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.494,
-   "price": 0.6,
-   "edge": -0.123,
-   "news": "Chet Holmgren is out: Isaiah Hartenstein hit the under in 11/16 games without him vs 23/24 with him; MIA has allowed starting centers 20% fewer assists than average (likely on him: Bam Adebayo); Giannis Antetokounmpo can switch onto him (MIA allowed centers 17% fewer assists with him playing; he is out tonight); Bobby Portis can switch onto him (MIA allowed centers 17% fewer assists with him playing; he plays tonight).",
+   "p": 0.472,
+   "price": 0.59,
+   "edge": -0.135,
+   "news": "Aday Mara is out: Isaiah Hartenstein hit the under in 4/8 games without him vs 8/9 with him; Chet Holmgren is out: Isaiah Hartenstein hit the under in 11/16 games without him vs 23/24 with him; MIA has allowed starting centers 20% fewer assists than average (likely on him: Bam Adebayo); Giannis Antetokounmpo can switch onto him (MIA allowed centers 17% fewer assists with him playing; he is out tonight); Bobby Portis can switch onto him (MIA allowed centers 17% fewer assists with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -162235,10 +162235,10 @@
    "side": "over",
    "line": 34.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.392,
-   "price": 0.52,
-   "edge": -0.145,
-   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC has allowed starting centers 10% fewer pra than average (likely on him: Isaiah Hartenstein); Chet Holmgren can switch onto him (OKC allowed centers 21% fewer pra with him playing; he is out tonight); Isaiah Hartenstein can switch onto him (OKC allowed centers 16% fewer pra with him playing; he plays tonight); those defenders hold shooters 4.4% below their normal FG%, among the league's stingiest.",
+   "p": 0.422,
+   "price": 0.53,
+   "edge": -0.125,
+   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC's C Aday Mara is out, an easier matchup; OKC has allowed starting centers 10% fewer pra than average (likely on him: Isaiah Hartenstein); Chet Holmgren can switch onto him (OKC allowed centers 21% fewer pra with him playing; he is out tonight); Isaiah Hartenstein can switch onto him (OKC allowed centers 16% fewer pra with him playing; he plays tonight); those defenders hold shooters 4.4% below their normal FG%, among the league's stingiest.",
    "result": null
   },
   {
@@ -162250,10 +162250,10 @@
    "side": "under",
    "line": 34.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.558,
+   "p": 0.518,
    "price": 0.49,
-   "edge": 0.051,
-   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC has allowed starting centers 10% fewer pra than average (likely on him: Isaiah Hartenstein); Chet Holmgren can switch onto him (OKC allowed centers 21% fewer pra with him playing; he is out tonight); Isaiah Hartenstein can switch onto him (OKC allowed centers 16% fewer pra with him playing; he plays tonight); those defenders hold shooters 4.4% below their normal FG%, among the league's stingiest.",
+   "edge": 0.011,
+   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC's C Aday Mara is out, an easier matchup; OKC has allowed starting centers 10% fewer pra than average (likely on him: Isaiah Hartenstein); Chet Holmgren can switch onto him (OKC allowed centers 21% fewer pra with him playing; he is out tonight); Isaiah Hartenstein can switch onto him (OKC allowed centers 16% fewer pra with him playing; he plays tonight); those defenders hold shooters 4.4% below their normal FG%, among the league's stingiest.",
    "result": null
   },
   {
@@ -163285,10 +163285,10 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.393,
-   "price": 0.56,
-   "edge": -0.184,
-   "news": "Chet Holmgren is out: Isaiah Hartenstein hit the over in 5/16 games without him vs 10/24 with him; MIA has allowed starting centers 11% fewer points than average (likely on him: Bam Adebayo); those defenders hold shooters 2.4% below their normal FG%, among the league's stingiest.",
+   "p": 0.327,
+   "price": 0.62,
+   "edge": -0.309,
+   "news": "Aday Mara is out: Isaiah Hartenstein hit the over in 2/8 games without him vs 4/9 with him; Chet Holmgren is out: Isaiah Hartenstein hit the over in 5/16 games without him vs 10/24 with him; MIA has allowed starting centers 11% fewer points than average (likely on him: Bam Adebayo); those defenders hold shooters 2.4% below their normal FG%, among the league's stingiest.",
    "result": null
   },
   {
@@ -163300,10 +163300,10 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.607,
-   "price": 0.47,
-   "edge": 0.12,
-   "news": "Chet Holmgren is out: Isaiah Hartenstein hit the under in 11/16 games without him vs 14/24 with him; MIA has allowed starting centers 11% fewer points than average (likely on him: Bam Adebayo); those defenders hold shooters 2.4% below their normal FG%, among the league's stingiest.",
+   "p": 0.673,
+   "price": 0.4,
+   "edge": 0.256,
+   "news": "Aday Mara is out: Isaiah Hartenstein hit the under in 6/8 games without him vs 5/9 with him; Chet Holmgren is out: Isaiah Hartenstein hit the under in 11/16 games without him vs 14/24 with him; MIA has allowed starting centers 11% fewer points than average (likely on him: Bam Adebayo); those defenders hold shooters 2.4% below their normal FG%, among the league's stingiest.",
    "result": null
   },
   {
@@ -163331,8 +163331,8 @@
    "line": 19.5,
    "start": "2026-11-22T23:00:00Z",
    "p": 0.572,
-   "price": 0.49,
-   "edge": 0.065,
+   "price": 0.5,
+   "edge": 0.054,
    "news": "Shai Gilgeous-Alexander (G) is out, so Jared McCain's role likely grows; Alex Caruso is out: Jared McCain hit the under in 6/6 games without him vs 2/6 with him; MIA has allowed starting guards 4% more points than average (likely on him: Davion Mitchell, Klay Thompson); Ryan Conwell can switch onto him (MIA allowed guards 11% fewer points with him playing; he plays tonight); minutes trending up (we project 29, his last 5 avg 31 vs 28 over 15).",
    "result": null
   },
@@ -163604,6 +163604,36 @@
    "price": 0.54,
    "edge": -0.034,
    "news": "Paul George is out: Sam Hauser hit the under in 1/2 games without him vs 9/13 with him; GSW has allowed bench forwards 5% fewer rebounds than average (likely on him: Georges Niang, Gui Santos); Gui Santos can switch onto him (GSW allowed forwards 10% fewer rebounds with him playing; he plays tonight); LJ Cryer can switch onto him (GSW allowed forwards 9% fewer rebounds with him playing; he plays tonight).",
+   "result": null
+  },
+  {
+   "date": "2026-11-22",
+   "ticker": "KXNBAREB-26NOV22BOSGSW-GSWAHORFORD20-4",
+   "league": "nba",
+   "player": "Al Horford",
+   "stat": "rebounds",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-11-23T01:30:00Z",
+   "p": 0.421,
+   "price": 0.48,
+   "edge": -0.076,
+   "news": "News: Al Horford (rest) removed from injury report - NBC Sports BOS's C Mitchell Robinson is out, an easier matchup; BOS has allowed bench centers 17% fewer rebounds than average (likely on him: Neemias Queta, Luka Garza).",
+   "result": null
+  },
+  {
+   "date": "2026-11-22",
+   "ticker": "KXNBAREB-26NOV22BOSGSW-GSWAHORFORD20-4",
+   "league": "nba",
+   "player": "Al Horford",
+   "stat": "rebounds",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-11-23T01:30:00Z",
+   "p": 0.519,
+   "price": 0.56,
+   "edge": -0.058,
+   "news": "News: Al Horford (rest) removed from injury report - NBC Sports BOS's C Mitchell Robinson is out, an easier matchup; BOS has allowed bench centers 17% fewer rebounds than average (likely on him: Neemias Queta, Luka Garza).",
    "result": null
   },
   {
@@ -164471,8 +164501,8 @@
    "line": 3.5,
    "start": "2026-11-23T01:00:00Z",
    "p": 0.437,
-   "price": 0.45,
-   "edge": -0.03,
+   "price": 0.46,
+   "edge": -0.04,
    "news": "NYK's F OG Anunoby is out, an easier matchup; NYK has allowed bench forwards 21% fewer rebounds than average (likely on him: Mohamed Diawara, Dalton Knecht); Mohamed Diawara can switch onto him (NYK allowed forwards 13% fewer rebounds with him playing; he plays tonight); Tyler Kolek can switch onto him (NYK allowed forwards 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -164665,10 +164695,10 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.415,
+   "p": 0.445,
    "price": 0.51,
-   "edge": -0.112,
-   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC has allowed starting centers 3% fewer rebounds than average (likely on him: Isaiah Hartenstein); Isaiah Hartenstein can switch onto him (OKC allowed centers 19% fewer rebounds with him playing; he plays tonight); Chet Holmgren can switch onto him (OKC allowed centers 16% fewer rebounds with him playing; he is out tonight).",
+   "edge": -0.082,
+   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC's C Aday Mara is out, an easier matchup; OKC has allowed starting centers 3% fewer rebounds than average (likely on him: Isaiah Hartenstein); Isaiah Hartenstein can switch onto him (OKC allowed centers 19% fewer rebounds with him playing; he plays tonight); Chet Holmgren can switch onto him (OKC allowed centers 16% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -164680,10 +164710,10 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.535,
+   "p": 0.495,
    "price": 0.5,
-   "edge": 0.018,
-   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC has allowed starting centers 3% fewer rebounds than average (likely on him: Isaiah Hartenstein); Isaiah Hartenstein can switch onto him (OKC allowed centers 19% fewer rebounds with him playing; he plays tonight); Chet Holmgren can switch onto him (OKC allowed centers 16% fewer rebounds with him playing; he is out tonight).",
+   "edge": -0.023,
+   "news": "News: Tyler Herro & Bam Adebayo\u2019s Strained Relationship After First On-Court Clash - Yahoo Sports OKC's C Aday Mara is out, an easier matchup; OKC has allowed starting centers 3% fewer rebounds than average (likely on him: Isaiah Hartenstein); Isaiah Hartenstein can switch onto him (OKC allowed centers 19% fewer rebounds with him playing; he plays tonight); Chet Holmgren can switch onto him (OKC allowed centers 16% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -164845,10 +164875,10 @@
    "side": "over",
    "line": 11.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.53,
-   "price": 0.46,
-   "edge": 0.053,
-   "news": "Chet Holmgren is out: Isaiah Hartenstein hit the over in 8/16 games without him vs 8/24 with him; MIA has allowed starting centers 10% fewer rebounds than average (likely on him: Bam Adebayo).",
+   "p": 0.54,
+   "price": 0.56,
+   "edge": -0.037,
+   "news": "Aday Mara is out: Isaiah Hartenstein hit the over in 4/8 games without him vs 4/9 with him; Chet Holmgren is out: Isaiah Hartenstein hit the over in 8/16 games without him vs 8/24 with him; MIA has allowed starting centers 10% fewer rebounds than average (likely on him: Bam Adebayo).",
    "result": null
   },
   {
@@ -164860,10 +164890,10 @@
    "side": "under",
    "line": 11.5,
    "start": "2026-11-22T23:00:00Z",
-   "p": 0.47,
-   "price": 0.57,
-   "edge": -0.117,
-   "news": "Chet Holmgren is out: Isaiah Hartenstein hit the under in 8/16 games without him vs 16/24 with him; MIA has allowed starting centers 10% fewer rebounds than average (likely on him: Bam Adebayo).",
+   "p": 0.46,
+   "price": 0.45,
+   "edge": -0.007,
+   "news": "Aday Mara is out: Isaiah Hartenstein hit the under in 4/8 games without him vs 5/9 with him; Chet Holmgren is out: Isaiah Hartenstein hit the under in 8/16 games without him vs 16/24 with him; MIA has allowed starting centers 10% fewer rebounds than average (likely on him: Bam Adebayo).",
    "result": null
   },
   {
@@ -164921,8 +164951,8 @@
    "line": 5.5,
    "start": "2026-11-22T23:00:00Z",
    "p": 0.399,
-   "price": 0.45,
-   "edge": -0.068,
+   "price": 0.46,
+   "edge": -0.078,
    "news": "News: Jaylin Williams Injury: Won't play Sunday - RotoWire Shai Gilgeous-Alexander is out: Kenrich Williams hit the under in 6/18 games without him vs 8/16 with him; Alex Caruso is out: Kenrich Williams hit the under in 2/7 games without him vs 3/6 with him; Cason Wallace is out: Kenrich Williams hit the under in 4/9 games without him vs 1/3 with him; Jalen Williams is out: Kenrich Williams hit the under in 6/14 games without him vs 4/7 with him; MIA has allowed starting guards 5% fewer rebounds than average (likely on him: Davion Mitchell, Klay Thompson); Ryan Conwell can switch onto him (MIA allowed guards 19% fewer rebounds with him playing; he plays tonight); Dru Smith can switch onto him (MIA allowed guards 13% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -170081,8 +170111,8 @@
    "line": 7.5,
    "start": "2026-11-23T01:20:00Z",
    "p": 0.662,
-   "price": 0.56,
-   "edge": 0.085,
+   "price": 0.55,
+   "edge": 0.095,
    "news": "Jordan Addison is out: Justin Jefferson hit the under in 7/7 games without him vs 27/33 with him.",
    "result": null
   },
@@ -177056,8 +177086,8 @@
    "line": 7.5,
    "start": "2026-11-24T01:15:00Z",
    "p": 0.454,
-   "price": 0.55,
-   "edge": -0.113,
+   "price": 0.56,
+   "edge": -0.123,
    "news": "News: Bengals WR Ja\u2019Marr Chase\u2019s Message to Tee Higgins is a Blunt Warning to The Rest of The NFL - Yahoo Sports",
    "result": null
   },
