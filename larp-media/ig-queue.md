@@ -333,7 +333,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r220-one-tank.mp4 | one tank #ferrari #bmwm4 #nightdrive #nightlife #latenight | POSTED 11/21 8:38pm PST trial https://www.instagram.com/reel/DgB9x_5CGsN/ |
 | hourly | r221-whole-weekend.mp4 | whole weekend #nightdrive #dinner #weekend #nightlife #latenight | POSTED 11/21 9:38pm PST trial https://www.instagram.com/reel/DgCElDAksRG/ |
 | hourly | r222-fed-the-meter.mp4 | fed the meter #amg #mercedes #bmwm4 #nightlife #latenight | POSTED 11/21 10:38pm PST trial https://www.instagram.com/reel/DgCLetClQPL/ |
-| hourly | r223-lakers-lights.mp4 | Lakers lights #lakers #nba #ferrari #nightlife #latenight | queued (steady clips) |
+| hourly | r223-lakers-lights.mp4 | Lakers lights #lakers #nba #ferrari #nightlife #latenight | POSTED 11/22 8:39am PST trial https://www.instagram.com/reel/DgDQPHICZ49/ |
 | hourly | r224-room-service.mp4 | room service #hotel #sushi #bmwm4 #nightlife #latenight | queued (steady clips) |
 | hourly | r225-what-i-do.mp4 | what I do #carmeet #ferrari #bmwm4 #nightlife #latenight | queued (steady clips) |
 | hourly | r226-back-roads.mp4 | back roads #nightdrive #ferrari #mclaren #nightlife #latenight | queued (steady clips) |
