@@ -5834,8 +5834,8 @@
    "secs": 0.0
   },
   "props_at": "2026-11-23 12:00 PT",
-  "props_today": 1317,
-  "kalshi_props_today": 628,
+  "props_today": 1318,
+  "kalshi_props_today": 629,
   "kalshi_priced_today": 30,
   "books_on_kalshi_props": {
    "AN Consensus": 605,
@@ -5850,7 +5850,7 @@
    "Parx": 523,
    "Pinnacle": 411,
    "Sleeper": 590,
-   "Underdog": 627,
+   "Underdog": 628,
    "Unibet": 61,
    "bet365": 605
   },
@@ -156337,10 +156337,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-24T00:30:00Z",
-   "p": 0.542,
+   "p": 0.593,
    "price": 0.49,
-   "edge": 0.035,
-   "news": "News: LaMelo Ball\u2019s defensive improvement is helping the Timberwolves survive his slump - Dunking with Wolves Anthony Edwards is out: LaMelo Ball hit the over in 6/12 games without him vs 1/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 4% more threes than average (likely on him: Keon Ellis, Egor Demin); Chaney Johnson can switch onto him (BKN allowed guards 19% fewer threes with him playing; he is out tonight); Terance Mann can switch onto him (BKN allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "edge": 0.086,
+   "news": "Anthony Edwards is out: LaMelo Ball hit the over in 6/12 games without him vs 1/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 4% more threes than average (likely on him: Keon Ellis, Egor Demin); Chaney Johnson can switch onto him (BKN allowed guards 19% fewer threes with him playing; he is out tonight); Terance Mann can switch onto him (BKN allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156355,7 +156355,7 @@
    "p": 0.398,
    "price": 0.52,
    "edge": -0.139,
-   "news": "News: LaMelo Ball\u2019s defensive improvement is helping the Timberwolves survive his slump - Dunking with Wolves Anthony Edwards is out: LaMelo Ball hit the under in 6/12 games without him vs 2/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 4% more threes than average (likely on him: Keon Ellis, Egor Demin); Chaney Johnson can switch onto him (BKN allowed guards 19% fewer threes with him playing; he is out tonight); Terance Mann can switch onto him (BKN allowed guards 17% fewer threes with him playing; he plays tonight).",
+   "news": "Anthony Edwards is out: LaMelo Ball hit the under in 6/12 games without him vs 2/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 4% more threes than average (likely on him: Keon Ellis, Egor Demin); Chaney Johnson can switch onto him (BKN allowed guards 19% fewer threes with him playing; he is out tonight); Terance Mann can switch onto him (BKN allowed guards 17% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -156578,8 +156578,8 @@
    "line": 1.5,
    "start": "2026-11-24T01:00:00Z",
    "p": 0.387,
-   "price": 0.53,
-   "edge": -0.16,
+   "price": 0.54,
+   "edge": -0.17,
    "news": "Injury report: Probable:  (official NBA report) CHI's G Norman Powell is out, an easier matchup; CHI has allowed bench guards 6% fewer threes than average (likely on him: Tre Jones, Buddy Hield); Patrick Williams can switch onto him (CHI allowed guards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -156698,8 +156698,8 @@
    "line": 0.5,
    "start": "2026-11-24T01:30:00Z",
    "p": 0.426,
-   "price": 0.53,
-   "edge": -0.121,
+   "price": 0.54,
+   "edge": -0.131,
    "news": "News: Alperen Sengun final injury status for Rockets vs Nuggets NBA Cup game revealed - BasketNews.com",
    "result": null
   },
@@ -156818,8 +156818,8 @@
    "line": 0.5,
    "start": "2026-11-24T01:30:00Z",
    "p": 0.68,
-   "price": 0.68,
-   "edge": -0.015,
+   "price": 0.67,
+   "edge": -0.005,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -156848,8 +156848,8 @@
    "line": 1.5,
    "start": "2026-11-24T01:30:00Z",
    "p": 0.343,
-   "price": 0.34,
-   "edge": -0.013,
+   "price": 0.33,
+   "edge": -0.002,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -156953,8 +156953,8 @@
    "line": 1.5,
    "start": "2026-11-24T01:30:00Z",
    "p": 0.58,
-   "price": 0.55,
-   "edge": 0.013,
+   "price": 0.54,
+   "edge": 0.023,
    "news": "HOU has allowed starting centers 6% more threes than average (likely on him: Alperen Sengun, Clint Capela); Clint Capela can switch onto him (HOU allowed centers 41% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -156998,8 +156998,8 @@
    "line": 0.5,
    "start": "2026-11-24T01:30:00Z",
    "p": 0.576,
-   "price": 0.64,
-   "edge": -0.08,
+   "price": 0.65,
+   "edge": -0.09,
    "news": "HOU has allowed starting forwards 11% fewer threes than average (likely on him: Kevin Durant, Jabari Smith Jr.); Marcus Smart can switch onto him (HOU allowed forwards 29% fewer threes with him playing; he plays tonight); Bogdan Bogdanovic can switch onto him (HOU allowed forwards 26% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -157103,8 +157103,8 @@
    "line": 1.5,
    "start": "2026-11-24T01:30:00Z",
    "p": 0.39,
-   "price": 0.39,
-   "edge": -0.017,
+   "price": 0.38,
+   "edge": -0.006,
    "news": "HOU has allowed bench guards 11% more threes than average (likely on him: Marcus Smart, Reed Sheppard).",
    "result": null
   },
@@ -157163,8 +157163,8 @@
    "line": 1.5,
    "start": "2026-11-24T01:30:00Z",
    "p": 0.468,
-   "price": 0.44,
-   "edge": 0.011,
+   "price": 0.43,
+   "edge": 0.021,
    "news": "HOU has allowed starting forwards 11% fewer threes than average (likely on him: Kevin Durant, Jabari Smith Jr.); Marcus Smart can switch onto him (HOU allowed forwards 29% fewer threes with him playing; he plays tonight); Bogdan Bogdanovic can switch onto him (HOU allowed forwards 26% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -157298,8 +157298,8 @@
    "line": 1.5,
    "start": "2026-11-24T00:00:00Z",
    "p": 0.499,
-   "price": 0.42,
-   "edge": 0.062,
+   "price": 0.41,
+   "edge": 0.072,
    "news": "Grayson Allen is out: Sion James hit the over in 2/4 games without him vs 0/7 with him; Kon Knueppel is out: Sion James hit the over in 2/13 games without him vs 6/18 with him; Dennis Schroder is out: Sion James hit the over in 2/6 games without him vs 0/6 with him; MEM's G Scotty Pippen Jr. is out, an easier matchup; MEM has allowed starting guards 7% more threes than average (likely on him: Ty Jerome, Cam Spencer); Cedric Coward can switch onto him (MEM allowed guards 20% fewer threes with him playing; he plays tonight); Cameron Boozer can switch onto him (MEM allowed guards 18% fewer threes with him playing; he is out tonight).",
    "result": null
   },
@@ -157477,10 +157477,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-24T00:00:00Z",
-   "p": 0.522,
+   "p": 0.472,
    "price": 0.5,
-   "edge": 0.005,
-   "news": "Scotty Pippen Jr. is out: Ty Jerome hit the over in 7/14 games without him vs 6/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 1% fewer threes than average (likely on him: Sion James, Coby White); Dennis Schroder can switch onto him (CHA allowed guards 11% fewer threes with him playing; he is out tonight).",
+   "edge": -0.046,
+   "news": "News: Ty Jerome Injury: Probable for Saturday - RotoWire Scotty Pippen Jr. is out: Ty Jerome hit the over in 7/14 games without him vs 6/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 1% fewer threes than average (likely on him: Sion James, Coby White); Dennis Schroder can switch onto him (CHA allowed guards 11% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -157495,7 +157495,7 @@
    "p": 0.458,
    "price": 0.51,
    "edge": -0.069,
-   "news": "Scotty Pippen Jr. is out: Ty Jerome hit the under in 7/14 games without him vs 5/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 1% fewer threes than average (likely on him: Sion James, Coby White); Dennis Schroder can switch onto him (CHA allowed guards 11% fewer threes with him playing; he is out tonight).",
+   "news": "News: Ty Jerome Injury: Probable for Saturday - RotoWire Scotty Pippen Jr. is out: Ty Jerome hit the under in 7/14 games without him vs 5/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 1% fewer threes than average (likely on him: Sion James, Coby White); Dennis Schroder can switch onto him (CHA allowed guards 11% fewer threes with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -157553,8 +157553,8 @@
    "line": 1.5,
    "start": "2026-11-24T00:30:00Z",
    "p": 0.554,
-   "price": 0.64,
-   "edge": -0.102,
+   "price": 0.63,
+   "edge": -0.092,
    "news": "TOR's F RJ Barrett is out, an easier matchup; TOR has allowed starting forwards 9% fewer threes than average (likely on him: Scottie Barnes, Jamison Battle); Scottie Barnes can switch onto him (TOR allowed forwards 11% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -157673,8 +157673,8 @@
    "line": 2.5,
    "start": "2026-11-24T00:30:00Z",
    "p": 0.531,
-   "price": 0.55,
-   "edge": -0.036,
+   "price": 0.54,
+   "edge": -0.026,
    "news": "TOR has allowed starting guards 14% fewer threes than average (likely on him: Jamal Shead, Ja'Kobe Walter).",
    "result": null
   },
@@ -158287,10 +158287,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-24T01:00:00Z",
-   "p": 0.51,
+   "p": 0.56,
    "price": 0.51,
-   "edge": -0.017,
-   "news": "News: Could Jalen Green's Ongoing Struggles Lead Third Consecutive Win for Jazz? - Yahoo Sports NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 13% more threes than average.",
+   "edge": 0.033,
+   "news": "NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 13% more threes than average.",
    "result": null
   },
   {
@@ -158305,7 +158305,7 @@
    "p": 0.42,
    "price": 0.5,
    "edge": -0.098,
-   "news": "News: Could Jalen Green's Ongoing Struggles Lead Third Consecutive Win for Jazz? - Yahoo Sports NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 13% more threes than average.",
+   "news": "NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 13% more threes than average.",
    "result": null
   },
   {
@@ -158678,8 +158678,8 @@
    "line": 2.5,
    "start": "2026-11-24T00:00:00Z",
    "p": 0.439,
-   "price": 0.38,
-   "edge": 0.043,
+   "price": 0.37,
+   "edge": 0.053,
    "news": "Chris Youngblood is out: Jrue Holiday hit the over in 4/13 games without him vs 2/5 with him; Vit Krejci is out: Jrue Holiday hit the over in 5/14 games without him vs 1/4 with him; Ja Morant is out: Jrue Holiday hit the over in 5/13 games without him vs 1/5 with him; PHI has allowed bench guards 1% more threes than average (likely on him: Kentavious Caldwell-Pope, Anfernee Simons); Jaylen Brown can switch onto him (PHI allowed guards 22% fewer threes with him playing; he plays tonight); Dean Wade can switch onto him (PHI allowed guards 20% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159953,8 +159953,8 @@
    "line": 3.5,
    "start": "2026-11-24T00:00:00Z",
    "p": 0.359,
-   "price": 0.43,
-   "edge": -0.088,
+   "price": 0.42,
+   "edge": -0.078,
    "news": "Grayson Allen (G) is out, so Coby White's role likely grows; MEM's G Scotty Pippen Jr. is out, an easier matchup; MEM has allowed starting guards 2% more assists than average (likely on him: Ty Jerome, Cam Spencer); Cameron Boozer can switch onto him (MEM allowed guards 15% fewer assists with him playing; he is out tonight); Jerami Grant can switch onto him (MEM allowed guards 9% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -159983,8 +159983,8 @@
    "line": 3.5,
    "start": "2026-11-24T00:00:00Z",
    "p": 0.417,
-   "price": 0.6,
-   "edge": -0.2,
+   "price": 0.59,
+   "edge": -0.19,
    "news": "Grayson Allen is out: Sion James hit the under in 2/4 games without him vs 3/7 with him; Kon Knueppel is out: Sion James hit the under in 6/13 games without him vs 17/18 with him; Dennis Schroder is out: Sion James hit the under in 2/6 games without him vs 3/6 with him; MEM's G Scotty Pippen Jr. is out, an easier matchup; MEM has allowed starting guards 2% more assists than average (likely on him: Ty Jerome, Cam Spencer); Cameron Boozer can switch onto him (MEM allowed guards 15% fewer assists with him playing; he is out tonight); Jerami Grant can switch onto him (MEM allowed guards 9% fewer assists with him playing; he is out tonight).",
    "result": null
   },
@@ -160013,8 +160013,8 @@
    "line": 3.5,
    "start": "2026-11-24T00:00:00Z",
    "p": 0.457,
-   "price": 0.62,
-   "edge": -0.179,
+   "price": 0.61,
+   "edge": -0.17,
    "news": "Jerami Grant is out: Cedric Coward hit the under in 1/4 games without him vs 7/14 with him; GG Jackson is out: Cedric Coward hit the under in 11/21 games without him vs 12/19 with him; CHA has allowed starting forwards 11% fewer assists than average (likely on him: Brandon Miller, Moussa Diabate); Coby White can switch onto him (CHA allowed forwards 15% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -160057,10 +160057,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-24T00:00:00Z",
-   "p": 0.506,
+   "p": 0.456,
    "price": 0.45,
-   "edge": 0.039,
-   "news": "Scotty Pippen Jr. is out: Ty Jerome hit the over in 6/14 games without him vs 5/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 0% fewer assists than average (likely on him: Sion James, Coby White).",
+   "edge": -0.011,
+   "news": "News: Ty Jerome Injury: Probable for Saturday - RotoWire Scotty Pippen Jr. is out: Ty Jerome hit the over in 6/14 games without him vs 5/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 0% fewer assists than average (likely on him: Sion James, Coby White).",
    "result": null
   },
   {
@@ -160075,7 +160075,7 @@
    "p": 0.474,
    "price": 0.56,
    "edge": -0.103,
-   "news": "Scotty Pippen Jr. is out: Ty Jerome hit the under in 8/14 games without him vs 6/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 0% fewer assists than average (likely on him: Sion James, Coby White).",
+   "news": "News: Ty Jerome Injury: Probable for Saturday - RotoWire Scotty Pippen Jr. is out: Ty Jerome hit the under in 8/14 games without him vs 6/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 0% fewer assists than average (likely on him: Sion James, Coby White).",
    "result": null
   },
   {
@@ -160358,8 +160358,8 @@
    "line": 5.5,
    "start": "2026-11-24T00:30:00Z",
    "p": 0.492,
-   "price": 0.46,
-   "edge": 0.015,
+   "price": 0.45,
+   "edge": 0.025,
    "news": "News: Is Shai Gilgeous-Alexander Playing Tonight? (Injury Update Betting Impact for Thunder vs. Pacers) - Sports Illustrated Nikola Topic is out: Shai Gilgeous-Alexander hit the over in 18/29 games without him vs 2/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the over in 15/28 games without him vs 6/12 with him; Cason Wallace is out: Shai Gilgeous-Alexander hit the over in 19/35 games without him vs 2/5 with him; IND's G Aaron Nesmith is out, an easier matchup; IND has allowed starting guards 3% more assists than average (likely on him: Andrew Nembhard, Quenton Jackson).",
    "result": null
   },
@@ -160373,8 +160373,8 @@
    "line": 5.5,
    "start": "2026-11-24T00:30:00Z",
    "p": 0.458,
-   "price": 0.55,
-   "edge": -0.109,
+   "price": 0.56,
+   "edge": -0.119,
    "news": "News: Is Shai Gilgeous-Alexander Playing Tonight? (Injury Update Betting Impact for Thunder vs. Pacers) - Sports Illustrated Nikola Topic is out: Shai Gilgeous-Alexander hit the under in 11/29 games without him vs 4/6 with him; Jalen Williams is out: Shai Gilgeous-Alexander hit the under in 13/28 games without him vs 6/12 with him; Cason Wallace is out: Shai Gilgeous-Alexander hit the under in 16/35 games without him vs 3/5 with him; IND's G Aaron Nesmith is out, an easier matchup; IND has allowed starting guards 3% more assists than average (likely on him: Andrew Nembhard, Quenton Jackson).",
    "result": null
   },
@@ -160418,8 +160418,8 @@
    "line": 3.5,
    "start": "2026-11-24T01:00:00Z",
    "p": 0.605,
-   "price": 0.58,
-   "edge": 0.008,
+   "price": 0.57,
+   "edge": 0.018,
    "news": "NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup.",
    "result": null
   },
@@ -160448,8 +160448,8 @@
    "line": 5.5,
    "start": "2026-11-24T01:00:00Z",
    "p": 0.591,
-   "price": 0.57,
-   "edge": 0.004,
+   "price": 0.58,
+   "edge": -0.006,
    "news": "NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 8% more assists than average.",
    "result": null
   },
@@ -160477,10 +160477,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-24T01:00:00Z",
-   "p": 0.424,
+   "p": 0.474,
    "price": 0.42,
-   "edge": -0.013,
-   "news": "News: Could Jalen Green's Ongoing Struggles Lead Third Consecutive Win for Jazz? - Yahoo Sports NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 8% more assists than average.",
+   "edge": 0.037,
+   "news": "NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 8% more assists than average.",
    "result": null
   },
   {
@@ -160495,7 +160495,7 @@
    "p": 0.506,
    "price": 0.6,
    "edge": -0.111,
-   "news": "News: Could Jalen Green's Ongoing Struggles Lead Third Consecutive Win for Jazz? - Yahoo Sports NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 8% more assists than average.",
+   "news": "NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 8% more assists than average.",
    "result": null
   },
   {
@@ -161618,8 +161618,8 @@
    "line": 19.5,
    "start": "2026-11-24T00:30:00Z",
    "p": 0.45,
-   "price": 0.5,
-   "edge": -0.067,
+   "price": 0.51,
+   "edge": -0.077,
    "news": "MIL has allowed starting guards 1% fewer pra than average (likely on him: Tyler Herro, Brayden Burries); Nate Ament can switch onto him (MIL allowed guards 12% fewer pra with him playing; he plays tonight); Brayden Burries can switch onto him (MIL allowed guards 12% fewer pra with him playing; he plays tonight); minutes trending up (we project 33, his last 5 avg 34 vs 32 over 15).",
    "result": null
   },
@@ -162187,10 +162187,10 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-11-24T00:30:00Z",
-   "p": 0.399,
+   "p": 0.45,
    "price": 0.44,
-   "edge": -0.058,
-   "news": "News: LaMelo Ball\u2019s defensive improvement is helping the Timberwolves survive his slump - Dunking with Wolves Jaylen Clark is out: LaMelo Ball hit the over in 1/9 games without him vs 6/7 with him; Anthony Edwards is out: LaMelo Ball hit the over in 6/12 games without him vs 1/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 5% fewer points than average (likely on him: Keon Ellis, Egor Demin); Michael Porter Jr. can switch onto him (BKN allowed guards 13% fewer points with him playing; he plays tonight); Keon Ellis can switch onto him (BKN allowed guards 12% fewer points with him playing; he plays tonight).",
+   "edge": -0.007,
+   "news": "Jaylen Clark is out: LaMelo Ball hit the over in 1/9 games without him vs 6/7 with him; Anthony Edwards is out: LaMelo Ball hit the over in 6/12 games without him vs 1/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 5% fewer points than average (likely on him: Keon Ellis, Egor Demin); Michael Porter Jr. can switch onto him (BKN allowed guards 13% fewer points with him playing; he plays tonight); Keon Ellis can switch onto him (BKN allowed guards 12% fewer points with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -162205,7 +162205,7 @@
    "p": 0.54,
    "price": 0.57,
    "edge": -0.047,
-   "news": "News: LaMelo Ball\u2019s defensive improvement is helping the Timberwolves survive his slump - Dunking with Wolves Jaylen Clark is out: LaMelo Ball hit the under in 8/9 games without him vs 1/7 with him; Anthony Edwards is out: LaMelo Ball hit the under in 6/12 games without him vs 2/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 5% fewer points than average (likely on him: Keon Ellis, Egor Demin); Michael Porter Jr. can switch onto him (BKN allowed guards 13% fewer points with him playing; he plays tonight); Keon Ellis can switch onto him (BKN allowed guards 12% fewer points with him playing; he plays tonight).",
+   "news": "Jaylen Clark is out: LaMelo Ball hit the under in 8/9 games without him vs 1/7 with him; Anthony Edwards is out: LaMelo Ball hit the under in 6/12 games without him vs 2/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 5% fewer points than average (likely on him: Keon Ellis, Egor Demin); Michael Porter Jr. can switch onto him (BKN allowed guards 13% fewer points with him playing; he plays tonight); Keon Ellis can switch onto him (BKN allowed guards 12% fewer points with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -162697,10 +162697,10 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-11-24T01:00:00Z",
-   "p": 0.487,
+   "p": 0.537,
    "price": 0.48,
-   "edge": -0.01,
-   "news": "News: Could Jalen Green's Ongoing Struggles Lead Third Consecutive Win for Jazz? - Yahoo Sports NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 10% more points than average.",
+   "edge": 0.04,
+   "news": "NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 10% more points than average.",
    "result": null
   },
   {
@@ -162715,7 +162715,7 @@
    "p": 0.443,
    "price": 0.53,
    "edge": -0.104,
-   "news": "News: Could Jalen Green's Ongoing Struggles Lead Third Consecutive Win for Jazz? - Yahoo Sports NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 10% more points than average.",
+   "news": "NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 10% more points than average.",
    "result": null
   },
   {
@@ -162908,8 +162908,8 @@
    "line": 14.5,
    "start": "2026-11-24T03:00:00Z",
    "p": 0.466,
-   "price": 0.48,
-   "edge": -0.031,
+   "price": 0.47,
+   "edge": -0.021,
    "news": "SAS has allowed starting forwards 18% fewer points than average (likely on him: Victor Wembanyama, Julian Champagnie); Jordan McLaughlin can switch onto him (SAS allowed forwards 18% fewer points with him playing; he plays tonight); Stephon Castle can switch onto him (SAS allowed forwards 12% fewer points with him playing; he plays tonight); those defenders hold shooters 5.4% below their normal FG%, among the league's stingiest; minutes trending up (we project 35, his last 5 avg 38 vs 33 over 15).",
    "result": null
   },
@@ -163267,10 +163267,10 @@
    "side": "over",
    "line": 5.5,
    "start": "2026-11-24T00:30:00Z",
-   "p": 0.466,
+   "p": 0.516,
    "price": 0.4,
-   "edge": 0.049,
-   "news": "News: LaMelo Ball\u2019s defensive improvement is helping the Timberwolves survive his slump - Dunking with Wolves Jaylen Clark is out: LaMelo Ball hit the over in 3/9 games without him vs 1/7 with him; Anthony Edwards is out: LaMelo Ball hit the over in 4/12 games without him vs 0/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 16% more rebounds than average (likely on him: Keon Ellis, Egor Demin); Michael Porter Jr. can switch onto him (BKN allowed guards 14% fewer rebounds with him playing; he plays tonight); Keon Ellis can switch onto him (BKN allowed guards 12% fewer rebounds with him playing; he plays tonight).",
+   "edge": 0.099,
+   "news": "Jaylen Clark is out: LaMelo Ball hit the over in 3/9 games without him vs 1/7 with him; Anthony Edwards is out: LaMelo Ball hit the over in 4/12 games without him vs 0/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 16% more rebounds than average (likely on him: Keon Ellis, Egor Demin); Michael Porter Jr. can switch onto him (BKN allowed guards 14% fewer rebounds with him playing; he plays tonight); Keon Ellis can switch onto him (BKN allowed guards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163283,9 +163283,9 @@
    "line": 5.5,
    "start": "2026-11-24T00:30:00Z",
    "p": 0.484,
-   "price": 0.62,
-   "edge": -0.152,
-   "news": "News: LaMelo Ball\u2019s defensive improvement is helping the Timberwolves survive his slump - Dunking with Wolves Jaylen Clark is out: LaMelo Ball hit the under in 6/9 games without him vs 6/7 with him; Anthony Edwards is out: LaMelo Ball hit the under in 8/12 games without him vs 3/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 16% more rebounds than average (likely on him: Keon Ellis, Egor Demin); Michael Porter Jr. can switch onto him (BKN allowed guards 14% fewer rebounds with him playing; he plays tonight); Keon Ellis can switch onto him (BKN allowed guards 12% fewer rebounds with him playing; he plays tonight).",
+   "price": 0.61,
+   "edge": -0.143,
+   "news": "Jaylen Clark is out: LaMelo Ball hit the under in 6/9 games without him vs 6/7 with him; Anthony Edwards is out: LaMelo Ball hit the under in 8/12 games without him vs 3/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 16% more rebounds than average (likely on him: Keon Ellis, Egor Demin); Michael Porter Jr. can switch onto him (BKN allowed guards 14% fewer rebounds with him playing; he plays tonight); Keon Ellis can switch onto him (BKN allowed guards 12% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163598,8 +163598,8 @@
    "line": 3.5,
    "start": "2026-11-24T01:30:00Z",
    "p": 0.38,
-   "price": 0.43,
-   "edge": -0.067,
+   "price": 0.42,
+   "edge": -0.057,
    "news": "News: Clippers\u2019 Brandon Ingram Injury Status for Rockets Game Revealed - Yahoo Sports HOU has allowed starting forwards 1% more rebounds than average (likely on him: Kevin Durant, Jabari Smith Jr.).",
    "result": null
   },
@@ -163867,10 +163867,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-24T00:00:00Z",
-   "p": 0.522,
+   "p": 0.472,
    "price": 0.41,
-   "edge": 0.095,
-   "news": "Scotty Pippen Jr. is out: Ty Jerome hit the over in 6/14 games without him vs 4/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 4% more rebounds than average (likely on him: Sion James, Coby White); Tidjane Salaun can switch onto him (CHA allowed guards 10% fewer rebounds with him playing; he plays tonight); Grayson Allen can switch onto him (CHA allowed guards 8% fewer rebounds with him playing; he is out tonight).",
+   "edge": 0.045,
+   "news": "News: Ty Jerome Injury: Probable for Saturday - RotoWire Scotty Pippen Jr. is out: Ty Jerome hit the over in 6/14 games without him vs 4/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 4% more rebounds than average (likely on him: Sion James, Coby White); Tidjane Salaun can switch onto him (CHA allowed guards 10% fewer rebounds with him playing; he plays tonight); Grayson Allen can switch onto him (CHA allowed guards 8% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -163885,7 +163885,7 @@
    "p": 0.458,
    "price": 0.6,
    "edge": -0.159,
-   "news": "Scotty Pippen Jr. is out: Ty Jerome hit the under in 8/14 games without him vs 7/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 4% more rebounds than average (likely on him: Sion James, Coby White); Tidjane Salaun can switch onto him (CHA allowed guards 10% fewer rebounds with him playing; he plays tonight); Grayson Allen can switch onto him (CHA allowed guards 8% fewer rebounds with him playing; he is out tonight).",
+   "news": "News: Ty Jerome Injury: Probable for Saturday - RotoWire Scotty Pippen Jr. is out: Ty Jerome hit the under in 8/14 games without him vs 7/11 with him; CHA's G Grayson Allen is out, an easier matchup; CHA's G Dennis Schroder is out, an easier matchup; CHA has allowed starting guards 4% more rebounds than average (likely on him: Sion James, Coby White); Tidjane Salaun can switch onto him (CHA allowed guards 10% fewer rebounds with him playing; he plays tonight); Grayson Allen can switch onto him (CHA allowed guards 8% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -164048,8 +164048,8 @@
    "line": 3.5,
    "start": "2026-11-24T00:30:00Z",
    "p": 0.564,
-   "price": 0.6,
-   "edge": -0.053,
+   "price": 0.59,
+   "edge": -0.043,
    "news": "TOR has allowed starting guards 1% more rebounds than average (likely on him: Jamal Shead, Ja'Kobe Walter); Scottie Barnes can switch onto him (TOR allowed guards 9% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -164138,8 +164138,8 @@
    "line": 7.5,
    "start": "2026-11-24T00:30:00Z",
    "p": 0.526,
-   "price": 0.51,
-   "edge": -0.001,
+   "price": 0.52,
+   "edge": -0.011,
    "news": "MIL has allowed starting centers 0% more rebounds than average (likely on him: Myles Turner, Kel'el Ware); Pete Nance can switch onto him (MIL allowed centers 19% fewer rebounds with him playing; he plays tonight); Myles Turner can switch onto him (MIL allowed centers 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -164153,8 +164153,8 @@
    "line": 7.5,
    "start": "2026-11-24T00:30:00Z",
    "p": 0.474,
-   "price": 0.5,
-   "edge": -0.044,
+   "price": 0.49,
+   "edge": -0.033,
    "news": "MIL has allowed starting centers 0% more rebounds than average (likely on him: Myles Turner, Kel'el Ware); Pete Nance can switch onto him (MIL allowed centers 19% fewer rebounds with him playing; he plays tonight); Myles Turner can switch onto him (MIL allowed centers 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -164617,10 +164617,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-24T01:00:00Z",
-   "p": 0.548,
+   "p": 0.598,
    "price": 0.56,
-   "edge": -0.029,
-   "news": "News: Could Jalen Green's Ongoing Struggles Lead Third Consecutive Win for Jazz? - Yahoo Sports NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 18% fewer rebounds than average.",
+   "edge": 0.021,
+   "news": "NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 18% fewer rebounds than average.",
    "result": null
   },
   {
@@ -164633,9 +164633,9 @@
    "line": 3.5,
    "start": "2026-11-24T01:00:00Z",
    "p": 0.382,
-   "price": 0.46,
-   "edge": -0.095,
-   "news": "News: Could Jalen Green's Ongoing Struggles Lead Third Consecutive Win for Jazz? - Yahoo Sports NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 18% fewer rebounds than average.",
+   "price": 0.45,
+   "edge": -0.085,
+   "news": "NOP's G Bennedict Mathurin is out, an easier matchup; NOP's G Dejounte Murray is out, an easier matchup; NOP has allowed starting guards 18% fewer rebounds than average.",
    "result": null
   },
   {
@@ -165143,8 +165143,8 @@
    "line": 3.5,
    "start": "2026-11-24T03:00:00Z",
    "p": 0.435,
-   "price": 0.48,
-   "edge": -0.062,
+   "price": 0.47,
+   "edge": -0.052,
    "news": "UTA's F Lauri Markkanen is out, an easier matchup.",
    "result": null
   },
@@ -165337,10 +165337,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-24T00:30:00Z",
-   "p": 0.315,
+   "p": 0.365,
    "price": 0.47,
-   "edge": -0.172,
-   "news": "News: LaMelo Ball\u2019s defensive improvement is helping the Timberwolves survive his slump - Dunking with Wolves Jaylen Clark is out: LaMelo Ball hit the over in 4/9 games without him vs 4/7 with him; Anthony Edwards is out: LaMelo Ball hit the over in 6/12 games without him vs 2/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 1% fewer steals than average (likely on him: Keon Ellis, Egor Demin); Keon Ellis can switch onto him (BKN allowed guards 24% fewer steals with him playing; he plays tonight).",
+   "edge": -0.122,
+   "news": "Jaylen Clark is out: LaMelo Ball hit the over in 4/9 games without him vs 4/7 with him; Anthony Edwards is out: LaMelo Ball hit the over in 6/12 games without him vs 2/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 1% fewer steals than average (likely on him: Keon Ellis, Egor Demin); Keon Ellis can switch onto him (BKN allowed guards 24% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -165355,7 +165355,7 @@
    "p": 0.625,
    "price": 0.55,
    "edge": 0.058,
-   "news": "News: LaMelo Ball\u2019s defensive improvement is helping the Timberwolves survive his slump - Dunking with Wolves Jaylen Clark is out: LaMelo Ball hit the under in 5/9 games without him vs 3/7 with him; Anthony Edwards is out: LaMelo Ball hit the under in 6/12 games without him vs 1/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 1% fewer steals than average (likely on him: Keon Ellis, Egor Demin); Keon Ellis can switch onto him (BKN allowed guards 24% fewer steals with him playing; he plays tonight).",
+   "news": "Jaylen Clark is out: LaMelo Ball hit the under in 5/9 games without him vs 3/7 with him; Anthony Edwards is out: LaMelo Ball hit the under in 6/12 games without him vs 1/3 with him; BKN's G Nolan Traore is out, an easier matchup; BKN has allowed starting guards 1% fewer steals than average (likely on him: Keon Ellis, Egor Demin); Keon Ellis can switch onto him (BKN allowed guards 24% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -165578,8 +165578,8 @@
    "line": 1.5,
    "start": "2026-11-24T03:00:00Z",
    "p": 0.308,
-   "price": 0.39,
-   "edge": -0.099,
+   "price": 0.4,
+   "edge": -0.109,
    "news": "Injury report: Questionable:  (official NBA report) SAC has allowed starting forwards 8% more steals than average (likely on him: Leaky Black, De'Andre Hunter); Malik Monk can switch onto him (SAC allowed forwards 25% fewer steals with him playing; he plays tonight); Maxime Raynaud can switch onto him (SAC allowed forwards 14% fewer steals with him playing; he is out tonight).",
    "result": null
   },
@@ -165668,8 +165668,8 @@
    "line": 31.5,
    "start": "2026-11-24T01:15:00Z",
    "p": 0.437,
-   "price": 0.5,
-   "edge": -0.081,
+   "price": 0.49,
+   "edge": -0.07,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
