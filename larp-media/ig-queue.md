@@ -349,7 +349,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r236-two-doors.mp4 | two doors #ferrari #mclaren #carsofinstagram #nightlife #latenight | POSTED 11/22 9:38pm PST trial https://www.instagram.com/reel/DgEpajNCKLZ/ |
 | hourly | r237-picked-mine.mp4 | picked mine #ferrari #bmwm4 #carmeet #nightlife #latenight | POSTED 11/22 10:39pm PST trial https://www.instagram.com/reel/DgEwVw6j8Tw/ |
 | hourly | r238-still-running.mp4 | still running #vegas #corvette #c8 #nightlife #latenight | POSTED 11/23 8:39am PST trial https://www.instagram.com/reel/DgF1EL3gHPz/ |
-| hourly | r239-no-weekend-off.mp4 | no weekend off #hotel #nightdrive #bmwm4 #nightlife #latenight | queued (steady clips) |
+| hourly | r239-no-weekend-off.mp4 | no weekend off #hotel #nightdrive #bmwm4 #nightlife #latenight | POSTED 11/23 9:39am PST trial https://www.instagram.com/reel/DgF750VjLIM/ |
 | hourly | r240-checking.mp4 | checking on them #mclaren #amg #mercedes #nightlife #latenight | queued (steady clips) |
 | hourly | r241-walked-out.mp4 | walked out up #lakers #nba #ferrari #nightlife #latenight | queued (steady clips) |
 | hourly | r242-picked-up-the-check.mp4 | picked up the check #dinner #sushi #omakase #nightlife #latenight | queued (steady clips) |
