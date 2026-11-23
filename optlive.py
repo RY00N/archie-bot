@@ -138,6 +138,8 @@ def _sync_entry(st, log, quote=None):
         bal = c.get("budget_start", 1000) + st.get("realized", 0)
         cap = min(c.get("size_usd", 0), bal * c.get("max_frac", 0.8))
         lim = round(a2 * (1 + c.get("entry_chase_pad_pct", 2) / 100), 2) if a2 else 0
+        if lim and o["qty"] * lim * 100 > cap:  # 11/23: bid up to the cap instead of skipping (paper filled 9.79, cap allowed 10.00)
+            lim = int(cap / (o["qty"] * 100) * 100) / 100
         if a2 and a2 <= first * (1 + c.get("entry_chase_max_pct", 15) / 100) and o["qty"] * lim * 100 <= cap:
             # 11/19: chase the fresh ask like the paper book, still inside the live per-trade cap
             od2 = _api("POST", "/v2/orders", {"symbol": o["symbol"], "qty": str(o["qty"]), "side": "buy", "type": "limit",
