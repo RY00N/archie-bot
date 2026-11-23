@@ -5702,25 +5702,25 @@
    "secs": 0.0
   },
   "props_at": "2026-11-22 17:00 PT",
-  "props_today": 417,
-  "kalshi_props_today": 163,
+  "props_today": 416,
+  "kalshi_props_today": 165,
   "kalshi_priced_today": 11,
   "books_on_kalshi_props": {
-   "AN Consensus": 162,
-   "AN Open": 163,
-   "BetMGM": 119,
-   "BetRivers": 121,
-   "Caesars": 147,
-   "DraftKings": 152,
-   "FanDuel": 151,
-   "Fanatics": 116,
-   "Hard Rock Bet": 27,
-   "Parx": 137,
-   "Pinnacle": 115,
-   "Sleeper": 160,
-   "Underdog": 163,
+   "AN Consensus": 164,
+   "AN Open": 165,
+   "BetMGM": 121,
+   "BetRivers": 122,
+   "Caesars": 149,
+   "DraftKings": 154,
+   "FanDuel": 153,
+   "Fanatics": 118,
+   "Hard Rock Bet": 28,
+   "Parx": 139,
+   "Pinnacle": 117,
+   "Sleeper": 114,
+   "Underdog": 165,
    "Unibet": 47,
-   "bet365": 160
+   "bet365": 162
   },
   "data_files": [
    "mlb.sqlite",
@@ -5728,7 +5728,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 37
+  "kalshi_legs_today": 38
  },
  "shadow": [
   {
@@ -158381,8 +158381,8 @@
    "line": 2.5,
    "start": "2026-11-23T01:30:00Z",
    "p": 0.684,
-   "price": 0.57,
-   "edge": 0.097,
+   "price": 0.56,
+   "edge": 0.107,
    "news": "Paul George is out: Sam Hauser hit the under in 2/2 games without him vs 5/13 with him; GSW has allowed bench forwards 23% fewer threes than average (likely on him: Georges Niang, Gui Santos); Stephen Curry can switch onto him (GSW allowed forwards 24% fewer threes with him playing; he is out tonight); Malevy Leons can switch onto him (GSW allowed forwards 15% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -158456,8 +158456,8 @@
    "line": 0.5,
    "start": "2026-11-23T01:30:00Z",
    "p": 0.517,
-   "price": 0.49,
-   "edge": 0.01,
+   "price": 0.48,
+   "edge": 0.02,
    "news": "BOS's F Paul George is out, an easier matchup; BOS has allowed starting forwards 3% fewer threes than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 12% fewer threes with him playing; he plays tonight); Ron Harper Jr. can switch onto him (BOS allowed forwards 8% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159508,7 +159508,7 @@
    "p": 0.644,
    "price": 0.56,
    "edge": 0.067,
-   "news": "Tyrese Haliburton is out: Andrew Nembhard hit the over in 24/37 games without him vs 1/3 with him; Johnny Furphy is out: Andrew Nembhard hit the over in 19/29 games without him vs 6/11 with him; Ben Sheppard is out: Andrew Nembhard hit the over in 11/18 games without him vs 14/22 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 3% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "news": "Tyrese Haliburton is out: Andrew Nembhard hit the over in 24/37 games without him vs 1/3 with him; Johnny Furphy is out: Andrew Nembhard hit the over in 19/29 games without him vs 6/11 with him; Ben Sheppard is out: Andrew Nembhard hit the over in 11/18 games without him vs 14/22 with him; NYK's G Miles McBride is out, an easier matchup; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 3% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159521,9 +159521,9 @@
    "line": 1.5,
    "start": "2026-11-23T01:00:00Z",
    "p": 0.356,
-   "price": 0.45,
-   "edge": -0.111,
-   "news": "Tyrese Haliburton is out: Andrew Nembhard hit the under in 13/37 games without him vs 2/3 with him; Johnny Furphy is out: Andrew Nembhard hit the under in 10/29 games without him vs 5/11 with him; Ben Sheppard is out: Andrew Nembhard hit the under in 7/18 games without him vs 8/22 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 3% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "price": 0.46,
+   "edge": -0.121,
+   "news": "Tyrese Haliburton is out: Andrew Nembhard hit the under in 13/37 games without him vs 2/3 with him; Johnny Furphy is out: Andrew Nembhard hit the under in 10/29 games without him vs 5/11 with him; Ben Sheppard is out: Andrew Nembhard hit the under in 7/18 games without him vs 8/22 with him; NYK's G Miles McBride is out, an easier matchup; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 3% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159535,10 +159535,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.443,
+   "p": 0.473,
    "price": 0.54,
-   "edge": -0.114,
-   "news": "Johnny Furphy is out: Aaron Nesmith hit the over in 14/27 games without him vs 8/12 with him; Ben Sheppard is out: Aaron Nesmith hit the over in 9/17 games without him vs 14/23 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 3% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": -0.084,
+   "news": "Johnny Furphy is out: Aaron Nesmith hit the over in 14/27 games without him vs 8/12 with him; Ben Sheppard is out: Aaron Nesmith hit the over in 9/17 games without him vs 14/23 with him; NYK's G Miles McBride is out, an easier matchup; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 3% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159550,10 +159550,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.547,
+   "p": 0.507,
    "price": 0.47,
-   "edge": 0.06,
-   "news": "Johnny Furphy is out: Aaron Nesmith hit the under in 13/27 games without him vs 4/12 with him; Ben Sheppard is out: Aaron Nesmith hit the under in 8/17 games without him vs 9/23 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 3% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 10% fewer threes with him playing; he plays tonight).",
+   "edge": 0.02,
+   "news": "Johnny Furphy is out: Aaron Nesmith hit the under in 13/27 games without him vs 4/12 with him; Ben Sheppard is out: Aaron Nesmith hit the under in 8/17 games without him vs 9/23 with him; NYK's G Miles McBride is out, an easier matchup; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 3% more threes than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 25% fewer threes with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 10% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159611,8 +159611,8 @@
    "line": 1.5,
    "start": "2026-11-23T01:00:00Z",
    "p": 0.548,
-   "price": 0.56,
-   "edge": -0.029,
+   "price": 0.57,
+   "edge": -0.039,
    "news": "NYK's F OG Anunoby is out, an easier matchup; NYK has allowed bench forwards 1% fewer threes than average (likely on him: Mohamed Diawara, Dalton Knecht); Andre Drummond can switch onto him (NYK allowed forwards 32% fewer threes with him playing; he plays tonight); Tyler Kolek can switch onto him (NYK allowed forwards 19% fewer threes with him playing; he plays tonight).",
    "result": null
   },
@@ -159655,10 +159655,10 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.517,
+   "p": 0.617,
    "price": 0.56,
-   "edge": -0.06,
-   "news": "Jordan Clarkson is out: Jalen Brunson hit the over in 6/13 games without him vs 16/27 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "edge": 0.04,
+   "news": "Miles McBride is out: Jalen Brunson hit the over in 7/9 games without him vs 15/31 with him; Jordan Clarkson is out: Jalen Brunson hit the over in 6/13 games without him vs 16/27 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159670,10 +159670,10 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.483,
+   "p": 0.383,
    "price": 0.45,
-   "edge": 0.016,
-   "news": "Jordan Clarkson is out: Jalen Brunson hit the under in 7/13 games without him vs 11/27 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "edge": -0.084,
+   "news": "Miles McBride is out: Jalen Brunson hit the under in 2/9 games without him vs 16/31 with him; Jordan Clarkson is out: Jalen Brunson hit the under in 7/13 games without him vs 11/27 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159715,10 +159715,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.502,
+   "p": 0.522,
    "price": 0.37,
-   "edge": 0.116,
-   "news": "Jordan Clarkson is out: Josh Hart hit the over in 7/12 games without him vs 8/28 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "edge": 0.136,
+   "news": "Miles McBride is out: Josh Hart hit the over in 5/10 games without him vs 10/30 with him; Jordan Clarkson is out: Josh Hart hit the over in 7/12 games without him vs 8/28 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159730,10 +159730,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.498,
-   "price": 0.65,
-   "edge": -0.168,
-   "news": "Jordan Clarkson is out: Josh Hart hit the under in 5/12 games without him vs 20/28 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "p": 0.478,
+   "price": 0.64,
+   "edge": -0.178,
+   "news": "Miles McBride is out: Josh Hart hit the under in 5/10 games without him vs 20/30 with him; Jordan Clarkson is out: Josh Hart hit the under in 5/12 games without him vs 20/28 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159805,10 +159805,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.411,
+   "p": 0.511,
    "price": 0.44,
-   "edge": -0.046,
-   "news": "News: Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers - ESPN Jordan Clarkson is out: Mikal Bridges hit the over in 5/12 games without him vs 13/28 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "edge": 0.054,
+   "news": "News: Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers - ESPN Miles McBride is out: Mikal Bridges hit the over in 8/12 games without him vs 10/28 with him; Jordan Clarkson is out: Mikal Bridges hit the over in 5/12 games without him vs 13/28 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -159820,10 +159820,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.539,
+   "p": 0.439,
    "price": 0.57,
-   "edge": -0.048,
-   "news": "News: Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers - ESPN Jordan Clarkson is out: Mikal Bridges hit the under in 7/12 games without him vs 15/28 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
+   "edge": -0.148,
+   "news": "News: Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers - ESPN Miles McBride is out: Mikal Bridges hit the under in 4/12 games without him vs 18/28 with him; Jordan Clarkson is out: Mikal Bridges hit the under in 7/12 games without him vs 15/28 with him; IND has allowed starting guards 18% more threes than average (likely on him: Andrew Nembhard, Quenton Jackson); Obi Toppin can switch onto him (IND allowed guards 9% fewer threes with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -161005,10 +161005,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.545,
+   "p": 0.45,
    "price": 0.55,
-   "edge": -0.022,
-   "news": "IND has allowed starting guards 3% more assists than average (likely on him: Andrew Nembhard, Quenton Jackson).",
+   "edge": -0.117,
+   "news": "Miles McBride is out: Josh Hart hit the over in 3/10 games without him vs 17/30 with him; IND has allowed starting guards 3% more assists than average (likely on him: Andrew Nembhard, Quenton Jackson).",
    "result": null
   },
   {
@@ -161020,10 +161020,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.455,
+   "p": 0.55,
    "price": 0.46,
-   "edge": -0.022,
-   "news": "IND has allowed starting guards 3% more assists than average (likely on him: Andrew Nembhard, Quenton Jackson).",
+   "edge": 0.073,
+   "news": "Miles McBride is out: Josh Hart hit the under in 7/10 games without him vs 13/30 with him; IND has allowed starting guards 3% more assists than average (likely on him: Andrew Nembhard, Quenton Jackson).",
    "result": null
   },
   {
@@ -162145,10 +162145,10 @@
    "side": "over",
    "line": 24.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.557,
+   "p": 0.587,
    "price": 0.47,
-   "edge": 0.07,
-   "news": "T.J. McConnell is out: Andrew Nembhard hit the over in 7/11 games without him vs 20/29 with him; Tyrese Haliburton is out: Andrew Nembhard hit the over in 26/37 games without him vs 1/3 with him; Johnny Furphy is out: Andrew Nembhard hit the over in 20/29 games without him vs 7/11 with him; Ben Sheppard is out: Andrew Nembhard hit the over in 11/18 games without him vs 16/22 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 7% fewer pra than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 14% fewer pra with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer pra with him playing; he plays tonight).",
+   "edge": 0.1,
+   "news": "T.J. McConnell is out: Andrew Nembhard hit the over in 7/11 games without him vs 20/29 with him; Tyrese Haliburton is out: Andrew Nembhard hit the over in 26/37 games without him vs 1/3 with him; Johnny Furphy is out: Andrew Nembhard hit the over in 20/29 games without him vs 7/11 with him; Ben Sheppard is out: Andrew Nembhard hit the over in 11/18 games without him vs 16/22 with him; NYK's G Miles McBride is out, an easier matchup; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 7% fewer pra than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 14% fewer pra with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer pra with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -162160,10 +162160,10 @@
    "side": "under",
    "line": 24.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.433,
+   "p": 0.409,
    "price": 0.54,
-   "edge": -0.124,
-   "news": "T.J. McConnell is out: Andrew Nembhard hit the under in 4/11 games without him vs 9/29 with him; Tyrese Haliburton is out: Andrew Nembhard hit the under in 11/37 games without him vs 2/3 with him; Johnny Furphy is out: Andrew Nembhard hit the under in 9/29 games without him vs 4/11 with him; Ben Sheppard is out: Andrew Nembhard hit the under in 7/18 games without him vs 6/22 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 7% fewer pra than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 14% fewer pra with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer pra with him playing; he plays tonight).",
+   "edge": -0.148,
+   "news": "T.J. McConnell is out: Andrew Nembhard hit the under in 4/11 games without him vs 9/29 with him; Tyrese Haliburton is out: Andrew Nembhard hit the under in 11/37 games without him vs 2/3 with him; Johnny Furphy is out: Andrew Nembhard hit the under in 9/29 games without him vs 4/11 with him; Ben Sheppard is out: Andrew Nembhard hit the under in 7/18 games without him vs 6/22 with him; NYK's G Miles McBride is out, an easier matchup; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 7% fewer pra than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 14% fewer pra with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer pra with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -162761,8 +162761,8 @@
    "line": 19.5,
    "start": "2026-11-23T01:30:00Z",
    "p": 0.506,
-   "price": 0.52,
-   "edge": -0.031,
+   "price": 0.53,
+   "edge": -0.041,
    "news": "BOS's F Paul George is out, an easier matchup; BOS has allowed starting forwards 12% fewer points than average (likely on him: Jayson Tatum, Sam Hauser); Hugo Gonzalez can switch onto him (BOS allowed forwards 9% fewer points with him playing; he plays tonight); Ron Harper Jr. can switch onto him (BOS allowed forwards 8% fewer points with him playing; he plays tonight); those defenders hold shooters 2.5% below their normal FG%, among the league's stingiest.",
    "result": null
   },
@@ -163105,10 +163105,10 @@
    "side": "over",
    "line": 14.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.525,
+   "p": 0.555,
    "price": 0.47,
-   "edge": 0.038,
-   "news": "T.J. McConnell is out: Andrew Nembhard hit the over in 7/11 games without him vs 16/29 with him; Tyrese Haliburton is out: Andrew Nembhard hit the over in 21/37 games without him vs 2/3 with him; Johnny Furphy is out: Andrew Nembhard hit the over in 17/29 games without him vs 6/11 with him; Ben Sheppard is out: Andrew Nembhard hit the over in 11/18 games without him vs 12/22 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 7% fewer points than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 17% fewer points with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer points with him playing; he plays tonight).",
+   "edge": 0.068,
+   "news": "T.J. McConnell is out: Andrew Nembhard hit the over in 7/11 games without him vs 16/29 with him; Tyrese Haliburton is out: Andrew Nembhard hit the over in 21/37 games without him vs 2/3 with him; Johnny Furphy is out: Andrew Nembhard hit the over in 17/29 games without him vs 6/11 with him; Ben Sheppard is out: Andrew Nembhard hit the over in 11/18 games without him vs 12/22 with him; NYK's G Miles McBride is out, an easier matchup; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 7% fewer points than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 17% fewer points with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer points with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163120,10 +163120,10 @@
    "side": "under",
    "line": 14.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.465,
+   "p": 0.425,
    "price": 0.54,
-   "edge": -0.092,
-   "news": "T.J. McConnell is out: Andrew Nembhard hit the under in 4/11 games without him vs 13/29 with him; Tyrese Haliburton is out: Andrew Nembhard hit the under in 16/37 games without him vs 1/3 with him; Johnny Furphy is out: Andrew Nembhard hit the under in 12/29 games without him vs 5/11 with him; Ben Sheppard is out: Andrew Nembhard hit the under in 7/18 games without him vs 10/22 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 7% fewer points than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 17% fewer points with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer points with him playing; he plays tonight).",
+   "edge": -0.132,
+   "news": "T.J. McConnell is out: Andrew Nembhard hit the under in 4/11 games without him vs 13/29 with him; Tyrese Haliburton is out: Andrew Nembhard hit the under in 16/37 games without him vs 1/3 with him; Johnny Furphy is out: Andrew Nembhard hit the under in 12/29 games without him vs 5/11 with him; Ben Sheppard is out: Andrew Nembhard hit the under in 7/18 games without him vs 10/22 with him; NYK's G Miles McBride is out, an easier matchup; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 7% fewer points than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 17% fewer points with him playing; he plays tonight); Landry Shamet can switch onto him (NYK allowed guards 11% fewer points with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -163165,10 +163165,10 @@
    "side": "over",
    "line": 29.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.503,
-   "price": 0.45,
-   "edge": 0.036,
-   "news": "IND has allowed starting guards 14% more points than average (likely on him: Andrew Nembhard, Quenton Jackson); Larry Nance Jr. can switch onto him (IND allowed guards 9% fewer points with him playing; he plays tonight); minutes trending up (we project 35, his last 5 avg 36 vs 34 over 15).",
+   "p": 0.572,
+   "price": 0.44,
+   "edge": 0.115,
+   "news": "Miles McBride is out: Jalen Brunson hit the over in 5/9 games without him vs 11/31 with him; IND has allowed starting guards 14% more points than average (likely on him: Andrew Nembhard, Quenton Jackson); Larry Nance Jr. can switch onto him (IND allowed guards 9% fewer points with him playing; he plays tonight); minutes trending up (we project 35, his last 5 avg 36 vs 34 over 15).",
    "result": null
   },
   {
@@ -163180,10 +163180,10 @@
    "side": "under",
    "line": 29.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.497,
-   "price": 0.56,
-   "edge": -0.08,
-   "news": "IND has allowed starting guards 14% more points than average (likely on him: Andrew Nembhard, Quenton Jackson); Larry Nance Jr. can switch onto him (IND allowed guards 9% fewer points with him playing; he plays tonight); minutes trending up (we project 35, his last 5 avg 36 vs 34 over 15).",
+   "p": 0.428,
+   "price": 0.57,
+   "edge": -0.159,
+   "news": "Miles McBride is out: Jalen Brunson hit the under in 4/9 games without him vs 20/31 with him; IND has allowed starting guards 14% more points than average (likely on him: Andrew Nembhard, Quenton Jackson); Larry Nance Jr. can switch onto him (IND allowed guards 9% fewer points with him playing; he plays tonight); minutes trending up (we project 35, his last 5 avg 36 vs 34 over 15).",
    "result": null
   },
   {
@@ -163195,10 +163195,10 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.522,
-   "price": 0.52,
-   "edge": -0.015,
-   "news": "Jordan Clarkson is out: Josh Hart hit the over in 6/12 games without him vs 13/28 with him; IND has allowed starting guards 14% more points than average (likely on him: Andrew Nembhard, Quenton Jackson); Larry Nance Jr. can switch onto him (IND allowed guards 9% fewer points with him playing; he plays tonight); minutes trending down (we project 30, his last 5 avg 29 vs 31 over 15).",
+   "p": 0.582,
+   "price": 0.49,
+   "edge": 0.075,
+   "news": "Miles McBride is out: Josh Hart hit the over in 6/10 games without him vs 13/30 with him; Jordan Clarkson is out: Josh Hart hit the over in 6/12 games without him vs 13/28 with him; IND has allowed starting guards 14% more points than average (likely on him: Andrew Nembhard, Quenton Jackson); Larry Nance Jr. can switch onto him (IND allowed guards 9% fewer points with him playing; he plays tonight); minutes trending down (we project 30, his last 5 avg 29 vs 31 over 15).",
    "result": null
   },
   {
@@ -163210,10 +163210,10 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.478,
-   "price": 0.49,
-   "edge": -0.029,
-   "news": "Jordan Clarkson is out: Josh Hart hit the under in 6/12 games without him vs 15/28 with him; IND has allowed starting guards 14% more points than average (likely on him: Andrew Nembhard, Quenton Jackson); Larry Nance Jr. can switch onto him (IND allowed guards 9% fewer points with him playing; he plays tonight); minutes trending down (we project 30, his last 5 avg 29 vs 31 over 15).",
+   "p": 0.418,
+   "price": 0.53,
+   "edge": -0.129,
+   "news": "Miles McBride is out: Josh Hart hit the under in 4/10 games without him vs 17/30 with him; Jordan Clarkson is out: Josh Hart hit the under in 6/12 games without him vs 15/28 with him; IND has allowed starting guards 14% more points than average (likely on him: Andrew Nembhard, Quenton Jackson); Larry Nance Jr. can switch onto him (IND allowed guards 9% fewer points with him playing; he plays tonight); minutes trending down (we project 30, his last 5 avg 29 vs 31 over 15).",
    "result": null
   },
   {
@@ -164578,7 +164578,7 @@
    "p": 0.358,
    "price": 0.52,
    "edge": -0.179,
-   "news": "T.J. McConnell is out: Aaron Nesmith hit the over in 3/12 games without him vs 15/28 with him; Johnny Furphy is out: Aaron Nesmith hit the over in 9/27 games without him vs 8/12 with him; Ben Sheppard is out: Aaron Nesmith hit the over in 8/17 games without him vs 10/23 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 1% fewer rebounds than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 9% fewer rebounds with him playing; he plays tonight); Jordan Clarkson can switch onto him (NYK allowed guards 8% fewer rebounds with him playing; he is out tonight).",
+   "news": "T.J. McConnell is out: Aaron Nesmith hit the over in 3/12 games without him vs 15/28 with him; Johnny Furphy is out: Aaron Nesmith hit the over in 9/27 games without him vs 8/12 with him; Ben Sheppard is out: Aaron Nesmith hit the over in 8/17 games without him vs 10/23 with him; NYK's G Miles McBride is out, an easier matchup; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 1% fewer rebounds than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 9% fewer rebounds with him playing; he plays tonight); Jordan Clarkson can switch onto him (NYK allowed guards 8% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -164590,10 +164590,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.642,
-   "price": 0.5,
-   "edge": 0.125,
-   "news": "T.J. McConnell is out: Aaron Nesmith hit the under in 9/12 games without him vs 13/28 with him; Johnny Furphy is out: Aaron Nesmith hit the under in 18/27 games without him vs 4/12 with him; Ben Sheppard is out: Aaron Nesmith hit the under in 9/17 games without him vs 13/23 with him; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 1% fewer rebounds than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 9% fewer rebounds with him playing; he plays tonight); Jordan Clarkson can switch onto him (NYK allowed guards 8% fewer rebounds with him playing; he is out tonight).",
+   "p": 0.628,
+   "price": 0.49,
+   "edge": 0.121,
+   "news": "T.J. McConnell is out: Aaron Nesmith hit the under in 9/12 games without him vs 13/28 with him; Johnny Furphy is out: Aaron Nesmith hit the under in 18/27 games without him vs 4/12 with him; Ben Sheppard is out: Aaron Nesmith hit the under in 9/17 games without him vs 13/23 with him; NYK's G Miles McBride is out, an easier matchup; NYK's G Jordan Clarkson is out, an easier matchup; NYK has allowed starting guards 1% fewer rebounds than average (likely on him: Jalen Brunson, Josh Hart); Jose Alvarado can switch onto him (NYK allowed guards 9% fewer rebounds with him playing; he plays tonight); Jordan Clarkson can switch onto him (NYK allowed guards 8% fewer rebounds with him playing; he is out tonight).",
    "result": null
   },
   {
@@ -164665,10 +164665,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.323,
+   "p": 0.423,
    "price": 0.4,
-   "edge": -0.094,
-   "news": "Jordan Clarkson is out: Jalen Brunson hit the over in 3/13 games without him vs 10/27 with him; IND has allowed starting guards 3% more rebounds than average (likely on him: Andrew Nembhard, Quenton Jackson); Aaron Nesmith can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight); Kelly Oubre Jr. can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight).",
+   "edge": 0.006,
+   "news": "Miles McBride is out: Jalen Brunson hit the over in 5/9 games without him vs 8/31 with him; Jordan Clarkson is out: Jalen Brunson hit the over in 3/13 games without him vs 10/27 with him; IND has allowed starting guards 3% more rebounds than average (likely on him: Andrew Nembhard, Quenton Jackson); Aaron Nesmith can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight); Kelly Oubre Jr. can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -164680,10 +164680,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.677,
-   "price": 0.62,
-   "edge": 0.041,
-   "news": "Jordan Clarkson is out: Jalen Brunson hit the under in 10/13 games without him vs 17/27 with him; IND has allowed starting guards 3% more rebounds than average (likely on him: Andrew Nembhard, Quenton Jackson); Aaron Nesmith can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight); Kelly Oubre Jr. can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight).",
+   "p": 0.577,
+   "price": 0.61,
+   "edge": -0.05,
+   "news": "Miles McBride is out: Jalen Brunson hit the under in 4/9 games without him vs 23/31 with him; Jordan Clarkson is out: Jalen Brunson hit the under in 10/13 games without him vs 17/27 with him; IND has allowed starting guards 3% more rebounds than average (likely on him: Andrew Nembhard, Quenton Jackson); Aaron Nesmith can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight); Kelly Oubre Jr. can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -164755,10 +164755,10 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.363,
+   "p": 0.385,
    "price": 0.45,
-   "edge": -0.104,
-   "news": "News: Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers - ESPN Jordan Clarkson is out: Mikal Bridges hit the over in 4/12 games without him vs 11/28 with him; IND has allowed starting guards 3% more rebounds than average (likely on him: Andrew Nembhard, Quenton Jackson); Aaron Nesmith can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight); Kelly Oubre Jr. can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.082,
+   "news": "News: Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers - ESPN Miles McBride is out: Mikal Bridges hit the over in 5/12 games without him vs 10/28 with him; Jordan Clarkson is out: Mikal Bridges hit the over in 4/12 games without him vs 11/28 with him; IND has allowed starting guards 3% more rebounds than average (likely on him: Andrew Nembhard, Quenton Jackson); Aaron Nesmith can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight); Kelly Oubre Jr. can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -164770,10 +164770,10 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.587,
+   "p": 0.565,
    "price": 0.56,
-   "edge": 0.01,
-   "news": "News: Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers - ESPN Jordan Clarkson is out: Mikal Bridges hit the under in 8/12 games without him vs 17/28 with him; IND has allowed starting guards 3% more rebounds than average (likely on him: Andrew Nembhard, Quenton Jackson); Aaron Nesmith can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight); Kelly Oubre Jr. can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight).",
+   "edge": -0.012,
+   "news": "News: Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers - ESPN Miles McBride is out: Mikal Bridges hit the under in 7/12 games without him vs 18/28 with him; Jordan Clarkson is out: Mikal Bridges hit the under in 8/12 games without him vs 17/28 with him; IND has allowed starting guards 3% more rebounds than average (likely on him: Andrew Nembhard, Quenton Jackson); Aaron Nesmith can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight); Kelly Oubre Jr. can switch onto him (IND allowed guards 14% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -165445,10 +165445,10 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.528,
+   "p": 0.457,
    "price": 0.43,
-   "edge": 0.081,
-   "news": "Jordan Clarkson is out: Josh Hart hit the over in 9/12 games without him vs 9/28 with him; IND has allowed starting guards 5% more steals than average (likely on him: Andrew Nembhard, Quenton Jackson); Pascal Siakam can switch onto him (IND allowed guards 26% fewer steals with him playing; he plays tonight); Aaron Nesmith can switch onto him (IND allowed guards 17% fewer steals with him playing; he plays tonight).",
+   "edge": 0.01,
+   "news": "Miles McBride is out: Josh Hart hit the over in 3/10 games without him vs 15/30 with him; Jordan Clarkson is out: Josh Hart hit the over in 9/12 games without him vs 9/28 with him; IND has allowed starting guards 5% more steals than average (likely on him: Andrew Nembhard, Quenton Jackson); Pascal Siakam can switch onto him (IND allowed guards 26% fewer steals with him playing; he plays tonight); Aaron Nesmith can switch onto him (IND allowed guards 17% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -165460,10 +165460,10 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-23T01:00:00Z",
-   "p": 0.472,
-   "price": 0.58,
-   "edge": -0.125,
-   "news": "Jordan Clarkson is out: Josh Hart hit the under in 3/12 games without him vs 19/28 with him; IND has allowed starting guards 5% more steals than average (likely on him: Andrew Nembhard, Quenton Jackson); Pascal Siakam can switch onto him (IND allowed guards 26% fewer steals with him playing; he plays tonight); Aaron Nesmith can switch onto him (IND allowed guards 17% fewer steals with him playing; he plays tonight).",
+   "p": 0.543,
+   "price": 0.59,
+   "edge": -0.064,
+   "news": "Miles McBride is out: Josh Hart hit the under in 7/10 games without him vs 15/30 with him; Jordan Clarkson is out: Josh Hart hit the under in 3/12 games without him vs 19/28 with him; IND has allowed starting guards 5% more steals than average (likely on him: Andrew Nembhard, Quenton Jackson); Pascal Siakam can switch onto him (IND allowed guards 26% fewer steals with him playing; he plays tonight); Aaron Nesmith can switch onto him (IND allowed guards 17% fewer steals with him playing; he plays tonight).",
    "result": null
   },
   {
@@ -170321,8 +170321,8 @@
    "line": 7.5,
    "start": "2026-11-23T01:20:00Z",
    "p": 0.664,
-   "price": 0.57,
-   "edge": 0.077,
+   "price": 0.56,
+   "edge": 0.087,
    "news": "Jordan Addison is out: Justin Jefferson hit the under in 7/7 games without him vs 27/33 with him.",
    "result": null
   },
@@ -170684,6 +170684,36 @@
    "price": 0.49,
    "edge": -0.127,
    "news": "No injury or off-field red flags in the last 3 days.",
+   "result": null
+  },
+  {
+   "date": "2026-11-22",
+   "ticker": "KXNFLREC-26NOV22MINSF-SFMEVANS5-4",
+   "league": "nfl",
+   "player": "Mike Evans",
+   "stat": "receptions",
+   "side": "over",
+   "line": 3.5,
+   "start": "2026-11-23T01:20:00Z",
+   "p": 0.453,
+   "price": 0.71,
+   "edge": -0.271,
+   "news": "Injury report: Questionable: Achilles; Limited Participation in Practice (official NFL report)",
+   "result": null
+  },
+  {
+   "date": "2026-11-22",
+   "ticker": "KXNFLREC-26NOV22MINSF-SFMEVANS5-4",
+   "league": "nfl",
+   "player": "Mike Evans",
+   "stat": "receptions",
+   "side": "under",
+   "line": 3.5,
+   "start": "2026-11-23T01:20:00Z",
+   "p": 0.467,
+   "price": 0.74,
+   "edge": -0.286,
+   "news": "Injury report: Questionable: Achilles; Limited Participation in Practice (official NFL report)",
    "result": null
   },
   {
@@ -177281,8 +177311,8 @@
    "line": 1.5,
    "start": "2026-11-24T01:15:00Z",
    "p": 0.644,
-   "price": 0.66,
-   "edge": -0.032,
+   "price": 0.67,
+   "edge": -0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -177521,8 +177551,8 @@
    "line": 4.5,
    "start": "2026-11-24T01:15:00Z",
    "p": 0.578,
-   "price": 0.56,
-   "edge": 0.001,
+   "price": 0.57,
+   "edge": -0.009,
    "news": "CIN's LB Oren Burks is out, an easier matchup.",
    "result": null
   },
@@ -177611,8 +177641,8 @@
    "line": 12.5,
    "start": "2026-11-24T01:15:00Z",
    "p": 0.49,
-   "price": 0.57,
-   "edge": -0.097,
+   "price": 0.58,
+   "edge": -0.107,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
