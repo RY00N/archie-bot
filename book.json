@@ -5702,13 +5702,10 @@
    "secs": 0.0
   },
   "props_at": "2026-11-22 18:00 PT",
-  "props_today": 117,
-  "kalshi_props_today": 68,
+  "props_today": 0,
+  "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
-  "books_on_kalshi_props": {
-   "Sleeper": 67,
-   "Underdog": 68
-  },
+  "books_on_kalshi_props": {},
   "data_files": [
    "mlb.sqlite",
    "nba.sqlite",
