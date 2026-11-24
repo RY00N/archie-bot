@@ -62,6 +62,11 @@ def load():
     return st
 
 
+def _note(st, msg):
+    """11/24: last live decision, shown in pnl.json so the cloud can see why a live entry did or did not happen."""
+    st["note"] = f"{datetime.now(ET).isoformat()[:16]} {msg}"; save(st)
+
+
 def save(st):
     json.dump(st, open(STATE, "w"), indent=1)
 
@@ -75,20 +80,24 @@ def enter(osym, ask, why, log):
         if st.get("traded") or st.get("open"):
             return
         if st.get("day_pnl", 0) <= -abs(c.get("daily_loss_cap", 0)):
-            log(f"LIVE no entry: day loss cap hit ({st['day_pnl']:+.0f})"); return
+            log(f"LIVE no entry: day loss cap hit ({st['day_pnl']:+.0f})"); _note(st, "no entry: day loss cap"); return
         bal = c.get("budget_start", 1000) + st.get("realized", 0)  # 11/16 Reza: $1,000 starting balance
         cap = min(c.get("size_usd", 0), bal * c.get("max_frac", 0.8))
         qty = min(int(c.get("max_contracts", 1)), int(cap // (ask * 100))) if ask > 0 else 0
         if qty < 1:
-            log(f"LIVE no entry: {osym} at {ask:.2f} is over the ${cap:.0f} per-trade cap (balance ${bal:.0f})"); return
+            log(f"LIVE no entry: {osym} at {ask:.2f} is over the ${cap:.0f} per-trade cap (balance ${bal:.0f})"); _note(st, f"no entry: {osym} {ask:.2f} over ${cap:.0f} cap"); return
         od = _api("POST", "/v2/orders", {"symbol": osym, "qty": str(qty), "side": "buy", "type": "limit",
                                           "limit_price": f"{ask:.2f}", "time_in_force": "day"})
         st["open"] = {"state": "pending", "order_id": od["id"], "symbol": osym, "qty": qty, "limit": ask,
                       "sent": time.time(), "why": why, "entry_time": datetime.now(ET).isoformat()[:16]}
         st["traded"] = True; save(st)
-        log(f"LIVE buy {qty} {osym} limit {ask:.2f}")
+        log(f"LIVE buy {qty} {osym} limit {ask:.2f}"); _note(st, f"buy {qty} {osym} limit {ask:.2f}")
     except Exception as e:
         log(f"LIVE enter error: {e}")
+        try:
+            _note(load(), f"enter error: {e}"[:200])
+        except Exception:
+            pass
 
 
 def exit(osym, bid, how, log):
@@ -147,7 +156,7 @@ def _sync_entry(st, log, quote=None):
             o.update({"order_id": od2["id"], "sent": time.time(), "tries": o.get("tries", 0) + 1, "first_ask": first, "limit": lim})
             log(f"LIVE entry re-sent {o['qty']} {o['symbol']} limit {lim:.2f} (try {o['tries']})")
         else:
-            log(f"LIVE entry not filled ({od['status']}), no live trade today"); st["open"] = None
+            log(f"LIVE entry not filled ({od['status']}), no live trade today"); st["open"] = None; st["note"] = f"entry not filled ({od['status']}), last limit {o.get('limit')}"
     save(st)
 
 
@@ -184,4 +193,4 @@ def summary():
     c = cfg(); st = load()
     return {"armed": armed(), "budget_start": c.get("budget_start"), "balance": round(c.get("budget_start", 0) + st.get("realized", 0), 2), "keys": _keys() is not None, "size_usd": c.get("size_usd"), "max_contracts": c.get("max_contracts"),
             "daily_loss_cap": c.get("daily_loss_cap"), "day_pnl": st.get("day_pnl", 0), "realized": st.get("realized", 0),
-            "open": st.get("open"), "trades": st.get("history", [])[-20:]}
+            "open": st.get("open"), "trades": st.get("history", [])[-20:], "traded_today": st.get("traded"), "note": st.get("note", "")}
