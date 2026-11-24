@@ -5834,7 +5834,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-24 07:00 PT",
-  "props_today": 323,
+  "props_today": 324,
   "kalshi_props_today": 0,
   "kalshi_priced_today": 0,
   "books_on_kalshi_props": {},
@@ -159517,8 +159517,8 @@
    "line": 10.5,
    "start": "2026-11-26T01:00:00Z",
    "p": 0.585,
-   "price": 0.55,
-   "edge": 0.018,
+   "price": 0.56,
+   "edge": 0.008,
    "news": "LAR's DE Kobie Turner is out, an easier matchup.",
    "result": null
   },
