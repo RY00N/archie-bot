@@ -71,7 +71,10 @@ def card(ev, s):
     return {"title": f"\U0001F94A UFC Challenge: {ev['name']} main card"[:256],
             "description": (f"Pick every main-card winner and go {len(ev['picks'])} for {len(ev['picks'])}. "
                             f"Main card starts {when.strftime('%a %b %-d, %-I%p').replace('PM', 'pm').replace('AM', 'am')} PT.\n"
-                            f"Chance all {len(ev['picks'])} hit: {all_p:.0%}. Just a challenge, not a bet we track."),
+                            f"Chance all {len(ev['picks'])} hit: {all_p:.0%}.\n\n"
+                            # Ryan 2026-11-24: every challenge card must say this plainly
+                            "**Not an official pick.** This does NOT go on our record at all. It's just a challenge "
+                            "we're doing for fun. If you want to tail it, you can."),
             "color": 0xD20A0A, "fields": fields[:25], "footer": {"text": rec_line(s)}}
 
 
