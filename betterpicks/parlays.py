@@ -513,6 +513,9 @@ def build():
     # still-open picks from earlier days count too: a postponed game's pick carries over, never re-posted (Ryan 2026-10-19)
     shadow(book, legs, now_pt)
     legs = [l for l in legs if not off(l)]
+    # Ryan 2026-11-24 (decision card): the sportsbooks have to agree too. Oct 28-Nov 23 singles went 24-16 (60%) when
+    # the books priced the prop under 60% vs 50-19 (72%) at 60%+. Applied after shadow(), so shadow still logs them.
+    legs = [l for l in legs if l.get("market_p", 1) >= r.get("min_book_p", 0)]
     # Ryan 2026-10-28: "only bet on backed up player props with info we have on it": a pick needs his own game log
     # (history_min_games+) and that log has to agree with the side (hit it more than half the time)
     hmin = r.get("history_min_games", 0)

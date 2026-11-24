@@ -73,6 +73,10 @@
  "banned_stats": {
   "nba": [
    "rebounds"
+  ],
+  "nfl": [
+   "pass_tds",
+   "rush_att"
   ]
  },
  "banned_stats_note": "Ryan 2026-10-28 04:04Z: cut NBA rebounds (shadow 4-14 at 60%+, real 0-3) until a backtested fix; still shadow-logged.",
@@ -128,5 +132,7 @@
  "record_mode": "posted",
  "record_singles_from": "2026-10-16",
  "record_combos_from": "2026-10-28",
- "record_note": "Ryan 2026-10-29: record must match the Wins/Losses channel (19-6 on Oct 28). Oct 17 Allgeier lock (won) never got a HIT post, so it has record_skip."
+ "record_note": "Ryan 2026-10-29: record must match the Wins/Losses channel (19-6 on Oct 28). Oct 17 Allgeier lock (won) never got a HIT post, so it has record_skip.",
+ "min_book_p": 0.6,
+ "min_book_p_note": "Ryan 2026-11-24 05:26Z (decision card): every pick needs the sportsbooks' consensus at 60%+ (market_p) and NFL pass TDs + rush attempts are banned. Replay Oct 28-Nov 23: 45-16 (74%) vs 74-36 (67%), ~2.5 picks/day."
 }
