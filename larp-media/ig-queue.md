@@ -391,3 +391,9 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r278-up-again.mp4 | up again #lakers #nba #amg #nightlife #latenight | queued (steady clips) |
 | hourly | r279-long-way.mp4 | long way home #bmwm4 #nightdrive #bmw #nightlife #latenight | queued (steady clips) |
 | hourly | r280-omakase.mp4 | omakase night #sushi #omakase #dinner #nightlife #latenight | queued (steady clips) |
+| hourly | r281-valet.mp4 | valet #amg #ferrari #mercedes #nightlife #latenight | queued (steady clips) |
+| hourly | r282-order-more.mp4 | order more #sushi #dinner #hotel #nightlife #latenight | queued (steady clips) |
+| hourly | r283-courtside.mp4 | courtside #lakers #nba #ferrari #nightlife #latenight | queued (steady clips) |
+| hourly | r284-friday-plans.mp4 | friday plans #nightdrive #ferrari #friday #nightlife #latenight | queued (steady clips) |
+| hourly | r285-bar.mp4 | quiet week #vegas #mclaren #bmwm4 #nightlife #latenight | queued (steady clips) |
+| hourly | r286-red-light.mp4 | red light #nightdrive #corvette #c8 #nightlife #latenight | queued (steady clips) |
