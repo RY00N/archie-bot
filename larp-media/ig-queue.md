@@ -371,7 +371,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r258-left-early.mp4 | left early #lakers #nba #ferrari #nightlife #latenight | POSTED 11/24 1:38pm PST trial https://www.instagram.com/reel/DgI8Gx3D7nA/ |
 | hourly | r259-dont-ask.mp4 | don't ask #amg #ferrari #mercedes #nightlife #latenight | POSTED 11/24 2:39pm PST trial https://www.instagram.com/reel/DgJDDzslmsJ/ |
 | hourly | r260-night-shift.mp4 | night shift #nightdrive #bmwm4 #carsofinstagram #nightlife #latenight | POSTED 11/24 3:38pm PST trial https://www.instagram.com/reel/DgJJ0qqnLqM/ |
-| hourly | r261-trader.mp4 | trader #vegas #mclaren #corvette #nightlife #latenight | queued (steady clips) |
+| hourly | r261-trader.mp4 | trader #vegas #mclaren #corvette #nightlife #latenight | POSTED 11/24 4:38pm PST trial https://www.instagram.com/reel/DgJQrn1kRhI/ |
 | hourly | r262-same-spot.mp4 | same spot #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | queued (steady clips) |
 | hourly | r263-two-screens.mp4 | two screens #lakers #nba #nightdrive #nightlife #latenight | queued (steady clips) |
 | hourly | r264-valet-keys.mp4 | valet keys #amg #hotel #mercedes #nightlife #latenight | queued (steady clips) |
