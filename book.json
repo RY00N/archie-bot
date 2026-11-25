@@ -6001,22 +6001,10 @@
   "props_at": "2026-11-24 20:00 PT",
   "props_today": 116,
   "kalshi_props_today": 53,
-  "kalshi_priced_today": 3,
+  "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
-   "AN Consensus": 53,
-   "AN Open": 53,
-   "BetMGM": 37,
-   "BetRivers": 49,
-   "Caesars": 50,
-   "DraftKings": 45,
-   "FanDuel": 45,
-   "Fanatics": 48,
-   "Parx": 49,
-   "Pinnacle": 26,
    "Sleeper": 52,
-   "Underdog": 53,
-   "Unibet": 5,
-   "bet365": 52
+   "Underdog": 53
   },
   "data_files": [
    "mlb.sqlite",
@@ -162022,8 +162010,8 @@
    "line": 1.5,
    "start": "2026-11-26T01:00:00Z",
    "p": 0.384,
-   "price": 0.46,
-   "edge": -0.093,
+   "price": 0.45,
+   "edge": -0.083,
    "news": "LAR's DE Kobie Turner is out, an easier matchup.",
    "result": null
   },
@@ -162037,8 +162025,8 @@
    "line": 1.5,
    "start": "2026-11-26T01:00:00Z",
    "p": 0.606,
-   "price": 0.55,
-   "edge": 0.039,
+   "price": 0.56,
+   "edge": 0.029,
    "news": "LAR's DE Kobie Turner is out, an easier matchup.",
    "result": null
   },
