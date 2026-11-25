@@ -379,3 +379,9 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r266-chef.mp4 | chef said enjoy #dinner #sushi #omakase #nightlife #latenight | queued (steady clips) |
 | hourly | r267-take-both.mp4 | take both #ferrari #bmwm4 #carsofinstagram #nightlife #latenight | queued (steady clips) |
 | hourly | r268-lobby.mp4 | lobby #vegas #mclaren #ferrari #nightlife #latenight | queued (steady clips) |
+| hourly | r269-the-view.mp4 | the view #hotel #bmwm4 #nightout #nightlife #latenight | queued (steady clips) |
+| hourly | r270-no-plans.mp4 | no plans #nightdrive #ferrari #bmwm4 #nightlife #latenight | queued (steady clips) |
+| hourly | r271-dessert.mp4 | dessert's on me #dinner #sushi #omakase #nightlife #latenight | queued (steady clips) |
+| hourly | r272-games-on.mp4 | game's on #lakers #nba #ferrari #nightlife #latenight | queued (steady clips) |
+| hourly | r273-pulled-up-quiet.mp4 | pulled up quiet #amg #ferrari #mercedes #nightlife #latenight | queued (steady clips) |
+| hourly | r274-vegas-trip.mp4 | vegas trip #vegas #mclaren #corvette #nightlife #latenight | queued (steady clips) |
