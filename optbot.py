@@ -223,7 +223,9 @@ def step(bot, log):
     except Exception as e:
         log(f"tsbook hook error: {e}")
     try:  # 11/16 real-money mirror (optlive.py): off unless rules options.live.enabled + live keys on the server
-        import optlive
+        import importlib, optlive
+        if time.time() - _last.get("optlive_reload", 0) > 300:  # 11/25: optlive was never reloaded, so its 11/23-24 fixes never ran
+            importlib.reload(optlive); _last["optlive_reload"] = time.time()
         optlive.tick(lambda sym: _quote(bot, sym), log)
     except Exception as e:
         log(f"LIVE hook error: {e}")
