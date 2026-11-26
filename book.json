@@ -6131,7 +6131,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-26 04:00 PT",
-  "props_today": 632,
+  "props_today": 631,
   "kalshi_props_today": 150,
   "kalshi_priced_today": 25,
   "books_on_kalshi_props": {
@@ -6149,7 +6149,7 @@
    "Sleeper": 136,
    "Underdog": 150,
    "Unibet": 39,
-   "bet365": 140
+   "bet365": 141
   },
   "data_files": [
    "mlb.sqlite",
@@ -153784,9 +153784,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-27T01:20:00Z",
-   "p": 0.517,
+   "p": 0.516,
    "price": 0.47,
-   "edge": 0.03,
+   "edge": 0.029,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -153799,9 +153799,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-11-27T01:20:00Z",
-   "p": 0.483,
+   "p": 0.484,
    "price": 0.54,
-   "edge": -0.074,
+   "edge": -0.073,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -155150,8 +155150,8 @@
    "line": 2.5,
    "start": "2026-11-26T21:30:00Z",
    "p": 0.409,
-   "price": 0.46,
-   "edge": -0.068,
+   "price": 0.45,
+   "edge": -0.058,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -155494,9 +155494,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-11-26T18:00:00Z",
-   "p": 0.54,
+   "p": 0.539,
    "price": 0.5,
-   "edge": 0.023,
+   "edge": 0.022,
    "news": "CHI's S Elijah Hicks is out, an easier matchup.",
    "result": null
   },
@@ -155509,9 +155509,9 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-11-26T18:00:00Z",
-   "p": 0.45,
+   "p": 0.451,
    "price": 0.52,
-   "edge": -0.087,
+   "edge": -0.086,
    "news": "CHI's S Elijah Hicks is out, an easier matchup.",
    "result": null
   },
@@ -156620,8 +156620,8 @@
    "line": 2.5,
    "start": "2026-11-27T20:00:00Z",
    "p": 0.44,
-   "price": 0.48,
-   "edge": -0.057,
+   "price": 0.46,
+   "edge": -0.037,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -157025,8 +157025,8 @@
    "line": 4.5,
    "start": "2026-11-27T20:00:00Z",
    "p": 0.57,
-   "price": 0.5,
-   "edge": 0.052,
+   "price": 0.49,
+   "edge": 0.063,
    "news": "PIT's LB Alex Highsmith is out, an easier matchup.",
    "result": null
   },
