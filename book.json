@@ -6131,7 +6131,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-26 04:00 PT",
-  "props_today": 632,
+  "props_today": 630,
   "kalshi_props_today": 150,
   "kalshi_priced_today": 25,
   "books_on_kalshi_props": {
@@ -153965,8 +153965,8 @@
    "line": 1.5,
    "start": "2026-11-27T01:20:00Z",
    "p": 0.442,
-   "price": 0.45,
-   "edge": -0.025,
+   "price": 0.42,
+   "edge": 0.005,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -153980,8 +153980,8 @@
    "line": 1.5,
    "start": "2026-11-27T01:20:00Z",
    "p": 0.558,
-   "price": 0.56,
-   "edge": -0.019,
+   "price": 0.59,
+   "edge": -0.049,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -155464,9 +155464,9 @@
    "side": "over",
    "line": 9.5,
    "start": "2026-11-26T18:00:00Z",
-   "p": 0.535,
+   "p": 0.532,
    "price": 0.52,
-   "edge": -0.002,
+   "edge": -0.005,
    "news": "DET's CB Ennis Rakestraw Jr. is out, an easier matchup.",
    "result": null
   },
@@ -155479,9 +155479,9 @@
    "side": "under",
    "line": 9.5,
    "start": "2026-11-26T18:00:00Z",
-   "p": 0.455,
+   "p": 0.458,
    "price": 0.5,
-   "edge": -0.062,
+   "edge": -0.059,
    "news": "DET's CB Ennis Rakestraw Jr. is out, an easier matchup.",
    "result": null
   },
@@ -156065,8 +156065,8 @@
    "line": 3.5,
    "start": "2026-11-27T01:20:00Z",
    "p": 0.425,
-   "price": 0.42,
-   "edge": -0.012,
+   "price": 0.41,
+   "edge": -0.002,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -156080,8 +156080,8 @@
    "line": 3.5,
    "start": "2026-11-27T01:20:00Z",
    "p": 0.575,
-   "price": 0.59,
-   "edge": -0.032,
+   "price": 0.6,
+   "edge": -0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
