@@ -386,7 +386,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r273-pulled-up-quiet.mp4 | pulled up quiet #amg #ferrari #mercedes #nightlife #latenight | POSTED 11/25 1:39pm PST trial https://www.instagram.com/reel/DgLg8hfv2wd/ |
 | hourly | r274-vegas-trip.mp4 | vegas trip #vegas #mclaren #corvette #nightlife #latenight | POSTED 11/25 2:38pm PST trial https://www.instagram.com/reel/DgLnvwUg90A/ |
 | hourly | r275-late-checkin.mp4 | late checkin #hotel #corvette #nightlife #latenight #luxurylife | POSTED 11/25 3:38pm PST trial https://www.instagram.com/reel/DgLulQLNuKR/ |
-| hourly | r276-hands-on-wheel.mp4 | hands on the wheel #ferrari #dinner #nightlife #latenight #carsofinstagram | queued (steady clips) |
+| hourly | r276-hands-on-wheel.mp4 | hands on the wheel #ferrari #dinner #nightlife #latenight #carsofinstagram | POSTED 11/25 4:38pm PST trial https://www.instagram.com/reel/DgL1bgqBBEp/ |
 | hourly | r277-city-lights.mp4 | city lights #nightdrive #ferrari #citylights #nightlife #latenight | queued (steady clips) |
 | hourly | r278-up-again.mp4 | up again #lakers #nba #amg #nightlife #latenight | queued (steady clips) |
 | hourly | r279-long-way.mp4 | long way home #bmwm4 #nightdrive #bmw #nightlife #latenight | queued (steady clips) |
