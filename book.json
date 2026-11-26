@@ -6170,7 +6170,7 @@
   "books_on_kalshi_props": {
    "AN Consensus": 48,
    "AN Open": 48,
-   "BetMGM": 43,
+   "BetMGM": 45,
    "BetRivers": 23,
    "Caesars": 45,
    "DraftKings": 48,
@@ -154687,9 +154687,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-27T01:20:00Z",
-   "p": 0.49,
+   "p": 0.489,
    "price": 0.46,
-   "edge": 0.013,
+   "edge": 0.012,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -154702,9 +154702,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-27T01:20:00Z",
-   "p": 0.51,
+   "p": 0.511,
    "price": 0.55,
-   "edge": -0.057,
+   "edge": -0.056,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -157088,8 +157088,8 @@
    "line": 2.5,
    "start": "2026-11-27T20:00:00Z",
    "p": 0.671,
-   "price": 0.57,
-   "edge": 0.084,
+   "price": 0.58,
+   "edge": 0.074,
    "news": "Ben Skowronek is out: Germie Bernard hit the over in 2/2 games without him vs 1/3 with him.",
    "result": null
   },
