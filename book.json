@@ -6164,7 +6164,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-26 13:00 PT",
-  "props_today": 429,
+  "props_today": 430,
   "kalshi_props_today": 98,
   "kalshi_priced_today": 15,
   "books_on_kalshi_props": {
@@ -156788,8 +156788,8 @@
    "line": 2.5,
    "start": "2026-11-27T20:00:00Z",
    "p": 0.553,
-   "price": 0.55,
-   "edge": -0.014,
+   "price": 0.54,
+   "edge": -0.004,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -157058,8 +157058,8 @@
    "line": 2.5,
    "start": "2026-11-27T20:00:00Z",
    "p": 0.669,
-   "price": 0.58,
-   "edge": 0.072,
+   "price": 0.57,
+   "edge": 0.082,
    "news": "Ben Skowronek is out: Germie Bernard hit the over in 2/2 games without him vs 1/3 with him.",
    "result": null
   },
@@ -157088,8 +157088,8 @@
    "line": 2.5,
    "start": "2026-11-27T20:00:00Z",
    "p": 0.547,
-   "price": 0.51,
-   "edge": 0.02,
+   "price": 0.5,
+   "edge": 0.03,
    "news": "DEN's LB Jonah Elliss is out, an easier matchup.",
    "result": null
   },
