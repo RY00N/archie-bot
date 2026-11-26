@@ -6164,7 +6164,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-26 09:00 PT",
-  "props_today": 653,
+  "props_today": 651,
   "kalshi_props_today": 150,
   "kalshi_priced_today": 25,
   "books_on_kalshi_props": {
@@ -153653,8 +153653,8 @@
    "line": 21.5,
    "start": "2026-11-27T01:20:00Z",
    "p": 0.522,
-   "price": 0.54,
-   "edge": -0.035,
+   "price": 0.55,
+   "edge": -0.045,
    "news": "News: Will Patrick Mahomes play today? Injury news, update for Chiefs QB - Kansas City Star",
    "result": null
   },
@@ -157178,8 +157178,8 @@
    "line": 9.5,
    "start": "2026-11-27T20:00:00Z",
    "p": 0.526,
-   "price": 0.48,
-   "edge": 0.029,
+   "price": 0.47,
+   "edge": 0.039,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
