@@ -6164,7 +6164,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-26 08:00 PT",
-  "props_today": 649,
+  "props_today": 646,
   "kalshi_props_today": 150,
   "kalshi_priced_today": 24,
   "books_on_kalshi_props": {
@@ -6190,7 +6190,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 2
+  "kalshi_legs_today": 1
  },
  "shadow": [
   {
@@ -153488,8 +153488,8 @@
    "line": 34.5,
    "start": "2026-11-26T21:30:00Z",
    "p": 0.499,
-   "price": 0.52,
-   "edge": -0.038,
+   "price": 0.53,
+   "edge": -0.048,
    "news": "News: Dak Prescott not on Week 12 injury report - Yahoo Sports",
    "result": null
   },
@@ -153503,8 +153503,8 @@
    "line": 34.5,
    "start": "2026-11-26T21:30:00Z",
    "p": 0.451,
-   "price": 0.49,
-   "edge": -0.056,
+   "price": 0.48,
+   "edge": -0.046,
    "news": "News: Dak Prescott not on Week 12 injury report - Yahoo Sports",
    "result": null
   },
@@ -154148,8 +154148,8 @@
    "line": 5.5,
    "start": "2026-11-26T18:00:00Z",
    "p": 0.425,
-   "price": 0.42,
-   "edge": -0.012,
+   "price": 0.41,
+   "edge": -0.002,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -154163,8 +154163,8 @@
    "line": 5.5,
    "start": "2026-11-26T18:00:00Z",
    "p": 0.575,
-   "price": 0.59,
-   "edge": -0.032,
+   "price": 0.6,
+   "edge": -0.042,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -154238,8 +154238,8 @@
    "line": 2.5,
    "start": "2026-11-26T18:00:00Z",
    "p": 0.548,
-   "price": 0.53,
-   "edge": 0.001,
+   "price": 0.54,
+   "edge": -0.009,
    "news": "DET's CB Ennis Rakestraw Jr. is out, an easier matchup.",
    "result": null
   },
@@ -154253,8 +154253,8 @@
    "line": 2.5,
    "start": "2026-11-26T18:00:00Z",
    "p": 0.442,
-   "price": 0.48,
-   "edge": -0.055,
+   "price": 0.47,
+   "edge": -0.045,
    "news": "DET's CB Ennis Rakestraw Jr. is out, an easier matchup.",
    "result": null
   },
@@ -154268,8 +154268,8 @@
    "line": 4.5,
    "start": "2026-11-26T18:00:00Z",
    "p": 0.566,
-   "price": 0.57,
-   "edge": -0.021,
+   "price": 0.58,
+   "edge": -0.031,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -154373,8 +154373,8 @@
    "line": 0.5,
    "start": "2026-11-26T18:00:00Z",
    "p": 0.357,
-   "price": 0.36,
-   "edge": -0.019,
+   "price": 0.35,
+   "edge": -0.009,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -154523,8 +154523,8 @@
    "line": 1.5,
    "start": "2026-11-26T18:00:00Z",
    "p": 0.482,
-   "price": 0.57,
-   "edge": -0.105,
+   "price": 0.58,
+   "edge": -0.115,
    "news": "CHI's S Elijah Hicks is out, an easier matchup.",
    "result": null
   },
@@ -154597,9 +154597,9 @@
    "side": "over",
    "line": 4.5,
    "start": "2026-11-26T18:00:00Z",
-   "p": 0.462,
+   "p": 0.464,
    "price": 0.43,
-   "edge": 0.015,
+   "edge": 0.017,
    "news": "News: Is Sam LaPorta Playing Today? (Injury Update, Betting Impact for Bears vs. Lions in NFL Week 12) - Sports Illustrated CHI's S Elijah Hicks is out, an easier matchup.",
    "result": null
   },
@@ -154612,9 +154612,9 @@
    "side": "under",
    "line": 4.5,
    "start": "2026-11-26T18:00:00Z",
-   "p": 0.478,
+   "p": 0.476,
    "price": 0.58,
-   "edge": -0.119,
+   "edge": -0.121,
    "news": "News: Is Sam LaPorta Playing Today? (Injury Update, Betting Impact for Bears vs. Lions in NFL Week 12) - Sports Illustrated CHI's S Elijah Hicks is out, an easier matchup.",
    "result": null
   },
@@ -155347,9 +155347,9 @@
    "side": "over",
    "line": 3.5,
    "start": "2026-11-26T21:30:00Z",
-   "p": 0.38,
+   "p": 0.383,
    "price": 0.42,
-   "edge": -0.057,
+   "edge": -0.054,
    "news": "News: Does Makai Lemon fit in Eagles offense with top WR back? Injury update - Delawareonline.com Dontayvion Wicks (WR) is out, so Makai Lemon's role likely grows; DAL's CB DaRon Bland is out, an easier matchup.",
    "result": null
   },
@@ -155362,9 +155362,9 @@
    "side": "under",
    "line": 3.5,
    "start": "2026-11-26T21:30:00Z",
-   "p": 0.53,
+   "p": 0.527,
    "price": 0.59,
-   "edge": -0.077,
+   "edge": -0.08,
    "news": "News: Does Makai Lemon fit in Eagles offense with top WR back? Injury update - Delawareonline.com Dontayvion Wicks (WR) is out, so Makai Lemon's role likely grows; DAL's CB DaRon Bland is out, an easier matchup.",
    "result": null
   },
@@ -155378,8 +155378,8 @@
    "line": 1.5,
    "start": "2026-11-26T21:30:00Z",
    "p": 0.421,
-   "price": 0.46,
-   "edge": -0.056,
+   "price": 0.45,
+   "edge": -0.046,
    "news": "News: Saquon Barkley (neck/illness) practices in full - NBC Sports",
    "result": null
   },
@@ -155557,9 +155557,9 @@
    "side": "over",
    "line": 19.5,
    "start": "2026-11-26T18:00:00Z",
-   "p": 0.54,
+   "p": 0.539,
    "price": 0.49,
-   "edge": 0.033,
+   "edge": 0.032,
    "news": "CHI's S Elijah Hicks is out, an easier matchup.",
    "result": null
   },
@@ -155572,9 +155572,9 @@
    "side": "under",
    "line": 19.5,
    "start": "2026-11-26T18:00:00Z",
-   "p": 0.45,
+   "p": 0.451,
    "price": 0.52,
-   "edge": -0.087,
+   "edge": -0.086,
    "news": "CHI's S Elijah Hicks is out, an easier matchup.",
    "result": null
   },
