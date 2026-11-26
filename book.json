@@ -6130,7 +6130,7 @@
    "at": "2026-10-28T03:37:43+00:00",
    "secs": 0.0
   },
-  "props_at": "2026-11-25 17:00 PT",
+  "props_at": "2026-11-25 18:00 PT",
   "props_today": 806,
   "kalshi_props_today": 397,
   "kalshi_priced_today": 14,
@@ -6146,7 +6146,7 @@
    "Hard Rock Bet": 31,
    "Parx": 293,
    "Pinnacle": 243,
-   "Sleeper": 382,
+   "Sleeper": 383,
    "Underdog": 397,
    "Unibet": 59,
    "bet365": 392
@@ -6157,7 +6157,7 @@
    "nfl.sqlite",
    "soccer.sqlite"
   ],
-  "kalshi_legs_today": 4
+  "kalshi_legs_today": 2
  },
  "shadow": [
   {
@@ -156170,8 +156170,8 @@
    "line": 1.5,
    "start": "2026-11-26T01:30:00Z",
    "p": 0.585,
-   "price": 0.59,
-   "edge": -0.022,
+   "price": 0.6,
+   "edge": -0.032,
    "news": "HOU has allowed bench guards 3% more threes than average (likely on him: Marcus Smart, Reed Sheppard).",
    "result": null
   },
@@ -158165,8 +158165,8 @@
    "line": 7.5,
    "start": "2026-11-26T03:00:00Z",
    "p": 0.389,
-   "price": 0.44,
-   "edge": -0.068,
+   "price": 0.43,
+   "edge": -0.058,
    "news": "Dylan Harper is out: Stephon Castle hit the over in 5/21 games without him vs 5/19 with him; POR has allowed starting guards 19% fewer assists than average (likely on him: Damian Lillard, Sidy Cissoko); Deni Avdija can switch onto him (POR allowed guards 14% fewer assists with him playing; he plays tonight); Damian Lillard can switch onto him (POR allowed guards 12% fewer assists with him playing; he plays tonight).",
    "result": null
   },
@@ -162515,8 +162515,8 @@
    "line": 5.5,
    "start": "2026-11-26T01:30:00Z",
    "p": 0.503,
-   "price": 0.42,
-   "edge": 0.066,
+   "price": 0.4,
+   "edge": 0.086,
    "news": "Mark Williams is out: Khaman Maluach hit the over in 14/30 games without him vs 1/3 with him; HOU has allowed bench centers 6% fewer rebounds than average (likely on him: Steven Adams, Clint Capela); Clint Capela can switch onto him (HOU allowed centers 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -162530,8 +162530,8 @@
    "line": 5.5,
    "start": "2026-11-26T01:30:00Z",
    "p": 0.497,
-   "price": 0.59,
-   "edge": -0.11,
+   "price": 0.61,
+   "edge": -0.13,
    "news": "Mark Williams is out: Khaman Maluach hit the under in 16/30 games without him vs 2/3 with him; HOU has allowed bench centers 6% fewer rebounds than average (likely on him: Steven Adams, Clint Capela); Clint Capela can switch onto him (HOU allowed centers 11% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -162845,8 +162845,8 @@
    "line": 5.5,
    "start": "2026-11-26T03:00:00Z",
    "p": 0.556,
-   "price": 0.59,
-   "edge": -0.051,
+   "price": 0.58,
+   "edge": -0.041,
    "news": "SAS has allowed starting forwards 12% fewer rebounds than average (likely on him: Victor Wembanyama, Julian Champagnie).",
    "result": null
   },
@@ -163100,8 +163100,8 @@
    "line": 5.5,
    "start": "2026-11-26T03:00:00Z",
    "p": 0.554,
-   "price": 0.57,
-   "edge": -0.033,
+   "price": 0.58,
+   "edge": -0.043,
    "news": "POR has allowed bench forwards 2% fewer rebounds than average (likely on him: John Tonje); Sidy Cissoko can switch onto him (POR allowed forwards 9% fewer rebounds with him playing; he plays tonight).",
    "result": null
   },
@@ -167180,8 +167180,8 @@
    "line": 8.5,
    "start": "2026-11-26T18:00:00Z",
    "p": 0.419,
-   "price": 0.53,
-   "edge": -0.128,
+   "price": 0.54,
+   "edge": -0.138,
    "news": "DET's DT Skyler Gill-Howard is out, an easier matchup.",
    "result": null
   },
@@ -167225,8 +167225,8 @@
    "line": 7.5,
    "start": "2026-11-27T01:20:00Z",
    "p": 0.537,
-   "price": 0.55,
-   "edge": -0.03,
+   "price": 0.56,
+   "edge": -0.04,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
