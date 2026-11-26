@@ -6148,7 +6148,7 @@
    "Pinnacle": 130,
    "Sleeper": 136,
    "Underdog": 150,
-   "Unibet": 38,
+   "Unibet": 39,
    "bet365": 143
   },
   "data_files": [
@@ -153890,8 +153890,8 @@
    "line": 1.5,
    "start": "2026-11-26T18:00:00Z",
    "p": 0.26,
-   "price": 0.37,
-   "edge": -0.126,
+   "price": 0.36,
+   "edge": -0.116,
    "news": "DET's DT Skyler Gill-Howard is out, an easier matchup; DET's CB Ennis Rakestraw Jr. is out, an easier matchup.",
    "result": null
   },
@@ -154654,9 +154654,9 @@
    "side": "over",
    "line": 1.5,
    "start": "2026-11-27T01:20:00Z",
-   "p": 0.451,
+   "p": 0.45,
    "price": 0.42,
-   "edge": 0.014,
+   "edge": 0.013,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -154669,9 +154669,9 @@
    "side": "under",
    "line": 1.5,
    "start": "2026-11-27T01:20:00Z",
-   "p": 0.549,
+   "p": 0.55,
    "price": 0.59,
-   "edge": -0.058,
+   "edge": -0.057,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -157040,8 +157040,8 @@
    "line": 9.5,
    "start": "2026-11-27T20:00:00Z",
    "p": 0.476,
-   "price": 0.54,
-   "edge": -0.081,
+   "price": 0.56,
+   "edge": -0.101,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
