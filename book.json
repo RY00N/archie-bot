@@ -6164,7 +6164,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-26 11:00 PT",
-  "props_today": 427,
+  "props_today": 426,
   "kalshi_props_today": 96,
   "kalshi_priced_today": 14,
   "books_on_kalshi_props": {
@@ -154718,8 +154718,8 @@
    "line": 3.5,
    "start": "2026-11-27T01:20:00Z",
    "p": 0.55,
-   "price": 0.54,
-   "edge": -0.007,
+   "price": 0.53,
+   "edge": 0.003,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -154733,8 +154733,8 @@
    "line": 3.5,
    "start": "2026-11-27T01:20:00Z",
    "p": 0.45,
-   "price": 0.47,
-   "edge": -0.037,
+   "price": 0.48,
+   "edge": -0.047,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
