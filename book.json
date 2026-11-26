@@ -6164,7 +6164,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-26 15:00 PT",
-  "props_today": 216,
+  "props_today": 217,
   "kalshi_props_today": 48,
   "kalshi_priced_today": 6,
   "books_on_kalshi_props": {
@@ -6182,7 +6182,7 @@
    "Sleeper": 44,
    "Underdog": 48,
    "Unibet": 13,
-   "bet365": 48
+   "bet365": 47
   },
   "data_files": [
    "mlb.sqlite",
@@ -156787,9 +156787,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-27T20:00:00Z",
-   "p": 0.555,
+   "p": 0.554,
    "price": 0.55,
-   "edge": -0.012,
+   "edge": -0.013,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -156802,9 +156802,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-27T20:00:00Z",
-   "p": 0.445,
+   "p": 0.446,
    "price": 0.47,
-   "edge": -0.042,
+   "edge": -0.041,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -156817,9 +156817,9 @@
    "side": "over",
    "line": 2.5,
    "start": "2026-11-27T20:00:00Z",
-   "p": 0.479,
+   "p": 0.478,
    "price": 0.48,
-   "edge": -0.018,
+   "edge": -0.019,
    "news": "PIT's LB Alex Highsmith is out, an easier matchup.",
    "result": null
   },
@@ -156832,9 +156832,9 @@
    "side": "under",
    "line": 2.5,
    "start": "2026-11-27T20:00:00Z",
-   "p": 0.511,
+   "p": 0.512,
    "price": 0.54,
-   "edge": -0.046,
+   "edge": -0.045,
    "news": "PIT's LB Alex Highsmith is out, an easier matchup.",
    "result": null
   },
@@ -156967,9 +156967,9 @@
    "side": "over",
    "line": 0.5,
    "start": "2026-11-27T20:00:00Z",
-   "p": 0.623,
+   "p": 0.627,
    "price": 0.58,
-   "edge": 0.026,
+   "edge": 0.03,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
@@ -156982,9 +156982,9 @@
    "side": "under",
    "line": 0.5,
    "start": "2026-11-27T20:00:00Z",
-   "p": 0.377,
+   "p": 0.373,
    "price": 0.44,
-   "edge": -0.08,
+   "edge": -0.084,
    "news": "No injury or off-field red flags in the last 3 days.",
    "result": null
   },
