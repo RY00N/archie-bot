@@ -24,6 +24,26 @@ def _run(tool, args, timeout):
     return p.returncode, p.stdout, p.stderr
 
 
+def _early_closes():
+    """The pack's 1pm-close dates (trader-risk/check.py NYSE_EARLY_CLOSE), read without importing it."""
+    import ast, re
+    try:
+        src = open(os.path.join(PACK, "trader-risk", "check.py")).read()
+        return set(ast.literal_eval(re.search(r"NYSE_EARLY_CLOSE = (\{.*?\n\})", src, re.S).group(1)))
+    except Exception:
+        return set()
+
+
+def _after(hhmm, now=None):
+    """On a 1pm-close day the pack moves no_entries_after 3 hours earlier, which turns a 10:00 cutoff
+    into 07:00 and blocks the 9:35 entry (11/27). Hand it 3 hours later so it lands back on our time."""
+    d = (datetime.fromisoformat(now) if now else datetime.now(timezone.utc).astimezone(ET)).date().isoformat()
+    if d not in _early_closes():
+        return hhmm
+    h, m = map(int, hhmm.split(":"))
+    return f"{min(h + 3, 23):02d}:{m:02d}"
+
+
 def risk_check(osym, qty, limit, stop_pct, cash, max_trades, log, unit=100, now=None):
     """True = send the order. Runs the pack's pre-trade risk check on this exact order."""
     order = {"symbol": osym, "side": "buy", "qty": str(qty), "type": "limit", "time_in_force": "day",
@@ -33,7 +53,7 @@ def risk_check(osym, qty, limit, stop_pct, cash, max_trades, log, unit=100, now=
               "min_order_usd": 5, "max_loss_per_trade_usd": round(cash * stop_pct / 100, 2) + 1,
               "max_daily_loss_usd": round(cash * stop_pct / 100, 2) + 1, "max_trades_per_day": max_trades,
               "max_orders_per_day": max_trades * 4, "min_reward_risk": 0, "require_stop": True,
-              "no_entries_before": "09:35", "no_entries_after": "10:00", "flat_by": "15:55",
+              "no_entries_before": "09:35", "no_entries_after": _after("10:00", now), "flat_by": "15:55",
               "paper": True, "blocked": [], "allow_options": True, "allow_margin": False, "allow_short": False}
     try:
         with tempfile.TemporaryDirectory() as d:
