@@ -6164,7 +6164,7 @@
    "secs": 0.0
   },
   "props_at": "2026-11-27 06:00 PT",
-  "props_today": 1365,
+  "props_today": 1366,
   "kalshi_props_today": 55,
   "kalshi_priced_today": 11,
   "books_on_kalshi_props": {
@@ -151088,8 +151088,8 @@
    "line": 4.5,
    "start": "2026-11-27T20:00:00Z",
    "p": 0.571,
-   "price": 0.5,
-   "edge": 0.053,
+   "price": 0.49,
+   "edge": 0.064,
    "news": "PIT's LB Alex Highsmith is out, an easier matchup.",
    "result": null
   },
@@ -151103,8 +151103,8 @@
    "line": 4.5,
    "start": "2026-11-27T20:00:00Z",
    "p": 0.419,
-   "price": 0.52,
-   "edge": -0.118,
+   "price": 0.53,
+   "edge": -0.128,
    "news": "PIT's LB Alex Highsmith is out, an easier matchup.",
    "result": null
   },
