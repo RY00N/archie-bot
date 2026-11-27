@@ -408,7 +408,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r295-both-spots.mp4 | both spots #ferrari #mclaren #garage #nightlife #latenight | POSTED 11/26 9:39pm PST trial https://www.instagram.com/reel/DgO8qV8B1r5/ |
 | hourly | r296-thanksgiving.mp4 | thanksgiving #thanksgiving #dinner #hotel #nightlife #latenight | POSTED 11/26 1:38pm PST trial https://www.instagram.com/reel/DgOFod7RvHW/ |
 | hourly | r297-overtime.mp4 | overtime #lakers #nba #amg #nightlife #latenight | POSTED 11/26 10:38pm PST trial https://www.instagram.com/reel/DgPDdKRqOaQ/ |
-| hourly | r298-doing-the-work.mp4 | cruising #bmwm4 #ferrari #corvette #nightlife #latenight | queued (steady clips) |
+| hourly | r298-doing-the-work.mp4 | cruising #bmwm4 #ferrari #corvette #nightlife #latenight | POSTED 11/27 9:38am PST trial https://www.instagram.com/reel/DgQO-JosiBB/ |
 | hourly | r299-black-friday.mp4 | black friday #blackfriday #hotel #vegas #nightlife #latenight | POSTED 11/27 8:38am PST trial https://www.instagram.com/reel/DgQII2uPvFT/ |
 | hourly | r300-valet-knows.mp4 | valet #amg #ferrari #mercedes #nightlife #latenight | queued (steady clips) |
 | hourly | r301-chefs-choice.mp4 | chef's choice #sushi #omakase #dinner #nightlife #latenight | queued (steady clips) |
