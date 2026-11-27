@@ -1,39 +1,45 @@
 {
- "updated": "2026-11-25T03:08:11+00:00",
+ "updated": "2026-11-27T12:08:23+00:00",
  "window": [
-  "2026-11-24",
-  "2026-12-15"
+  "2026-11-27",
+  "2026-12-18"
  ],
  "symbols": {
   "ADBE": {
    "date": "2026-12-09",
    "hour": "amc",
    "eps_est": 6.4551,
-   "trading_days": 11
+   "trading_days": 8
   },
   "AVGO": {
    "date": "2026-12-09",
    "hour": "amc",
    "eps_est": 3.8912,
-   "trading_days": 11
+   "trading_days": 8
   },
   "COST": {
    "date": "2026-12-10",
    "hour": "",
    "eps_est": 5.0204,
-   "trading_days": 12
+   "trading_days": 9
   },
   "CRM": {
    "date": "2026-12-02",
    "hour": "amc",
    "eps_est": 3.4717,
-   "trading_days": 6
+   "trading_days": 3
+  },
+  "MU": {
+   "date": "2026-12-17",
+   "hour": "amc",
+   "eps_est": 39.3702,
+   "trading_days": 14
   },
   "ORCL": {
    "date": "2026-12-14",
    "hour": "",
    "eps_est": 1.934,
-   "trading_days": 14
+   "trading_days": 11
   }
  }
 }
