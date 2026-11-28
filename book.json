@@ -6329,12 +6329,12 @@
    "secs": 0.0
   },
   "props_at": "2026-11-28 00:00 PT",
-  "props_today": 622,
-  "kalshi_props_today": 163,
+  "props_today": 577,
+  "kalshi_props_today": 151,
   "kalshi_priced_today": 0,
   "books_on_kalshi_props": {
-   "Sleeper": 158,
-   "Underdog": 163
+   "Sleeper": 146,
+   "Underdog": 151
   },
   "data_files": [
    "mlb.sqlite",
