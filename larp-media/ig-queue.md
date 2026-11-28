@@ -422,7 +422,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r309-everyone-asleep.mp4 | still working #bmwm4 #ferrari #nightdrive #nightlife #latenight | POSTED 11/27 7:38pm PST trial https://www.instagram.com/reel/DgRTpkphnAh/ |
 | hourly | r310-scenic-route.mp4 | scenic route #nightdrive #bmwm4 #citylights #nightlife #latenight | POSTED 11/27 8:38pm PST trial https://www.instagram.com/reel/DgRae5ChtCE/ |
 | hourly | r311-friday-gas.mp4 | friday dinner #dinner #ferrari #bmwm4 #nightlife #latenight | POSTED 11/27 9:38pm PST trial https://www.instagram.com/reel/DgRhag8Sa3d/ |
-| hourly | r312-late-dinner.mp4 | late dinner #hotel #ferrari #nightout #nightlife #latenight | queued (steady clips) |
+| hourly | r312-late-dinner.mp4 | late dinner #hotel #ferrari #nightout #nightlife #latenight | POSTED 11/27 10:38pm PST trial https://www.instagram.com/reel/DgRoN8WB6Vh/ |
 | hourly | r313-arguing.mp4 | already cashed #vegas #nightdrive #nba #nightlife #latenight | queued (steady clips) |
 | hourly | r314-room-view.mp4 | the suite #hotel #bmwm4 #luxury #nightlife #latenight | queued (steady clips) |
 | hourly | r315-no-alarm.mp4 | no alarm #ferrari #bmwm4 #weekend #nightlife #latenight | queued (steady clips) |
