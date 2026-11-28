@@ -417,7 +417,7 @@ Note: v2 files are H.264 10-bit HLG in archie-bot larp-media/ (same raw URL patt
 | hourly | r304-weekend.mp4 | weekend #bmwm4 #mclaren #weekend #nightlife #latenight | POSTED 11/27 3:39pm PST trial https://www.instagram.com/reel/DgQ4PkByM_O/ |
 | hourly | r305-skipped-lines.mp4 | black friday #blackfriday #vegas #corvette #nightlife #latenight | POSTED 11/27 10:38am PST trial https://www.instagram.com/reel/DgQV4rgvJlO/ |
 | hourly | r306-leftovers.mp4 | leftovers #sushi #dinner #omakase #nightlife #latenight | POSTED 11/27 4:38pm PST trial https://www.instagram.com/reel/DgQ_F8IoAGi/ |
-| hourly | r307-garage-1am.mp4 | 1am garage #mclaren #amg #garage #nightlife #latenight | queued (steady clips) |
+| hourly | r307-garage-1am.mp4 | 1am garage #mclaren #amg #garage #nightlife #latenight | POSTED 11/27 5:39pm PST trial https://www.instagram.com/reel/DgRF-ByB4_C/ |
 | hourly | r308-crowd-loud.mp4 | loud crowd #lakers #nba #ferrari #nightlife #latenight | queued (steady clips) |
 | hourly | r309-everyone-asleep.mp4 | still working #bmwm4 #ferrari #nightdrive #nightlife #latenight | queued (steady clips) |
 | hourly | r310-scenic-route.mp4 | scenic route #nightdrive #bmwm4 #citylights #nightlife #latenight | queued (steady clips) |
